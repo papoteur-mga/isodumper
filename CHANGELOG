@@ -1,0 +1,12 @@
+The initial state comes from https://launchpad.net/usb-imagewriter
+The modifications are:
+	  - changing the name into isodumper
+	  - replaced the dd command with direct writing command python.
+	  - progressbar is functionnal.
+	  - replaced the banner (header.png) with an Mageia's header.
+	  - added .iso filter.
+	  - added writing ~/.isodumper/isodumper.log at the end.
+	  - writing progression in details only each 5%.
+	  - point at the end of the logview window.
+	  - indicating the name of the log file.
+	  - new feature : the application doesn't close when a stick is inserted after the start and a dialog box which is displayed to say it.
