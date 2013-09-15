@@ -1,0 +1,20 @@
+#!/usr/bin/python
+
+import dbus
+import sys
+
+bus = dbus.SystemBus()
+proxy = bus.get_object("org.freedesktop.UDisks", "/org/freedesktop/UDisks")
+iface = dbus.Interface(proxy, "org.freedesktop.UDisks")
+
+devs = iface.EnumerateDevices()
+
+for dev in devs:
+	dev_obj = bus.get_object("org.freedesktop.UDisks", dev)
+	dev = dbus.Interface(dev_obj, "org.freedesktop.DBus.Properties")
+
+	if str(dev.Get('', 'DriveConnectionInterface')) == 'usb' and not str(dev.Get('', 'PartitionType')) and str(dev.Get('', 'DeviceIsMediaAvailable')) == '1':
+		path = str(dev.Get('', 'DeviceFile'))
+		vend = str(dev.Get('', 'DriveVendor'))
+		model = str(dev.Get('', 'DriveModel'))
+		print vend + ' ' + model + ', ' +path
