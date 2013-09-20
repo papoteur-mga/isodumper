@@ -1,9 +1,11 @@
-
 [Desktop Entry]
-Version=1.0
+Name=IsoDumper
+Comment=A GUI tool to write .img and .iso files to USB Keys
+Comment[fr]=Outil graphique pour écrire des fichiers .IMG et .ISO sur clés USB
+Comment[de]=Ein Programm zum scheiben von *.img and *.iso Dateien auf USB-Sicks
+Comment[pt]=Um Programa para gravar ficheiros *.img e *.iso em dispositivos USB
+Icon=isodumper.png
+Exec=/sbin/isodumper
 Type=Application
 Terminal=false
-Icon=gtk-execute
-Exec=gksudo isodumper
-Name=ImageWriter
-Categories=GNOME;GTK;Utility
+Categories=System;
