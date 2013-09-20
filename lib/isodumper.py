@@ -31,7 +31,7 @@ import gettext
 from gettext import gettext as _
 
 
-class ImageWriter:
+class IsoDumper:
     def __init__(self):
         APP="isodumper"
         DIR="/usr/share/locale"
@@ -275,5 +275,5 @@ class ImageWriter:
             gobject.timeout_add(130, lambda: self.window.reshow_with_initial_size())
 
 if __name__ == "__main__":
-    app = ImageWriter()
+    app = IsoDumper()
     gtk.main()
