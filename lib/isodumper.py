@@ -42,7 +42,7 @@ class ImageWriter:
         gtk.glade.textdomain(APP)
 
         # get glade tree
-        self.gladefile = "/documents/isodumper-0.1.0/share/isodumper/isodumper.glade"
+        self.gladefile = "/usr/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
