@@ -4,8 +4,8 @@
 #  
 #  Author: Oliver Grawert <ogra@ubuntu.com>
 # 
-#   Modifications 2013 from papoteur <papoteur@mageialinux-online.org>
-#   and Geiger David <david.david@mageialinux-online.org>
+#  Modifications 2013 from papoteur <papoteur@mageialinux-online.org>
+#  and Geiger David <david.david@mageialinux-online.org>
 #  This program is free software; you can redistribute it and/or 
 #  modify it under the terms of the GNU General Public License as 
 #  published by the Free Software Foundation; either version 2 of the
@@ -31,7 +31,7 @@ import gettext
 from gettext import gettext as _
 
 
-class ImageWriter:
+class IsoDumper:
     def __init__(self):
         APP="isodumper"
         DIR="/usr/share/locale"
@@ -42,7 +42,7 @@ class ImageWriter:
         gtk.glade.textdomain(APP)
 
         # get glade tree
-        self.gladefile = "/documents/isodumper-0.1.0/share/isodumper/isodumper.glade"
+        self.gladefile = "/usr/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -193,7 +193,7 @@ class ImageWriter:
                         self.emergency()
                     written= written+bs
                     if written > steps[indice]:
-                        if indice%5==0:
+                        if indice%1==0:
                             self.logger(_('Wrote: ')+str(indice)+'% '+str(written)+' bytes')
                             mark = self.log.create_mark("end", self.log.get_end_iter(), False)
                             self.logview.scroll_to_mark(mark, 0.05, True, 0.0, 1.0)
@@ -275,5 +275,5 @@ class ImageWriter:
             gobject.timeout_add(130, lambda: self.window.reshow_with_initial_size())
 
 if __name__ == "__main__":
-    app = ImageWriter()
+    app = IsoDumper()
     gtk.main()
