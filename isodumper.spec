@@ -69,7 +69,7 @@ popd
 
 # icons
 mkdir -p %{buildroot}/{%{_liconsdir},%{_miconsdir},%{_iconsdir}}
-convert %{name}.png -geometry 16x16 %{buildroot}/%{_miconsdir}/%{name}.png
+convert %{name}.png -geometry 20x20 %{buildroot}/%{_miconsdir}/%{name}.png
 convert %{name}.png -geometry 32x32 %{buildroot}/%{_iconsdir}/%{name}.png
 convert %{name}.png -geometry 48x48 %{buildroot}/%{_liconsdir}/%{name}.png
 
