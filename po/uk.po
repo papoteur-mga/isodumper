@@ -1,22 +1,22 @@
 # Ukrainian translation for usb-imagewriter
-# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
 # This file is distributed under the same license as the usb-imagewriter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
 #
+# Yuri Chornoivan <yurchor@ukr.net>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: usb-imagewriter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-19 22:15+0200\n"
-"PO-Revision-Date: 2009-03-04 20:27+0000\n"
-"Last-Translator: Вова Щербан \\ Vova Svoka <Unknown>\n"
-"Language-Team: Ukrainian <uk@li.org>\n"
+"PO-Revision-Date: 2013-09-25 18:56+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../lib/isodumper.py:113
 msgid "Image: "
@@ -24,19 +24,19 @@ msgstr "Образ: "
 
 #: ../lib/isodumper.py:114
 msgid "Target Device: "
-msgstr "Цільовий пристрій: "
+msgstr "Пристрій призначення: "
 
 #: ../lib/isodumper.py:130
 msgid "Unmounting all partitions of "
-msgstr "Відключення всіх розділів "
+msgstr "Демонтуємо усі розділи "
 
 #: ../lib/isodumper.py:132
 msgid "Trying to unmount "
-msgstr "Пробую відключити "
+msgstr "Намагаємося демонтувати "
 
 #: ../lib/isodumper.py:138 ../lib/isodumper.py:144
 msgid "Error, umount "
-msgstr "Помилка відключення "
+msgstr "Помилка демонтування "
 
 #: ../lib/isodumper.py:138
 msgid " was terminated by signal "
@@ -44,11 +44,11 @@ msgstr " було перервано сигналом "
 
 #: ../lib/isodumper.py:142
 msgid " successfully unmounted"
-msgstr " успішно відключено"
+msgstr " успішно демонтовано"
 
 #: ../lib/isodumper.py:144
 msgid " returned "
-msgstr " повернув "
+msgstr " повернуто "
 
 #: ../lib/isodumper.py:147
 msgid "Execution failed: "
@@ -56,33 +56,31 @@ msgstr "Помилка виконання: "
 
 #: ../lib/isodumper.py:155
 msgid "Could not read mtab !"
-msgstr "Не можу прочитати файл mtab!"
+msgstr "Не вдалося прочитати файл mtab!"
 
 #: ../lib/isodumper.py:164 ../lib/isodumper.py:187
 msgid "Reading error."
-msgstr ""
+msgstr "Помилка читання."
 
 #: ../lib/isodumper.py:170
 msgid "You have not the rights for writing on the device"
-msgstr ""
+msgstr "У вас немає прав доступу для запису на пристрій"
 
 #: ../lib/isodumper.py:175
 msgid "Writing "
-msgstr "Запис "
+msgstr "Записуємо "
 
 #: ../lib/isodumper.py:175
 msgid " to "
-msgstr " до "
+msgstr " на "
 
 #: ../lib/isodumper.py:176
-#, fuzzy
 msgid "Executing copy from "
-msgstr "Виконання: dd if="
+msgstr "Виконуємо копіювання з "
 
 #: ../lib/isodumper.py:192
-#, fuzzy
 msgid "Writing error."
-msgstr "Запис "
+msgstr "Помилка під час спроби запису."
 
 #: ../lib/isodumper.py:197
 msgid "Wrote: "
@@ -94,15 +92,15 @@ msgstr "Образ "
 
 #: ../lib/isodumper.py:205
 msgid " successfully written to"
-msgstr " успішно записано до"
+msgstr " успішно записано на"
 
 #: ../lib/isodumper.py:206
 msgid "Bytes written: "
-msgstr ""
+msgstr "Записано байтів: "
 
 #: ../share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
-msgstr ""
+msgstr "IsoDumper"
 
 #: ../share/isodumper/isodumper.glade.h:2
 msgid ""
@@ -114,14 +112,13 @@ msgid ""
 " the device during the following operation."
 msgstr ""
 "<b>Попередження</b>\n"
-"  Це призведе до <b>втрати всіх даних</b> \n"
-"  на цільовому пристрої, ви хочете продовжити?\n"
+"  Це призведе до <b>втрати усіх даних</b> \n"
+"  на пристрої призначення, ви хочете продовжити?\n"
 "\n"
-"  Якщо Ви скажете ТАК, будь ласка, <b>не відключайте</b>\n"
+"  Якщо ви підтвердите запис, будь ласка, <b>не демонтуйте</b>\n"
 "  пристрій протягом наступної операції."
 
 #: ../share/isodumper/isodumper.glade.h:8
-#, fuzzy
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -131,11 +128,12 @@ msgid ""
 " homedir/.isodumper when the application is closed."
 msgstr ""
 "<b>Помилка</b>\n"
-"  Щось пішло не так, будьласка, передивіться\n"
-"  вікно деталей, щоб зрозуміти помилку.\n"
+"  Щось пішло не так, будь ласка, ознайомтеся\n"
+"  з подробицями, щоб визначити причину.\n"
 " \n"
-"  Файл журналу з вмістом помилки буде записано до\n"
-"  Вашої домашньої теки, якщо додаток буде завершено."
+"  Файл журналу isodumper.log з текстом повідомлень буде записано до\n"
+"  вашої домашньої теки (підтека .isodumper), коли роботу програми буде\n"
+"  завершено."
 
 #: ../share/isodumper/isodumper.glade.h:14
 msgid "Write Image:"
@@ -143,7 +141,7 @@ msgstr "Записати образ:"
 
 #: ../share/isodumper/isodumper.glade.h:15
 msgid "Select an image file to be written to the device"
-msgstr "Виберіть файл образу, що буде записано на пристрій"
+msgstr "Виберіть файл образу, який буде записано на пристрій"
 
 #: ../share/isodumper/isodumper.glade.h:16
 msgid "Select Image"
@@ -151,7 +149,7 @@ msgstr "Виберіть образ"
 
 #: ../share/isodumper/isodumper.glade.h:17
 msgid "to"
-msgstr "до"
+msgstr "на"
 
 #: ../share/isodumper/isodumper.glade.h:18
 msgid "Select target device to write the image to"
@@ -163,11 +161,11 @@ msgstr " "
 
 #: ../share/isodumper/isodumper.glade.h:20
 msgid "Details"
-msgstr "Докладніше"
+msgstr "Подробиці"
 
 #: ../share/isodumper/isodumper.glade.h:21
 msgid "Write to device"
-msgstr "Записати на пристрій:"
+msgstr "Записати на пристрій"
 
 #: ../share/isodumper/isodumper.glade.h:22
 msgid ""
@@ -178,13 +176,12 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 "<b>Помилка</b>\n"
-"  Не знайдено цільового пристрою.  \n"
+"  Не знайдено пристрою призначення.  \n"
 "\n"
-"  Піключіть USB пристрій,\n"
-"  на який повинно записати образ."
+"  З’єднайте з комп’ютером пристрій USB,\n"
+"  на який слід записати образ."
 
 #: ../share/isodumper/isodumper.glade.h:27
-#, fuzzy
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -195,12 +192,13 @@ msgid ""
 " you close the application."
 msgstr ""
 "<b>Успіх</b>\n"
-"  Образ успішно записано до \n"
-"  цільового пристрою.\n"
+"  Образ успішно записано на пристрій\n"
+"  призначення.\n"
 " \n"
-"  Ви можете вільно вимкнути його,\n"
-"  Файл журналу дій буде записнано до Вашої\n"
-"  домашньої теки, якщо додаток буде закрито."
+"  Ви можете від’єднати пристрій від комп’ютера.\n"
+"  Файл журналу дій isodumper.log записано буде записано\n"
+"  до теки .isodumper вашої домашньої теки, щойно роботу\n"
+"  програми буде завершено."
 
 #~ msgid "The dd process ended with an error !"
 #~ msgstr "Виконання dd завершилось з помилкою!"
