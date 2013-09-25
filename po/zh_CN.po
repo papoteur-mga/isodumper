@@ -1,0 +1,218 @@
+# Simplified Chinese translation for usb-imagewriter
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the usb-imagewriter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: usb-imagewriter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-19 22:15+0200\n"
+"PO-Revision-Date: 2009-05-13 05:10+0000\n"
+"Last-Translator: puzhengcai <Unknown>\n"
+"Language-Team: Simplified Chinese <zh_CN@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../lib/isodumper.py:113
+msgid "Image: "
+msgstr "镜像： "
+
+#: ../lib/isodumper.py:114
+msgid "Target Device: "
+msgstr "目标设备： "
+
+#: ../lib/isodumper.py:130
+msgid "Unmounting all partitions of "
+msgstr "卸载以下设备的所有分区 "
+
+#: ../lib/isodumper.py:132
+msgid "Trying to unmount "
+msgstr "尝试卸载分区 "
+
+#: ../lib/isodumper.py:138 ../lib/isodumper.py:144
+msgid "Error, umount "
+msgstr "出错，卸载分区 "
+
+#: ../lib/isodumper.py:138
+msgid " was terminated by signal "
+msgstr " 被信号终止 "
+
+#: ../lib/isodumper.py:142
+msgid " successfully unmounted"
+msgstr " 成功卸载设备"
+
+#: ../lib/isodumper.py:144
+msgid " returned "
+msgstr " 已返回 "
+
+#: ../lib/isodumper.py:147
+msgid "Execution failed: "
+msgstr "执行失败： "
+
+#: ../lib/isodumper.py:155
+msgid "Could not read mtab !"
+msgstr "无法读取mtab文件！"
+
+#: ../lib/isodumper.py:164 ../lib/isodumper.py:187
+msgid "Reading error."
+msgstr ""
+
+#: ../lib/isodumper.py:170
+msgid "You have not the rights for writing on the device"
+msgstr ""
+
+#: ../lib/isodumper.py:175
+msgid "Writing "
+msgstr "正在写入 "
+
+#: ../lib/isodumper.py:175
+msgid " to "
+msgstr " 到 "
+
+#: ../lib/isodumper.py:176
+#, fuzzy
+msgid "Executing copy from "
+msgstr "运行: dd if="
+
+#: ../lib/isodumper.py:192
+#, fuzzy
+msgid "Writing error."
+msgstr "正在写入 "
+
+#: ../lib/isodumper.py:197
+msgid "Wrote: "
+msgstr "已写入： "
+
+#: ../lib/isodumper.py:205
+msgid "Image "
+msgstr "镜像 "
+
+#: ../lib/isodumper.py:205
+msgid " successfully written to"
+msgstr " 成功写入到"
+
+#: ../lib/isodumper.py:206
+msgid "Bytes written: "
+msgstr ""
+
+#: ../share/isodumper/isodumper.glade.h:1
+msgid "IsoDumper"
+msgstr ""
+
+#: ../share/isodumper/isodumper.glade.h:2
+msgid ""
+"<b>Warning</b>\n"
+" This will <b>destroy all data</b> on the target\n"
+" device, are you sure you want to proceed ?\n"
+"\n"
+" If you say ok here, please <b>do not unplug</b>\n"
+" the device during the following operation."
+msgstr ""
+"<b>警告</b>\n"
+" 这样将会造成目标设备上的 <b>数据损坏</b>\n"
+" 确认继续么？\n"
+"\n"
+" 如果您回答是，请在执行下述操作时\n"
+"<b>不要卸载设备</b>"
+
+#: ../share/isodumper/isodumper.glade.h:8
+#, fuzzy
+msgid ""
+"<b>Error</b>\n"
+" Something went wrong, please see the details\n"
+" window for the exact error.\n"
+" \n"
+" A logfile isodumper.log with the content will be saved in your\n"
+" homedir/.isodumper when the application is closed."
+msgstr ""
+"<b>错误</b>\n"
+" 处理过程出错，\n"
+" 请通过窗口输出查看详细信息。\n"
+" \n"
+" 当程序关闭时\n"
+" 将会在您的用户主目录保存一个日志文件。"
+
+#: ../share/isodumper/isodumper.glade.h:14
+msgid "Write Image:"
+msgstr "写入镜像："
+
+#: ../share/isodumper/isodumper.glade.h:15
+msgid "Select an image file to be written to the device"
+msgstr "选择一个要写入到设备的镜像文件"
+
+#: ../share/isodumper/isodumper.glade.h:16
+msgid "Select Image"
+msgstr "选择镜像"
+
+#: ../share/isodumper/isodumper.glade.h:17
+msgid "to"
+msgstr "到"
+
+#: ../share/isodumper/isodumper.glade.h:18
+msgid "Select target device to write the image to"
+msgstr "选择要写入镜像的目标设备"
+
+#: ../share/isodumper/isodumper.glade.h:19
+msgid " "
+msgstr " "
+
+#: ../share/isodumper/isodumper.glade.h:20
+msgid "Details"
+msgstr "详细信息"
+
+#: ../share/isodumper/isodumper.glade.h:21
+msgid "Write to device"
+msgstr "写入到设备"
+
+#: ../share/isodumper/isodumper.glade.h:22
+msgid ""
+"<b>Error</b>\n"
+" No target devices were found. \n"
+"\n"
+" You need to plug in a USB Key\n"
+" to which the image can be written."
+msgstr ""
+"<b>错误</b>\n"
+"没有找到目标设备。 \n"
+"\n"
+" 你需要插入一个USB设备\n"
+" 以便将镜像写入。"
+
+#: ../share/isodumper/isodumper.glade.h:27
+#, fuzzy
+msgid ""
+"<b>Success</b>\n"
+" The image was successfully written to the\n"
+" target device.\n"
+" \n"
+" You are free to unplug it now, a log isodumper.log \n"
+" of the operation will be saved in your homedir/.isodumper/ when\n"
+" you close the application."
+msgstr ""
+"<b>成功</b>\n"
+" 镜像文件成功写入到目标驱动器\n"
+" \n"
+" \n"
+" 您现在已经完成本次操作，可以卸载设备。\n"
+" 当您退出程序时\n"
+" 一份日志文件将会保存在您的用户主目录中。"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd处理过程带错误结束！"
+
+#~ msgid "ImageWriter"
+#~ msgstr "镜像写入程序"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-取消"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-关闭"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-确定"

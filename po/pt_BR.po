@@ -1,0 +1,208 @@
+# Brazilian Portuguese translation for usb-imagewriter
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the usb-imagewriter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: usb-imagewriter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-19 22:15+0200\n"
+"PO-Revision-Date: 2008-09-28 23:20+0000\n"
+"Last-Translator: elias <Unknown>\n"
+"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../lib/isodumper.py:113
+msgid "Image: "
+msgstr "Imagem: "
+
+#: ../lib/isodumper.py:114
+msgid "Target Device: "
+msgstr "Dispositivo alvo: "
+
+#: ../lib/isodumper.py:130
+msgid "Unmounting all partitions of "
+msgstr "Desmontando todas as partições de "
+
+#: ../lib/isodumper.py:132
+msgid "Trying to unmount "
+msgstr "Tentando desmontar "
+
+#: ../lib/isodumper.py:138 ../lib/isodumper.py:144
+msgid "Error, umount "
+msgstr "Erro, desmontar "
+
+#: ../lib/isodumper.py:138
+msgid " was terminated by signal "
+msgstr " foi terminado pelo sinal "
+
+#: ../lib/isodumper.py:142
+msgid " successfully unmounted"
+msgstr " desmontado com sucesso"
+
+#: ../lib/isodumper.py:144
+msgid " returned "
+msgstr " retornado "
+
+#: ../lib/isodumper.py:147
+msgid "Execution failed: "
+msgstr "Falha na execução: "
+
+#: ../lib/isodumper.py:155
+msgid "Could not read mtab !"
+msgstr "Não pode ler mtab !"
+
+#: ../lib/isodumper.py:164 ../lib/isodumper.py:187
+msgid "Reading error."
+msgstr ""
+
+#: ../lib/isodumper.py:170
+msgid "You have not the rights for writing on the device"
+msgstr ""
+
+#: ../lib/isodumper.py:175
+msgid "Writing "
+msgstr "Escrevendo "
+
+#: ../lib/isodumper.py:175
+msgid " to "
+msgstr " para "
+
+#: ../lib/isodumper.py:176
+#, fuzzy
+msgid "Executing copy from "
+msgstr "Executando: dd if="
+
+#: ../lib/isodumper.py:192
+#, fuzzy
+msgid "Writing error."
+msgstr "Escrevendo "
+
+#: ../lib/isodumper.py:197
+msgid "Wrote: "
+msgstr "Escrevido: "
+
+#: ../lib/isodumper.py:205
+msgid "Image "
+msgstr "Imagem "
+
+#: ../lib/isodumper.py:205
+msgid " successfully written to"
+msgstr " escrito com sucesso a"
+
+#: ../lib/isodumper.py:206
+msgid "Bytes written: "
+msgstr ""
+
+#: ../share/isodumper/isodumper.glade.h:1
+msgid "IsoDumper"
+msgstr ""
+
+#: ../share/isodumper/isodumper.glade.h:2
+msgid ""
+"<b>Warning</b>\n"
+" This will <b>destroy all data</b> on the target\n"
+" device, are you sure you want to proceed ?\n"
+"\n"
+" If you say ok here, please <b>do not unplug</b>\n"
+" the device during the following operation."
+msgstr ""
+"<b>Aviso</b>\n"
+" Isto irá <b>destruir todos os dados</b> do dispositivo\n"
+" alvo, você tem certeza que deseja prosseguir ?\n"
+"\n"
+" Se você disser sim aqui, por favor <b>não desplugue</b>\n"
+" este dispositivo durante a operação seguinte."
+
+#: ../share/isodumper/isodumper.glade.h:8
+#, fuzzy
+msgid ""
+"<b>Error</b>\n"
+" Something went wrong, please see the details\n"
+" window for the exact error.\n"
+" \n"
+" A logfile isodumper.log with the content will be saved in your\n"
+" homedir/.isodumper when the application is closed."
+msgstr ""
+"<b>Erro<b/>Algo deu errado, por favor veja a janelade detalhes para o erro "
+"exatoUm arquivo log com o conteúdo sera salvo em seuhomedir se a aplicação "
+"for fechada"
+
+#: ../share/isodumper/isodumper.glade.h:14
+msgid "Write Image:"
+msgstr "Escrever Imagem:"
+
+#: ../share/isodumper/isodumper.glade.h:15
+msgid "Select an image file to be written to the device"
+msgstr "Selecionar um arquivo de imagem para ser escrito no dispositivo"
+
+#: ../share/isodumper/isodumper.glade.h:16
+msgid "Select Image"
+msgstr "Selecionar Imagem"
+
+#: ../share/isodumper/isodumper.glade.h:17
+msgid "to"
+msgstr "para"
+
+#: ../share/isodumper/isodumper.glade.h:18
+msgid "Select target device to write the image to"
+msgstr "Selecione dispositivo alvo para escrever a imagem a"
+
+#: ../share/isodumper/isodumper.glade.h:19
+msgid " "
+msgstr " "
+
+#: ../share/isodumper/isodumper.glade.h:20
+msgid "Details"
+msgstr "Detalhes"
+
+#: ../share/isodumper/isodumper.glade.h:21
+msgid "Write to device"
+msgstr "Escrever para o dispositivo"
+
+#: ../share/isodumper/isodumper.glade.h:22
+msgid ""
+"<b>Error</b>\n"
+" No target devices were found. \n"
+"\n"
+" You need to plug in a USB Key\n"
+" to which the image can be written."
+msgstr ""
+"<b>Erro</b>Nenhum dispositivo alvo foi encontrado Você precisa conectar um "
+"dispositivo USBpara onde uma imagem pode ser escrita."
+
+#: ../share/isodumper/isodumper.glade.h:27
+#, fuzzy
+msgid ""
+"<b>Success</b>\n"
+" The image was successfully written to the\n"
+" target device.\n"
+" \n"
+" You are free to unplug it now, a log isodumper.log \n"
+" of the operation will be saved in your homedir/.isodumper/ when\n"
+" you close the application."
+msgstr ""
+"<b>Sucesso</b>A imagem foi escrita com sucesso parao dispositivo alvo.Você "
+"está livre para desplugar agora, um log daoperação será salva em sua Pasta "
+"Pessoal sevocê fechar esta aplicação."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "O processo dd acabou com um erro !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"

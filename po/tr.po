@@ -1,0 +1,218 @@
+# Turkish translation for usb-imagewriter
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the usb-imagewriter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: usb-imagewriter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-19 22:15+0200\n"
+"PO-Revision-Date: 2009-03-23 23:19+0000\n"
+"Last-Translator: Mustafa VELİOĞLU <mustinet@mustinet.org>\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../lib/isodumper.py:113
+msgid "Image: "
+msgstr "Kalıp: "
+
+#: ../lib/isodumper.py:114
+msgid "Target Device: "
+msgstr "Hedef Donanım: "
+
+#: ../lib/isodumper.py:130
+msgid "Unmounting all partitions of "
+msgstr "Tüm bölümlerden çıkart "
+
+#: ../lib/isodumper.py:132
+msgid "Trying to unmount "
+msgstr "Çıkarmaya çalışıyor "
+
+#: ../lib/isodumper.py:138 ../lib/isodumper.py:144
+msgid "Error, umount "
+msgstr "Hata, umount "
+
+#: ../lib/isodumper.py:138
+msgid " was terminated by signal "
+msgstr " Sinyal tarafından sonlandırıldı mı "
+
+#: ../lib/isodumper.py:142
+msgid " successfully unmounted"
+msgstr " kalıp çıkarıldı"
+
+#: ../lib/isodumper.py:144
+msgid " returned "
+msgstr " Yanıtla "
+
+#: ../lib/isodumper.py:147
+msgid "Execution failed: "
+msgstr "Çalıştırma başarısız: "
+
+#: ../lib/isodumper.py:155
+msgid "Could not read mtab !"
+msgstr "mtab okuyamadı !"
+
+#: ../lib/isodumper.py:164 ../lib/isodumper.py:187
+msgid "Reading error."
+msgstr ""
+
+#: ../lib/isodumper.py:170
+msgid "You have not the rights for writing on the device"
+msgstr ""
+
+#: ../lib/isodumper.py:175
+msgid "Writing "
+msgstr "Yazı "
+
+#: ../lib/isodumper.py:175
+msgid " to "
+msgstr " şuna "
+
+#: ../lib/isodumper.py:176
+#, fuzzy
+msgid "Executing copy from "
+msgstr "Çalıştırılıyor: dd if="
+
+#: ../lib/isodumper.py:192
+#, fuzzy
+msgid "Writing error."
+msgstr "Yazı "
+
+#: ../lib/isodumper.py:197
+msgid "Wrote: "
+msgstr "Yazıldı: "
+
+#: ../lib/isodumper.py:205
+msgid "Image "
+msgstr "İmaj "
+
+#: ../lib/isodumper.py:205
+msgid " successfully written to"
+msgstr " Başarıyla Yazdı"
+
+#: ../lib/isodumper.py:206
+msgid "Bytes written: "
+msgstr ""
+
+#: ../share/isodumper/isodumper.glade.h:1
+msgid "IsoDumper"
+msgstr ""
+
+#: ../share/isodumper/isodumper.glade.h:2
+msgid ""
+"<b>Warning</b>\n"
+" This will <b>destroy all data</b> on the target\n"
+" device, are you sure you want to proceed ?\n"
+"\n"
+" If you say ok here, please <b>do not unplug</b>\n"
+" the device during the following operation."
+msgstr ""
+"<b>Uyarı</b>\n"
+"Bu işlem hedef aygıttaki<b>tüm bilgileri yokedecek</b> \n"
+"işlemi yapmak istediğnize emin misiniz?\n"
+"\n"
+"Eğer eminseniz, lütfen işlem devam ederken\n"
+" <b>aygıtı çıkarmayın</b>"
+
+#: ../share/isodumper/isodumper.glade.h:8
+#, fuzzy
+msgid ""
+"<b>Error</b>\n"
+" Something went wrong, please see the details\n"
+" window for the exact error.\n"
+" \n"
+" A logfile isodumper.log with the content will be saved in your\n"
+" homedir/.isodumper when the application is closed."
+msgstr ""
+"<b>Hata</b>\n"
+" Birşeyler Ters Gitti,Lütfen Detaylara Bakın\n"
+" Hata Penceresi\n"
+" \n"
+" Uygulama kapatılınca\n"
+" kayıt dosyası kaydedilecek."
+
+#: ../share/isodumper/isodumper.glade.h:14
+msgid "Write Image:"
+msgstr "Kalıp yaz:"
+
+#: ../share/isodumper/isodumper.glade.h:15
+msgid "Select an image file to be written to the device"
+msgstr "Yazmak için bir kalıp dosyası seçin"
+
+#: ../share/isodumper/isodumper.glade.h:16
+msgid "Select Image"
+msgstr "İmaj Seç"
+
+#: ../share/isodumper/isodumper.glade.h:17
+msgid "to"
+msgstr "Şuna"
+
+#: ../share/isodumper/isodumper.glade.h:18
+msgid "Select target device to write the image to"
+msgstr "Kalıp yazdırma için bir hedef sürücü seçin"
+
+#: ../share/isodumper/isodumper.glade.h:19
+msgid " "
+msgstr " "
+
+#: ../share/isodumper/isodumper.glade.h:20
+msgid "Details"
+msgstr "Detaylar"
+
+#: ../share/isodumper/isodumper.glade.h:21
+msgid "Write to device"
+msgstr "Aygıta yaz"
+
+#: ../share/isodumper/isodumper.glade.h:22
+msgid ""
+"<b>Error</b>\n"
+" No target devices were found. \n"
+"\n"
+" You need to plug in a USB Key\n"
+" to which the image can be written."
+msgstr ""
+"<b>Hata</b>\n"
+"Hedef aygıt bulunamadı. \n"
+"\n"
+"Görüntünün yazılması için\n"
+"Bir USB anahtarı takmalısınız"
+
+#: ../share/isodumper/isodumper.glade.h:27
+#, fuzzy
+msgid ""
+"<b>Success</b>\n"
+" The image was successfully written to the\n"
+" target device.\n"
+" \n"
+" You are free to unplug it now, a log isodumper.log \n"
+" of the operation will be saved in your homedir/.isodumper/ when\n"
+" you close the application."
+msgstr ""
+"<b>Başarı</b>\n"
+"Resim başarılı bir şekilde yazıldı\n"
+"Cıhaz Hedef.\n"
+"\n"
+"Sen, şimdi onu tıkamak için özgürsün, bir kütük\n"
+"Çalışma, senin homedirin kurtarılacak, eğerse\n"
+"Sen, uygulamayı kapatırsın."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd işlemi bir hata ile sonlandı !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "İmaj Yazıcı"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-iptal"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-kapat"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-tamam"

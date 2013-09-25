@@ -1,0 +1,218 @@
+# Norwegian Bokmal translation for usb-imagewriter
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the usb-imagewriter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: usb-imagewriter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-19 22:15+0200\n"
+"PO-Revision-Date: 2008-11-04 12:31+0000\n"
+"Last-Translator: Bjørn Olav Samdal <bjornsam@ulrik.uio.no>\n"
+"Language-Team: Norwegian Bokmal <nb@li.org>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../lib/isodumper.py:113
+msgid "Image: "
+msgstr "Bilde: "
+
+#: ../lib/isodumper.py:114
+msgid "Target Device: "
+msgstr "Mål Enhet: "
+
+#: ../lib/isodumper.py:130
+msgid "Unmounting all partitions of "
+msgstr "Fjern alle partisjoner som "
+
+#: ../lib/isodumper.py:132
+msgid "Trying to unmount "
+msgstr "Prøver å avmontere "
+
+#: ../lib/isodumper.py:138 ../lib/isodumper.py:144
+msgid "Error, umount "
+msgstr "Feil, avmonter "
+
+#: ../lib/isodumper.py:138
+msgid " was terminated by signal "
+msgstr " ble avsluttet med melding "
+
+#: ../lib/isodumper.py:142
+msgid " successfully unmounted"
+msgstr " avmontering vellykket"
+
+#: ../lib/isodumper.py:144
+msgid " returned "
+msgstr " tilbakestilt "
+
+#: ../lib/isodumper.py:147
+msgid "Execution failed: "
+msgstr "Utførelse feilet: "
+
+#: ../lib/isodumper.py:155
+msgid "Could not read mtab !"
+msgstr "Kunne ikke lese mtab !"
+
+#: ../lib/isodumper.py:164 ../lib/isodumper.py:187
+msgid "Reading error."
+msgstr ""
+
+#: ../lib/isodumper.py:170
+msgid "You have not the rights for writing on the device"
+msgstr ""
+
+#: ../lib/isodumper.py:175
+msgid "Writing "
+msgstr "Skriving "
+
+#: ../lib/isodumper.py:175
+msgid " to "
+msgstr " til "
+
+#: ../lib/isodumper.py:176
+#, fuzzy
+msgid "Executing copy from "
+msgstr "Utføring: dd if="
+
+#: ../lib/isodumper.py:192
+#, fuzzy
+msgid "Writing error."
+msgstr "Skriving "
+
+#: ../lib/isodumper.py:197
+msgid "Wrote: "
+msgstr "Skrev: "
+
+#: ../lib/isodumper.py:205
+msgid "Image "
+msgstr "Bilde "
+
+#: ../lib/isodumper.py:205
+msgid " successfully written to"
+msgstr " vellykket skrevet til"
+
+#: ../lib/isodumper.py:206
+msgid "Bytes written: "
+msgstr ""
+
+#: ../share/isodumper/isodumper.glade.h:1
+msgid "IsoDumper"
+msgstr ""
+
+#: ../share/isodumper/isodumper.glade.h:2
+msgid ""
+"<b>Warning</b>\n"
+" This will <b>destroy all data</b> on the target\n"
+" device, are you sure you want to proceed ?\n"
+"\n"
+" If you say ok here, please <b>do not unplug</b>\n"
+" the device during the following operation."
+msgstr ""
+"<b>Advarsel</b>\n"
+" Dette vil <b>ødelegge all data</b> på valgt\n"
+" lagringsmedium, er du sikker på at du ønsker å fortsette ?\n"
+"\n"
+" Hvis du velger ok, vennligst <b>fjern ikke lagringsmedium</b>\n"
+" under den valgte operasjonen."
+
+#: ../share/isodumper/isodumper.glade.h:8
+#, fuzzy
+msgid ""
+"<b>Error</b>\n"
+" Something went wrong, please see the details\n"
+" window for the exact error.\n"
+" \n"
+" A logfile isodumper.log with the content will be saved in your\n"
+" homedir/.isodumper when the application is closed."
+msgstr ""
+"<b>Feilmelding</b>\n"
+" Noe ble feil, se detaljer i\n"
+" vindu for feilmeldinger.\n"
+"\n"
+" En logfil med feilmeldingen blir lagret i din\n"
+" hjemmekatalog når programmet avsluttes."
+
+#: ../share/isodumper/isodumper.glade.h:14
+msgid "Write Image:"
+msgstr "Skriv Bilde:"
+
+#: ../share/isodumper/isodumper.glade.h:15
+msgid "Select an image file to be written to the device"
+msgstr "Velg bilde fil som skal skrives til enheten"
+
+#: ../share/isodumper/isodumper.glade.h:16
+msgid "Select Image"
+msgstr "Velg bilde"
+
+#: ../share/isodumper/isodumper.glade.h:17
+msgid "to"
+msgstr "til"
+
+#: ../share/isodumper/isodumper.glade.h:18
+msgid "Select target device to write the image to"
+msgstr "Velg medium å skrive image til"
+
+#: ../share/isodumper/isodumper.glade.h:19
+msgid " "
+msgstr " "
+
+#: ../share/isodumper/isodumper.glade.h:20
+msgid "Details"
+msgstr "Detaljer"
+
+#: ../share/isodumper/isodumper.glade.h:21
+msgid "Write to device"
+msgstr "Skriv til enheten"
+
+#: ../share/isodumper/isodumper.glade.h:22
+msgid ""
+"<b>Error</b>\n"
+" No target devices were found. \n"
+"\n"
+" You need to plug in a USB Key\n"
+" to which the image can be written."
+msgstr ""
+"<b>Error</b>\n"
+" Ingen mål enheter er funnet.  \n"
+"\n"
+" Du trenger å plugge inn en USB Nøkkel\n"
+" for å kunne skrive til enheten."
+
+#: ../share/isodumper/isodumper.glade.h:27
+#, fuzzy
+msgid ""
+"<b>Success</b>\n"
+" The image was successfully written to the\n"
+" target device.\n"
+" \n"
+" You are free to unplug it now, a log isodumper.log \n"
+" of the operation will be saved in your homedir/.isodumper/ when\n"
+" you close the application."
+msgstr ""
+"<b>Vellykket</b>\n"
+" Bildet ble skrevet til \n"
+" valgt område.\n"
+"\n"
+" Du kan fjerne tilkoblet tilkoblet medium, en log fil fra\n"
+" operasjonen vil bli lagret i din hjemmekatalog hvis\n"
+" du avslutter applikasjonen."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Prosessen dd stoppet med en feil !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageSkriver"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-lukk"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"

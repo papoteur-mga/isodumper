@@ -1,0 +1,218 @@
+# Czech translation for usb-imagewriter
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the usb-imagewriter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: usb-imagewriter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-19 22:15+0200\n"
+"PO-Revision-Date: 2008-07-10 14:11+0000\n"
+"Last-Translator: Petr Pulc <petrpulc@gmail.com>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../lib/isodumper.py:113
+msgid "Image: "
+msgstr "Obraz: "
+
+#: ../lib/isodumper.py:114
+msgid "Target Device: "
+msgstr "Cílové zařízení: "
+
+#: ../lib/isodumper.py:130
+msgid "Unmounting all partitions of "
+msgstr "Odpojuji všechny oddíly "
+
+#: ../lib/isodumper.py:132
+msgid "Trying to unmount "
+msgstr "Pokouším se odpojit "
+
+#: ../lib/isodumper.py:138 ../lib/isodumper.py:144
+msgid "Error, umount "
+msgstr "Chyba, odpojení "
+
+#: ../lib/isodumper.py:138
+msgid " was terminated by signal "
+msgstr " bylo přerušeno signálem "
+
+#: ../lib/isodumper.py:142
+msgid " successfully unmounted"
+msgstr " úspěšně odpojen"
+
+#: ../lib/isodumper.py:144
+msgid " returned "
+msgstr " vrátilo "
+
+#: ../lib/isodumper.py:147
+msgid "Execution failed: "
+msgstr "Spuštění selhalo: "
+
+#: ../lib/isodumper.py:155
+msgid "Could not read mtab !"
+msgstr "Nemohu přečíst mtab!"
+
+#: ../lib/isodumper.py:164 ../lib/isodumper.py:187
+msgid "Reading error."
+msgstr ""
+
+#: ../lib/isodumper.py:170
+msgid "You have not the rights for writing on the device"
+msgstr ""
+
+#: ../lib/isodumper.py:175
+msgid "Writing "
+msgstr "Zapisuji "
+
+#: ../lib/isodumper.py:175
+msgid " to "
+msgstr " do "
+
+#: ../lib/isodumper.py:176
+#, fuzzy
+msgid "Executing copy from "
+msgstr "Spoštím: dd if="
+
+#: ../lib/isodumper.py:192
+#, fuzzy
+msgid "Writing error."
+msgstr "Zapisuji "
+
+#: ../lib/isodumper.py:197
+msgid "Wrote: "
+msgstr "Zapsáno: "
+
+#: ../lib/isodumper.py:205
+msgid "Image "
+msgstr "Obraz "
+
+#: ../lib/isodumper.py:205
+msgid " successfully written to"
+msgstr " byl úspěšně zapsán do"
+
+#: ../lib/isodumper.py:206
+msgid "Bytes written: "
+msgstr ""
+
+#: ../share/isodumper/isodumper.glade.h:1
+msgid "IsoDumper"
+msgstr ""
+
+#: ../share/isodumper/isodumper.glade.h:2
+msgid ""
+"<b>Warning</b>\n"
+" This will <b>destroy all data</b> on the target\n"
+" device, are you sure you want to proceed ?\n"
+"\n"
+" If you say ok here, please <b>do not unplug</b>\n"
+" the device during the following operation."
+msgstr ""
+"<b>Varování</b>\n"
+" Toto <b>zničí všechna data</b> na cílovém\n"
+" zařízení, opravdu chcete pokračovat?\n"
+"\n"
+" Pokud budete pokračovat, prosím <b>neodpojujte</b>\n"
+" zařízení během příštích operací."
+
+#: ../share/isodumper/isodumper.glade.h:8
+#, fuzzy
+msgid ""
+"<b>Error</b>\n"
+" Something went wrong, please see the details\n"
+" window for the exact error.\n"
+" \n"
+" A logfile isodumper.log with the content will be saved in your\n"
+" homedir/.isodumper when the application is closed."
+msgstr ""
+"<b>Chyba</b>\n"
+" Něco se pokazilo, přesnou chybu zjistíte\n"
+" v okně s podrobnostmi.\n"
+" \n"
+" Záznam aplikace bude uložen v domovské složce,\n"
+" pokud bude aplikace zavřena."
+
+#: ../share/isodumper/isodumper.glade.h:14
+msgid "Write Image:"
+msgstr "Zapsat obraz:"
+
+#: ../share/isodumper/isodumper.glade.h:15
+msgid "Select an image file to be written to the device"
+msgstr "Zvolte soubor obrazu, který chcete zapsat na zařízení"
+
+#: ../share/isodumper/isodumper.glade.h:16
+msgid "Select Image"
+msgstr "Zvolte obraz"
+
+#: ../share/isodumper/isodumper.glade.h:17
+msgid "to"
+msgstr "do"
+
+#: ../share/isodumper/isodumper.glade.h:18
+msgid "Select target device to write the image to"
+msgstr "Zvolte cílové zařízení, na které chcete obraz zapsat"
+
+#: ../share/isodumper/isodumper.glade.h:19
+msgid " "
+msgstr " "
+
+#: ../share/isodumper/isodumper.glade.h:20
+msgid "Details"
+msgstr "Podrobnosti"
+
+#: ../share/isodumper/isodumper.glade.h:21
+msgid "Write to device"
+msgstr "Zapsat na zařízení"
+
+#: ../share/isodumper/isodumper.glade.h:22
+msgid ""
+"<b>Error</b>\n"
+" No target devices were found. \n"
+"\n"
+" You need to plug in a USB Key\n"
+" to which the image can be written."
+msgstr ""
+"<b>Chyba</b>\n"
+" Žádné cílové zařízení nebylo nalezeno. \n"
+"\n"
+" Musíte vložit USB klíč, na který\n"
+" má být obraz zapsán."
+
+#: ../share/isodumper/isodumper.glade.h:27
+#, fuzzy
+msgid ""
+"<b>Success</b>\n"
+" The image was successfully written to the\n"
+" target device.\n"
+" \n"
+" You are free to unplug it now, a log isodumper.log \n"
+" of the operation will be saved in your homedir/.isodumper/ when\n"
+" you close the application."
+msgstr ""
+"<b>Úspěch</b>\n"
+" Obraz byl úspěšně zapsán\n"
+" na cílové zařízení.\n"
+" \n"
+" Můžete jej nyní bezpečně odebrat. Záznam\n"
+" operace bude uložen v domovské složce,\n"
+" pokud bude aplikace zavřena."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Proces dd skončil chybou!"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
