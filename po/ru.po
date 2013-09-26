@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: _usb-image-writer-ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-19 22:15+0200\n"
-"PO-Revision-Date: 2009-06-04 19:04+0000\n"
-"Last-Translator: Egor Bushmelyov <Unknown>\n"
-"Language-Team: <en@li.org>\n"
+"PO-Revision-Date: 2013-09-25 22:51+0300\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>\n"
+"Language-Team:  <en@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,7 +36,8 @@ msgstr "Размонтирование всех устройств "
 msgid "Trying to unmount "
 msgstr "Попытка размонтирования "
 
-#: ../lib/isodumper.py:138 ../lib/isodumper.py:144
+#: ../lib/isodumper.py:138
+#: ../lib/isodumper.py:144
 msgid "Error, umount "
 msgstr "Ошибка, размонтировано "
 
@@ -60,13 +61,14 @@ msgstr "Выполнение не удалось: "
 msgid "Could not read mtab !"
 msgstr "Не удалось прочитать mtab!"
 
-#: ../lib/isodumper.py:164 ../lib/isodumper.py:187
+#: ../lib/isodumper.py:164
+#: ../lib/isodumper.py:187
 msgid "Reading error."
-msgstr ""
+msgstr "Ошибка чтения."
 
 #: ../lib/isodumper.py:170
 msgid "You have not the rights for writing on the device"
-msgstr ""
+msgstr "У Вас нет прав записи на устройство"
 
 #: ../lib/isodumper.py:175
 msgid "Writing "
@@ -77,14 +79,12 @@ msgid " to "
 msgstr " в "
 
 #: ../lib/isodumper.py:176
-#, fuzzy
 msgid "Executing copy from "
-msgstr "Исполнение: dd if="
+msgstr "Выполняется копирование с"
 
 #: ../lib/isodumper.py:192
-#, fuzzy
 msgid "Writing error."
-msgstr "Запись "
+msgstr "Ошибка чтения."
 
 #: ../lib/isodumper.py:197
 msgid "Wrote: "
@@ -100,11 +100,11 @@ msgstr " успешно записано в"
 
 #: ../lib/isodumper.py:206
 msgid "Bytes written: "
-msgstr ""
+msgstr "Записано байт:"
 
 #: ../share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
-msgstr ""
+msgstr "IsoDumper"
 
 #: ../share/isodumper/isodumper.glade.h:2
 msgid ""
@@ -115,14 +115,14 @@ msgid ""
 " If you say ok here, please <b>do not unplug</b>\n"
 " the device during the following operation."
 msgstr ""
-"На целевом устройстве будет <b>уничтожена вся информация</b> ,\n"
-"Вы действительно хотите продолжить?\n"
+"<b>Предупреждение</b>\n"
+" На целевом устройстве будет <b>уничтожена вся информация</b>.\n"
+" Вы действительно хотите продолжить?\n"
 "\n"
-"Если ответите \"Да\", пожалуйста, <b>не отключайте</b>\n"
-"устройство во время операции."
+" Если ответите \"Да\", пожалуйста, <b>не отключайте</b>\n"
+" устройство во время операции."
 
 #: ../share/isodumper/isodumper.glade.h:8
-#, fuzzy
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -135,8 +135,8 @@ msgstr ""
 " Что-то пошло не так, смотрите окно\n"
 " подробностей для уточнения ошибки.\n"
 " \n"
-" Лог-файл с содержанием будет сохранен в\n"
-" Вашем домашнем каталоге, если приложение закрыто."
+" Лог-файл isodumper.log с содержанием будет сохранен в\n"
+" Вашем домашнем каталоге/.isodumper, если приложение закрыть."
 
 #: ../share/isodumper/isodumper.glade.h:14
 msgid "Write Image:"
@@ -185,7 +185,6 @@ msgstr ""
 " на которое можно записать образ."
 
 #: ../share/isodumper/isodumper.glade.h:27
-#, fuzzy
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -196,12 +195,12 @@ msgid ""
 " you close the application."
 msgstr ""
 "<b>Успешно</b>\n"
-" Образ был успешно записан на\n"
-" целевое устройство.\n"
-" \n"
-" Вы можете отключить его, журнал\n"
-" операции будет сохранен в Вашем домашнем каталоге, если\n"
-" закрыли приложение."
+"Образ был успешно записан на\n"
+"целевое устройство.\n"
+"\n"
+"Вы можете отключить его, журнал isodumper.log\n"
+"операции будет сохранен в Вашем домашнем каталоге/.isodumper, когда\n"
+"Вы закроете программу."
 
 #~ msgid "The dd process ended with an error !"
 #~ msgstr "dd процесс был завершен с ошибкой!"
