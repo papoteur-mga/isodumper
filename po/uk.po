@@ -1,10 +1,10 @@
-# Ukrainian translation for usb-imagewriter
+# Ukrainian translation for isodumper
 # This file is distributed under the same license as the usb-imagewriter package.
 #
 # Yuri Chornoivan <yurchor@ukr.net>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: usb-imagewriter\n"
+"Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-19 22:15+0200\n"
 "PO-Revision-Date: 2013-09-25 18:56+0300\n"
