@@ -1,11 +1,10 @@
-# French translation for usb-imagewriter
-# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# French translation for isodumper
 # This file is distributed under the same license as the usb-imagewriter package.
 #
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2008, 2013.
+# Papoteur <papoteur@mageialinux-online.org>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: usb-imagewriter\n"
+"Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-19 21:49+0200\n"
 "PO-Revision-Date: 2013-09-25 18:30+0200\n"
