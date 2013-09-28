@@ -1,13 +1,11 @@
 # translation of _usb-image-writer-ru.po to
-# Russian translation for usb-imagewriter
-# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# Russian translation for isodumper
 # This file is distributed under the same license as the usb-imagewriter package.
 #
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
-# Sergei Zivukov <ekonomvygoda@yandex.ru>, 2008.
+# Sergei Zivukov <ekonomvygoda@yandex.ru>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: _usb-image-writer-ru\n"
+"Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-19 22:15+0200\n"
 "PO-Revision-Date: 2013-09-25 22:51+0300\n"
