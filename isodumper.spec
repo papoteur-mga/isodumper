@@ -1,6 +1,6 @@
 Name:		isodumper
-Version:	0.1
-Release:	%mkrel 0.2
+Version:	0.10
+Release:	%mkrel 1
 Summary:	Tool for writing ISO images on a USB stick
 Summary(fr_FR):	Outil pour écrire des images ISO sur une clé USB
 License:	GPLv2+
@@ -56,9 +56,9 @@ install -m 644 share/applications/%{name}.desktop %{buildroot}%{_datadir}/applic
 install -m 755 lib/find_devices %{buildroot}%{_usr}/lib/%{name}/find_devices
 install -m 755 lib/%{name}.py %{buildroot}%{_usr}/lib/%{name}/%{name}.py
 
-# isodumper.mo
-pushd ./po
-for f in fr;
+# isodumper.mo translations
+pushd share/locale
+for f in *;
 do
 		poname=${f:0:5}
 		mkdir -p %{buildroot}%{_datadir}/locale/$poname/LC_MESSAGES
