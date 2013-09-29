@@ -24,16 +24,16 @@ This software is distributed under the terms of the
 
 Authors
 --------
-Papoteur, <papoteur@mageialinux-online.org>
+- Papoteur, <papoteur@mageialinux-online.org>
 
 
 Contributors
 --------
-david.david, <david.david@mageialinux-online.org>
+- david.david, <david.david@mageialinux-online.org>
 
 
 Translators
 --------
-Papoteur - French
-Sergei Zivukov - Russian
-Yuri Chornoivan - Ukrainian
+- Papoteur - French
+- Sergei Zivukov - Russian
+- Yuri Chornoivan - Ukrainian
