@@ -1,0 +1,206 @@
+# Asturian translation for usb-imagewriter
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the usb-imagewriter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid   ""
+msgstr  "Project-Id-Version: usb-imagewriter\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-09-19 21:49+0200\n"
+        "PO-Revision-Date: 2010-05-27 18:13+0000\n"
+        "Last-Translator: ivarela <ivarela@ubuntu.com>\n"
+        "Language-Team: Asturian <ast@li.org>\n"
+        "Language: ast\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+        "X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
+        "X-Generator: Launchpad (build 16692)\n"
+
+#: ../lib/isodumper.py:113
+msgid   "Image: "
+msgstr  "Imaxe: "
+
+#: ../lib/isodumper.py:114
+msgid   "Target Device: "
+msgstr  "Preséu de destín: "
+
+#: ../lib/isodumper.py:130
+msgid   "Unmounting all partitions of "
+msgstr  "Desmontando toles particiones de "
+
+#: ../lib/isodumper.py:132
+msgid   "Trying to unmount "
+msgstr  "Intentando desmontar "
+
+#: ../lib/isodumper.py:138
+msgid   " was terminated by signal "
+msgstr  " terminóse pola señal "
+
+#: ../lib/isodumper.py:138 ../lib/isodumper.py:144
+msgid   "Error, umount "
+msgstr  "Fallu, desmontar "
+
+#: ../lib/isodumper.py:142
+msgid   " successfully unmounted"
+msgstr  " desmontáu correchamente"
+
+#: ../lib/isodumper.py:144
+msgid   " returned "
+msgstr  " devueltu "
+
+#: ../lib/isodumper.py:147
+msgid   "Execution failed: "
+msgstr  "Falló la execución: "
+
+#: ../lib/isodumper.py:155
+msgid   "Could not read mtab !"
+msgstr  "¡ Nun ye dable lleer mtab !"
+
+#: ../lib/isodumper.py:164 ../lib/isodumper.py:187
+msgid   "Reading error."
+msgstr  ""
+
+#: ../lib/isodumper.py:170
+msgid   "You have not the rights for writing on the device"
+msgstr  ""
+
+#: ../lib/isodumper.py:175
+msgid   " to "
+msgstr  " a "
+
+#: ../lib/isodumper.py:175
+msgid   "Writing "
+msgstr  "Escribiendo "
+
+#: ../lib/isodumper.py:176
+msgid   "Executing copy from "
+msgstr  ""
+
+#: ../lib/isodumper.py:192
+msgid   "Writing error."
+msgstr  ""
+
+#: ../lib/isodumper.py:197
+msgid   "Wrote: "
+msgstr  "Escritu: "
+
+#: ../lib/isodumper.py:205
+msgid   " successfully written to"
+msgstr  " escritu con éxitu en"
+
+#: ../lib/isodumper.py:205
+msgid   "Image "
+msgstr  "Imaxe "
+
+#: ../lib/isodumper.py:206
+msgid   "Bytes written: "
+msgstr  ""
+
+#: ../share/isodumper/isodumper.glade.h:1
+msgid   "IsoDumper"
+msgstr  ""
+
+#: ../share/isodumper/isodumper.glade.h:2
+msgid   "<b>Warning</b>\n"
+        " This will <b>destroy all data</b> on the target\n"
+        " device, are you sure you want to proceed ?\n"
+        "\n"
+        " If you say ok here, please <b>do not unplug</b>\n"
+        " the device during the following operation."
+msgstr  "<b>Avisu</b>\n"
+        "Esto <b>va desaniciar tolos datos</b> nel preséu\n"
+        "de destín, ¿daveres quies siguirr?\n"
+        "\n"
+        "Si calques Aceutar, <b>nun desconeutes</b>\n"
+        "el preséu mentantu dure la operación."
+
+#: ../share/isodumper/isodumper.glade.h:8
+msgid   "<b>Error</b>\n"
+        " Something went wrong, please see the details\n"
+        " window for the exact error.\n"
+        " \n"
+        " A logfile isodumper.log with the content will be saved in your\n"
+        " homedir/.isodumper when the application is closed."
+msgstr  "<b>Fallu</b>\n"
+        "Dalgo foi mal, por favor llee los detalles del error\n"
+        "na ventana.\n"
+        "\n"
+        "Va atroxase un ficheru col conteníu del rexistru\n"
+        "nel to direutoriu home si se zarra l'aplicación."
+
+#: ../share/isodumper/isodumper.glade.h:14
+msgid   "Write Image:"
+msgstr  "Escribir imaxe:"
+
+#: ../share/isodumper/isodumper.glade.h:15
+msgid   "Select an image file to be written to the device"
+msgstr  "Esbilla un ficheru imaxe pa escribir nel preséu"
+
+#: ../share/isodumper/isodumper.glade.h:16
+msgid   "Select Image"
+msgstr  "Esbillar Imaxe"
+
+#: ../share/isodumper/isodumper.glade.h:17
+msgid   "to"
+msgstr  "a"
+
+#: ../share/isodumper/isodumper.glade.h:18
+msgid   "Select target device to write the image to"
+msgstr  "Esbilla'l preséu de destín au escribir la imaxe"
+
+#: ../share/isodumper/isodumper.glade.h:19
+msgid   " "
+msgstr  " "
+
+#: ../share/isodumper/isodumper.glade.h:20
+msgid   "Details"
+msgstr  "Detalles"
+
+#: ../share/isodumper/isodumper.glade.h:21
+msgid   "Write to device"
+msgstr  "Escribir al preséu"
+
+#: ../share/isodumper/isodumper.glade.h:22
+msgid   "<b>Error</b>\n"
+        " No target devices were found. \n"
+        "\n"
+        " You need to plug in a USB Key\n"
+        " to which the image can be written."
+msgstr  "<b>Fallu</b>\n"
+        "Nun s'alcontraron preseos de destín.\n"
+        "\n"
+        "Necesites coneutar una memoria USB\n"
+        "na que se pueda escribir la imaxe."
+
+#: ../share/isodumper/isodumper.glade.h:27
+msgid   "<b>Success</b>\n"
+        " The image was successfully written to the\n"
+        " target device.\n"
+        " \n"
+        " You are free to unplug it now, a log isodumper.log \n"
+        " of the operation will be saved in your homedir/.isodumper/ when\n"
+        " you close the application."
+msgstr  "<b>Fecho</b>\n"
+        " La imaxe grabóse correchamente nel\n"
+        " preséu de destín.\n"
+        "\n"
+        " Puedes desconeutalu agora, va guardase un\n"
+        " informe de la operación nel to direutoriu home\n"
+        " si zarres l'aplicación."
+
+#~ msgid        "gtk-ok"
+#~ msgstr       "gtk-ok"
+
+#~ msgid        "gtk-close"
+#~ msgstr       "gtk-close"
+
+#~ msgid        "gtk-cancel"
+#~ msgstr       "gtk-cancel"
+
+#~ msgid        "ImageWriter"
+#~ msgstr       "ImageWriter"
+
+#~ msgid        "The dd process ended with an error !"
+#~ msgstr       "El procesu dd terminó con un fallu !"
+
