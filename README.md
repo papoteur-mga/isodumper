@@ -18,7 +18,8 @@ Requirements
 License
 --------
 
-GPLv2+, see COPYING.
+This software is distributed under the terms of the
+[GNU Public License, v2](COPYING)
 
 Authors
 --------
