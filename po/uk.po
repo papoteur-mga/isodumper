@@ -1,5 +1,7 @@
-# Ukrainian translation for isodumper
-# This file is distributed under the same license as the usb-imagewriter package.
+# Ukrainian translation for isodumper package.
+# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the isodumper package.
+# Automatically generated, 2013.
 #
 # Yuri Chornoivan <yurchor@ukr.net>, 2013.
 msgid ""

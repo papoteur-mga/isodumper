@@ -1,6 +1,8 @@
 # translation of _usb-image-writer-ru.po to
-# Russian translation for isodumper
-# This file is distributed under the same license as the usb-imagewriter package.
+# Russian translation for isodumper package.
+# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the isodumper package.
+# Automatically generated, 2013.
 #
 # Sergei Zivukov <ekonomvygoda@yandex.ru>, 2013.
 msgid ""

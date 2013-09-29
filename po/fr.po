@@ -1,5 +1,7 @@
-# French translation for isodumper
-# This file is distributed under the same license as the usb-imagewriter package.
+# French translation for isodumper package.
+# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the isodumper package.
+# Automatically generated, 2013.
 #
 # Papoteur <papoteur@mageialinux-online.org>, 2013.
 msgid ""
