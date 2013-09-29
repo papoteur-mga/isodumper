@@ -21,10 +21,19 @@ License
 This software is distributed under the terms of the
 [GNU Public License, v2](COPYING)
 
+
 Authors
 --------
 Papoteur, <papoteur@mageialinux-online.org>
 
+
 Contributors
 --------
 david.david, <david.david@mageialinux-online.org>
+
+
+Translators
+--------
+Papoteur - French
+Sergei Zivukov - Russian
+Yuri Chornoivan - Ukrainian
