@@ -6,6 +6,8 @@ Comment[de]=Ein Programm zum scheiben von *.img and *.iso Dateien auf USB-Sicks
 Comment[pt]=Um Programa para gravar ficheiros *.img e *.iso em dispositivos USB
 Comment[uk]=Програма з графічним інтерфейсом для запису файлів img та iso на носії USB
 Comment[ru]=Графическая утилита для записи .img и.iso файлов на USB диск
+Comment[es]=Utilidad gráfica para grabar ficheros .img e .iso en
+dispositivos usb.
 Icon=isodumper.png
 Exec=isodumper
 Type=Application
