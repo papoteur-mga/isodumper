@@ -3,15 +3,26 @@
 set -e
 
 cd "$(readlink -f "$(dirname "$0")/..")"
-
-find "$PWD/po" -type f -name '*.po' | \
-while read po_file; do
-	language="$(basename "$po_file")"
+update_mo(){
+	echo $1
+	language="$(basename "$1")"
 	language="${language%.po}"
 	target="$PWD/share/locale/$language/LC_MESSAGES/isodumper.mo"
+	echo $target
 	/bin/mkdir --parents "$(dirname "$target")"
 	/usr/bin/msgfmt \
 		--check \
 		--output-file="$target" \
-		"$po_file"
-done
+		"$1"
+}
+
+if test "$1"; then
+  for l in $(find "$PWD/po" -type f -name "$1.po"); do
+  echo $l
+  update_mo "$l"
+  done
+else
+  for l in $(find "$PWD/po" -type f -name '*.po'); do
+    update_mo "$l"
+  done
+fi
