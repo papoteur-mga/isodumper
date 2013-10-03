@@ -37,3 +37,5 @@ Translators
 - Papoteur - French
 - Sergei Zivukov - Russian
 - Yuri Chornoivan - Ukrainian
+- marja - Dutch
+- motitos - Spanish
