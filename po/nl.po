@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: usb-imagewriter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-19 22:15+0200\n"
-"PO-Revision-Date: 2008-08-07 13:00+0000\n"
-"Last-Translator: Daniil Sorokin <d.sorokin.10@gmail.com>\n"
-"Language-Team: Dutch <nl@li.org>\n"
+"PO-Revision-Date: 2013-09-28 19:00+0200\n"
+"Last-Translator: marja <marja@mageia.org>\n"
+"Language-Team: Dutch <i18n-nl@ml.mageia.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +28,7 @@ msgstr "Doelstation: "
 
 #: ../lib/isodumper.py:130
 msgid "Unmounting all partitions of "
-msgstr "Loskloppelen alle partities van "
+msgstr "Alle partities loskoppelen van "
 
 #: ../lib/isodumper.py:132
 msgid "Trying to unmount "
@@ -40,7 +40,7 @@ msgstr "Fout, loskoppelen "
 
 #: ../lib/isodumper.py:138
 msgid " was terminated by signal "
-msgstr " is afgebroken door signal "
+msgstr " is afgebroken door signaal "
 
 #: ../lib/isodumper.py:142
 msgid " successfully unmounted"
@@ -60,11 +60,11 @@ msgstr "Kon mtab niet lezen !"
 
 #: ../lib/isodumper.py:164 ../lib/isodumper.py:187
 msgid "Reading error."
-msgstr ""
+msgstr "Leesfout."
 
 #: ../lib/isodumper.py:170
 msgid "You have not the rights for writing on the device"
-msgstr ""
+msgstr "U heeft geen recht om naar het apparaat te schrijven"
 
 #: ../lib/isodumper.py:175
 msgid "Writing "
@@ -75,14 +75,12 @@ msgid " to "
 msgstr " naar "
 
 #: ../lib/isodumper.py:176
-#, fuzzy
 msgid "Executing copy from "
-msgstr "Uitvoeren: dd if="
+msgstr "Uitvoeren: kopieren van "
 
 #: ../lib/isodumper.py:192
-#, fuzzy
 msgid "Writing error."
-msgstr "Schrijven "
+msgstr "Schrijffout. "
 
 #: ../lib/isodumper.py:197
 msgid "Wrote: "
@@ -98,11 +96,11 @@ msgstr " met succes geschreven naar"
 
 #: ../lib/isodumper.py:206
 msgid "Bytes written: "
-msgstr ""
+msgstr "Bytes geschreven: "
 
 #: ../share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
-msgstr ""
+msgstr "IsoDumper"
 
 #: ../share/isodumper/isodumper.glade.h:2
 msgid ""
@@ -117,11 +115,10 @@ msgstr ""
 " Dit zal <b>alle data vernietigen</b> op het\n"
 " doelstation, weet u zeker dat u door wilt gaan?\n"
 "\n"
-" Indien u OK antwoordt, <b>ontkoppel het station niet</b>\n"
+" Indien u OK antwoordt, <b>ontkoppel het station dan niet</b>\n"
 " gedurende de volgende bewerking."
 
 #: ../share/isodumper/isodumper.glade.h:8
-#, fuzzy
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -134,8 +131,8 @@ msgstr ""
 " Er is iets misgegaan, zie details-\n"
 " venster voor de exacte fout.\n"
 " \n"
-" Een log-bestand met de inhoud zal worden opgeslagen in uw\n"
-" homedir als het programma is afgesloten."
+" Een log-bestand isodumper.log met de inhoud zal worden opgeslagen in uw\n"
+" homedir/.isodumper als het programma is afgesloten."
 
 #: ../share/isodumper/isodumper.glade.h:14
 msgid "Write Image:"
@@ -155,7 +152,7 @@ msgstr "naar"
 
 #: ../share/isodumper/isodumper.glade.h:18
 msgid "Select target device to write the image to"
-msgstr "Kies doelstation om daarnaar het Image-bestand te schrijven"
+msgstr "Kies doelstation om het Image-bestand naar toe te schrijven"
 
 #: ../share/isodumper/isodumper.glade.h:19
 msgid " "
@@ -198,8 +195,8 @@ msgstr ""
 " Het Image was succesvol geschreven naar\n"
 " het doelstation.\n"
 " \n"
-" U kunt het nu loskoppelen, een log-bestand van de\n"
-" handeling zal worden opgeslagen in uw homedir wanneer\n"
+" U kunt het nu loskoppelen, een log-bestand isodumper.log van de\n"
+" handeling zal worden opgeslagen in uw homedir/.isodumper wanneer\n"
 " het programma afsluit."
 
 #~ msgid "The dd process ended with an error !"
