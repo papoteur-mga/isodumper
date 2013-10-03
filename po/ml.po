@@ -1,11 +1,12 @@
-# Malayalam translation for usb-imagewriter
-# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
-# This file is distributed under the same license as the usb-imagewriter package.
+# Malayalam translation for isodumper package.
+# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the isodumper package.
+# Automatically generated, 2013.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: usb-imagewriter\n"
+"Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-19 22:15+0200\n"
 "PO-Revision-Date: 2008-10-03 06:23+0000\n"

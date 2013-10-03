@@ -1,107 +1,106 @@
-# translation of _usb-image-writer-ru.po to
-# Russian translation for isodumper package.
+# Croatian translation for isodumper package.
 # Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the isodumper package.
 # Automatically generated, 2013.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# Sergei Zivukov <ekonomvygoda@yandex.ru>, 2013.
 msgid   ""
 msgstr  "Project-Id-Version: isodumper\n"
         "Report-Msgid-Bugs-To: \n"
         "POT-Creation-Date: 2013-09-19 21:49+0200\n"
-        "PO-Revision-Date: 2013-09-25 22:51+0300\n"
-        "Last-Translator: AlexL <loginov.alex.valer@gmail.com>\n"
-        "Language-Team:  <en@li.org>\n"
-        "Language: ru\n"
+        "PO-Revision-Date: 2012-11-13 02:22+0000\n"
+        "Last-Translator: gogo <trebelnik2@gmail.com>\n"
+        "Language-Team: Croatian <hr@li.org>\n"
+        "Language: hr\n"
         "MIME-Version: 1.0\n"
         "Content-Type: text/plain; charset=UTF-8\n"
         "Content-Transfer-Encoding: 8bit\n"
-        "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
-        "X-Generator: Launchpad (build Unknown)\n"
+        "X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
+        "X-Generator: Launchpad (build 16692)\n"
 
 #: ../lib/isodumper.py:113
 msgid   "Image: "
-msgstr  "Образ: "
+msgstr  "Slika: "
 
 #: ../lib/isodumper.py:114
 msgid   "Target Device: "
-msgstr  "Целевое устройство: "
+msgstr  "Uređaj zapisivanja: "
 
 #: ../lib/isodumper.py:130
 msgid   "Unmounting all partitions of "
-msgstr  "Размонтирование всех устройств "
+msgstr  "Demontiranje svih particija od "
 
 #: ../lib/isodumper.py:132
 msgid   "Trying to unmount "
-msgstr  "Попытка размонтирования "
+msgstr  "Pokušavanje demontiranja "
 
 #: ../lib/isodumper.py:138
 msgid   " was terminated by signal "
-msgstr  " был прерван с сигналом "
+msgstr  " je prekinuo signal "
 
 #: ../lib/isodumper.py:138 ../lib/isodumper.py:144
 msgid   "Error, umount "
-msgstr  "Ошибка, размонтировано "
+msgstr  "Greška, demontiranje "
 
 #: ../lib/isodumper.py:142
 msgid   " successfully unmounted"
-msgstr  " успешно размонтировано"
+msgstr  " uspješno demontirani"
 
 #: ../lib/isodumper.py:144
 msgid   " returned "
-msgstr  " возвратил "
+msgstr  " vraćeno "
 
 #: ../lib/isodumper.py:147
 msgid   "Execution failed: "
-msgstr  "Выполнение не удалось: "
+msgstr  "Pokretanje neuspjelo: "
 
 #: ../lib/isodumper.py:155
 msgid   "Could not read mtab !"
-msgstr  "Не удалось прочитать mtab!"
+msgstr  "Nemoguće je pročitati mtab !"
 
 #: ../lib/isodumper.py:164 ../lib/isodumper.py:187
 msgid   "Reading error."
-msgstr  "Ошибка чтения."
+msgstr  ""
 
 #: ../lib/isodumper.py:170
 msgid   "You have not the rights for writing on the device"
-msgstr  "У Вас нет прав записи на устройство"
+msgstr  ""
 
 #: ../lib/isodumper.py:175
 msgid   " to "
-msgstr  " в "
+msgstr  " u "
 
 #: ../lib/isodumper.py:175
 msgid   "Writing "
-msgstr  "Запись "
+msgstr  "Zapisivanje "
 
 #: ../lib/isodumper.py:176
 msgid   "Executing copy from "
-msgstr  "Выполняется копирование с"
+msgstr  ""
 
 #: ../lib/isodumper.py:192
 msgid   "Writing error."
-msgstr  "Ошибка чтения."
+msgstr  ""
 
 #: ../lib/isodumper.py:197
 msgid   "Wrote: "
-msgstr  "Записано: "
+msgstr  "Zapisao: "
 
 #: ../lib/isodumper.py:205
 msgid   " successfully written to"
-msgstr  " успешно записано в"
+msgstr  " je uspješno zapisana"
 
 #: ../lib/isodumper.py:205
 msgid   "Image "
-msgstr  "Образ "
+msgstr  "Slika "
 
 #: ../lib/isodumper.py:206
 msgid   "Bytes written: "
-msgstr  "Записано байт:"
+msgstr  ""
 
 #: ../share/isodumper/isodumper.glade.h:1
 msgid   "IsoDumper"
-msgstr  "IsoDumper"
+msgstr  ""
 
 #: ../share/isodumper/isodumper.glade.h:2
 msgid   "<b>Warning</b>\n"
@@ -110,12 +109,12 @@ msgid   "<b>Warning</b>\n"
         "\n"
         " If you say ok here, please <b>do not unplug</b>\n"
         " the device during the following operation."
-msgstr  "<b>Предупреждение</b>\n"
-        " На целевом устройстве будет <b>уничтожена вся информация</b>.\n"
-        " Вы действительно хотите продолжить?\n"
+msgstr  "<b>Upozorenje</b>\n"
+        " Ova radnja će <b>uništiti sve podatke</b> na uređaju\n"
+        " zapisivanja, sigurno želite nastaviti zapisivanje?\n"
         "\n"
-        " Если ответите \"Да\", пожалуйста, <b>не отключайте</b>\n"
-        " устройство во время операции."
+        " Ako nastavite zapisivanje, <b>ne odspajajte</b>\n"
+        " uređaj tijekom sljedeće radnje."
 
 #: ../share/isodumper/isodumper.glade.h:8
 msgid   "<b>Error</b>\n"
@@ -124,32 +123,32 @@ msgid   "<b>Error</b>\n"
         " \n"
         " A logfile isodumper.log with the content will be saved in your\n"
         " homedir/.isodumper when the application is closed."
-msgstr  "<b>Ошибка</b>\n"
-        " Что-то пошло не так, смотрите окно\n"
-        " подробностей для уточнения ошибки.\n"
+msgstr  "<b>Greška</b>\n"
+        " Nešto je krenulo po zlu, pogledajte\n"
+        " prozor pojedinosti za točnu grešku.\n"
         " \n"
-        " Лог-файл isodumper.log с содержанием будет сохранен в\n"
-        " Вашем домашнем каталоге/.isodumper, если приложение закрыть."
+        " Datoteka zapisa sa sadržajem biti će spremljena u\n"
+        " vašu Osobnu mapu ako se aplikacija zatvori."
 
 #: ../share/isodumper/isodumper.glade.h:14
 msgid   "Write Image:"
-msgstr  "Записать образ:"
+msgstr  "Zapisivanje slike:"
 
 #: ../share/isodumper/isodumper.glade.h:15
 msgid   "Select an image file to be written to the device"
-msgstr  "Выбранный файл образа буден записан на устройство"
+msgstr  "Odaberite datoteku slike za zaspis na uređaj"
 
 #: ../share/isodumper/isodumper.glade.h:16
 msgid   "Select Image"
-msgstr  "Выбрать образ"
+msgstr  "Odaberi sliku"
 
 #: ../share/isodumper/isodumper.glade.h:17
 msgid   "to"
-msgstr  "в"
+msgstr  "u"
 
 #: ../share/isodumper/isodumper.glade.h:18
 msgid   "Select target device to write the image to"
-msgstr  "Выбрать целевое устройство для записи образа"
+msgstr  "Odaberite uređaj zapisivanja za zapis slike"
 
 #: ../share/isodumper/isodumper.glade.h:19
 msgid   " "
@@ -157,11 +156,11 @@ msgstr  " "
 
 #: ../share/isodumper/isodumper.glade.h:20
 msgid   "Details"
-msgstr  "Подробности"
+msgstr  "Pojedinosti"
 
 #: ../share/isodumper/isodumper.glade.h:21
 msgid   "Write to device"
-msgstr  "Записать в устройство"
+msgstr  "Zapiši na uređaj"
 
 #: ../share/isodumper/isodumper.glade.h:22
 msgid   "<b>Error</b>\n"
@@ -169,11 +168,11 @@ msgid   "<b>Error</b>\n"
         "\n"
         " You need to plug in a USB Key\n"
         " to which the image can be written."
-msgstr  "<b>Ошибка</b>\n"
-        " Целевое устройство не было найдено. \n"
+msgstr  "<b>Greška</b>\n"
+        " Nema pronađenih uređaja zapisivanja. \n"
         "\n"
-        " Вам нужно подключить USB-устройство,\n"
-        " на которое можно записать образ."
+        " Morate spojiti USB uređaj\n"
+        " na koji slika može biti zapisana."
 
 #: ../share/isodumper/isodumper.glade.h:27
 msgid   "<b>Success</b>\n"
@@ -183,25 +182,26 @@ msgid   "<b>Success</b>\n"
         " You are free to unplug it now, a log isodumper.log \n"
         " of the operation will be saved in your homedir/.isodumper/ when\n"
         " you close the application."
-msgstr  "<b>Успешно</b>\n"
-        "Образ был успешно записан на\n"
-        "целевое устройство.\n"
-        "\n"
-        "Вы можете отключить его, журнал isodumper.log\n"
-        "операции будет сохранен в Вашем домашнем каталоге/.isodumper, когда\n"
-        "Вы закроете программу."
+msgstr  "<b>Slika uspješno zapisana</b>\n"
+        " Slika je uspješno zapisana\n"
+        " na uređaj zapisivanja.\n"
+        " \n"
+        " Sada možete odspojiti vaš USB, zapis radnji\n"
+        " biti će spremljen u Osobnoj mapi\n"
+        " ako zatvorite aplikaciju."
 
 #~ msgid        "gtk-ok"
-#~ msgstr       "gtk-ok"
+#~ msgstr       "U redu"
 
 #~ msgid        "gtk-close"
-#~ msgstr       "gtk-close"
+#~ msgstr       "Zatvori"
 
 #~ msgid        "gtk-cancel"
-#~ msgstr       "gtk-cancel"
+#~ msgstr       "Poništi zapisivanje"
 
 #~ msgid        "ImageWriter"
-#~ msgstr       "ImageWriter"
+#~ msgstr       "Zapisnik slika"
 
 #~ msgid        "The dd process ended with an error !"
-#~ msgstr       "dd процесс был завершен с ошибкой!"
+#~ msgstr       "'dd' radnja je završila greškom!"
+

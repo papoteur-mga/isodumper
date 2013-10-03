@@ -1,215 +1,209 @@
-# French translation for isodumper
-# This file is distributed under the same license as the usb-imagewriter package.
+# French translation for isodumper package.
+# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the isodumper package.
+# Automatically generated, 2013.
 #
 # Papoteur <papoteur@mageialinux-online.org>, 2013.
-msgid ""
-msgstr ""
-"Project-Id-Version: isodumper\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-19 21:49+0200\n"
-"PO-Revision-Date: 2013-09-25 18:30+0200\n"
-"Last-Translator: Papoteur\n"
-"Language-Team: French <kde-i18n-doc@kde.org>\n"
-"Language: fr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
-"X-Generator: Lokalize 1.4\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+msgid   ""
+msgstr  "Project-Id-Version: isodumper\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-09-19 21:49+0200\n"
+        "PO-Revision-Date: 2013-09-25 18:30+0200\n"
+        "Last-Translator: Papoteur\n"
+        "Language-Team: French <kde-i18n-doc@kde.org>\n"
+        "Language: fr\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+        "X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
+        "X-Generator: Lokalize 1.4\n"
+        "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../lib/isodumper.py:113
-msgid "Image: "
-msgstr "Image : "
+msgid   "Image: "
+msgstr  "Image : "
 
 #: ../lib/isodumper.py:114
-msgid "Target Device: "
-msgstr "Périphérique cible : "
+msgid   "Target Device: "
+msgstr  "Périphérique cible : "
 
 #: ../lib/isodumper.py:130
-msgid "Unmounting all partitions of "
-msgstr "Démonte toutes les partitions de "
+msgid   "Unmounting all partitions of "
+msgstr  "Démonte toutes les partitions de "
 
 #: ../lib/isodumper.py:132
-msgid "Trying to unmount "
-msgstr "Essaie de démonter "
-
-#: ../lib/isodumper.py:138 ../lib/isodumper.py:144
-msgid "Error, umount "
-msgstr "Erreur, umount "
+msgid   "Trying to unmount "
+msgstr  "Essaie de démonter "
 
 #: ../lib/isodumper.py:138
-msgid " was terminated by signal "
-msgstr " a été terminé par le signal "
+msgid   " was terminated by signal "
+msgstr  " a été terminé par le signal "
+
+#: ../lib/isodumper.py:138 ../lib/isodumper.py:144
+msgid   "Error, umount "
+msgstr  "Erreur, umount "
 
 #: ../lib/isodumper.py:142
-msgid " successfully unmounted"
-msgstr " correctement démonté"
+msgid   " successfully unmounted"
+msgstr  " correctement démonté"
 
 #: ../lib/isodumper.py:144
-msgid " returned "
-msgstr " a renvoyé "
+msgid   " returned "
+msgstr  " a renvoyé "
 
 #: ../lib/isodumper.py:147
-msgid "Execution failed: "
-msgstr "L'exécution a échoué : "
+msgid   "Execution failed: "
+msgstr  "L'exécution a échoué : "
 
 #: ../lib/isodumper.py:155
-msgid "Could not read mtab !"
-msgstr "Impossible de lire mtab !"
+msgid   "Could not read mtab !"
+msgstr  "Impossible de lire mtab !"
 
 #: ../lib/isodumper.py:164 ../lib/isodumper.py:187
-msgid "Reading error."
-msgstr "Erreur de lecture."
+msgid   "Reading error."
+msgstr  "Erreur de lecture."
 
 #: ../lib/isodumper.py:170
-msgid "You have not the rights for writing on the device"
-msgstr "Vous n'avez pas les droits d'écriture sur le périphérique"
+msgid   "You have not the rights for writing on the device"
+msgstr  "Vous n'avez pas les droits d'écriture sur le périphérique"
 
 #: ../lib/isodumper.py:175
-msgid "Writing "
-msgstr "Écrit "
+msgid   " to "
+msgstr  " sur "
 
 #: ../lib/isodumper.py:175
-msgid " to "
-msgstr " sur "
+msgid   "Writing "
+msgstr  "Écrit "
 
 #: ../lib/isodumper.py:176
-msgid "Executing copy from "
-msgstr "Exécute la copie de "
+msgid   "Executing copy from "
+msgstr  "Exécute la copie de "
 
 #: ../lib/isodumper.py:192
-msgid "Writing error."
-msgstr "Erreur d'écriture."
+msgid   "Writing error."
+msgstr  "Erreur d'écriture."
 
 #: ../lib/isodumper.py:197
-msgid "Wrote: "
-msgstr "Écrit : "
+msgid   "Wrote: "
+msgstr  "Écrit : "
 
 #: ../lib/isodumper.py:205
-msgid "Image "
-msgstr "Image "
+msgid   " successfully written to"
+msgstr  " écrite avec succès sur"
 
 #: ../lib/isodumper.py:205
-msgid " successfully written to"
-msgstr " écrite avec succès sur"
+msgid   "Image "
+msgstr  "Image "
 
 #: ../lib/isodumper.py:206
-msgid "Bytes written: "
-msgstr "Octets écrits : "
+msgid   "Bytes written: "
+msgstr  "Octets écrits : "
 
 #: ../share/isodumper/isodumper.glade.h:1
-msgid "IsoDumper"
-msgstr "IsoDumper"
+msgid   "IsoDumper"
+msgstr  "IsoDumper"
 
 #: ../share/isodumper/isodumper.glade.h:2
-msgid ""
-"<b>Warning</b>\n"
-" This will <b>destroy all data</b> on the target\n"
-" device, are you sure you want to proceed ?\n"
-"\n"
-" If you say ok here, please <b>do not unplug</b>\n"
-" the device during the following operation."
-msgstr ""
-"<b>Attention</b>\n"
-" Cette opération <b>détruira toutes les données</b> sur le périphérique\n"
-" cible, êtes vous sûr(e) de vouloir continuer ?\n"
-"\n"
-" Si vous cliquez sur ok, <b>ne débranchez pas</b>\n"
-" le lecteur pendant l'opération."
+msgid   "<b>Warning</b>\n"
+        " This will <b>destroy all data</b> on the target\n"
+        " device, are you sure you want to proceed ?\n"
+        "\n"
+        " If you say ok here, please <b>do not unplug</b>\n"
+        " the device during the following operation."
+msgstr  "<b>Attention</b>\n"
+        " Cette opération <b>détruira toutes les données</b> sur le "
+        "périphérique\n"
+        " cible, êtes vous sûr(e) de vouloir continuer ?\n"
+        "\n"
+        " Si vous cliquez sur ok, <b>ne débranchez pas</b>\n"
+        " le lecteur pendant l'opération."
 
 #: ../share/isodumper/isodumper.glade.h:8
-msgid ""
-"<b>Error</b>\n"
-" Something went wrong, please see the details\n"
-" window for the exact error.\n"
-" \n"
-" A logfile isodumper.log with the content will be saved in your\n"
-" homedir/.isodumper when the application is closed."
-msgstr ""
-"<b>Erreur</b>\n"
-" Quelque chose s'est mal passé, veuillez consulter la fenêtre\n"
-" de détails pour connaître l'erreur exacte.\n"
-" \n"
-" Un fichier journal isodumper.log avec son contenu sera enregistré \n"
-" dans votre répertoire utilisateur/.isodumper \n"
-" lorsque l'application sera fermée."
+msgid   "<b>Error</b>\n"
+        " Something went wrong, please see the details\n"
+        " window for the exact error.\n"
+        " \n"
+        " A logfile isodumper.log with the content will be saved in your\n"
+        " homedir/.isodumper when the application is closed."
+msgstr  "<b>Erreur</b>\n"
+        " Quelque chose s'est mal passé, veuillez consulter la fenêtre\n"
+        " de détails pour connaître l'erreur exacte.\n"
+        " \n"
+        " Un fichier journal isodumper.log avec son contenu sera enregistré \n"
+        " dans votre répertoire utilisateur/.isodumper \n"
+        " lorsque l'application sera fermée."
 
 #: ../share/isodumper/isodumper.glade.h:14
-msgid "Write Image:"
-msgstr "Écrire l'image :"
+msgid   "Write Image:"
+msgstr  "Écrire l'image :"
 
 #: ../share/isodumper/isodumper.glade.h:15
-msgid "Select an image file to be written to the device"
-msgstr "Sélectionnez un fichier image à écrire sur le périphérique"
+msgid   "Select an image file to be written to the device"
+msgstr  "Sélectionnez un fichier image à écrire sur le périphérique"
 
 #: ../share/isodumper/isodumper.glade.h:16
-msgid "Select Image"
-msgstr "Sélectionner l'image"
+msgid   "Select Image"
+msgstr  "Sélectionner l'image"
 
 #: ../share/isodumper/isodumper.glade.h:17
-msgid "to"
-msgstr "sur"
+msgid   "to"
+msgstr  "sur"
 
 #: ../share/isodumper/isodumper.glade.h:18
-msgid "Select target device to write the image to"
-msgstr "Sélectionnez le périphérique cible sur lequel écrire l'image"
+msgid   "Select target device to write the image to"
+msgstr  "Sélectionnez le périphérique cible sur lequel écrire l'image"
 
 #: ../share/isodumper/isodumper.glade.h:19
-msgid " "
-msgstr " "
+msgid   " "
+msgstr  " "
 
 #: ../share/isodumper/isodumper.glade.h:20
-msgid "Details"
-msgstr "Détails"
+msgid   "Details"
+msgstr  "Détails"
 
 #: ../share/isodumper/isodumper.glade.h:21
-msgid "Write to device"
-msgstr "Écrire sur le périphérique"
+msgid   "Write to device"
+msgstr  "Écrire sur le périphérique"
 
 #: ../share/isodumper/isodumper.glade.h:22
-msgid ""
-"<b>Error</b>\n"
-" No target devices were found. \n"
-"\n"
-" You need to plug in a USB Key\n"
-" to which the image can be written."
-msgstr ""
-"<b>Erreur</b>\n"
-" Aucun périphérique cible trouvé. \n"
-"\n"
-" Vous devez brancher une clé USB\n"
-" sur laquelle l'image pourra être écrite."
+msgid   "<b>Error</b>\n"
+        " No target devices were found. \n"
+        "\n"
+        " You need to plug in a USB Key\n"
+        " to which the image can be written."
+msgstr  "<b>Erreur</b>\n"
+        " Aucun périphérique cible trouvé. \n"
+        "\n"
+        " Vous devez brancher une clé USB\n"
+        " sur laquelle l'image pourra être écrite."
 
 #: ../share/isodumper/isodumper.glade.h:27
-msgid ""
-"<b>Success</b>\n"
-" The image was successfully written to the\n"
-" target device.\n"
-" \n"
-" You are free to unplug it now, a log isodumper.log \n"
-" of the operation will be saved in your homedir/.isodumper/ when\n"
-" you close the application."
-msgstr ""
-"<b>Succès</b>\n"
-" L'image a été correctement écrite sur le\n"
-" périphérique cible.\n"
-" \n"
-" Vous pouvez maintenant le débrancher, un journal\n"
-" de l'opération isodumper.log sera enregistré dans votre répertoire\n"
-" personnel/.isodumper lorsque vous fermerez l'application."
+msgid   "<b>Success</b>\n"
+        " The image was successfully written to the\n"
+        " target device.\n"
+        " \n"
+        " You are free to unplug it now, a log isodumper.log \n"
+        " of the operation will be saved in your homedir/.isodumper/ when\n"
+        " you close the application."
+msgstr  "<b>Succès</b>\n"
+        " L'image a été correctement écrite sur le\n"
+        " périphérique cible.\n"
+        " \n"
+        " Vous pouvez maintenant le débrancher, un journal\n"
+        " de l'opération isodumper.log sera enregistré dans votre répertoire\n"
+        " personnel/.isodumper lorsque vous fermerez l'application."
 
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
+#~ msgid        "The dd process ended with an error !"
+#~ msgstr       "Le processus dd s'est arrêté avec une erreur !"
 
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
+#~ msgid        "gtk-close"
+#~ msgstr       "gtk-close"
 
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
+#~ msgid        "gtk-ok"
+#~ msgstr       "gtk-ok"
 
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
+#~ msgid        "gtk-cancel"
+#~ msgstr       "gtk-cancel"
 
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Le processus dd s'est arrêté avec une erreur !"
+#~ msgid        "ImageWriter"
+#~ msgstr       "ImageWriter"

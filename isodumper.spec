@@ -3,7 +3,7 @@ Version:	0.10
 Release:	%mkrel 1
 Summary:	Tool for writing ISO images on a USB stick
 Summary(fr_FR):	Outil pour écrire des images ISO sur une clé USB
-License:	GPLv2+
+License:	GPLv2
 Group:		System/Configuration
 URL:		https://github.com/papoteur-mga/isodumper
 # wget https://github.com/papoteur-mga/isodumper/archive/%%{version}.tar.gz -O %%{name}-%%{version}.tar.gz
