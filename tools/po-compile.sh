@@ -2,7 +2,14 @@
 
 set -e
 
+if test "$1" = "-h" -o "$1" = "--help"; then
+	echo "Use: $0 [<language>]"
+	echo "Run without arguments to compile all translation files."
+	exit 0
+fi
+
 cd "$(readlink -f "$(dirname "$0")/..")"
+
 update_mo(){
 	echo $1
 	language="$(basename "$1")"
