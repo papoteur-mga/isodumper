@@ -39,3 +39,4 @@ Translators
 - Yuri Chornoivan - Ukrainian
 - marja - Dutch
 - motitos - Spanish
+- Marcello Anni - Italian
