@@ -40,3 +40,5 @@ Translators
 - marja - Dutch
 - motitos - Spanish
 - Marcello Anni - Italian
+- Atilla ÖNTAŞ - Turkish
+- Filip Komar - Slovenian
