@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-19 21:49+0200\n"
-"PO-Revision-Date: 2013-10-10 17:01+0200\n"
+"PO-Revision-Date: 2013-10-10 5:52+0200\n"
 "Last-Translator: Filip Komar <filip.komar@gmail.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>, Translation list <mageia-"
 "i18n@mageia.org>\n"
@@ -90,7 +90,7 @@ msgstr "Zapisano: "
 
 #: ../lib/isodumper.py:205
 msgid "Image "
-msgstr "Slika medija "
+msgstr "Odtis diska "
 
 #: ../lib/isodumper.py:205
 msgid " successfully written to"
@@ -138,7 +138,7 @@ msgstr ""
 
 #: ../share/isodumper/isodumper.glade.h:14
 msgid "Write Image:"
-msgstr "Zapis slike:"
+msgstr "Zapis odtisa diska:"
 
 #: ../share/isodumper/isodumper.glade.h:15
 msgid "Select an image file to be written to the device"
