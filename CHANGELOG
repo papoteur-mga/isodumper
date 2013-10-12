@@ -3,7 +3,7 @@ The modifications are:
 
 IsoDumper 0.10
 ------------
-	  - added and update Russian, Ukrainian, Spanish, Dutch, Italain, Turkish and Slovenian translations
+	  - added and update Russian, Ukrainian, Spanish, Dutch, Italian, Turkish and Slovenian translations
 	  - update French translation
 	  - added ru, uk, es, nl, it, tr and sl comment in .desktop file
 	  - added po-update.sh and po-compile.sh files for translations (see i18n.md for more details)
