@@ -17,4 +17,5 @@ for dev in devs:
 		path = str(dev.Get('', 'DeviceFile'))
 		vend = str(dev.Get('', 'DriveVendor'))
 		model = str(dev.Get('', 'DriveModel'))
-		print vend + ' ' + model + ', ' +path
+		size = str(dev.Get('', 'DeviceSize'))
+		print vend + ' ' + model + ', ' +path+', ' + size

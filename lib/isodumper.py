@@ -54,6 +54,9 @@ class IsoDumper:
         #eventbox.modify_bg(gtk.STATE_NORMAL, bgcol)
         self.log = self.logview.get_buffer()
         self.ddpid = 0
+        
+        # define size of the selected device
+        self.deviceSize=0
 
         # set default file filter to *.img
         # Added for Mageia : *.iso
@@ -92,8 +95,11 @@ class IsoDumper:
         self.combo = self.wTree.get_widget("device_combobox")
         list = list.strip().split('\n')
         for item in list:
-            name,path = item.split(',')
-            self.combo.append_text(name+' ('+path.lstrip()+')')
+            name,path,size = item.split(',')
+            self.deviceSize=size
+            # convert in Mbytes
+            sizeM=str(int(size)/(1024*1024))
+            self.combo.append_text(name+' ('+path.lstrip()+') '+sizeM+_('Mb'))
         dialog.destroy()
 
     def device_selected(self, widget):
@@ -112,17 +118,24 @@ class IsoDumper:
         dialog = self.wTree.get_widget("confirm_dialog")
         self.logger(_('Image: ')+source)
         self.logger(_('Target Device: ')+self.dev)
-        resp = dialog.run()
-        if resp:
-            self.do_umount(target)
-            dialog.hide()
-            task = self.raw_write(source, target)
-            gobject.idle_add(task.next)
-            while gtk.events_pending():
-                gtk.main_iteration(True)
-            
+        self.logger(self.deviceSize)
+        b = os.path.getsize(source)
+        self.logger(str(b))
+        if b >= (eval(self.deviceSize)) :
+            self.logger(_('The device is too small to contain the ISO file.'))
+            self.emergency()
         else:
-            self.close('dummy')
+            resp = dialog.run()
+            if resp:
+                self.do_umount(target)
+                dialog.hide()
+                task = self.raw_write(source, target)
+                gobject.idle_add(task.next)
+                while gtk.events_pending():
+                    gtk.main_iteration(True)
+                
+            else:
+                self.close('dummy')
 
     def do_umount(self, target):
         mounts = self.get_mounted(target)
