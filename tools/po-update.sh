@@ -27,45 +27,24 @@ POT_FILE="$POT_DIR/$DOMAIN.pot"
 	--package-version "$VERSION" \
 	--default-domain="$L_NAME" \
 	--language=Python --from-code=UTF-8 --files-from="$SOURCE_FILES" \
-	--no-escape --indent --add-location --sort-by-file \
+	--no-escape --add-location --sort-by-file \
 	--add-comments=I18N \
 	--output="$POT_FILE"
 
 /bin/sed --in-place --expression="s/charset=CHARSET/charset=UTF-8/" "$POT_FILE"
 
-
-unfmt() {
-	local SOURCE="/usr/share/locale/$LL_CC/LC_MESSAGES/$1.mo"
-	if test ! -f "$SOURCE"; then
-		SOURCE="/usr/share/locale-langpack/$LL_CC/LC_MESSAGES/$1.mo"
-	fi
-	local TARGET="$(mktemp --tmpdir $1-$LL_CC-XXXXXX.po)"
-	/usr/bin/msgunfmt \
-		--no-escape --indent \
-		--output-file="$TARGET" \
-		"$SOURCE"
-	echo "$TARGET"
-}
-
 update_po() {
 	local LL_CC="$1"
 	local PO_FILE="$POT_DIR/$LL_CC.po"
 
-	test -r "$PO_FILE" || /usr/bin/msginit \
-			--no-translator --locale="$LL_CC" \
-			--input="$POT_FILE" \
-			--output-file="$PO_FILE"
-
+        echo "Update $(basename "$PO_FILE"):"
 	/usr/bin/msgmerge \
 		--update --no-fuzzy-matching \
-		--no-escape --indent --add-location --sort-by-file \
+		--no-escape --add-location --sort-by-file \
 		--lang="$LL_CC" \
-		--compendium="$(unfmt gtk30)" \
-		--compendium="$(unfmt gtk30-properties)" \
 		"$PO_FILE" "$POT_FILE"
 
 	# /bin/sed --in-place --expression="s/Language: \\\\n/Language: $L_NAME\\\\n/" "$PO_FILE"
-	echo "Updated $PO_FILE"
 }
 
 if test "$1"; then
