@@ -25,7 +25,6 @@ import gtk.glade
 import gobject
 from subprocess import Popen,PIPE,call
 import os
-import signal
 
 import gettext
 from gettext import gettext as _
@@ -53,7 +52,6 @@ class IsoDumper:
         #bgcol = gtk.gdk.color_parse("white")
         #eventbox.modify_bg(gtk.STATE_NORMAL, bgcol)
         self.log = self.logview.get_buffer()
-        self.ddpid = 0
         
         # define size of the selected device
         self.deviceSize=0
@@ -74,24 +72,23 @@ class IsoDumper:
                  "on_filechooserbutton_file_set" : self.activate_devicelist,
                  "on_detail_expander_activate" : self.expander_control,
                  "on_device_combobox_changed" : self.device_selected,
-                 "on_button1_clicked" : self.close,
+                 "on_nodev_close_clicked" : self.close,
                  "on_write_button_clicked" : self.do_write}
         self.wTree.signal_autoconnect(dict)
 
         self.window.show_all()
         # make sure we have a target device
         self.get_devices()
-
     def get_devices(self):
         dialog = self.wTree.get_widget("nodev_dialog")
         list = Popen(["/usr/lib/isodumper/find_devices"], stdout=PIPE).communicate()[0]
-        if not len(list):
-            dialog.run()
-        list = Popen(["/usr/lib/isodumper/find_devices"], stdout=PIPE).communicate()[0]
-        if not len(list):
-            dialog.destroy()
-            self.close
-            exit(0)
+        while not len(list):
+            exit_dialog=dialog.run()
+            list = Popen(["/usr/lib/isodumper/find_devices"], stdout=PIPE).communicate()[0]
+            if (exit_dialog==2) :
+                dialog.destroy()
+                #self.close('dummy')
+                exit(0)
         self.combo = self.wTree.get_widget("device_combobox")
         list = list.strip().split('\n')
         for item in list:
@@ -217,7 +214,11 @@ class IsoDumper:
                 progress.set_fraction(1.0)
                 self.logger(_('Image ')+source.split('/')[-1]+_(' successfully written to')+target)
                 self.logger(_('Bytes written: ')+str(written))
-                ofc.close()
+                try:
+                    ofc.close()
+                except:
+                   self.logger(_("Writing error."))
+                   self.emergency()
                 self.success()
             ifc.close()
             yield False
@@ -251,13 +252,7 @@ class IsoDumper:
 
     def close(self, widget):
         self.write_logfile()
-        if self.ddpid > 0:
-            try:
-                os.killpg(os.getpgid(self.ddpid), signal.SIGKILL)
-            except:
-                gtk.main_quit()
-        else:
-            gtk.main_quit()
+        gtk.main_quit()
 
     def write_logfile(self):
         start = self.log.get_start_iter()
