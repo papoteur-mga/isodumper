@@ -12,6 +12,7 @@ cd "$(readlink -f "$(dirname "$0")/..")"
 
 #VERSION=(0.1)
 DOMAIN=(isodumper)
+intltool-extract --type=gettext/glade ../share/isodumper/isodumper.glade
 
 SOURCE_FILES=$(/bin/mktemp --tmpdir $DOMAIN-po-update-XXXXXX)
 find "lib" -name '*.py' >"$SOURCE_FILES"
@@ -32,6 +33,8 @@ POT_FILE="$POT_DIR/$DOMAIN.pot"
 	--output="$POT_FILE"
 
 /bin/sed --in-place --expression="s/charset=CHARSET/charset=UTF-8/" "$POT_FILE"
+
+rm -f ../share/isodumper/isodumper.glade.h
 
 update_po() {
 	local LL_CC="$1"
