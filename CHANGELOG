@@ -1,6 +1,11 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
+IsoDumper 0.11
+------------
+  - added check for the size of the destination device.
+  - added a button to retry in the no_device dialog box
+
 IsoDumper 0.10
 ------------
 	  - added and update Russian, Ukrainian, Spanish, Dutch, Italian, Turkish and Slovenian translations
