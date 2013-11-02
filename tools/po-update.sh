@@ -10,13 +10,9 @@ fi
 
 cd "$(readlink -f "$(dirname "$0")/..")"
 
-#VERSION=(0.1)
+VERSION=(0.11)
 DOMAIN=(isodumper)
-intltool-extract --type=gettext/glade ../share/isodumper/isodumper.glade
-
-SOURCE_FILES=$(/bin/mktemp --tmpdir $DOMAIN-po-update-XXXXXX)
-find "lib" -name '*.py' >"$SOURCE_FILES"
-find "share/isodumper" -name '*.glade.h' >"$SOURCE_FILES"
+intltool-extract --type=gettext/glade share/isodumper/isodumper.glade
 
 POT_DIR="$PWD/po"
 test -d "$POT_DIR"
@@ -26,15 +22,16 @@ POT_FILE="$POT_DIR/$DOMAIN.pot"
 /usr/bin/xgettext \
 	--package-name "$DOMAIN" \
 	--package-version "$VERSION" \
-	--default-domain="$L_NAME" \
-	--language=Python --from-code=UTF-8 --files-from="$SOURCE_FILES" \
+	--language=Python --from-code=UTF-8 --keyword=_ --keyword=N_ \
 	--no-escape --add-location --sort-by-file \
 	--add-comments=I18N \
-	--output="$POT_FILE"
+	--output="$POT_FILE" \
+	lib/isodumper.py share/isodumper/isodumper.glade.h
 
 /bin/sed --in-place --expression="s/charset=CHARSET/charset=UTF-8/" "$POT_FILE"
 
-rm -f ../share/isodumper/isodumper.glade.h
+rm -f share/isodumper/isodumper.glade.h
+
 
 update_po() {
 	local LL_CC="$1"
@@ -53,7 +50,7 @@ update_po() {
 if test "$1"; then
 	update_po "$1"
 else
-	for l in $(ls -1 "$POT_DIR"/??.po); do
+	for l in $(ls -1 "$POT_DIR"/*.po); do
 		l="$(basename "$l")"
 		update_po "${l%.po}"
 	done

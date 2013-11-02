@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-19 22:15+0200\n"
+"POT-Creation-Date: 2013-11-02 16:41+0100\n"
 "PO-Revision-Date: 2009-01-09 00:20+0000\n"
 "Last-Translator: Petros Kiladitis <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
@@ -19,92 +19,104 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: ../lib/isodumper.py:113
+#: lib/isodumper.py:98
+msgid "Mb"
+msgstr ""
+
+#: lib/isodumper.py:115
 msgid "Image: "
 msgstr "Εικόνα: "
 
-#: ../lib/isodumper.py:114
+#: lib/isodumper.py:116
 msgid "Target Device: "
 msgstr "Συσκευή προορισμού: "
 
-#: ../lib/isodumper.py:130
+#: lib/isodumper.py:119
+msgid "The device is too small to contain the ISO file."
+msgstr ""
+
+#: lib/isodumper.py:126
+msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
+msgstr ""
+
+#: lib/isodumper.py:143
 msgid "Unmounting all partitions of "
 msgstr "Αποπροσάρτηση όλων των διαμερισμάτων του "
 
-#: ../lib/isodumper.py:132
+#: lib/isodumper.py:145
 msgid "Trying to unmount "
 msgstr "Προσπάθεια για αποπροσάρτηση "
 
-#: ../lib/isodumper.py:138 ../lib/isodumper.py:144
-msgid "Error, umount "
-msgstr "Σφάλμα, αποπροσάρτηση "
-
-#: ../lib/isodumper.py:138
+#: lib/isodumper.py:151
 msgid " was terminated by signal "
 msgstr " τερματίστηκε από το σήμα "
 
-#: ../lib/isodumper.py:142
+#: lib/isodumper.py:151 lib/isodumper.py:157
+msgid "Error, umount "
+msgstr "Σφάλμα, αποπροσάρτηση "
+
+#: lib/isodumper.py:155
 msgid " successfully unmounted"
 msgstr " επιτυχή αποπροσάρτηση"
 
-#: ../lib/isodumper.py:144
+#: lib/isodumper.py:157
 msgid " returned "
 msgstr " επέστρεψε "
 
-#: ../lib/isodumper.py:147
+#: lib/isodumper.py:160
 msgid "Execution failed: "
 msgstr "Αποτυχία εκτέλεσης: "
 
-#: ../lib/isodumper.py:155
+#: lib/isodumper.py:168
 msgid "Could not read mtab !"
 msgstr "Αδυναμία ανάγνωσης του mtab !"
 
-#: ../lib/isodumper.py:164 ../lib/isodumper.py:187
+#: lib/isodumper.py:177 lib/isodumper.py:200
 msgid "Reading error."
 msgstr ""
 
-#: ../lib/isodumper.py:170
+#: lib/isodumper.py:183
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: ../lib/isodumper.py:175
-msgid "Writing "
-msgstr "Εγγραφή "
-
-#: ../lib/isodumper.py:175
+#: lib/isodumper.py:188
 msgid " to "
 msgstr " προς "
 
-#: ../lib/isodumper.py:176
+#: lib/isodumper.py:188
+msgid "Writing "
+msgstr "Εγγραφή "
+
+#: lib/isodumper.py:189
 msgid "Executing copy from "
 msgstr ""
 
-#: ../lib/isodumper.py:192
+#: lib/isodumper.py:205 lib/isodumper.py:223
 #, fuzzy
 msgid "Writing error."
 msgstr "Εγγραφή "
 
-#: ../lib/isodumper.py:197
+#: lib/isodumper.py:210
 msgid "Wrote: "
 msgstr "Γραφτηκε: "
 
-#: ../lib/isodumper.py:205
-msgid "Image "
-msgstr "Εικόνα "
-
-#: ../lib/isodumper.py:205
+#: lib/isodumper.py:218
 msgid " successfully written to"
 msgstr " γράφτηκε επιτυχώς στο"
 
-#: ../lib/isodumper.py:206
+#: lib/isodumper.py:218
+msgid "Image "
+msgstr "Εικόνα "
+
+#: lib/isodumper.py:219
 msgid "Bytes written: "
 msgstr ""
 
-#: ../share/isodumper/isodumper.glade.h:1
+#: share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
 msgstr ""
 
-#: ../share/isodumper/isodumper.glade.h:2
+#: share/isodumper/isodumper.glade.h:2
 msgid ""
 "<b>Warning</b>\n"
 " This will <b>destroy all data</b> on the target\n"
@@ -114,7 +126,7 @@ msgid ""
 " the device during the following operation."
 msgstr ""
 
-#: ../share/isodumper/isodumper.glade.h:8
+#: share/isodumper/isodumper.glade.h:8
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -124,48 +136,48 @@ msgid ""
 " homedir/.isodumper when the application is closed."
 msgstr ""
 
-#: ../share/isodumper/isodumper.glade.h:14
+#: share/isodumper/isodumper.glade.h:14
 msgid "Write Image:"
 msgstr "Εγγραφή εικόνας:"
 
-#: ../share/isodumper/isodumper.glade.h:15
+#: share/isodumper/isodumper.glade.h:15
 msgid "Select an image file to be written to the device"
 msgstr "Επιλέξτε ένα αρχείο εικόνας που πρόκειται να εγγραφεί στην συσκευή"
 
-#: ../share/isodumper/isodumper.glade.h:16
+#: share/isodumper/isodumper.glade.h:16
 msgid "Select Image"
 msgstr "Επιλογή εικόνας"
 
-#: ../share/isodumper/isodumper.glade.h:17
+#: share/isodumper/isodumper.glade.h:17
 msgid "to"
 msgstr "προς"
 
-#: ../share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:18
 msgid "Select target device to write the image to"
 msgstr "Επιλέξτε την συσκευή προορισμού για να γράψετε την εικόνα"
 
-#: ../share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:19
 msgid " "
 msgstr " "
 
-#: ../share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:20
 msgid "Details"
 msgstr "Λεπτομέρειες"
 
-#: ../share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:21
 msgid "Write to device"
 msgstr "Γράψτε στη συσκευή"
 
-#: ../share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:22
 msgid ""
-"<b>Error</b>\n"
+"<b>Warning</b>\n"
 " No target devices were found. \n"
 "\n"
 " You need to plug in a USB Key\n"
 " to which the image can be written."
 msgstr ""
 
-#: ../share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:27
 #, fuzzy
 msgid ""
 "<b>Success</b>\n"
