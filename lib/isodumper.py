@@ -87,7 +87,6 @@ class IsoDumper:
             list = Popen(["/usr/lib/isodumper/find_devices"], stdout=PIPE).communicate()[0]
             if (exit_dialog==2) :
                 dialog.destroy()
-                #self.close('dummy')
                 exit(0)
         self.combo = self.wTree.get_widget("device_combobox")
         list = list.strip().split('\n')
@@ -115,22 +114,26 @@ class IsoDumper:
         dialog = self.wTree.get_widget("confirm_dialog")
         self.logger(_('Image: ')+source)
         self.logger(_('Target Device: ')+self.dev)
-        self.logger(self.deviceSize)
         b = os.path.getsize(source)
-        self.logger(str(b))
         if b >= (eval(self.deviceSize)) :
             self.logger(_('The device is too small to contain the ISO file.'))
             self.emergency()
         else:
             resp = dialog.run()
             if resp:
-                self.do_umount(target)
-                dialog.hide()
-                task = self.raw_write(source, target)
-                gobject.idle_add(task.next)
-                while gtk.events_pending():
-                    gtk.main_iteration(True)
-                
+                if eval(self.deviceSize)> 1024*1024*1024*32 :
+                    message=self.wTree.get_widget("label1")
+                    message.set_text(_('The device is bigger than 32 Gbytes. Are you sure you want use it?'))
+                    resp = dialog.run()
+                    if resp:
+                        self.do_umount(target)
+                        dialog.hide()
+                        task = self.raw_write(source, target)
+                        gobject.idle_add(task.next)
+                        while gtk.events_pending():
+                            gtk.main_iteration(True)
+                    else:
+                        self.close('dummy')
             else:
                 self.close('dummy')
 
