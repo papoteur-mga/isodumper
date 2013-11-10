@@ -1,16 +1,17 @@
-# Slovenian translation for isodumper package.
 # Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the isodumper package.
 # Automatically generated, 2013.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 #
 # neon. 2009
+# Slovenian translation for isodumper package.
 # Filip Komar <filip.komar@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-02 16:41+0100\n"
-"PO-Revision-Date: 2013-10-10 5:52+0200\n"
+"POT-Creation-Date: 2013-11-02 21:58+0100\n"
+"PO-Revision-Date: 2013-11-10 18:02+0100\n"
 "Last-Translator: Filip Komar <filip.komar@gmail.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>, Translation list <mageia-"
 "i18n@mageia.org>\n"
@@ -21,7 +22,7 @@ msgstr ""
 
 #: lib/isodumper.py:98
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
 #: lib/isodumper.py:115
 msgid "Image: "
@@ -33,11 +34,13 @@ msgstr "Ciljna naprava: "
 
 #: lib/isodumper.py:119
 msgid "The device is too small to contain the ISO file."
-msgstr ""
+msgstr "Izbrana naprava nima dovolj prostora za datoteko odtisa diska."
 
 #: lib/isodumper.py:126
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
+"Izbrana naprava ima kapaciteto večjo od 32 gigabajtov. Ali jo res želite "
+"uporabiti?"
 
 #: lib/isodumper.py:143
 msgid "Unmounting all partitions of "
@@ -105,7 +108,7 @@ msgstr " je bila uspešno zapisana na"
 
 #: lib/isodumper.py:218
 msgid "Image "
-msgstr "Odtis diska "
+msgstr "Slika medija "
 
 #: lib/isodumper.py:219
 msgid "Bytes written: "
@@ -126,7 +129,7 @@ msgid ""
 msgstr ""
 "<b>Opozorilo!</b>\n"
 " To bo <b>uničilo vse podatke</b> na\n"
-" ciljni napravi, želite vseeno nadaljevati ?\n"
+" ciljni napravi. Želite vseeno nadaljevati ?\n"
 "\n"
 " Če boste potrdili, <b>ne odstranjujte</b>\n"
 " naprave med zapisovanjem."
@@ -149,7 +152,7 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:14
 msgid "Write Image:"
-msgstr "Zapis odtisa diska:"
+msgstr "Zapis slike:"
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Select an image file to be written to the device"
@@ -187,6 +190,11 @@ msgid ""
 " You need to plug in a USB Key\n"
 " to which the image can be written."
 msgstr ""
+"<b>Napaka</b>\n"
+" Nobene ciljne naprave ni bilo mogoče najti.\n"
+"\n"
+" Vstavite ključ USB, na katerega\n"
+" lahko zapišete odtis diska."
 
 #: share/isodumper/isodumper.glade.h:27
 msgid ""
@@ -207,25 +215,3 @@ msgstr ""
 
 #~ msgid "The dd process ended with an error !"
 #~ msgstr "dd proces se je končal z napako!"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-preklic"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-zapri"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-vredu"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Napaka</b>\n"
-#~ " Nobene ciljne naprave ni bilo mogoče najti.\n"
-#~ "\n"
-#~ " Vstavite ključ USB, na katerega\n"
-#~ " lahko zapišete odtis diska."
