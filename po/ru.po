@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-02 16:41+0100\n"
-"PO-Revision-Date: 2013-09-25 22:51+0300\n"
+"PO-Revision-Date: 2013-11-10 19:42+0300\n"
 "Last-Translator: AlexL <loginov.alex.valer@gmail.com>\n"
 "Language-Team:  <en@li.org>\n"
 "Language: ru\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: lib/isodumper.py:98
 msgid "Mb"
-msgstr ""
+msgstr "МБ"
 
 #: lib/isodumper.py:115
 msgid "Image: "
@@ -34,11 +34,11 @@ msgstr "Целевое устройство: "
 
 #: lib/isodumper.py:119
 msgid "The device is too small to contain the ISO file."
-msgstr ""
+msgstr "Устройство слишком маленькое чтобы уместить ISO файл."
 
 #: lib/isodumper.py:126
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr ""
+msgstr "Устройство больше, чем 32 ГБайт. Вы уверены, что хотите использовать его?"
 
 #: lib/isodumper.py:143
 msgid "Unmounting all partitions of "
@@ -52,7 +52,8 @@ msgstr "Попытка размонтирования "
 msgid " was terminated by signal "
 msgstr " был прерван с сигналом "
 
-#: lib/isodumper.py:151 lib/isodumper.py:157
+#: lib/isodumper.py:151
+#: lib/isodumper.py:157
 msgid "Error, umount "
 msgstr "Ошибка, размонтировано "
 
@@ -72,7 +73,8 @@ msgstr "Выполнение не удалось: "
 msgid "Could not read mtab !"
 msgstr "Не удалось прочитать mtab!"
 
-#: lib/isodumper.py:177 lib/isodumper.py:200
+#: lib/isodumper.py:177
+#: lib/isodumper.py:200
 msgid "Reading error."
 msgstr "Ошибка чтения."
 
@@ -92,7 +94,8 @@ msgstr "Запись "
 msgid "Executing copy from "
 msgstr "Выполняется копирование с"
 
-#: lib/isodumper.py:205 lib/isodumper.py:223
+#: lib/isodumper.py:205
+#: lib/isodumper.py:223
 msgid "Writing error."
 msgstr "Ошибка чтения."
 
@@ -188,6 +191,11 @@ msgid ""
 " You need to plug in a USB Key\n"
 " to which the image can be written."
 msgstr ""
+"<b>Предупреждение</b>\n"
+" Не было найдено целевых устройств. \n"
+"\n"
+" Вам нужно подключить USB-устройство,\n"
+" на которое можно записать образ."
 
 #: share/isodumper/isodumper.glade.h:27
 msgid ""
@@ -207,30 +215,3 @@ msgstr ""
 "операции будет сохранен в Вашем домашнем каталоге/.isodumper, когда\n"
 "Вы закроете программу."
 
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd процесс был завершен с ошибкой!"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Ошибка</b>\n"
-#~ " Целевое устройство не было найдено. \n"
-#~ "\n"
-#~ " Вам нужно подключить USB-устройство,\n"
-#~ " на которое можно записать образ."
