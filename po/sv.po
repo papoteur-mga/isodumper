@@ -9,19 +9,20 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-02 16:41+0100\n"
-"PO-Revision-Date: 2008-10-27 09:56+0000\n"
-"Last-Translator: Daniel Nylander <yeager@ubuntu.com>\n"
+"PO-Revision-Date: 2013-11-12 18:20+0100\n"
+"Last-Translator: Kristoffer Grundström <kristoffer.grundstrom1983@gmail."
+"com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: lib/isodumper.py:98
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
 #: lib/isodumper.py:115
 msgid "Image: "
@@ -33,11 +34,12 @@ msgstr "Målenhet: "
 
 #: lib/isodumper.py:119
 msgid "The device is too small to contain the ISO file."
-msgstr ""
+msgstr "Enheten är för liten för att innehålla ISO-filen."
 
 #: lib/isodumper.py:126
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
+"Enheten är större än 32 Gbytes. Är du säker på att du vill använda den?"
 
 #: lib/isodumper.py:143
 msgid "Unmounting all partitions of "
@@ -49,7 +51,7 @@ msgstr "Försöker att avmontera "
 
 #: lib/isodumper.py:151
 msgid " was terminated by signal "
-msgstr " blev terminerad med signal "
+msgstr " blev avslutad av signal"
 
 #: lib/isodumper.py:151 lib/isodumper.py:157
 msgid "Error, umount "
@@ -57,7 +59,7 @@ msgstr "Error, avmontera "
 
 #: lib/isodumper.py:155
 msgid " successfully unmounted"
-msgstr " avmonterades"
+msgstr " avmontering lyckades"
 
 #: lib/isodumper.py:157
 msgid " returned "
@@ -69,15 +71,15 @@ msgstr "Körningen misslyckades: "
 
 #: lib/isodumper.py:168
 msgid "Could not read mtab !"
-msgstr "Kunde inte läsa mtab!"
+msgstr "Kunde inte läsa mtab !"
 
 #: lib/isodumper.py:177 lib/isodumper.py:200
 msgid "Reading error."
-msgstr ""
+msgstr "Läs-fel."
 
 #: lib/isodumper.py:183
 msgid "You have not the rights for writing on the device"
-msgstr ""
+msgstr "Du har inte rättigheter för att skriva till enheten"
 
 #: lib/isodumper.py:188
 msgid " to "
@@ -88,14 +90,12 @@ msgid "Writing "
 msgstr "Skriver "
 
 #: lib/isodumper.py:189
-#, fuzzy
 msgid "Executing copy from "
-msgstr "Kör: dd if="
+msgstr "Kör kopia från"
 
 #: lib/isodumper.py:205 lib/isodumper.py:223
-#, fuzzy
 msgid "Writing error."
-msgstr "Skriver "
+msgstr "Skriv-fel:"
 
 #: lib/isodumper.py:210
 msgid "Wrote: "
@@ -111,11 +111,11 @@ msgstr "Avbildningen "
 
 #: lib/isodumper.py:219
 msgid "Bytes written: "
-msgstr ""
+msgstr "Bytes skrivna:"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
-msgstr ""
+msgstr "IsoDumper"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
@@ -130,11 +130,10 @@ msgstr ""
 " Detta kommer att <b>förstöra all data</b> på målenheten.\n"
 " Är du säker på att du vill fortsätta?\n"
 "\n"
-" Om du svarar ja här bör du <b>inte koppla från</b>\n"
+" Om du svarar ok här bör du <b>inte koppla från</b>\n"
 " enheten under de följande åtgärderna."
 
 #: share/isodumper/isodumper.glade.h:8
-#, fuzzy
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -144,11 +143,11 @@ msgid ""
 " homedir/.isodumper when the application is closed."
 msgstr ""
 "<b>Fel</b>\n"
-" Någonting gick fel. Se detaljfönstret\n"
-" för det exakta felet.\n"
+" Någonting gick fel. vänligen titta i detaljfönstret\n"
+" för det specifika felet.\n"
 " \n"
-" En loggfil med innehållet kommer att sparas i\n"
-" din hemmapp om programmet stängs."
+" En loggfil kallad isodumper.log med innehållet kommer att sparas i\n"
+" hem-mappen/.isodumper när programmet stängs ner."
 
 #: share/isodumper/isodumper.glade.h:14
 msgid "Write Image:"
@@ -168,7 +167,7 @@ msgstr "till"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Select target device to write the image to"
-msgstr "Välj målenhet för att skriva avbildningen till"
+msgstr "Välj målenhet att skriva avbilden till"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid " "
@@ -190,9 +189,13 @@ msgid ""
 " You need to plug in a USB Key\n"
 " to which the image can be written."
 msgstr ""
+"<b>Varning</b>\n"
+" Inga målenheter hittades. \n"
+"\n"
+" Du bör ansluta ett USB-minne\n"
+" som avbilden kan skrivas till."
 
 #: share/isodumper/isodumper.glade.h:27
-#, fuzzy
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -203,12 +206,12 @@ msgid ""
 " you close the application."
 msgstr ""
 "<b>Lyckades</b>\n"
-" Avbildningen blev skrevs korrekt till\n"
+" Avbildningen skrevs korrekt till\n"
 " målenheten.\n"
 " \n"
-" Du kan koppla från enheten nu. En logg av\n"
-" åtgärderna kommer att sparas i din hemmapp om\n"
-" du stänger programmet."
+" Du kan nu koppla från enheten. En logg kallad isodumper.log \n"
+" av åtgärderna kommer att sparas i hem-mappen{.isodumper/ när\n"
+" du stänger ner programmet."
 
 #~ msgid "The dd process ended with an error !"
 #~ msgstr "dd-processen avslutades med ett fel!"
