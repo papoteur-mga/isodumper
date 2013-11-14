@@ -42,3 +42,4 @@ Translators
 - Marcello Anni - Italian
 - Atilla ÖNTAŞ - Turkish
 - Filip Komar - Slovenian
+- Kristoffer Grundström - Swedish
