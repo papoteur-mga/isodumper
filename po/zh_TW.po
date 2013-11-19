@@ -9,19 +9,19 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-02 16:41+0100\n"
-"PO-Revision-Date: 2008-07-31 07:42+0000\n"
-"Last-Translator: 蔡查理 <Unknown>\n"
+"PO-Revision-Date: 2013-11-19 14:13+0800\n"
+"Last-Translator: You-Cheng Hsieh <yochenhsieh@gmail.com>\n"
 "Language-Team: Traditional Chinese <zh_TW@li.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: lib/isodumper.py:98
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
 #: lib/isodumper.py:115
 msgid "Image: "
@@ -29,15 +29,15 @@ msgstr "鏡像： "
 
 #: lib/isodumper.py:116
 msgid "Target Device: "
-msgstr "目標檔案： "
+msgstr "目標裝置： "
 
 #: lib/isodumper.py:119
 msgid "The device is too small to contain the ISO file."
-msgstr ""
+msgstr "這個裝置太小而放不下 ISO 檔案。"
 
 #: lib/isodumper.py:126
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr ""
+msgstr "這個裝置超過 32 GB。您確定要使用它嗎？"
 
 #: lib/isodumper.py:143
 msgid "Unmounting all partitions of "
@@ -69,15 +69,15 @@ msgstr "執行失敗： "
 
 #: lib/isodumper.py:168
 msgid "Could not read mtab !"
-msgstr "無法讀取mtab文件！"
+msgstr "無法讀取 mtab！"
 
 #: lib/isodumper.py:177 lib/isodumper.py:200
 msgid "Reading error."
-msgstr ""
+msgstr "讀取錯誤。"
 
 #: lib/isodumper.py:183
 msgid "You have not the rights for writing on the device"
-msgstr ""
+msgstr "您沒有權限寫入這個裝置"
 
 #: lib/isodumper.py:188
 msgid " to "
@@ -88,14 +88,12 @@ msgid "Writing "
 msgstr "正在寫入 "
 
 #: lib/isodumper.py:189
-#, fuzzy
 msgid "Executing copy from "
-msgstr "執行： dd if="
+msgstr "正在從這個來源複製"
 
 #: lib/isodumper.py:205 lib/isodumper.py:223
-#, fuzzy
 msgid "Writing error."
-msgstr "正在寫入 "
+msgstr "寫入錯誤。"
 
 #: lib/isodumper.py:210
 msgid "Wrote: "
@@ -111,11 +109,11 @@ msgstr "鏡像 "
 
 #: lib/isodumper.py:219
 msgid "Bytes written: "
-msgstr ""
+msgstr "寫入位元組："
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
-msgstr ""
+msgstr "IsoDumper"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
@@ -127,14 +125,13 @@ msgid ""
 " the device during the following operation."
 msgstr ""
 "<b>警告</b>\n"
-" 這樣將會造成目標裝置上的<b>數據損壞</b>\n"
-" 確認繼續麼？\n"
+" 這樣將會造成目標裝置上的<b>資料損壞</b>\n"
+" 確認要繼續嗎？\n"
 "\n"
 " 如果您回答是，請在執行下述操作時\n"
-"<b>不要卸載裝置</b>"
+"<b>不要移除裝置</b>"
 
 #: share/isodumper/isodumper.glade.h:8
-#, fuzzy
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -144,11 +141,11 @@ msgid ""
 " homedir/.isodumper when the application is closed."
 msgstr ""
 "<b>錯誤</b>\n"
-" 處理過程出錯，\n"
-" 請通過窗口輸出查看詳細信息。\n"
+" 發生某些問題，請檢視細節視窗\n"
+" 來了解確切的錯誤。\n"
 " \n"
-" 當程序關閉時\n"
-" 將會在您的用戶主目錄保存一個日誌文件。"
+" 當程式關閉時，將會在您的家目錄下的.isodumper 目錄\n"
+" 儲存一個名稱為 isodumper.log 的記錄檔。"
 
 #: share/isodumper/isodumper.glade.h:14
 msgid "Write Image:"
@@ -156,7 +153,7 @@ msgstr "寫入鏡像："
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Select an image file to be written to the device"
-msgstr "選擇一個要寫入到裝置的鏡像文件"
+msgstr "選擇一個要寫入到裝置的鏡像檔"
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Select Image"
@@ -190,9 +187,13 @@ msgid ""
 " You need to plug in a USB Key\n"
 " to which the image can be written."
 msgstr ""
+"<b>警告 </b>\n"
+" 找不到目標裝置。\n"
+"\n"
+" 您需要插入一個 USB 隨身碟\n"
+" 以便寫入鏡像檔。"
 
 #: share/isodumper/isodumper.glade.h:27
-#, fuzzy
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -203,13 +204,11 @@ msgid ""
 " you close the application."
 msgstr ""
 "<b>成功</b>\n"
-" 鏡像文件成功寫入到目標\n"
-" 裝置。\n"
+" 鏡像檔已經成功寫入到目標裝置。\n"
 " \n"
-" \n"
-" 您現在已經完成本次操作，可以卸載裝置。\n"
-" 當您退出程序時\n"
-" 一份日誌文件將會保存在您的用戶主目錄中。"
+" 您現在可以移除裝置，當您關閉程式時\n"
+" 將會在您的家目錄下的 .isodumper 隱藏目錄儲存一個\n"
+" 名稱為 isodumper.log 的記錄檔。"
 
 #~ msgid "gtk-ok"
 #~ msgstr "gtk-確定"
