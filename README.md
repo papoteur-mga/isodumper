@@ -44,3 +44,4 @@ Translators
 - Filip Komar - Slovenian
 - Kristoffer Grundström - Swedish
 - You-Cheng Hsieh - Chinese
+- Márcio Padula - Brazilian Portuguese
