@@ -43,3 +43,4 @@ Translators
 - Atilla ÖNTAŞ - Turkish
 - Filip Komar - Slovenian
 - Kristoffer Grundström - Swedish
+- You-Cheng Hsieh - Chinese
