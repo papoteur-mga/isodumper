@@ -12,6 +12,7 @@ Comment[sl]=Grafično orodje za zapis odtisa diska (datotek tipa .img in .iso) n
 Comment[sv]=Ett grafiskt verktyg för att skriva .img och .iso-filer till USB-minnen 
 Comment[tr]=USB anahtarlarına .img ve .iso dosyalarını yazdırmak için grafiksel bir araç
 Comment[uk]=Програма з графічним інтерфейсом для запису файлів img та iso на носії USB
+Comment[zh_TW]=一個寫入 .img 和 .iso 檔案到 USB 隨身碟的 GUI 工具
 Exec=isodumper
 Icon=isodumper.png
 Type=Application
