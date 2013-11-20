@@ -6,7 +6,7 @@ IsoDumper 0.11
 	  - added check for the size of the destination device.
 	  - added a button to retry in the no_device dialog box.
 	  - added a dialog box for devices with a size of 32 GB and more.
-	  - added and update Swedish and Chinese translations
+	  - added and update Swedish, Chinese and Brazilian Portuguese translations.
 
 IsoDumper 0.10
 ------------
