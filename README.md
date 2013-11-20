@@ -35,7 +35,7 @@ Contributors
 Translators
 --------
 - Papoteur - French
-- Sergei Zivukov - Russian
+- Sergei Zivukov, AlexL - Russian
 - Yuri Chornoivan - Ukrainian
 - marja - Dutch
 - motitos, Miguel Ortega - Spanish
