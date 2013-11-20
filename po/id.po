@@ -1,43 +1,44 @@
-# Indonesian translation for isodumper package.
-# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the isodumper package.
-# Automatically generated, 2013.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Automatically generated, 2013
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008
+# kiki.syahadat <kiki.syahadat@yahoo.co.id>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: isodumper\n"
+"Project-Id-Version: Mageia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-02 16:41+0100\n"
-"PO-Revision-Date: 2009-05-30 17:53+0000\n"
-"Last-Translator: Waluyo Adi Siswanto <Unknown>\n"
-"Language-Team: Indonesian <id@li.org>\n"
-"Language: id\n"
+"POT-Creation-Date: 2013-11-02 21:58+0100\n"
+"PO-Revision-Date: 2013-11-13 12:43+0000\n"
+"Last-Translator: kiki.syahadat <kiki.syahadat@yahoo.co.id>\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/mageia/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: lib/isodumper.py:98
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
 #: lib/isodumper.py:115
 msgid "Image: "
-msgstr "Gambar: "
+msgstr "Image: "
 
 #: lib/isodumper.py:116
 msgid "Target Device: "
-msgstr "Perangkat Sasaran: "
+msgstr "Perangkat Target: "
 
 #: lib/isodumper.py:119
 msgid "The device is too small to contain the ISO file."
-msgstr ""
+msgstr "Perangkat terlalu kecil untuk file ISO."
 
 #: lib/isodumper.py:126
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr ""
+msgstr "Perangkat lebih besar dari 32Gbyte. Apakah Anda yakin akan menggunakannya?"
 
 #: lib/isodumper.py:143
 msgid "Unmounting all partitions of "
@@ -53,7 +54,7 @@ msgstr " dihentikan oleh sinyal "
 
 #: lib/isodumper.py:151 lib/isodumper.py:157
 msgid "Error, umount "
-msgstr "Ada kesalahan, melepas "
+msgstr "Error, melepaskan "
 
 #: lib/isodumper.py:155
 msgid " successfully unmounted"
@@ -61,23 +62,23 @@ msgstr " berhasil dilepaskan"
 
 #: lib/isodumper.py:157
 msgid " returned "
-msgstr " Dikembalikan "
+msgstr " dikembalikan "
 
 #: lib/isodumper.py:160
 msgid "Execution failed: "
-msgstr "Eksekusi Gagal: "
+msgstr "Eksekusi gagal: "
 
 #: lib/isodumper.py:168
 msgid "Could not read mtab !"
-msgstr "Tidak dapat membaca mtab !"
+msgstr "Tidak bisa membaca mtab!"
 
 #: lib/isodumper.py:177 lib/isodumper.py:200
 msgid "Reading error."
-msgstr ""
+msgstr "Error membaca."
 
 #: lib/isodumper.py:183
 msgid "You have not the rights for writing on the device"
-msgstr ""
+msgstr "Anda tidak memiliki izin untuk menulisi perangkat"
 
 #: lib/isodumper.py:188
 msgid " to "
@@ -85,17 +86,15 @@ msgstr " ke "
 
 #: lib/isodumper.py:188
 msgid "Writing "
-msgstr "Menulis "
+msgstr "Menulisi "
 
 #: lib/isodumper.py:189
-#, fuzzy
 msgid "Executing copy from "
-msgstr "Eksekusi: dd if="
+msgstr "Mengeksekusi salin dari"
 
 #: lib/isodumper.py:205 lib/isodumper.py:223
-#, fuzzy
 msgid "Writing error."
-msgstr "Menulis "
+msgstr "Error menulisi."
 
 #: lib/isodumper.py:210
 msgid "Wrote: "
@@ -103,19 +102,19 @@ msgstr "Ditulis: "
 
 #: lib/isodumper.py:218
 msgid " successfully written to"
-msgstr " Berhasil menulis ke"
+msgstr " berhasil ditulis ke"
 
 #: lib/isodumper.py:218
 msgid "Image "
-msgstr "Gambar "
+msgstr "Image "
 
 #: lib/isodumper.py:219
 msgid "Bytes written: "
-msgstr ""
+msgstr "Byte tertulis:"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
-msgstr ""
+msgstr "IsoDumper"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
@@ -125,16 +124,9 @@ msgid ""
 "\n"
 " If you say ok here, please <b>do not unplug</b>\n"
 " the device during the following operation."
-msgstr ""
-"<b>Peringatan</b>\n"
-" Akan <b>menghapus semua data</b> pada perangkat\n"
-" sasaran, apakah anda akan meneruskan ?\n"
-"\n"
-" Apabila anda setuju, mohon <b>jangan melepas</b>\n"
-" perangkat selama operasi berikut."
+msgstr "<b>Peringatan</b>\n Ini akan <b>menghapus semua data</b> pada perangkat\n target, apakah Anda yakin ingin melanjutkan?\n\n Apabila anda setuju, mohon <b>jangan melepas</b>\n perangkat selama operasi berikut."
 
 #: share/isodumper/isodumper.glade.h:8
-#, fuzzy
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -142,25 +134,19 @@ msgid ""
 " \n"
 " A logfile isodumper.log with the content will be saved in your\n"
 " homedir/.isodumper when the application is closed."
-msgstr ""
-"<b>Kesalahan</b>\n"
-" Terjadi kesalahan, silahkan periksa perincian\n"
-" di jendela untuk melihat pesan kesalahan.\n"
-"\n"
-" Berkas catatan dengan penjelasan akan disimpan di\n"
-" direktori utama apabila program ditutup."
+msgstr "<b>Error</b>\n Ada yang salah, silakan lihat rincian\n kesalahan.\n \n file log isodumper.log akan disimpan di\n homedir/.isodumper saat aplikasi ditutup."
 
 #: share/isodumper/isodumper.glade.h:14
 msgid "Write Image:"
-msgstr "Menulis Gambar:"
+msgstr "Menulis Image:"
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Select an image file to be written to the device"
-msgstr "Pilih sebuah berkas gambat untuk dituliskan ke perangkat"
+msgstr "Pilih sebuah image untuk ditulis ke perangkat"
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Select Image"
-msgstr "Pilih gambar"
+msgstr "Pilih image"
 
 #: share/isodumper/isodumper.glade.h:17
 msgid "to"
@@ -168,7 +154,7 @@ msgstr "ke"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Select target device to write the image to"
-msgstr "Pilih sasaran perangkat untuk membuat gambar"
+msgstr "Pilih perangkat target untuk ditulisi image"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid " "
@@ -189,10 +175,9 @@ msgid ""
 "\n"
 " You need to plug in a USB Key\n"
 " to which the image can be written."
-msgstr ""
+msgstr "<b>Peringatan</b>\n Tidak ada perangkat target yang ditemukan. \n\n Anda harus memasang flashdisk\n untuk penulisan image."
 
 #: share/isodumper/isodumper.glade.h:27
-#, fuzzy
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -201,39 +186,4 @@ msgid ""
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
-msgstr ""
-"<b>Sukses</b>\n"
-" Gambar sudah sukses direkamkan ke dalam\n"
-" perangkat sasaran.\n"
-"\n"
-" Sekarang anda boleh melepaskannya, catatan\n"
-" proses akan disimpan di direktori utama apabila\n"
-" anda menutup program."
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Proses dd diakhiri dengan adanya kesalahan !"
-
-#~ msgid "ImageWriter"
-#~ msgstr "PenulisGambar"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Kesalahan</b>\n"
-#~ " Tidak ditemukan perangkat sasaran.\n"
-#~ "\n"
-#~ " Anda perlu memasukkan dalam kunci USB\n"
-#~ " dimana gambar dapat direkamkan."
+msgstr "<b>Berhasil</b>\n Image berhasil ditulis ke\n perangkat target.\n \n Sekarang Anda bisa melepaskannya, log isodumper.log \n dari operasi ini akan disimpan di homedir/.isodumper/ saat\n Anda menutup aplikasi."
