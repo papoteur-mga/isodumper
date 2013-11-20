@@ -43,7 +43,7 @@ Translators
 - Atilla ÖNTAŞ, tarakbumba - Turkish
 - Filip Komar - Slovenian
 - Kristoffer Grundström - Swedish
-- You-Cheng Hsieh - Chinese
+- You-Cheng Hsieh - Chinese Taiwan
 - Márcio Padula - Brazilian Portuguese
 - Florin Cătălin RUSSEN - Romanian
 - kiki.syahadat - Indonesian
