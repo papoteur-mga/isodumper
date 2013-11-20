@@ -38,10 +38,12 @@ Translators
 - Sergei Zivukov - Russian
 - Yuri Chornoivan - Ukrainian
 - marja - Dutch
-- motitos - Spanish
+- motitos, Miguel Ortega - Spanish
 - Marcello Anni - Italian
-- Atilla ÖNTAŞ - Turkish
+- Atilla ÖNTAŞ, tarakbumba - Turkish
 - Filip Komar - Slovenian
 - Kristoffer Grundström - Swedish
 - You-Cheng Hsieh - Chinese
 - Márcio Padula - Brazilian Portuguese
+- Florin Cătălin RUSSEN - Romanian
+- kiki.syahadat - Indonesian
