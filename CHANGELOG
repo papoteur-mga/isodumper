@@ -1,6 +1,11 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
+IsoDumper 0.12
+------------
+	  - Correction of bugs in the device name and in the dialog box loops
+	  - Added a catch of writing error
+
 IsoDumper 0.11
 ------------
 	  - added check for the size of the destination device.
