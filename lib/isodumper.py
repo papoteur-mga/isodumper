@@ -214,7 +214,11 @@ class IsoDumper:
                             self.logview.scroll_to_mark(mark, 0.05, True, 0.0, 1.0)
                         progress.set_fraction(float(indice)/100)
                         indice +=1
-                        os.fsync(ofc)
+                        try:
+                            os.fsync(ofc)
+                        except:
+                           self.logger(_("Writing error."))
+                           self.emergency()
                         yield True
                 progress.set_fraction(1.0)
                 self.logger(_('Image ')+source.split('/')[-1]+_(' successfully written to')+target)
