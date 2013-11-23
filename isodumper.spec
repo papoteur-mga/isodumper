@@ -1,5 +1,5 @@
 Name:		isodumper
-Version:	0.11
+Version:	0.12
 Release:	%mkrel 1
 Summary:	Tool for writing ISO images on a USB stick
 Summary(fr_FR):	Outil pour écrire des images ISO sur une clé USB
@@ -57,13 +57,12 @@ install -m 755 lib/find_devices %{buildroot}%{_usr}/lib/%{name}/find_devices
 install -m 755 lib/%{name}.py %{buildroot}%{_usr}/lib/%{name}/%{name}.py
 
 # isodumper.mo translations
-pushd share/locale
-for f in *;
+pushd ./share/locale/
+for locale in *
 do
-		poname=${f:0:5}
-		mkdir -p %{buildroot}%{_datadir}/locale/$poname/LC_MESSAGES
-		install -m 644 $poname/LC_MESSAGES/%{name}.mo \
-		"%{buildroot}%{_datadir}/locale/$poname/LC_MESSAGES/"
+	mkdir -p %{buildroot}%{_datadir}/locale/$locale/LC_MESSAGES
+	install -m 644 $locale/LC_MESSAGES/%{name}.mo \
+	"%{buildroot}%{_datadir}/locale/$locale/LC_MESSAGES/"
 done
 popd
 
