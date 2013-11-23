@@ -110,10 +110,11 @@ class IsoDumper:
         combo.set_sensitive(False)
         self.chooser.set_sensitive(False)
         source = self.chooser.get_filename()
-        target = self.dev.split('(')[1].rstrip(')')
+        target = self.dev.split('(')[1].split(')')[0]
         dialog = self.wTree.get_widget("confirm_dialog")
         self.logger(_('Image: ')+source)
         self.logger(_('Target Device: ')+self.dev)
+        self.logger(_('Target Device: ')+target)
         b = os.path.getsize(source)
         if b >= (eval(self.deviceSize)) :
             self.logger(_('The device is too small to contain the ISO file.'))
