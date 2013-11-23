@@ -126,14 +126,15 @@ class IsoDumper:
                     message.set_text(_('The device is bigger than 32 Gbytes. Are you sure you want use it?'))
                     resp = dialog.run()
                     if resp:
-                        self.do_umount(target)
-                        dialog.hide()
-                        task = self.raw_write(source, target)
-                        gobject.idle_add(task.next)
-                        while gtk.events_pending():
-                            gtk.main_iteration(True)
+                        pass
                     else:
                         self.close('dummy')
+                self.do_umount(target)
+                dialog.hide()
+                task = self.raw_write(source, target)
+                gobject.idle_add(task.next)
+                while gtk.events_pending():
+                    gtk.main_iteration(True)
             else:
                 self.close('dummy')
 
