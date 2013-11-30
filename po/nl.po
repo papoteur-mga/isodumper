@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-02 16:41+0100\n"
-"PO-Revision-Date: 2013-09-28 19:00+0200\n"
+"PO-Revision-Date: 2013-11-30 08:52+0100\n"
 "Last-Translator: marja <marja@mageia.org>\n"
 "Language-Team: Dutch <i18n-nl@ml.mageia.org>\n"
 "Language: nl\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: lib/isodumper.py:98
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
 #: lib/isodumper.py:115
 msgid "Image: "
@@ -33,11 +33,12 @@ msgstr "Doelstation: "
 
 #: lib/isodumper.py:119
 msgid "The device is too small to contain the ISO file."
-msgstr ""
+msgstr "Het opslagmedium is te klein voor het ISO-bestand"
 
 #: lib/isodumper.py:126
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
+"Het opslagmedium is groter dan 32 GB. Weet u zeker dat u het wilt gebruiken?"
 
 #: lib/isodumper.py:143
 msgid "Unmounting all partitions of "
@@ -141,7 +142,7 @@ msgid ""
 " homedir/.isodumper when the application is closed."
 msgstr ""
 "<b>Fout</b>\n"
-" Er is iets misgegaan, zie details-\n"
+" Er is iets misgegaan, zie het details-\n"
 " venster voor de exacte fout.\n"
 " \n"
 " Een log-bestand isodumper.log met de inhoud zal worden opgeslagen in uw\n"
@@ -187,9 +188,13 @@ msgid ""
 " You need to plug in a USB Key\n"
 " to which the image can be written."
 msgstr ""
+"<b>Waarschuwing</b>\n"
+" Er werd geen doelstation gevonden. \n"
+"\n"
+" Plug een USB-sleutel in\n"
+" waar het image naartoe geschreven kan worden."
 
 #: share/isodumper/isodumper.glade.h:27
-#, fuzzy
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -200,37 +205,10 @@ msgid ""
 " you close the application."
 msgstr ""
 "<b>Gelukt</b>\n"
-" Het Image was succesvol geschreven naar\n"
-" het doelstation.\n"
+" Het image is succesvol naar het doelstation\n"
+" geschreven.\n"
 " \n"
-" U kunt het nu loskoppelen, een log-bestand isodumper.log van de\n"
-" handeling zal worden opgeslagen in uw homedir/.isodumper wanneer\n"
-" het programma afsluit."
+" U kunt het nu loskoppelen, het isodumper.log logbestand \n"
+" zal worden opgeslagen in uw homedir/.isodumper/ zodra\n"
+" u het programma afsluit."
 
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-sluiten"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-annuleren"
-
-#~ msgid "ImageWriter"
-#~ msgstr "Image-Schrijver"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Het dd proces is ge-eindigd met een fout !"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Fout</b>\n"
-#~ " Geen doelstations waren gevonden. \n"
-#~ "\n"
-#~ " U moet een USB-station aansluiten\n"
-#~ " waarnaar het Image kan worden geschreven."
