@@ -47,3 +47,4 @@ Translators
 - Márcio Padula - Brazilian Portuguese
 - Florin Cătălin RUSSEN - Romanian
 - kiki.syahadat - Indonesian
+- Daniel Napora - Polish
