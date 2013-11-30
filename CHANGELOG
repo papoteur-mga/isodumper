@@ -1,6 +1,11 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
+IsoDumper 0.13
+------------
+	  - added and update Polish translations.
+	  - updated Dutch translations.
+
 IsoDumper 0.12
 ------------
 	  - Correction of bugs in the device name and in the dialog box loops
