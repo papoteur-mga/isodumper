@@ -6,7 +6,7 @@
 # killer1987 <marcello.anni@alice.it>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Mageia\n"
+"Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-02 21:58+0100\n"
 "PO-Revision-Date: 2013-11-30 19:27+0000\n"
