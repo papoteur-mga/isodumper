@@ -1,26 +1,26 @@
 # Italian translation of isodumper.
 # This file is distributed under the same license as the isodumper package.
 #
-# Marcello Anni <marcello.anni@alice.it>, 2013.
+# Translators:
+# killer1987 <marcello.anni@alice.it>, 2013
+# killer1987 <marcello.anni@alice.it>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: isodumper\n"
+"Project-Id-Version: Mageia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-02 16:41+0100\n"
-"PO-Revision-Date: 2013-10-09 16:15+0200\n"
-"Last-Translator: Marcello Anni <marcello.anni@alice.it>\n"
-"Language-Team: Italian <kde-i18n-it@kde.org>\n"
-"Language: it\n"
+"POT-Creation-Date: 2013-11-02 21:58+0100\n"
+"PO-Revision-Date: 2013-11-30 19:27+0000\n"
+"Last-Translator: killer1987 <marcello.anni@alice.it>\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/mageia/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
-"X-Generator: Lokalize 1.5\n"
+"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lib/isodumper.py:98
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
 #: lib/isodumper.py:115
 msgid "Image: "
@@ -32,11 +32,11 @@ msgstr "Dispositivo target: "
 
 #: lib/isodumper.py:119
 msgid "The device is too small to contain the ISO file."
-msgstr ""
+msgstr "Il dispositivo è troppo piccolo per contenere il file ISO."
 
 #: lib/isodumper.py:126
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr ""
+msgstr "Il dispositivo è più grande di 32 Gbytes. Sei sicuro di volerlo usare?"
 
 #: lib/isodumper.py:143
 msgid "Unmounting all partitions of "
@@ -186,6 +186,11 @@ msgid ""
 " You need to plug in a USB Key\n"
 " to which the image can be written."
 msgstr ""
+"<b>Avviso</b>\n"
+" Non è stato trovato nessun dispositivo target.\n"
+"\n"
+" Devi inserire una chiavetta USB dove\n"
+" l'immagine possa essere scritta."
 
 #: share/isodumper/isodumper.glade.h:27
 msgid ""
@@ -202,18 +207,4 @@ msgstr ""
 " dispositivo target.\n"
 " \n"
 " Sei libero di rimuoverlo adesso, quando chiuderai l'applicazione\n"
-" verrà salvato il file di log isodumper.log nella tua cartella /home/."
-"isodumper."
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Errore</b>\n"
-#~ " Nessun dispositivo target trovato. \n"
-#~ "\n"
-#~ " Devi inserire una pennina USB\n"
-#~ " nella quale può essere scritta l'immagine."
+" verrà salvato il file di log isodumper.log nella tua cartella /home/.isodumper."
