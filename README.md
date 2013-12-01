@@ -39,7 +39,7 @@ Translators
 - Yuri Chornoivan - Ukrainian
 - marja - Dutch
 - motitos, Miguel Ortega - Spanish
-- Marcello Anni - Italian
+- Marcello Anni, killer1987 - Italian
 - Atilla ÖNTAŞ, tarakbumba - Turkish
 - Filip Komar - Slovenian
 - Kristoffer Grundström - Swedish
