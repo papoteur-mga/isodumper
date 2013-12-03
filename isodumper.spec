@@ -1,5 +1,5 @@
 Name:		isodumper
-Version:	0.12
+Version:	0.13
 Release:	%mkrel 1
 Summary:	Tool for writing ISO images on a USB stick
 Summary(fr_FR):	Outil pour écrire des images ISO sur une clé USB
@@ -11,7 +11,6 @@ Source0:	%{name}-%{version}.tar.gz
 BuildArch:	noarch
 
 BuildRequires:	imagemagick
-BuildRequires:	usermode-consoleonly
 
 Requires:	coreutils
 Requires:	udisks
@@ -19,6 +18,7 @@ Requires:	procps
 Requires:	python
 Requires:	xterm
 Requires:	pygtk2.0-libglade
+Requires:	usermode-consoleonly
 
 %description
 A GUI tool for writing ISO images on a USB stick.
@@ -37,46 +37,10 @@ Ce logiciel est écrit en python.
 %setup -q
 
 %build
-%setup_compile_flags
+%make
 
 %install
-mkdir -p %{buildroot}%{_sbindir}
-mkdir -p %{buildroot}%{_usr}/lib/%{name}
-mkdir -p %{buildroot}%{_datadir}/%{name}
-
-install -m 755 isodumper %{buildroot}%{_sbindir}/%{name}
-install -m 644 share/%{name}/%{name}.glade %{buildroot}%{_datadir}/%{name}/%{name}.glade
-install -m 644 share/%{name}/header.png %{buildroot}%{_datadir}/%{name}/header.png
-
-# desktop menu entry
-mkdir -p %{buildroot}%{_datadir}/applications
-install -m 644 share/applications/%{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
-
-# LIBFILES isodumper.py find_devices
-install -m 755 lib/find_devices %{buildroot}%{_usr}/lib/%{name}/find_devices
-install -m 755 lib/%{name}.py %{buildroot}%{_usr}/lib/%{name}/%{name}.py
-
-# isodumper.mo translations
-pushd ./share/locale/
-for locale in *
-do
-	mkdir -p %{buildroot}%{_datadir}/locale/$locale/LC_MESSAGES
-	install -m 644 $locale/LC_MESSAGES/%{name}.mo \
-	"%{buildroot}%{_datadir}/locale/$locale/LC_MESSAGES/"
-done
-popd
-
-# icons
-mkdir -p %{buildroot}/{%{_liconsdir},%{_miconsdir},%{_iconsdir}}
-convert %{name}.png -geometry 20x20 %{buildroot}/%{_miconsdir}/%{name}.png
-convert %{name}.png -geometry 32x32 %{buildroot}/%{_iconsdir}/%{name}.png
-convert %{name}.png -geometry 48x48 %{buildroot}/%{_liconsdir}/%{name}.png
-
-# Adjust for console-helper magic
-mkdir -p %{buildroot}%{_bindir}
-pushd %{buildroot}%{_bindir}
-ln -s consolehelper %{name}
-popd
+%makeinstall_std DESTDIR="%{buildroot}" PREFIX="%{_prefix}"
 
 %find_lang %{name}
 
@@ -87,6 +51,7 @@ popd
 %{_usr}/lib/%{name}/
 %{_datadir}/%{name}/
 %{_datadir}/applications/%{name}.desktop
+%{_datadir}/pixmaps/%{name}.png
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
