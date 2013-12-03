@@ -13,6 +13,7 @@ Requirements
 - python
 - xterm
 - pygtk2.0-libglade
+- usermode-consoleonly
 
 
 License
