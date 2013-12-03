@@ -5,6 +5,9 @@ IsoDumper 0.13
 ------------
 	  - added and update Polish translations.
 	  - updated Dutch and Italian translations.
+	  - added a Makefile file for build package.
+	  - added a pixmaps icons.
+	  - usermode-consoleonly is not a BuildRequires, but it is a Requires package.
 
 IsoDumper 0.12
 ------------
