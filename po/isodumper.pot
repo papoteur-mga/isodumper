@@ -153,10 +153,6 @@ msgstr ""
 msgid "Select target device to write the image to"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:19
-msgid " "
-msgstr ""
-
 #: share/isodumper/isodumper.glade.h:20
 msgid "Details"
 msgstr ""
