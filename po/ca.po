@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-02 16:41+0100\n"
+"POT-Creation-Date: 2013-12-08 15:32+0100\n"
 "PO-Revision-Date: 2009-06-12 12:05+0000\n"
 "Last-Translator: Siegfried Gevatter <rainct@ubuntu.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
@@ -27,89 +27,89 @@ msgstr ""
 msgid "Image: "
 msgstr "Imatge: "
 
-#: lib/isodumper.py:116
+#: lib/isodumper.py:116 lib/isodumper.py:117
 msgid "Target Device: "
 msgstr "Dispositiu de destí: "
 
-#: lib/isodumper.py:119
+#: lib/isodumper.py:120
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:126
+#: lib/isodumper.py:127
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:145
 msgid "Unmounting all partitions of "
 msgstr "Desmuntant totes les particions de "
 
-#: lib/isodumper.py:145
+#: lib/isodumper.py:147
 msgid "Trying to unmount "
 msgstr "Intentant desmuntar "
 
-#: lib/isodumper.py:151
+#: lib/isodumper.py:153
 msgid " was terminated by signal "
 msgstr " s'ha acabat per un senyal "
 
-#: lib/isodumper.py:151 lib/isodumper.py:157
+#: lib/isodumper.py:153 lib/isodumper.py:159
 msgid "Error, umount "
 msgstr "Error, desmunta "
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:157
 msgid " successfully unmounted"
 msgstr " desmuntat amb èxit"
 
-#: lib/isodumper.py:157
+#: lib/isodumper.py:159
 msgid " returned "
 msgstr " ha retornat "
 
-#: lib/isodumper.py:160
+#: lib/isodumper.py:162
 msgid "Execution failed: "
 msgstr "Execució fallida: "
 
-#: lib/isodumper.py:168
+#: lib/isodumper.py:170
 msgid "Could not read mtab !"
 msgstr "No s'ha pogut llegir mtab!"
 
-#: lib/isodumper.py:177 lib/isodumper.py:200
+#: lib/isodumper.py:179 lib/isodumper.py:202
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:183
+#: lib/isodumper.py:185
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:190
 msgid " to "
 msgstr " a "
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:190
 msgid "Writing "
 msgstr "Escrivint "
 
-#: lib/isodumper.py:189
+#: lib/isodumper.py:191
 #, fuzzy
 msgid "Executing copy from "
 msgstr "Executant : dd if="
 
-#: lib/isodumper.py:205 lib/isodumper.py:223
+#: lib/isodumper.py:207 lib/isodumper.py:220 lib/isodumper.py:229
 #, fuzzy
 msgid "Writing error."
 msgstr "Escrivint "
 
-#: lib/isodumper.py:210
+#: lib/isodumper.py:212
 msgid "Wrote: "
 msgstr "Ha escrit: "
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:224
 msgid " successfully written to"
 msgstr " ha estat escrit amb èxit a"
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:224
 msgid "Image "
 msgstr "Imatge "
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:225
 msgid "Bytes written: "
 msgstr ""
 
@@ -171,18 +171,14 @@ msgid "Select target device to write the image to"
 msgstr "Selecciona dispositiu de destí on escriure la imatge"
 
 #: share/isodumper/isodumper.glade.h:19
-msgid " "
-msgstr " "
-
-#: share/isodumper/isodumper.glade.h:20
 msgid "Details"
 msgstr "Detalls"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:20
 msgid "Write to device"
 msgstr "Escriure al dispositiu"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:21
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -191,7 +187,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:26
 #, fuzzy
 msgid ""
 "<b>Success</b>\n"
@@ -210,21 +206,6 @@ msgstr ""
 " registre de l'operació al vostre directori\n"
 " personal quan tanqueu l'aplicació."
 
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "El procés dd ha acabat amb un error."
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "Aborta"
-
-#~ msgid "gtk-close"
-#~ msgstr "Tanca"
-
-#~ msgid "gtk-ok"
-#~ msgstr "D'acord"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -237,3 +218,21 @@ msgstr ""
 #~ "\n"
 #~ " Heu d'introduir una clau USB a la qual\n"
 #~ " es pugui escriure la imatge."
+
+#~ msgid "gtk-ok"
+#~ msgstr "D'acord"
+
+#~ msgid "gtk-close"
+#~ msgstr "Tanca"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "Aborta"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "El procés dd ha acabat amb un error."
+
+#~ msgid " "
+#~ msgstr " "

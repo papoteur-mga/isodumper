@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-02 16:41+0100\n"
+"POT-Creation-Date: 2013-12-08 15:32+0100\n"
 "PO-Revision-Date: 2011-03-17 11:58+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Launchpad Serbian Translators\n"
@@ -27,87 +27,87 @@ msgstr ""
 msgid "Image: "
 msgstr "Одраз: "
 
-#: lib/isodumper.py:116
+#: lib/isodumper.py:116 lib/isodumper.py:117
 msgid "Target Device: "
 msgstr "Циљни уређај: "
 
-#: lib/isodumper.py:119
+#: lib/isodumper.py:120
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:126
+#: lib/isodumper.py:127
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:145
 msgid "Unmounting all partitions of "
 msgstr "Демонтирам све партиције на "
 
-#: lib/isodumper.py:145
+#: lib/isodumper.py:147
 msgid "Trying to unmount "
 msgstr "Покушавам да демонтирам "
 
-#: lib/isodumper.py:151
+#: lib/isodumper.py:153
 msgid " was terminated by signal "
 msgstr " је окончан сигналом "
 
-#: lib/isodumper.py:151 lib/isodumper.py:157
+#: lib/isodumper.py:153 lib/isodumper.py:159
 msgid "Error, umount "
 msgstr "Грешка, демонтирам "
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:157
 msgid " successfully unmounted"
 msgstr " је успешно демонтиран"
 
-#: lib/isodumper.py:157
+#: lib/isodumper.py:159
 msgid " returned "
 msgstr " је вратио "
 
-#: lib/isodumper.py:160
+#: lib/isodumper.py:162
 msgid "Execution failed: "
 msgstr "Извршавање није успело: "
 
-#: lib/isodumper.py:168
+#: lib/isodumper.py:170
 msgid "Could not read mtab !"
 msgstr "Не могу да прочитам мтаб !"
 
-#: lib/isodumper.py:177 lib/isodumper.py:200
+#: lib/isodumper.py:179 lib/isodumper.py:202
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:183
+#: lib/isodumper.py:185
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:190
 msgid " to "
 msgstr " на "
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:190
 msgid "Writing "
 msgstr "Записујем "
 
-#: lib/isodumper.py:189
+#: lib/isodumper.py:191
 msgid "Executing copy from "
 msgstr ""
 
-#: lib/isodumper.py:205 lib/isodumper.py:223
+#: lib/isodumper.py:207 lib/isodumper.py:220 lib/isodumper.py:229
 msgid "Writing error."
 msgstr ""
 
-#: lib/isodumper.py:210
+#: lib/isodumper.py:212
 msgid "Wrote: "
 msgstr "Записах: "
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:224
 msgid " successfully written to"
 msgstr " је успешно записан на"
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:224
 msgid "Image "
 msgstr "Одраз "
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:225
 msgid "Bytes written: "
 msgstr ""
 
@@ -168,18 +168,14 @@ msgid "Select target device to write the image to"
 msgstr "Изаберите циљну уређај на коме ће бити записан одраз"
 
 #: share/isodumper/isodumper.glade.h:19
-msgid " "
-msgstr " "
-
-#: share/isodumper/isodumper.glade.h:20
 msgid "Details"
 msgstr "Детаљи"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:20
 msgid "Write to device"
 msgstr "Запиши на уређај"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:21
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -188,7 +184,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:26
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -205,21 +201,6 @@ msgstr ""
 " о операцији ће бити сачуван у вашој личној\n"
 " фасцикли ако затворите програм."
 
-#~ msgid "gtk-ok"
-#~ msgstr "гтк-у реду"
-
-#~ msgid "gtk-close"
-#~ msgstr "гтк-затвори"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "гтк-откажи"
-
-#~ msgid "ImageWriter"
-#~ msgstr "Писач одраза"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "дд процес је завршио са грешком !"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -232,3 +213,21 @@ msgstr ""
 #~ "\n"
 #~ " Морате да прикључите УСБ кључ\n"
 #~ " на који може бити записан одраз."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "дд процес је завршио са грешком !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "Писач одраза"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "гтк-откажи"
+
+#~ msgid "gtk-close"
+#~ msgstr "гтк-затвори"
+
+#~ msgid "gtk-ok"
+#~ msgstr "гтк-у реду"
+
+#~ msgid " "
+#~ msgstr " "

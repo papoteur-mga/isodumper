@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-02 16:41+0100\n"
+"POT-Creation-Date: 2013-12-08 15:32+0100\n"
 "PO-Revision-Date: 2013-11-10 17:21-0300\n"
 "Last-Translator: Márcio Padula <padula1000@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
@@ -27,88 +27,88 @@ msgstr "Mb"
 msgid "Image: "
 msgstr "Imagem:"
 
-#: lib/isodumper.py:116
+#: lib/isodumper.py:116 lib/isodumper.py:117
 msgid "Target Device: "
 msgstr "Dispositivo alvo:"
 
-#: lib/isodumper.py:119
+#: lib/isodumper.py:120
 msgid "The device is too small to contain the ISO file."
 msgstr "O dispositivo é muito pequeno para conter o arquivo ISO."
 
-#: lib/isodumper.py:126
+#: lib/isodumper.py:127
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "O dispositivo é maior do que 32 Gbytes. Tem certeza que você quer usá-lo?"
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:145
 msgid "Unmounting all partitions of "
 msgstr "Desmontando todas as partições de"
 
-#: lib/isodumper.py:145
+#: lib/isodumper.py:147
 msgid "Trying to unmount "
 msgstr "Tentando desmontar"
 
-#: lib/isodumper.py:151
+#: lib/isodumper.py:153
 msgid " was terminated by signal "
 msgstr " foi terminado pelo sinal"
 
-#: lib/isodumper.py:151 lib/isodumper.py:157
+#: lib/isodumper.py:153 lib/isodumper.py:159
 msgid "Error, umount "
 msgstr "Erro, desmontar"
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:157
 msgid " successfully unmounted"
 msgstr " desmontado com sucesso"
 
-#: lib/isodumper.py:157
+#: lib/isodumper.py:159
 msgid " returned "
 msgstr " retornado"
 
-#: lib/isodumper.py:160
+#: lib/isodumper.py:162
 msgid "Execution failed: "
 msgstr "Falha na execução:"
 
-#: lib/isodumper.py:168
+#: lib/isodumper.py:170
 msgid "Could not read mtab !"
 msgstr "Não foi possível ler mtab!"
 
-#: lib/isodumper.py:177 lib/isodumper.py:200
+#: lib/isodumper.py:179 lib/isodumper.py:202
 msgid "Reading error."
 msgstr "Erro de leitura."
 
-#: lib/isodumper.py:183
+#: lib/isodumper.py:185
 msgid "You have not the rights for writing on the device"
 msgstr "Você não tem os direitos para escrever no dispositivo"
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:190
 msgid " to "
 msgstr " para"
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:190
 msgid "Writing "
 msgstr "Escrevendo"
 
-#: lib/isodumper.py:189
+#: lib/isodumper.py:191
 msgid "Executing copy from "
 msgstr "Execução de cópia"
 
-#: lib/isodumper.py:205 lib/isodumper.py:223
+#: lib/isodumper.py:207 lib/isodumper.py:220 lib/isodumper.py:229
 msgid "Writing error."
 msgstr "Escrevendo erro."
 
-#: lib/isodumper.py:210
+#: lib/isodumper.py:212
 msgid "Wrote: "
 msgstr "Escreveu:"
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:224
 msgid " successfully written to"
 msgstr " escrito com sucesso"
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:224
 msgid "Image "
 msgstr "Imagem"
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:225
 msgid "Bytes written: "
 msgstr "Bytes escrito:"
 
@@ -169,18 +169,14 @@ msgid "Select target device to write the image to"
 msgstr "Selecione dispositivo de destino para gravar a imagem em"
 
 #: share/isodumper/isodumper.glade.h:19
-msgid " "
-msgstr " "
-
-#: share/isodumper/isodumper.glade.h:20
 msgid "Details"
 msgstr "Detalhes"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:20
 msgid "Write to device"
 msgstr "Escreva para o dispositivo"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:21
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -194,7 +190,7 @@ msgstr ""
 " Você precisa se conectar em uma chave USB\n"
 " para a qual a imagem pode ser gravada."
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:26
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -212,27 +208,3 @@ msgstr ""
 " da operação será salvo no seu diretório de seu usuário/.isodumper/ quando\n"
 " você fechar o aplicativo."
 
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "O processo dd acabou com um erro !"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Erro</b>Nenhum dispositivo alvo foi encontrado Você precisa conectar "
-#~ "um dispositivo USBpara onde uma imagem pode ser escrita."

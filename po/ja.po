@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-02 16:41+0100\n"
+"POT-Creation-Date: 2013-12-08 15:32+0100\n"
 "PO-Revision-Date: 2009-03-09 13:20+0000\n"
 "Last-Translator: Ikuya Awashiro <ikuya@fruitsbasket.info>\n"
 "Language-Team: Japanese <ja@li.org>\n"
@@ -27,89 +27,89 @@ msgstr ""
 msgid "Image: "
 msgstr "イメージ: "
 
-#: lib/isodumper.py:116
+#: lib/isodumper.py:116 lib/isodumper.py:117
 msgid "Target Device: "
 msgstr "ターゲットデバイス: "
 
-#: lib/isodumper.py:119
+#: lib/isodumper.py:120
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:126
+#: lib/isodumper.py:127
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:145
 msgid "Unmounting all partitions of "
 msgstr "すべてのパーティションをアンマウント： "
 
-#: lib/isodumper.py:145
+#: lib/isodumper.py:147
 msgid "Trying to unmount "
 msgstr "アンマウントを試みています "
 
-#: lib/isodumper.py:151
+#: lib/isodumper.py:153
 msgid " was terminated by signal "
 msgstr " は次のシグナルを受け取り、終了しました: "
 
-#: lib/isodumper.py:151 lib/isodumper.py:157
+#: lib/isodumper.py:153 lib/isodumper.py:159
 msgid "Error, umount "
 msgstr "アンマウント時にエラーが発生: "
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:157
 msgid " successfully unmounted"
 msgstr " のアンマウントを完了しました"
 
-#: lib/isodumper.py:157
+#: lib/isodumper.py:159
 msgid " returned "
 msgstr " は次を返しました: "
 
-#: lib/isodumper.py:160
+#: lib/isodumper.py:162
 msgid "Execution failed: "
 msgstr "実行に失敗しました: "
 
-#: lib/isodumper.py:168
+#: lib/isodumper.py:170
 msgid "Could not read mtab !"
 msgstr "mtabを読み込めませんでした!"
 
-#: lib/isodumper.py:177 lib/isodumper.py:200
+#: lib/isodumper.py:179 lib/isodumper.py:202
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:183
+#: lib/isodumper.py:185
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:190
 msgid " to "
 msgstr " → "
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:190
 msgid "Writing "
 msgstr "次のデバイスへ書き込み中 "
 
-#: lib/isodumper.py:189
+#: lib/isodumper.py:191
 #, fuzzy
 msgid "Executing copy from "
 msgstr "実行中: dd if="
 
-#: lib/isodumper.py:205 lib/isodumper.py:223
+#: lib/isodumper.py:207 lib/isodumper.py:220 lib/isodumper.py:229
 #, fuzzy
 msgid "Writing error."
 msgstr "次のデバイスへ書き込み中 "
 
-#: lib/isodumper.py:210
+#: lib/isodumper.py:212
 msgid "Wrote: "
 msgstr "書き込み: "
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:224
 msgid " successfully written to"
 msgstr " を次に書き込みました:"
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:224
 msgid "Image "
 msgstr "イメージ "
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:225
 msgid "Bytes written: "
 msgstr ""
 
@@ -172,18 +172,14 @@ msgid "Select target device to write the image to"
 msgstr "デバイスに書き込むイメージを選択"
 
 #: share/isodumper/isodumper.glade.h:19
-msgid " "
-msgstr " "
-
-#: share/isodumper/isodumper.glade.h:20
 msgid "Details"
 msgstr "詳細"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:20
 msgid "Write to device"
 msgstr "デバイスへ書き込む"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:21
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -192,7 +188,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:26
 #, fuzzy
 msgid ""
 "<b>Success</b>\n"
@@ -211,21 +207,6 @@ msgstr ""
 " アプリケーションを終了すると、ログを \n"
 " ホームディレクトリに書き込みます。"
 
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "ddプロセスがエラーで終了しました!"
-
-#~ msgid "ImageWriter"
-#~ msgstr "イメージライター"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -238,3 +219,21 @@ msgstr ""
 #~ "\n"
 #~ " イメージを書き込めるUSBメモリを \n"
 #~ " 接続する必要があります。"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "イメージライター"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "ddプロセスがエラーで終了しました!"
+
+#~ msgid " "
+#~ msgstr " "

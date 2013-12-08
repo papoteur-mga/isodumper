@@ -1,7 +1,7 @@
 # Turkish translation for isodumper package.
 # Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # tarakbumba . <tarakbumba@gmail.com>, 2013
 # tarakbumba . <tarakbumba@gmail.com>, 2013
@@ -10,14 +10,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-02 21:58+0100\n"
+"POT-Creation-Date: 2013-12-08 15:32+0100\n"
 "PO-Revision-Date: 2013-11-16 16:12+0000\n"
 "Last-Translator: tarakbumba . <tarakbumba@gmail.com>\n"
-"Language-Team: Turkish (http://www.transifex.com/projects/p/mageia/language/tr/)\n"
+"Language-Team: Turkish (http://www.transifex.com/projects/p/mageia/language/"
+"tr/)\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: lib/isodumper.py:98
@@ -28,87 +29,88 @@ msgstr "Mb"
 msgid "Image: "
 msgstr "Kalıp: "
 
-#: lib/isodumper.py:116
+#: lib/isodumper.py:116 lib/isodumper.py:117
 msgid "Target Device: "
 msgstr "Hedef Aygıt: "
 
-#: lib/isodumper.py:119
+#: lib/isodumper.py:120
 msgid "The device is too small to contain the ISO file."
 msgstr "Aygıt ISO dosyasını içermek için çok küçük"
 
-#: lib/isodumper.py:126
+#: lib/isodumper.py:127
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr "Aygıt 32 Gbayttan büyük. Bu aygıtı kullanmak istediğinize emin misiniz?"
+msgstr ""
+"Aygıt 32 Gbayttan büyük. Bu aygıtı kullanmak istediğinize emin misiniz?"
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:145
 msgid "Unmounting all partitions of "
 msgstr "Tüm bölümlerden çıkart "
 
-#: lib/isodumper.py:145
+#: lib/isodumper.py:147
 msgid "Trying to unmount "
 msgstr "Çıkarmaya çalışıyor "
 
-#: lib/isodumper.py:151
+#: lib/isodumper.py:153
 msgid " was terminated by signal "
 msgstr " Sinyal tarafından sonlandırıldı"
 
-#: lib/isodumper.py:151 lib/isodumper.py:157
+#: lib/isodumper.py:153 lib/isodumper.py:159
 msgid "Error, umount "
 msgstr "Hata, umount "
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:157
 msgid " successfully unmounted"
 msgstr " başarıyla çıkarıldı"
 
-#: lib/isodumper.py:157
+#: lib/isodumper.py:159
 msgid " returned "
 msgstr "  döndü "
 
-#: lib/isodumper.py:160
+#: lib/isodumper.py:162
 msgid "Execution failed: "
 msgstr "Çalıştırma başarısız: "
 
-#: lib/isodumper.py:168
+#: lib/isodumper.py:170
 msgid "Could not read mtab !"
 msgstr "mtab okunamadı !"
 
-#: lib/isodumper.py:177 lib/isodumper.py:200
+#: lib/isodumper.py:179 lib/isodumper.py:202
 msgid "Reading error."
 msgstr "Okuma hatası."
 
-#: lib/isodumper.py:183
+#: lib/isodumper.py:185
 msgid "You have not the rights for writing on the device"
 msgstr "Aygıta yazma hakkına sahip değilsiniz"
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:190
 msgid " to "
 msgstr " şuna "
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:190
 msgid "Writing "
 msgstr "Yazdırıyor "
 
-#: lib/isodumper.py:189
+#: lib/isodumper.py:191
 msgid "Executing copy from "
 msgstr "Kalıptan kopyalama çalıştırılıyor"
 
-#: lib/isodumper.py:205 lib/isodumper.py:223
+#: lib/isodumper.py:207 lib/isodumper.py:220 lib/isodumper.py:229
 msgid "Writing error."
 msgstr "Yazma hatası."
 
-#: lib/isodumper.py:210
+#: lib/isodumper.py:212
 msgid "Wrote: "
 msgstr "Yazıldı: "
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:224
 msgid " successfully written to"
 msgstr "  başarıyla aygıta yazıldı"
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:224
 msgid "Image "
 msgstr "İmaj "
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:225
 msgid "Bytes written: "
 msgstr "Yazılan bayt:"
 
@@ -124,7 +126,13 @@ msgid ""
 "\n"
 " If you say ok here, please <b>do not unplug</b>\n"
 " the device during the following operation."
-msgstr "<b>Uyarı</b>\n Bu işlem hedef aygıttaki<b>tüm bilgileri silecek</b> \n işlemi yapmak istediğinize emin misiniz?\n\n Eminseniz, lütfen işlem devam ederken\n <b>aygıtı çıkarmayın</b>."
+msgstr ""
+"<b>Uyarı</b>\n"
+" Bu işlem hedef aygıttaki<b>tüm bilgileri silecek</b> \n"
+" işlemi yapmak istediğinize emin misiniz?\n"
+"\n"
+" Eminseniz, lütfen işlem devam ederken\n"
+" <b>aygıtı çıkarmayın</b>."
 
 #: share/isodumper/isodumper.glade.h:8
 msgid ""
@@ -134,7 +142,13 @@ msgid ""
 " \n"
 " A logfile isodumper.log with the content will be saved in your\n"
 " homedir/.isodumper when the application is closed."
-msgstr "<b>Hata</b>\n Bir şeyler ters gitti. Lütfen tama hata görüntüleme için\n ayrıntı penceresini inceleyin.\n \n Bir isodumper.log kayıt dosyası uygulama kapandığında\n homedir/.isodumper dizininize kaydedilecek."
+msgstr ""
+"<b>Hata</b>\n"
+" Bir şeyler ters gitti. Lütfen tama hata görüntüleme için\n"
+" ayrıntı penceresini inceleyin.\n"
+" \n"
+" Bir isodumper.log kayıt dosyası uygulama kapandığında\n"
+" homedir/.isodumper dizininize kaydedilecek."
 
 #: share/isodumper/isodumper.glade.h:14
 msgid "Write Image:"
@@ -157,27 +171,28 @@ msgid "Select target device to write the image to"
 msgstr "Kalıp yazdırma için bir hedef aygıt seçin"
 
 #: share/isodumper/isodumper.glade.h:19
-msgid " "
-msgstr " "
-
-#: share/isodumper/isodumper.glade.h:20
 msgid "Details"
 msgstr "Detaylar"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:20
 msgid "Write to device"
 msgstr "Aygıta yaz"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:21
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
 "\n"
 " You need to plug in a USB Key\n"
 " to which the image can be written."
-msgstr "<b>Uyarı</b>\nHedef aygıt bulunamadı.\n\nİmajın üzerine yazılabileceği\nbir USB bellek takmalısınız."
+msgstr ""
+"<b>Uyarı</b>\n"
+"Hedef aygıt bulunamadı.\n"
+"\n"
+"İmajın üzerine yazılabileceği\n"
+"bir USB bellek takmalısınız."
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:26
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -186,4 +201,12 @@ msgid ""
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
-msgstr "<b>Başarı</b>\n İmaj hedef aygıta başarılı bir şekilde\n yazıldı.\n\n Aygıtı çıkarabilirsiniz. İşleme dair bir isodumper.log kayıt.\n dosyası uygulama kapandığında kullanıcı dizini/.isodumper/ altına\n kaydedilecek."
+msgstr ""
+"<b>Başarı</b>\n"
+" İmaj hedef aygıta başarılı bir şekilde\n"
+" yazıldı.\n"
+"\n"
+" Aygıtı çıkarabilirsiniz. İşleme dair bir isodumper.log kayıt.\n"
+" dosyası uygulama kapandığında kullanıcı dizini/.isodumper/ altına\n"
+" kaydedilecek."
+
