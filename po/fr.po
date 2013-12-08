@@ -2,8 +2,10 @@
 # Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the isodumper package.
 #
-# Automatically generated, 2013.
-# Papoteur <papoteur@mageialinux-online.org>, 2013.
+# Translators:
+# Automatically generated, 2013
+# Papoteur <papoteur@mageialinux-online.org>, 2013
+# papoteur, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
