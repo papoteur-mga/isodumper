@@ -1,26 +1,29 @@
-# German translations for usb-imagewriter isodumper package.
+# German translations for isodumper package.
 # Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the isodumper package.
-# Automatically generated, 2013.
-# Oliver Grawert <ogra@ubuntu.com>, 2008.
 #
+# Translators:
+# Automatically generated, 2013
+# taleon <cr@rt.fm>, 2013
+# Oliver Grawert <ogra@ubuntu.com>, 2008
+# Akien <akien@mageia.org>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-02 16:41+0100\n"
-"PO-Revision-Date: 2008-07-06 20:42+0200\n"
-"Last-Translator: Oliver Grawert <ogra@ubuntu.com>\n"
-"Language-Team: German\n"
-"Language: de\n"
+"POT-Creation-Date: 2013-11-02 21:58+0100\n"
+"PO-Revision-Date: 2013-12-08 11:05+0000\n"
+"Last-Translator: taleon <cr@rt.fm>>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/mageia/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lib/isodumper.py:98
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
 #: lib/isodumper.py:115
 msgid "Image: "
@@ -32,15 +35,15 @@ msgstr "Ziel Gerät: "
 
 #: lib/isodumper.py:119
 msgid "The device is too small to contain the ISO file."
-msgstr ""
+msgstr "Dieses Gerät ist zu kein, um die ISO-Datei zu beinhalten."
 
 #: lib/isodumper.py:126
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr ""
+msgstr "Dieses Gerät ist größer als 32 Gbytes. Wollen Sie dieses wirklich verwenden?"
 
 #: lib/isodumper.py:143
 msgid "Unmounting all partitions of "
-msgstr "Aushängen aller partitionen von "
+msgstr "Aushängen aller Partitionen von "
 
 #: lib/isodumper.py:145
 msgid "Trying to unmount "
@@ -52,7 +55,7 @@ msgstr " wurde beendet mit Signal "
 
 #: lib/isodumper.py:151 lib/isodumper.py:157
 msgid "Error, umount "
-msgstr "Fehler, Aushangen von "
+msgstr "Fehler, Aushängen von "
 
 #: lib/isodumper.py:155
 msgid " successfully unmounted"
@@ -72,11 +75,11 @@ msgstr "Konnte mtab nicht lesen !"
 
 #: lib/isodumper.py:177 lib/isodumper.py:200
 msgid "Reading error."
-msgstr ""
+msgstr "Lesefehler."
 
 #: lib/isodumper.py:183
 msgid "You have not the rights for writing on the device"
-msgstr ""
+msgstr "Sie haben nicht die Rechte, um auf dieses Gerät zu schreiben."
 
 #: lib/isodumper.py:188
 msgid " to "
@@ -87,14 +90,12 @@ msgid "Writing "
 msgstr "Schreibe "
 
 #: lib/isodumper.py:189
-#, fuzzy
 msgid "Executing copy from "
-msgstr "Führe aus: dd if="
+msgstr "Ausführen der Kopie von"
 
 #: lib/isodumper.py:205 lib/isodumper.py:223
-#, fuzzy
 msgid "Writing error."
-msgstr "Schreibe "
+msgstr "Schreibfehler."
 
 #: lib/isodumper.py:210
 msgid "Wrote: "
@@ -106,15 +107,15 @@ msgstr " erfolgreich geschschrieben nach"
 
 #: lib/isodumper.py:218
 msgid "Image "
-msgstr "Image "
+msgstr "Abbild "
 
 #: lib/isodumper.py:219
 msgid "Bytes written: "
-msgstr ""
+msgstr "Bytes geschrieben:"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
-msgstr ""
+msgstr "IsoDumper"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
@@ -127,14 +128,13 @@ msgid ""
 msgstr ""
 "<b>Warnung</b>\n"
 " Dies wird <b>alle Daten</b> auf dem Zielgerät\n"
-" <b>zerstören</b>, sind Sie sicher daß Sie\n"
-" fortfahren wollen ?\n"
+" <b>zerstören</b>, sind Sie sicher, daß Sie\n"
+" fortfahren wollen?\n"
 "\n"
-" Wenn Sie Ok wählen bitte das Gerät während der\n"
+" Wenn Sie Ok wählen, bitte das Gerät während der\n"
 " folgenden Aktionen <b>nicht herausziehen.</b>"
 
 #: share/isodumper/isodumper.glade.h:8
-#, fuzzy
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -144,23 +144,23 @@ msgid ""
 " homedir/.isodumper when the application is closed."
 msgstr ""
 "<b>Fehler</b>\n"
-" Es ist etwas schief gegangen, bitte im Detail-\n"
-" fenster den genauen Fehler nachsehen.\n"
+" Irgendwas ging schief. Bitte entnehmen Sie die exakten\n"
+" Fehlermeldungen dem detaillierten Ansichtfenster.\n"
 " \n"
-" Eine protokoll Datei mit dessen Inhalt wird bei\n"
-" Programmende Ihrem Heimatverzeichnis gespeichert."
+" Eine Log-Datei isodumper.log mit dem Inhalt wird in Ihrem\n"
+" homedir/.isodumper gespeichert, sobald Sie die Anwendung schließen."
 
 #: share/isodumper/isodumper.glade.h:14
 msgid "Write Image:"
-msgstr "Schreibe Image:"
+msgstr "Schreibe Abbild:"
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Select an image file to be written to the device"
-msgstr "Image wählen das auf das Zielgerät geschrieben werden soll"
+msgstr "Abbild wählen, das auf das Zielgerät geschrieben werden soll"
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Select Image"
-msgstr "Image wählen"
+msgstr "Abbild wählen"
 
 #: share/isodumper/isodumper.glade.h:17
 msgid "to"
@@ -168,11 +168,11 @@ msgstr "nach"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Select target device to write the image to"
-msgstr "Zielgerat auf welches das Image geschrieben werden soll auswählen"
+msgstr "Zielgerat auswählen, auf welches das Abbild geschrieben werden soll"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid " "
-msgstr ""
+msgstr " "
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Details"
@@ -190,9 +190,13 @@ msgid ""
 " You need to plug in a USB Key\n"
 " to which the image can be written."
 msgstr ""
+"<b>Warnung</b>\n"
+" Kein Zielgerät gefunden.\n"
+"\n"
+" Sie müssen einen USB-Stick einstecken,\n"
+" auf welchem das Abbild geschrieben werden kann."
 
 #: share/isodumper/isodumper.glade.h:27
-#, fuzzy
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -203,28 +207,9 @@ msgid ""
 " you close the application."
 msgstr ""
 "<b>Erfolg</b>\n"
-" Das Image wurde erfolgreich auf das Ziel-\n"
-" gerät geschrieben.\n"
+" Das Abbild wurde erfolgreich auf das\n"
+" Zielgerät geschrieben.\n"
 " \n"
-" Es kann jetzt gefahrlos herausgezogen werden\n"
-" Eine Protokolldatei wird im Heimatverzeichnis\n"
-" gespeichert."
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Der dd Prozess endete mit einem Fehler !"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Fehler</b>\n"
-#~ "Es wurde kein Zielgerät gefunden. \n"
-#~ "\n"
-#~ "Es muß ein USB Stick eingesteckt sein,\n"
-#~ "auf den das Image geschrieben werden kann."
+" Sie können dieses nun entfernen. Eine Log-Datei isodumper.log\n"
+" des Vorgangs wird in Ihrem homedir/.isodumper/ gespeichert,\n"
+" sobald Sie die Anwendung schließen."
