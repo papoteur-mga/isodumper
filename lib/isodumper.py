@@ -25,7 +25,7 @@ import gtk.glade
 import gobject
 from subprocess import Popen,PIPE,call
 import os
-
+import io
 import gettext
 from gettext import gettext as _
 
@@ -63,6 +63,15 @@ class IsoDumper:
         filt.add_pattern("*.iso")
         filt.add_pattern("*.img")
         self.chooser.set_filter(filt)
+        
+        #   optionnal backup of the device
+
+        self.backup_select = self.wTree.get_widget("backup_select")
+        self.backup_name = self.wTree.get_widget("backup_name")
+        self.backup = self.wTree.get_widget("backup")
+        self.choose = self.wTree.get_widget("choose")
+        self.backup_bname = self.wTree.get_widget("bname")
+        
 
         # set callbacks
         dict = { "on_main_dialog_destroy" : self.close,
@@ -70,9 +79,13 @@ class IsoDumper:
                  "on_emergency_button_clicked" : self.close,
                  "on_success_button_clicked" : self.close,
                  "on_filechooserbutton_file_set" : self.activate_devicelist,
+                 "on_backup_name_file_set" : self.activate_backup,
                  "on_detail_expander_activate" : self.expander_control,
                  "on_device_combobox_changed" : self.device_selected,
                  "on_nodev_close_clicked" : self.close,
+                 "on_backup_toggled" : self.enable_backup,
+                 "on_backup_select_clicked" : self.backup_sel,
+                 "on_select_clicked" : self.backup_choosed,
                  "on_write_button_clicked" : self.do_write}
         self.wTree.signal_autoconnect(dict)
 
@@ -103,20 +116,46 @@ class IsoDumper:
         write_button.set_sensitive(True)
         self.dev = self.combo.get_active_text()
 
+    def enable_backup(self,widget) :
+        self.backup_select.set_sensitive(not self.backup_select.get_sensitive())
+        #self.backup_name.set_sensitive(not self.backup_name.get_sensitive())
+
+    def backup_sel(self,widget):
+        #dialog = self.wTree.get_widget("backup_choose")
+        self.choose.show_all()
+
+    def backup_choosed(self, widget):
+        exit_dialog=self.backup_bname.get_filename()
+        if exit_dialog == None:
+            # No backup file name indicated
+            # Unckeck the choice to backup
+            self.backup.set_active(0)
+        else:
+            # Add .iso if not specified
+            if not exit_dialog.lower().endswith('.iso'):
+                exit_dialog=exit_dialog+".iso"
+            self.backup_select.set_label(exit_dialog)
+        self.choose.hide()
+        
+        
     def do_write(self, widget):
         write_button = self.wTree.get_widget("write_button")
         write_button.set_sensitive(False)
         combo = self.wTree.get_widget("device_combobox")
         combo.set_sensitive(False)
+        self.backup_select.set_sensitive(False)
+        self.backup.set_sensitive(False)
         self.chooser.set_sensitive(False)
         source = self.chooser.get_filename()
         target = self.dev.split('(')[1].split(')')[0]
         dialog = self.wTree.get_widget("confirm_dialog")
+        if self.backup.get_active() :
+            backup_dest=self.backup_select.get_label()
+            self.logger(_('Backup in:')+' '+backup_dest)
         self.logger(_('Image: ')+source)
         self.logger(_('Target Device: ')+self.dev)
-        self.logger(_('Target Device: ')+target)
         b = os.path.getsize(source)
-        if b >= (eval(self.deviceSize)) :
+        if b > (eval(self.deviceSize)) :
             self.logger(_('The device is too small to contain the ISO file.'))
             self.emergency()
         else:
@@ -132,13 +171,21 @@ class IsoDumper:
                         self.close('dummy')
                 self.do_umount(target)
                 dialog.hide()
-                task = self.raw_write(source, target)
+                # Backup step
+                if self.backup.get_active() :
+                    task = self.raw_write(target, backup_dest, eval(self.deviceSize))
+                    gobject.idle_add(task.next)
+                    while gtk.events_pending():
+                        gtk.main_iteration(True)
+                # Writing step
+                task = self.raw_write(source, target, os.path.getsize(source))
                 gobject.idle_add(task.next)
                 while gtk.events_pending():
                     gtk.main_iteration(True)
+                self.success()
             else:
                 self.close('dummy')
-
+   
     def do_umount(self, target):
         mounts = self.get_mounted(target)
         if mounts:
@@ -170,25 +217,24 @@ class IsoDumper:
              self.logger(_('Could not read mtab !'))
              self.emergency()
 
-    def raw_write(self, source, target):
+    def raw_write(self, source, target, b):
         bs=4096*128
-        b = os.path.getsize(source)
         try:
-            ifc=open(source, "rb",1)
+            ifc=io.open(source, "rb",1)
         except:
              self.logger(_('Reading error.'))
              self.emergency()
         else:
             try:
-                ofc= open(target, 'wb',0)
+                ofc= io.open(target, 'wb',0)
             except:
                  self.logger(_('You have not the rights for writing on the device'))
                  self.emergency()
             else:
                 progress = self.wTree.get_widget("progressbar")
                 progress.set_sensitive(True)
-                progress.set_text(_('Writing ')+source.split('/')[-1]+_(' to ')+self.dev)
-                self.logger(_('Executing copy from ')+source+' to '+target)
+                progress.set_text(_('Writing ')+source.split('/')[-1]+_(' to ')+target.split('/')[-1])
+                self.logger(_('Executing copy from ')+source+_(' to ')+target)
                 while gtk.events_pending():
                    gtk.main_iteration(True)
                 steps=range(0, b+1, b/100)
@@ -228,7 +274,7 @@ class IsoDumper:
                 except:
                    self.logger(_("Writing error."))
                    self.emergency()
-                self.success()
+                #self.success()
             ifc.close()
             yield False
 
@@ -250,6 +296,7 @@ class IsoDumper:
         resp = dialog.run()
         if resp:
             dialog.destroy()
+            self.close()
 
     def final_unsensitive(self):
         self.chooser.set_sensitive(False)
@@ -284,6 +331,9 @@ class IsoDumper:
         expander.set_sensitive(True)
         label.set_sensitive(True)
         self.img_name = self.chooser.get_filename()
+
+    def activate_backup(self, widget):
+        self.backup_img_name = self.backup_dir.get_filename()
 
     def expander_control(self, widget):
         # this is darn ugly but still better than the UI behavior of
