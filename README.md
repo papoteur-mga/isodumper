@@ -49,3 +49,4 @@ Translators
 - Florin Cătălin RUSSEN - Romanian
 - kiki.syahadat - Indonesian
 - Daniel Napora - Polish
+- taleon, Akien - German
