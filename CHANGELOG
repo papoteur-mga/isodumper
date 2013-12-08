@@ -8,6 +8,7 @@ IsoDumper 0.13
 	  - added a Makefile file for build package.
 	  - added a pixmaps icons.
 	  - usermode-consoleonly is not a BuildRequires, but it is a Requires package.
+	  - improvement po-update.sh script for translations.
 
 IsoDumper 0.12
 ------------
