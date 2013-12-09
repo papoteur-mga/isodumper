@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-09 20:07+0100\n"
+"POT-Creation-Date: 2013-12-09 22:47+0100\n"
 "PO-Revision-Date: 2008-07-10 14:11+0000\n"
 "Last-Translator: Petr Pulc <petrpulc@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -19,101 +19,101 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: lib/isodumper.py:111
+#: lib/isodumper.py:110
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:154
 msgid "Image: "
 msgstr "Obraz: "
 
-#: lib/isodumper.py:156
+#: lib/isodumper.py:155
 msgid "Target Device: "
 msgstr "Cílové zařízení: "
 
-#: lib/isodumper.py:159
+#: lib/isodumper.py:158
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:166
+#: lib/isodumper.py:165
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:192
+#: lib/isodumper.py:191
 msgid "Unmounting all partitions of "
 msgstr "Odpojuji všechny oddíly "
 
-#: lib/isodumper.py:194
+#: lib/isodumper.py:193
 msgid "Trying to unmount "
 msgstr "Pokouším se odpojit "
 
-#: lib/isodumper.py:200
+#: lib/isodumper.py:199
 msgid " was terminated by signal "
 msgstr " bylo přerušeno signálem "
 
-#: lib/isodumper.py:200 lib/isodumper.py:206
+#: lib/isodumper.py:199 lib/isodumper.py:205
 msgid "Error, umount "
 msgstr "Chyba, odpojení "
 
-#: lib/isodumper.py:204
+#: lib/isodumper.py:203
 msgid " successfully unmounted"
 msgstr " úspěšně odpojen"
 
-#: lib/isodumper.py:206
+#: lib/isodumper.py:205
 msgid " returned "
 msgstr " vrátilo "
 
-#: lib/isodumper.py:209
+#: lib/isodumper.py:208
 msgid "Execution failed: "
 msgstr "Spuštění selhalo: "
 
-#: lib/isodumper.py:217
+#: lib/isodumper.py:216
 msgid "Could not read mtab !"
 msgstr "Nemohu přečíst mtab!"
 
-#: lib/isodumper.py:225 lib/isodumper.py:248
+#: lib/isodumper.py:224 lib/isodumper.py:247
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:231
+#: lib/isodumper.py:230
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:236 lib/isodumper.py:237
+#: lib/isodumper.py:235 lib/isodumper.py:236
 msgid " to "
 msgstr " do "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:235
 msgid "Writing "
 msgstr "Zapisuji "
 
-#: lib/isodumper.py:237
+#: lib/isodumper.py:236
 #, fuzzy
 msgid "Executing copy from "
 msgstr "Spoštím: dd if="
 
-#: lib/isodumper.py:253 lib/isodumper.py:266 lib/isodumper.py:275
+#: lib/isodumper.py:252 lib/isodumper.py:265 lib/isodumper.py:274
 #, fuzzy
 msgid "Writing error."
 msgstr "Zapisuji "
 
-#: lib/isodumper.py:258
+#: lib/isodumper.py:257
 msgid "Wrote: "
 msgstr "Zapsáno: "
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:269
 msgid " successfully written to"
 msgstr " byl úspěšně zapsán do"
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:269
 msgid "Image "
 msgstr "Obraz "
 
-#: lib/isodumper.py:271
+#: lib/isodumper.py:270
 msgid "Bytes written: "
 msgstr ""
 
@@ -222,6 +222,24 @@ msgstr ""
 " operace bude uložen v domovské složce,\n"
 " pokud bude aplikace zavřena."
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Proces dd skončil chybou!"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -234,21 +252,3 @@ msgstr ""
 #~ "\n"
 #~ " Musíte vložit USB klíč, na který\n"
 #~ " má být obraz zapsán."
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Proces dd skončil chybou!"
-
-#~ msgid " "
-#~ msgstr " "

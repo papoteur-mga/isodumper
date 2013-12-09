@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-09 20:07+0100\n"
+"POT-Creation-Date: 2013-12-09 22:47+0100\n"
 "PO-Revision-Date: 2013-11-10 19:42+0300\n"
 "Last-Translator: AlexL <loginov.alex.valer@gmail.com>\n"
 "Language-Team:  <en@li.org>\n"
@@ -20,100 +20,100 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: lib/isodumper.py:111
+#: lib/isodumper.py:110
 msgid "Mb"
 msgstr "МБ"
 
-#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:154
 msgid "Image: "
 msgstr "Образ: "
 
-#: lib/isodumper.py:156
+#: lib/isodumper.py:155
 msgid "Target Device: "
 msgstr "Целевое устройство: "
 
-#: lib/isodumper.py:159
+#: lib/isodumper.py:158
 msgid "The device is too small to contain the ISO file."
 msgstr "Устройство слишком маленькое чтобы уместить ISO файл."
 
-#: lib/isodumper.py:166
+#: lib/isodumper.py:165
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Устройство больше, чем 32 ГБайт. Вы уверены, что хотите использовать его?"
 
-#: lib/isodumper.py:192
+#: lib/isodumper.py:191
 msgid "Unmounting all partitions of "
 msgstr "Размонтирование всех устройств "
 
-#: lib/isodumper.py:194
+#: lib/isodumper.py:193
 msgid "Trying to unmount "
 msgstr "Попытка размонтирования "
 
-#: lib/isodumper.py:200
+#: lib/isodumper.py:199
 msgid " was terminated by signal "
 msgstr " был прерван с сигналом "
 
-#: lib/isodumper.py:200 lib/isodumper.py:206
+#: lib/isodumper.py:199 lib/isodumper.py:205
 msgid "Error, umount "
 msgstr "Ошибка, размонтировано "
 
-#: lib/isodumper.py:204
+#: lib/isodumper.py:203
 msgid " successfully unmounted"
 msgstr " успешно размонтировано"
 
-#: lib/isodumper.py:206
+#: lib/isodumper.py:205
 msgid " returned "
 msgstr " возвратил "
 
-#: lib/isodumper.py:209
+#: lib/isodumper.py:208
 msgid "Execution failed: "
 msgstr "Выполнение не удалось: "
 
-#: lib/isodumper.py:217
+#: lib/isodumper.py:216
 msgid "Could not read mtab !"
 msgstr "Не удалось прочитать mtab!"
 
-#: lib/isodumper.py:225 lib/isodumper.py:248
+#: lib/isodumper.py:224 lib/isodumper.py:247
 msgid "Reading error."
 msgstr "Ошибка чтения."
 
-#: lib/isodumper.py:231
+#: lib/isodumper.py:230
 msgid "You have not the rights for writing on the device"
 msgstr "У Вас нет прав записи на устройство"
 
-#: lib/isodumper.py:236 lib/isodumper.py:237
+#: lib/isodumper.py:235 lib/isodumper.py:236
 msgid " to "
 msgstr " в "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:235
 msgid "Writing "
 msgstr "Запись "
 
-#: lib/isodumper.py:237
+#: lib/isodumper.py:236
 msgid "Executing copy from "
 msgstr "Выполняется копирование с"
 
-#: lib/isodumper.py:253 lib/isodumper.py:266 lib/isodumper.py:275
+#: lib/isodumper.py:252 lib/isodumper.py:265 lib/isodumper.py:274
 msgid "Writing error."
 msgstr "Ошибка чтения."
 
-#: lib/isodumper.py:258
+#: lib/isodumper.py:257
 msgid "Wrote: "
 msgstr "Записано: "
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:269
 msgid " successfully written to"
 msgstr " успешно записано в"
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:269
 msgid "Image "
 msgstr "Образ "
 
-#: lib/isodumper.py:271
+#: lib/isodumper.py:270
 msgid "Bytes written: "
 msgstr "Записано байт:"
 
@@ -224,4 +224,3 @@ msgstr ""
 "Вы можете отключить его, журнал isodumper.log\n"
 "операции будет сохранен в Вашем домашнем каталоге/.isodumper, когда\n"
 "Вы закроете программу."
-
