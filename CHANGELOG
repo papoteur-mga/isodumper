@@ -1,6 +1,10 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
+IsoDumper 0.20
+------------
+	  - added function to backup the content of the device before overwriting. 
+	  
 IsoDumper 0.13
 ------------
 	  - added and update Polish and German translations.
