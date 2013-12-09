@@ -34,6 +34,7 @@ class IsoDumper:
     def __init__(self):
         APP="isodumper"
         DIR="/usr/share/locale"
+        RELEASE="0.2"
 
         gettext.bindtextdomain(APP, DIR)
         gettext.textdomain(APP)
@@ -48,10 +49,8 @@ class IsoDumper:
         self.window = self.wTree.get_widget("main_dialog")
         self.devicelist = self.wTree.get_widget("device_combobox")
         self.logview = self.wTree.get_widget("detail_text")
-        #eventbox = self.wTree.get_widget("eventbox")
-        #bgcol = gtk.gdk.color_parse("white")
-        #eventbox.modify_bg(gtk.STATE_NORMAL, bgcol)
         self.log = self.logview.get_buffer()
+        self.window.set_title(self.window.get_title()+' '+RELEASE)
         
         # define size of the selected device
         self.deviceSize=0
