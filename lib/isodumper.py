@@ -34,7 +34,7 @@ class IsoDumper:
     def __init__(self):
         APP="isodumper"
         DIR="/usr/share/locale"
-        RELEASE="0.2"
+        RELEASE="v0.20"
 
         gettext.bindtextdomain(APP, DIR)
         gettext.textdomain(APP)
