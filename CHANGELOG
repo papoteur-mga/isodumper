@@ -3,7 +3,8 @@ The modifications are:
 
 IsoDumper 0.20
 ------------
-	  - added function to backup the content of the device before overwriting. 
+	  - added function to backup the content of the device before overwriting.
+	  - added Release number in the window title (on isodumper.py).
 	  
 IsoDumper 0.13
 ------------
