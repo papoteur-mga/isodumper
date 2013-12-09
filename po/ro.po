@@ -1,7 +1,7 @@
 # Romanian translation for isodumper package.
 # Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
@@ -10,113 +10,123 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-02 21:58+0100\n"
+"POT-Creation-Date: 2013-12-09 20:07+0100\n"
 "PO-Revision-Date: 2013-11-15 20:53+0000\n"
 "Last-Translator: Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>\n"
-"Language-Team: Romanian (http://www.transifex.com/projects/p/mageia/language/ro/)\n"
+"Language-Team: Romanian (http://www.transifex.com/projects/p/mageia/language/"
+"ro/)\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ro\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
 
-#: lib/isodumper.py:98
+#: lib/isodumper.py:111
 msgid "Mb"
 msgstr "Mo"
 
-#: lib/isodumper.py:115
+#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
+msgid "Backup in:"
+msgstr ""
+
+#: lib/isodumper.py:155
 msgid "Image: "
 msgstr "Imagine:"
 
-#: lib/isodumper.py:116
+#: lib/isodumper.py:156
 msgid "Target Device: "
 msgstr "Dispozitiv destinație:"
 
-#: lib/isodumper.py:119
+#: lib/isodumper.py:159
 msgid "The device is too small to contain the ISO file."
 msgstr "Dispozitivul este prea mic ca să conține fișierul ISO."
 
-#: lib/isodumper.py:126
+#: lib/isodumper.py:166
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr "Dispozitivul este mai mare de 32 Go. Sigur doriți să-l utilizați?"
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:192
 msgid "Unmounting all partitions of "
 msgstr "Se demontează toate partițiile de pe "
 
-#: lib/isodumper.py:145
+#: lib/isodumper.py:194
 msgid "Trying to unmount "
 msgstr "Se încearcă demontarea"
 
-#: lib/isodumper.py:151
+#: lib/isodumper.py:200
 msgid " was terminated by signal "
 msgstr "a fost terminat de semnal"
 
-#: lib/isodumper.py:151 lib/isodumper.py:157
+#: lib/isodumper.py:200 lib/isodumper.py:206
 msgid "Error, umount "
 msgstr "Eroare, demontare"
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:204
 msgid " successfully unmounted"
 msgstr "demontare cu succes"
 
-#: lib/isodumper.py:157
+#: lib/isodumper.py:206
 msgid " returned "
 msgstr "întors"
 
-#: lib/isodumper.py:160
+#: lib/isodumper.py:209
 msgid "Execution failed: "
 msgstr "Execuție eșuată:"
 
-#: lib/isodumper.py:168
+#: lib/isodumper.py:217
 msgid "Could not read mtab !"
 msgstr "Nu s-a putut citi mtab!"
 
-#: lib/isodumper.py:177 lib/isodumper.py:200
+#: lib/isodumper.py:225 lib/isodumper.py:248
 msgid "Reading error."
 msgstr "Eroare la citire."
 
-#: lib/isodumper.py:183
+#: lib/isodumper.py:231
 msgid "You have not the rights for writing on the device"
 msgstr "Nu aveți dreptul de scriere pe dispozitiv"
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:236 lib/isodumper.py:237
 msgid " to "
 msgstr "pe"
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:236
 msgid "Writing "
 msgstr "Scriere"
 
-#: lib/isodumper.py:189
+#: lib/isodumper.py:237
 msgid "Executing copy from "
 msgstr "Se copiază din"
 
-#: lib/isodumper.py:205 lib/isodumper.py:223
+#: lib/isodumper.py:253 lib/isodumper.py:266 lib/isodumper.py:275
 msgid "Writing error."
 msgstr "Eroare la scriere."
 
-#: lib/isodumper.py:210
+#: lib/isodumper.py:258
 msgid "Wrote: "
 msgstr "S-a scris: "
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:270
 msgid " successfully written to"
 msgstr "scris cu succes pe"
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:270
 msgid "Image "
 msgstr "Imagine "
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:271
 msgid "Bytes written: "
 msgstr "Octeți scriși:"
 
 #: share/isodumper/isodumper.glade.h:1
+msgid "Select"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
 msgstr "IsoDumper"
 
-#: share/isodumper/isodumper.glade.h:2
+#: share/isodumper/isodumper.glade.h:3
 msgid ""
 "<b>Warning</b>\n"
 " This will <b>destroy all data</b> on the target\n"
@@ -124,9 +134,15 @@ msgid ""
 "\n"
 " If you say ok here, please <b>do not unplug</b>\n"
 " the device during the following operation."
-msgstr "<b>Avertisment</b>\n Această operație va <b>distruge toate datele</b> de pe\ndispozitivul destinație, sigur duriți să continuați?\n\n Dacă spuneți da aici, vă rugăm <b>să nu deconectați</b>\n dispozitivul în cursul operației următoare."
+msgstr ""
+"<b>Avertisment</b>\n"
+" Această operație va <b>distruge toate datele</b> de pe\n"
+"dispozitivul destinație, sigur duriți să continuați?\n"
+"\n"
+" Dacă spuneți da aici, vă rugăm <b>să nu deconectați</b>\n"
+" dispozitivul în cursul operației următoare."
 
-#: share/isodumper/isodumper.glade.h:8
+#: share/isodumper/isodumper.glade.h:9
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -134,50 +150,65 @@ msgid ""
 " \n"
 " A logfile isodumper.log with the content will be saved in your\n"
 " homedir/.isodumper when the application is closed."
-msgstr "<b>Eroare</b>\n Ceva nu a funcționat, priviți fereastra\n cu detalii pentru eroarea exactă.\n \n Un fișier isodumper.log cu conținutul va fi salvat în\n directoruldvs/.isodumper cînd se va închide aplicația."
+msgstr ""
+"<b>Eroare</b>\n"
+" Ceva nu a funcționat, priviți fereastra\n"
+" cu detalii pentru eroarea exactă.\n"
+" \n"
+" Un fișier isodumper.log cu conținutul va fi salvat în\n"
+" directoruldvs/.isodumper cînd se va închide aplicația."
 
-#: share/isodumper/isodumper.glade.h:14
+#: share/isodumper/isodumper.glade.h:15
 msgid "Write Image:"
 msgstr "Scrie imaginea:"
 
-#: share/isodumper/isodumper.glade.h:15
+#: share/isodumper/isodumper.glade.h:16
 msgid "Select an image file to be written to the device"
 msgstr "Selectați un fișier imagine ca să fie scris pe dispozitiv "
 
-#: share/isodumper/isodumper.glade.h:16
+#: share/isodumper/isodumper.glade.h:17
 msgid "Select Image"
 msgstr "Selectați imaginea"
 
-#: share/isodumper/isodumper.glade.h:17
+#: share/isodumper/isodumper.glade.h:18
 msgid "to"
 msgstr "pe"
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "Select target device to write the image to"
 msgstr "Selectați dispozitivul destinație pe care să scrieți imaginea"
 
-#: share/isodumper/isodumper.glade.h:19
-msgid " "
-msgstr " "
-
 #: share/isodumper/isodumper.glade.h:20
+msgid "Create a backup of the device as image to restore it later"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:22
+msgid "(None)"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:23
 msgid "Details"
 msgstr "Detalii"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:24
 msgid "Write to device"
 msgstr "Scrie pe dispozitiv"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:25
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
 "\n"
 " You need to plug in a USB Key\n"
 " to which the image can be written."
-msgstr "<b>Avertisment</b>\n Nu s-a găsit dispozitivul destinație. \n\n Trebuie să conectați o cheie USB pe\n care să poată fi scrisă imaginea."
+msgstr ""
+"<b>Avertisment</b>\n"
+" Nu s-a găsit dispozitivul destinație. \n"
+"\n"
+" Trebuie să conectați o cheie USB pe\n"
+" care să poată fi scrisă imaginea."
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:30
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -186,4 +217,12 @@ msgid ""
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
-msgstr "<b>Succes</b>\n Imaginea a fost scrisă cu succes pe dispozitivul\n destinație.\n \n Îl puteți deconecta acum, fișierul jurnal isodumper.log \n al operației va fi salvat în directoruldvs/.isodumper/ cînd\n veți închide aplicația."
+msgstr ""
+"<b>Succes</b>\n"
+" Imaginea a fost scrisă cu succes pe dispozitivul\n"
+" destinație.\n"
+" \n"
+" Îl puteți deconecta acum, fișierul jurnal isodumper.log \n"
+" al operației va fi salvat în directoruldvs/.isodumper/ cînd\n"
+" veți închide aplicația."
+

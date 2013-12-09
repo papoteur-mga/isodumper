@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-02 16:41+0100\n"
+"POT-Creation-Date: 2013-12-09 20:07+0100\n"
 "PO-Revision-Date: 2009-06-19 15:17+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
@@ -19,103 +19,111 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
 "X-Generator: Launchpad (build 16692)\n"
 
-#: lib/isodumper.py:98
+#: lib/isodumper.py:111
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:115
+#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
+msgid "Backup in:"
+msgstr ""
+
+#: lib/isodumper.py:155
 msgid "Image: "
 msgstr "Imaxe: "
 
-#: lib/isodumper.py:116
+#: lib/isodumper.py:156
 msgid "Target Device: "
 msgstr "Dispositivo de destino: "
 
-#: lib/isodumper.py:119
+#: lib/isodumper.py:159
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:126
+#: lib/isodumper.py:166
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:192
 msgid "Unmounting all partitions of "
 msgstr "Desmontando todas as particións de "
 
-#: lib/isodumper.py:145
+#: lib/isodumper.py:194
 msgid "Trying to unmount "
 msgstr "Tentando desmontar "
 
-#: lib/isodumper.py:151
+#: lib/isodumper.py:200
 msgid " was terminated by signal "
 msgstr " foi rematado polo sinal "
 
-#: lib/isodumper.py:151 lib/isodumper.py:157
+#: lib/isodumper.py:200 lib/isodumper.py:206
 msgid "Error, umount "
 msgstr "Ocorreu un erro ao desmontar "
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:204
 msgid " successfully unmounted"
 msgstr " desmontado correctamente"
 
-#: lib/isodumper.py:157
+#: lib/isodumper.py:206
 msgid " returned "
 msgstr " devolto "
 
-#: lib/isodumper.py:160
+#: lib/isodumper.py:209
 msgid "Execution failed: "
 msgstr "Fallou a execución "
 
-#: lib/isodumper.py:168
+#: lib/isodumper.py:217
 msgid "Could not read mtab !"
 msgstr "Non se pode ler mtab !"
 
-#: lib/isodumper.py:177 lib/isodumper.py:200
+#: lib/isodumper.py:225 lib/isodumper.py:248
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:183
+#: lib/isodumper.py:231
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:236 lib/isodumper.py:237
 msgid " to "
 msgstr " a "
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:236
 msgid "Writing "
 msgstr "Escribindo "
 
-#: lib/isodumper.py:189
+#: lib/isodumper.py:237
 msgid "Executing copy from "
 msgstr ""
 
-#: lib/isodumper.py:205 lib/isodumper.py:223
+#: lib/isodumper.py:253 lib/isodumper.py:266 lib/isodumper.py:275
 msgid "Writing error."
 msgstr ""
 
-#: lib/isodumper.py:210
+#: lib/isodumper.py:258
 msgid "Wrote: "
 msgstr "Escrito: "
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:270
 msgid " successfully written to"
 msgstr " escrito con éxito en"
 
-#: lib/isodumper.py:218
+#: lib/isodumper.py:270
 msgid "Image "
 msgstr "Imaxe "
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:271
 msgid "Bytes written: "
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:1
-msgid "IsoDumper"
+msgid "Select"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:2
+msgid "IsoDumper"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:3
 msgid ""
 "<b>Warning</b>\n"
 " This will <b>destroy all data</b> on the target\n"
@@ -131,7 +139,7 @@ msgstr ""
 "Si é que si, por favor, <b>non desconecte</b>\n"
 "o dispositivo durante a seguinte operación."
 
-#: share/isodumper/isodumper.glade.h:8
+#: share/isodumper/isodumper.glade.h:9
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -147,39 +155,43 @@ msgstr ""
 "Gardase un ficheiro co contido do rexistro no seu\n"
 "directorio persoal se pecha a aplicación."
 
-#: share/isodumper/isodumper.glade.h:14
+#: share/isodumper/isodumper.glade.h:15
 msgid "Write Image:"
 msgstr "Escribir a imaxe:"
 
-#: share/isodumper/isodumper.glade.h:15
+#: share/isodumper/isodumper.glade.h:16
 msgid "Select an image file to be written to the device"
 msgstr "Seleccione un ficheiro de imaxe para escribir no dispositivo"
 
-#: share/isodumper/isodumper.glade.h:16
+#: share/isodumper/isodumper.glade.h:17
 msgid "Select Image"
 msgstr "Seleccionar a imaxe"
 
-#: share/isodumper/isodumper.glade.h:17
+#: share/isodumper/isodumper.glade.h:18
 msgid "to"
 msgstr "a"
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "Select target device to write the image to"
 msgstr "Seleccione o dispositivo de destino no que escribir a imaxe"
 
-#: share/isodumper/isodumper.glade.h:19
-msgid " "
-msgstr " "
-
 #: share/isodumper/isodumper.glade.h:20
+msgid "Create a backup of the device as image to restore it later"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:22
+msgid "(None)"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:23
 msgid "Details"
 msgstr "Detalles"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:24
 msgid "Write to device"
 msgstr "Escribir no dispositivo"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:25
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -188,7 +200,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:30
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -206,21 +218,6 @@ msgstr ""
 "rexistro da operación no seu directorio persoal\n"
 "si pecha a aplicación."
 
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "O proceso dd rematou cun erro !"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -233,3 +230,21 @@ msgstr ""
 #~ "\n"
 #~ "Necesitas conectar un dispositivo de memoria USB\n"
 #~ "no que se poida escribir a imaxe."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "O proceso dd rematou cun erro !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid " "
+#~ msgstr " "
