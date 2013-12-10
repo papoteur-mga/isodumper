@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-09 22:47+0100\n"
-"PO-Revision-Date: 2013-11-10 16:40+0200\n"
+"PO-Revision-Date: 2013-12-10 19:36+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -26,7 +26,7 @@ msgstr "МБ"
 
 #: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
-msgstr ""
+msgstr "Резервне копіювання до:"
 
 #: lib/isodumper.py:154
 msgid "Image: "
@@ -120,7 +120,7 @@ msgstr "Записано байтів: "
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
-msgstr ""
+msgstr "Вибрати"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
@@ -182,10 +182,11 @@ msgstr "Виберіть пристрій для запису образу"
 #: share/isodumper/isodumper.glade.h:20
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
+"Створити образ резервної копії пристрою для наступного відновлення даних"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "(None)"
-msgstr ""
+msgstr "(Немає)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Details"
@@ -227,3 +228,4 @@ msgstr ""
 "  Файл журналу дій isodumper.log записано буде записано\n"
 "  до теки .isodumper вашої домашньої теки, щойно роботу\n"
 "  програми буде завершено."
+
