@@ -1,6 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# French translation for isodumper package.
+# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the isodumper package.
 # 
 # Translators:
 # Automatically generated, 2013
@@ -8,7 +8,7 @@
 # papoteur, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Mageia\n"
+"Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-09 22:47+0100\n"
 "PO-Revision-Date: 2013-12-10 21:20+0000\n"
@@ -132,7 +132,13 @@ msgid ""
 "\n"
 " If you say ok here, please <b>do not unplug</b>\n"
 " the device during the following operation."
-msgstr "<b>Attention</b>\n Cette opération <b>détruira toutes les données</b> sur le périphérique\n cible, êtes vous sûr(e) de vouloir continuer ?\n\n Si vous cliquez sur ok, <b>ne débranchez pas</b>\n le lecteur pendant l'opération."
+msgstr ""
+"<b>Attention</b>\n"
+" Cette opération <b>détruira toutes les données</b> sur le périphérique\n"
+" cible, êtes vous sûr(e) de vouloir continuer ?\n"
+"\n"
+" Si vous cliquez sur ok, <b>ne débranchez pas</b>\n"
+" le lecteur pendant l'opération."
 
 #: share/isodumper/isodumper.glade.h:9
 msgid ""
@@ -142,7 +148,14 @@ msgid ""
 " \n"
 " A logfile isodumper.log with the content will be saved in your\n"
 " homedir/.isodumper when the application is closed."
-msgstr "<b>Erreur</b>\n Quelque chose s'est mal passé, veuillez consulter la fenêtre\n de détails pour connaître l'erreur exacte.\n \n Un fichier journal isodumper.log avec son contenu sera enregistré \n dans votre répertoire utilisateur/.isodumper \n lorsque l'application sera fermée."
+msgstr ""
+"<b>Erreur</b>\n"
+" Quelque chose s'est mal passé, veuillez consulter la fenêtre\n"
+" de détails pour connaître l'erreur exacte.\n"
+" \n"
+" Un fichier journal isodumper.log avec son contenu sera enregistré \n"
+" dans votre répertoire utilisateur/.isodumper \n"
+" lorsque l'application sera fermée."
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Write Image:"
@@ -187,7 +200,12 @@ msgid ""
 "\n"
 " You need to plug in a USB Key\n"
 " to which the image can be written."
-msgstr "<b>Attention</b>\n Aucun périphérique cible trouvé. \n\n Vous devez brancher une clé USB\n sur laquelle l'image pourra être écrite."
+msgstr ""
+"<b>Attention</b>\n"
+" Aucun périphérique cible trouvé. \n"
+"\n"
+" Vous devez brancher une clé USB\n"
+" sur laquelle l'image pourra être écrite."
 
 #: share/isodumper/isodumper.glade.h:30
 msgid ""
@@ -198,4 +216,11 @@ msgid ""
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
-msgstr "<b>Succès</b>\n L'image a été correctement écrite sur le\n périphérique cible.\n \n Vous pouvez maintenant le débrancher, un journal\n de l'opération isodumper.log sera enregistré dans votre répertoire\n personnel/.isodumper lorsque vous fermerez l'application."
+msgstr ""
+"<b>Succès</b>\n"
+" L'image a été correctement écrite sur le\n"
+" périphérique cible.\n"
+" \n"
+" Vous pouvez maintenant le débrancher, un journal\n"
+" de l'opération isodumper.log sera enregistré dans votre répertoire\n"
+" personnel/.isodumper lorsque vous fermerez l'application."

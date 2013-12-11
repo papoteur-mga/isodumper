@@ -1,6 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Indonesian translation for isodumper package.
+# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the isodumper package.
 # 
 # Translators:
 # Automatically generated, 2013
@@ -8,7 +8,7 @@
 # kiki.syahadat <kiki.syahadat@yahoo.co.id>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Mageia\n"
+"Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-09 22:47+0100\n"
 "PO-Revision-Date: 2013-12-10 11:35+0000\n"
@@ -132,7 +132,13 @@ msgid ""
 "\n"
 " If you say ok here, please <b>do not unplug</b>\n"
 " the device during the following operation."
-msgstr "<b>Peringatan</b>\n Ini akan <b>menghapus semua data</b> pada perangkat\n target, apakah Anda yakin ingin melanjutkan?\n\n Apabila anda setuju, mohon <b>jangan melepas</b>\n perangkat selama operasi berikut."
+msgstr ""
+"<b>Peringatan</b>\n"
+" Ini akan <b>menghapus semua data</b> pada perangkat\n"
+" target, apakah Anda yakin ingin melanjutkan?\n"
+"\n"
+" Apabila anda setuju, mohon <b>jangan melepas</b>\n"
+" perangkat selama operasi berikut."
 
 #: share/isodumper/isodumper.glade.h:9
 msgid ""
@@ -142,7 +148,13 @@ msgid ""
 " \n"
 " A logfile isodumper.log with the content will be saved in your\n"
 " homedir/.isodumper when the application is closed."
-msgstr "<b>Error</b>\n Ada yang salah, silakan lihat rincian\n kesalahan.\n \n file log isodumper.log akan disimpan di\n homedir/.isodumper saat aplikasi ditutup."
+msgstr ""
+"<b>Error</b>\n"
+" Ada yang salah, silakan lihat rincian\n"
+" kesalahan.\n"
+" \n"
+" file log isodumper.log akan disimpan di\n"
+" homedir/.isodumper saat aplikasi ditutup."
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Write Image:"
@@ -187,7 +199,12 @@ msgid ""
 "\n"
 " You need to plug in a USB Key\n"
 " to which the image can be written."
-msgstr "<b>Peringatan</b>\n Tidak ada perangkat target yang ditemukan. \n\n Anda harus memasang flashdisk\n untuk penulisan image."
+msgstr ""
+"<b>Peringatan</b>\n"
+" Tidak ada perangkat target yang ditemukan. \n"
+"\n"
+" Anda harus memasang flashdisk\n"
+" untuk penulisan image."
 
 #: share/isodumper/isodumper.glade.h:30
 msgid ""
@@ -198,4 +215,11 @@ msgid ""
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
-msgstr "<b>Berhasil</b>\n Image berhasil ditulis ke\n perangkat target.\n \n Sekarang Anda bisa melepaskannya, log isodumper.log \n dari operasi ini akan disimpan di homedir/.isodumper/ saat\n Anda menutup aplikasi."
+msgstr ""
+"<b>Berhasil</b>\n"
+" Image berhasil ditulis ke\n"
+" perangkat target.\n"
+" \n"
+" Sekarang Anda bisa melepaskannya, log isodumper.log \n"
+" dari operasi ini akan disimpan di homedir/.isodumper/ saat\n"
+" Anda menutup aplikasi."

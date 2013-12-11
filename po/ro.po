@@ -1,6 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Romanian translation for isodumper package.
+# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the isodumper package.
 # 
 # Translators:
 # Automatically generated, 2013
@@ -8,7 +8,7 @@
 # Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Mageia\n"
+"Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-09 22:47+0100\n"
 "PO-Revision-Date: 2013-12-10 16:20+0000\n"
@@ -132,7 +132,13 @@ msgid ""
 "\n"
 " If you say ok here, please <b>do not unplug</b>\n"
 " the device during the following operation."
-msgstr "<b>Avertisment</b>\n Această operație va <b>distruge toate datele</b> de pe\ndispozitivul destinație, sigur duriți să continuați?\n\n Dacă spuneți da aici, vă rugăm <b>să nu deconectați</b>\n dispozitivul în cursul operației următoare."
+msgstr ""
+"<b>Avertisment</b>\n"
+" Această operație va <b>distruge toate datele</b> de pe\n"
+" dispozitivul destinație, sigur duriți să continuați?\n"
+"\n"
+" Dacă spuneți da aici, vă rugăm <b>să nu deconectați</b>\n"
+" dispozitivul în cursul operației următoare."
 
 #: share/isodumper/isodumper.glade.h:9
 msgid ""
@@ -142,7 +148,13 @@ msgid ""
 " \n"
 " A logfile isodumper.log with the content will be saved in your\n"
 " homedir/.isodumper when the application is closed."
-msgstr "<b>Eroare</b>\n Ceva nu a funcționat, priviți fereastra\n cu detalii pentru eroarea exactă.\n \n Un fișier isodumper.log cu conținutul va fi salvat în\n directoruldvs/.isodumper cînd se va închide aplicația."
+msgstr ""
+"<b>Eroare</b>\n"
+" Ceva nu a funcționat, priviți fereastra\n"
+" cu detalii pentru eroarea exactă.\n"
+" \n"
+" Un fișier isodumper.log cu conținutul va fi salvat în\n"
+" directoruldvs/.isodumper cînd se va închide aplicația."
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Write Image:"
@@ -187,7 +199,12 @@ msgid ""
 "\n"
 " You need to plug in a USB Key\n"
 " to which the image can be written."
-msgstr "<b>Avertisment</b>\n Nu s-a găsit dispozitivul destinație. \n\n Trebuie să conectați o cheie USB pe\n care să poată fi scrisă imaginea."
+msgstr ""
+"<b>Avertisment</b>\n"
+" Nu s-a găsit dispozitivul destinație. \n"
+"\n"
+" Trebuie să conectați o cheie USB pe\n"
+" care să poată fi scrisă imaginea."
 
 #: share/isodumper/isodumper.glade.h:30
 msgid ""
@@ -198,4 +215,11 @@ msgid ""
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
-msgstr "<b>Succes</b>\n Imaginea a fost scrisă cu succes pe dispozitivul\n destinație.\n \n Îl puteți deconecta acum, fișierul jurnal isodumper.log \n al operației va fi salvat în directoruldvs/.isodumper/ cînd\n veți închide aplicația."
+msgstr ""
+"<b>Succes</b>\n"
+" Imaginea a fost scrisă cu succes pe dispozitivul\n"
+" destinație.\n"
+" \n"
+" Îl puteți deconecta acum, fișierul jurnal isodumper.log \n"
+" al operației va fi salvat în directoruldvs/.isodumper/ cînd\n"
+" veți închide aplicația."
