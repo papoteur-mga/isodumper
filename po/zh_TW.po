@@ -1,23 +1,24 @@
-# Traditional Chinese translation for isodumper package.
-# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the isodumper package.
-# Automatically generated, 2013.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Automatically generated, 2013
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008
+# You-Cheng Hsieh <yochenhsieh@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: isodumper\n"
+"Project-Id-Version: Mageia\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-09 22:47+0100\n"
-"PO-Revision-Date: 2013-11-19 14:13+0800\n"
+"PO-Revision-Date: 2013-12-11 02:28+0000\n"
 "Last-Translator: You-Cheng Hsieh <yochenhsieh@gmail.com>\n"
-"Language-Team: Traditional Chinese <zh_TW@li.org>\n"
-"Language: zh_TW\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/mageia/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
-"X-Generator: Poedit 1.5.7\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: lib/isodumper.py:110
 msgid "Mb"
@@ -25,7 +26,7 @@ msgstr "Mb"
 
 #: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
-msgstr ""
+msgstr "備份在："
 
 #: lib/isodumper.py:154
 msgid "Image: "
@@ -117,7 +118,7 @@ msgstr "寫入位元組："
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
-msgstr ""
+msgstr "選取"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
@@ -131,13 +132,7 @@ msgid ""
 "\n"
 " If you say ok here, please <b>do not unplug</b>\n"
 " the device during the following operation."
-msgstr ""
-"<b>警告</b>\n"
-" 這樣將會造成目標裝置上的<b>資料損壞</b>\n"
-" 確認要繼續嗎？\n"
-"\n"
-" 如果您回答是，請在執行下述操作時\n"
-"<b>不要移除裝置</b>"
+msgstr "<b>警告</b>\n 這樣將會造成目標裝置上的<b>資料損壞</b>\n 確認要繼續嗎？\n\n 如果您回答是，請在執行下述操作時\n<b>不要移除裝置</b>"
 
 #: share/isodumper/isodumper.glade.h:9
 msgid ""
@@ -147,13 +142,7 @@ msgid ""
 " \n"
 " A logfile isodumper.log with the content will be saved in your\n"
 " homedir/.isodumper when the application is closed."
-msgstr ""
-"<b>錯誤</b>\n"
-" 發生某些問題，請檢視細節視窗\n"
-" 來了解確切的錯誤。\n"
-" \n"
-" 當程式關閉時，將會在您的家目錄下的.isodumper 目錄\n"
-" 儲存一個名稱為 isodumper.log 的記錄檔。"
+msgstr "<b>錯誤</b>\n 發生某些問題，請檢視細節視窗\n 來了解確切的錯誤。\n \n 當程式關閉時，將會在您的家目錄下的.isodumper 目錄\n 儲存一個名稱為 isodumper.log 的記錄檔。"
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Write Image:"
@@ -177,11 +166,11 @@ msgstr "選擇要寫入鏡像的目標裝置"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Create a backup of the device as image to restore it later"
-msgstr ""
+msgstr "建立這個裝置的映像備份以便之後還原"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "(None)"
-msgstr ""
+msgstr "(無)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Details"
@@ -198,12 +187,7 @@ msgid ""
 "\n"
 " You need to plug in a USB Key\n"
 " to which the image can be written."
-msgstr ""
-"<b>警告 </b>\n"
-" 找不到目標裝置。\n"
-"\n"
-" 您需要插入一個 USB 隨身碟\n"
-" 以便寫入鏡像檔。"
+msgstr "<b>警告 </b>\n 找不到目標裝置。\n\n 您需要插入一個 USB 隨身碟\n 以便寫入鏡像檔。"
 
 #: share/isodumper/isodumper.glade.h:30
 msgid ""
@@ -214,10 +198,4 @@ msgid ""
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
-msgstr ""
-"<b>成功</b>\n"
-" 鏡像檔已經成功寫入到目標裝置。\n"
-" \n"
-" 您現在可以移除裝置，當您關閉程式時\n"
-" 將會在您的家目錄下的 .isodumper 隱藏目錄儲存一個\n"
-" 名稱為 isodumper.log 的記錄檔。"
+msgstr "<b>成功</b>\n 鏡像檔已經成功寫入到目標裝置。\n \n 您現在可以移除裝置，當您關閉程式時\n 將會在您的家目錄下的 .isodumper 隱藏目錄儲存一個\n 名稱為 isodumper.log 的記錄檔。"
