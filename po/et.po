@@ -1,31 +1,32 @@
-# Estonian translation for isodumper package.
-# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the isodumper package.
-# Automatically generated, 2013.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Automatically generated, 2013
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009
+# Marek Laane <bald@smail.ee>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: isodumper\n"
+"Project-Id-Version: Mageia\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-09 22:47+0100\n"
-"PO-Revision-Date: 2010-01-09 09:37+0000\n"
-"Last-Translator: René Pärts <Unknown>\n"
-"Language-Team: Estonian <et@li.org>\n"
-"Language: et\n"
+"PO-Revision-Date: 2013-12-14 12:20+0000\n"
+"Last-Translator: Marek Laane <bald@smail.ee>\n"
+"Language-Team: Estonian (http://www.transifex.com/projects/p/mageia/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
-"X-Generator: Launchpad (build 16692)\n"
+"Language: et\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lib/isodumper.py:110
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
 #: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
-msgstr ""
+msgstr "Varukoopia:"
 
 #: lib/isodumper.py:154
 msgid "Image: "
@@ -33,79 +34,79 @@ msgstr "Tõmmis: "
 
 #: lib/isodumper.py:155
 msgid "Target Device: "
-msgstr "Sihtkoha seade: "
+msgstr "Sihtseade: "
 
 #: lib/isodumper.py:158
 msgid "The device is too small to contain the ISO file."
-msgstr ""
+msgstr "Seade on ISO-tõmmise mahutamiseks liiga väike."
 
 #: lib/isodumper.py:165
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr ""
+msgstr "Seadme maht on üle 32 gigabaidi. Kas tõesti soovite seda kasutada?"
 
 #: lib/isodumper.py:191
 msgid "Unmounting all partitions of "
-msgstr "Kõigi jaotuste lahtihaakimine "
+msgstr "Haagitakse lahti kõik partitsioonid seadmes "
 
 #: lib/isodumper.py:193
 msgid "Trying to unmount "
-msgstr "Proovin lahutada "
+msgstr "Proovitakse lahti haakida "
 
 #: lib/isodumper.py:199
 msgid " was terminated by signal "
-msgstr " Kutsuti välja signaali peale "
+msgstr " lahtihaakimine katkestati signaaliga "
 
 #: lib/isodumper.py:199 lib/isodumper.py:205
 msgid "Error, umount "
-msgstr "Viga lahutamisel "
+msgstr "Tõrge, "
 
 #: lib/isodumper.py:203
 msgid " successfully unmounted"
-msgstr " edukalt lahtihaagitud"
+msgstr " haagiti edukalt lahti"
 
 #: lib/isodumper.py:205
 msgid " returned "
-msgstr " tagastatud "
+msgstr " lahtihaakimine tagastas koodi "
 
 #: lib/isodumper.py:208
 msgid "Execution failed: "
-msgstr "Täitmine ebaõnnestus: "
+msgstr "Täitmine nurjus: "
 
 #: lib/isodumper.py:216
 msgid "Could not read mtab !"
-msgstr "Ei suuda lugeda mtab-i !"
+msgstr "Mtab-i lugemine nurjus!"
 
 #: lib/isodumper.py:224 lib/isodumper.py:247
 msgid "Reading error."
-msgstr ""
+msgstr "Tõrge lugemisel."
 
 #: lib/isodumper.py:230
 msgid "You have not the rights for writing on the device"
-msgstr ""
+msgstr "Teil pole seadmes kirjutamisõigust."
 
 #: lib/isodumper.py:235 lib/isodumper.py:236
 msgid " to "
-msgstr " kuni "
+msgstr " asukohta "
 
 #: lib/isodumper.py:235
 msgid "Writing "
-msgstr "Kirjutan "
+msgstr "Kirjutatakse "
 
 #: lib/isodumper.py:236
 msgid "Executing copy from "
-msgstr ""
+msgstr "Kopeeritakse asukohast "
 
 #: lib/isodumper.py:252 lib/isodumper.py:265 lib/isodumper.py:274
 msgid "Writing error."
-msgstr ""
+msgstr "Tõrge kirjutamisel."
 
 #: lib/isodumper.py:257
 msgid "Wrote: "
-msgstr "Kirjuta "
+msgstr "Kirjutati: "
 
 #: lib/isodumper.py:269
 msgid " successfully written to"
-msgstr " Edukalt kirjutaud"
+msgstr " kirjutati edukalt asukohta "
 
 #: lib/isodumper.py:269
 msgid "Image "
@@ -113,15 +114,15 @@ msgstr "Tõmmis "
 
 #: lib/isodumper.py:270
 msgid "Bytes written: "
-msgstr ""
+msgstr "Baite kirjutati: "
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
-msgstr ""
+msgstr "Vali"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
-msgstr ""
+msgstr "IsoDumper"
 
 #: share/isodumper/isodumper.glade.h:3
 msgid ""
@@ -131,13 +132,7 @@ msgid ""
 "\n"
 " If you say ok here, please <b>do not unplug</b>\n"
 " the device during the following operation."
-msgstr ""
-"<b>Hoiatus</b>\n"
-" See <b>hävitab kõik andmed</b> sihtseadmes,\n"
-" oled sa kindel et soovid jätkata?\n"
-"\n"
-" Kui te ütlete siin ok, palun <b>ärge lahutage</b>\n"
-" seade selle operatsiooni jooksul."
+msgstr "<b>Hoiatus</b>\n See <b>hävitab kõik andmed</b> sihtseadmes,\n kas tõesti jätkata?\n\n Kui olete kindel, palun <b>ärge lahutage</b>\n seadet selle operatsiooni jooksul."
 
 #: share/isodumper/isodumper.glade.h:9
 msgid ""
@@ -147,21 +142,15 @@ msgid ""
 " \n"
 " A logfile isodumper.log with the content will be saved in your\n"
 " homedir/.isodumper when the application is closed."
-msgstr ""
-"<b>Tõrge</b>\n"
-" Midagi on valesti, palun vaata detailisi\n"
-" täpse veateate aknast.\n"
-" \n"
-"Logifail täpse kirjeldusega salvestakse\n"
-"sinu kaustas kui rakendus sulgub."
+msgstr "<b>Tõrge</b>\n Midagi läks valesti, palun vaadake üksikasju\n veateate aknast.\n \nLogifail isodumper.log täpse kirjeldusega salvestatakse\nteie kodukausta rakenduse sulgumise järel."
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Write Image:"
-msgstr "Kirjuta tõmmis"
+msgstr "Tõmmise kirjutamine:"
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Select an image file to be written to the device"
-msgstr "Vali tõmmis fail mida soovid kirjutada"
+msgstr "Valige seadmele kirjutatav tõmmis"
 
 #: share/isodumper/isodumper.glade.h:17
 msgid "Select Image"
@@ -169,19 +158,19 @@ msgstr "Vali tõmmis"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "to"
-msgstr "kuni"
+msgstr "asukohta"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "Select target device to write the image to"
-msgstr "Vali sihtkoha seaded tõmmise kirjutamiseks"
+msgstr "Valige sihtseade, kuhu tõmmis kirjutada"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Create a backup of the device as image to restore it later"
-msgstr ""
+msgstr "Seadme varukoopia loomine tõmmisena hilisemaks taastamiseks"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "(None)"
-msgstr ""
+msgstr "(Puudub)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Details"
@@ -189,7 +178,7 @@ msgstr "Üksikasjad"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Write to device"
-msgstr "Kirjuta seadega"
+msgstr "Kirjuta seadmele"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid ""
@@ -198,7 +187,7 @@ msgid ""
 "\n"
 " You need to plug in a USB Key\n"
 " to which the image can be written."
-msgstr ""
+msgstr "<b>Hoiatus</b>\n Ühtegi sihtseadet ei leitud. \n\n Teil tuleb ühendada USB.pulk,\n millele saab tõmmise kirjutada."
 
 #: share/isodumper/isodumper.glade.h:30
 msgid ""
@@ -209,42 +198,4 @@ msgid ""
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
-msgstr ""
-"<b>Kordaminek</b> \n"
-" Tõmmis on edukalt kirjutatud \n"
-" sihtseadmele.\n"
-" \n"
-" Sa oled vüõd lahti ühendada nüüd, toimingu logi \n"
-" salvestatakse sinu kodukataloogi \n"
-" sa sulged rakenduse."
-
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "Tõmmisekirjutaja"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "DD protsess lõppes veaga!"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Tõrge</b>\n"
-#~ " Sihtkoha seadet ei leitud. \n"
-#~ "\n"
-#~ "Sul on vaja pluginat et  USB Key\n"
-#~ " abil saad tõmmist kirjutada."
+msgstr "<b>Kordaminek</b> \n Tõmmis on edukalt kirjutatud \n sihtseadmele.\n \n Võite nüüd seadme eemaldada, logifail \n isodumper.log salvestatakse teie kodukataloogi \n rakenduse sulgemise järel."
