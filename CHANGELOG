@@ -5,6 +5,8 @@ IsoDumper 0.20
 ------------
 	  - added function to backup the content of the device before overwriting.
 	  - added Release number in the window title (on isodumper.py).
+	  - added and update Estonian translations.
+	  - updated  de,fr,id,ro,sl,sv,zh_TW,tr,uk,pt_BR translations.
 	  
 IsoDumper 0.13
 ------------
