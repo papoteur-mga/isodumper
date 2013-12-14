@@ -49,4 +49,5 @@ Translators
 - Florin Cătălin RUSSEN - Romanian
 - kiki.syahadat - Indonesian
 - Daniel Napora - Polish
-- taleon, Akien - German
+- taleon, Akien, latte - German
+- Marek Laane - Estonian
