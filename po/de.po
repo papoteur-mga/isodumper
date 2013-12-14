@@ -16,10 +16,10 @@ msgstr ""
 "PO-Revision-Date: 2013-12-11 18:59+0000\n"
 "Last-Translator: latte <marc.lattemann@web.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/mageia/language/de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lib/isodumper.py:110
@@ -44,7 +44,8 @@ msgstr "Dieses Gerät ist zu kein, um die ISO-Datei zu beinhalten."
 
 #: lib/isodumper.py:165
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr "Dieses Gerät ist größer als 32 Gbytes. Wollen Sie dieses wirklich verwenden?"
+msgstr ""
+"Dieses Gerät ist größer als 32 Gbytes. Wollen Sie dieses wirklich verwenden?"
 
 #: lib/isodumper.py:191
 msgid "Unmounting all partitions of "
@@ -181,7 +182,9 @@ msgstr "Zielgerat auswählen, auf welches das Abbild geschrieben werden soll"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Create a backup of the device as image to restore it later"
-msgstr "Eine Sicherungskopie als Image auf einem Gerät erstellen um es später  wiederherstellen zu können"
+msgstr ""
+"Eine Sicherungskopie als Image auf einem Gerät erstellen um es später  "
+"wiederherstellen zu können"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "(None)"

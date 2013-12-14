@@ -15,11 +15,12 @@ msgstr ""
 "PO-Revision-Date: 2013-12-11 19:02+0000\n"
 "Last-Translator: filip.komar <filip.komar@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/mageia/language/sl/)\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sl\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
 
 #: lib/isodumper.py:110
 msgid "Mb"
@@ -43,7 +44,9 @@ msgstr "Izbrana naprava nima dovolj prostora za datoteko odtisa diska."
 
 #: lib/isodumper.py:165
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr "Izbrana naprava ima kapaciteto večjo od 32 gigabajtov. Ali jo res želite uporabiti?"
+msgstr ""
+"Izbrana naprava ima kapaciteto večjo od 32 gigabajtov. Ali jo res želite "
+"uporabiti?"
 
 #: lib/isodumper.py:191
 msgid "Unmounting all partitions of "
@@ -179,7 +182,9 @@ msgstr "Izberite ciljno napravo za zapis odtisa diska"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Create a backup of the device as image to restore it later"
-msgstr "Ustvarite varnostno kopijo odtisa naprave, da jo lahko kasneje povrnete na trenutno stanje"
+msgstr ""
+"Ustvarite varnostno kopijo odtisa naprave, da jo lahko kasneje povrnete na "
+"trenutno stanje"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "(None)"
