@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-09 22:47+0100\n"
-"PO-Revision-Date: 2013-11-16 16:12+0000\n"
+"POT-Creation-Date: 2013-12-14 08:05+0100\n"
+"PO-Revision-Date: 2013-12-12 23:11+0000\n"
 "Last-Translator: tarakbumba . <tarakbumba@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/mageia/language/"
 "tr/)\n"
@@ -27,7 +27,7 @@ msgstr "Mb"
 
 #: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
-msgstr ""
+msgstr "Şuraya yedekle:"
 
 #: lib/isodumper.py:154
 msgid "Image: "
@@ -120,7 +120,7 @@ msgstr "Yazılan bayt:"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
-msgstr ""
+msgstr "Seç"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
@@ -180,11 +180,11 @@ msgstr "Kalıp yazdırma için bir hedef aygıt seçin"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Create a backup of the device as image to restore it later"
-msgstr ""
+msgstr "Aygıtın imaj olarak sonradan kullanmak üzere bir yedeğini oluşturun"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "(None)"
-msgstr ""
+msgstr "(Hiçbiri)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Details"
@@ -203,10 +203,10 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 "<b>Uyarı</b>\n"
-"Hedef aygıt bulunamadı.\n"
+" Hedef aygıt bulunamadı.\n"
 "\n"
-"İmajın üzerine yazılabileceği\n"
-"bir USB bellek takmalısınız."
+" İmajın üzerine yazılabileceği\n"
+" bir USB bellek takmalısınız."
 
 #: share/isodumper/isodumper.glade.h:30
 msgid ""
@@ -221,7 +221,7 @@ msgstr ""
 "<b>Başarı</b>\n"
 " İmaj hedef aygıta başarılı bir şekilde\n"
 " yazıldı.\n"
-"\n"
+" \n"
 " Aygıtı çıkarabilirsiniz. İşleme dair bir isodumper.log kayıt.\n"
 " dosyası uygulama kapandığında kullanıcı dizini/.isodumper/ altına\n"
 " kaydedilecek."
