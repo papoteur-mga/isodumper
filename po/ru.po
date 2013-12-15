@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-09 22:47+0100\n"
-"PO-Revision-Date: 2013-11-10 19:42+0300\n"
+"PO-Revision-Date: 2013-12-15 00:03+0300\n"
 "Last-Translator: AlexL <loginov.alex.valer@gmail.com>\n"
 "Language-Team:  <en@li.org>\n"
 "Language: ru\n"
@@ -24,9 +24,10 @@ msgstr ""
 msgid "Mb"
 msgstr "МБ"
 
-#: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:153
+#: share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
-msgstr ""
+msgstr "Резервное копирование в:"
 
 #: lib/isodumper.py:154
 msgid "Image: "
@@ -42,8 +43,7 @@ msgstr "Устройство слишком маленькое чтобы уме
 
 #: lib/isodumper.py:165
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr ""
-"Устройство больше, чем 32 ГБайт. Вы уверены, что хотите использовать его?"
+msgstr "Устройство больше, чем 32 ГБайт. Вы уверены, что хотите использовать его?"
 
 #: lib/isodumper.py:191
 msgid "Unmounting all partitions of "
@@ -57,7 +57,8 @@ msgstr "Попытка размонтирования "
 msgid " was terminated by signal "
 msgstr " был прерван с сигналом "
 
-#: lib/isodumper.py:199 lib/isodumper.py:205
+#: lib/isodumper.py:199
+#: lib/isodumper.py:205
 msgid "Error, umount "
 msgstr "Ошибка, размонтировано "
 
@@ -77,7 +78,8 @@ msgstr "Выполнение не удалось: "
 msgid "Could not read mtab !"
 msgstr "Не удалось прочитать mtab!"
 
-#: lib/isodumper.py:224 lib/isodumper.py:247
+#: lib/isodumper.py:224
+#: lib/isodumper.py:247
 msgid "Reading error."
 msgstr "Ошибка чтения."
 
@@ -85,7 +87,8 @@ msgstr "Ошибка чтения."
 msgid "You have not the rights for writing on the device"
 msgstr "У Вас нет прав записи на устройство"
 
-#: lib/isodumper.py:235 lib/isodumper.py:236
+#: lib/isodumper.py:235
+#: lib/isodumper.py:236
 msgid " to "
 msgstr " в "
 
@@ -97,7 +100,9 @@ msgstr "Запись "
 msgid "Executing copy from "
 msgstr "Выполняется копирование с"
 
-#: lib/isodumper.py:252 lib/isodumper.py:265 lib/isodumper.py:274
+#: lib/isodumper.py:252
+#: lib/isodumper.py:265
+#: lib/isodumper.py:274
 msgid "Writing error."
 msgstr "Ошибка чтения."
 
@@ -119,7 +124,7 @@ msgstr "Записано байт:"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
-msgstr ""
+msgstr "Выбрать"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
@@ -179,11 +184,11 @@ msgstr "Выбрать целевое устройство для записи �
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Create a backup of the device as image to restore it later"
-msgstr ""
+msgstr "Создать резервную копию устройства как образ, чтобы восстановить его позже"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "(None)"
-msgstr ""
+msgstr "(Пусто)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Details"
@@ -224,3 +229,4 @@ msgstr ""
 "Вы можете отключить его, журнал isodumper.log\n"
 "операции будет сохранен в Вашем домашнем каталоге/.isodumper, когда\n"
 "Вы закроете программу."
+
