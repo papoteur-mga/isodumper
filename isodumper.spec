@@ -40,7 +40,7 @@ Ce logiciel est écrit en python.
 %make
 
 %install
-%makeinstall_std DESTDIR="%{buildroot}" PREFIX="%{_prefix}"
+%makeinstall_std PREFIX="%{_prefix}"
 
 %find_lang %{name}
 
