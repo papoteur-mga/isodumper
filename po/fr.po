@@ -10,15 +10,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-22 20:36+0100\n"
-"PO-Revision-Date: 2013-12-22 20:57+0100\n"
+"POT-Creation-Date: 2013-12-22 21:28+0100\n"
+"PO-Revision-Date: 2013-12-22 21:30+0100\n"
 "Last-Translator: Papoteur\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
-"fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"fr/)\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 1.4\n"
 
@@ -128,13 +128,18 @@ msgstr "Lancer IsoDumper"
 msgid "Authentication is required to run Isodumper"
 msgstr "Une authentification est nécessaire pour exécuter IsoDumper"
 
-#: share/isodumper/isodumper.glade.h:1
-msgid "Select"
-msgstr "Sélectionner"
-
+#: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
 msgstr "IsoDumper"
+
+#: share/applications/isodumper.desktop.in.h:2
+msgid "A GUI tool to write .img and .iso files to USB Keys"
+msgstr "Outil graphique pour écrire des fichiers .img et .iso sur clés USB"
+
+#: share/isodumper/isodumper.glade.h:1
+msgid "Select"
+msgstr "Sélectionner"
 
 #: share/isodumper/isodumper.glade.h:3
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-22 20:36+0100\n"
+"POT-Creation-Date: 2013-12-22 21:28+0100\n"
 "PO-Revision-Date: 2009-05-13 05:10+0000\n"
 "Last-Translator: puzhengcai <Unknown>\n"
 "Language-Team: Simplified Chinese <zh_CN@li.org>\n"
@@ -125,12 +125,17 @@ msgstr ""
 msgid "Authentication is required to run Isodumper"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:1
-msgid "Select"
-msgstr ""
-
+#: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
+msgstr ""
+
+#: share/applications/isodumper.desktop.in.h:2
+msgid "A GUI tool to write .img and .iso files to USB Keys"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:1
+msgid "Select"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:3
@@ -230,6 +235,24 @@ msgstr ""
 " 当您退出程序时\n"
 " 一份日志文件将会保存在您的用户主目录中。"
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-确定"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-关闭"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-取消"
+
+#~ msgid "ImageWriter"
+#~ msgstr "镜像写入程序"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd处理过程带错误结束！"
+
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -242,21 +265,3 @@ msgstr ""
 #~ "\n"
 #~ " 你需要插入一个USB设备\n"
 #~ " 以便将镜像写入。"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd处理过程带错误结束！"
-
-#~ msgid "ImageWriter"
-#~ msgstr "镜像写入程序"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-取消"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-关闭"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-确定"
-
-#~ msgid " "
-#~ msgstr " "

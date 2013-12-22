@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-22 20:36+0100\n"
+"POT-Creation-Date: 2013-12-22 21:28+0100\n"
 "PO-Revision-Date: 2012-11-13 02:22+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
@@ -123,12 +123,17 @@ msgstr ""
 msgid "Authentication is required to run Isodumper"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:1
-msgid "Select"
-msgstr ""
-
+#: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
+msgstr ""
+
+#: share/applications/isodumper.desktop.in.h:2
+msgid "A GUI tool to write .img and .iso files to USB Keys"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:1
+msgid "Select"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:3
@@ -226,6 +231,24 @@ msgstr ""
 " biti će spremljen u Osobnoj mapi\n"
 " ako zatvorite aplikaciju."
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "gtk-ok"
+#~ msgstr "U redu"
+
+#~ msgid "gtk-close"
+#~ msgstr "Zatvori"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "Poništi zapisivanje"
+
+#~ msgid "ImageWriter"
+#~ msgstr "Zapisnik slika"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "'dd' radnja je završila greškom!"
+
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -238,21 +261,3 @@ msgstr ""
 #~ "\n"
 #~ " Morate spojiti USB uređaj\n"
 #~ " na koji slika može biti zapisana."
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "'dd' radnja je završila greškom!"
-
-#~ msgid "ImageWriter"
-#~ msgstr "Zapisnik slika"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "Poništi zapisivanje"
-
-#~ msgid "gtk-close"
-#~ msgstr "Zatvori"
-
-#~ msgid "gtk-ok"
-#~ msgstr "U redu"
-
-#~ msgid " "
-#~ msgstr " "

@@ -1,0 +1,21 @@
+[Desktop Entry]
+_Name=IsoDumper
+_Comment=A GUI tool to write .img and .iso files to USB Keys
+Comment[de]=Ein Programm zum scheiben von *.img und *.iso Dateien auf USB-Sicks
+Comment[es]=Utilidad gráfica para grabar ficheros .img e .iso en dispositivos usb.
+Comment[fr]=Outil graphique pour écrire des fichiers .img et .iso sur clés USB
+Comment[it]=Uno strumento grafico per scrivere immagini .img e .iso in una chiavetta USB
+Comment[nl]=Een grafisch hulpmiddel om .img- en .iso-bestanden naar USB-sticks te schrijven
+Comment[pl]=Narzędzie do nagrywania obrazów .img oraz .iso na USB
+Comment[pt]=Um Programa para gravar ficheiros *.img e *.iso em dispositivos USB
+Comment[ru]=Графическая утилита для записи .img и.iso файлов на USB диск
+Comment[sl]=Grafično orodje za zapis odtisa diska (datotek tipa .img in .iso) na ključek 
+Comment[sv]=Ett grafiskt verktyg för att skriva .img och .iso-filer till USB-minnen 
+Comment[tr]=USB anahtarlarına .img ve .iso dosyalarını yazdırmak için grafiksel bir araç
+Comment[uk]=Програма з графічним інтерфейсом для запису файлів img та iso на носії USB
+Comment[zh_TW]=一個寫入 .img 和 .iso 檔案到 USB 隨身碟的 GUI 工具
+Exec=isodumper
+Icon=isodumper.png
+Type=Application
+Terminal=false
+Categories=System;

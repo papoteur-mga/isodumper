@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-22 20:36+0100\n"
+"POT-Creation-Date: 2013-12-22 21:28+0100\n"
 "PO-Revision-Date: 2008-08-16 09:18+0000\n"
 "Last-Translator: Gordon Stevens <Unknown>\n"
 "Language-Team: English (Canada) <en_CA@li.org>\n"
@@ -125,12 +125,17 @@ msgstr ""
 msgid "Authentication is required to run Isodumper"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:1
-msgid "Select"
-msgstr ""
-
+#: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
+msgstr ""
+
+#: share/applications/isodumper.desktop.in.h:2
+msgid "A GUI tool to write .img and .iso files to USB Keys"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:1
+msgid "Select"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:3
@@ -230,6 +235,24 @@ msgstr ""
 " operation will be saved in your homedir if\n"
 " you close the application."
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "The dd process ended with an error !"
+
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -242,21 +265,3 @@ msgstr ""
 #~ "\n"
 #~ " You need to plug in a USB Key\n"
 #~ " to which the image can be written."
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "The dd process ended with an error !"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid " "
-#~ msgstr " "

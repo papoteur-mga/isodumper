@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-22 20:36+0100\n"
+"POT-Creation-Date: 2013-12-22 21:28+0100\n"
 "PO-Revision-Date: 2011-03-17 11:58+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Launchpad Serbian Translators\n"
@@ -123,12 +123,17 @@ msgstr ""
 msgid "Authentication is required to run Isodumper"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:1
-msgid "Select"
-msgstr ""
-
+#: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
+msgstr ""
+
+#: share/applications/isodumper.desktop.in.h:2
+msgid "A GUI tool to write .img and .iso files to USB Keys"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:1
+msgid "Select"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:3
@@ -225,6 +230,24 @@ msgstr ""
 " о операцији ће бити сачуван у вашој личној\n"
 " фасцикли ако затворите програм."
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "gtk-ok"
+#~ msgstr "гтк-у реду"
+
+#~ msgid "gtk-close"
+#~ msgstr "гтк-затвори"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "гтк-откажи"
+
+#~ msgid "ImageWriter"
+#~ msgstr "Писач одраза"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "дд процес је завршио са грешком !"
+
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -237,21 +260,3 @@ msgstr ""
 #~ "\n"
 #~ " Морате да прикључите УСБ кључ\n"
 #~ " на који може бити записан одраз."
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "дд процес је завршио са грешком !"
-
-#~ msgid "ImageWriter"
-#~ msgstr "Писач одраза"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "гтк-откажи"
-
-#~ msgid "gtk-close"
-#~ msgstr "гтк-затвори"
-
-#~ msgid "gtk-ok"
-#~ msgstr "гтк-у реду"
-
-#~ msgid " "
-#~ msgstr " "

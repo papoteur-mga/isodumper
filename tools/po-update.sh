@@ -14,6 +14,7 @@ VERSION=(0.20)
 DOMAIN=(isodumper)
 intltool-extract --type=gettext/glade share/isodumper/isodumper.glade
 intltool-extract --type=gettext/xml polkit/org.mageia.isodumper.policy.in
+intltool-extract --type=gettext/ini share/applications/isodumper.desktop.in
 
 POT_DIR="$PWD/po"
 test -d "$POT_DIR"
@@ -27,12 +28,14 @@ POT_FILE="$POT_DIR/$DOMAIN.pot"
 	--no-escape --add-location --sort-by-file \
 	--add-comments=I18N \
 	--output="$POT_FILE" \
-	lib/isodumper.py share/isodumper/isodumper.glade.h polkit/org.mageia.isodumper.policy.in.h
+	lib/isodumper.py share/isodumper/isodumper.glade.h polkit/org.mageia.isodumper.policy.in.h \
+	share/applications/isodumper.desktop.in.h
 
 /bin/sed --in-place --expression="s/charset=CHARSET/charset=UTF-8/" "$POT_FILE"
 
 rm -f share/isodumper/isodumper.glade.h
 rm -f polkit/org.mageia.isodumper.policy.in.h
+rm -f share/applications/isodumper.desktop.in.h
 
 update_po() {
 	local LL_CC="$1"

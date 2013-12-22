@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-22 20:36+0100\n"
+"POT-Creation-Date: 2013-12-22 21:28+0100\n"
 "PO-Revision-Date: 2009-03-05 12:06+0000\n"
 "Last-Translator: Tomáš Vadina <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -125,12 +125,17 @@ msgstr ""
 msgid "Authentication is required to run Isodumper"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:1
-msgid "Select"
-msgstr ""
-
+#: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
+msgstr ""
+
+#: share/applications/isodumper.desktop.in.h:2
+msgid "A GUI tool to write .img and .iso files to USB Keys"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:1
+msgid "Select"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:3
@@ -228,6 +233,24 @@ msgstr ""
 " Teraz môžete odpojiť USB zariadenie. Log súbor bude zapísaný\n"
 " do Vášho domovského priečinka po skončení aplikácie."
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Proces dd skončil s chybou!"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -240,21 +263,3 @@ msgstr ""
 #~ "\n"
 #~ " Musíte pripojiť USB zariadenie na ktoré\n"
 #~ " môže byť zapísaný obraz."
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Proces dd skončil s chybou!"
-
-#~ msgid " "
-#~ msgstr " "
