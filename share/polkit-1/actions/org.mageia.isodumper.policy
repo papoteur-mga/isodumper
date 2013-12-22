@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+"-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+"http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+
+ <vendor>Mageia</vendor>
+ <vendor_url>http://mageia.org/</vendor_url>
+
+ <action id="org.mageia.isodumper.pkexec.run">
+    <description>Run Isodumper</description>
+    <description xml:lang="fr">Exécuter Isodumper</description>
+    <description xml:lang="ca">Isodumper</description>
+    <description xml:lang="ru">Isodumper</description>
+    <description xml:lang="sl">Isodumper</description>
+    <description xml:lang="tr">Isodumper</description>
+    <description xml:lang="uk">Isodumper</description>
+    <message>Authentication is required to run Isodumper</message>
+    <message xml:lang="fr">Une authentification est nécessaire pour exécuter IsoDumper</message>
+    <message xml:lang="ca">Per a accedir al Isodumper cal autenticació</message>
+    <icon_name>isodumper</icon_name>
+    <defaults>
+     <allow_any>no</allow_any>
+     <allow_inactive>no</allow_inactive>
+     <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/isodumper</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+ </action>
+</policyconfig>
