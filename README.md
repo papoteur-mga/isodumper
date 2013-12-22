@@ -8,12 +8,13 @@ Requirements
 -------------
 
 - coreutils
-- udisks
+- pango
+- polkit
 - procps
-- python
-- xterm
 - pygtk2.0-libglade
-- usermode-consoleonly
+- python
+- udisks
+- xterm
 
 
 License

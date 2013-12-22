@@ -17,6 +17,8 @@ PREFIX=/usr/local
 BINDIR=$(PREFIX)/bin
 SBINDIR=$(PREFIX)/sbin
 LIBDIR=$(PREFIX)/lib
+LIBEXECDIR=$(PREFIX)/libexec
+POLKITPOLICYDIR=$(PREFIX)/share/polkit-1/actions
 DATADIR=$(PREFIX)/share
 ICONSDIR=$(PREFIX)/share/icons
 PIXMAPSDIR=$(PREFIX)/share/pixmaps
@@ -34,12 +36,19 @@ clean:
 
 install: all
 
-	# for binary file isodumper on /usr/sbin/
-	mkdir -p $(DESTDIR)$(SBINDIR)
-	install -m 755 isodumper $(DESTDIR)$(SBINDIR)
-	# Adjust for console-helper magic
+	# for binary file script isodumper on /usr/libexec/
+	mkdir -p $(DESTDIR)$(LIBEXECDIR)
+	install -m 755 isodumper $(DESTDIR)$(LIBEXECDIR)
+
+	# for binary file isodumper on /usr/bin/ 
+	# to have authentication with polkit (use for mageia policy)
 	mkdir -p $(DESTDIR)$(BINDIR)
-	cd $(DESTDIR)$(BINDIR); ln -s consolehelper isodumper
+	install -m 755 bin/isodumper $(DESTDIR)$(BINDIR)
+
+	# for policy file isodumper on /usr/share/polkit-1/actions/ 
+	# to have authentication with polkit (use for mageia policy)	
+	mkdir -p $(DESTDIR)$(POLKITPOLICYDIR)
+	install -m 644 share/polkit-1/actions/org.mageia.isodumper.policy $(DESTDIR)$(POLKITPOLICYDIR)
 
 	# for LIBFILES isodumper.py find_devices
 	mkdir -p $(DESTDIR)$(LIBDIR)/isodumper

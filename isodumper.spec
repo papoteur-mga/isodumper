@@ -13,12 +13,14 @@ BuildArch:	noarch
 BuildRequires:	imagemagick
 
 Requires:	coreutils
-Requires:	udisks
+Requires:	pango
+Requires:	polkit
 Requires:	procps
-Requires:	python
-Requires:	xterm
 Requires:	pygtk2.0-libglade
-Requires:	usermode-consoleonly
+Requires:	python
+Requires:	udisks
+Requires:	xterm
+
 
 %description
 A GUI tool for writing ISO images on a USB stick.
@@ -46,10 +48,11 @@ Ce logiciel est écrit en python.
 
 %files -f %{name}.lang
 %doc COPYING CHANGELOG
-%{_sbindir}/%{name}
 %{_bindir}/%{name}
+%{_libexecdir}/%{name}
 %{_usr}/lib/%{name}/
 %{_datadir}/%{name}/
+%{_datadir}/polkit-1/actions/*.policy
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 %{_miconsdir}/%{name}.png
