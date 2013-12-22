@@ -6,7 +6,7 @@ IsoDumper 0.20
 	  - added function to backup the content of the device before overwriting.
 	  - added Release number in the window title (on isodumper.py).
 	  - added and update Estonian translations.
-	  - updated  de,fr,id,ro,sl,sv,zh_TW,tr,uk,pt_BR,ru,es translations.
+	  - updated  de,fr,id,ro,sl,sv,zh_TW,tr,uk,pt_BR,ru,es and it translations.
 	  
 IsoDumper 0.13
 ------------
@@ -16,6 +16,7 @@ IsoDumper 0.13
 	  - added a pixmaps icons.
 	  - usermode-consoleonly is not a BuildRequires, but it is a Requires package.
 	  - improvement po-update.sh script for translations.
+	  - added Release number in the window title.
 
 IsoDumper 0.12
 ------------
