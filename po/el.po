@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-09 22:47+0100\n"
+"POT-Creation-Date: 2013-12-22 20:36+0100\n"
 "PO-Revision-Date: 2009-01-09 00:20+0000\n"
 "Last-Translator: Petros Kiladitis <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
@@ -114,6 +114,14 @@ msgstr "Εικόνα "
 
 #: lib/isodumper.py:270
 msgid "Bytes written: "
+msgstr ""
+
+#: polkit/org.mageia.isodumper.policy.in.h:1
+msgid "Run Isodumper"
+msgstr ""
+
+#: polkit/org.mageia.isodumper.policy.in.h:2
+msgid "Authentication is required to run Isodumper"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:1

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-09 22:47+0100\n"
+"POT-Creation-Date: 2013-12-22 20:36+0100\n"
 "PO-Revision-Date: 2009-04-03 18:33+0000\n"
 "Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
@@ -117,6 +117,14 @@ msgstr "Образ "
 msgid "Bytes written: "
 msgstr ""
 
+#: polkit/org.mageia.isodumper.policy.in.h:1
+msgid "Run Isodumper"
+msgstr ""
+
+#: polkit/org.mageia.isodumper.policy.in.h:2
+msgid "Authentication is required to run Isodumper"
+msgstr ""
+
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
 msgstr ""
@@ -222,24 +230,6 @@ msgstr ""
 " се запази отчет във вашата домашна\n"
 " папка, ако затворите програмата."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Процесът dd завърши с грешка!"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -252,3 +242,21 @@ msgstr ""
 #~ "\n"
 #~ " Трябва да свържете USB стик,\n"
 #~ " на който да се запише образа."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Процесът dd завърши с грешка!"
+
+#~ msgid " "
+#~ msgstr " "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-09 22:47+0100\n"
+"POT-Creation-Date: 2013-12-22 20:36+0100\n"
 "PO-Revision-Date: 2013-12-10 19:36+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -117,6 +117,14 @@ msgstr "Образ "
 #: lib/isodumper.py:270
 msgid "Bytes written: "
 msgstr "Записано байтів: "
+
+#: polkit/org.mageia.isodumper.policy.in.h:1
+msgid "Run Isodumper"
+msgstr ""
+
+#: polkit/org.mageia.isodumper.policy.in.h:2
+msgid "Authentication is required to run Isodumper"
+msgstr ""
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
@@ -228,4 +236,3 @@ msgstr ""
 "  Файл журналу дій isodumper.log записано буде записано\n"
 "  до теки .isodumper вашої домашньої теки, щойно роботу\n"
 "  програми буде завершено."
-

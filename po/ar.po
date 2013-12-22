@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-09 22:47+0100\n"
+"POT-Creation-Date: 2013-12-22 20:36+0100\n"
 "PO-Revision-Date: 2009-04-17 17:02+0000\n"
 "Last-Translator: Nizar Kerkeni <nizar.kerkeni@gmail.com>\n"
 "Language-Team: Arabic <ar@li.org>\n"
@@ -116,6 +116,14 @@ msgstr "ملف "
 msgid "Bytes written: "
 msgstr ""
 
+#: polkit/org.mageia.isodumper.policy.in.h:1
+msgid "Run Isodumper"
+msgstr ""
+
+#: polkit/org.mageia.isodumper.policy.in.h:2
+msgid "Authentication is required to run Isodumper"
+msgstr ""
+
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
 msgstr ""
@@ -200,17 +208,17 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "ImageWriter"
-#~ msgstr "كاتب ملف"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
 
 #~ msgid "gtk-close"
 #~ msgstr "gtk-close"
 
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "كاتب ملف"
+
+#~ msgid " "
+#~ msgstr " "

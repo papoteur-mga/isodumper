@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-09 22:47+0100\n"
+"POT-Creation-Date: 2013-12-22 20:36+0100\n"
 "PO-Revision-Date: 2011-03-17 11:58+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Launchpad Serbian Translators\n"
@@ -115,6 +115,14 @@ msgstr "Одраз "
 msgid "Bytes written: "
 msgstr ""
 
+#: polkit/org.mageia.isodumper.policy.in.h:1
+msgid "Run Isodumper"
+msgstr ""
+
+#: polkit/org.mageia.isodumper.policy.in.h:2
+msgid "Authentication is required to run Isodumper"
+msgstr ""
+
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
 msgstr ""
@@ -217,24 +225,6 @@ msgstr ""
 " о операцији ће бити сачуван у вашој личној\n"
 " фасцикли ако затворите програм."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "gtk-ok"
-#~ msgstr "гтк-у реду"
-
-#~ msgid "gtk-close"
-#~ msgstr "гтк-затвори"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "гтк-откажи"
-
-#~ msgid "ImageWriter"
-#~ msgstr "Писач одраза"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "дд процес је завршио са грешком !"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -247,3 +237,21 @@ msgstr ""
 #~ "\n"
 #~ " Морате да прикључите УСБ кључ\n"
 #~ " на који може бити записан одраз."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "дд процес је завршио са грешком !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "Писач одраза"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "гтк-откажи"
+
+#~ msgid "gtk-close"
+#~ msgstr "гтк-затвори"
+
+#~ msgid "gtk-ok"
+#~ msgstr "гтк-у реду"
+
+#~ msgid " "
+#~ msgstr " "

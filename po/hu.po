@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-09 22:47+0100\n"
+"POT-Creation-Date: 2013-12-22 20:36+0100\n"
 "PO-Revision-Date: 2008-11-02 19:05+0000\n"
 "Last-Translator: Gyula Fürstal <Unknown>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -116,6 +116,14 @@ msgstr "Kép "
 msgid "Bytes written: "
 msgstr ""
 
+#: polkit/org.mageia.isodumper.policy.in.h:1
+msgid "Run Isodumper"
+msgstr ""
+
+#: polkit/org.mageia.isodumper.policy.in.h:2
+msgid "Authentication is required to run Isodumper"
+msgstr ""
+
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
 msgstr ""
@@ -200,21 +208,6 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "A dd folyamat  sikertelen"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -227,3 +220,18 @@ msgstr ""
 #~ "\n"
 #~ " Csatlakoztasson egy USB kulcsot\n"
 #~ " amire kiírható a kép."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "A dd folyamat  sikertelen"
+
+#~ msgid " "
+#~ msgstr " "
