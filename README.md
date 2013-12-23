@@ -52,3 +52,4 @@ Translators
 - Daniel Napora - Polish
 - taleon, Akien, latte - German
 - Marek Laane - Estonian
+- dtsiamasiotis -Greek
