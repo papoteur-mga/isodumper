@@ -25,10 +25,14 @@ PIXMAPSDIR=$(PREFIX)/share/pixmaps
 LOCALEDIR=$(PREFIX)
 DOCDIR=$(PREFIX)/share/doc/isodumper
 PYTHON=/usr/bin/env python
+DIRS = polkit
 
+all: dirs
 
-all: isodumper COPYING CHANGELOG
-
+dirs:
+	@for n in . $(DIRS); do \
+		[ "$$n" = "." ] || make -C $$n || cd .. || exit 1 ;\
+	done
 
 clean:
 	rm -f isodumper COPYING CHANGELOG
@@ -48,7 +52,7 @@ install: all
 	# for policy file isodumper on /usr/share/polkit-1/actions/ 
 	# to have authentication with polkit (use for mageia policy)	
 	mkdir -p $(DESTDIR)$(POLKITPOLICYDIR)
-	install -m 644 share/polkit-1/actions/org.mageia.isodumper.policy $(DESTDIR)$(POLKITPOLICYDIR)
+	install -m 644 polkit/org.mageia.isodumper.policy $(DESTDIR)$(POLKITPOLICYDIR)
 
 	# for LIBFILES isodumper.py find_devices
 	mkdir -p $(DESTDIR)$(LIBDIR)/isodumper
