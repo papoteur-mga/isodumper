@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-22 21:28+0100\n"
-"PO-Revision-Date: 2013-12-10 16:20+0000\n"
+"PO-Revision-Date: 2013-12-23 10:20+0000\n"
 "Last-Translator: Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>\n"
 "Language-Team: Romanian (http://www.transifex.com/projects/p/mageia/language/"
 "ro/)\n"
@@ -120,11 +120,11 @@ msgstr "Octeți scriși:"
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr ""
+msgstr "Lansează Isodumper"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
-msgstr ""
+msgstr "Autentificare necesară pentru lansarea aplicației Isodumper"
 
 #: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
@@ -134,6 +134,7 @@ msgstr "IsoDumper"
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
 msgstr ""
+"O interfață grafică pentru scrierea fișierelor .img și .iso pe cheile USB"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
@@ -150,7 +151,7 @@ msgid ""
 msgstr ""
 "<b>Avertisment</b>\n"
 " Această operație va <b>distruge toate datele</b> de pe\n"
-" dispozitivul destinație, sigur duriți să continuați?\n"
+"dispozitivul destinație, sigur duriți să continuați?\n"
 "\n"
 " Dacă spuneți da aici, vă rugăm <b>să nu deconectați</b>\n"
 " dispozitivul în cursul operației următoare."

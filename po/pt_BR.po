@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-22 21:28+0100\n"
-"PO-Revision-Date: 2013-12-14 00:59+0000\n"
+"PO-Revision-Date: 2013-12-23 19:42+0000\n"
 "Last-Translator: Padula <padula1000@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
 "mageia/language/pt_BR/)\n"
@@ -121,11 +121,11 @@ msgstr "Bytes usado:"
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr ""
+msgstr "Execultar Isodumper"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
-msgstr ""
+msgstr "A Autenticação é necessária para execultar Isodumper"
 
 #: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
@@ -134,7 +134,7 @@ msgstr "IsoDumper"
 
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
-msgstr ""
+msgstr "Uma ferramenta GUI para escrever .img e .iso para chave USB"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"

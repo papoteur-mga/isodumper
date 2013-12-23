@@ -1,31 +1,33 @@
 # Greek translation for isodumper package.
 # Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the isodumper package.
-# Automatically generated, 2013.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
 #
+# Translators:
+# Automatically generated, 2013
+# dtsiamasiotis <dtsiamasiotis@gmail.com>, 2013
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-22 21:28+0100\n"
-"PO-Revision-Date: 2009-01-09 00:20+0000\n"
-"Last-Translator: Petros Kiladitis <Unknown>\n"
-"Language-Team: Greek <el@li.org>\n"
+"PO-Revision-Date: 2013-12-23 16:08+0000\n"
+"Last-Translator: dtsiamasiotis <dtsiamasiotis@gmail.com>\n"
+"Language-Team: Greek (http://www.transifex.com/projects/p/mageia/language/"
+"el/)\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lib/isodumper.py:110
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
 #: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
-msgstr ""
+msgstr "Εφεδρικό αρχείο στο:"
 
 #: lib/isodumper.py:154
 msgid "Image: "
@@ -37,11 +39,13 @@ msgstr "Συσκευή προορισμού: "
 
 #: lib/isodumper.py:158
 msgid "The device is too small to contain the ISO file."
-msgstr ""
+msgstr "Η συσκευή είναι πολύ μικρή για να χωρέσει το αρχείο ISO."
 
 #: lib/isodumper.py:165
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
+"Η συσκευή είναι μεγαλύτερη από 32 Gbytes. Είστε σίγουροι ότι θέλετε να την "
+"χρησιμοποιήσετε;"
 
 #: lib/isodumper.py:191
 msgid "Unmounting all partitions of "
@@ -77,11 +81,11 @@ msgstr "Αδυναμία ανάγνωσης του mtab !"
 
 #: lib/isodumper.py:224 lib/isodumper.py:247
 msgid "Reading error."
-msgstr ""
+msgstr "Σφάλμα ανάγνωσης."
 
 #: lib/isodumper.py:230
 msgid "You have not the rights for writing on the device"
-msgstr ""
+msgstr "Δεν έχετε δικαιώματα εγγραφής στη συσκευή"
 
 #: lib/isodumper.py:235 lib/isodumper.py:236
 msgid " to "
@@ -93,12 +97,11 @@ msgstr "Εγγραφή "
 
 #: lib/isodumper.py:236
 msgid "Executing copy from "
-msgstr ""
+msgstr "Εκτέλεση αντιγραφής από"
 
 #: lib/isodumper.py:252 lib/isodumper.py:265 lib/isodumper.py:274
-#, fuzzy
 msgid "Writing error."
-msgstr "Εγγραφή "
+msgstr "Σφάλμα εγγραφής."
 
 #: lib/isodumper.py:257
 msgid "Wrote: "
@@ -114,28 +117,29 @@ msgstr "Εικόνα "
 
 #: lib/isodumper.py:270
 msgid "Bytes written: "
-msgstr ""
+msgstr "Εγγεγραμμένα bytes:"
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr ""
+msgstr "Εκτελέστε το Isodumper"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
-msgstr ""
+msgstr "Απαιτείται πιστοποίηση για την εκτέλεση του Isodumper"
 
 #: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
 msgid "IsoDumper"
-msgstr ""
+msgstr "IsoDumper"
 
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
 msgstr ""
+"Ένα γραφικό εργαλείο για την εγγραφή αρχείων .img και .iso σε μνήμες USB"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
-msgstr ""
+msgstr "Επιλέξτε"
 
 #: share/isodumper/isodumper.glade.h:3
 msgid ""
@@ -146,6 +150,12 @@ msgid ""
 " If you say ok here, please <b>do not unplug</b>\n"
 " the device during the following operation."
 msgstr ""
+"<b>Προσοχή</b>\n"
+" Αυτό <b>θα καταστρέψει όλα τα δεδομένα</b> στη συσκευή\n"
+" προορισμού, είστε σίγουροι ότι θέλετε να συνεχίσετε;\n"
+"\n"
+" Αν συμφωνείτε εδώ, παρακαλώ <b>μην αποσυνδέσετε</b>\n"
+" τη συσκευή κατά τη διάρκεια της διεργασίας που ακολουθεί."
 
 #: share/isodumper/isodumper.glade.h:9
 msgid ""
@@ -156,6 +166,12 @@ msgid ""
 " A logfile isodumper.log with the content will be saved in your\n"
 " homedir/.isodumper when the application is closed."
 msgstr ""
+"<b>Σφάλμα</b>\n"
+" Κάτι πήγε στραβά, παρακαλώ δείτε το παράθυρο με τις\n"
+" λεπτομέρειες για το ακριβές λάθος.\n"
+" \n"
+" Ένα αρχείο καταγραφής isodumper.log με το περιεχόμενο θα σωθεί στο\n"
+" homedir/.isodumper όταν η εφαρμογή τερματιστεί."
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Write Image:"
@@ -180,10 +196,12 @@ msgstr "Επιλέξτε την συσκευή προορισμού για να 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
+"Δημιουργήστε ένα εφεδρικό αντίγραφο της συσκευής σαν εικονικό αρχείο για να "
+"το αποκαταστήσετε αργότερα"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "(None)"
-msgstr ""
+msgstr "(κανένα)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Details"
@@ -201,9 +219,13 @@ msgid ""
 " You need to plug in a USB Key\n"
 " to which the image can be written."
 msgstr ""
+"<b>Προσοχή</b>\n"
+" Δε βρέθηκαν συσκευές προορισμού. \n"
+"\n"
+" Πρέπει να συνδέσετε μία USB μνήμη\n"
+" στην οποία μπορεί να εγγραφεί το εικονικό αρχείο."
 
 #: share/isodumper/isodumper.glade.h:30
-#, fuzzy
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -214,9 +236,10 @@ msgid ""
 " you close the application."
 msgstr ""
 "<b>Επιτυχία</b>\n"
-" Η εικόνα γράφτηκε επιτυχώς στην\n"
+" Το εικονικό αρχείο εγγράφηκε επιτυχώς στη\n"
 " συσκευή προορισμού.\n"
 " \n"
-" Μπορείτε να την αφαιρέσετε τώρα, μια\n"
-" αναφορά της διαδικασίας θα αποθηκευτεί\n"
-" στο αρχικό σας φάκελο αν κλείσετε την εφαρμογή."
+" Μπορείτε τώρα να την αποσυνδέσετε ελεύθερα, ένα αρχείο καταγραφής isodumper."
+" log \n"
+" της διεργασίας θα σωθεί στο  homedir/.isodumper/ όταν\n"
+" τερματίσετε την εφαρμογή."

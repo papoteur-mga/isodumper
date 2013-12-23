@@ -5,7 +5,7 @@
 # Translators:
 # Automatically generated, 2013
 # taleon <cr@rt.fm>, 2013
-# latte <marc.lattemann@web.de>, 2013
+# latte, 2013
 # Oliver Grawert <ogra@ubuntu.com>, 2008
 # Akien <akien@mageia.org>, 2013
 msgid ""
@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-22 21:28+0100\n"
-"PO-Revision-Date: 2013-12-11 18:59+0000\n"
-"Last-Translator: latte <marc.lattemann@web.de>\n"
+"PO-Revision-Date: 2013-12-23 09:54+0000\n"
+"Last-Translator: latte\n"
 "Language-Team: German (http://www.transifex.com/projects/p/mageia/language/"
 "de/)\n"
 "Language: de\n"
@@ -122,11 +122,11 @@ msgstr "Bytes geschrieben:"
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr ""
+msgstr "Isodumper ausführen"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
-msgstr ""
+msgstr "Eine Authentifizierung wird benötigt um die Isodumper zu starten"
 
 #: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
@@ -136,6 +136,8 @@ msgstr "IsoDumper"
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
 msgstr ""
+"Eine graphische Oberfläche, um .img oder .iso Abbilder auf USB-Sticks zu "
+"schreiben"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
