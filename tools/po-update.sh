@@ -36,6 +36,8 @@ POT_FILE="$POT_DIR/$DOMAIN.pot"
 
 /bin/sed --in-place --expression="s/charset=CHARSET/charset=UTF-8/" "$POT_FILE"
 
+intltool-merge --desktop-style isodumper/po share/applications/isodumper.desktop.in share/applications/isodumper.desktop
+
 rm -f share/isodumper/isodumper.glade.h
 rm -f polkit/org.mageia.isodumper.policy.in.h
 rm -f share/applications/isodumper.desktop.in.h
