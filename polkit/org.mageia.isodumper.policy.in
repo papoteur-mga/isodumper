@@ -9,15 +9,7 @@
 
  <action id="org.mageia.isodumper.pkexec.run">
     <_description>Run Isodumper</_description>
-    <description xml:lang="fr">Exécuter Isodumper</description>
-    <description xml:lang="ca">Isodumper</description>
-    <description xml:lang="ru">Isodumper</description>
-    <description xml:lang="sl">Isodumper</description>
-    <description xml:lang="tr">Isodumper</description>
-    <description xml:lang="uk">Isodumper</description>
     <_message>Authentication is required to run Isodumper</_message>
-    <message xml:lang="fr">Une authentification est nécessaire pour exécuter IsoDumper</message>
-    <message xml:lang="ca">Per a accedir al Isodumper cal autenticació</message>
     <icon_name>isodumper</icon_name>
     <defaults>
      <allow_any>no</allow_any>
