@@ -8,7 +8,6 @@ Comment[pl]=Narzędzie do nagrywania obrazów .img oraz .iso na USB
 Comment[pt]=Um Programa para gravar ficheiros *.img e *.iso em dispositivos USB
 Comment[ru]=Графическая утилита для записи .img и.iso файлов на USB диск
 Comment[sv]=Ett grafiskt verktyg för att skriva .img och .iso-filer till USB-minnen 
-Comment[tr]=USB anahtarlarına .img ve .iso dosyalarını yazdırmak için grafiksel bir araç
 Comment[zh_TW]=一個寫入 .img 和 .iso 檔案到 USB 隨身碟的 GUI 工具
 Exec=isodumper
 Icon=isodumper.png

@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-22 21:28+0100\n"
-"PO-Revision-Date: 2013-12-10 11:35+0000\n"
+"PO-Revision-Date: 2013-12-24 02:23+0000\n"
 "Last-Translator: kiki.syahadat <kiki.syahadat@yahoo.co.id>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/mageia/"
 "language/id/)\n"
@@ -120,11 +120,11 @@ msgstr "Byte tertulis:"
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr ""
+msgstr "Jalankan Isodumper"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
-msgstr ""
+msgstr "Otentikasi diperlukan untuk menjalankan Isodumper"
 
 #: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
@@ -133,7 +133,7 @@ msgstr "IsoDumper"
 
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
-msgstr ""
+msgstr "Alat GUI untuk menulis file .img dan .iso ke flashdisk"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
