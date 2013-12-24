@@ -5,7 +5,8 @@ IsoDumper 0.20
 ------------
 	  - added function to backup the content of the device before overwriting.
 	  - added Release number in the window title (on isodumper.py).
-	  - use mageia polkit policy instead of usermode.
+	  - use mageia polkit policy instead of usermode. (Thanks to Colin Guthrie)
+	  - added and update Makefile for polkit file translation. (Thanks to Yuri Chornoivan)
 	  - added and update Estonian and Greek translations.
 	  - updated  de,fr,id,ro,sl,sv,zh_TW,tr,uk,pt_BR,ru,ro,es and it translations.
 	  
