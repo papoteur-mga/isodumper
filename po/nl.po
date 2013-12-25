@@ -1,15 +1,16 @@
 # Dutch translation for isodumper package.
 # Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the isodumper package.
+#
+# Translators:
 # Automatically generated, 2013.
 # marja <marja@mageia.org>, 2013.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-22 21:28+0100\n"
-"PO-Revision-Date: 2013-11-30 08:52+0100\n"
+"PO-Revision-Date: 2013-12-24 23232+0100\n"
 "Last-Translator: marja <marja@mageia.org>\n"
 "Language-Team: Dutch <i18n-nl@ml.mageia.org>\n"
 "Language: nl\n"
@@ -25,7 +26,7 @@ msgstr "Mb"
 
 #: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
-msgstr ""
+msgstr "Back-uppen in:"
 
 #: lib/isodumper.py:154
 msgid "Image: "
@@ -118,11 +119,11 @@ msgstr "Bytes geschreven: "
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr ""
+msgstr "Start Isodumper"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
-msgstr ""
+msgstr "Authenticatie is nodig om Isodumper te starten"
 
 #: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
@@ -132,10 +133,11 @@ msgstr "IsoDumper"
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
 msgstr ""
+"Een grafische tool om .img en .iso bestanden naar USB-sticks te schrijven"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
-msgstr ""
+msgstr "Selecteer"
 
 #: share/isodumper/isodumper.glade.h:3
 msgid ""
@@ -191,11 +193,11 @@ msgstr "Kies doelstation om het Image-bestand naar toe te schrijven"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Create a backup of the device as image to restore it later"
-msgstr ""
+msgstr "Maak een back-up van het apparaat om dat later te herstellen"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "(None)"
-msgstr ""
+msgstr "(Geen)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Details"
