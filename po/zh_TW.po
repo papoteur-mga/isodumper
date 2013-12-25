@@ -119,11 +119,11 @@ msgstr "寫入位元組："
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr ""
+msgstr "執行 Isodumper"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
-msgstr ""
+msgstr "執行 Isodumper 需要認證"
 
 #: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:2
@@ -132,7 +132,7 @@ msgstr "IsoDumper"
 
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
-msgstr ""
+msgstr "一個寫入 .img 和 .iso 檔案到 USB 隨身碟的 GUI 工具"
 
 #: share/isodumper/isodumper.glade.h:1
 msgid "Select"
