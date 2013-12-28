@@ -13,7 +13,7 @@
 # Author isodumper software= papoteur <papoteur@mageialinux-online.org>
 # Author Makefile file= Geiger David <david.david@mageialinux-online.org>
 
-PREFIX=/usr/local
+PREFIX=/usr
 BINDIR=$(PREFIX)/bin
 SBINDIR=$(PREFIX)/sbin
 LIBDIR=$(PREFIX)/lib
@@ -47,7 +47,7 @@ install: all
 	# for binary file isodumper on /usr/bin/ 
 	# to have authentication with polkit (use for mageia policy)
 	mkdir -p $(DESTDIR)$(BINDIR)
-	install -m 755 bin/isodumper $(DESTDIR)$(BINDIR)
+	install -m 755 polkit/isodumper $(DESTDIR)$(BINDIR)
 
 	# for policy file isodumper on /usr/share/polkit-1/actions/ 
 	# to have authentication with polkit (use for mageia policy)	

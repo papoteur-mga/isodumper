@@ -43,7 +43,7 @@ Ce logiciel est écrit en python.
 %make
 
 %install
-%makeinstall_std PREFIX="%{_prefix}"
+%makeinstall_std
 
 %find_lang %{name}
 

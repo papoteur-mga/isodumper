@@ -28,7 +28,22 @@ clean:
 	rm -f  $(WRAPPERS) $(POLICY)
 
 %: org.mageia.%.policy.in
-	@echo -e '#!/bin/sh\nif  [[ "$$UID" != "0" ]] ; then\n    exec $(BINDIR)/pkexec $(LIBEXECDIR)/$@ "$$''@"\nelse\n    exec $(LIBEXECDIR)/$@ "$$''@"\nfi\n' > $@
+	@echo -e \
+	'#!/bin/sh\n'\
+	'#\n'\
+	'\n'\
+	'# Copyright (C) 2013 THE isodumper`S COPYRIGHT HOLDER\n'\
+	'# This file is distributed under the same license as the isodumper package.\n'\
+	'\n'\
+	'# Author isodumper software= papoteur <papoteur@mageialinux-online.org>\n'\
+	'# Author binary polkit file= Geiger David <david.david@mageialinux-online.org>\n'\
+	'\n'\
+	'if  [[ "$$UID" != "0" ]] ; then\n'\
+	'    exec $(BINDIR)/pkexec $(LIBEXECDIR)/$@ "$$''@"\n'\
+	'else\n'\
+	'    exec $(LIBEXECDIR)/$@ "$$''@"\n'\
+	'fi\n'\
+	> $@
 
 %.policy: %.policy.in
 	intltool-merge --utf8 ../po $< $@ -x -u -c ../po/.intltool-merge-cache
