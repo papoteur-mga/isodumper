@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-29 15:19+0100\n"
-"PO-Revision-Date: 2013-12-24 23232+0100\n"
+"PO-Revision-Date: 2013-12-29 16:59+0100\n"
 "Last-Translator: marja <marja@mageia.org>\n"
 "Language-Team: Dutch <i18n-nl@ml.mageia.org>\n"
 "Language: nl\n"
@@ -201,7 +201,7 @@ msgstr "(Geen)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Select a folder in which to write the backup image"
-msgstr ""
+msgstr "Selecteer een map om de back-up in op te slaan"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Details"
