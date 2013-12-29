@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-29 15:19+0100\n"
-"PO-Revision-Date: 2013-12-22 21:30+0100\n"
+"PO-Revision-Date: 2013-12-29 15:30+0100\n"
 "Last-Translator: Papoteur\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
 "Language: fr\n"
@@ -204,7 +204,7 @@ msgstr "(Rien)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Select a folder in which to write the backup image"
-msgstr ""
+msgstr "Sélectionnez un dossier dans lequel écrire l'image de sauvegarde"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Details"
