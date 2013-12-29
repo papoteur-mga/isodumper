@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-22 21:28+0100\n"
+"POT-Creation-Date: 2013-12-29 15:19+0100\n"
 "PO-Revision-Date: 2009-06-12 12:05+0000\n"
 "Last-Translator: Siegfried Gevatter <rainct@ubuntu.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
@@ -19,101 +19,101 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: lib/isodumper.py:110
+#: lib/isodumper.py:111
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:154
+#: lib/isodumper.py:155
 msgid "Image: "
 msgstr "Imatge: "
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:156
 msgid "Target Device: "
 msgstr "Dispositiu de destí: "
 
-#: lib/isodumper.py:158
+#: lib/isodumper.py:159
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:165
+#: lib/isodumper.py:166
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:191
+#: lib/isodumper.py:192
 msgid "Unmounting all partitions of "
 msgstr "Desmuntant totes les particions de "
 
-#: lib/isodumper.py:193
+#: lib/isodumper.py:194
 msgid "Trying to unmount "
 msgstr "Intentant desmuntar "
 
-#: lib/isodumper.py:199
+#: lib/isodumper.py:200
 msgid " was terminated by signal "
 msgstr " s'ha acabat per un senyal "
 
-#: lib/isodumper.py:199 lib/isodumper.py:205
+#: lib/isodumper.py:200 lib/isodumper.py:206
 msgid "Error, umount "
 msgstr "Error, desmunta "
 
-#: lib/isodumper.py:203
+#: lib/isodumper.py:204
 msgid " successfully unmounted"
 msgstr " desmuntat amb èxit"
 
-#: lib/isodumper.py:205
+#: lib/isodumper.py:206
 msgid " returned "
 msgstr " ha retornat "
 
-#: lib/isodumper.py:208
+#: lib/isodumper.py:209
 msgid "Execution failed: "
 msgstr "Execució fallida: "
 
-#: lib/isodumper.py:216
+#: lib/isodumper.py:217
 msgid "Could not read mtab !"
 msgstr "No s'ha pogut llegir mtab!"
 
-#: lib/isodumper.py:224 lib/isodumper.py:247
+#: lib/isodumper.py:225 lib/isodumper.py:248
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:230
+#: lib/isodumper.py:231
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:235 lib/isodumper.py:236
+#: lib/isodumper.py:236 lib/isodumper.py:237
 msgid " to "
 msgstr " a "
 
-#: lib/isodumper.py:235
+#: lib/isodumper.py:236
 msgid "Writing "
 msgstr "Escrivint "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:237
 #, fuzzy
 msgid "Executing copy from "
 msgstr "Executant : dd if="
 
-#: lib/isodumper.py:252 lib/isodumper.py:265 lib/isodumper.py:274
+#: lib/isodumper.py:253 lib/isodumper.py:266 lib/isodumper.py:275
 #, fuzzy
 msgid "Writing error."
 msgstr "Escrivint "
 
-#: lib/isodumper.py:257
+#: lib/isodumper.py:258
 msgid "Wrote: "
 msgstr "Ha escrit: "
 
-#: lib/isodumper.py:269
+#: lib/isodumper.py:270
 msgid " successfully written to"
 msgstr " ha estat escrit amb èxit a"
 
-#: lib/isodumper.py:269
+#: lib/isodumper.py:270
 msgid "Image "
 msgstr "Imatge "
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:271
 msgid "Bytes written: "
 msgstr ""
 
@@ -126,7 +126,7 @@ msgid "Authentication is required to run Isodumper"
 msgstr ""
 
 #: share/applications/isodumper.desktop.in.h:1
-#: share/isodumper/isodumper.glade.h:2
+#: share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
 msgstr ""
 
@@ -134,7 +134,7 @@ msgstr ""
 msgid "A GUI tool to write .img and .iso files to USB Keys"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:1
+#: share/isodumper/isodumper.glade.h:2
 msgid "Select"
 msgstr ""
 
@@ -200,14 +200,18 @@ msgid "(None)"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:23
+msgid "Select a folder in which to write the backup image"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:24
 msgid "Details"
 msgstr "Detalls"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Write to device"
 msgstr "Escriure al dispositiu"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -216,7 +220,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:31
 #, fuzzy
 msgid ""
 "<b>Success</b>\n"

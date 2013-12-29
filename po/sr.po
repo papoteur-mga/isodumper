@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-22 21:28+0100\n"
+"POT-Creation-Date: 2013-12-29 15:19+0100\n"
 "PO-Revision-Date: 2011-03-17 11:58+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Launchpad Serbian Translators\n"
@@ -19,99 +19,99 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
 "X-Generator: Launchpad (build 16692)\n"
 
-#: lib/isodumper.py:110
+#: lib/isodumper.py:111
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:154
+#: lib/isodumper.py:155
 msgid "Image: "
 msgstr "Одраз: "
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:156
 msgid "Target Device: "
 msgstr "Циљни уређај: "
 
-#: lib/isodumper.py:158
+#: lib/isodumper.py:159
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:165
+#: lib/isodumper.py:166
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:191
+#: lib/isodumper.py:192
 msgid "Unmounting all partitions of "
 msgstr "Демонтирам све партиције на "
 
-#: lib/isodumper.py:193
+#: lib/isodumper.py:194
 msgid "Trying to unmount "
 msgstr "Покушавам да демонтирам "
 
-#: lib/isodumper.py:199
+#: lib/isodumper.py:200
 msgid " was terminated by signal "
 msgstr " је окончан сигналом "
 
-#: lib/isodumper.py:199 lib/isodumper.py:205
+#: lib/isodumper.py:200 lib/isodumper.py:206
 msgid "Error, umount "
 msgstr "Грешка, демонтирам "
 
-#: lib/isodumper.py:203
+#: lib/isodumper.py:204
 msgid " successfully unmounted"
 msgstr " је успешно демонтиран"
 
-#: lib/isodumper.py:205
+#: lib/isodumper.py:206
 msgid " returned "
 msgstr " је вратио "
 
-#: lib/isodumper.py:208
+#: lib/isodumper.py:209
 msgid "Execution failed: "
 msgstr "Извршавање није успело: "
 
-#: lib/isodumper.py:216
+#: lib/isodumper.py:217
 msgid "Could not read mtab !"
 msgstr "Не могу да прочитам мтаб !"
 
-#: lib/isodumper.py:224 lib/isodumper.py:247
+#: lib/isodumper.py:225 lib/isodumper.py:248
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:230
+#: lib/isodumper.py:231
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:235 lib/isodumper.py:236
+#: lib/isodumper.py:236 lib/isodumper.py:237
 msgid " to "
 msgstr " на "
 
-#: lib/isodumper.py:235
+#: lib/isodumper.py:236
 msgid "Writing "
 msgstr "Записујем "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:237
 msgid "Executing copy from "
 msgstr ""
 
-#: lib/isodumper.py:252 lib/isodumper.py:265 lib/isodumper.py:274
+#: lib/isodumper.py:253 lib/isodumper.py:266 lib/isodumper.py:275
 msgid "Writing error."
 msgstr ""
 
-#: lib/isodumper.py:257
+#: lib/isodumper.py:258
 msgid "Wrote: "
 msgstr "Записах: "
 
-#: lib/isodumper.py:269
+#: lib/isodumper.py:270
 msgid " successfully written to"
 msgstr " је успешно записан на"
 
-#: lib/isodumper.py:269
+#: lib/isodumper.py:270
 msgid "Image "
 msgstr "Одраз "
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:271
 msgid "Bytes written: "
 msgstr ""
 
@@ -124,7 +124,7 @@ msgid "Authentication is required to run Isodumper"
 msgstr ""
 
 #: share/applications/isodumper.desktop.in.h:1
-#: share/isodumper/isodumper.glade.h:2
+#: share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 msgid "A GUI tool to write .img and .iso files to USB Keys"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:1
+#: share/isodumper/isodumper.glade.h:2
 msgid "Select"
 msgstr ""
 
@@ -197,14 +197,18 @@ msgid "(None)"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:23
+msgid "Select a folder in which to write the backup image"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:24
 msgid "Details"
 msgstr "Детаљи"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Write to device"
 msgstr "Запиши на уређај"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -213,7 +217,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:31
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"

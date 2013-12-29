@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-22 21:28+0100\n"
+"POT-Creation-Date: 2013-12-29 15:19+0100\n"
 "PO-Revision-Date: 2013-12-23 10:20+0000\n"
 "Last-Translator: Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>\n"
 "Language-Team: Romanian (http://www.transifex.com/projects/p/mageia/language/"
@@ -22,99 +22,99 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1));\n"
 
-#: lib/isodumper.py:110
+#: lib/isodumper.py:111
 msgid "Mb"
 msgstr "Mo"
 
-#: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
 msgstr "Copiere pe:"
 
-#: lib/isodumper.py:154
+#: lib/isodumper.py:155
 msgid "Image: "
 msgstr "Imagine:"
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:156
 msgid "Target Device: "
 msgstr "Dispozitiv destinație:"
 
-#: lib/isodumper.py:158
+#: lib/isodumper.py:159
 msgid "The device is too small to contain the ISO file."
 msgstr "Dispozitivul este prea mic ca să conține fișierul ISO."
 
-#: lib/isodumper.py:165
+#: lib/isodumper.py:166
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr "Dispozitivul este mai mare de 32 Go. Sigur doriți să-l utilizați?"
 
-#: lib/isodumper.py:191
+#: lib/isodumper.py:192
 msgid "Unmounting all partitions of "
 msgstr "Se demontează toate partițiile de pe "
 
-#: lib/isodumper.py:193
+#: lib/isodumper.py:194
 msgid "Trying to unmount "
 msgstr "Se încearcă demontarea"
 
-#: lib/isodumper.py:199
+#: lib/isodumper.py:200
 msgid " was terminated by signal "
 msgstr "a fost terminat de semnal"
 
-#: lib/isodumper.py:199 lib/isodumper.py:205
+#: lib/isodumper.py:200 lib/isodumper.py:206
 msgid "Error, umount "
 msgstr "Eroare, demontare"
 
-#: lib/isodumper.py:203
+#: lib/isodumper.py:204
 msgid " successfully unmounted"
 msgstr "demontare cu succes"
 
-#: lib/isodumper.py:205
+#: lib/isodumper.py:206
 msgid " returned "
 msgstr "întors"
 
-#: lib/isodumper.py:208
+#: lib/isodumper.py:209
 msgid "Execution failed: "
 msgstr "Execuție eșuată:"
 
-#: lib/isodumper.py:216
+#: lib/isodumper.py:217
 msgid "Could not read mtab !"
 msgstr "Nu s-a putut citi mtab!"
 
-#: lib/isodumper.py:224 lib/isodumper.py:247
+#: lib/isodumper.py:225 lib/isodumper.py:248
 msgid "Reading error."
 msgstr "Eroare la citire."
 
-#: lib/isodumper.py:230
+#: lib/isodumper.py:231
 msgid "You have not the rights for writing on the device"
 msgstr "Nu aveți dreptul de scriere pe dispozitiv"
 
-#: lib/isodumper.py:235 lib/isodumper.py:236
+#: lib/isodumper.py:236 lib/isodumper.py:237
 msgid " to "
 msgstr "pe"
 
-#: lib/isodumper.py:235
+#: lib/isodumper.py:236
 msgid "Writing "
 msgstr "Scriere"
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:237
 msgid "Executing copy from "
 msgstr "Se copiază din"
 
-#: lib/isodumper.py:252 lib/isodumper.py:265 lib/isodumper.py:274
+#: lib/isodumper.py:253 lib/isodumper.py:266 lib/isodumper.py:275
 msgid "Writing error."
 msgstr "Eroare la scriere."
 
-#: lib/isodumper.py:257
+#: lib/isodumper.py:258
 msgid "Wrote: "
 msgstr "S-a scris: "
 
-#: lib/isodumper.py:269
+#: lib/isodumper.py:270
 msgid " successfully written to"
 msgstr "scris cu succes pe"
 
-#: lib/isodumper.py:269
+#: lib/isodumper.py:270
 msgid "Image "
 msgstr "Imagine "
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:271
 msgid "Bytes written: "
 msgstr "Octeți scriși:"
 
@@ -127,7 +127,7 @@ msgid "Authentication is required to run Isodumper"
 msgstr "Autentificare necesară pentru lansarea aplicației Isodumper"
 
 #: share/applications/isodumper.desktop.in.h:1
-#: share/isodumper/isodumper.glade.h:2
+#: share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
 msgstr "IsoDumper"
 
@@ -136,7 +136,7 @@ msgid "A GUI tool to write .img and .iso files to USB Keys"
 msgstr ""
 "O interfață grafică pentru scrierea fișierelor .img și .iso pe cheile USB"
 
-#: share/isodumper/isodumper.glade.h:1
+#: share/isodumper/isodumper.glade.h:2
 msgid "Select"
 msgstr "Selectează"
 
@@ -202,14 +202,18 @@ msgid "(None)"
 msgstr "(Neant)"
 
 #: share/isodumper/isodumper.glade.h:23
+msgid "Select a folder in which to write the backup image"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:24
 msgid "Details"
 msgstr "Detalii"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Write to device"
 msgstr "Scrie pe dispozitiv"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -223,7 +227,7 @@ msgstr ""
 " Trebuie să conectați o cheie USB pe\n"
 " care să poată fi scrisă imaginea."
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:31
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"

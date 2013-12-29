@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-22 21:28+0100\n"
+"POT-Creation-Date: 2013-12-29 15:19+0100\n"
 "PO-Revision-Date: 2013-12-23 11:53+0000\n"
 "Last-Translator: filip.komar <filip.komar@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/mageia/"
@@ -23,101 +23,101 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
 
-#: lib/isodumper.py:110
+#: lib/isodumper.py:111
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:153 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
 msgstr "Ustvarite varnostno kopijo v:"
 
-#: lib/isodumper.py:154
+#: lib/isodumper.py:155
 msgid "Image: "
 msgstr "Odtis diska: "
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:156
 msgid "Target Device: "
 msgstr "Ciljna naprava: "
 
-#: lib/isodumper.py:158
+#: lib/isodumper.py:159
 msgid "The device is too small to contain the ISO file."
 msgstr "Izbrana naprava nima dovolj prostora za datoteko odtisa diska."
 
-#: lib/isodumper.py:165
+#: lib/isodumper.py:166
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Izbrana naprava ima kapaciteto večjo od 32 gigabajtov. Ali jo res želite "
 "uporabiti?"
 
-#: lib/isodumper.py:191
+#: lib/isodumper.py:192
 msgid "Unmounting all partitions of "
 msgstr "Odklopi vse razdelke od "
 
-#: lib/isodumper.py:193
+#: lib/isodumper.py:194
 msgid "Trying to unmount "
 msgstr "Poskus odklopa "
 
-#: lib/isodumper.py:199
+#: lib/isodumper.py:200
 msgid " was terminated by signal "
 msgstr " je bilo prekinjeno s signalom "
 
-#: lib/isodumper.py:199 lib/isodumper.py:205
+#: lib/isodumper.py:200 lib/isodumper.py:206
 msgid "Error, umount "
 msgstr "Napaka, odklapljanje "
 
-#: lib/isodumper.py:203
+#: lib/isodumper.py:204
 msgid " successfully unmounted"
 msgstr " uspešno odklopljeno"
 
-#: lib/isodumper.py:205
+#: lib/isodumper.py:206
 msgid " returned "
 msgstr " vrnjeno "
 
-#: lib/isodumper.py:208
+#: lib/isodumper.py:209
 msgid "Execution failed: "
 msgstr "Izvedba spodletela: "
 
-#: lib/isodumper.py:216
+#: lib/isodumper.py:217
 msgid "Could not read mtab !"
 msgstr "Branje datoteke mtab ni možno!"
 
-#: lib/isodumper.py:224 lib/isodumper.py:247
+#: lib/isodumper.py:225 lib/isodumper.py:248
 msgid "Reading error."
 msgstr "Napaka branja."
 
-#: lib/isodumper.py:230
+#: lib/isodumper.py:231
 msgid "You have not the rights for writing on the device"
 msgstr "Za pisanje na napravo nimate pravic"
 
-#: lib/isodumper.py:235 lib/isodumper.py:236
+#: lib/isodumper.py:236 lib/isodumper.py:237
 msgid " to "
 msgstr " na "
 
-#: lib/isodumper.py:235
+#: lib/isodumper.py:236
 msgid "Writing "
 msgstr "Zapisovanje "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:237
 msgid "Executing copy from "
 msgstr "Izvajanje kopiranja z "
 
-#: lib/isodumper.py:252 lib/isodumper.py:265 lib/isodumper.py:274
+#: lib/isodumper.py:253 lib/isodumper.py:266 lib/isodumper.py:275
 msgid "Writing error."
 msgstr "Napaka pisanja."
 
-#: lib/isodumper.py:257
+#: lib/isodumper.py:258
 msgid "Wrote: "
 msgstr "Zapisano: "
 
-#: lib/isodumper.py:269
+#: lib/isodumper.py:270
 msgid " successfully written to"
 msgstr " je bila uspešno zapisana na"
 
-#: lib/isodumper.py:269
+#: lib/isodumper.py:270
 msgid "Image "
 msgstr "Slika medija "
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:271
 msgid "Bytes written: "
 msgstr "Zapisano zlogov: "
 
@@ -130,7 +130,7 @@ msgid "Authentication is required to run Isodumper"
 msgstr "Za zagon programa Isodumper je potrebno overjanje"
 
 #: share/applications/isodumper.desktop.in.h:1
-#: share/isodumper/isodumper.glade.h:2
+#: share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
 msgstr "IsoDumper"
 
@@ -140,7 +140,7 @@ msgstr ""
 "Orodje z grafičnim uporabniškim vmesnikom za zapis datotek odtisa diska (."
 "img in .iso) na ključek USB"
 
-#: share/isodumper/isodumper.glade.h:1
+#: share/isodumper/isodumper.glade.h:2
 msgid "Select"
 msgstr "Izberite"
 
@@ -207,14 +207,18 @@ msgid "(None)"
 msgstr "(brez)"
 
 #: share/isodumper/isodumper.glade.h:23
+msgid "Select a folder in which to write the backup image"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:24
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Write to device"
 msgstr "Zapis na napravo"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -228,7 +232,7 @@ msgstr ""
 " Vstavite ključ USB, na katerega\n"
 " lahko zapišete odtis diska."
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:31
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
