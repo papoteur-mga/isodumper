@@ -62,7 +62,7 @@
     <property name="title" translatable="yes">IsoDumper</property>
     <property name="modal">True</property>
     <property name="window_position">center-on-parent</property>
-    <property name="icon_name">gtk-execute</property>
+    <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
     <property name="transient_for">main_dialog</property>
     <child internal-child="vbox">
@@ -163,7 +163,7 @@
     <property name="title" translatable="yes">IsoDumper</property>
     <property name="modal">True</property>
     <property name="window_position">center-on-parent</property>
-    <property name="icon_name">gtk-execute</property>
+    <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
     <property name="transient_for">main_dialog</property>
     <child internal-child="vbox">
@@ -252,7 +252,7 @@
     <property name="title" translatable="yes">IsoDumper</property>
     <property name="resizable">False</property>
     <property name="window_position">center-always</property>
-    <property name="icon_name">gtk-execute</property>
+    <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
     <child>
       <widget class="GtkVBox" id="vbox2">
@@ -581,7 +581,7 @@
     <property name="modal">True</property>
     <property name="window_position">center-on-parent</property>
     <property name="destroy_with_parent">True</property>
-    <property name="icon_name">gtk-execute</property>
+    <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
     <property name="skip_taskbar_hint">True</property>
     <property name="transient_for">main_dialog</property>
@@ -687,7 +687,7 @@
     <property name="title" translatable="yes">IsoDumper</property>
     <property name="modal">True</property>
     <property name="window_position">center-on-parent</property>
-    <property name="icon_name">gtk-execute</property>
+    <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
     <property name="transient_for">main_dialog</property>
     <child internal-child="vbox">

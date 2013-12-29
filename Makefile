@@ -82,6 +82,11 @@ install: all
 	convert isodumper.png -geometry 48x48 $(DESTDIR)$(ICONSDIR)/large/isodumper.png
 	mkdir -p $(DESTDIR)$(PIXMAPSDIR)
 	install -m 644 isodumper.png $(DESTDIR)$(PIXMAPSDIR)
+	for png in 128x128 64x64 48x48 32x32 22x22 16x16; \
+	do \
+	mkdir -p $(DESTDIR)$(ICONSDIR)/hicolor/$$png/apps; \
+	convert isodumper.png -geometry $$png $(DESTDIR)$(ICONSDIR)/hicolor/$$png/apps/isodumper.png; \
+	done
 
 	# for isodumper.mo translations
 	for locale in share/locale/*; \
