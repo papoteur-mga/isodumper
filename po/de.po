@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-29 15:19+0100\n"
-"PO-Revision-Date: 2013-12-23 09:54+0000\n"
+"PO-Revision-Date: 2013-12-30 09:31+0000\n"
 "Last-Translator: latte\n"
 "Language-Team: German (http://www.transifex.com/projects/p/mageia/language/"
 "de/)\n"
@@ -209,6 +209,7 @@ msgstr "(keine)"
 #: share/isodumper/isodumper.glade.h:23
 msgid "Select a folder in which to write the backup image"
 msgstr ""
+"Auswählen eines Ordners, in dem das Backup-Image geschrieben werden soll"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Details"

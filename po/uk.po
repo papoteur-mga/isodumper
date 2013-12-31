@@ -2,6 +2,7 @@
 # Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the isodumper package.
 #
+# Translators:
 # Automatically generated, 2013.
 # Yuri Chornoivan <yurchor@ukr.net>, 2013.
 msgid ""
@@ -9,7 +10,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-29 15:19+0100\n"
-"PO-Revision-Date: 2013-12-23 13:15+0000\n"
+"PO-Revision-Date: 2013-12-30 09:42+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/projects/p/mageia/"
 "language/uk/)\n"
@@ -150,11 +151,11 @@ msgid ""
 " the device during the following operation."
 msgstr ""
 "<b>Попередження</b>\n"
-"  Це призведе до <b>втрати усіх даних</b> \n"
-"  на пристрої призначення, ви хочете продовжити?\n"
+" Це призведе до <b>втрати усіх даних</b> \n"
+" на пристрої призначення, ви хочете продовжити?\n"
 "\n"
-"  Якщо ви підтвердите запис, будь ласка, <b>не демонтуйте</b>\n"
-"  пристрій протягом наступної операції."
+" Якщо ви підтвердите запис, будь ласка, <b>не демонтуйте</b>\n"
+" пристрій протягом наступної операції."
 
 #: share/isodumper/isodumper.glade.h:9
 msgid ""
@@ -166,12 +167,12 @@ msgid ""
 " homedir/.isodumper when the application is closed."
 msgstr ""
 "<b>Помилка</b>\n"
-"  Щось пішло не так, будь ласка, ознайомтеся\n"
-"  з подробицями, щоб визначити причину.\n"
+" Щось пішло не так, будь ласка, ознайомтеся\n"
+" з подробицями, щоб визначити причину.\n"
 " \n"
-"  Файл журналу isodumper.log з текстом повідомлень буде записано до\n"
-"  вашої домашньої теки (підтека .isodumper), коли роботу програми буде\n"
-"  завершено."
+" Файл журналу isodumper.log з текстом повідомлень буде записано до\n"
+" вашої домашньої теки (підтека .isodumper), коли роботу програми буде\n"
+" завершено."
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Write Image:"
@@ -204,7 +205,7 @@ msgstr "(Немає)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Select a folder in which to write the backup image"
-msgstr ""
+msgstr "Виберіть теку, до якої слід записати образ резервної копії"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Details"
@@ -239,10 +240,10 @@ msgid ""
 " you close the application."
 msgstr ""
 "<b>Успіх</b>\n"
-"  Образ успішно записано на пристрій\n"
-"  призначення.\n"
+" Образ успішно записано на пристрій\n"
+" призначення.\n"
 " \n"
-"  Ви можете від’єднати пристрій від комп’ютера.\n"
-"  Файл журналу дій isodumper.log записано буде записано\n"
-"  до теки .isodumper вашої домашньої теки, щойно роботу\n"
-"  програми буде завершено."
+" Ви можете від’єднати пристрій від комп’ютера.\n"
+" Файл журналу дій isodumper.log записано буде записано\n"
+" до теки .isodumper вашої домашньої теки, щойно роботу\n"
+" програми буде завершено."
