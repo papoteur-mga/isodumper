@@ -5,13 +5,13 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# You-Cheng Hsieh <yochenhsieh@gmail.com>, 2013
+# You-Cheng Hsieh <yochenhsieh@gmail.com>, 2013~2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Mageia\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-29 15:19+0100\n"
-"PO-Revision-Date: 2013-12-11 02:28+0000\n"
+"PO-Revision-Date: 2014-01-01 09:08+0000\n"
 "Last-Translator: You-Cheng Hsieh <yochenhsieh@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/mageia/"
 "language/zh_TW/)\n"
@@ -31,7 +31,7 @@ msgstr "備份在："
 
 #: lib/isodumper.py:155
 msgid "Image: "
-msgstr "鏡像： "
+msgstr "映像： "
 
 #: lib/isodumper.py:156
 msgid "Target Device: "
@@ -111,7 +111,7 @@ msgstr " 成功寫入到"
 
 #: lib/isodumper.py:270
 msgid "Image "
-msgstr "鏡像 "
+msgstr "映像 "
 
 #: lib/isodumper.py:271
 msgid "Bytes written: "
@@ -172,15 +172,15 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Write Image:"
-msgstr "寫入鏡像："
+msgstr "寫入映像："
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Select an image file to be written to the device"
-msgstr "選擇一個要寫入到裝置的鏡像檔"
+msgstr "選擇一個要寫入到裝置的映像檔"
 
 #: share/isodumper/isodumper.glade.h:17
 msgid "Select Image"
-msgstr "選擇鏡像"
+msgstr "選擇映像"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "to"
@@ -188,7 +188,7 @@ msgstr "到"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "Select target device to write the image to"
-msgstr "選擇要寫入鏡像的目標裝置"
+msgstr "選擇要寫入映像的目標裝置"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Create a backup of the device as image to restore it later"
@@ -200,7 +200,7 @@ msgstr "(無)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Select a folder in which to write the backup image"
-msgstr ""
+msgstr "選擇一個目錄以供寫入備份映像"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Details"
@@ -222,7 +222,7 @@ msgstr ""
 " 找不到目標裝置。\n"
 "\n"
 " 您需要插入一個 USB 隨身碟\n"
-" 以便寫入鏡像檔。"
+" 以便寫入映像檔。"
 
 #: share/isodumper/isodumper.glade.h:31
 msgid ""
@@ -235,7 +235,7 @@ msgid ""
 " you close the application."
 msgstr ""
 "<b>成功</b>\n"
-" 鏡像檔已經成功寫入到目標裝置。\n"
+" 映像檔已經成功寫入到目標裝置。\n"
 " \n"
 " 您現在可以移除裝置，當您關閉程式時\n"
 " 將會在您的家目錄下的 .isodumper 隱藏目錄儲存一個\n"
