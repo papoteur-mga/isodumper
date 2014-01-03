@@ -6,6 +6,7 @@
 # Translators:
 # Automatically generated, 2013
 # Sergei Zivukov <ekonomvygoda@yandex.ru>, 2013
+# AlexL <loginov.alex.valer@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
