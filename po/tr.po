@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# tarakbumba . <tarakbumba@gmail.com>, 2013
+# tarakbumba . <tarakbumba@gmail.com>, 2013-2014
 # tarakbumba . <tarakbumba@gmail.com>, 2013
 # Automatically generated, 2013
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-29 15:19+0100\n"
-"PO-Revision-Date: 2013-12-23 09:11+0000\n"
+"PO-Revision-Date: 2014-01-03 02:12+0000\n"
 "Last-Translator: tarakbumba . <tarakbumba@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/mageia/language/"
 "tr/)\n"
@@ -202,7 +202,7 @@ msgstr "(Hiçbiri)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Select a folder in which to write the backup image"
-msgstr ""
+msgstr "Yedekleme imajının yazılacağı bir dizin seçin"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Details"
@@ -239,7 +239,7 @@ msgstr ""
 "<b>Başarı</b>\n"
 " İmaj hedef aygıta başarılı bir şekilde\n"
 " yazıldı.\n"
-"\n"
+" \n"
 " Aygıtı çıkarabilirsiniz. İşleme dair bir isodumper.log kayıt.\n"
 " dosyası uygulama kapandığında kullanıcı dizini/.isodumper/ altına\n"
 " kaydedilecek."
