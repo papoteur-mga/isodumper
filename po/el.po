@@ -4,14 +4,14 @@
 #
 # Translators:
 # Automatically generated, 2013
-# dtsiamasiotis <dtsiamasiotis@gmail.com>, 2013
+# dtsiamasiotis <dtsiamasiotis@gmail.com>, 2013-2014
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-29 15:19+0100\n"
-"PO-Revision-Date: 2013-12-23 16:08+0000\n"
+"PO-Revision-Date: 2014-01-05 16:46+0000\n"
 "Last-Translator: dtsiamasiotis <dtsiamasiotis@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/mageia/language/"
 "el/)\n"
@@ -65,7 +65,7 @@ msgstr "Σφάλμα, αποπροσάρτηση "
 
 #: lib/isodumper.py:204
 msgid " successfully unmounted"
-msgstr " επιτυχή αποπροσάρτηση"
+msgstr " επιτυχής αποπροσάρτηση"
 
 #: lib/isodumper.py:206
 msgid " returned "
@@ -196,8 +196,8 @@ msgstr "Επιλέξτε την συσκευή προορισμού για να 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
-"Δημιουργήστε ένα εφεδρικό αντίγραφο της συσκευής σαν εικονικό αρχείο για να "
-"το αποκαταστήσετε αργότερα"
+"Δημιουργήστε ένα εφεδρικό αντίγραφο της συσκευής σαν εικόνα για να το "
+"αποκαταστήσετε αργότερα"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "(None)"
@@ -205,7 +205,7 @@ msgstr "(κανένα)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Select a folder in which to write the backup image"
-msgstr ""
+msgstr "Διαλέξτε ένα φάκελο για να γράψετε εκεί την εφεδρική εικόνα"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Details"
@@ -240,10 +240,10 @@ msgid ""
 " you close the application."
 msgstr ""
 "<b>Επιτυχία</b>\n"
-" Το εικονικό αρχείο εγγράφηκε επιτυχώς στη\n"
+" Η εικόνα εγγράφηκε επιτυχώς στη\n"
 " συσκευή προορισμού.\n"
 " \n"
-" Μπορείτε τώρα να την αποσυνδέσετε ελεύθερα, ένα αρχείο καταγραφής "
-"isodumper. log \n"
+" Μπορείτε τώρα να την αποσυνδέσετε ελεύθερα, ένα αρχείο καταγραφής isodumper."
+" log \n"
 " της διεργασίας θα σωθεί στο  homedir/.isodumper/ όταν\n"
 " τερματίσετε την εφαρμογή."
