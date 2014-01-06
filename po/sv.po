@@ -27,7 +27,7 @@ msgstr "Mb"
 
 #: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
 msgid "Backup in:"
-msgstr ""
+msgstr "Återställ i:"
 
 #: lib/isodumper.py:155
 msgid "Image: "
@@ -120,11 +120,11 @@ msgstr "Bytes skrivna:"
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr ""
+msgstr "Kör Isodumper"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
-msgstr ""
+msgstr "Identifiering krävs för att köra Isodumper"
 
 #: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:1
@@ -133,7 +133,7 @@ msgstr "IsoDumper"
 
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
-msgstr ""
+msgstr "Ett grafiskt verktyg för att skriva .img och .iso-filer till USB-minnen"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid "Select"
@@ -173,15 +173,15 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:15
 msgid "Write Image:"
-msgstr "Skriv avbildning:"
+msgstr "Skriv avbild:"
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Select an image file to be written to the device"
-msgstr "Välj en avbildningsfil som ska skrivas till enheten"
+msgstr "Välj en skivavbild som ska skrivas till enheten"
 
 #: share/isodumper/isodumper.glade.h:17
 msgid "Select Image"
-msgstr "Välj avbildning"
+msgstr "Välj avbild"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "to"
@@ -203,7 +203,7 @@ msgstr "(Ingen)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Select a folder in which to write the backup image"
-msgstr ""
+msgstr "Välj en mapp som återställningsbilden ska skrivas till"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Details"
