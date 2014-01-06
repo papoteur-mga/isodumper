@@ -5,14 +5,14 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# Padula <padula1000@gmail.com>, 2013
+# Padula <padula1000@gmail.com>, 2013-2014
 # Padula <padula1000@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-29 15:19+0100\n"
-"PO-Revision-Date: 2013-12-23 19:42+0000\n"
+"PO-Revision-Date: 2014-01-05 21:44+0000\n"
 "Last-Translator: Padula <padula1000@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
 "mageia/language/pt_BR/)\n"
@@ -202,7 +202,7 @@ msgstr "(Nenhum)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Select a folder in which to write the backup image"
-msgstr ""
+msgstr "Selecione uma pasta na qual você deseja gravar a imagem de backup"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Details"
