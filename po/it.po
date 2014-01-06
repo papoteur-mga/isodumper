@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the isodumper package.
 #
 # Translators:
-# killer1987 <marcello.anni@alice.it>, 2013
+# killer1987 <marcello.anni@alice.it>, 2013-2014
 # killer1987 <marcello.anni@alice.it>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-29 15:19+0100\n"
-"PO-Revision-Date: 2013-12-24 20:31+0000\n"
+"PO-Revision-Date: 2014-01-06 11:42+0000\n"
 "Last-Translator: killer1987 <marcello.anni@alice.it>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/mageia/language/"
 "it/)\n"
@@ -204,6 +204,8 @@ msgstr "(Nessuno)"
 #: share/isodumper/isodumper.glade.h:23
 msgid "Select a folder in which to write the backup image"
 msgstr ""
+"Seleziona una cartella nella quale scrivere l'immagine della copia di "
+"sicurezza"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Details"
