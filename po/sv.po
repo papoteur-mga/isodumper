@@ -5,7 +5,7 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# Umeaboy <kristoffer.grundstrom1983@gmail.com>, 2013
+# Umeaboy <kristoffer.grundstrom1983@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Mageia\n"
