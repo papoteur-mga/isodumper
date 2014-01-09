@@ -393,7 +393,7 @@
                     </child>
                     <child>
                       <widget class="GtkButton" id="backup_select">
-                        <property name="label">(None)</property>
+                        <property name="label" translatable="yes" comments="Backup in: (None) &#10;At start.">(None)</property>
                         <property name="visible">True</property>
                         <property name="sensitive">False</property>
                         <property name="can_focus">True</property>
