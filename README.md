@@ -53,3 +53,5 @@ Translators
 - taleon, Akien, latte - German
 - Marek Laane - Estonian
 - dtsiamasiotis - Greek
+- fri - Czech
+- Akien - Danish
