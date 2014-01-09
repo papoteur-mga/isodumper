@@ -4,14 +4,14 @@
 #
 # Translators:
 # Automatically generated, 2013
-# Akien <akien@mageia.org>, 2014
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
+# Akien <akien@mageia.org>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-29 15:19+0100\n"
-"PO-Revision-Date: 2014-01-08 22:50+0000\n"
+"PO-Revision-Date: 2014-01-09 19:08+0000\n"
 "Last-Translator: Akien <akien@mageia.org>\n"
 "Language-Team: Danish (http://www.transifex.com/projects/p/mageia/language/"
 "da/)\n"
@@ -196,7 +196,7 @@ msgstr "Lav en backup af enheden som billede for at genoprette den senere"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "(None)"
-msgstr "(Intet)"
+msgstr "(ingen)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Select a folder in which to write the backup image"
