@@ -104,8 +104,8 @@ msgid "Wrote: "
 msgstr "Escrito: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " escrito con éxito en"
+msgid " successfully written to "
+msgstr " escrito con éxito en "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -192,23 +192,23 @@ msgstr "Seleccione o dispositivo de destino no que escribir a imaxe"
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Detalles"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Escribir no dispositivo"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -217,7 +217,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -235,24 +235,6 @@ msgstr ""
 "rexistro da operación no seu directorio persoal\n"
 "si pecha a aplicación."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "O proceso dd rematou cun erro !"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -265,3 +247,22 @@ msgstr ""
 #~ "\n"
 #~ "Necesitas conectar un dispositivo de memoria USB\n"
 #~ "no que se poida escribir a imaxe."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "O proceso dd rematou cun erro !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid " "
+#~ msgstr " "
+

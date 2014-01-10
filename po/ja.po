@@ -106,8 +106,8 @@ msgid "Wrote: "
 msgstr "書き込み: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " を次に書き込みました:"
+msgid " successfully written to "
+msgstr " を次に書き込みました: "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -196,23 +196,23 @@ msgstr "デバイスに書き込むイメージを選択"
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "詳細"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "デバイスへ書き込む"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -221,7 +221,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 #, fuzzy
 msgid ""
 "<b>Success</b>\n"
@@ -240,24 +240,6 @@ msgstr ""
 " アプリケーションを終了すると、ログを \n"
 " ホームディレクトリに書き込みます。"
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "ddプロセスがエラーで終了しました!"
-
-#~ msgid "ImageWriter"
-#~ msgstr "イメージライター"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -270,3 +252,21 @@ msgstr ""
 #~ "\n"
 #~ " イメージを書き込めるUSBメモリを \n"
 #~ " 接続する必要があります。"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "イメージライター"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "ddプロセスがエラーで終了しました!"
+
+#~ msgid " "
+#~ msgstr " "

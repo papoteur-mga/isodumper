@@ -108,8 +108,8 @@ msgid "Wrote: "
 msgstr "Zapsáno: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " byl úspěšně zapsán do"
+msgid " successfully written to "
+msgstr " byl úspěšně zapsán do "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -198,23 +198,23 @@ msgstr "Zvolte cílové zařízení, na které chcete obraz zapsat"
 msgid "Create a backup of the device as image to restore it later"
 msgstr "Vytvořit zálohu zařízení jako obraz pro jeho pozdější obnovení"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr "(žádná)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr "Zvolte složku, do které se má zapsat obraz se zálohou"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Zapsat na zařízení"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -228,7 +228,7 @@ msgstr ""
 " Je potřeba, abyste zastrčili zařízení USB,\n"
 " na které lze obraz zapsat."
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -245,3 +245,4 @@ msgstr ""
 " Můžete jej nyní bezpečně odebrat. Záznam\n"
 " operace v isodumper.log bude uložen v domovské složce,\n"
 " až bude aplikace zavřena (homedir/.isodumper/)."
+

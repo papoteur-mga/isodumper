@@ -267,7 +267,7 @@ class IsoDumper:
                            self.emergency()
                         yield True
                 progress.set_fraction(1.0)
-                self.logger(_('Image ')+source.split('/')[-1]+_(' successfully written to')+target)
+                self.logger(_('Image ')+source.split('/')[-1]+_(' successfully written to ')+target)
                 self.logger(_('Bytes written: ')+str(written))
                 try:
                     ofc.close()

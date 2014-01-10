@@ -107,8 +107,8 @@ msgid "Wrote: "
 msgstr "Yazıldı: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr "  başarıyla aygıta yazıldı"
+msgid " successfully written to "
+msgstr " başarıyla aygıta yazıldı "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -196,23 +196,23 @@ msgstr "Kalıp yazdırma için bir hedef aygıt seçin"
 msgid "Create a backup of the device as image to restore it later"
 msgstr "Aygıtın imaj olarak sonradan kullanmak üzere bir yedeğini oluşturun"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr "(Hiçbiri)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr "Yedekleme imajının yazılacağı bir dizin seçin"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Detaylar"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Aygıta yaz"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -226,7 +226,7 @@ msgstr ""
 " İmajın üzerine yazılabileceği\n"
 " bir USB bellek takmalısınız."
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -243,3 +243,4 @@ msgstr ""
 " Aygıtı çıkarabilirsiniz. İşleme dair bir isodumper.log kayıt.\n"
 " dosyası uygulama kapandığında kullanıcı dizini/.isodumper/ altına\n"
 " kaydedilecek."
+

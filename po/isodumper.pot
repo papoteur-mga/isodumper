@@ -102,7 +102,7 @@ msgid "Wrote: "
 msgstr ""
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
+msgid " successfully written to "
 msgstr ""
 
 #: lib/isodumper.py:270

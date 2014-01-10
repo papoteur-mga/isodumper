@@ -105,8 +105,8 @@ msgid "Wrote: "
 msgstr "Scritto: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " scritto con successo su"
+msgid " successfully written to "
+msgstr " scritto con successo su "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -197,25 +197,25 @@ msgstr ""
 "Crea una copia di sicurezza del dispositivo come immagine per il ripristino "
 "successivo"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr "(Nessuno)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 "Seleziona una cartella nella quale scrivere l'immagine della copia di "
 "sicurezza"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Dettagli"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Scrivi sul dispositivo"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -229,7 +229,7 @@ msgstr ""
 " Devi inserire una chiavetta USB dove\n"
 " l'immagine possa essere scritta."
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -245,4 +245,5 @@ msgstr ""
 " \n"
 " Sei libero di rimuoverlo adesso, quando chiuderai l'applicazione\n"
 " verrà salvato il file di log isodumper.log nella tua cartella /home/."
-"isodumper."
+" isodumper."
+

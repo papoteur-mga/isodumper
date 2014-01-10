@@ -108,8 +108,8 @@ msgid "Wrote: "
 msgstr "Escreveu:"
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr "gravado com êxito para"
+msgid " successfully written to "
+msgstr " gravado com êxito para "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -196,23 +196,23 @@ msgstr "Selecione o dispositivo de destino para gravar a imagem para"
 msgid "Create a backup of the device as image to restore it later"
 msgstr "Crie um backup do dispositivo, como imagem para restaurá-lo mais tarde"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr "(Nenhum)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr "Selecione uma pasta na qual você deseja gravar a imagem de backup"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Detalhes"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Escrever para o dispositivo"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -226,7 +226,7 @@ msgstr ""
 " Você precisa se conectar a uma Chave\n"
 " USB para que a imagem possa ser gravada."
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -243,3 +243,4 @@ msgstr ""
 " Você Já pode desconectá-lo, um isodumper.log\n"
 " da operação será salvo em sua homedir/.isodumper/\n"
 " assim que Fechar o aplicativo."
+

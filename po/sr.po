@@ -104,8 +104,8 @@ msgid "Wrote: "
 msgstr "Записах: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " је успешно записан на"
+msgid " successfully written to "
+msgstr " је успешно записан на "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -192,23 +192,23 @@ msgstr "Изаберите циљну уређај на коме ће бити �
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Детаљи"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Запиши на уређај"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -217,7 +217,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -234,24 +234,6 @@ msgstr ""
 " о операцији ће бити сачуван у вашој личној\n"
 " фасцикли ако затворите програм."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "gtk-ok"
-#~ msgstr "гтк-у реду"
-
-#~ msgid "gtk-close"
-#~ msgstr "гтк-затвори"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "гтк-откажи"
-
-#~ msgid "ImageWriter"
-#~ msgstr "Писач одраза"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "дд процес је завршио са грешком !"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -264,3 +246,21 @@ msgstr ""
 #~ "\n"
 #~ " Морате да прикључите УСБ кључ\n"
 #~ " на који може бити записан одраз."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "дд процес је завршио са грешком !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "Писач одраза"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "гтк-откажи"
+
+#~ msgid "gtk-close"
+#~ msgstr "гтк-затвори"
+
+#~ msgid "gtk-ok"
+#~ msgstr "гтк-у реду"
+
+#~ msgid " "
+#~ msgstr " "

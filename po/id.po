@@ -107,8 +107,8 @@ msgid "Wrote: "
 msgstr "Ditulis: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " berhasil ditulis ke"
+msgid " successfully written to "
+msgstr " berhasil ditulis ke "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -195,23 +195,23 @@ msgstr "Pilih perangkat target untuk ditulisi image"
 msgid "Create a backup of the device as image to restore it later"
 msgstr "Buat backup dari perangkat sebagai image untuk dikembalikan nanti"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr "(Tidak ada)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr "Pilih folder untuk menulis backup image"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Rincian"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Menulis ke perangkat"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -225,7 +225,7 @@ msgstr ""
 " Anda harus memasang flashdisk\n"
 " untuk penulisan image."
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -242,3 +242,4 @@ msgstr ""
 " Sekarang Anda bisa melepaskannya, log isodumper.log \n"
 " dari operasi ini akan disimpan di homedir/.isodumper/ saat\n"
 " Anda menutup aplikasi."
+

@@ -107,8 +107,8 @@ msgid "Wrote: "
 msgstr "Skrev: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " skrevs till"
+msgid " successfully written to "
+msgstr " skrevs till "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -133,7 +133,8 @@ msgstr "IsoDumper"
 
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
-msgstr "Ett grafiskt verktyg för att skriva .img och .iso-filer till USB-minnen"
+msgstr ""
+"Ett grafiskt verktyg för att skriva .img och .iso-filer till USB-minnen"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid "Select"
@@ -197,23 +198,23 @@ msgstr ""
 "Skapa en återställningspunkt av enheten som en bild för att återställa den "
 "med senare"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr "(Ingen)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr "Välj en mapp som återställningsbilden ska skrivas till"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Detaljer"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Skriv till enhet"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -227,7 +228,7 @@ msgstr ""
 " Du bör ansluta ett USB-minne\n"
 " som avbilden kan skrivas till."
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -244,3 +245,4 @@ msgstr ""
 " Du kan nu koppla från enheten. En logg kallad isodumper.log \n"
 " av åtgärderna kommer att sparas i hem-mappen{.isodumper/ när\n"
 " du stänger ner programmet."
+

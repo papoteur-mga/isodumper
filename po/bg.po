@@ -106,8 +106,8 @@ msgid "Wrote: "
 msgstr "Записа: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " е успешно записан на"
+msgid " successfully written to "
+msgstr " е успешно записан на "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -195,23 +195,23 @@ msgstr "Изберете целево устройство, на което ще
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Подробности"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Запис"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -220,7 +220,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 #, fuzzy
 msgid ""
 "<b>Success</b>\n"
@@ -239,24 +239,6 @@ msgstr ""
 " се запази отчет във вашата домашна\n"
 " папка, ако затворите програмата."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Процесът dd завърши с грешка!"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -269,3 +251,22 @@ msgstr ""
 #~ "\n"
 #~ " Трябва да свържете USB стик,\n"
 #~ " на който да се запише образа."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Процесът dd завърши с грешка!"
+
+#~ msgid " "
+#~ msgstr " "
+

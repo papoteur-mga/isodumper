@@ -106,8 +106,8 @@ msgid "Wrote: "
 msgstr "დაწერა: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " წარმატებით ჩაიწერა"
+msgid " successfully written to "
+msgstr " წარმატებით ჩაიწერა "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -182,23 +182,23 @@ msgstr ""
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "დეტალები"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -207,7 +207,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 #, fuzzy
 msgid ""
 "<b>Success</b>\n"
@@ -226,21 +226,6 @@ msgstr ""
 " ჟურნალი შეინახება თქვენს სახლის დასტაში თუ\n"
 " დახურავთ პროგრამას."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd პროცესი შეცდომით დამთავრდა !"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-გაუქმება"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-დახურვა"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-დიახ"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -253,3 +238,18 @@ msgstr ""
 #~ "\n"
 #~ " შეაერთეთ USB მოწყობილობა,\n"
 #~ " რომელშიც ანაბეჭდის ჩაწერა იქნება შესაძლებელი."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-დიახ"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-დახურვა"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-გაუქმება"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd პროცესი შეცდომით დამთავრდა !"
+
+#~ msgid " "
+#~ msgstr " "

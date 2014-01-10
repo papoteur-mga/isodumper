@@ -106,8 +106,8 @@ msgid "Wrote: "
 msgstr "已寫入： "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " 成功寫入到"
+msgid " successfully written to "
+msgstr " 成功寫入到 "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -194,23 +194,23 @@ msgstr "選擇要寫入映像的目標裝置"
 msgid "Create a backup of the device as image to restore it later"
 msgstr "建立這個裝置的映像備份以便之後還原"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr "(無)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr "選擇一個目錄以供寫入備份映像"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "詳細資料"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "寫入到裝置"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -224,7 +224,7 @@ msgstr ""
 " 您需要插入一個 USB 隨身碟\n"
 " 以便寫入映像檔。"
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -240,3 +240,4 @@ msgstr ""
 " 您現在可以移除裝置，當您關閉程式時\n"
 " 將會在您的家目錄下的 .isodumper 隱藏目錄儲存一個\n"
 " 名稱為 isodumper.log 的記錄檔。"
+

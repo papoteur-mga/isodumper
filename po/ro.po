@@ -107,8 +107,8 @@ msgid "Wrote: "
 msgstr "S-a scris: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr "scris cu succes pe"
+msgid " successfully written to "
+msgstr " scris cu succes pe "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -197,23 +197,23 @@ msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 "Creează o imagine a dispozitivului pentru a o putea restaura mai tîrziu "
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr "(Neant)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr "Selectați un director în care să salvați imaginea "
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Detalii"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Scrie pe dispozitiv"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -227,7 +227,7 @@ msgstr ""
 " Trebuie să conectați o cheie USB pe\n"
 " care să poată fi scrisă imaginea."
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -244,3 +244,4 @@ msgstr ""
 " Îl puteți deconecta acum, fișierul jurnal isodumper.log \n"
 " al operației va fi salvat în directoruldvs/.isodumper/ cînd\n"
 " veți închide aplicația."
+

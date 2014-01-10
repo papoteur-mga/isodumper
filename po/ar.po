@@ -105,7 +105,7 @@ msgid "Wrote: "
 msgstr ""
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
+msgid " successfully written to "
 msgstr ""
 
 #: lib/isodumper.py:270
@@ -181,23 +181,23 @@ msgstr "إختيار القارىء المراد إستعماله في كتاب�
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "تفاصيل"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "كتابة في القارىء"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -206,7 +206,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -217,17 +217,3 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "ImageWriter"
-#~ msgstr "كاتب ملف"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"

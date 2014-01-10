@@ -106,8 +106,8 @@ msgid "Wrote: "
 msgstr "Geschreven: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " met succes geschreven naar"
+msgid " successfully written to "
+msgstr " met succes geschreven naar "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -195,23 +195,23 @@ msgstr "Kies doelstation om het Image-bestand naar toe te schrijven"
 msgid "Create a backup of the device as image to restore it later"
 msgstr "Maak een back-up van het apparaat om dat later te herstellen"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr "(Geen)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr "Selecteer een map om de back-up in op te slaan"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Details"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Schrijven naar station"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -225,7 +225,7 @@ msgstr ""
 " Plug een USB-sleutel in\n"
 " waar het image naartoe geschreven kan worden."
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -242,3 +242,4 @@ msgstr ""
 " U kunt het nu loskoppelen, het isodumper.log logbestand \n"
 " zal worden opgeslagen in uw homedir/.isodumper/ zodra\n"
 " u het programma afsluit."
+

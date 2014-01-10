@@ -108,9 +108,9 @@ msgid "Wrote: "
 msgstr "Записано: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " успішно записано на"
-
+msgid " successfully written to "
+msgstr " успішно записано на "
+ 
 #: lib/isodumper.py:270
 msgid "Image "
 msgstr "Образ "
@@ -199,23 +199,23 @@ msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 "Створити образ резервної копії пристрою для наступного відновлення даних"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr "(Немає)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr "Виберіть теку, до якої слід записати образ резервної копії"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Подробиці"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Записати на пристрій"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -229,7 +229,7 @@ msgstr ""
 " Вам слід з’єднати з комп’ютером диск USB,\n"
 " на який буде записано образ."
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"

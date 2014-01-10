@@ -106,7 +106,7 @@ msgid "Wrote: "
 msgstr "Kirjutati: "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
+msgid " successfully written to "
 msgstr " kirjutati edukalt asukohta "
 
 #: lib/isodumper.py:270
@@ -194,23 +194,23 @@ msgstr "Valige sihtseade, kuhu tõmmis kirjutada"
 msgid "Create a backup of the device as image to restore it later"
 msgstr "Seadme varukoopia loomine tõmmisena hilisemaks taastamiseks"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr "(Puudub)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr "Valige kataloog, kuhu kirjutada varutõmmis"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "Üksikasjad"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "Kirjuta seadmele"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -224,7 +224,7 @@ msgstr ""
 " Teil tuleb ühendada USB.pulk,\n"
 " millele saab tõmmise kirjutada."
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -241,3 +241,4 @@ msgstr ""
 " Võite nüüd seadme eemaldada, logifail \n"
 " isodumper.log salvestatakse teie kodukataloogi \n"
 " rakenduse sulgemise järel."
+

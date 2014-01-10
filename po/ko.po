@@ -106,8 +106,8 @@ msgid "Wrote: "
 msgstr "썼다 : "
 
 #: lib/isodumper.py:270
-msgid " successfully written to"
-msgstr " 성공적으로 쓰여진다."
+msgid " successfully written to "
+msgstr " 성공적으로 쓰여진다. "
 
 #: lib/isodumper.py:270
 msgid "Image "
@@ -195,23 +195,23 @@ msgstr "이미지를 사용하기 위한 장치를 선택하십시요"
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "(None)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Details"
 msgstr "상세 정보"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
 msgstr "사용된 장치"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -220,7 +220,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 #, fuzzy
 msgid ""
 "<b>Success</b>\n"
@@ -238,24 +238,6 @@ msgstr ""
 "지금 그것(장치)를 제거해도 괜찮습니다, 만약 사용(응용)을 종료하게 되면,\n"
 "그 기록은 당신의 홈디렉토리에 저장되도록 작동할 것입니다."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd 처리과정 종료시 오류발생"
-
-#~ msgid "ImageWriter"
-#~ msgstr "이미지제작가"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-취소"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-닫기"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-확인"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -268,3 +250,21 @@ msgstr ""
 #~ "\n"
 #~ "USB 키를 입력할 필요가 있습니다.\n"
 #~ "그 이미지와 같은 것은 쓰여질 수 있습니다."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-확인"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-닫기"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-취소"
+
+#~ msgid "ImageWriter"
+#~ msgstr "이미지제작가"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd 처리과정 종료시 오류발생"
+
+#~ msgid " "
+#~ msgstr " "
