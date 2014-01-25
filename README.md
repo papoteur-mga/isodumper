@@ -55,3 +55,4 @@ Translators
 - dtsiamasiotis - Greek
 - fri - Czech
 - Akien - Danish
+- richardshaylo - English (United Kingdom)
