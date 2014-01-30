@@ -10,7 +10,7 @@ IsoDumper 0.20
 	  - added and update Makefile for polkit file translation. (Thanks to Yuri Chornoivan)
 	  - improvement po-update.sh script for translations (extract or merge polkit and desktop files translations).
 	  - fix an error space on a translation string (#: lib/isodumper.py:270)
-	  - added and update Estonian, Danish, Czech and Greek translations.
+	  - added and update Estonian, Danish, Czech, Greek and English (United Kingdom) translations.
 	  - updated  de,fr,id,ro,sl,sv,zh_TW,tr,uk,pt_BR,ru,ro,es,it and pl translations.
 	  
 IsoDumper 0.13
