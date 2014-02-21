@@ -56,3 +56,4 @@ Translators
 - fri - Czech
 - Akien - Danish
 - richardshaylo - English (United Kingdom)
+- alfalb_mansil - Portuguese
