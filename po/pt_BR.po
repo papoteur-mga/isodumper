@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-29 15:19+0100\n"
-"PO-Revision-Date: 2014-01-05 21:44+0000\n"
+"PO-Revision-Date: 2014-03-02 04:34+0000\n"
 "Last-Translator: Padula <padula1000@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
 "mageia/language/pt_BR/)\n"
@@ -93,7 +93,7 @@ msgstr " para"
 
 #: lib/isodumper.py:236
 msgid "Writing "
-msgstr "Escrevendo"
+msgstr "Transferindo"
 
 #: lib/isodumper.py:237
 msgid "Executing copy from "
@@ -210,7 +210,7 @@ msgstr "Detalhes"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Write to device"
-msgstr "Escrever para o dispositivo"
+msgstr "Transferir para o dispositivo"
 
 #: share/isodumper/isodumper.glade.h:27
 msgid ""
