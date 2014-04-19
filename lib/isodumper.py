@@ -347,7 +347,7 @@ class IsoDumper:
         dialog = self.wTree.get_widget("about_dialog")
         resp = dialog.run()
         if resp:
-            dialog.destroy()
+            dialog.hide()
             #exit(0)
 
 if __name__ == "__main__":
