@@ -65,7 +65,6 @@ class IsoDumper:
         self.chooser.set_filter(filt)
         
         #   optionnal backup of the device
-
         self.backup_select = self.wTree.get_widget("backup_select")
         self.backup_name = self.wTree.get_widget("backup_name")
         self.backup = self.wTree.get_widget("backup")
@@ -86,6 +85,7 @@ class IsoDumper:
                  "on_backup_toggled" : self.enable_backup,
                  "on_backup_select_clicked" : self.backup_sel,
                  "on_select_clicked" : self.backup_choosed,
+                 "on_about_button_clicked" : self.about,
                  "on_write_button_clicked" : self.do_write}
         self.wTree.signal_autoconnect(dict)
 
@@ -136,8 +136,7 @@ class IsoDumper:
                 exit_dialog=exit_dialog+".iso"
             self.backup_select.set_label(exit_dialog)
         self.choose.hide()
-        
-        
+
     def do_write(self, widget):
         write_button = self.wTree.get_widget("write_button")
         write_button.set_sensitive(False)
@@ -185,7 +184,7 @@ class IsoDumper:
                 self.success()
             else:
                 self.close('dummy')
-   
+
     def do_umount(self, target):
         mounts = self.get_mounted(target)
         if mounts:
@@ -340,6 +339,15 @@ class IsoDumper:
         # the unexpanded expander which doesnt reset the window size
         if widget.get_expanded():
             gobject.timeout_add(130, lambda: self.window.reshow_with_initial_size())
+
+    def about(self, widget):
+        about_button = self.wTree.get_widget("about_button")
+        about_button.set_sensitive(True)
+        dialog = self.wTree.get_widget("about_dialog")
+        resp = dialog.run()
+        if resp:
+            dialog.destroy()
+            #exit(0)
 
 if __name__ == "__main__":
     app = IsoDumper()
