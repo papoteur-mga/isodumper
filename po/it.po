@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-29 15:19+0100\n"
+"POT-Creation-Date: 2014-04-19 08:18+0200\n"
 "PO-Revision-Date: 2014-01-06 11:42+0000\n"
 "Last-Translator: killer1987 <marcello.anni@alice.it>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/mageia/language/"
@@ -20,11 +20,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/isodumper.py:111
+#: lib/isodumper.py:112
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr "Copia di sicurezza in:"
 
@@ -136,10 +136,15 @@ msgstr ""
 "chiavetta USB"
 
 #: share/isodumper/isodumper.glade.h:2
+msgid ""
+"A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:3
 msgid "Select"
 msgstr "Seleziona"
 
-#: share/isodumper/isodumper.glade.h:3
+#: share/isodumper/isodumper.glade.h:4
 msgid ""
 "<b>Warning</b>\n"
 " This will <b>destroy all data</b> on the target\n"
@@ -155,7 +160,7 @@ msgstr ""
 " Se dai la conferma qua, per favore <b>non rimuovere</b>\n"
 " il dispositivo durante la seguente operazione."
 
-#: share/isodumper/isodumper.glade.h:9
+#: share/isodumper/isodumper.glade.h:10
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -171,51 +176,51 @@ msgstr ""
 " Verrà salvato nella tua cartella personale /home/.isodumper il file\n"
 " di log isodumper.log quando verrà chiusa l'applicazione."
 
-#: share/isodumper/isodumper.glade.h:15
+#: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"
 msgstr "Scrivi immagine:"
 
-#: share/isodumper/isodumper.glade.h:16
+#: share/isodumper/isodumper.glade.h:17
 msgid "Select an image file to be written to the device"
 msgstr "Seleziona un file immagine da scrivere nel dispositivo"
 
-#: share/isodumper/isodumper.glade.h:17
+#: share/isodumper/isodumper.glade.h:18
 msgid "Select Image"
 msgstr "Seleziona immagine"
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "to"
 msgstr "su"
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:20
 msgid "Select target device to write the image to"
 msgstr "Seleziona il dispositivo target nel quale vuoi scrivere l'immagine"
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:21
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 "Crea una copia di sicurezza del dispositivo come immagine per il ripristino "
 "successivo"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "(None)"
 msgstr "(Nessuno)"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 "Seleziona una cartella nella quale scrivere l'immagine della copia di "
 "sicurezza"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Details"
 msgstr "Dettagli"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid "Write to device"
 msgstr "Scrivi sul dispositivo"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:28
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -229,7 +234,7 @@ msgstr ""
 " Devi inserire una chiavetta USB dove\n"
 " l'immagine possa essere scritta."
 
-#: share/isodumper/isodumper.glade.h:32
+#: share/isodumper/isodumper.glade.h:33
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -244,6 +249,5 @@ msgstr ""
 " dispositivo target.\n"
 " \n"
 " Sei libero di rimuoverlo adesso, quando chiuderai l'applicazione\n"
-" verrà salvato il file di log isodumper.log nella tua cartella /home/."
-" isodumper."
-
+" verrà salvato il file di log isodumper.log nella tua cartella /home/. "
+"isodumper."

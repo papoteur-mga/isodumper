@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-29 15:19+0100\n"
+"POT-Creation-Date: 2014-04-19 08:18+0200\n"
 "PO-Revision-Date: 2013-12-30 09:42+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/projects/p/mageia/"
@@ -21,11 +21,11 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: lib/isodumper.py:111
+#: lib/isodumper.py:112
 msgid "Mb"
 msgstr "МБ"
 
-#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr "Резервне копіювання до:"
 
@@ -110,7 +110,7 @@ msgstr "Записано: "
 #: lib/isodumper.py:270
 msgid " successfully written to "
 msgstr " успішно записано на "
- 
+
 #: lib/isodumper.py:270
 msgid "Image "
 msgstr "Образ "
@@ -138,10 +138,15 @@ msgstr ""
 "Програма з графічним інтерфейсом для запису файлів img та iso на носії USB"
 
 #: share/isodumper/isodumper.glade.h:2
+msgid ""
+"A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:3
 msgid "Select"
 msgstr "Вибрати"
 
-#: share/isodumper/isodumper.glade.h:3
+#: share/isodumper/isodumper.glade.h:4
 msgid ""
 "<b>Warning</b>\n"
 " This will <b>destroy all data</b> on the target\n"
@@ -157,7 +162,7 @@ msgstr ""
 " Якщо ви підтвердите запис, будь ласка, <b>не демонтуйте</b>\n"
 " пристрій протягом наступної операції."
 
-#: share/isodumper/isodumper.glade.h:9
+#: share/isodumper/isodumper.glade.h:10
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -174,48 +179,48 @@ msgstr ""
 " вашої домашньої теки (підтека .isodumper), коли роботу програми буде\n"
 " завершено."
 
-#: share/isodumper/isodumper.glade.h:15
+#: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"
 msgstr "Записати образ:"
 
-#: share/isodumper/isodumper.glade.h:16
+#: share/isodumper/isodumper.glade.h:17
 msgid "Select an image file to be written to the device"
 msgstr "Виберіть файл образу, який буде записано на пристрій"
 
-#: share/isodumper/isodumper.glade.h:17
+#: share/isodumper/isodumper.glade.h:18
 msgid "Select Image"
 msgstr "Виберіть образ"
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "to"
 msgstr "на"
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:20
 msgid "Select target device to write the image to"
 msgstr "Виберіть пристрій для запису образу"
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:21
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 "Створити образ резервної копії пристрою для наступного відновлення даних"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "(None)"
 msgstr "(Немає)"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Select a folder in which to write the backup image"
 msgstr "Виберіть теку, до якої слід записати образ резервної копії"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Details"
 msgstr "Подробиці"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid "Write to device"
 msgstr "Записати на пристрій"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:28
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -229,7 +234,7 @@ msgstr ""
 " Вам слід з’єднати з комп’ютером диск USB,\n"
 " на який буде записано образ."
 
-#: share/isodumper/isodumper.glade.h:32
+#: share/isodumper/isodumper.glade.h:33
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-29 15:19+0100\n"
+"POT-Creation-Date: 2014-04-19 08:18+0200\n"
 "PO-Revision-Date: 2013-12-31 04:10+0000\n"
 "Last-Translator: kiki.syahadat <kiki.syahadat@yahoo.co.id>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/mageia/"
@@ -21,11 +21,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: lib/isodumper.py:111
+#: lib/isodumper.py:112
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr "Backup di:"
 
@@ -136,10 +136,15 @@ msgid "A GUI tool to write .img and .iso files to USB Keys"
 msgstr "Alat GUI untuk menulis file .img dan .iso ke flashdisk"
 
 #: share/isodumper/isodumper.glade.h:2
+msgid ""
+"A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:3
 msgid "Select"
 msgstr "Pilih"
 
-#: share/isodumper/isodumper.glade.h:3
+#: share/isodumper/isodumper.glade.h:4
 msgid ""
 "<b>Warning</b>\n"
 " This will <b>destroy all data</b> on the target\n"
@@ -155,7 +160,7 @@ msgstr ""
 " Apabila anda setuju, mohon <b>jangan melepas</b>\n"
 " perangkat selama operasi berikut."
 
-#: share/isodumper/isodumper.glade.h:9
+#: share/isodumper/isodumper.glade.h:10
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -171,47 +176,47 @@ msgstr ""
 " file log isodumper.log akan disimpan di\n"
 " homedir/.isodumper saat aplikasi ditutup."
 
-#: share/isodumper/isodumper.glade.h:15
+#: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"
 msgstr "Menulis Image:"
 
-#: share/isodumper/isodumper.glade.h:16
+#: share/isodumper/isodumper.glade.h:17
 msgid "Select an image file to be written to the device"
 msgstr "Pilih sebuah image untuk ditulis ke perangkat"
 
-#: share/isodumper/isodumper.glade.h:17
+#: share/isodumper/isodumper.glade.h:18
 msgid "Select Image"
 msgstr "Pilih image"
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "to"
 msgstr "ke"
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:20
 msgid "Select target device to write the image to"
 msgstr "Pilih perangkat target untuk ditulisi image"
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:21
 msgid "Create a backup of the device as image to restore it later"
 msgstr "Buat backup dari perangkat sebagai image untuk dikembalikan nanti"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "(None)"
 msgstr "(Tidak ada)"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Select a folder in which to write the backup image"
 msgstr "Pilih folder untuk menulis backup image"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Details"
 msgstr "Rincian"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid "Write to device"
 msgstr "Menulis ke perangkat"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:28
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -225,7 +230,7 @@ msgstr ""
 " Anda harus memasang flashdisk\n"
 " untuk penulisan image."
 
-#: share/isodumper/isodumper.glade.h:32
+#: share/isodumper/isodumper.glade.h:33
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -242,4 +247,3 @@ msgstr ""
 " Sekarang Anda bisa melepaskannya, log isodumper.log \n"
 " dari operasi ini akan disimpan di homedir/.isodumper/ saat\n"
 " Anda menutup aplikasi."
-

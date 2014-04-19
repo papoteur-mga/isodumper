@@ -63,6 +63,7 @@ class IsoDumper:
         filt.add_pattern("*.iso")
         filt.add_pattern("*.img")
         self.chooser.set_filter(filt)
+
         
         #   optionnal backup of the device
         self.backup_select = self.wTree.get_widget("backup_select")

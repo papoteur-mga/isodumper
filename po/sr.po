@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-29 15:19+0100\n"
+"POT-Creation-Date: 2014-04-19 08:18+0200\n"
 "PO-Revision-Date: 2011-03-17 11:58+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Launchpad Serbian Translators\n"
@@ -19,11 +19,11 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
 "X-Generator: Launchpad (build 16692)\n"
 
-#: lib/isodumper.py:111
+#: lib/isodumper.py:112
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr ""
 
@@ -133,10 +133,15 @@ msgid "A GUI tool to write .img and .iso files to USB Keys"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:2
-msgid "Select"
+msgid ""
+"A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:3
+msgid "Select"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:4
 msgid ""
 "<b>Warning</b>\n"
 " This will <b>destroy all data</b> on the target\n"
@@ -152,7 +157,7 @@ msgstr ""
 " Ако овде кажете у реду, молим <b>немојте откачињати</b>\n"
 " уређај за време следеће операције."
 
-#: share/isodumper/isodumper.glade.h:9
+#: share/isodumper/isodumper.glade.h:10
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -168,47 +173,47 @@ msgstr ""
 " Датотека дневника са садржајем ће бити сачувана у\n"
 " вашој личној фасцикли ако је програм затворен."
 
-#: share/isodumper/isodumper.glade.h:15
+#: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"
 msgstr "Запиши одраз:"
 
-#: share/isodumper/isodumper.glade.h:16
+#: share/isodumper/isodumper.glade.h:17
 msgid "Select an image file to be written to the device"
 msgstr "Изаберите датотеку одраза који ће бити записан на уређај"
 
-#: share/isodumper/isodumper.glade.h:17
+#: share/isodumper/isodumper.glade.h:18
 msgid "Select Image"
 msgstr "Изабери одраз"
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "to"
 msgstr "на"
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:20
 msgid "Select target device to write the image to"
 msgstr "Изаберите циљну уређај на коме ће бити записан одраз"
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:21
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "(None)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Details"
 msgstr "Детаљи"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid "Write to device"
 msgstr "Запиши на уређај"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:28
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -217,7 +222,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:32
+#: share/isodumper/isodumper.glade.h:33
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-29 15:19+0100\n"
+"POT-Creation-Date: 2014-04-19 08:18+0200\n"
 "PO-Revision-Date: 2013-12-30 11:47+0000\n"
 "Last-Translator: filip.komar <filip.komar@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/mageia/"
@@ -23,11 +23,11 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
 
-#: lib/isodumper.py:111
+#: lib/isodumper.py:112
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:21
+#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr "Ustvarite varnostno kopijo v:"
 
@@ -141,10 +141,15 @@ msgstr ""
 "img in .iso) na ključek USB"
 
 #: share/isodumper/isodumper.glade.h:2
+msgid ""
+"A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:3
 msgid "Select"
 msgstr "Izberite"
 
-#: share/isodumper/isodumper.glade.h:3
+#: share/isodumper/isodumper.glade.h:4
 msgid ""
 "<b>Warning</b>\n"
 " This will <b>destroy all data</b> on the target\n"
@@ -160,7 +165,7 @@ msgstr ""
 " Če boste potrdili, <b>ne odstranjujte</b>\n"
 " naprave med zapisovanjem."
 
-#: share/isodumper/isodumper.glade.h:9
+#: share/isodumper/isodumper.glade.h:10
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -176,49 +181,49 @@ msgstr ""
 " Ob zaprtju programa se bo v mapo .isodumper v vaši domači\n"
 " mapi zapisala dnevniška datoteka isodumper.log."
 
-#: share/isodumper/isodumper.glade.h:15
+#: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"
 msgstr "Zapis slike:"
 
-#: share/isodumper/isodumper.glade.h:16
+#: share/isodumper/isodumper.glade.h:17
 msgid "Select an image file to be written to the device"
 msgstr "Izberite datoteko odtisa diska za zapis na napravo"
 
-#: share/isodumper/isodumper.glade.h:17
+#: share/isodumper/isodumper.glade.h:18
 msgid "Select Image"
 msgstr "Izberite odtis diska"
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "to"
 msgstr "v"
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:20
 msgid "Select target device to write the image to"
 msgstr "Izberite ciljno napravo za zapis odtisa diska"
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:21
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 "Ustvarite varnostno kopijo odtisa naprave, da jo lahko kasneje povrnete na "
 "trenutno stanje"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "(None)"
 msgstr "(brez)"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Select a folder in which to write the backup image"
 msgstr "Izberite mapo za zapis varnostne kopije"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid "Write to device"
 msgstr "Zapis na napravo"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:28
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -232,7 +237,7 @@ msgstr ""
 " Vstavite ključ USB, na katerega\n"
 " lahko zapišete odtis diska."
 
-#: share/isodumper/isodumper.glade.h:32
+#: share/isodumper/isodumper.glade.h:33
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -248,4 +253,3 @@ msgstr ""
 " Sedaj lahko le-to odstranite.\n"
 " Ob zaprtju programa se bo v mapo .isodumper v vaši domači\n"
 " mapi zapisala dnevniška datoteka isodumper.log."
-
