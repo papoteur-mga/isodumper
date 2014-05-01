@@ -24,11 +24,35 @@
 import gtk
 import gtk.glade
 import gobject
-from subprocess import Popen,PIPE,call
 import os
 import io
 import gettext
 from gettext import gettext as _
+from subprocess import call
+
+def find_devices():
+    import dbus
+    bus = dbus.SystemBus()
+    proxy = bus.get_object("org.freedesktop.UDisks", "/org/freedesktop/UDisks")
+    iface = dbus.Interface(proxy, "org.freedesktop.UDisks")
+    devs=iface.EnumerateDevices()
+    list=[]
+  
+    for dev in devs:
+    	dev_obj = bus.get_object("org.freedesktop.UDisks", dev)
+    	dev = dbus.Interface(dev_obj, "org.freedesktop.DBus.Properties")
+    	item=[]
+    	if str(dev.Get('', 'DriveConnectionInterface')) == 'usb' and not str(dev.Get('', 'PartitionType')) and str(dev.Get('', 'DeviceIsMediaAvailable')) == '1':
+		vend = str(dev.Get('', 'DriveVendor'))
+    		path = str(dev.Get('', 'DeviceFile'))
+     		name = str(dev.Get('', 'DriveModel'))
+    		size = str(dev.Get('', 'DeviceSize'))
+    		item.append(vend+" "+name)
+    		item.append(path)
+    		item.append(size)
+    		list.append(item)
+    print list
+    return list
 
 
 class IsoDumper:
@@ -93,25 +117,26 @@ class IsoDumper:
         self.window.show_all()
         # make sure we have a target device
         self.get_devices()
+
+
     def get_devices(self):
         dialog = self.wTree.get_widget("nodev_dialog")
-        list = Popen(["/usr/lib/isodumper/find_devices"], stdout=PIPE).communicate()[0]
-        while not len(list):
+        list=find_devices()
+        while len(list)==0:
             exit_dialog=dialog.run()
-            list = Popen(["/usr/lib/isodumper/find_devices"], stdout=PIPE).communicate()[0]
+            list = find_devices()
             if (exit_dialog==2) :
                 dialog.destroy()
                 exit(0)
         self.combo = self.wTree.get_widget("device_combobox")
-        list = list.strip().split('\n')
-        for item in list:
-            name,path,size = item.split(',')
+        for name, path, size in list:
             self.deviceSize=size
-            # convert in Mbytes
+                # convert in Mbytes
             sizeM=str(int(size)/(1024*1024))
             self.combo.append_text(name+' ('+path.lstrip()+') '+sizeM+_('Mb'))
         dialog.destroy()
 
+        
     def device_selected(self, widget):
         write_button = self.wTree.get_widget("write_button")
         write_button.set_sensitive(True)
