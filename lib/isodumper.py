@@ -59,7 +59,7 @@ class IsoDumper:
     def __init__(self):
         APP="isodumper"
         DIR="/usr/share/locale"
-        RELEASE="v0.20"
+        RELEASE="v0.21"
 
         gettext.bindtextdomain(APP, DIR)
         gettext.textdomain(APP)
@@ -144,10 +144,8 @@ class IsoDumper:
 
     def enable_backup(self,widget) :
         self.backup_select.set_sensitive(not self.backup_select.get_sensitive())
-        #self.backup_name.set_sensitive(not self.backup_name.get_sensitive())
 
     def backup_sel(self,widget):
-        #dialog = self.wTree.get_widget("backup_choose")
         self.choose.show_all()
 
     def backup_choosed(self, widget):
@@ -168,9 +166,6 @@ class IsoDumper:
         write_button.set_sensitive(False)
         combo = self.wTree.get_widget("device_combobox")
         combo.set_sensitive(False)
-        self.backup_select.set_sensitive(False)
-        self.backup.set_sensitive(False)
-        self.chooser.set_sensitive(False)
         source = self.chooser.get_filename()
         target = self.dev.split('(')[1].split(')')[0]
         dialog = self.wTree.get_widget("confirm_dialog")
@@ -193,7 +188,12 @@ class IsoDumper:
                     if resp:
                         pass
                     else:
-                        self.close('dummy')
+#                        self.close('dummy')
+                        self.emergency()
+                        dialog.hide()
+                self.backup_select.set_sensitive(False)
+                self.backup.set_sensitive(False)
+                self.chooser.set_sensitive(False)
                 self.do_umount(target)
                 dialog.hide()
                 # Backup step
@@ -209,8 +209,10 @@ class IsoDumper:
                     gtk.main_iteration(True)
                 self.success()
             else:
-                self.close('dummy')
-
+#                self.close('dummy')
+                dialog.hide()
+                combo.set_sensitive(True)
+                write_button.set_sensitive(True)
     def do_umount(self, target):
         mounts = self.get_mounted(target)
         if mounts:
@@ -299,7 +301,6 @@ class IsoDumper:
                 except:
                    self.logger(_("Writing error."))
                    self.emergency()
-                #self.success()
             ifc.close()
             yield False
 
@@ -308,8 +309,9 @@ class IsoDumper:
         self.final_unsensitive()
         resp = dialog.run()
         if resp:
-            exit(0)
-            dialog.destroy()
+#            exit(0)
+            dialog.hide()
+
 
     def emergency(self):
         self.final_unsensitive()
@@ -334,6 +336,7 @@ class IsoDumper:
     def close(self, widget):
         self.write_logfile()
         gtk.main_quit()
+        exit(0)
 
     def write_logfile(self):
         start = self.log.get_start_iter()
