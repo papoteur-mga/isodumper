@@ -39,9 +39,9 @@ clean:
 	'# Author binary polkit file= Geiger David <david.david@mageialinux-online.org>\n'\
 	'\n'\
 	'if  [[ "$$UID" != "0" ]] ; then\n'\
-	'    exec $(BINDIR)/pkexec $(LIBEXECDIR)/$@ "$$''@"\n'\
+	'    exec $(BINDIR)/pkexec $(LIBEXECDIR)/$@ "$$USER $$''@"\n'\
 	'else\n'\
-	'    exec $(LIBEXECDIR)/$@ "$$''@"\n'\
+	'    exec $(LIBEXECDIR)/$@ "$$USER $$''@"\n'\
 	'fi\n'\
 	> $@
 
