@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-02 19:59+0200\n"
+"POT-Creation-Date: 2014-05-04 16:03+0200\n"
 "PO-Revision-Date: 2013-12-29 15:30+0100\n"
 "Last-Translator: Papoteur\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
@@ -22,101 +22,101 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 1.4\n"
 
-#: lib/isodumper.py:136
+#: lib/isodumper.py:138
 msgid "Mb"
 msgstr "Mo"
 
-#: lib/isodumper.py:174 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:176 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr "Sauvegarde dans :"
 
-#: lib/isodumper.py:175
+#: lib/isodumper.py:177
 msgid "Image: "
 msgstr "Image : "
 
-#: lib/isodumper.py:176
+#: lib/isodumper.py:178
 msgid "Target Device: "
 msgstr "Périphérique cible : "
 
-#: lib/isodumper.py:179
+#: lib/isodumper.py:181
 msgid "The device is too small to contain the ISO file."
 msgstr "Ce périphérique est trop petit pour contenir l'image ISO."
 
-#: lib/isodumper.py:186
+#: lib/isodumper.py:188
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "La taille de ce périphérique dépasse 32 Go. Êtes-vous sûr de vouloir "
 "l'utiliser ?"
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:221
 msgid "Unmounting all partitions of "
 msgstr "Démonte toutes les partitions de "
 
-#: lib/isodumper.py:221
+#: lib/isodumper.py:223
 msgid "Trying to unmount "
 msgstr "Essaie de démonter "
 
-#: lib/isodumper.py:227
+#: lib/isodumper.py:229
 msgid " was terminated by signal "
 msgstr " a été terminé par le signal "
 
-#: lib/isodumper.py:227 lib/isodumper.py:233
+#: lib/isodumper.py:229 lib/isodumper.py:235
 msgid "Error, umount "
 msgstr "Erreur, démontage "
 
-#: lib/isodumper.py:231
+#: lib/isodumper.py:233
 msgid " successfully unmounted"
 msgstr " correctement démonté"
 
-#: lib/isodumper.py:233
+#: lib/isodumper.py:235
 msgid " returned "
 msgstr " a renvoyé "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:238
 msgid "Execution failed: "
 msgstr "L'exécution a échoué : "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:246
 msgid "Could not read mtab !"
 msgstr "Impossible de lire mtab !"
 
-#: lib/isodumper.py:252 lib/isodumper.py:275
+#: lib/isodumper.py:254 lib/isodumper.py:277
 msgid "Reading error."
 msgstr "Erreur de lecture."
 
-#: lib/isodumper.py:258
+#: lib/isodumper.py:260
 msgid "You have not the rights for writing on the device"
 msgstr "Vous n'avez pas les droits d'écriture sur le périphérique"
 
-#: lib/isodumper.py:263 lib/isodumper.py:264
+#: lib/isodumper.py:265 lib/isodumper.py:266
 msgid " to "
 msgstr " sur "
 
-#: lib/isodumper.py:263
+#: lib/isodumper.py:265
 msgid "Writing "
 msgstr "Écrit "
 
-#: lib/isodumper.py:264
+#: lib/isodumper.py:266
 msgid "Executing copy from "
 msgstr "Exécute la copie de "
 
-#: lib/isodumper.py:280 lib/isodumper.py:293 lib/isodumper.py:302
+#: lib/isodumper.py:282 lib/isodumper.py:295 lib/isodumper.py:304
 msgid "Writing error."
 msgstr "Erreur d'écriture."
 
-#: lib/isodumper.py:285
+#: lib/isodumper.py:287
 msgid "Wrote: "
 msgstr "Écrit : "
 
-#: lib/isodumper.py:297
+#: lib/isodumper.py:299
 msgid " successfully written to "
 msgstr " écrite avec succès sur "
 
-#: lib/isodumper.py:297
+#: lib/isodumper.py:299
 msgid "Image "
 msgstr "Image "
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:300
 msgid "Bytes written: "
 msgstr "Octets écrits : "
 

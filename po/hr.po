@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-02 19:59+0200\n"
+"POT-Creation-Date: 2014-05-04 16:03+0200\n"
 "PO-Revision-Date: 2012-11-13 02:22+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
@@ -19,99 +19,99 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
 "X-Generator: Launchpad (build 16692)\n"
 
-#: lib/isodumper.py:136
+#: lib/isodumper.py:138
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:174 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:176 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:175
+#: lib/isodumper.py:177
 msgid "Image: "
 msgstr "Slika: "
 
-#: lib/isodumper.py:176
+#: lib/isodumper.py:178
 msgid "Target Device: "
 msgstr "Uređaj zapisivanja: "
 
-#: lib/isodumper.py:179
+#: lib/isodumper.py:181
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:186
+#: lib/isodumper.py:188
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:221
 msgid "Unmounting all partitions of "
 msgstr "Demontiranje svih particija od "
 
-#: lib/isodumper.py:221
+#: lib/isodumper.py:223
 msgid "Trying to unmount "
 msgstr "Pokušavanje demontiranja "
 
-#: lib/isodumper.py:227
+#: lib/isodumper.py:229
 msgid " was terminated by signal "
 msgstr " je prekinuo signal "
 
-#: lib/isodumper.py:227 lib/isodumper.py:233
+#: lib/isodumper.py:229 lib/isodumper.py:235
 msgid "Error, umount "
 msgstr "Greška, demontiranje "
 
-#: lib/isodumper.py:231
+#: lib/isodumper.py:233
 msgid " successfully unmounted"
 msgstr " uspješno demontirani"
 
-#: lib/isodumper.py:233
+#: lib/isodumper.py:235
 msgid " returned "
 msgstr " vraćeno "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:238
 msgid "Execution failed: "
 msgstr "Pokretanje neuspjelo: "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:246
 msgid "Could not read mtab !"
 msgstr "Nemoguće je pročitati mtab !"
 
-#: lib/isodumper.py:252 lib/isodumper.py:275
+#: lib/isodumper.py:254 lib/isodumper.py:277
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:258
+#: lib/isodumper.py:260
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:263 lib/isodumper.py:264
+#: lib/isodumper.py:265 lib/isodumper.py:266
 msgid " to "
 msgstr " u "
 
-#: lib/isodumper.py:263
+#: lib/isodumper.py:265
 msgid "Writing "
 msgstr "Zapisivanje "
 
-#: lib/isodumper.py:264
+#: lib/isodumper.py:266
 msgid "Executing copy from "
 msgstr ""
 
-#: lib/isodumper.py:280 lib/isodumper.py:293 lib/isodumper.py:302
+#: lib/isodumper.py:282 lib/isodumper.py:295 lib/isodumper.py:304
 msgid "Writing error."
 msgstr ""
 
-#: lib/isodumper.py:285
+#: lib/isodumper.py:287
 msgid "Wrote: "
 msgstr "Zapisao: "
 
-#: lib/isodumper.py:297
+#: lib/isodumper.py:299
 msgid " successfully written to "
 msgstr " je uspješno zapisana "
 
-#: lib/isodumper.py:297
+#: lib/isodumper.py:299
 msgid "Image "
 msgstr "Slika "
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:300
 msgid "Bytes written: "
 msgstr ""
 
@@ -240,24 +240,6 @@ msgstr ""
 " biti će spremljen u Osobnoj mapi\n"
 " ako zatvorite aplikaciju."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "gtk-ok"
-#~ msgstr "U redu"
-
-#~ msgid "gtk-close"
-#~ msgstr "Zatvori"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "Poništi zapisivanje"
-
-#~ msgid "ImageWriter"
-#~ msgstr "Zapisnik slika"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "'dd' radnja je završila greškom!"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -270,3 +252,21 @@ msgstr ""
 #~ "\n"
 #~ " Morate spojiti USB uređaj\n"
 #~ " na koji slika može biti zapisana."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "'dd' radnja je završila greškom!"
+
+#~ msgid "ImageWriter"
+#~ msgstr "Zapisnik slika"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "Poništi zapisivanje"
+
+#~ msgid "gtk-close"
+#~ msgstr "Zatvori"
+
+#~ msgid "gtk-ok"
+#~ msgstr "U redu"
+
+#~ msgid " "
+#~ msgstr " "

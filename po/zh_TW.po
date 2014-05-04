@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mageia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-02 19:59+0200\n"
+"POT-Creation-Date: 2014-05-04 16:03+0200\n"
 "PO-Revision-Date: 2014-01-01 09:08+0000\n"
 "Last-Translator: You-Cheng Hsieh <yochenhsieh@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/mageia/"
@@ -21,99 +21,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: lib/isodumper.py:136
+#: lib/isodumper.py:138
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:174 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:176 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr "備份在："
 
-#: lib/isodumper.py:175
+#: lib/isodumper.py:177
 msgid "Image: "
 msgstr "映像： "
 
-#: lib/isodumper.py:176
+#: lib/isodumper.py:178
 msgid "Target Device: "
 msgstr "目標裝置： "
 
-#: lib/isodumper.py:179
+#: lib/isodumper.py:181
 msgid "The device is too small to contain the ISO file."
 msgstr "這個裝置太小而放不下 ISO 檔案。"
 
-#: lib/isodumper.py:186
+#: lib/isodumper.py:188
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr "這個裝置超過 32 GB。您確定要使用它嗎？"
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:221
 msgid "Unmounting all partitions of "
 msgstr "卸載以下裝置的所有分區 "
 
-#: lib/isodumper.py:221
+#: lib/isodumper.py:223
 msgid "Trying to unmount "
 msgstr "嘗試卸載分區 "
 
-#: lib/isodumper.py:227
+#: lib/isodumper.py:229
 msgid " was terminated by signal "
 msgstr " 被信號終止 "
 
-#: lib/isodumper.py:227 lib/isodumper.py:233
+#: lib/isodumper.py:229 lib/isodumper.py:235
 msgid "Error, umount "
 msgstr "出錯，卸載分區 "
 
-#: lib/isodumper.py:231
+#: lib/isodumper.py:233
 msgid " successfully unmounted"
 msgstr " 成功卸載裝置"
 
-#: lib/isodumper.py:233
+#: lib/isodumper.py:235
 msgid " returned "
 msgstr " 已返回 "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:238
 msgid "Execution failed: "
 msgstr "執行失敗： "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:246
 msgid "Could not read mtab !"
 msgstr "無法讀取 mtab！"
 
-#: lib/isodumper.py:252 lib/isodumper.py:275
+#: lib/isodumper.py:254 lib/isodumper.py:277
 msgid "Reading error."
 msgstr "讀取錯誤。"
 
-#: lib/isodumper.py:258
+#: lib/isodumper.py:260
 msgid "You have not the rights for writing on the device"
 msgstr "您沒有權限寫入這個裝置"
 
-#: lib/isodumper.py:263 lib/isodumper.py:264
+#: lib/isodumper.py:265 lib/isodumper.py:266
 msgid " to "
 msgstr " 至 "
 
-#: lib/isodumper.py:263
+#: lib/isodumper.py:265
 msgid "Writing "
 msgstr "正在寫入 "
 
-#: lib/isodumper.py:264
+#: lib/isodumper.py:266
 msgid "Executing copy from "
 msgstr "正在從這個來源複製"
 
-#: lib/isodumper.py:280 lib/isodumper.py:293 lib/isodumper.py:302
+#: lib/isodumper.py:282 lib/isodumper.py:295 lib/isodumper.py:304
 msgid "Writing error."
 msgstr "寫入錯誤。"
 
-#: lib/isodumper.py:285
+#: lib/isodumper.py:287
 msgid "Wrote: "
 msgstr "已寫入： "
 
-#: lib/isodumper.py:297
+#: lib/isodumper.py:299
 msgid " successfully written to "
 msgstr " 成功寫入到 "
 
-#: lib/isodumper.py:297
+#: lib/isodumper.py:299
 msgid "Image "
 msgstr "映像 "
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:300
 msgid "Bytes written: "
 msgstr "寫入位元組："
 

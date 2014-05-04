@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-02 19:59+0200\n"
+"POT-Creation-Date: 2014-05-04 16:03+0200\n"
 "PO-Revision-Date: 2014-01-05 16:46+0000\n"
 "Last-Translator: dtsiamasiotis <dtsiamasiotis@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/mageia/language/"
@@ -21,101 +21,101 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/isodumper.py:136
+#: lib/isodumper.py:138
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:174 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:176 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr "Εφεδρικό αρχείο στο:"
 
-#: lib/isodumper.py:175
+#: lib/isodumper.py:177
 msgid "Image: "
 msgstr "Εικόνα: "
 
-#: lib/isodumper.py:176
+#: lib/isodumper.py:178
 msgid "Target Device: "
 msgstr "Συσκευή προορισμού: "
 
-#: lib/isodumper.py:179
+#: lib/isodumper.py:181
 msgid "The device is too small to contain the ISO file."
 msgstr "Η συσκευή είναι πολύ μικρή για να χωρέσει το αρχείο ISO."
 
-#: lib/isodumper.py:186
+#: lib/isodumper.py:188
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Η συσκευή είναι μεγαλύτερη από 32 Gbytes. Είστε σίγουροι ότι θέλετε να την "
 "χρησιμοποιήσετε;"
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:221
 msgid "Unmounting all partitions of "
 msgstr "Αποπροσάρτηση όλων των διαμερισμάτων του "
 
-#: lib/isodumper.py:221
+#: lib/isodumper.py:223
 msgid "Trying to unmount "
 msgstr "Προσπάθεια για αποπροσάρτηση "
 
-#: lib/isodumper.py:227
+#: lib/isodumper.py:229
 msgid " was terminated by signal "
 msgstr " τερματίστηκε από το σήμα "
 
-#: lib/isodumper.py:227 lib/isodumper.py:233
+#: lib/isodumper.py:229 lib/isodumper.py:235
 msgid "Error, umount "
 msgstr "Σφάλμα, αποπροσάρτηση "
 
-#: lib/isodumper.py:231
+#: lib/isodumper.py:233
 msgid " successfully unmounted"
 msgstr " επιτυχής αποπροσάρτηση"
 
-#: lib/isodumper.py:233
+#: lib/isodumper.py:235
 msgid " returned "
 msgstr " επέστρεψε "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:238
 msgid "Execution failed: "
 msgstr "Αποτυχία εκτέλεσης: "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:246
 msgid "Could not read mtab !"
 msgstr "Αδυναμία ανάγνωσης του mtab !"
 
-#: lib/isodumper.py:252 lib/isodumper.py:275
+#: lib/isodumper.py:254 lib/isodumper.py:277
 msgid "Reading error."
 msgstr "Σφάλμα ανάγνωσης."
 
-#: lib/isodumper.py:258
+#: lib/isodumper.py:260
 msgid "You have not the rights for writing on the device"
 msgstr "Δεν έχετε δικαιώματα εγγραφής στη συσκευή"
 
-#: lib/isodumper.py:263 lib/isodumper.py:264
+#: lib/isodumper.py:265 lib/isodumper.py:266
 msgid " to "
 msgstr " προς "
 
-#: lib/isodumper.py:263
+#: lib/isodumper.py:265
 msgid "Writing "
 msgstr "Εγγραφή "
 
-#: lib/isodumper.py:264
+#: lib/isodumper.py:266
 msgid "Executing copy from "
 msgstr "Εκτέλεση αντιγραφής από"
 
-#: lib/isodumper.py:280 lib/isodumper.py:293 lib/isodumper.py:302
+#: lib/isodumper.py:282 lib/isodumper.py:295 lib/isodumper.py:304
 msgid "Writing error."
 msgstr "Σφάλμα εγγραφής."
 
-#: lib/isodumper.py:285
+#: lib/isodumper.py:287
 msgid "Wrote: "
 msgstr "Γραφτηκε: "
 
-#: lib/isodumper.py:297
+#: lib/isodumper.py:299
 msgid " successfully written to "
 msgstr " γράφτηκε επιτυχώς στο "
 
-#: lib/isodumper.py:297
+#: lib/isodumper.py:299
 msgid "Image "
 msgstr "Εικόνα "
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:300
 msgid "Bytes written: "
 msgstr "Εγγεγραμμένα bytes:"
 

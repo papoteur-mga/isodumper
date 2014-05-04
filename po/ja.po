@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-02 19:59+0200\n"
+"POT-Creation-Date: 2014-05-04 16:03+0200\n"
 "PO-Revision-Date: 2009-03-09 13:20+0000\n"
 "Last-Translator: Ikuya Awashiro <ikuya@fruitsbasket.info>\n"
 "Language-Team: Japanese <ja@li.org>\n"
@@ -19,101 +19,101 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: lib/isodumper.py:136
+#: lib/isodumper.py:138
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:174 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:176 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:175
+#: lib/isodumper.py:177
 msgid "Image: "
 msgstr "イメージ: "
 
-#: lib/isodumper.py:176
+#: lib/isodumper.py:178
 msgid "Target Device: "
 msgstr "ターゲットデバイス: "
 
-#: lib/isodumper.py:179
+#: lib/isodumper.py:181
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:186
+#: lib/isodumper.py:188
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:219
+#: lib/isodumper.py:221
 msgid "Unmounting all partitions of "
 msgstr "すべてのパーティションをアンマウント： "
 
-#: lib/isodumper.py:221
+#: lib/isodumper.py:223
 msgid "Trying to unmount "
 msgstr "アンマウントを試みています "
 
-#: lib/isodumper.py:227
+#: lib/isodumper.py:229
 msgid " was terminated by signal "
 msgstr " は次のシグナルを受け取り、終了しました: "
 
-#: lib/isodumper.py:227 lib/isodumper.py:233
+#: lib/isodumper.py:229 lib/isodumper.py:235
 msgid "Error, umount "
 msgstr "アンマウント時にエラーが発生: "
 
-#: lib/isodumper.py:231
+#: lib/isodumper.py:233
 msgid " successfully unmounted"
 msgstr " のアンマウントを完了しました"
 
-#: lib/isodumper.py:233
+#: lib/isodumper.py:235
 msgid " returned "
 msgstr " は次を返しました: "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:238
 msgid "Execution failed: "
 msgstr "実行に失敗しました: "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:246
 msgid "Could not read mtab !"
 msgstr "mtabを読み込めませんでした!"
 
-#: lib/isodumper.py:252 lib/isodumper.py:275
+#: lib/isodumper.py:254 lib/isodumper.py:277
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:258
+#: lib/isodumper.py:260
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:263 lib/isodumper.py:264
+#: lib/isodumper.py:265 lib/isodumper.py:266
 msgid " to "
 msgstr " → "
 
-#: lib/isodumper.py:263
+#: lib/isodumper.py:265
 msgid "Writing "
 msgstr "次のデバイスへ書き込み中 "
 
-#: lib/isodumper.py:264
+#: lib/isodumper.py:266
 #, fuzzy
 msgid "Executing copy from "
 msgstr "実行中: dd if="
 
-#: lib/isodumper.py:280 lib/isodumper.py:293 lib/isodumper.py:302
+#: lib/isodumper.py:282 lib/isodumper.py:295 lib/isodumper.py:304
 #, fuzzy
 msgid "Writing error."
 msgstr "次のデバイスへ書き込み中 "
 
-#: lib/isodumper.py:285
+#: lib/isodumper.py:287
 msgid "Wrote: "
 msgstr "書き込み: "
 
-#: lib/isodumper.py:297
+#: lib/isodumper.py:299
 msgid " successfully written to "
 msgstr " を次に書き込みました: "
 
-#: lib/isodumper.py:297
+#: lib/isodumper.py:299
 msgid "Image "
 msgstr "イメージ "
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:300
 msgid "Bytes written: "
 msgstr ""
 
@@ -245,24 +245,6 @@ msgstr ""
 " アプリケーションを終了すると、ログを \n"
 " ホームディレクトリに書き込みます。"
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "ddプロセスがエラーで終了しました!"
-
-#~ msgid "ImageWriter"
-#~ msgstr "イメージライター"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -275,3 +257,21 @@ msgstr ""
 #~ "\n"
 #~ " イメージを書き込めるUSBメモリを \n"
 #~ " 接続する必要があります。"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "イメージライター"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "ddプロセスがエラーで終了しました!"
+
+#~ msgid " "
+#~ msgstr " "
