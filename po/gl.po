@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-19 08:18+0200\n"
+"POT-Creation-Date: 2014-05-02 19:59+0200\n"
 "PO-Revision-Date: 2009-06-19 15:17+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
@@ -19,99 +19,99 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
 "X-Generator: Launchpad (build 16692)\n"
 
-#: lib/isodumper.py:112
+#: lib/isodumper.py:136
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:174 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:175
 msgid "Image: "
 msgstr "Imaxe: "
 
-#: lib/isodumper.py:156
+#: lib/isodumper.py:176
 msgid "Target Device: "
 msgstr "Dispositivo de destino: "
 
-#: lib/isodumper.py:159
+#: lib/isodumper.py:179
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:166
+#: lib/isodumper.py:186
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:192
+#: lib/isodumper.py:219
 msgid "Unmounting all partitions of "
 msgstr "Desmontando todas as particións de "
 
-#: lib/isodumper.py:194
+#: lib/isodumper.py:221
 msgid "Trying to unmount "
 msgstr "Tentando desmontar "
 
-#: lib/isodumper.py:200
+#: lib/isodumper.py:227
 msgid " was terminated by signal "
 msgstr " foi rematado polo sinal "
 
-#: lib/isodumper.py:200 lib/isodumper.py:206
+#: lib/isodumper.py:227 lib/isodumper.py:233
 msgid "Error, umount "
 msgstr "Ocorreu un erro ao desmontar "
 
-#: lib/isodumper.py:204
+#: lib/isodumper.py:231
 msgid " successfully unmounted"
 msgstr " desmontado correctamente"
 
-#: lib/isodumper.py:206
+#: lib/isodumper.py:233
 msgid " returned "
 msgstr " devolto "
 
-#: lib/isodumper.py:209
+#: lib/isodumper.py:236
 msgid "Execution failed: "
 msgstr "Fallou a execución "
 
-#: lib/isodumper.py:217
+#: lib/isodumper.py:244
 msgid "Could not read mtab !"
 msgstr "Non se pode ler mtab !"
 
-#: lib/isodumper.py:225 lib/isodumper.py:248
+#: lib/isodumper.py:252 lib/isodumper.py:275
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:231
+#: lib/isodumper.py:258
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:236 lib/isodumper.py:237
+#: lib/isodumper.py:263 lib/isodumper.py:264
 msgid " to "
 msgstr " a "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:263
 msgid "Writing "
 msgstr "Escribindo "
 
-#: lib/isodumper.py:237
+#: lib/isodumper.py:264
 msgid "Executing copy from "
 msgstr ""
 
-#: lib/isodumper.py:253 lib/isodumper.py:266 lib/isodumper.py:275
+#: lib/isodumper.py:280 lib/isodumper.py:293 lib/isodumper.py:302
 msgid "Writing error."
 msgstr ""
 
-#: lib/isodumper.py:258
+#: lib/isodumper.py:285
 msgid "Wrote: "
 msgstr "Escrito: "
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:297
 msgid " successfully written to "
 msgstr " escrito con éxito en "
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:297
 msgid "Image "
 msgstr "Imaxe "
 
-#: lib/isodumper.py:271
+#: lib/isodumper.py:298
 msgid "Bytes written: "
 msgstr ""
 
@@ -240,6 +240,24 @@ msgstr ""
 "rexistro da operación no seu directorio persoal\n"
 "si pecha a aplicación."
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "O proceso dd rematou cun erro !"
+
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -252,21 +270,3 @@ msgstr ""
 #~ "\n"
 #~ "Necesitas conectar un dispositivo de memoria USB\n"
 #~ "no que se poida escribir a imaxe."
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "O proceso dd rematou cun erro !"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid " "
-#~ msgstr " "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-19 08:18+0200\n"
+"POT-Creation-Date: 2014-05-02 19:59+0200\n"
 "PO-Revision-Date: 2009-04-03 18:33+0000\n"
 "Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
@@ -19,101 +19,101 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: lib/isodumper.py:112
+#: lib/isodumper.py:136
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:154 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:174 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:155
+#: lib/isodumper.py:175
 msgid "Image: "
 msgstr "Изображение: "
 
-#: lib/isodumper.py:156
+#: lib/isodumper.py:176
 msgid "Target Device: "
 msgstr "Целево устройство: "
 
-#: lib/isodumper.py:159
+#: lib/isodumper.py:179
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:166
+#: lib/isodumper.py:186
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:192
+#: lib/isodumper.py:219
 msgid "Unmounting all partitions of "
 msgstr "Демонтиране на всички дялове на "
 
-#: lib/isodumper.py:194
+#: lib/isodumper.py:221
 msgid "Trying to unmount "
 msgstr "Опит за демонтиране "
 
-#: lib/isodumper.py:200
+#: lib/isodumper.py:227
 msgid " was terminated by signal "
 msgstr " беше спрян от сигнал "
 
-#: lib/isodumper.py:200 lib/isodumper.py:206
+#: lib/isodumper.py:227 lib/isodumper.py:233
 msgid "Error, umount "
 msgstr "Грешка, демонтиране "
 
-#: lib/isodumper.py:204
+#: lib/isodumper.py:231
 msgid " successfully unmounted"
 msgstr " е демонтиран успешно"
 
-#: lib/isodumper.py:206
+#: lib/isodumper.py:233
 msgid " returned "
 msgstr " върна "
 
-#: lib/isodumper.py:209
+#: lib/isodumper.py:236
 msgid "Execution failed: "
 msgstr "Изпълнението се провали: "
 
-#: lib/isodumper.py:217
+#: lib/isodumper.py:244
 msgid "Could not read mtab !"
 msgstr "Файлът mtab не мож еда се прочете !"
 
-#: lib/isodumper.py:225 lib/isodumper.py:248
+#: lib/isodumper.py:252 lib/isodumper.py:275
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:231
+#: lib/isodumper.py:258
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:236 lib/isodumper.py:237
+#: lib/isodumper.py:263 lib/isodumper.py:264
 msgid " to "
 msgstr " на "
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:263
 msgid "Writing "
 msgstr "Записване "
 
-#: lib/isodumper.py:237
+#: lib/isodumper.py:264
 #, fuzzy
 msgid "Executing copy from "
 msgstr "Изпълнение на: dd if="
 
-#: lib/isodumper.py:253 lib/isodumper.py:266 lib/isodumper.py:275
+#: lib/isodumper.py:280 lib/isodumper.py:293 lib/isodumper.py:302
 #, fuzzy
 msgid "Writing error."
 msgstr "Записване "
 
-#: lib/isodumper.py:258
+#: lib/isodumper.py:285
 msgid "Wrote: "
 msgstr "Записа: "
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:297
 msgid " successfully written to "
 msgstr " е успешно записан на "
 
-#: lib/isodumper.py:270
+#: lib/isodumper.py:297
 msgid "Image "
 msgstr "Образ "
 
-#: lib/isodumper.py:271
+#: lib/isodumper.py:298
 msgid "Bytes written: "
 msgstr ""
 
@@ -244,6 +244,24 @@ msgstr ""
 " се запази отчет във вашата домашна\n"
 " папка, ако затворите програмата."
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Процесът dd завърши с грешка!"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -256,21 +274,3 @@ msgstr ""
 #~ "\n"
 #~ " Трябва да свържете USB стик,\n"
 #~ " на който да се запише образа."
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Процесът dd завърши с грешка!"
-
-#~ msgid " "
-#~ msgstr " "
