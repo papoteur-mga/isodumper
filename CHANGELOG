@@ -1,6 +1,13 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
+IsoDumper 0.21
+------------
+	  - added an "About isodumper" window "GtkAboutDialog".
+	  - Integration of find_devices in the main file.
+          - fix of the behaviour of windows, not closing the application after escape from the confirmation dialog.
+          - update all translations for new changes.
+
 IsoDumper 0.20
 ------------
 	  - added function to backup the content of the device before overwriting.
