@@ -13,4 +13,4 @@ TERM=xterm
 
 DIR=/usr/lib/isodumper
 
-$DIR/isodumper.py
+$DIR/isodumper.py $1

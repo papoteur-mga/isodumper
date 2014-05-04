@@ -56,10 +56,12 @@ def find_devices():
 
 
 class IsoDumper:
-    def __init__(self):
+    def __init__(self, user):
         APP="isodumper"
         DIR="/usr/share/locale"
         RELEASE="v0.21"
+        #	for the localisation of log file
+        self.user=user
 
         gettext.bindtextdomain(APP, DIR)
         gettext.textdomain(APP)
@@ -341,8 +343,10 @@ class IsoDumper:
     def write_logfile(self):
         start = self.log.get_start_iter()
         end = self.log.get_end_iter()
-        from os.path import expanduser
-        home = expanduser("~")
+        if (self.user != 'root') and (self.user !=''):
+          home='/home/'+self.user
+        else:
+            home='/root'
         if not(os.path.isdir(home+'/.isodumper')):
             os.mkdir(home+'/.isodumper')
         logfile=open(home+'/.isodumper/isodumper.log',"w")
@@ -379,5 +383,7 @@ class IsoDumper:
             #exit(0)
 
 if __name__ == "__main__":
-    app = IsoDumper()
+    import sys
+    user=sys.argv[1]
+    app = IsoDumper(user)
     gtk.main()
