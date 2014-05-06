@@ -1,4 +1,4 @@
-#!/usr/bin/python
+##!/usr/bin/python
 #  
 #  Copyright (c) 2007-2009 Canonical Ltd.
 #  
@@ -58,7 +58,7 @@ def find_devices():
 
 
 class IsoDumper:
-    def __init__(self):
+    def __init__(self,user):
         APP="isodumper"
         DIR="/usr/share/locale"
         RELEASE="v0.30"
@@ -68,6 +68,9 @@ class IsoDumper:
         gtk.glade.bindtextdomain(APP, DIR)
         gtk.glade.textdomain(APP)
 
+        #	for the localisation of log file
+
+        self.user=user
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
 #        self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
@@ -427,8 +430,10 @@ class IsoDumper:
     def write_logfile(self):
         start = self.log.get_start_iter()
         end = self.log.get_end_iter()
-        from os.path import expanduser
-        home = expanduser("~")
+        if (self.user != 'root') and (self.user !=''):
+            home='/home/'+self.user
+        else:
+            home='/root'
         if not(os.path.isdir(home+'/.isodumper')):
             os.mkdir(home+'/.isodumper')
         logfile=open(home+'/.isodumper/isodumper.log',"w")
@@ -466,5 +471,7 @@ class IsoDumper:
             dialog.hide()
 
 if __name__ == "__main__":
-    app = IsoDumper()
+    import sys
+    user=sys.argv[1]
+    app = IsoDumper(user)
     gtk.main()
