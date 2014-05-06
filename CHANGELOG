@@ -8,7 +8,12 @@ IsoDumper 0.30
 
 IsoDumper 0.21
 ------------
-	  - changed the behaviour after finalize the writing.
+	- added an "About isodumper" window "GtkAboutDialog".
+	- Integration of find_devices in the main file.
+          - fix of the behaviour of windows, not closing the application after escape from the confirmation dialog.
+          - fix transmission of the user name to write the log file at the good place
+          - update all translations for new changes.
+
 	  
 IsoDumper 0.20
 ------------
