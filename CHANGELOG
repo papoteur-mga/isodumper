@@ -1,14 +1,15 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
+IsoDumper 0.30
+------------
+	  - added function to format the device in Fat32, ntfs or ext4.
+	  - separated backup from writing.
+
 IsoDumper 0.21
 ------------
-	  - added an "About isodumper" window "GtkAboutDialog".
-	  - Integration of find_devices in the main file.
-          - fix of the behaviour of windows, not closing the application after escape from the confirmation dialog.
-          - fix transmission of the user name to write the log file at the good place
-          - update all translations for new changes.
-
+	  - changed the behaviour after finalize the writing.
+	  
 IsoDumper 0.20
 ------------
 	  - added function to backup the content of the device before overwriting.
