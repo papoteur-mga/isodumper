@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# imported from project Mintstick, by Clement Lefebvre
 
 import os, sys
 import getopt
