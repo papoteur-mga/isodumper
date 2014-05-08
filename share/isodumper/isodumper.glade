@@ -12,7 +12,7 @@
     <property name="has_separator">True</property>
     <property name="program_name">IsoDumper</property>
     <property name="version">v0.21</property>
-    <property name="copyright">© 2013-2014 Papoteur</property>
+    <property name="copyright">© 2013-2014 Mageia</property>
     <property name="comments" translatable="yes">A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter.</property>
     <property name="website">https://github.com/papoteur-mga/isodumper</property>
     <property name="website_label">IsoDumper</property>
@@ -357,27 +357,29 @@ consider it more useful to permit linking proprietary applications with the
 library.  If this is what you want to do, use the GNU Library General
 Public License instead of this License.
 </property>
-    <property name="authors">* Papoteur &lt;papoteur@mageialinux-online.org&gt;
+    <property name="authors">* Oliver Grawert
+
+* Papoteur &lt;papoteur@mageialinux-online.org&gt;
 
 * david.david &lt;david.david@mageialinux-online.org&gt;</property>
-    <property name="translator_credits">* Papoteur - (French)
-* Sergei Zivukov, AlexL, Yuri Chornoivan - (Russian)
+    <property name="translator_credits">* Papoteur, filorin - (French)
+* Sergei Zivukov, AlexL, Fox909 - (Russian)
 * Yuri Chornoivan - (Ukrainian)
 * marja - (Dutch)
 * motitos, Miguel Ortega - (Spanish)
 * Marcello Anni, killer1987 - (Italian)
 * Atilla ÖNTAŞ, tarakbumba - (Turkish)
 * Filip Komar - (Slovenian)
-* Kristoffer Grundström - (Swedish)
+* Kristoffer Grundström, Willard1975 - (Swedish)
 * You-Cheng Hsieh - Chinese (Taiwan)
 * Márcio Padula - (Brazilian Portuguese)
 * Florin Cătălin RUSSEN - (Romanian)
 * kiki.syahadat - (Indonesian)
-* Daniel Napora - (Polish)
-* taleon, Akien, latte - (German)
+* Daniel Napora, Tatsunoko - (Polish)
+* taleon, Akien, latte, user7 - (German)
 * Marek Laane - (Estonian)
-* dtsiamasiotis - (Greek)
-* fri - (Czech)
+* dtsiamasiotis, Dimitrios Glentadakis - (Greek)
+* fri, jui - (Czech)
 * Akien - (Danish)
 * richardshaylo - (English (United Kingdom))
 * alfalb_mansil - (Portuguese)</property>

@@ -36,24 +36,24 @@ Contributors
 
 Translators
 --------
-- Papoteur - French
-- Sergei Zivukov, AlexL, Yuri Chornoivan - Russian
+- Papoteur, filorin - French
+- Sergei Zivukov, AlexL, Fox909 - Russian
 - Yuri Chornoivan - Ukrainian
 - marja - Dutch
 - motitos, Miguel Ortega - Spanish
 - Marcello Anni, killer1987 - Italian
 - Atilla ÖNTAŞ, tarakbumba - Turkish
 - Filip Komar - Slovenian
-- Kristoffer Grundström - Swedish
+- Kristoffer Grundström, Willard1975 - Swedish
 - You-Cheng Hsieh - Chinese Taiwan
 - Márcio Padula - Brazilian Portuguese
 - Florin Cătălin RUSSEN - Romanian
 - kiki.syahadat - Indonesian
-- Daniel Napora - Polish
-- taleon, Akien, latte - German
+- Daniel Napora, Tatsunoko - Polish
+- taleon, Akien, latte, user7 - German
 - Marek Laane - Estonian
-- dtsiamasiotis - Greek
-- fri - Czech
+- dtsiamasiotis, Dimitrios Glentadakis - Greek
+- fri, jui - Czech
 - Akien - Danish
 - richardshaylo - English (United Kingdom)
 - alfalb_mansil - Portuguese
