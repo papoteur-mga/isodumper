@@ -72,7 +72,7 @@ class IsoDumper:
         self.user=user
 
         # get glade tree
-        self.gladefile = "/usr/share/isodumper/isodumper.glade"
+        self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -107,6 +107,7 @@ class IsoDumper:
                  "on_cancel_button_clicked" : self.close,
                  "on_emergency_button_clicked" : self.restore,
                  "on_success_button_clicked" : self.close,
+                 "on_confirm_cancel_button_clicked": self.restore,
                  "on_filechooserbutton_file_set" : self.activate_devicelist,
                  "on_detail_expander_activate" : self.expander_control,
                  "on_device_combobox_changed" : self.device_selected,

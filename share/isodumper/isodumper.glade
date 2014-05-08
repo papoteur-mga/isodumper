@@ -491,6 +491,7 @@ Public License instead of this License.
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_stock">True</property>
+                <signal name="clicked" handler="on_confirm_cancel_button_clicked" swapped="no"/>
               </widget>
               <packing>
                 <property name="expand">False</property>
@@ -661,7 +662,6 @@ Public License instead of this License.
     <property name="title" translatable="yes">Formatting the device</property>
     <property name="window_position">center</property>
     <property name="default_width">350</property>
-    <property name="icon_name">isodumper</property>
     <child>
       <widget class="GtkVBox" id="vbox1">
         <property name="visible">True</property>
