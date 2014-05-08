@@ -56,7 +56,7 @@ install: all
 
 	# for LIBFILES isodumper.py find_devices
 	mkdir -p $(DESTDIR)$(LIBDIR)/isodumper
-	install -m 755 lib/find_devices $(DESTDIR)$(LIBDIR)/isodumper
+#	install -m 755 lib/find_devices $(DESTDIR)$(LIBDIR)/isodumper
 	install -m 755 lib/isodumper.py $(DESTDIR)$(LIBDIR)/isodumper
 
 	# for DATADIR isodumper.py header.png

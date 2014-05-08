@@ -11,7 +11,7 @@
     <property name="type_hint">dialog</property>
     <property name="has_separator">True</property>
     <property name="program_name">IsoDumper</property>
-    <property name="version">v0.20</property>
+    <property name="version">v0.30</property>
     <property name="copyright">© 2013-2014 Mageia</property>
     <property name="comments" translatable="yes">A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter.</property>
     <property name="website">https://github.com/papoteur-mga/isodumper</property>
@@ -661,6 +661,7 @@ Public License instead of this License.
     <property name="title" translatable="yes">Formatting the device</property>
     <property name="window_position">center</property>
     <property name="default_width">350</property>
+    <property name="icon_name">isodumper</property>
     <child>
       <widget class="GtkVBox" id="vbox1">
         <property name="visible">True</property>

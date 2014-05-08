@@ -1,4 +1,4 @@
-##!/usr/bin/python
+#!/usr/bin/python
 #  
 #  Copyright (c) 2007-2009 Canonical Ltd.
 #  
@@ -21,7 +21,7 @@
 #  along with this program; if not, write to the Free Software Foundation,
 #  Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-#   Requires python-parted 
+#  Requires python-parted 
 
 import gtk
 import gtk.glade
@@ -68,12 +68,11 @@ class IsoDumper:
         gtk.glade.bindtextdomain(APP, DIR)
         gtk.glade.textdomain(APP)
 
-        #	for the localisation of log file
-
+        # for the localisation of log file
         self.user=user
+
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
-#        self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -95,7 +94,7 @@ class IsoDumper:
         self.chooser.set_filter(filt)
 
         
-        #   optionnal backup of the device
+        # optionnal backup of the device
         self.backup_select = self.wTree.get_widget("backup_select")
         self.backup_name = self.wTree.get_widget("backup_name")
         self.backup = self.wTree.get_widget("backup")
@@ -207,9 +206,9 @@ class IsoDumper:
     def raw_format(self, usb_path, fstype, label):
         if os.geteuid() > 0:
             launcher='pkexec'
-            self.process = Popen([launcher,'/usr/bin/python', '-u', '/documents/isodumper-dev/lib/raw_format.py','-d',usb_path,'-f',fstype, '-l', label, '-u', str(os.geteuid()), '-g', str(os.getgid())], shell=False, stdout=PIPE, preexec_fn=os.setsid)
+            self.process = Popen([launcher,'/usr/bin/python', '-u', '/usr/lib/isodumper/raw_format.py','-d',usb_path,'-f',fstype, '-l', label, '-u', str(os.geteuid()), '-g', str(os.getgid())], shell=False, stdout=PIPE, preexec_fn=os.setsid)
         else:
-            self.process = Popen(['/usr/bin/python', '-u', '/documents/isodumper-dev/lib/raw_format.py','-d',usb_path,'-f',fstype, '-l', label, '-u', str(os.geteuid()), '-g', str(os.getgid())], shell=False, stdout=PIPE, preexec_fn=os.setsid)
+            self.process = Popen(['/usr/bin/python', '-u', '/usr/lib/isodumper/raw_format.py','-d',usb_path,'-f',fstype, '-l', label, '-u', str(os.geteuid()), '-g', str(os.getgid())], shell=False, stdout=PIPE, preexec_fn=os.setsid)
         working=True
         while working:
             time.sleep(0.5)
