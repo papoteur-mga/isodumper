@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2014-03-02 04:34+0000\n"
+"PO-Revision-Date: 2014-04-21 17:45+0000\n"
 "Last-Translator: Padula <padula1000@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
 "mageia/language/pt_BR/)\n"
@@ -69,7 +69,7 @@ msgstr " desmontado com sucesso"
 
 #: lib/isodumper.py:235
 msgid " returned "
-msgstr " retornado"
+msgstr " retornando"
 
 #: lib/isodumper.py:238
 msgid "Execution failed: "
@@ -85,15 +85,15 @@ msgstr "Erro de leitura."
 
 #: lib/isodumper.py:260
 msgid "You have not the rights for writing on the device"
-msgstr "Você não possui permissão para escrever no dispositivo"
+msgstr "Você não possui permissão para gravar no dispositivo"
 
 #: lib/isodumper.py:265 lib/isodumper.py:266
 msgid " to "
-msgstr " para"
+msgstr " para "
 
 #: lib/isodumper.py:265
 msgid "Writing "
-msgstr "Transferindo"
+msgstr "Gravando "
 
 #: lib/isodumper.py:266
 msgid "Executing copy from "
@@ -101,11 +101,11 @@ msgstr "Execultando cópia para"
 
 #: lib/isodumper.py:282 lib/isodumper.py:295 lib/isodumper.py:304
 msgid "Writing error."
-msgstr "Erro de escrita."
+msgstr "Erro de gravação."
 
 #: lib/isodumper.py:287
 msgid "Wrote: "
-msgstr "Escreveu:"
+msgstr "Transferir"
 
 #: lib/isodumper.py:299
 msgid " successfully written to "
@@ -121,7 +121,7 @@ msgstr "Bytes usado:"
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr "Execultar Isodumper"
+msgstr "Execultando Isodumper"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
@@ -134,12 +134,14 @@ msgstr "IsoDumper"
 
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
-msgstr "Uma ferramenta GUI para escrever .img e .iso para chave USB"
+msgstr "Uma ferramenta GUI para gravar .img e .iso para chave USB"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Ferramenta para transferir imagens ISO para pendrive. É um fork do usb-"
+"ImageWriter."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"
@@ -155,7 +157,7 @@ msgid ""
 " the device during the following operation."
 msgstr ""
 "<b>Aviso</b>\n"
-" Isto irá <b>destruir todos os dados</b> do dispositivo\n"
+" Isto irá <b>apagar todos os dados</b> do dispositivo\n"
 " alvo, você tem certeza que deseja prosseguir ?\n"
 "\n"
 " Se for sim, por favor <b>não desplugue</b>\n"
@@ -179,11 +181,11 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"
-msgstr "Grave imagem:"
+msgstr "Gravar imagem:"
 
 #: share/isodumper/isodumper.glade.h:17
 msgid "Select an image file to be written to the device"
-msgstr "Selecionar um arquivo de imagem para ser escrito no dispositivo"
+msgstr "Selecionar um arquivo de imagem para ser gravado no dispositivo"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Select Image"
@@ -191,15 +193,16 @@ msgstr "Selecionar Imagem"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "to"
-msgstr "para"
+msgstr "para "
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "Select target device to write the image to"
-msgstr "Selecione o dispositivo de destino para gravar a imagem para"
+msgstr "Selecione o dispositivo de destino para gravar imagem para"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "Create a backup of the device as image to restore it later"
-msgstr "Crie um backup do dispositivo, como imagem para restaurá-lo mais tarde"
+msgstr ""
+"Criar um backup do dispositivo, como imagem para restaurá-lo mais tarde"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "(None)"
@@ -215,7 +218,7 @@ msgstr "Detalhes"
 
 #: share/isodumper/isodumper.glade.h:27
 msgid "Write to device"
-msgstr "Transferir para o dispositivo"
+msgstr "Gravar para o dispositivo"
 
 #: share/isodumper/isodumper.glade.h:28
 msgid ""
@@ -226,10 +229,10 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 "<b>Aviso</b>\n"
-" Não foi encontrado dispositivos de destino.\n"
+" Não foi encontrado dispositivos para o destino.\n"
 "\n"
-" Você precisa se conectar a uma Chave\n"
-" USB para que a imagem possa ser gravada."
+" Você precisa conectar um pendrive\n"
+" para que a imagem possa ser gravada."
 
 #: share/isodumper/isodumper.glade.h:33
 msgid ""

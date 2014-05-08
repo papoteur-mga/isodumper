@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the isodumper package.
 #
 # Translators:
+# killer1987 <marcello.anni@alice.it>, 2013
 # killer1987 <marcello.anni@alice.it>, 2013-2014
 # killer1987 <marcello.anni@alice.it>, 2013
 msgid ""
@@ -10,7 +11,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2014-01-06 11:42+0000\n"
+"PO-Revision-Date: 2014-05-07 12:50+0000\n"
 "Last-Translator: killer1987 <marcello.anni@alice.it>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/mageia/language/"
 "it/)\n"
@@ -139,6 +140,8 @@ msgstr ""
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Uno strumento per scrivere immagini ISO in una chiavetta USB. È un fork di "
+"usb-imagewriter."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

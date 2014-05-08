@@ -5,14 +5,15 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# Umeaboy <kristoffer.grundstrom1983@gmail.com>, 2013-2014
+# Kristoffer Grundströ <kristoffer.grundstrom1983@gmail.com>, 2013
+# Willard1975 <willard@null.net>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Mageia\n"
+"Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2013-12-10 18:59+0000\n"
-"Last-Translator: Umeaboy <kristoffer.grundstrom1983@gmail.com>\n"
+"PO-Revision-Date: 2014-05-06 21:10+0000\n"
+"Last-Translator: Willard1975 <willard@null.net>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/mageia/language/"
 "sv/)\n"
 "Language: sv\n"
@@ -140,6 +141,8 @@ msgstr ""
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Ett verktyg för att skriva ISO-avbildningar till ett USB-minne. Det är en "
+"förgrening av USB-imagewriter."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

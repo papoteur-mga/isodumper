@@ -6,14 +6,17 @@
 # jui <appukonrad@gmail.com>, 2013
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# fri <pavelfric@seznam.cz>, 2014
+# fri, 2014
+# jui <appukonrad@gmail.com>, 2014
+# jui <appukonrad@gmail.com>, 2013
+# fri, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2014-01-09 06:51+0000\n"
-"Last-Translator: fri <pavelfric@seznam.cz>\n"
+"PO-Revision-Date: 2014-04-24 12:54+0000\n"
+"Last-Translator: jui <appukonrad@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/mageia/language/"
 "cs/)\n"
 "Language: cs\n"
@@ -142,6 +145,7 @@ msgstr ""
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Nástroj pro zápis ISO obrazů na USB flash disk. Je to větev USB-ImageWriteru."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

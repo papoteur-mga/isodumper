@@ -5,6 +5,7 @@
 #
 # Translators:
 # Automatically generated, 2013
+# Fox909 <ffox909@mail.ru>, 2014
 # Sergei Zivukov <ekonomvygoda@yandex.ru>, 2013
 # AlexL <loginov.alex.valer@gmail.com>, 2013-2014
 msgid ""
@@ -12,8 +13,8 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2014-01-03 11:42+0300\n"
-"Last-Translator: AlexL <loginov.alex.valer@gmail.com>\n"
+"PO-Revision-Date: 2014-04-23 14:10+0000\n"
+"Last-Translator: Fox909 <ffox909@mail.ru>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/mageia/language/"
 "ru/)\n"
 "Language: ru\n"
@@ -141,6 +142,8 @@ msgstr "Графическая утилита для записи .img и .iso �
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Инструмент для записи ISO образов на USB флешку. Это ответвление USB-"
+"ImageWriter."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

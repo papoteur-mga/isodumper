@@ -6,13 +6,14 @@
 # Automatically generated, 2013
 # Daniel Napora <napcok@gmail.com>, 2013-2014
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
+# Tatsunoko <violamade@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2014-01-08 19:48+0000\n"
-"Last-Translator: Daniel Napora <napcok@gmail.com>\n"
+"PO-Revision-Date: 2014-04-30 09:02+0000\n"
+"Last-Translator: Tatsunoko <violamade@gmail.com>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/mageia/language/"
 "pl/)\n"
 "Language: pl\n"
@@ -139,6 +140,8 @@ msgstr "Narzędzie do zapisywania obrazów .img oraz .iso na USB"
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Narzędzie do zapisu obrazów ISO na pamięć USB. Jest rozwidleniem usb-"
+"imagewritera."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

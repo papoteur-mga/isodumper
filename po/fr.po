@@ -4,6 +4,7 @@
 #
 # Translators:
 # Automatically generated, 2013.
+# filorin <guillaume.ber17@laposte.net>, 2014
 # Papoteur <papoteur@mageialinux-online.org>, 2013.
 # papoteur, 2013.
 msgid ""
@@ -11,16 +12,15 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2013-12-29 15:30+0100\n"
-"Last-Translator: Papoteur\n"
-"Language-Team: French <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2014-04-21 14:42+0000\n"
+"Last-Translator: filorin <guillaume.ber17@laposte.net>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/mageia/language/"
+"fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"fr/)\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 1.4\n"
 
 #: lib/isodumper.py:138
 msgid "Mb"
@@ -141,6 +141,8 @@ msgstr "Outil graphique pour écrire des fichiers .img et .iso sur clés USB"
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Un outil pour écrire des images ISO sur une clé USB. C'est un fork de usb-"
+"imagewriter."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

@@ -3,18 +3,22 @@
 # This file is distributed under the same license as the isodumper package.
 #
 # Translators:
+# Akien <akien@mageia.org>, 2013
 # Automatically generated, 2013
 # taleon <cr@rt.fm>, 2013
 # latte, 2013
+# latte, 2013
 # Oliver Grawert <ogra@ubuntu.com>, 2008
 # Akien <akien@mageia.org>, 2013
+# taleon <cr@rt.fm>, 2013
+# user7 <wassipaul@gmx.at>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2013-12-30 09:31+0000\n"
-"Last-Translator: latte\n"
+"PO-Revision-Date: 2014-04-21 14:41+0000\n"
+"Last-Translator: user7 <wassipaul@gmx.at>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/mageia/language/"
 "de/)\n"
 "Language: de\n"
@@ -143,6 +147,8 @@ msgstr ""
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Ein Werkzeug, das ein ISO-Abbild auf einen USB-Stick schreibt. Es handelt "
+"sich um einen Fork von usb-imagewriter."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

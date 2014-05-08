@@ -8,10 +8,10 @@
 # You-Cheng Hsieh <yochenhsieh@gmail.com>, 2013~2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Mageia\n"
+"Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2014-01-01 09:08+0000\n"
+"PO-Revision-Date: 2014-05-08 09:08+0000\n"
 "Last-Translator: You-Cheng Hsieh <yochenhsieh@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/mageia/"
 "language/zh_TW/)\n"

@@ -6,12 +6,13 @@
 # tarakbumba . <tarakbumba@gmail.com>, 2013-2014
 # tarakbumba . <tarakbumba@gmail.com>, 2013
 # Automatically generated, 2013
+# tarakbumba . <tarakbumba@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2014-01-03 02:12+0000\n"
+"PO-Revision-Date: 2014-05-07 06:00+0000\n"
 "Last-Translator: tarakbumba . <tarakbumba@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/mageia/language/"
 "tr/)\n"
@@ -140,6 +141,8 @@ msgstr ""
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"ISO imajlarını bir USB belleğe yazmak için geliştirilmiş bir araçtır. usb-"
+"imagewriter uygulamasından çatallanmıştır."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

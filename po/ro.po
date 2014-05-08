@@ -5,13 +5,13 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>, 2013
+# Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2013-12-30 15:03+0000\n"
+"PO-Revision-Date: 2014-04-22 12:30+0000\n"
 "Last-Translator: Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>\n"
 "Language-Team: Romanian (http://www.transifex.com/projects/p/mageia/language/"
 "ro/)\n"
@@ -140,6 +140,8 @@ msgstr ""
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"O unealtă pentru scrierea imaginilor ISO pe o cheie USB. Este derivată din "
+"usb-imagewriter."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

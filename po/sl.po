@@ -5,14 +5,14 @@
 # Translators:
 # Automatically generated, 2013
 # filip.komar <filip.komar@gmail.com>, 2013
-# filip.komar <filip.komar@gmail.com>, 2013
+# filip.komar <filip.komar@gmail.com>, 2013-2014
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2013-12-30 11:47+0000\n"
+"PO-Revision-Date: 2014-04-21 14:41+0000\n"
 "Last-Translator: filip.komar <filip.komar@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/mageia/"
 "language/sl/)\n"
@@ -144,6 +144,8 @@ msgstr ""
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Orodje za zapis odtisov diska na ključ USB. Izhaja iz programa usb-"
+"imagewriter."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

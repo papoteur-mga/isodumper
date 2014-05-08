@@ -4,6 +4,7 @@
 #
 # Translators:
 # Automatically generated, 2013
+# Miguel Ortega, 2013-2014
 # Miguel Ortega, 2013
 # Miguel Ortega, 2013
 msgid ""
@@ -11,7 +12,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2013-12-31 07:20+0000\n"
+"PO-Revision-Date: 2014-05-07 06:40+0000\n"
 "Last-Translator: Miguel Ortega\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/mageia/language/"
 "es/)\n"
@@ -139,6 +140,8 @@ msgstr ""
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Una herramienta para grabar imágenes ISO en unidades USB extraíbles. Está "
+"basado en usb-imagewritter."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

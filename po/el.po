@@ -4,6 +4,7 @@
 #
 # Translators:
 # Automatically generated, 2013
+# Dimitrios Glentadakis <dglent@free.fr>, 2014
 # dtsiamasiotis <dtsiamasiotis@gmail.com>, 2013-2014
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
 msgid ""
@@ -11,8 +12,8 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2014-01-05 16:46+0000\n"
-"Last-Translator: dtsiamasiotis <dtsiamasiotis@gmail.com>\n"
+"PO-Revision-Date: 2014-04-30 04:30+0000\n"
+"Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/mageia/language/"
 "el/)\n"
 "Language: el\n"
@@ -141,6 +142,8 @@ msgstr ""
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Ένα εργαλείο εγγραφής εικόνων ISO σε ένα USB stick. Είναι ένα fork του usb-"
+"imagewriter."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"

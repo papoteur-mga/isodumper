@@ -5,13 +5,15 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
+# kiki.syahadat <kiki.syahadat@yahoo.co.id>, 2014
+# kiki.syahadat <kiki.syahadat@yahoo.co.id>, 2013
 # kiki.syahadat <kiki.syahadat@yahoo.co.id>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-04 16:03+0200\n"
-"PO-Revision-Date: 2013-12-31 04:10+0000\n"
+"PO-Revision-Date: 2014-05-08 07:20+0000\n"
 "Last-Translator: kiki.syahadat <kiki.syahadat@yahoo.co.id>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/mageia/"
 "language/id/)\n"
@@ -139,6 +141,7 @@ msgstr "Alat GUI untuk menulis file .img dan .iso ke flashdisk"
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Alat untuk menulis image ISO ke USB. Ini adalah fork dari usb-imagewriter."
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"
