@@ -73,6 +73,7 @@ class IsoDumper:
 
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
+        #self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -174,6 +175,7 @@ class IsoDumper:
         write_button.set_sensitive(False)
         self.devicelist.set_sensitive(False)
         dialog=self.wTree.get_widget("format")
+        dialog.present()
         self.wTree.get_widget("format_device").set_text(self.dev)
         self.wTree.get_widget("format_name").set_text(self.dev.split('(')[0])
         exit_dialog=dialog.show_all()
