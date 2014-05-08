@@ -138,6 +138,7 @@ msgstr "一個寫入 .img 和 .iso 檔案到 USB 隨身碟的 GUI 工具"
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"一個將 ISO 映像檔寫到 USB 隨身碟上的工具。它是一個 usb-imagewriter 的分支版本。"
 
 #: share/isodumper/isodumper.glade.h:3
 msgid "Select"
