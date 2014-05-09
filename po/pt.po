@@ -5,7 +5,7 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# alfalb_mansil <manuela.silva@sky.com>, 2013-2014
+# Manuela Silva <manuela.silva@sky.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
