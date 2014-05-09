@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-04 16:03+0200\n"
+"POT-Creation-Date: 2014-05-09 14:32+0200\n"
 "PO-Revision-Date: 2014-04-24 12:54+0000\n"
 "Last-Translator: jui <appukonrad@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/mageia/language/"
@@ -25,100 +25,116 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: lib/isodumper.py:138
+#: lib/isodumper.py:145
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:176 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:224
+msgid "The device was formatted successfully."
+msgstr ""
+
+#: lib/isodumper.py:228
+msgid "An error occured while creating a partition."
+msgstr ""
+
+#: lib/isodumper.py:230
+msgid "Authentication error."
+msgstr ""
+
+#: lib/isodumper.py:232
+msgid "An error occurred."
+msgstr ""
+
+#: lib/isodumper.py:255 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
 msgstr "Záloha za:"
 
-#: lib/isodumper.py:177
+#: lib/isodumper.py:271
 msgid "Image: "
 msgstr "Obraz: "
 
-#: lib/isodumper.py:178
+#: lib/isodumper.py:272
 msgid "Target Device: "
 msgstr "Cílové zařízení: "
 
-#: lib/isodumper.py:181
+#: lib/isodumper.py:275
 msgid "The device is too small to contain the ISO file."
 msgstr "Zařízení je příliš malé, aby mohlo obsahovat soubor ISO."
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:282
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Zařízení je větší než 32 GB. Jste si jisti, že ho chcete opravdu použít?"
 
-#: lib/isodumper.py:221
+#: lib/isodumper.py:309
 msgid "Unmounting all partitions of "
 msgstr "Odpojuji všechny oddíly "
 
-#: lib/isodumper.py:223
+#: lib/isodumper.py:311
 msgid "Trying to unmount "
 msgstr "Pokouším se odpojit "
 
-#: lib/isodumper.py:229
+#: lib/isodumper.py:317
 msgid " was terminated by signal "
 msgstr " bylo přerušeno signálem "
 
-#: lib/isodumper.py:229 lib/isodumper.py:235
+#: lib/isodumper.py:317 lib/isodumper.py:323
 msgid "Error, umount "
 msgstr "Chyba, odpojení "
 
-#: lib/isodumper.py:233
+#: lib/isodumper.py:321
 msgid " successfully unmounted"
 msgstr " úspěšně odpojen"
 
-#: lib/isodumper.py:235
+#: lib/isodumper.py:323
 msgid " returned "
 msgstr " vrátilo "
 
-#: lib/isodumper.py:238
+#: lib/isodumper.py:326
 msgid "Execution failed: "
 msgstr "Spuštění selhalo: "
 
-#: lib/isodumper.py:246
+#: lib/isodumper.py:334
 msgid "Could not read mtab !"
 msgstr "Nemohu přečíst mtab!"
 
-#: lib/isodumper.py:254 lib/isodumper.py:277
+#: lib/isodumper.py:342 lib/isodumper.py:365
 msgid "Reading error."
 msgstr "Chyba při čtení."
 
-#: lib/isodumper.py:260
+#: lib/isodumper.py:348
 msgid "You have not the rights for writing on the device"
 msgstr "Nemáte práva pro zápis na zařízení"
 
-#: lib/isodumper.py:265 lib/isodumper.py:266
+#: lib/isodumper.py:353 lib/isodumper.py:354
 msgid " to "
 msgstr " do "
 
-#: lib/isodumper.py:265
+#: lib/isodumper.py:353
 msgid "Writing "
 msgstr "Zapisuji "
 
-#: lib/isodumper.py:266
+#: lib/isodumper.py:354
 msgid "Executing copy from "
 msgstr "Kopíruje se z"
 
-#: lib/isodumper.py:282 lib/isodumper.py:295 lib/isodumper.py:304
+#: lib/isodumper.py:370 lib/isodumper.py:383 lib/isodumper.py:392
 msgid "Writing error."
 msgstr "Chyba při zápisu."
 
-#: lib/isodumper.py:287
+#: lib/isodumper.py:375
 msgid "Wrote: "
 msgstr "Zapsáno: "
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:387
 msgid " successfully written to "
 msgstr " byl úspěšně zapsán do "
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:387
 msgid "Image "
 msgstr "Obraz "
 
-#: lib/isodumper.py:300
+#: lib/isodumper.py:388
 msgid "Bytes written: "
 msgstr "Zapsáno bytů:"
 
@@ -184,46 +200,98 @@ msgstr ""
 " homedir/.isodumper/, až bude aplikace zavřena."
 
 #: share/isodumper/isodumper.glade.h:16
-msgid "Write Image:"
-msgstr "Zapsat obraz:"
+msgid "Formatting the device"
+msgstr ""
 
 #: share/isodumper/isodumper.glade.h:17
-msgid "Select an image file to be written to the device"
-msgstr "Zvolte soubor obrazu, který chcete zapsat na zařízení"
+msgid "label"
+msgstr ""
 
 #: share/isodumper/isodumper.glade.h:18
-msgid "Select Image"
-msgstr "Zvolte obraz"
+msgid "Label for the device:"
+msgstr ""
 
 #: share/isodumper/isodumper.glade.h:19
-msgid "to"
-msgstr "do"
+msgid "FAT 32 (Windows)"
+msgstr ""
 
 #: share/isodumper/isodumper.glade.h:20
+msgid "The standard. The size of files are limited to 4Gb"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:21
+msgid "NTFS (Windows)"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:22
+msgid "To handle files bigger than 4Gb"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:23
+msgid "ext4 (Linux)"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:24
+msgid "Only for Linux systems"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:25
+msgid "Device to work on:"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
 msgstr "Zvolte cílové zařízení, na které chcete obraz zapsat"
 
-#: share/isodumper/isodumper.glade.h:21
-msgid "Create a backup of the device as image to restore it later"
-msgstr "Vytvořit zálohu zařízení jako obraz pro jeho pozdější obnovení"
-
-#: share/isodumper/isodumper.glade.h:24
-msgid "(None)"
-msgstr "(žádná)"
-
-#: share/isodumper/isodumper.glade.h:25
-msgid "Select a folder in which to write the backup image"
-msgstr "Zvolte složku, do které se má zapsat obraz se zálohou"
-
-#: share/isodumper/isodumper.glade.h:26
-msgid "Details"
-msgstr "Podrobnosti"
-
 #: share/isodumper/isodumper.glade.h:27
+msgid "Write Image:"
+msgstr "Zapsat obraz:"
+
+#: share/isodumper/isodumper.glade.h:28
+msgid "Select an image file to be written to the device"
+msgstr "Zvolte soubor obrazu, který chcete zapsat na zařízení"
+
+#: share/isodumper/isodumper.glade.h:29
+msgid "Select Image"
+msgstr "Zvolte obraz"
+
+#: share/isodumper/isodumper.glade.h:30
 msgid "Write to device"
 msgstr "Zapsat na zařízení"
 
-#: share/isodumper/isodumper.glade.h:28
+#: share/isodumper/isodumper.glade.h:31
+msgid "Create a backup of the device as image to restore it later"
+msgstr "Vytvořit zálohu zařízení jako obraz pro jeho pozdější obnovení"
+
+#: share/isodumper/isodumper.glade.h:34
+msgid "(None)"
+msgstr "(žádná)"
+
+#: share/isodumper/isodumper.glade.h:35
+msgid "Select a folder in which to write the backup image"
+msgstr "Zvolte složku, do které se má zapsat obraz se zálohou"
+
+#: share/isodumper/isodumper.glade.h:36
+msgid "Backup the device"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:37
+msgid "Format the device in FAT, NTFS or ext:"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:38
+msgid "Choose the format. The device will be formatted in one partition"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:39
+msgid "Format the device"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:40
+msgid "Details"
+msgstr "Podrobnosti"
+
+#: share/isodumper/isodumper.glade.h:41
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -237,7 +305,7 @@ msgstr ""
 " Je potřeba, abyste zastrčili zařízení USB,\n"
 " na které lze obraz zapsat."
 
-#: share/isodumper/isodumper.glade.h:33
+#: share/isodumper/isodumper.glade.h:46
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"

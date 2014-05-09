@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-04 16:03+0200\n"
+"POT-Creation-Date: 2014-05-09 14:32+0200\n"
 "PO-Revision-Date: 2014-04-21 14:41+0000\n"
 "Last-Translator: user7 <wassipaul@gmx.at>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/mageia/language/"
@@ -27,100 +27,116 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/isodumper.py:138
+#: lib/isodumper.py:145
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:176 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:224
+msgid "The device was formatted successfully."
+msgstr ""
+
+#: lib/isodumper.py:228
+msgid "An error occured while creating a partition."
+msgstr ""
+
+#: lib/isodumper.py:230
+msgid "Authentication error."
+msgstr ""
+
+#: lib/isodumper.py:232
+msgid "An error occurred."
+msgstr ""
+
+#: lib/isodumper.py:255 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
 msgstr "Sichern nach:"
 
-#: lib/isodumper.py:177
+#: lib/isodumper.py:271
 msgid "Image: "
 msgstr "Image: "
 
-#: lib/isodumper.py:178
+#: lib/isodumper.py:272
 msgid "Target Device: "
 msgstr "Ziel Gerät: "
 
-#: lib/isodumper.py:181
+#: lib/isodumper.py:275
 msgid "The device is too small to contain the ISO file."
 msgstr "Dieses Gerät ist zu kein, um die ISO-Datei zu beinhalten."
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:282
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Dieses Gerät ist größer als 32 Gbytes. Wollen Sie dieses wirklich verwenden?"
 
-#: lib/isodumper.py:221
+#: lib/isodumper.py:309
 msgid "Unmounting all partitions of "
 msgstr "Aushängen aller Partitionen von "
 
-#: lib/isodumper.py:223
+#: lib/isodumper.py:311
 msgid "Trying to unmount "
 msgstr "Versuche aushängen von "
 
-#: lib/isodumper.py:229
+#: lib/isodumper.py:317
 msgid " was terminated by signal "
 msgstr " wurde beendet mit Signal "
 
-#: lib/isodumper.py:229 lib/isodumper.py:235
+#: lib/isodumper.py:317 lib/isodumper.py:323
 msgid "Error, umount "
 msgstr "Fehler, Aushängen von "
 
-#: lib/isodumper.py:233
+#: lib/isodumper.py:321
 msgid " successfully unmounted"
 msgstr " erfolgreich ausgehängt"
 
-#: lib/isodumper.py:235
+#: lib/isodumper.py:323
 msgid " returned "
 msgstr " hatte Rückgabewert "
 
-#: lib/isodumper.py:238
+#: lib/isodumper.py:326
 msgid "Execution failed: "
 msgstr "Ausführen fehlgeschlagen: "
 
-#: lib/isodumper.py:246
+#: lib/isodumper.py:334
 msgid "Could not read mtab !"
 msgstr "Konnte mtab nicht lesen !"
 
-#: lib/isodumper.py:254 lib/isodumper.py:277
+#: lib/isodumper.py:342 lib/isodumper.py:365
 msgid "Reading error."
 msgstr "Lesefehler."
 
-#: lib/isodumper.py:260
+#: lib/isodumper.py:348
 msgid "You have not the rights for writing on the device"
 msgstr "Sie haben nicht die Rechte, um auf dieses Gerät zu schreiben."
 
-#: lib/isodumper.py:265 lib/isodumper.py:266
+#: lib/isodumper.py:353 lib/isodumper.py:354
 msgid " to "
 msgstr " auf "
 
-#: lib/isodumper.py:265
+#: lib/isodumper.py:353
 msgid "Writing "
 msgstr "Schreibe "
 
-#: lib/isodumper.py:266
+#: lib/isodumper.py:354
 msgid "Executing copy from "
 msgstr "Ausführen der Kopie von"
 
-#: lib/isodumper.py:282 lib/isodumper.py:295 lib/isodumper.py:304
+#: lib/isodumper.py:370 lib/isodumper.py:383 lib/isodumper.py:392
 msgid "Writing error."
 msgstr "Schreibfehler."
 
-#: lib/isodumper.py:287
+#: lib/isodumper.py:375
 msgid "Wrote: "
 msgstr "Geschrieben: "
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:387
 msgid " successfully written to "
 msgstr " erfolgreich geschschrieben nach "
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:387
 msgid "Image "
 msgstr "Abbild "
 
-#: lib/isodumper.py:300
+#: lib/isodumper.py:388
 msgid "Bytes written: "
 msgstr "Bytes geschrieben:"
 
@@ -188,49 +204,101 @@ msgstr ""
 " homedir/.isodumper gespeichert, sobald Sie die Anwendung schließen."
 
 #: share/isodumper/isodumper.glade.h:16
-msgid "Write Image:"
-msgstr "Schreibe Abbild:"
+msgid "Formatting the device"
+msgstr ""
 
 #: share/isodumper/isodumper.glade.h:17
-msgid "Select an image file to be written to the device"
-msgstr "Abbild wählen, das auf das Zielgerät geschrieben werden soll"
+msgid "label"
+msgstr ""
 
 #: share/isodumper/isodumper.glade.h:18
-msgid "Select Image"
-msgstr "Abbild wählen"
+msgid "Label for the device:"
+msgstr ""
 
 #: share/isodumper/isodumper.glade.h:19
-msgid "to"
-msgstr "nach"
+msgid "FAT 32 (Windows)"
+msgstr ""
 
 #: share/isodumper/isodumper.glade.h:20
+msgid "The standard. The size of files are limited to 4Gb"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:21
+msgid "NTFS (Windows)"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:22
+msgid "To handle files bigger than 4Gb"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:23
+msgid "ext4 (Linux)"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:24
+msgid "Only for Linux systems"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:25
+msgid "Device to work on:"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
 msgstr "Zielgerat auswählen, auf welches das Abbild geschrieben werden soll"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:27
+msgid "Write Image:"
+msgstr "Schreibe Abbild:"
+
+#: share/isodumper/isodumper.glade.h:28
+msgid "Select an image file to be written to the device"
+msgstr "Abbild wählen, das auf das Zielgerät geschrieben werden soll"
+
+#: share/isodumper/isodumper.glade.h:29
+msgid "Select Image"
+msgstr "Abbild wählen"
+
+#: share/isodumper/isodumper.glade.h:30
+msgid "Write to device"
+msgstr "Gerät beschreiben"
+
+#: share/isodumper/isodumper.glade.h:31
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 "Eine Sicherungskopie als Image auf einem Gerät erstellen um es später  "
 "wiederherstellen zu können"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:34
 msgid "(None)"
 msgstr "(keine)"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:35
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 "Auswählen eines Ordners, in dem das Backup-Image geschrieben werden soll"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:36
+msgid "Backup the device"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:37
+msgid "Format the device in FAT, NTFS or ext:"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:38
+msgid "Choose the format. The device will be formatted in one partition"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:39
+msgid "Format the device"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:40
 msgid "Details"
 msgstr "Details"
 
-#: share/isodumper/isodumper.glade.h:27
-msgid "Write to device"
-msgstr "Gerät beschreiben"
-
-#: share/isodumper/isodumper.glade.h:28
+#: share/isodumper/isodumper.glade.h:41
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -244,7 +312,7 @@ msgstr ""
 " Sie müssen einen USB-Stick einstecken,\n"
 " auf welchem das Abbild geschrieben werden kann."
 
-#: share/isodumper/isodumper.glade.h:33
+#: share/isodumper/isodumper.glade.h:46
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
