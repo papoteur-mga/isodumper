@@ -1,5 +1,5 @@
 Name:		isodumper
-Version:	0.21
+Version:	0.30
 Release:	%mkrel 1
 Summary:	Tool for writing ISO images on a USB stick
 Summary(fr_FR):	Outil pour écrire des images ISO sur une clé USB
@@ -19,6 +19,7 @@ Requires:	polkit
 Requires:	procps
 Requires:	pygtk2.0-libglade
 Requires:	python
+Requires:	python-parted
 Requires:	udisks
 Requires:	xterm
 

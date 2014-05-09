@@ -21,6 +21,8 @@
 #  along with this program; if not, write to the Free Software Foundation,
 #  Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
+#  Requires python-parted
+
 import gtk
 import gtk.glade
 import gobject
@@ -28,7 +30,8 @@ import os
 import io
 import gettext
 from gettext import gettext as _
-from subprocess import call
+from subprocess import call, Popen, PIPE
+import time
 
 def find_devices():
     import dbus
@@ -51,25 +54,26 @@ def find_devices():
     		item.append(path)
     		item.append(size)
     		list.append(item)
-    print list
     return list
 
 
 class IsoDumper:
-    def __init__(self, user):
+    def __init__(self,user):
         APP="isodumper"
         DIR="/usr/share/locale"
-        RELEASE="v0.21"
-        #	for the localisation of log file
-        self.user=user
+        RELEASE="v0.30"
 
         gettext.bindtextdomain(APP, DIR)
         gettext.textdomain(APP)
         gtk.glade.bindtextdomain(APP, DIR)
         gtk.glade.textdomain(APP)
 
+        # for the localisation of log file
+        self.user=user
+
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
+#        self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -91,7 +95,7 @@ class IsoDumper:
         self.chooser.set_filter(filt)
 
         
-        #   optionnal backup of the device
+        # optionnal backup of the device
         self.backup_select = self.wTree.get_widget("backup_select")
         self.backup_name = self.wTree.get_widget("backup_name")
         self.backup = self.wTree.get_widget("backup")
@@ -102,17 +106,20 @@ class IsoDumper:
         # set callbacks
         dict = { "on_main_dialog_destroy" : self.close,
                  "on_cancel_button_clicked" : self.close,
-                 "on_emergency_button_clicked" : self.close,
+                 "on_emergency_button_clicked" : self.restore,
                  "on_success_button_clicked" : self.close,
+                 "on_confirm_cancel_button_clicked": self.restore,
                  "on_filechooserbutton_file_set" : self.activate_devicelist,
-                 "on_backup_name_file_set" : self.activate_backup,
                  "on_detail_expander_activate" : self.expander_control,
                  "on_device_combobox_changed" : self.device_selected,
                  "on_nodev_close_clicked" : self.close,
-                 "on_backup_toggled" : self.enable_backup,
+                 "on_backup_button_clicked" : self.backup_go,
                  "on_backup_select_clicked" : self.backup_sel,
                  "on_select_clicked" : self.backup_choosed,
                  "on_about_button_clicked" : self.about,
+                 "on_format_button_clicked" : self.format_dialog,
+                 "on_format_cancel_clicked" : self.format_cancel,
+                 "on_format_go_clicked" : self.do_format,
                  "on_write_button_clicked" : self.do_write}
         self.wTree.signal_autoconnect(dict)
 
@@ -130,38 +137,126 @@ class IsoDumper:
             if (exit_dialog==2) :
                 dialog.destroy()
                 exit(0)
-        self.combo = self.wTree.get_widget("device_combobox")
+#        self.combo = self.wTree.get_widget("device_combobox")
         for name, path, size in list:
             self.deviceSize=size
                 # convert in Mbytes
             sizeM=str(int(size)/(1024*1024))
-            self.combo.append_text(name+' ('+path.lstrip()+') '+sizeM+_('Mb'))
+            self.devicelist.append_text(name+' ('+path.lstrip()+') '+sizeM+_('Mb'))
         dialog.destroy()
 
         
     def device_selected(self, widget):
-        write_button = self.wTree.get_widget("write_button")
-        write_button.set_sensitive(True)
-        self.dev = self.combo.get_active_text()
-
-    def enable_backup(self,widget) :
-        self.backup_select.set_sensitive(not self.backup_select.get_sensitive())
+        self.dev = self.devicelist.get_active_text()
+        self.backup_select.set_sensitive(True)
+        self.wTree.get_widget("format_button").set_sensitive(True)
+        self.wTree.get_widget("filechooserbutton").set_sensitive(True)
 
     def backup_sel(self,widget):
         self.choose.show_all()
 
     def backup_choosed(self, widget):
         exit_dialog=self.backup_bname.get_filename()
-        if exit_dialog == None:
-            # No backup file name indicated
-            # Unckeck the choice to backup
-            self.backup.set_active(0)
-        else:
+        if exit_dialog != None:
             # Add .iso if not specified
             if not exit_dialog.lower().endswith('.iso'):
                 exit_dialog=exit_dialog+".iso"
             self.backup_select.set_label(exit_dialog)
+            self.wTree.get_widget("backup_button").set_sensitive(True)
         self.choose.hide()
+
+    def format_dialog(self,widget):
+        self.backup_select.set_sensitive(False)
+        format_button=self.wTree.get_widget("format_button")
+        format_button.set_sensitive(False)
+        filechooserbutton=self.wTree.get_widget("filechooserbutton")
+        filechooserbutton.set_sensitive(False)
+        write_button = self.wTree.get_widget("write_button")
+        write_button.set_sensitive(False)
+        self.devicelist.set_sensitive(False)
+        dialog=self.wTree.get_widget("format")
+        dialog.present()
+        self.wTree.get_widget("format_device").set_text(self.dev)
+        self.wTree.get_widget("format_name").set_text(self.dev.split('(')[0])
+        exit_dialog=dialog.show_all()
+        if exit_dialog==0:
+            dialog.hide()
+
+    def do_format(self, widget)            :
+        target = self.dev.split('(')[1].split(')')[0]
+        dialog = self.wTree.get_widget("confirm_dialog")
+        resp = dialog.run()
+        dev_name=self.wTree.get_widget("format_name").get_text()
+        if resp:
+            dialog.hide()
+            if self.wTree.get_widget("format_fat").get_active():
+                self.raw_format(target, 'fat32', dev_name.upper()[:11])
+            if self.wTree.get_widget("format_ntfs").get_active():
+                self.raw_format(target, 'ntfs', dev_name[:32])
+            if self.wTree.get_widget("format_ext4").get_active():
+                self.raw_format(target, 'ext4', dev_name)
+        else:
+            dialog.hide()
+
+    def restore(self,widget):
+        self.backup_select.set_sensitive(True)
+        self.wTree.get_widget("format_button").set_sensitive(True)
+        self.wTree.get_widget("filechooserbutton").set_sensitive(True)
+        self.devicelist.set_sensitive(True)
+        self.write_logfile()
+        self.wTree.get_widget("emergency_dialog").hide()
+
+    def raw_format(self, usb_path, fstype, label):
+        if os.geteuid() > 0:
+            launcher='pkexec'
+            self.process = Popen([launcher,'/usr/bin/python', '-u', '/usr/lib/isodumper/raw_format.py','-d',usb_path,'-f',fstype, '-l', label, '-u', str(os.geteuid()), '-g', str(os.getgid())], shell=False, stdout=PIPE, preexec_fn=os.setsid)
+        else:
+            self.process = Popen(['/usr/bin/python', '-u', '/usr/lib/isodumper/raw_format.py','-d',usb_path,'-f',fstype, '-l', label, '-u', str(os.geteuid()), '-g', str(os.getgid())], shell=False, stdout=PIPE, preexec_fn=os.setsid)
+        working=True
+        while working:
+            time.sleep(0.5)
+            self.process.poll()
+            rc=self.process.returncode
+            if rc is None:
+                working=True
+            else:
+                if rc == 0:
+                    message = _('The device was formatted successfully.')
+                    self.logger(message)
+                    self.success()
+                elif rc == 5:
+                    message = _("An error occured while creating a partition.")
+                elif rc == 127:
+                    message = _('Authentication error.')
+                else:
+                    message = _('An error occurred.')
+                self.wTree.get_widget("format").hide()
+                self.logger(message)
+                self.emergency()
+                self.process = None
+                working= False
+                self.backup_select.set_sensitive(True)
+                self.wTree.get_widget("format_button").set_sensitive(True)
+                self.wTree.get_widget("filechooserbutton").set_sensitive(True)
+
+    def format_cancel(self, widget):
+        dialog=self.wTree.get_widget("format")
+        dialog.hide()
+        self.backup_select.set_sensitive(True)
+        format_button=self.wTree.get_widget("format_button")
+        filechooserbutton=self.wTree.get_widget("filechooserbutton")
+        format_button.set_sensitive(True)
+        filechooserbutton.set_sensitive(True)
+        self.devicelist.set_sensitive(True)
+
+    def backup_go(self,widget):
+        dest = self.backup_select.get_label()
+        source = self.dev.split('(')[1].split(')')[0]
+        self.logger(_('Backup in:')+' '+dest)
+        task = self.raw_write(source, dest, eval(self.deviceSize))
+        gobject.idle_add(task.next)
+        while gtk.events_pending():
+            gtk.main_iteration(True)
 
     def do_write(self, widget):
         write_button = self.wTree.get_widget("write_button")
@@ -171,9 +266,8 @@ class IsoDumper:
         source = self.chooser.get_filename()
         target = self.dev.split('(')[1].split(')')[0]
         dialog = self.wTree.get_widget("confirm_dialog")
-        if self.backup.get_active() :
-            backup_dest=self.backup_select.get_label()
-            self.logger(_('Backup in:')+' '+backup_dest)
+#        if self.backup.get_active() :
+#            backup_dest=self.backup_select.get_label()
         self.logger(_('Image: ')+source)
         self.logger(_('Target Device: ')+self.dev)
         b = os.path.getsize(source)
@@ -193,17 +287,11 @@ class IsoDumper:
 #                        self.close('dummy')
                         self.emergency()
                         dialog.hide()
-                self.backup_select.set_sensitive(False)
-                self.backup.set_sensitive(False)
+#                self.backup_select.set_sensitive(False)
+#                self.backup.set_sensitive(False)
                 self.chooser.set_sensitive(False)
                 self.do_umount(target)
                 dialog.hide()
-                # Backup step
-                if self.backup.get_active() :
-                    task = self.raw_write(target, backup_dest, eval(self.deviceSize))
-                    gobject.idle_add(task.next)
-                    while gtk.events_pending():
-                        gtk.main_iteration(True)
                 # Writing step
                 task = self.raw_write(source, target, os.path.getsize(source))
                 gobject.idle_add(task.next)
@@ -251,7 +339,7 @@ class IsoDumper:
         try:
             ifc=io.open(source, "rb",1)
         except:
-             self.logger(_('Reading error.'))
+             self.logger(_('Reading error.')+ source)
              self.emergency()
         else:
             try:
@@ -324,8 +412,8 @@ class IsoDumper:
         self.logview.scroll_to_mark(mark, 0.05, True, 0.0, 1.0)
         resp = dialog.run()
         if resp:
-            dialog.destroy()
-            self.close()
+            dialog.hide()
+#            self.close()
 
     def final_unsensitive(self):
         self.chooser.set_sensitive(False)
@@ -334,6 +422,7 @@ class IsoDumper:
         write_button.set_sensitive(False)
         progress = self.wTree.get_widget("progressbar")
         progress.set_sensitive(False)
+        self.backup_select.set_sensitive(False)
 
     def close(self, widget):
         self.write_logfile()
@@ -344,7 +433,7 @@ class IsoDumper:
         start = self.log.get_start_iter()
         end = self.log.get_end_iter()
         if (self.user != 'root') and (self.user !=''):
-          home='/home/'+self.user
+            home='/home/'+self.user
         else:
             home='/root'
         if not(os.path.isdir(home+'/.isodumper')):
@@ -357,12 +446,14 @@ class IsoDumper:
         self.log.insert_at_cursor(text+"\n")
 
     def activate_devicelist(self, widget):
-        label = self.wTree.get_widget("to_label")
+#        label = self.wTree.get_widget("to_label")
         expander = self.wTree.get_widget("detail_expander")
-        self.devicelist.set_sensitive(True)
+#        self.devicelist.set_sensitive(True)
         expander.set_sensitive(True)
-        label.set_sensitive(True)
+#        label.set_sensitive(True)
         self.img_name = self.chooser.get_filename()
+        write_button = self.wTree.get_widget("write_button")
+        write_button.set_sensitive(True)
 
     def activate_backup(self, widget):
         self.backup_img_name = self.backup_dir.get_filename()
@@ -380,7 +471,6 @@ class IsoDumper:
         resp = dialog.run()
         if resp:
             dialog.hide()
-            #exit(0)
 
 if __name__ == "__main__":
     import sys

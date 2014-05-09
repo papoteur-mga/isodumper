@@ -13,6 +13,7 @@ Requirements
 - procps
 - pygtk2.0-libglade
 - python
+- python-parted
 - udisks
 - xterm
 

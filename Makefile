@@ -54,9 +54,10 @@ install: all
 	mkdir -p $(DESTDIR)$(POLKITPOLICYDIR)
 	install -m 644 polkit/org.mageia.isodumper.policy $(DESTDIR)$(POLKITPOLICYDIR)
 
-	# for LIBFILES isodumper.py find_devices
+	# for LIBFILES isodumper.py raw_format.py
 	mkdir -p $(DESTDIR)$(LIBDIR)/isodumper
 	install -m 755 lib/isodumper.py $(DESTDIR)$(LIBDIR)/isodumper
+	install -m 755 lib/raw_format.py $(DESTDIR)$(LIBDIR)/isodumper
 
 	# for DATADIR isodumper.py header.png
 	mkdir -p $(DESTDIR)$(DATADIR)/isodumper
