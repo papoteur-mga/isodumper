@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-09 14:32+0200\n"
+"POT-Creation-Date: 2014-05-09 18:51+0200\n"
 "PO-Revision-Date: 2014-05-06 21:10+0000\n"
 "Last-Translator: Willard1975 <willard@null.net>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/mageia/language/"
@@ -42,7 +42,7 @@ msgstr ""
 msgid "An error occurred."
 msgstr ""
 
-#: lib/isodumper.py:255 share/isodumper/isodumper.glade.h:32
+#: lib/isodumper.py:255 share/isodumper/isodumper.glade.h:31
 msgid "Backup in:"
 msgstr "Återställ i:"
 
@@ -201,96 +201,92 @@ msgid "Formatting the device"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:17
-msgid "label"
-msgstr ""
-
-#: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:18
 msgid "FAT 32 (Windows)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:19
 msgid "The standard. The size of files are limited to 4Gb"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:20
 msgid "NTFS (Windows)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:21
 msgid "To handle files bigger than 4Gb"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:22
 msgid "ext4 (Linux)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:23
 msgid "Only for Linux systems"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:24
 msgid "Device to work on:"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:25
 msgid "Select target device to write the image to"
 msgstr "Välj målenhet att skriva avbilden till"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write Image:"
 msgstr "Skriv avbild:"
 
-#: share/isodumper/isodumper.glade.h:28
+#: share/isodumper/isodumper.glade.h:27
 msgid "Select an image file to be written to the device"
 msgstr "Välj en skivavbild som ska skrivas till enheten"
 
-#: share/isodumper/isodumper.glade.h:29
+#: share/isodumper/isodumper.glade.h:28
 msgid "Select Image"
 msgstr "Välj avbild"
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:29
 msgid "Write to device"
 msgstr "Skriv till enhet"
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:30
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 "Skapa en återställningspunkt av enheten som en bild för att återställa den "
 "med senare"
 
-#: share/isodumper/isodumper.glade.h:34
+#: share/isodumper/isodumper.glade.h:33
 msgid "(None)"
 msgstr "(Ingen)"
 
-#: share/isodumper/isodumper.glade.h:35
+#: share/isodumper/isodumper.glade.h:34
 msgid "Select a folder in which to write the backup image"
 msgstr "Välj en mapp som återställningsbilden ska skrivas till"
 
-#: share/isodumper/isodumper.glade.h:36
+#: share/isodumper/isodumper.glade.h:35
 msgid "Backup the device"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:37
+#: share/isodumper/isodumper.glade.h:36
 msgid "Format the device in FAT, NTFS or ext:"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:38
+#: share/isodumper/isodumper.glade.h:37
 msgid "Choose the format. The device will be formatted in one partition"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:39
+#: share/isodumper/isodumper.glade.h:38
 msgid "Format the device"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:40
+#: share/isodumper/isodumper.glade.h:39
 msgid "Details"
 msgstr "Detaljer"
 
-#: share/isodumper/isodumper.glade.h:41
+#: share/isodumper/isodumper.glade.h:40
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -304,7 +300,7 @@ msgstr ""
 " Du bör ansluta ett USB-minne\n"
 " som avbilden kan skrivas till."
 
-#: share/isodumper/isodumper.glade.h:46
+#: share/isodumper/isodumper.glade.h:45
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"

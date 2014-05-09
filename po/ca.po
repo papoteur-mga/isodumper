@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-09 14:32+0200\n"
+"POT-Creation-Date: 2014-05-09 18:51+0200\n"
 "PO-Revision-Date: 2009-06-12 12:05+0000\n"
 "Last-Translator: Siegfried Gevatter <rainct@ubuntu.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "An error occurred."
 msgstr ""
 
-#: lib/isodumper.py:255 share/isodumper/isodumper.glade.h:32
+#: lib/isodumper.py:255 share/isodumper/isodumper.glade.h:31
 msgid "Backup in:"
 msgstr ""
 
@@ -197,94 +197,90 @@ msgid "Formatting the device"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:17
-msgid "label"
-msgstr ""
-
-#: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:18
 msgid "FAT 32 (Windows)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:19
 msgid "The standard. The size of files are limited to 4Gb"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:20
 msgid "NTFS (Windows)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:21
 msgid "To handle files bigger than 4Gb"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:22
 msgid "ext4 (Linux)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:23
 msgid "Only for Linux systems"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:24
 msgid "Device to work on:"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:25
 msgid "Select target device to write the image to"
 msgstr "Selecciona dispositiu de destí on escriure la imatge"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:26
 msgid "Write Image:"
 msgstr "Escriure imatge:"
 
-#: share/isodumper/isodumper.glade.h:28
+#: share/isodumper/isodumper.glade.h:27
 msgid "Select an image file to be written to the device"
 msgstr "Selecciona un arxiu d'imatge per a ser escrit al dispositiu"
 
-#: share/isodumper/isodumper.glade.h:29
+#: share/isodumper/isodumper.glade.h:28
 msgid "Select Image"
 msgstr "Selecciona una imatge"
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:29
 msgid "Write to device"
 msgstr "Escriure al dispositiu"
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:30
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:34
+#: share/isodumper/isodumper.glade.h:33
 msgid "(None)"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:35
+#: share/isodumper/isodumper.glade.h:34
 msgid "Select a folder in which to write the backup image"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:36
+#: share/isodumper/isodumper.glade.h:35
 msgid "Backup the device"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:37
+#: share/isodumper/isodumper.glade.h:36
 msgid "Format the device in FAT, NTFS or ext:"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:38
+#: share/isodumper/isodumper.glade.h:37
 msgid "Choose the format. The device will be formatted in one partition"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:39
+#: share/isodumper/isodumper.glade.h:38
 msgid "Format the device"
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:40
+#: share/isodumper/isodumper.glade.h:39
 msgid "Details"
 msgstr "Detalls"
 
-#: share/isodumper/isodumper.glade.h:41
+#: share/isodumper/isodumper.glade.h:40
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -293,7 +289,7 @@ msgid ""
 " to which the image can be written."
 msgstr ""
 
-#: share/isodumper/isodumper.glade.h:46
+#: share/isodumper/isodumper.glade.h:45
 #, fuzzy
 msgid ""
 "<b>Success</b>\n"
@@ -312,23 +308,8 @@ msgstr ""
 " registre de l'operació al vostre directori\n"
 " personal quan tanqueu l'aplicació."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "El procés dd ha acabat amb un error."
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "Aborta"
-
-#~ msgid "gtk-close"
-#~ msgstr "Tanca"
-
-#~ msgid "gtk-ok"
-#~ msgstr "D'acord"
+#~ msgid "to"
+#~ msgstr "a"
 
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -343,5 +324,20 @@ msgstr ""
 #~ " Heu d'introduir una clau USB a la qual\n"
 #~ " es pugui escriure la imatge."
 
-#~ msgid "to"
-#~ msgstr "a"
+#~ msgid "gtk-ok"
+#~ msgstr "D'acord"
+
+#~ msgid "gtk-close"
+#~ msgstr "Tanca"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "Aborta"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "El procés dd ha acabat amb un error."
+
+#~ msgid " "
+#~ msgstr " "
