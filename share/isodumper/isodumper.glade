@@ -361,6 +361,8 @@ Public License instead of this License.
 
 * Papoteur &lt;papoteur@mageialinux-online.org&gt;
 
+* Clément Lefebvre
+
 * david.david &lt;david.david@mageialinux-online.org&gt;</property>
     <property name="translator_credits">* Papoteur, filorin - (French)
 * Sergei Zivukov, AlexL, Fox909 - (Russian)
@@ -671,7 +673,7 @@ Public License instead of this License.
           <widget class="GtkLabel" id="format_device">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">label</property>
+            <property name="label">label</property>
           </widget>
           <packing>
             <property name="expand">True</property>
