@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-09 18:51+0200\n"
-"PO-Revision-Date: 2014-04-22 12:30+0000\n"
+"PO-Revision-Date: 2014-05-09 16:56+0000\n"
 "Last-Translator: Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>\n"
 "Language-Team: Romanian (http://www.transifex.com/projects/p/mageia/language/"
 "ro/)\n"
@@ -28,19 +28,19 @@ msgstr "Mo"
 
 #: lib/isodumper.py:224
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "Dispozitivul a fost formatat cu succes."
 
 #: lib/isodumper.py:228
 msgid "An error occured while creating a partition."
-msgstr ""
+msgstr "S-a produs o eroare la crearea unei partiții."
 
 #: lib/isodumper.py:230
 msgid "Authentication error."
-msgstr ""
+msgstr "Eroare de autentificare."
 
 #: lib/isodumper.py:232
 msgid "An error occurred."
-msgstr ""
+msgstr "S-a produs o eroare."
 
 #: lib/isodumper.py:255 share/isodumper/isodumper.glade.h:31
 msgid "Backup in:"
@@ -197,39 +197,39 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Formatting the device"
-msgstr ""
+msgstr "Se formatează dispozitivul"
 
 #: share/isodumper/isodumper.glade.h:17
 msgid "Label for the device:"
-msgstr ""
+msgstr "Eticheta pentru dispozitivul:"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "Standardul. Mărimea fișierelor este limitată la 4Go"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "Pentru a manipula fișiere mai mari de 4Go"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "EXT4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Numai pentru sistemele Linux"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Device to work on:"
-msgstr ""
+msgstr "Dispozitivul pe care se lucrează:"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Select target device to write the image to"
@@ -266,19 +266,19 @@ msgstr "Selectați un director în care să salvați imaginea "
 
 #: share/isodumper/isodumper.glade.h:35
 msgid "Backup the device"
-msgstr ""
+msgstr "Salvează dispozitivul"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Formatează dispozitivul în FAT, NTFS sau EXT:"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "Alegeți formatul. Dispozitivul va fi formatat într-o singură partiție"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Format the device"
-msgstr ""
+msgstr "Formatează dispozitivul"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Details"

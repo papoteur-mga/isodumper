@@ -3,17 +3,19 @@
 # This file is distributed under the same license as the isodumper package.
 #
 # Translators:
-# Automatically generated, 2013.
+# Automatically generated, 2013
+# Dune <dune06@free.fr>, 2014
 # filorin <guillaume.ber17@laposte.net>, 2014
-# Papoteur <papoteur@mageialinux-online.org>, 2013.
-# papoteur, 2013.
+# papoteur, 2013
+# Papoteur <papoteur@mageialinux-online.org>, 2013
+# papoteur, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-09 18:51+0200\n"
-"PO-Revision-Date: 2014-04-21 14:42+0000\n"
-"Last-Translator: filorin <guillaume.ber17@laposte.net>\n"
+"PO-Revision-Date: 2014-05-09 21:00+0000\n"
+"Last-Translator: Dune <dune06@free.fr>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/mageia/language/"
 "fr/)\n"
 "Language: fr\n"
@@ -28,19 +30,19 @@ msgstr "Mo"
 
 #: lib/isodumper.py:224
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "Le périphérique a été formaté avec succès."
 
 #: lib/isodumper.py:228
 msgid "An error occured while creating a partition."
-msgstr ""
+msgstr "Une erreur est survenue en créant une partition."
 
 #: lib/isodumper.py:230
 msgid "Authentication error."
-msgstr ""
+msgstr "Erreur d'authentification."
 
 #: lib/isodumper.py:232
 msgid "An error occurred."
-msgstr ""
+msgstr "Une erreur est survenue."
 
 #: lib/isodumper.py:255 share/isodumper/isodumper.glade.h:31
 msgid "Backup in:"
@@ -175,7 +177,7 @@ msgid ""
 msgstr ""
 "<b>Attention</b>\n"
 " Cette opération <b>détruira toutes les données</b> sur le périphérique\n"
-" cible, êtes vous sûr(e) de vouloir continuer ?\n"
+" cible, êtes-vous sûr(e) de vouloir continuer ?\n"
 "\n"
 " Si vous cliquez sur ok, <b>ne débranchez pas</b>\n"
 " le lecteur pendant l'opération."
@@ -199,39 +201,39 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Formatting the device"
-msgstr ""
+msgstr "Formatage du périphérique"
 
 #: share/isodumper/isodumper.glade.h:17
 msgid "Label for the device:"
-msgstr ""
+msgstr "Nom du volume :"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "Le standard. La taille des fichiers est limitée à 4Go"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "Pour gérer des fichiers plus grand que 4Go"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Uniquement pour des systèmes Linux"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Device to work on:"
-msgstr ""
+msgstr "Périphérique sélectionné :"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Select target device to write the image to"
@@ -267,19 +269,20 @@ msgstr "Sélectionnez un dossier dans lequel écrire l'image de sauvegarde"
 
 #: share/isodumper/isodumper.glade.h:35
 msgid "Backup the device"
-msgstr ""
+msgstr "Sauvegarder le périphérique"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Formater en FAT, NTFS ou ext :"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Choose the format. The device will be formatted in one partition"
 msgstr ""
+"Choisissez le format. Le périphérique sera formaté en une seule partition."
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Format the device"
-msgstr ""
+msgstr "Formater le périphérique"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Details"
