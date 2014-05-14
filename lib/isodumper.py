@@ -21,7 +21,7 @@
 #  along with this program; if not, write to the Free Software Foundation,
 #  Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-#  Requires python-parted
+#  Requires python-parted 
 
 import gtk
 import gtk.glade
@@ -73,7 +73,7 @@ class IsoDumper:
 
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
-#        self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
+        #self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -143,6 +143,7 @@ class IsoDumper:
                 # convert in Mbytes
             sizeM=str(int(size)/(1024*1024))
             self.devicelist.append_text(name+' ('+path.lstrip()+') '+sizeM+_('Mb'))
+            self.device_name=name.rstrip().replace(' ', '')
         dialog.destroy()
 
         
@@ -153,6 +154,7 @@ class IsoDumper:
         self.wTree.get_widget("filechooserbutton").set_sensitive(True)
 
     def backup_sel(self,widget):
+        self.backup_bname.set_current_name(self.device_name+".iso")
         self.choose.show_all()
 
     def backup_choosed(self, widget):
@@ -205,7 +207,7 @@ class IsoDumper:
         self.devicelist.set_sensitive(True)
         self.write_logfile()
         self.wTree.get_widget("emergency_dialog").hide()
-
+        
     def raw_format(self, usb_path, fstype, label):
         if os.geteuid() > 0:
             launcher='pkexec'
@@ -257,7 +259,7 @@ class IsoDumper:
         gobject.idle_add(task.next)
         while gtk.events_pending():
             gtk.main_iteration(True)
-
+        
     def do_write(self, widget):
         write_button = self.wTree.get_widget("write_button")
         write_button.set_sensitive(False)
