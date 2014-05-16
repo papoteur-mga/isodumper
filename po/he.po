@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-09 18:51+0200\n"
+"POT-Creation-Date: 2014-05-14 21:09+0200\n"
 "PO-Revision-Date: 2008-08-06 04:57+0000\n"
 "Last-Translator: Yaron <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
@@ -23,113 +23,113 @@ msgstr ""
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:224
+#: lib/isodumper.py:226
 msgid "The device was formatted successfully."
 msgstr ""
 
-#: lib/isodumper.py:228
+#: lib/isodumper.py:230
 msgid "An error occured while creating a partition."
 msgstr ""
 
-#: lib/isodumper.py:230
+#: lib/isodumper.py:232
 msgid "Authentication error."
 msgstr ""
 
-#: lib/isodumper.py:232
+#: lib/isodumper.py:234
 msgid "An error occurred."
 msgstr ""
 
-#: lib/isodumper.py:255 share/isodumper/isodumper.glade.h:31
+#: lib/isodumper.py:257 share/isodumper/isodumper.glade.h:31
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:271
+#: lib/isodumper.py:273
 msgid "Image: "
 msgstr "דמות: "
 
-#: lib/isodumper.py:272
+#: lib/isodumper.py:274
 msgid "Target Device: "
 msgstr "התקן יעד: "
 
-#: lib/isodumper.py:275
+#: lib/isodumper.py:277
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:282
+#: lib/isodumper.py:284
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:309
+#: lib/isodumper.py:311
 msgid "Unmounting all partitions of "
 msgstr "מבטל את עגינת כל המחיצות של "
 
-#: lib/isodumper.py:311
+#: lib/isodumper.py:313
 msgid "Trying to unmount "
 msgstr "מנסה לבטל עגינה "
 
-#: lib/isodumper.py:317
+#: lib/isodumper.py:319
 msgid " was terminated by signal "
 msgstr " חוסלה על ידי אות "
 
-#: lib/isodumper.py:317 lib/isodumper.py:323
+#: lib/isodumper.py:319 lib/isodumper.py:325
 msgid "Error, umount "
 msgstr "שגיאה, ביטול עגינת "
 
-#: lib/isodumper.py:321
+#: lib/isodumper.py:323
 msgid " successfully unmounted"
 msgstr " ביטול העגינה הושלם בהצלחה"
 
-#: lib/isodumper.py:323
+#: lib/isodumper.py:325
 msgid " returned "
 msgstr " החזיר "
 
-#: lib/isodumper.py:326
+#: lib/isodumper.py:328
 msgid "Execution failed: "
 msgstr "ההפעלה נכשלה: "
 
-#: lib/isodumper.py:334
+#: lib/isodumper.py:336
 msgid "Could not read mtab !"
 msgstr "לא ניתן לקרוא את mtab !"
 
-#: lib/isodumper.py:342 lib/isodumper.py:365
+#: lib/isodumper.py:344 lib/isodumper.py:367
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:348
+#: lib/isodumper.py:350
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:353 lib/isodumper.py:354
+#: lib/isodumper.py:355 lib/isodumper.py:356
 msgid " to "
 msgstr " אל "
 
-#: lib/isodumper.py:353
+#: lib/isodumper.py:355
 msgid "Writing "
 msgstr "כותב "
 
-#: lib/isodumper.py:354
+#: lib/isodumper.py:356
 #, fuzzy
 msgid "Executing copy from "
 msgstr "מפעיל: dd if="
 
-#: lib/isodumper.py:370 lib/isodumper.py:383 lib/isodumper.py:392
+#: lib/isodumper.py:372 lib/isodumper.py:385 lib/isodumper.py:394
 #, fuzzy
 msgid "Writing error."
 msgstr "כותב "
 
-#: lib/isodumper.py:375
+#: lib/isodumper.py:377
 msgid "Wrote: "
 msgstr "נכתב: "
 
-#: lib/isodumper.py:387
+#: lib/isodumper.py:389
 msgid " successfully written to "
 msgstr " נכתב בהצלחה אל "
 
-#: lib/isodumper.py:387
+#: lib/isodumper.py:389
 msgid "Image "
 msgstr "דמות "
 
-#: lib/isodumper.py:388
+#: lib/isodumper.py:390
 msgid "Bytes written: "
 msgstr ""
 
@@ -307,8 +307,23 @@ msgstr ""
 " יישמר אל תיקיית הבית שלך אם תסגור את\n"
 " היישום."
 
-#~ msgid "to"
-#~ msgstr "אל"
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "תהליך ה-dd הסתיים בשגיאה !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
 
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -323,20 +338,5 @@ msgstr ""
 #~ " עליך לחבר מפתח USB\n"
 #~ " אליו יהיה ניתן לכתוב את הדמות."
 
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "תהליך ה-dd הסתיים בשגיאה !"
-
-#~ msgid " "
-#~ msgstr " "
+#~ msgid "to"
+#~ msgstr "אל"

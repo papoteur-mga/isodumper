@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-09 18:51+0200\n"
+"POT-Creation-Date: 2014-05-14 21:09+0200\n"
 "PO-Revision-Date: 2014-05-09 16:56+0000\n"
 "Last-Translator: Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>\n"
 "Language-Team: Romanian (http://www.transifex.com/projects/p/mageia/language/"
@@ -26,111 +26,111 @@ msgstr ""
 msgid "Mb"
 msgstr "Mo"
 
-#: lib/isodumper.py:224
+#: lib/isodumper.py:226
 msgid "The device was formatted successfully."
 msgstr "Dispozitivul a fost formatat cu succes."
 
-#: lib/isodumper.py:228
+#: lib/isodumper.py:230
 msgid "An error occured while creating a partition."
 msgstr "S-a produs o eroare la crearea unei partiții."
 
-#: lib/isodumper.py:230
+#: lib/isodumper.py:232
 msgid "Authentication error."
 msgstr "Eroare de autentificare."
 
-#: lib/isodumper.py:232
+#: lib/isodumper.py:234
 msgid "An error occurred."
 msgstr "S-a produs o eroare."
 
-#: lib/isodumper.py:255 share/isodumper/isodumper.glade.h:31
+#: lib/isodumper.py:257 share/isodumper/isodumper.glade.h:31
 msgid "Backup in:"
 msgstr "Copiere pe:"
 
-#: lib/isodumper.py:271
+#: lib/isodumper.py:273
 msgid "Image: "
 msgstr "Imagine:"
 
-#: lib/isodumper.py:272
+#: lib/isodumper.py:274
 msgid "Target Device: "
 msgstr "Dispozitiv destinație:"
 
-#: lib/isodumper.py:275
+#: lib/isodumper.py:277
 msgid "The device is too small to contain the ISO file."
 msgstr "Dispozitivul este prea mic ca să conține fișierul ISO."
 
-#: lib/isodumper.py:282
+#: lib/isodumper.py:284
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr "Dispozitivul este mai mare de 32 Go. Sigur doriți să-l utilizați?"
 
-#: lib/isodumper.py:309
+#: lib/isodumper.py:311
 msgid "Unmounting all partitions of "
 msgstr "Se demontează toate partițiile de pe "
 
-#: lib/isodumper.py:311
+#: lib/isodumper.py:313
 msgid "Trying to unmount "
 msgstr "Se încearcă demontarea"
 
-#: lib/isodumper.py:317
+#: lib/isodumper.py:319
 msgid " was terminated by signal "
 msgstr "a fost terminat de semnal"
 
-#: lib/isodumper.py:317 lib/isodumper.py:323
+#: lib/isodumper.py:319 lib/isodumper.py:325
 msgid "Error, umount "
 msgstr "Eroare, demontare"
 
-#: lib/isodumper.py:321
+#: lib/isodumper.py:323
 msgid " successfully unmounted"
 msgstr "demontare cu succes"
 
-#: lib/isodumper.py:323
+#: lib/isodumper.py:325
 msgid " returned "
 msgstr "întors"
 
-#: lib/isodumper.py:326
+#: lib/isodumper.py:328
 msgid "Execution failed: "
 msgstr "Execuție eșuată:"
 
-#: lib/isodumper.py:334
+#: lib/isodumper.py:336
 msgid "Could not read mtab !"
 msgstr "Nu s-a putut citi mtab!"
 
-#: lib/isodumper.py:342 lib/isodumper.py:365
+#: lib/isodumper.py:344 lib/isodumper.py:367
 msgid "Reading error."
 msgstr "Eroare la citire."
 
-#: lib/isodumper.py:348
+#: lib/isodumper.py:350
 msgid "You have not the rights for writing on the device"
 msgstr "Nu aveți dreptul de scriere pe dispozitiv"
 
-#: lib/isodumper.py:353 lib/isodumper.py:354
+#: lib/isodumper.py:355 lib/isodumper.py:356
 msgid " to "
 msgstr "pe"
 
-#: lib/isodumper.py:353
+#: lib/isodumper.py:355
 msgid "Writing "
 msgstr "Scriere"
 
-#: lib/isodumper.py:354
+#: lib/isodumper.py:356
 msgid "Executing copy from "
 msgstr "Se copiază din"
 
-#: lib/isodumper.py:370 lib/isodumper.py:383 lib/isodumper.py:392
+#: lib/isodumper.py:372 lib/isodumper.py:385 lib/isodumper.py:394
 msgid "Writing error."
 msgstr "Eroare la scriere."
 
-#: lib/isodumper.py:375
+#: lib/isodumper.py:377
 msgid "Wrote: "
 msgstr "S-a scris: "
 
-#: lib/isodumper.py:387
+#: lib/isodumper.py:389
 msgid " successfully written to "
 msgstr " scris cu succes pe "
 
-#: lib/isodumper.py:387
+#: lib/isodumper.py:389
 msgid "Image "
 msgstr "Imagine "
 
-#: lib/isodumper.py:388
+#: lib/isodumper.py:390
 msgid "Bytes written: "
 msgstr "Octeți scriși:"
 

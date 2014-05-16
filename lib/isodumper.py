@@ -21,7 +21,7 @@
 #  along with this program; if not, write to the Free Software Foundation,
 #  Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-#  Requires python-parted 
+#  Requires python-parted
 
 import gtk
 import gtk.glade
@@ -73,7 +73,7 @@ class IsoDumper:
 
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
-        #self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
+#        self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -94,14 +94,14 @@ class IsoDumper:
         filt.add_pattern("*.img")
         self.chooser.set_filter(filt)
 
-        
+
         # optionnal backup of the device
         self.backup_select = self.wTree.get_widget("backup_select")
         self.backup_name = self.wTree.get_widget("backup_name")
         self.backup = self.wTree.get_widget("backup")
         self.choose = self.wTree.get_widget("choose")
         self.backup_bname = self.wTree.get_widget("bname")
-        
+
 
         # set callbacks
         dict = { "on_main_dialog_destroy" : self.close,
@@ -146,7 +146,7 @@ class IsoDumper:
             self.device_name=name.rstrip().replace(' ', '')
         dialog.destroy()
 
-        
+
     def device_selected(self, widget):
         self.dev = self.devicelist.get_active_text()
         self.backup_select.set_sensitive(True)
@@ -207,7 +207,7 @@ class IsoDumper:
         self.devicelist.set_sensitive(True)
         self.write_logfile()
         self.wTree.get_widget("emergency_dialog").hide()
-        
+
     def raw_format(self, usb_path, fstype, label):
         if os.geteuid() > 0:
             launcher='pkexec'
@@ -259,7 +259,7 @@ class IsoDumper:
         gobject.idle_add(task.next)
         while gtk.events_pending():
             gtk.main_iteration(True)
-        
+
     def do_write(self, widget):
         write_button = self.wTree.get_widget("write_button")
         write_button.set_sensitive(False)
