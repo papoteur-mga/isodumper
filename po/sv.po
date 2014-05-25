@@ -28,27 +28,27 @@ msgstr "Mb"
 
 #: lib/isodumper.py:226
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "Formateringen lyckades"
 
 #: lib/isodumper.py:230
 msgid "An error occured while creating a partition."
-msgstr ""
+msgstr "Ett fel inträffade när en partition skapades."
 
 #: lib/isodumper.py:232
 msgid "Authentication error."
-msgstr ""
+msgstr "Autentiseringsfel."
 
 #: lib/isodumper.py:234
 msgid "An error occurred."
-msgstr ""
+msgstr "Ett fel inträffade."
 
 #: lib/isodumper.py:257 share/isodumper/isodumper.glade.h:31
 msgid "Backup in:"
-msgstr "Återställ i:"
+msgstr "Säkerhetskopiera i:"
 
 #: lib/isodumper.py:273
 msgid "Image: "
-msgstr "Avbildning: "
+msgstr "Avbild: "
 
 #: lib/isodumper.py:274
 msgid "Target Device: "
@@ -56,7 +56,7 @@ msgstr "Målenhet: "
 
 #: lib/isodumper.py:277
 msgid "The device is too small to contain the ISO file."
-msgstr "Enheten är för liten för att innehålla ISO-filen."
+msgstr "Enheten är för liten för att rymma ISO-filen."
 
 #: lib/isodumper.py:284
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
@@ -77,7 +77,7 @@ msgstr " blev avslutad av signal"
 
 #: lib/isodumper.py:319 lib/isodumper.py:325
 msgid "Error, umount "
-msgstr "Error, avmontera "
+msgstr "Fel, avmontera "
 
 #: lib/isodumper.py:323
 msgid " successfully unmounted"
@@ -97,7 +97,7 @@ msgstr "Kunde inte läsa mtab !"
 
 #: lib/isodumper.py:344 lib/isodumper.py:367
 msgid "Reading error."
-msgstr "Läs-fel."
+msgstr "Läsfel."
 
 #: lib/isodumper.py:350
 msgid "You have not the rights for writing on the device"
@@ -117,7 +117,7 @@ msgstr "Kör kopia från"
 
 #: lib/isodumper.py:372 lib/isodumper.py:385 lib/isodumper.py:394
 msgid "Writing error."
-msgstr "Skriv-fel:"
+msgstr "Skrivfel."
 
 #: lib/isodumper.py:377
 msgid "Wrote: "
@@ -129,7 +129,7 @@ msgstr " skrevs till "
 
 #: lib/isodumper.py:389
 msgid "Image "
-msgstr "Avbildningen "
+msgstr "Avbild"
 
 #: lib/isodumper.py:390
 msgid "Bytes written: "
@@ -141,7 +141,7 @@ msgstr "Kör Isodumper"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
-msgstr "Identifiering krävs för att köra Isodumper"
+msgstr "Autentisering krävs för att köra Isodumper"
 
 #: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:1
@@ -194,43 +194,43 @@ msgstr ""
 " för det specifika felet.\n"
 " \n"
 " En loggfil kallad isodumper.log med innehållet kommer att sparas i\n"
-" hem-mappen/.isodumper när programmet stängs ner."
+" din hemkatalog/.isodumper när programmet avslutas."
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Formatting the device"
-msgstr ""
+msgstr "Formaterar enheten"
 
 #: share/isodumper/isodumper.glade.h:17
 msgid "Label for the device:"
-msgstr ""
+msgstr "Enhetens etikett:"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "Standard. Filstorleken är begränsad till 4GB"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "För att hantera filer större än 4GB"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Endast för Linux-system"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Device to work on:"
-msgstr ""
+msgstr "Enhet att arbeta på:"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Select target device to write the image to"
@@ -242,7 +242,7 @@ msgstr "Skriv avbild:"
 
 #: share/isodumper/isodumper.glade.h:27
 msgid "Select an image file to be written to the device"
-msgstr "Välj en skivavbild som ska skrivas till enheten"
+msgstr "Välj en avbild som ska skrivas till enheten"
 
 #: share/isodumper/isodumper.glade.h:28
 msgid "Select Image"
@@ -255,8 +255,8 @@ msgstr "Skriv till enhet"
 #: share/isodumper/isodumper.glade.h:30
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
-"Skapa en återställningspunkt av enheten som en bild för att återställa den "
-"med senare"
+"Skapa en återställningspunkt av enheten som en avbild för att återställa den "
+"senare"
 
 #: share/isodumper/isodumper.glade.h:33
 msgid "(None)"
@@ -268,19 +268,19 @@ msgstr "Välj en mapp som återställningsbilden ska skrivas till"
 
 #: share/isodumper/isodumper.glade.h:35
 msgid "Backup the device"
-msgstr ""
+msgstr "Säkerhetskopiera enheten"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Formatera enheten som FAT, NTFS eller ext:"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "Välj formatering. Enheten kommer att formateras till en partition"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Format the device"
-msgstr ""
+msgstr "Formatera enheten"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Details"
@@ -315,5 +315,5 @@ msgstr ""
 " målenheten.\n"
 " \n"
 " Du kan nu koppla från enheten. En logg kallad isodumper.log \n"
-" av åtgärderna kommer att sparas i hem-mappen{.isodumper/ när\n"
-" du stänger ner programmet."
+" av åtgärderna kommer att sparas i din hemkatalog/.isodumper/ när\n"
+" du avslutar programmet."

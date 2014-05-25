@@ -4,7 +4,7 @@
 #
 # Translators:
 # tarakbumba . <tarakbumba@gmail.com>, 2013-2014
-# tarakbumba . <tarakbumba@gmail.com>, 2013
+# tarakbumba . <tarakbumba@gmail.com>, 2013-2014
 # Automatically generated, 2013
 # tarakbumba . <tarakbumba@gmail.com>, 2013
 msgid ""

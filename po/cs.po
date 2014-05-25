@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-14 21:09+0200\n"
-"PO-Revision-Date: 2014-04-24 12:54+0000\n"
-"Last-Translator: jui <appukonrad@gmail.com>\n"
+"PO-Revision-Date: 2014-05-15 20:42+0000\n"
+"Last-Translator: fri\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/mageia/language/"
 "cs/)\n"
 "Language: cs\n"
@@ -31,19 +31,19 @@ msgstr "Mb"
 
 #: lib/isodumper.py:226
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "Zařízení bylo úspěšně naformátováno."
 
 #: lib/isodumper.py:230
 msgid "An error occured while creating a partition."
-msgstr ""
+msgstr "Při vytváření diskového oddílu se vyskytla chyba."
 
 #: lib/isodumper.py:232
 msgid "Authentication error."
-msgstr ""
+msgstr "Chyba při ověření."
 
 #: lib/isodumper.py:234
 msgid "An error occurred."
-msgstr ""
+msgstr "Stala se chyba."
 
 #: lib/isodumper.py:257 share/isodumper/isodumper.glade.h:31
 msgid "Backup in:"
@@ -201,39 +201,39 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Formatting the device"
-msgstr ""
+msgstr "Formátuje se zařízení"
 
 #: share/isodumper/isodumper.glade.h:17
 msgid "Label for the device:"
-msgstr ""
+msgstr "Popisek pro zařízení:"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "Standardní. Velikost souborů je omezena na 4 GB"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "Pro práci se soubory většími než 4 GB"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Jen pro linuxové systémy"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Device to work on:"
-msgstr ""
+msgstr "Zařízení, na kterém se má pracovat:"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Select target device to write the image to"
@@ -269,19 +269,19 @@ msgstr "Zvolte složku, do které se má zapsat obraz se zálohou"
 
 #: share/isodumper/isodumper.glade.h:35
 msgid "Backup the device"
-msgstr ""
+msgstr "Zálohovat zařízení"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Formátovat zařízení na FAT, NTFS nebo ext:"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "Zvolte formát. Zařízení bude zformátováno do jednoho diskového oddílu"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Format the device"
-msgstr ""
+msgstr "Formátovat zařízení"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Details"

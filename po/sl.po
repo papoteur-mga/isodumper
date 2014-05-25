@@ -29,19 +29,19 @@ msgstr "Mb"
 
 #: lib/isodumper.py:226
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "Naprava je bila uspešno formatirana."
 
 #: lib/isodumper.py:230
 msgid "An error occured while creating a partition."
-msgstr ""
+msgstr "Med usvarjanjem razdelka je prišlo do napake."
 
 #: lib/isodumper.py:232
 msgid "Authentication error."
-msgstr ""
+msgstr "Napaka overjanja."
 
 #: lib/isodumper.py:234
 msgid "An error occurred."
-msgstr ""
+msgstr "Prišlo je do napake."
 
 #: lib/isodumper.py:257 share/isodumper/isodumper.glade.h:31
 msgid "Backup in:"
@@ -201,39 +201,39 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Formatting the device"
-msgstr ""
+msgstr "Formatiranje naprave"
 
 #: share/isodumper/isodumper.glade.h:17
 msgid "Label for the device:"
-msgstr ""
+msgstr "Oznaka naprave:"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "Najbolj razširjena možnost. Velikost datotek je omejena na 4Gb."
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "Za velikost datotek večjo od 4Gb."
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Samo za operacijski sistem Linux"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Device to work on:"
-msgstr ""
+msgstr "Izbrana naprava:"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Select target device to write the image to"
@@ -271,19 +271,19 @@ msgstr "Izberite mapo za zapis varnostne kopije"
 
 #: share/isodumper/isodumper.glade.h:35
 msgid "Backup the device"
-msgstr ""
+msgstr "Arhiviranje vsebine naprave"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Formatiranje naprave v datotečnem zapisu FAT, NTFS ali ext:"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "Izbira datotečnega sistema. Naprava bo formatirana v enem razdelku."
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Format the device"
-msgstr ""
+msgstr "Formatiranje naprave"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Details"
