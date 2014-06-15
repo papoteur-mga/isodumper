@@ -60,4 +60,4 @@ Ce logiciel est écrit en python.
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
-%{_iconsdir}/hicolor/*/*/%{name}.png
+%{_iconsdir}/hicolor/*/*/%{name}.*
