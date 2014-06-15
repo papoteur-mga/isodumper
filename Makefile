@@ -27,7 +27,7 @@ DOCDIR=$(PREFIX)/share/doc/isodumper
 PYTHON=/usr/bin/env python
 DIRS = polkit
 
-all: dirs
+all: dirs tar
 
 dirs:
 	@for n in . $(DIRS); do \
@@ -35,7 +35,8 @@ dirs:
 	done
 
 clean:
-	rm -f isodumper COPYING CHANGELOG
+	rm -f polkit/isodumper polkit/org.mageia.isodumper.policy \
+	      isodumper.tar.xz
 
 
 install: all
@@ -87,6 +88,7 @@ install: all
 	mkdir -p $(DESTDIR)$(ICONSDIR)/hicolor/$$png/apps; \
 	convert isodumper.png -geometry $$png $(DESTDIR)$(ICONSDIR)/hicolor/$$png/apps/isodumper.png; \
 	done
+	install -D -m 644 isodumper.svg $(DESTDIR)$(ICONSDIR)/hicolor/scalable/apps/isodumper.svg
 
 	# for isodumper.mo translations
 	for locale in share/locale/*; \
@@ -96,7 +98,8 @@ install: all
 	done
 
 
-tar: isodumper.tar.gz
+tar:
+	tar cvJf isodumper.tar.xz *
 
 
 README.txt: README.md
