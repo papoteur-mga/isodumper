@@ -1,6 +1,11 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
+IsoDumper 0.22
+------------
+	  - changed a window to a dialog form.
+	  - added default values for the backup name and directory.
+
 IsoDumper 0.21
 ------------
 	  - added an "About isodumper" window "GtkAboutDialog".

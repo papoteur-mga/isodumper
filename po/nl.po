@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-04 16:03+0200\n"
+"POT-Creation-Date: 2014-06-15 16:09+0200\n"
 "PO-Revision-Date: 2014-05-06 14:30+0000\n"
 "Last-Translator: marja <marja@mageia.org>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/mageia/language/"
@@ -20,100 +20,100 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/isodumper.py:138
+#: lib/isodumper.py:140
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:176 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:187 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr "Back-uppen in:"
 
-#: lib/isodumper.py:177
+#: lib/isodumper.py:188
 msgid "Image: "
 msgstr "Image-bestand: "
 
-#: lib/isodumper.py:178
+#: lib/isodumper.py:189
 msgid "Target Device: "
 msgstr "Doelstation: "
 
-#: lib/isodumper.py:181
+#: lib/isodumper.py:192
 msgid "The device is too small to contain the ISO file."
 msgstr "Het opslagmedium is te klein voor het ISO-bestand"
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:199
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Het opslagmedium is groter dan 32 GB. Weet u zeker dat u het wilt gebruiken?"
 
-#: lib/isodumper.py:221
+#: lib/isodumper.py:232
 msgid "Unmounting all partitions of "
 msgstr "Alle partities loskoppelen van "
 
-#: lib/isodumper.py:223
+#: lib/isodumper.py:234
 msgid "Trying to unmount "
 msgstr "Bezig met loskoppelen "
 
-#: lib/isodumper.py:229
+#: lib/isodumper.py:240
 msgid " was terminated by signal "
 msgstr " is afgebroken door signaal "
 
-#: lib/isodumper.py:229 lib/isodumper.py:235
+#: lib/isodumper.py:240 lib/isodumper.py:246
 msgid "Error, umount "
 msgstr "Fout, loskoppelen "
 
-#: lib/isodumper.py:233
+#: lib/isodumper.py:244
 msgid " successfully unmounted"
 msgstr " met succes losgekoppeld"
 
-#: lib/isodumper.py:235
+#: lib/isodumper.py:246
 msgid " returned "
 msgstr " teruggegaan "
 
-#: lib/isodumper.py:238
+#: lib/isodumper.py:249
 msgid "Execution failed: "
 msgstr "Uitvoering mislukt: "
 
-#: lib/isodumper.py:246
+#: lib/isodumper.py:257
 msgid "Could not read mtab !"
 msgstr "Kon mtab niet lezen !"
 
-#: lib/isodumper.py:254 lib/isodumper.py:277
+#: lib/isodumper.py:265 lib/isodumper.py:288
 msgid "Reading error."
 msgstr "Leesfout."
 
-#: lib/isodumper.py:260
+#: lib/isodumper.py:271
 msgid "You have not the rights for writing on the device"
 msgstr "U heeft geen recht om naar het apparaat te schrijven"
 
-#: lib/isodumper.py:265 lib/isodumper.py:266
+#: lib/isodumper.py:276 lib/isodumper.py:277
 msgid " to "
 msgstr " naar "
 
-#: lib/isodumper.py:265
+#: lib/isodumper.py:276
 msgid "Writing "
 msgstr "Schrijven "
 
-#: lib/isodumper.py:266
+#: lib/isodumper.py:277
 msgid "Executing copy from "
 msgstr "Uitvoeren: kopieren van "
 
-#: lib/isodumper.py:282 lib/isodumper.py:295 lib/isodumper.py:304
+#: lib/isodumper.py:293 lib/isodumper.py:306 lib/isodumper.py:315
 msgid "Writing error."
 msgstr "Schrijffout. "
 
-#: lib/isodumper.py:287
+#: lib/isodumper.py:298
 msgid "Wrote: "
 msgstr "Geschreven: "
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:310
 msgid " successfully written to "
 msgstr " met succes geschreven naar "
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:310
 msgid "Image "
 msgstr "Image "
 
-#: lib/isodumper.py:300
+#: lib/isodumper.py:311
 msgid "Bytes written: "
 msgstr "Bytes geschreven: "
 

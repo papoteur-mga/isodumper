@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-04 16:03+0200\n"
+"POT-Creation-Date: 2014-06-15 16:09+0200\n"
 "PO-Revision-Date: 2014-04-21 14:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/projects/p/mageia/"
@@ -21,101 +21,101 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: lib/isodumper.py:138
+#: lib/isodumper.py:140
 msgid "Mb"
 msgstr "МБ"
 
-#: lib/isodumper.py:176 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:187 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr "Резервне копіювання до:"
 
-#: lib/isodumper.py:177
+#: lib/isodumper.py:188
 msgid "Image: "
 msgstr "Образ: "
 
-#: lib/isodumper.py:178
+#: lib/isodumper.py:189
 msgid "Target Device: "
 msgstr "Пристрій призначення: "
 
-#: lib/isodumper.py:181
+#: lib/isodumper.py:192
 msgid "The device is too small to contain the ISO file."
 msgstr "Об’єм пам’яті пристрою є надто малим для файла ISO."
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:199
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Об’єм пам’яті на пристрої перевищує 32 гігабайтів. Ви справді хочете "
 "скористатися цим пристроєм?"
 
-#: lib/isodumper.py:221
+#: lib/isodumper.py:232
 msgid "Unmounting all partitions of "
 msgstr "Демонтуємо усі розділи "
 
-#: lib/isodumper.py:223
+#: lib/isodumper.py:234
 msgid "Trying to unmount "
 msgstr "Намагаємося демонтувати "
 
-#: lib/isodumper.py:229
+#: lib/isodumper.py:240
 msgid " was terminated by signal "
 msgstr " було перервано сигналом "
 
-#: lib/isodumper.py:229 lib/isodumper.py:235
+#: lib/isodumper.py:240 lib/isodumper.py:246
 msgid "Error, umount "
 msgstr "Помилка демонтування "
 
-#: lib/isodumper.py:233
+#: lib/isodumper.py:244
 msgid " successfully unmounted"
 msgstr " успішно демонтовано"
 
-#: lib/isodumper.py:235
+#: lib/isodumper.py:246
 msgid " returned "
 msgstr " повернуто "
 
-#: lib/isodumper.py:238
+#: lib/isodumper.py:249
 msgid "Execution failed: "
 msgstr "Помилка виконання: "
 
-#: lib/isodumper.py:246
+#: lib/isodumper.py:257
 msgid "Could not read mtab !"
 msgstr "Не вдалося прочитати файл mtab!"
 
-#: lib/isodumper.py:254 lib/isodumper.py:277
+#: lib/isodumper.py:265 lib/isodumper.py:288
 msgid "Reading error."
 msgstr "Помилка читання."
 
-#: lib/isodumper.py:260
+#: lib/isodumper.py:271
 msgid "You have not the rights for writing on the device"
 msgstr "У вас немає прав доступу для запису на пристрій"
 
-#: lib/isodumper.py:265 lib/isodumper.py:266
+#: lib/isodumper.py:276 lib/isodumper.py:277
 msgid " to "
 msgstr " на "
 
-#: lib/isodumper.py:265
+#: lib/isodumper.py:276
 msgid "Writing "
 msgstr "Записуємо "
 
-#: lib/isodumper.py:266
+#: lib/isodumper.py:277
 msgid "Executing copy from "
 msgstr "Виконуємо копіювання з "
 
-#: lib/isodumper.py:282 lib/isodumper.py:295 lib/isodumper.py:304
+#: lib/isodumper.py:293 lib/isodumper.py:306 lib/isodumper.py:315
 msgid "Writing error."
 msgstr "Помилка під час спроби запису."
 
-#: lib/isodumper.py:287
+#: lib/isodumper.py:298
 msgid "Wrote: "
 msgstr "Записано: "
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:310
 msgid " successfully written to "
 msgstr " успішно записано на "
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:310
 msgid "Image "
 msgstr "Образ "
 
-#: lib/isodumper.py:300
+#: lib/isodumper.py:311
 msgid "Bytes written: "
 msgstr "Записано байтів: "
 

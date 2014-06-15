@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-04 16:03+0200\n"
+"POT-Creation-Date: 2014-06-15 16:09+0200\n"
 "PO-Revision-Date: 2014-05-08 09:50+0000\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/mageia/language/"
@@ -21,99 +21,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/isodumper.py:138
+#: lib/isodumper.py:140
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:176 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:187 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr "Varukoopia:"
 
-#: lib/isodumper.py:177
+#: lib/isodumper.py:188
 msgid "Image: "
 msgstr "Tõmmis: "
 
-#: lib/isodumper.py:178
+#: lib/isodumper.py:189
 msgid "Target Device: "
 msgstr "Sihtseade: "
 
-#: lib/isodumper.py:181
+#: lib/isodumper.py:192
 msgid "The device is too small to contain the ISO file."
 msgstr "Seade on ISO-tõmmise mahutamiseks liiga väike."
 
-#: lib/isodumper.py:188
+#: lib/isodumper.py:199
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr "Seadme maht on üle 32 gigabaidi. Kas tõesti soovite seda kasutada?"
 
-#: lib/isodumper.py:221
+#: lib/isodumper.py:232
 msgid "Unmounting all partitions of "
 msgstr "Haagitakse lahti kõik partitsioonid seadmes "
 
-#: lib/isodumper.py:223
+#: lib/isodumper.py:234
 msgid "Trying to unmount "
 msgstr "Proovitakse lahti haakida "
 
-#: lib/isodumper.py:229
+#: lib/isodumper.py:240
 msgid " was terminated by signal "
 msgstr " lahtihaakimine katkestati signaaliga "
 
-#: lib/isodumper.py:229 lib/isodumper.py:235
+#: lib/isodumper.py:240 lib/isodumper.py:246
 msgid "Error, umount "
 msgstr "Tõrge, "
 
-#: lib/isodumper.py:233
+#: lib/isodumper.py:244
 msgid " successfully unmounted"
 msgstr " haagiti edukalt lahti"
 
-#: lib/isodumper.py:235
+#: lib/isodumper.py:246
 msgid " returned "
 msgstr " lahtihaakimine tagastas koodi "
 
-#: lib/isodumper.py:238
+#: lib/isodumper.py:249
 msgid "Execution failed: "
 msgstr "Täitmine nurjus: "
 
-#: lib/isodumper.py:246
+#: lib/isodumper.py:257
 msgid "Could not read mtab !"
 msgstr "Mtab-i lugemine nurjus!"
 
-#: lib/isodumper.py:254 lib/isodumper.py:277
+#: lib/isodumper.py:265 lib/isodumper.py:288
 msgid "Reading error."
 msgstr "Tõrge lugemisel."
 
-#: lib/isodumper.py:260
+#: lib/isodumper.py:271
 msgid "You have not the rights for writing on the device"
 msgstr "Teil pole seadmes kirjutamisõigust."
 
-#: lib/isodumper.py:265 lib/isodumper.py:266
+#: lib/isodumper.py:276 lib/isodumper.py:277
 msgid " to "
 msgstr " asukohta "
 
-#: lib/isodumper.py:265
+#: lib/isodumper.py:276
 msgid "Writing "
 msgstr "Kirjutatakse "
 
-#: lib/isodumper.py:266
+#: lib/isodumper.py:277
 msgid "Executing copy from "
 msgstr "Kopeeritakse asukohast "
 
-#: lib/isodumper.py:282 lib/isodumper.py:295 lib/isodumper.py:304
+#: lib/isodumper.py:293 lib/isodumper.py:306 lib/isodumper.py:315
 msgid "Writing error."
 msgstr "Tõrge kirjutamisel."
 
-#: lib/isodumper.py:287
+#: lib/isodumper.py:298
 msgid "Wrote: "
 msgstr "Kirjutati: "
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:310
 msgid " successfully written to "
 msgstr " kirjutati edukalt asukohta "
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:310
 msgid "Image "
 msgstr "Tõmmis "
 
-#: lib/isodumper.py:300
+#: lib/isodumper.py:311
 msgid "Bytes written: "
 msgstr "Baite kirjutati: "
 

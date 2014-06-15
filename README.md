@@ -56,4 +56,4 @@ Translators
 - fri, jui - Czech
 - Akien - Danish
 - richardshaylo - English (United Kingdom)
-- alfalb_mansil - Portuguese
+- Manuela Silva - Portuguese
