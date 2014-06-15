@@ -59,7 +59,7 @@ class IsoDumper:
     def __init__(self, user):
         APP="isodumper"
         DIR="/usr/share/locale"
-        RELEASE="v0.21"
+        RELEASE="v0.22"
         #	for the localisation of log file
         self.user=user
 
@@ -78,6 +78,7 @@ class IsoDumper:
         self.logview = self.wTree.get_widget("detail_text")
         self.log = self.logview.get_buffer()
         self.window.set_title(self.window.get_title()+' '+RELEASE)
+        self.wTree.get_widget("about_dialog").set_version(RELEASE)
         
         # define size of the selected device
         self.deviceSize=0
@@ -112,6 +113,7 @@ class IsoDumper:
                  "on_backup_toggled" : self.enable_backup,
                  "on_backup_select_clicked" : self.backup_sel,
                  "on_select_clicked" : self.backup_choosed,
+                 "on_choose_cancel_clicked" : self.backup_cancel,
                  "on_about_button_clicked" : self.about,
                  "on_write_button_clicked" : self.do_write}
         self.wTree.signal_autoconnect(dict)
@@ -136,6 +138,7 @@ class IsoDumper:
                 # convert in Mbytes
             sizeM=str(int(size)/(1024*1024))
             self.combo.append_text(name+' ('+path.lstrip()+') '+sizeM+_('Mb'))
+            self.device_name=name.rstrip().replace(' ', '')
         dialog.destroy()
 
         
@@ -148,7 +151,15 @@ class IsoDumper:
         self.backup_select.set_sensitive(not self.backup_select.get_sensitive())
 
     def backup_sel(self,widget):
-        self.choose.show_all()
+        if self.backup_bname.get_current_folder_uri() == None :
+            self.backup_bname.set_current_folder_uri('file:///home/'+self.user)
+        self.backup_bname.set_current_name(self.device_name+".iso")
+        self.choose.run()
+
+    def backup_cancel(self,widget):
+        self.choose.hide()
+           # Unckeck the choice to backup
+        self.backup.set_active(0)
 
     def backup_choosed(self, widget):
         exit_dialog=self.backup_bname.get_filename()
