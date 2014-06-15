@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-14 21:09+0200\n"
+"POT-Creation-Date: 2014-06-15 16:43+0200\n"
 "PO-Revision-Date: 2014-05-06 21:10+0000\n"
 "Last-Translator: Willard1975 <willard@null.net>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/mageia/language/"
@@ -22,116 +22,116 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/isodumper.py:145
+#: lib/isodumper.py:146
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:226
+#: lib/isodumper.py:234
 msgid "The device was formatted successfully."
 msgstr "Formateringen lyckades"
 
-#: lib/isodumper.py:230
+#: lib/isodumper.py:238
 msgid "An error occured while creating a partition."
 msgstr "Ett fel inträffade när en partition skapades."
 
-#: lib/isodumper.py:232
+#: lib/isodumper.py:240
 msgid "Authentication error."
 msgstr "Autentiseringsfel."
 
-#: lib/isodumper.py:234
+#: lib/isodumper.py:242
 msgid "An error occurred."
 msgstr "Ett fel inträffade."
 
-#: lib/isodumper.py:257 share/isodumper/isodumper.glade.h:31
+#: lib/isodumper.py:265 share/isodumper/isodumper.glade.h:31
 msgid "Backup in:"
 msgstr "Säkerhetskopiera i:"
 
-#: lib/isodumper.py:273
+#: lib/isodumper.py:281
 msgid "Image: "
 msgstr "Avbild: "
 
-#: lib/isodumper.py:274
+#: lib/isodumper.py:282
 msgid "Target Device: "
 msgstr "Målenhet: "
 
-#: lib/isodumper.py:277
+#: lib/isodumper.py:285
 msgid "The device is too small to contain the ISO file."
 msgstr "Enheten är för liten för att rymma ISO-filen."
 
-#: lib/isodumper.py:284
+#: lib/isodumper.py:292
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Enheten är större än 32 Gbytes. Är du säker på att du vill använda den?"
 
-#: lib/isodumper.py:311
+#: lib/isodumper.py:319
 msgid "Unmounting all partitions of "
 msgstr "Avmonterar alla partitioner för "
 
-#: lib/isodumper.py:313
+#: lib/isodumper.py:321
 msgid "Trying to unmount "
 msgstr "Försöker att avmontera "
 
-#: lib/isodumper.py:319
+#: lib/isodumper.py:327
 msgid " was terminated by signal "
 msgstr " blev avslutad av signal"
 
-#: lib/isodumper.py:319 lib/isodumper.py:325
+#: lib/isodumper.py:327 lib/isodumper.py:333
 msgid "Error, umount "
 msgstr "Fel, avmontera "
 
-#: lib/isodumper.py:323
+#: lib/isodumper.py:331
 msgid " successfully unmounted"
 msgstr " avmontering lyckades"
 
-#: lib/isodumper.py:325
+#: lib/isodumper.py:333
 msgid " returned "
 msgstr " returnerade "
 
-#: lib/isodumper.py:328
+#: lib/isodumper.py:336
 msgid "Execution failed: "
 msgstr "Körningen misslyckades: "
 
-#: lib/isodumper.py:336
+#: lib/isodumper.py:344
 msgid "Could not read mtab !"
 msgstr "Kunde inte läsa mtab !"
 
-#: lib/isodumper.py:344 lib/isodumper.py:367
+#: lib/isodumper.py:352 lib/isodumper.py:375
 msgid "Reading error."
 msgstr "Läsfel."
 
-#: lib/isodumper.py:350
+#: lib/isodumper.py:358
 msgid "You have not the rights for writing on the device"
 msgstr "Du har inte rättigheter för att skriva till enheten"
 
-#: lib/isodumper.py:355 lib/isodumper.py:356
+#: lib/isodumper.py:363 lib/isodumper.py:364
 msgid " to "
 msgstr " till "
 
-#: lib/isodumper.py:355
+#: lib/isodumper.py:363
 msgid "Writing "
 msgstr "Skriver "
 
-#: lib/isodumper.py:356
+#: lib/isodumper.py:364
 msgid "Executing copy from "
 msgstr "Kör kopia från"
 
-#: lib/isodumper.py:372 lib/isodumper.py:385 lib/isodumper.py:394
+#: lib/isodumper.py:380 lib/isodumper.py:393 lib/isodumper.py:402
 msgid "Writing error."
 msgstr "Skrivfel."
 
-#: lib/isodumper.py:377
+#: lib/isodumper.py:385
 msgid "Wrote: "
 msgstr "Skrev: "
 
-#: lib/isodumper.py:389
+#: lib/isodumper.py:397
 msgid " successfully written to "
 msgstr " skrevs till "
 
-#: lib/isodumper.py:389
+#: lib/isodumper.py:397
 msgid "Image "
 msgstr "Avbild"
 
-#: lib/isodumper.py:390
+#: lib/isodumper.py:398
 msgid "Bytes written: "
 msgstr "Bytes skrivna:"
 

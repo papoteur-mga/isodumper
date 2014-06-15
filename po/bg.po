@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-14 21:09+0200\n"
+"POT-Creation-Date: 2014-06-15 16:43+0200\n"
 "PO-Revision-Date: 2009-04-03 18:33+0000\n"
 "Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
@@ -19,117 +19,117 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: lib/isodumper.py:145
+#: lib/isodumper.py:146
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:226
+#: lib/isodumper.py:234
 msgid "The device was formatted successfully."
 msgstr ""
 
-#: lib/isodumper.py:230
+#: lib/isodumper.py:238
 msgid "An error occured while creating a partition."
 msgstr ""
 
-#: lib/isodumper.py:232
+#: lib/isodumper.py:240
 msgid "Authentication error."
 msgstr ""
 
-#: lib/isodumper.py:234
+#: lib/isodumper.py:242
 msgid "An error occurred."
 msgstr ""
 
-#: lib/isodumper.py:257 share/isodumper/isodumper.glade.h:31
+#: lib/isodumper.py:265 share/isodumper/isodumper.glade.h:31
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:273
+#: lib/isodumper.py:281
 msgid "Image: "
 msgstr "Изображение: "
 
-#: lib/isodumper.py:274
+#: lib/isodumper.py:282
 msgid "Target Device: "
 msgstr "Целево устройство: "
 
-#: lib/isodumper.py:277
+#: lib/isodumper.py:285
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:284
+#: lib/isodumper.py:292
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:311
+#: lib/isodumper.py:319
 msgid "Unmounting all partitions of "
 msgstr "Демонтиране на всички дялове на "
 
-#: lib/isodumper.py:313
+#: lib/isodumper.py:321
 msgid "Trying to unmount "
 msgstr "Опит за демонтиране "
 
-#: lib/isodumper.py:319
+#: lib/isodumper.py:327
 msgid " was terminated by signal "
 msgstr " беше спрян от сигнал "
 
-#: lib/isodumper.py:319 lib/isodumper.py:325
+#: lib/isodumper.py:327 lib/isodumper.py:333
 msgid "Error, umount "
 msgstr "Грешка, демонтиране "
 
-#: lib/isodumper.py:323
+#: lib/isodumper.py:331
 msgid " successfully unmounted"
 msgstr " е демонтиран успешно"
 
-#: lib/isodumper.py:325
+#: lib/isodumper.py:333
 msgid " returned "
 msgstr " върна "
 
-#: lib/isodumper.py:328
+#: lib/isodumper.py:336
 msgid "Execution failed: "
 msgstr "Изпълнението се провали: "
 
-#: lib/isodumper.py:336
+#: lib/isodumper.py:344
 msgid "Could not read mtab !"
 msgstr "Файлът mtab не мож еда се прочете !"
 
-#: lib/isodumper.py:344 lib/isodumper.py:367
+#: lib/isodumper.py:352 lib/isodumper.py:375
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:350
+#: lib/isodumper.py:358
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:355 lib/isodumper.py:356
+#: lib/isodumper.py:363 lib/isodumper.py:364
 msgid " to "
 msgstr " на "
 
-#: lib/isodumper.py:355
+#: lib/isodumper.py:363
 msgid "Writing "
 msgstr "Записване "
 
-#: lib/isodumper.py:356
+#: lib/isodumper.py:364
 #, fuzzy
 msgid "Executing copy from "
 msgstr "Изпълнение на: dd if="
 
-#: lib/isodumper.py:372 lib/isodumper.py:385 lib/isodumper.py:394
+#: lib/isodumper.py:380 lib/isodumper.py:393 lib/isodumper.py:402
 #, fuzzy
 msgid "Writing error."
 msgstr "Записване "
 
-#: lib/isodumper.py:377
+#: lib/isodumper.py:385
 msgid "Wrote: "
 msgstr "Записа: "
 
-#: lib/isodumper.py:389
+#: lib/isodumper.py:397
 msgid " successfully written to "
 msgstr " е успешно записан на "
 
-#: lib/isodumper.py:389
+#: lib/isodumper.py:397
 msgid "Image "
 msgstr "Образ "
 
-#: lib/isodumper.py:390
+#: lib/isodumper.py:398
 msgid "Bytes written: "
 msgstr ""
 
@@ -308,23 +308,8 @@ msgstr ""
 " се запази отчет във вашата домашна\n"
 " папка, ако затворите програмата."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Процесът dd завърши с грешка!"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
+#~ msgid "to"
+#~ msgstr "на"
 
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -339,5 +324,20 @@ msgstr ""
 #~ " Трябва да свържете USB стик,\n"
 #~ " на който да се запише образа."
 
-#~ msgid "to"
-#~ msgstr "на"
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Процесът dd завърши с грешка!"
+
+#~ msgid " "
+#~ msgstr " "
