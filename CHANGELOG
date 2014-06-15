@@ -6,6 +6,11 @@ IsoDumper 0.30
 	  - added function to format the device in Fat32, ntfs or ext4.
 	  - separated backup from writing.
 
+IsoDumper 0.22
+------------
+	  - changed a window to a dialog form.
+	  - added default values for the backup name and directory.
+
 IsoDumper 0.21
 ------------
 	  - added an "About isodumper" window "GtkAboutDialog".

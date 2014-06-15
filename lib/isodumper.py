@@ -73,7 +73,6 @@ class IsoDumper:
 
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
-#        self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -82,7 +81,8 @@ class IsoDumper:
         self.logview = self.wTree.get_widget("detail_text")
         self.log = self.logview.get_buffer()
         self.window.set_title(self.window.get_title()+' '+RELEASE)
-        
+        self.wTree.get_widget("about_dialog").set_version(RELEASE)
+
         # define size of the selected device
         self.deviceSize=0
 
@@ -98,7 +98,7 @@ class IsoDumper:
         # optionnal backup of the device
         self.backup_select = self.wTree.get_widget("backup_select")
         self.backup_name = self.wTree.get_widget("backup_name")
-        self.backup = self.wTree.get_widget("backup")
+        self.backup_button = self.wTree.get_widget("backup_button")
         self.choose = self.wTree.get_widget("choose")
         self.backup_bname = self.wTree.get_widget("bname")
 
@@ -117,6 +117,7 @@ class IsoDumper:
                  "on_backup_select_clicked" : self.backup_sel,
                  "on_select_clicked" : self.backup_choosed,
                  "on_about_button_clicked" : self.about,
+                 "on_choose_cancel_clicked" : self.backup_cancel,
                  "on_format_button_clicked" : self.format_dialog,
                  "on_format_cancel_clicked" : self.format_cancel,
                  "on_format_go_clicked" : self.do_format,
@@ -154,8 +155,15 @@ class IsoDumper:
         self.wTree.get_widget("filechooserbutton").set_sensitive(True)
 
     def backup_sel(self,widget):
+        if self.backup_bname.get_current_folder_uri() == None :
+            self.backup_bname.set_current_folder_uri('file:///home/'+self.user)
         self.backup_bname.set_current_name(self.device_name+".iso")
-        self.choose.show_all()
+        self.choose.run()
+
+    def backup_cancel(self,widget):
+        self.choose.hide()
+           # Unckeck the choice to backup
+        self.backup_button.set_sensitive(False)
 
     def backup_choosed(self, widget):
         exit_dialog=self.backup_bname.get_filename()
@@ -164,7 +172,7 @@ class IsoDumper:
             if not exit_dialog.lower().endswith('.iso'):
                 exit_dialog=exit_dialog+".iso"
             self.backup_select.set_label(exit_dialog)
-            self.wTree.get_widget("backup_button").set_sensitive(True)
+            self.backup_button.set_sensitive(True)
         self.choose.hide()
 
     def format_dialog(self,widget):
