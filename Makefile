@@ -71,7 +71,7 @@ install: all
 
 	# for isodumper doc 
 	mkdir -p $(DESTDIR)$(DOCDIR)
-	install -m 644 COPYING CHANGELOG README.md i18n.md $(DESTDIR)$(DOCDIR)
+	install -m 644 COPYING.GPL COPYING.LGPL CHANGELOG README.md i18n.md $(DESTDIR)$(DOCDIR)
 
 	# for isodumper icons
 	#NOTE: You must install imagemagick package.
