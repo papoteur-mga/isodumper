@@ -5,6 +5,8 @@ IsoDumper 0.22
 ------------
 	  - changed a window to a dialog form.
 	  - added default values for the backup name and directory.
+	  - improvement to the isodumper icon with a new SVG.
+	  - improvement to the Makefile.
 
 IsoDumper 0.21
 ------------
