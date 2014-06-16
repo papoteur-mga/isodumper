@@ -49,7 +49,7 @@ Ce logiciel est écrit en python.
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc COPYING CHANGELOG
+%doc COPYING.* CHANGELOG
 %{_bindir}/%{name}
 %{_libexecdir}/%{name}
 %{_usr}/lib/%{name}/
