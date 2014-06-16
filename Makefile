@@ -36,7 +36,7 @@ dirs:
 
 clean:
 	rm -f polkit/isodumper polkit/org.mageia.isodumper.policy \
-	      isodumper.tar.xz
+	isodumper.tar.xz
 
 
 install: all
@@ -88,7 +88,8 @@ install: all
 	mkdir -p $(DESTDIR)$(ICONSDIR)/hicolor/$$png/apps; \
 	convert isodumper.png -geometry $$png $(DESTDIR)$(ICONSDIR)/hicolor/$$png/apps/isodumper.png; \
 	done
-	install -D -m 644 isodumper.svg $(DESTDIR)$(ICONSDIR)/hicolor/scalable/apps/isodumper.svg
+	mkdir -p $(DESTDIR)$(ICONSDIR)/hicolor/scalable/apps
+	install -m 644 isodumper.svg $(DESTDIR)$(ICONSDIR)/hicolor/scalable/apps/isodumper.svg
 
 	# for isodumper.mo translations
 	for locale in share/locale/*; \
