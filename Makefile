@@ -27,7 +27,7 @@ DOCDIR=$(PREFIX)/share/doc/isodumper
 PYTHON=/usr/bin/env python
 DIRS = polkit
 
-all: dirs tar
+all: dirs
 
 dirs:
 	@for n in . $(DIRS); do \
