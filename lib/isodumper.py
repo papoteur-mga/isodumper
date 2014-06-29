@@ -73,6 +73,7 @@ class IsoDumper:
 
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
+        #self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -80,11 +81,15 @@ class IsoDumper:
         self.devicelist = self.wTree.get_widget("device_combobox")
         self.logview = self.wTree.get_widget("detail_text")
         self.log = self.logview.get_buffer()
+        # set RELEASE number on title and About
         self.window.set_title(self.window.get_title()+' '+RELEASE)
         self.wTree.get_widget("about_dialog").set_version(RELEASE)
 
         # define size of the selected device
         self.deviceSize=0
+        
+        # Operation running
+        self.operation=False
 
         # set default file filter to *.img
         # Added for Mageia : *.iso
@@ -105,12 +110,12 @@ class IsoDumper:
 
         # set callbacks
         dict = { "on_main_dialog_destroy" : self.close,
-                 "on_cancel_button_clicked" : self.close,
+                 "on_cancel_button_clicked" : self.confirm_close,
                  "on_emergency_button_clicked" : self.restore,
                  "on_success_button_clicked" : self.close,
                  "on_confirm_cancel_button_clicked": self.restore,
                  "on_filechooserbutton_file_set" : self.activate_devicelist,
-                 "on_detail_expander_activate" : self.expander_control,
+#                 "on_detail_expander_activate" : self.expander_control,
                  "on_device_combobox_changed" : self.device_selected,
                  "on_nodev_close_clicked" : self.close,
                  "on_backup_button_clicked" : self.backup_go,
@@ -121,7 +126,9 @@ class IsoDumper:
                  "on_format_button_clicked" : self.format_dialog,
                  "on_format_cancel_clicked" : self.format_cancel,
                  "on_format_go_clicked" : self.do_format,
-                 "on_write_button_clicked" : self.do_write}
+                 "on_write_button_clicked" : self.do_write,
+                 "on_main_dialog_delete_event" : gtk.main_quit,
+                 }
         self.wTree.signal_autoconnect(dict)
 
         self.window.show_all()
@@ -146,13 +153,13 @@ class IsoDumper:
             self.devicelist.append_text(name+' ('+path.lstrip()+') '+sizeM+_('Mb'))
             self.device_name=name.rstrip().replace(' ', '')
         dialog.destroy()
-
-
+           
     def device_selected(self, widget):
         self.dev = self.devicelist.get_active_text()
         self.backup_select.set_sensitive(True)
         self.wTree.get_widget("format_button").set_sensitive(True)
         self.wTree.get_widget("filechooserbutton").set_sensitive(True)
+        self.logger(_('Target Device: ')+ self.dev)
 
     def backup_sel(self,widget):
         if self.backup_bname.get_current_folder_uri() == None :
@@ -185,10 +192,9 @@ class IsoDumper:
         write_button.set_sensitive(False)
         self.devicelist.set_sensitive(False)
         dialog=self.wTree.get_widget("format")
-        dialog.present()
         self.wTree.get_widget("format_device").set_text(self.dev)
         self.wTree.get_widget("format_name").set_text(self.dev.split('(')[0])
-        exit_dialog=dialog.show_all()
+        exit_dialog=dialog.run()
         if exit_dialog==0:
             dialog.hide()
 
@@ -213,10 +219,11 @@ class IsoDumper:
         self.wTree.get_widget("format_button").set_sensitive(True)
         self.wTree.get_widget("filechooserbutton").set_sensitive(True)
         self.devicelist.set_sensitive(True)
-        self.write_logfile()
+#        self.write_logfile()
         self.wTree.get_widget("emergency_dialog").hide()
 
     def raw_format(self, usb_path, fstype, label):
+        self.operation=True
         if os.geteuid() > 0:
             launcher='pkexec'
             self.process = Popen([launcher,'/usr/bin/python', '-u', '/usr/lib/isodumper/raw_format.py','-d',usb_path,'-f',fstype, '-l', label, '-u', str(os.geteuid()), '-g', str(os.getgid())], shell=False, stdout=PIPE, preexec_fn=os.setsid)
@@ -345,6 +352,7 @@ class IsoDumper:
              self.emergency()
 
     def raw_write(self, source, target, b):
+        self.operation=True
         bs=4096*128
         try:
             ifc=io.open(source, "rb",1)
@@ -357,6 +365,7 @@ class IsoDumper:
             except:
                  self.logger(_('You have not the rights for writing on the device'))
                  self.emergency()
+                 self.close('dummy')
             else:
                 progress = self.wTree.get_widget("progressbar")
                 progress.set_sensitive(True)
@@ -413,6 +422,17 @@ class IsoDumper:
             dialog.hide()
 
 
+    def confirm_close(self, widget):
+        if self.operation==False:    # no writing , backup nor format running
+            self.close('dummy')
+        else:   # writing , backup nor format running
+            dialog=self.wTree.get_widget("Quit_warning")
+            resp = dialog.run()
+            if resp==-5 :   # GTK_RESPONSE_OK
+               self.close('dummy')
+            else:
+                dialog.hide()
+
     def emergency(self):
         self.final_unsensitive()
         dialog = self.wTree.get_widget("emergency_dialog")
@@ -442,14 +462,22 @@ class IsoDumper:
     def write_logfile(self):
         start = self.log.get_start_iter()
         end = self.log.get_end_iter()
+        import pwd
+        pw = pwd.getpwnam(self.user)
+        uid = pw.pw_uid
+        gid= pw.pw_gid
         if (self.user != 'root') and (self.user !=''):
             home='/home/'+self.user
         else:
             home='/root'
         if not(os.path.isdir(home+'/.isodumper')):
             os.mkdir(home+'/.isodumper')
+            os.chown(home+'/.isodumper',uid, gid)
         logfile=open(home+'/.isodumper/isodumper.log',"w")
         logfile.write(self.log.get_text(start, end, False))
+        logfile.close()
+        
+        os.chown(home+'/.isodumper/isodumper.log',uid, gid)
         print self.log.get_text(start, end, False)
 
     def logger(self, text):
@@ -464,15 +492,17 @@ class IsoDumper:
         self.img_name = self.chooser.get_filename()
         write_button = self.wTree.get_widget("write_button")
         write_button.set_sensitive(True)
-
+        self.logger(_('Image ')+": "+ self.img_name)
+        self.chooser.set_tooltip_text(self.img_name)
+ 
     def activate_backup(self, widget):
         self.backup_img_name = self.backup_dir.get_filename()
 
-    def expander_control(self, widget):
-        # this is darn ugly but still better than the UI behavior of
-        # the unexpanded expander which doesnt reset the window size
-        if widget.get_expanded():
-            gobject.timeout_add(130, lambda: self.window.reshow_with_initial_size())
+#    def expander_control(self, widget):
+#        # this is darn ugly but still better than the UI behavior of
+#        # the unexpanded expander which doesnt reset the window size
+#        if widget.get_expanded():
+#            gobject.timeout_add(130, lambda: self.window.reshow_with_initial_size())
 
     def about(self, widget):
         about_button = self.wTree.get_widget("about_button")

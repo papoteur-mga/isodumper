@@ -2,6 +2,41 @@
 <glade-interface>
   <!-- interface-requires gtk+ 2.16 -->
   <!-- interface-naming-policy toplevel-contextual -->
+  <widget class="GtkMessageDialog" id="Quit_warning">
+    <property name="can_focus">False</property>
+    <property name="border_width">5</property>
+    <property name="type_hint">dialog</property>
+    <property name="skip_taskbar_hint">True</property>
+    <property name="message_type">warning</property>
+    <property name="buttons">ok-cancel</property>
+    <property name="text" translatable="yes">Writing is in progress. Exiting will occur that the device will be unusable.
+Are you sure you want to quit during writing on the device?</property>
+    <child internal-child="vbox">
+      <widget class="GtkVBox" id="dialog-vbox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <widget class="GtkHButtonBox" id="dialog-action_area">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
   <widget class="GtkAboutDialog" id="about_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
@@ -11,6 +46,7 @@
     <property name="type_hint">dialog</property>
     <property name="has_separator">True</property>
     <property name="program_name">IsoDumper</property>
+    <property name="version">v0.30</property>
     <property name="copyright">© 2013-2014 Mageia</property>
     <property name="comments" translatable="yes">A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter.</property>
     <property name="website">https://github.com/papoteur-mga/isodumper</property>
@@ -409,14 +445,12 @@ Public License instead of this License.
     </child>
   </widget>
   <widget class="GtkDialog" id="choose">
+    <property name="height_request">540</property>
     <property name="can_focus">False</property>
+    <property name="no_show_all">True</property>
     <property name="border_width">5</property>
-    <property name="title" translatable="yes">IsoDumper</property>
-    <property name="modal">True</property>
-    <property name="window_position">center-on-parent</property>
-    <property name="default_width">715</property>
-    <property name="default_height">540</property>
-    <property name="icon_name">isodumper</property>
+    <property name="title" translatable="yes">Isodumper</property>
+    <property name="icon">isodumper</property>
     <property name="type_hint">dialog</property>
     <child internal-child="vbox">
       <widget class="GtkVBox" id="dialog-vbox6">
@@ -664,9 +698,9 @@ Public License instead of this License.
                 <property name="label" translatable="yes">&lt;b&gt;Error&lt;/b&gt;
  Something went wrong, please see the details
  window for the exact error.
- 
- A logfile isodumper.log with the content will be saved in your
- homedir/.isodumper when the application is closed.</property>
+
+The application will be closed with this window, and a logfile
+ isodumper.log  will be saved in your homedir/.isodumper </property>
                 <property name="use_markup">True</property>
               </widget>
               <packing>
@@ -685,134 +719,20 @@ Public License instead of this License.
       </widget>
     </child>
   </widget>
-  <widget class="GtkWindow" id="format">
+  <widget class="GtkDialog" id="format">
     <property name="can_focus">False</property>
-    <property name="title" translatable="yes">Formatting the device</property>
-    <property name="window_position">center</property>
-    <property name="default_width">350</property>
-    <property name="icon_name">isodumper</property>
-    <child>
-      <widget class="GtkVBox" id="vbox1">
+    <property name="border_width">5</property>
+    <property name="type_hint">dialog</property>
+    <child internal-child="vbox">
+      <widget class="GtkVBox" id="dialog-vbox8">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <child>
-          <widget class="GtkLabel" id="format_device">
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <widget class="GtkHButtonBox" id="dialog-action_area8">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label">label</property>
-          </widget>
-          <packing>
-            <property name="expand">True</property>
-            <property name="fill">True</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="GtkHBox" id="hbox2">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <child>
-              <widget class="GtkLabel" id="label1">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="label" translatable="yes">Label for the device:</property>
-              </widget>
-              <packing>
-                <property name="expand">True</property>
-                <property name="fill">True</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
-            <child>
-              <widget class="GtkEntry" id="format_name">
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="invisible_char">●</property>
-                <property name="width_chars">32</property>
-                <property name="primary_icon_activatable">False</property>
-                <property name="secondary_icon_activatable">False</property>
-                <property name="primary_icon_sensitive">True</property>
-                <property name="secondary_icon_sensitive">True</property>
-              </widget>
-              <packing>
-                <property name="expand">True</property>
-                <property name="fill">True</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
-          </widget>
-          <packing>
-            <property name="expand">True</property>
-            <property name="fill">True</property>
-            <property name="position">1</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="GtkVButtonBox" id="vbuttonbox1">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <child>
-              <widget class="GtkRadioButton" id="format_fat">
-                <property name="label" translatable="yes">FAT 32 (Windows)</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="has_tooltip">True</property>
-                <property name="tooltip" translatable="yes">The standard. The size of files are limited to 4Gb</property>
-                <property name="active">True</property>
-                <property name="draw_indicator">True</property>
-              </widget>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
-            <child>
-              <widget class="GtkRadioButton" id="format_ntfs">
-                <property name="label" translatable="yes">NTFS (Windows)</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="has_tooltip">True</property>
-                <property name="tooltip" translatable="yes">To handle files bigger than 4Gb</property>
-                <property name="draw_indicator">True</property>
-                <property name="group">format_fat</property>
-              </widget>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
-            <child>
-              <widget class="GtkRadioButton" id="format_ext4">
-                <property name="label" translatable="yes">ext4 (Linux)</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="has_tooltip">True</property>
-                <property name="tooltip" translatable="yes">Only for Linux systems</property>
-                <property name="draw_indicator">True</property>
-                <property name="group">format_fat</property>
-              </widget>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">2</property>
-              </packing>
-            </child>
-          </widget>
-          <packing>
-            <property name="expand">True</property>
-            <property name="fill">True</property>
-            <property name="position">2</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="GtkHBox" id="hbox1">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
             <child>
               <widget class="GtkButton" id="format_go">
                 <property name="label">gtk-execute</property>
@@ -847,7 +767,133 @@ Public License instead of this License.
           <packing>
             <property name="expand">True</property>
             <property name="fill">True</property>
-            <property name="position">3</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkVBox" id="vbox1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <widget class="GtkLabel" id="format_device">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label">label</property>
+              </widget>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkHBox" id="hbox2">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <widget class="GtkLabel" id="label1">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Label for the device:</property>
+                  </widget>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkEntry" id="format_name">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="invisible_char">●</property>
+                    <property name="width_chars">32</property>
+                    <property name="invisible_char_set">True</property>
+                    <property name="primary_icon_activatable">False</property>
+                    <property name="secondary_icon_activatable">False</property>
+                    <property name="primary_icon_sensitive">True</property>
+                    <property name="secondary_icon_sensitive">True</property>
+                  </widget>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkVButtonBox" id="vbuttonbox1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <widget class="GtkRadioButton" id="format_fat">
+                    <property name="label" translatable="yes">FAT 32 (Windows)</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">The standard. The size of files are limited to 4Gb</property>
+                    <property name="active">True</property>
+                    <property name="draw_indicator">True</property>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkRadioButton" id="format_ntfs">
+                    <property name="label" translatable="yes">NTFS (Windows)</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">To handle files bigger than 4Gb</property>
+                    <property name="draw_indicator">True</property>
+                    <property name="group">format_fat</property>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkRadioButton" id="format_ext4">
+                    <property name="label" translatable="yes">ext4 (Linux)</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Only for Linux systems</property>
+                    <property name="draw_indicator">True</property>
+                    <property name="group">format_fat</property>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
           </packing>
         </child>
       </widget>
@@ -860,6 +906,7 @@ Public License instead of this License.
     <property name="window_position">center-always</property>
     <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
+    <signal name="delete_event" handler="on_main_dialog_delete_event" swapped="no"/>
     <child>
       <widget class="GtkVBox" id="vbox2">
         <property name="visible">True</property>
