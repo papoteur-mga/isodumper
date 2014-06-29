@@ -59,8 +59,8 @@ class IsoDumper:
     def __init__(self, user):
         APP="isodumper"
         DIR="/usr/share/locale"
-        RELEASE="v0.22"
-        # for the localisation of log file
+        RELEASE="v0.23"
+        #	for the localisation of log file
         self.user=user
 
         gettext.bindtextdomain(APP, DIR)
@@ -77,6 +77,7 @@ class IsoDumper:
         self.devicelist = self.wTree.get_widget("device_combobox")
         self.logview = self.wTree.get_widget("detail_text")
         self.log = self.logview.get_buffer()
+        
         self.window.set_title(self.window.get_title()+' '+RELEASE)
         self.wTree.get_widget("about_dialog").set_version(RELEASE)
         
@@ -90,9 +91,9 @@ class IsoDumper:
         filt.add_pattern("*.iso")
         filt.add_pattern("*.img")
         self.chooser.set_filter(filt)
-
         
-        # optionnal backup of the device
+        
+        #   optionnal backup of the device
         self.backup_select = self.wTree.get_widget("backup_select")
         self.backup_name = self.wTree.get_widget("backup_name")
         self.backup = self.wTree.get_widget("backup")
@@ -107,7 +108,7 @@ class IsoDumper:
                  "on_success_button_clicked" : self.close,
                  "on_filechooserbutton_file_set" : self.activate_devicelist,
                  "on_backup_name_file_set" : self.activate_backup,
-                 "on_detail_expander_activate" : self.expander_control,
+#                 "on_detail_expander_activate" : self.expander_control,
                  "on_device_combobox_changed" : self.device_selected,
                  "on_nodev_close_clicked" : self.close,
                  "on_backup_toggled" : self.enable_backup,
@@ -115,9 +116,11 @@ class IsoDumper:
                  "on_select_clicked" : self.backup_choosed,
                  "on_choose_cancel_clicked" : self.backup_cancel,
                  "on_about_button_clicked" : self.about,
-                 "on_write_button_clicked" : self.do_write}
+                 "on_write_button_clicked" : self.do_write,
+                 "on_main_dialog_delete_event" : gtk.main_quit,}
         self.wTree.signal_autoconnect(dict)
 
+ 
         self.window.show_all()
         # make sure we have a target device
         self.get_devices()
@@ -146,12 +149,13 @@ class IsoDumper:
         write_button = self.wTree.get_widget("write_button")
         write_button.set_sensitive(True)
         self.dev = self.combo.get_active_text()
+        self.logger(_('Target Device: ')+ self.dev)
 
     def enable_backup(self,widget) :
         self.backup_select.set_sensitive(not self.backup_select.get_sensitive())
 
     def backup_sel(self,widget):
-        if self.backup_bname.get_current_folder_uri() == None :
+        if (self.backup_bname.get_current_folder_uri() == None)  :
             self.backup_bname.set_current_folder_uri('file:///home/'+self.user)
         self.backup_bname.set_current_name(self.device_name+".iso")
         self.choose.run()
@@ -360,6 +364,7 @@ class IsoDumper:
             home='/root'
         if not(os.path.isdir(home+'/.isodumper')):
             os.mkdir(home+'/.isodumper')
+            os.chown(home+'/.isodumper')
         logfile=open(home+'/.isodumper/isodumper.log',"w")
         logfile.write(self.log.get_text(start, end, False))
         print self.log.get_text(start, end, False)
@@ -374,15 +379,19 @@ class IsoDumper:
         expander.set_sensitive(True)
         label.set_sensitive(True)
         self.img_name = self.chooser.get_filename()
+        self.logger(_('Image ')+": "+ self.img_name)
+        self.chooser.set_tooltip_text(self.img_name)
+        
 
     def activate_backup(self, widget):
         self.backup_img_name = self.backup_dir.get_filename()
 
-    def expander_control(self, widget):
-        # this is darn ugly but still better than the UI behavior of
-        # the unexpanded expander which doesnt reset the window size
-        if widget.get_expanded():
-            gobject.timeout_add(130, lambda: self.window.reshow_with_initial_size())
+#    def expander_control(self, widget):
+#        # this is darn ugly but still better than the UI behavior of
+#        # the unexpanded expander which doesnt reset the window size
+#        if widget.get_expanded():
+#            #gobject.timeout_add(130, lambda: self.window.reshow_with_initial_size())
+#            pass
 
     def about(self, widget):
         about_button = self.wTree.get_widget("about_button")

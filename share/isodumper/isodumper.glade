@@ -407,13 +407,12 @@ Public License instead of this License.
     </child>
   </widget>
   <widget class="GtkDialog" id="choose">
+    <property name="width_request">715</property>
+    <property name="height_request">540</property>
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
-    <property name="title" translatable="yes">IsoDumper</property>
-    <property name="modal">True</property>
-    <property name="default_width">715</property>
-    <property name="default_height">540</property>
-    <property name="icon_name">isodumper</property>
+    <property name="title" translatable="yes">Isodumper</property>
+    <property name="icon">isodumper</property>
     <property name="type_hint">dialog</property>
     <child internal-child="vbox">
       <widget class="GtkVBox" id="dialog-vbox6">
@@ -648,8 +647,8 @@ Public License instead of this License.
  Something went wrong, please see the details
  window for the exact error.
  
- A logfile isodumper.log with the content will be saved in your
- homedir/.isodumper when the application is closed.</property>
+The application will be closed with this window, and a logfile
+ isodumper.log  will be saved in your homedir/.isodumper </property>
                 <property name="use_markup">True</property>
               </widget>
               <packing>
@@ -675,6 +674,7 @@ Public License instead of this License.
     <property name="window_position">center-always</property>
     <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
+    <signal name="delete_event" handler="on_main_dialog_delete_event" swapped="no"/>
     <child>
       <widget class="GtkVBox" id="vbox2">
         <property name="visible">True</property>
