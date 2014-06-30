@@ -60,7 +60,7 @@ class IsoDumper:
         APP="isodumper"
         DIR="/usr/share/locale"
         RELEASE="v0.23"
-        #	for the localisation of log file
+        # for the localisation of log file
         self.user=user
 
         gettext.bindtextdomain(APP, DIR)
@@ -93,7 +93,7 @@ class IsoDumper:
         self.chooser.set_filter(filt)
         
         
-        #   optionnal backup of the device
+        # optionnal backup of the device
         self.backup_select = self.wTree.get_widget("backup_select")
         self.backup_name = self.wTree.get_widget("backup_name")
         self.backup = self.wTree.get_widget("backup")

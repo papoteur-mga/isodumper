@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-15 16:10+0200\n"
+"POT-Creation-Date: 2014-06-30 17:01+0200\n"
 "PO-Revision-Date: 2008-11-13 17:10+0000\n"
 "Last-Translator: This.dramzinn <This.dramzinn@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -19,101 +19,101 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: lib/isodumper.py:140
+#: lib/isodumper.py:143
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:187 share/isodumper/isodumper.glade.h:22
-msgid "Backup in:"
-msgstr ""
-
-#: lib/isodumper.py:188
-msgid "Image: "
-msgstr "이미지: "
-
-#: lib/isodumper.py:189
+#: lib/isodumper.py:152 lib/isodumper.py:193
 msgid "Target Device: "
 msgstr "대상 장치: "
 
+#: lib/isodumper.py:191 share/isodumper/isodumper.glade.h:22
+msgid "Backup in:"
+msgstr ""
+
 #: lib/isodumper.py:192
+msgid "Image: "
+msgstr "이미지: "
+
+#: lib/isodumper.py:196
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:199
+#: lib/isodumper.py:203
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:232
+#: lib/isodumper.py:236
 msgid "Unmounting all partitions of "
 msgstr "모든 파티션 마운트 제거합니다. "
 
-#: lib/isodumper.py:234
+#: lib/isodumper.py:238
 msgid "Trying to unmount "
 msgstr "마운트 제거를 시행합니다. "
 
-#: lib/isodumper.py:240
+#: lib/isodumper.py:244
 msgid " was terminated by signal "
 msgstr " 신호를 종료합니다. "
 
-#: lib/isodumper.py:240 lib/isodumper.py:246
+#: lib/isodumper.py:244 lib/isodumper.py:250
 msgid "Error, umount "
 msgstr "마운트 제거 에러 "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:248
 msgid " successfully unmounted"
 msgstr " 마운트 제거를 성공했습니다."
 
-#: lib/isodumper.py:246
+#: lib/isodumper.py:250
 msgid " returned "
 msgstr " 돌아옵니다. "
 
-#: lib/isodumper.py:249
+#: lib/isodumper.py:253
 msgid "Execution failed: "
 msgstr "실행 실패: "
 
-#: lib/isodumper.py:257
+#: lib/isodumper.py:261
 msgid "Could not read mtab !"
 msgstr "mtab를 읽을 수 없다."
 
-#: lib/isodumper.py:265 lib/isodumper.py:288
+#: lib/isodumper.py:269 lib/isodumper.py:292
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:271
+#: lib/isodumper.py:275
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:276 lib/isodumper.py:277
+#: lib/isodumper.py:280 lib/isodumper.py:281
 msgid " to "
 msgstr " 부터 "
 
-#: lib/isodumper.py:276
+#: lib/isodumper.py:280
 msgid "Writing "
 msgstr "쓰다 "
 
-#: lib/isodumper.py:277
+#: lib/isodumper.py:281
 #, fuzzy
 msgid "Executing copy from "
 msgstr "실행하다 : dd if="
 
-#: lib/isodumper.py:293 lib/isodumper.py:306 lib/isodumper.py:315
+#: lib/isodumper.py:297 lib/isodumper.py:310 lib/isodumper.py:319
 #, fuzzy
 msgid "Writing error."
 msgstr "쓰다 "
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:302
 msgid "Wrote: "
 msgstr "썼다 : "
 
-#: lib/isodumper.py:310
+#: lib/isodumper.py:314
 msgid " successfully written to "
 msgstr " 성공적으로 쓰여진다. "
 
-#: lib/isodumper.py:310
+#: lib/isodumper.py:314 lib/isodumper.py:382
 msgid "Image "
 msgstr "이미지 "
 
-#: lib/isodumper.py:311
+#: lib/isodumper.py:315
 msgid "Bytes written: "
 msgstr ""
 
@@ -160,21 +160,14 @@ msgstr ""
 "장치를 <b>제거하지 마십시요<b>"
 
 #: share/isodumper/isodumper.glade.h:10
-#, fuzzy
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
 " window for the exact error.\n"
 " \n"
-" A logfile isodumper.log with the content will be saved in your\n"
-" homedir/.isodumper when the application is closed."
+" The application will be closed with this window, and a logfile\n"
+" isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
-"<b>오류</b>\n"
-"무언인가 잘못되었습니다, 세부사항을 보도록 합니다.\n"
-"정확한 에러를 위한 창.\n"
-"\n"
-"그 기록파일은 만약 응용프로그램이 끝나는 경우가 발생하면 \n"
-"당신의 홈 디렉토리에 저장된다."
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"
@@ -242,6 +235,22 @@ msgstr ""
 "\n"
 "지금 그것(장치)를 제거해도 괜찮습니다, 만약 사용(응용)을 종료하게 되면,\n"
 "그 기록은 당신의 홈디렉토리에 저장되도록 작동할 것입니다."
+
+#, fuzzy
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>오류</b>\n"
+#~ "무언인가 잘못되었습니다, 세부사항을 보도록 합니다.\n"
+#~ "정확한 에러를 위한 창.\n"
+#~ "\n"
+#~ "그 기록파일은 만약 응용프로그램이 끝나는 경우가 발생하면 \n"
+#~ "당신의 홈 디렉토리에 저장된다."
 
 #~ msgid ""
 #~ "<b>Error</b>\n"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-15 16:09+0200\n"
+"POT-Creation-Date: 2014-06-30 17:01+0200\n"
 "PO-Revision-Date: 2014-04-21 17:45+0000\n"
 "Last-Translator: Padula <padula1000@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
@@ -22,100 +22,100 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: lib/isodumper.py:140
+#: lib/isodumper.py:143
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:187 share/isodumper/isodumper.glade.h:22
-msgid "Backup in:"
-msgstr "Backup em:"
-
-#: lib/isodumper.py:188
-msgid "Image: "
-msgstr "Imagem:"
-
-#: lib/isodumper.py:189
+#: lib/isodumper.py:152 lib/isodumper.py:193
 msgid "Target Device: "
 msgstr "Dispositivo alvo:"
 
+#: lib/isodumper.py:191 share/isodumper/isodumper.glade.h:22
+msgid "Backup in:"
+msgstr "Backup em:"
+
 #: lib/isodumper.py:192
+msgid "Image: "
+msgstr "Imagem:"
+
+#: lib/isodumper.py:196
 msgid "The device is too small to contain the ISO file."
 msgstr "O dispositivo é demasiado pequeno para conter o arquivo ISO."
 
-#: lib/isodumper.py:199
+#: lib/isodumper.py:203
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "O dispositivo é maior do que 32 Gbytes. Você esta seguro que você quer usar?"
 
-#: lib/isodumper.py:232
+#: lib/isodumper.py:236
 msgid "Unmounting all partitions of "
 msgstr "Desmontando todas as partições de"
 
-#: lib/isodumper.py:234
+#: lib/isodumper.py:238
 msgid "Trying to unmount "
 msgstr "Tentando desmontar"
 
-#: lib/isodumper.py:240
+#: lib/isodumper.py:244
 msgid " was terminated by signal "
 msgstr " foi terminado pelo sinal"
 
-#: lib/isodumper.py:240 lib/isodumper.py:246
+#: lib/isodumper.py:244 lib/isodumper.py:250
 msgid "Error, umount "
 msgstr "Erro, desmontar"
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:248
 msgid " successfully unmounted"
 msgstr " desmontado com sucesso"
 
-#: lib/isodumper.py:246
+#: lib/isodumper.py:250
 msgid " returned "
 msgstr " retornando"
 
-#: lib/isodumper.py:249
+#: lib/isodumper.py:253
 msgid "Execution failed: "
 msgstr "Falha na execução:"
 
-#: lib/isodumper.py:257
+#: lib/isodumper.py:261
 msgid "Could not read mtab !"
 msgstr "Não pode ler mtab!"
 
-#: lib/isodumper.py:265 lib/isodumper.py:288
+#: lib/isodumper.py:269 lib/isodumper.py:292
 msgid "Reading error."
 msgstr "Erro de leitura."
 
-#: lib/isodumper.py:271
+#: lib/isodumper.py:275
 msgid "You have not the rights for writing on the device"
 msgstr "Você não possui permissão para gravar no dispositivo"
 
-#: lib/isodumper.py:276 lib/isodumper.py:277
+#: lib/isodumper.py:280 lib/isodumper.py:281
 msgid " to "
 msgstr " para "
 
-#: lib/isodumper.py:276
+#: lib/isodumper.py:280
 msgid "Writing "
 msgstr "Gravando "
 
-#: lib/isodumper.py:277
+#: lib/isodumper.py:281
 msgid "Executing copy from "
 msgstr "Execultando cópia para"
 
-#: lib/isodumper.py:293 lib/isodumper.py:306 lib/isodumper.py:315
+#: lib/isodumper.py:297 lib/isodumper.py:310 lib/isodumper.py:319
 msgid "Writing error."
 msgstr "Erro de gravação."
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:302
 msgid "Wrote: "
 msgstr "Transferir"
 
-#: lib/isodumper.py:310
+#: lib/isodumper.py:314
 msgid " successfully written to "
 msgstr " gravado com êxito para "
 
-#: lib/isodumper.py:310
+#: lib/isodumper.py:314 lib/isodumper.py:382
 msgid "Image "
 msgstr "Imagem"
 
-#: lib/isodumper.py:311
+#: lib/isodumper.py:315
 msgid "Bytes written: "
 msgstr "Bytes usado:"
 
@@ -169,15 +169,9 @@ msgid ""
 " Something went wrong, please see the details\n"
 " window for the exact error.\n"
 " \n"
-" A logfile isodumper.log with the content will be saved in your\n"
-" homedir/.isodumper when the application is closed."
+" The application will be closed with this window, and a logfile\n"
+" isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
-"<b>Erro</b>\n"
-" Algo deu errado, veja por favor os detalhes\n"
-" na janela para o erro exato.\n"
-" \n"
-" Um arquivo de isodumper.log com o conteúdo será salvo em sua\n"
-" homedir/.isodumper quando o aplicativo for finalizado."
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"

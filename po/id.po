@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-15 16:09+0200\n"
+"POT-Creation-Date: 2014-06-30 17:01+0200\n"
 "PO-Revision-Date: 2014-05-08 07:20+0000\n"
 "Last-Translator: kiki.syahadat <kiki.syahadat@yahoo.co.id>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/mageia/"
@@ -23,100 +23,100 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: lib/isodumper.py:140
+#: lib/isodumper.py:143
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:187 share/isodumper/isodumper.glade.h:22
-msgid "Backup in:"
-msgstr "Backup di:"
-
-#: lib/isodumper.py:188
-msgid "Image: "
-msgstr "Image: "
-
-#: lib/isodumper.py:189
+#: lib/isodumper.py:152 lib/isodumper.py:193
 msgid "Target Device: "
 msgstr "Perangkat Target: "
 
+#: lib/isodumper.py:191 share/isodumper/isodumper.glade.h:22
+msgid "Backup in:"
+msgstr "Backup di:"
+
 #: lib/isodumper.py:192
+msgid "Image: "
+msgstr "Image: "
+
+#: lib/isodumper.py:196
 msgid "The device is too small to contain the ISO file."
 msgstr "Perangkat terlalu kecil untuk file ISO."
 
-#: lib/isodumper.py:199
+#: lib/isodumper.py:203
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Perangkat lebih besar dari 32Gbyte. Apakah Anda yakin akan menggunakannya?"
 
-#: lib/isodumper.py:232
+#: lib/isodumper.py:236
 msgid "Unmounting all partitions of "
 msgstr "Melepas semua partisi dari "
 
-#: lib/isodumper.py:234
+#: lib/isodumper.py:238
 msgid "Trying to unmount "
 msgstr "Mencoba untuk melepas "
 
-#: lib/isodumper.py:240
+#: lib/isodumper.py:244
 msgid " was terminated by signal "
 msgstr " dihentikan oleh sinyal "
 
-#: lib/isodumper.py:240 lib/isodumper.py:246
+#: lib/isodumper.py:244 lib/isodumper.py:250
 msgid "Error, umount "
 msgstr "Error, melepaskan "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:248
 msgid " successfully unmounted"
 msgstr " berhasil dilepaskan"
 
-#: lib/isodumper.py:246
+#: lib/isodumper.py:250
 msgid " returned "
 msgstr " dikembalikan "
 
-#: lib/isodumper.py:249
+#: lib/isodumper.py:253
 msgid "Execution failed: "
 msgstr "Eksekusi gagal: "
 
-#: lib/isodumper.py:257
+#: lib/isodumper.py:261
 msgid "Could not read mtab !"
 msgstr "Tidak bisa membaca mtab!"
 
-#: lib/isodumper.py:265 lib/isodumper.py:288
+#: lib/isodumper.py:269 lib/isodumper.py:292
 msgid "Reading error."
 msgstr "Error membaca."
 
-#: lib/isodumper.py:271
+#: lib/isodumper.py:275
 msgid "You have not the rights for writing on the device"
 msgstr "Anda tidak memiliki izin untuk menulisi perangkat"
 
-#: lib/isodumper.py:276 lib/isodumper.py:277
+#: lib/isodumper.py:280 lib/isodumper.py:281
 msgid " to "
 msgstr " ke "
 
-#: lib/isodumper.py:276
+#: lib/isodumper.py:280
 msgid "Writing "
 msgstr "Menulisi "
 
-#: lib/isodumper.py:277
+#: lib/isodumper.py:281
 msgid "Executing copy from "
 msgstr "Mengeksekusi salin dari"
 
-#: lib/isodumper.py:293 lib/isodumper.py:306 lib/isodumper.py:315
+#: lib/isodumper.py:297 lib/isodumper.py:310 lib/isodumper.py:319
 msgid "Writing error."
 msgstr "Error menulisi."
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:302
 msgid "Wrote: "
 msgstr "Ditulis: "
 
-#: lib/isodumper.py:310
+#: lib/isodumper.py:314
 msgid " successfully written to "
 msgstr " berhasil ditulis ke "
 
-#: lib/isodumper.py:310
+#: lib/isodumper.py:314 lib/isodumper.py:382
 msgid "Image "
 msgstr "Image "
 
-#: lib/isodumper.py:311
+#: lib/isodumper.py:315
 msgid "Bytes written: "
 msgstr "Byte tertulis:"
 
@@ -169,15 +169,9 @@ msgid ""
 " Something went wrong, please see the details\n"
 " window for the exact error.\n"
 " \n"
-" A logfile isodumper.log with the content will be saved in your\n"
-" homedir/.isodumper when the application is closed."
+" The application will be closed with this window, and a logfile\n"
+" isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
-"<b>Error</b>\n"
-" Ada yang salah, silakan lihat rincian\n"
-" kesalahan.\n"
-" \n"
-" file log isodumper.log akan disimpan di\n"
-" homedir/.isodumper saat aplikasi ditutup."
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"

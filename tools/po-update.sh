@@ -10,7 +10,7 @@ fi
 
 cd "$(readlink -f "$(dirname "$0")/..")"
 
-VERSION=(0.22)
+VERSION=(0.23)
 DOMAIN=(isodumper)
 
 intltool-extract --type=gettext/glade share/isodumper/isodumper.glade
