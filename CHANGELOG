@@ -11,14 +11,14 @@ IsoDumper 0.30
 	  - changed a window to a dialog form.
 	  - set the user owner of log file and directory
 	  - suppress window redraw when closing the logview
-	  
+
 IsoDumper 0.23
 ------------
 	  - added close the application when X of the window bar clicked
 	  - added file name and device name in the logview when selected
 	  - set the user owner of log file and directory
 	  - suppress window redraw when closing the logview
-	  
+
 IsoDumper 0.22
 ------------
 	  - changed a window in a dialog form.

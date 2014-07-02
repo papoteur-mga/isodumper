@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-15 16:43+0200\n"
+"POT-Creation-Date: 2014-06-30 17:50+0200\n"
 "PO-Revision-Date: 2014-05-06 21:10+0000\n"
 "Last-Translator: Willard1975 <willard@null.net>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/mageia/language/"
@@ -22,116 +22,116 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/isodumper.py:146
+#: lib/isodumper.py:153
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:234
-msgid "The device was formatted successfully."
-msgstr "Formateringen lyckades"
-
-#: lib/isodumper.py:238
-msgid "An error occured while creating a partition."
-msgstr "Ett fel inträffade när en partition skapades."
-
-#: lib/isodumper.py:240
-msgid "Authentication error."
-msgstr "Autentiseringsfel."
-
-#: lib/isodumper.py:242
-msgid "An error occurred."
-msgstr "Ett fel inträffade."
-
-#: lib/isodumper.py:265 share/isodumper/isodumper.glade.h:31
-msgid "Backup in:"
-msgstr "Säkerhetskopiera i:"
-
-#: lib/isodumper.py:281
-msgid "Image: "
-msgstr "Avbild: "
-
-#: lib/isodumper.py:282
+#: lib/isodumper.py:162 lib/isodumper.py:289
 msgid "Target Device: "
 msgstr "Målenhet: "
 
-#: lib/isodumper.py:285
+#: lib/isodumper.py:241
+msgid "The device was formatted successfully."
+msgstr "Formateringen lyckades"
+
+#: lib/isodumper.py:245
+msgid "An error occured while creating a partition."
+msgstr "Ett fel inträffade när en partition skapades."
+
+#: lib/isodumper.py:247
+msgid "Authentication error."
+msgstr "Autentiseringsfel."
+
+#: lib/isodumper.py:249
+msgid "An error occurred."
+msgstr "Ett fel inträffade."
+
+#: lib/isodumper.py:272 share/isodumper/isodumper.glade.h:32
+msgid "Backup in:"
+msgstr "Säkerhetskopiera i:"
+
+#: lib/isodumper.py:288
+msgid "Image: "
+msgstr "Avbild: "
+
+#: lib/isodumper.py:292
 msgid "The device is too small to contain the ISO file."
 msgstr "Enheten är för liten för att rymma ISO-filen."
 
-#: lib/isodumper.py:292
+#: lib/isodumper.py:299
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Enheten är större än 32 Gbytes. Är du säker på att du vill använda den?"
 
-#: lib/isodumper.py:319
+#: lib/isodumper.py:326
 msgid "Unmounting all partitions of "
 msgstr "Avmonterar alla partitioner för "
 
-#: lib/isodumper.py:321
+#: lib/isodumper.py:328
 msgid "Trying to unmount "
 msgstr "Försöker att avmontera "
 
-#: lib/isodumper.py:327
+#: lib/isodumper.py:334
 msgid " was terminated by signal "
 msgstr " blev avslutad av signal"
 
-#: lib/isodumper.py:327 lib/isodumper.py:333
+#: lib/isodumper.py:334 lib/isodumper.py:340
 msgid "Error, umount "
 msgstr "Fel, avmontera "
 
-#: lib/isodumper.py:331
+#: lib/isodumper.py:338
 msgid " successfully unmounted"
 msgstr " avmontering lyckades"
 
-#: lib/isodumper.py:333
+#: lib/isodumper.py:340
 msgid " returned "
 msgstr " returnerade "
 
-#: lib/isodumper.py:336
+#: lib/isodumper.py:343
 msgid "Execution failed: "
 msgstr "Körningen misslyckades: "
 
-#: lib/isodumper.py:344
+#: lib/isodumper.py:351
 msgid "Could not read mtab !"
 msgstr "Kunde inte läsa mtab !"
 
-#: lib/isodumper.py:352 lib/isodumper.py:375
+#: lib/isodumper.py:360 lib/isodumper.py:384
 msgid "Reading error."
 msgstr "Läsfel."
 
-#: lib/isodumper.py:358
+#: lib/isodumper.py:366
 msgid "You have not the rights for writing on the device"
 msgstr "Du har inte rättigheter för att skriva till enheten"
 
-#: lib/isodumper.py:363 lib/isodumper.py:364
+#: lib/isodumper.py:372 lib/isodumper.py:373
 msgid " to "
 msgstr " till "
 
-#: lib/isodumper.py:363
+#: lib/isodumper.py:372
 msgid "Writing "
 msgstr "Skriver "
 
-#: lib/isodumper.py:364
+#: lib/isodumper.py:373
 msgid "Executing copy from "
 msgstr "Kör kopia från"
 
-#: lib/isodumper.py:380 lib/isodumper.py:393 lib/isodumper.py:402
+#: lib/isodumper.py:389 lib/isodumper.py:402 lib/isodumper.py:411
 msgid "Writing error."
 msgstr "Skrivfel."
 
-#: lib/isodumper.py:385
+#: lib/isodumper.py:394
 msgid "Wrote: "
 msgstr "Skrev: "
 
-#: lib/isodumper.py:397
+#: lib/isodumper.py:406
 msgid " successfully written to "
 msgstr " skrevs till "
 
-#: lib/isodumper.py:397
+#: lib/isodumper.py:406 lib/isodumper.py:495
 msgid "Image "
 msgstr "Avbild"
 
-#: lib/isodumper.py:398
+#: lib/isodumper.py:407
 msgid "Bytes written: "
 msgstr "Bytes skrivna:"
 
@@ -155,16 +155,23 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
+"Writing is in progress. Exiting will occur that the device will be "
+"unusable.\n"
+"Are you sure you want to quit during writing on the device?"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:4
+msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
 "Ett verktyg för att skriva ISO-avbildningar till ett USB-minne. Det är en "
 "förgrening av USB-imagewriter."
 
-#: share/isodumper/isodumper.glade.h:3
+#: share/isodumper/isodumper.glade.h:5
 msgid "Select"
 msgstr "Välj"
 
-#: share/isodumper/isodumper.glade.h:4
+#: share/isodumper/isodumper.glade.h:6
 msgid ""
 "<b>Warning</b>\n"
 " This will <b>destroy all data</b> on the target\n"
@@ -180,113 +187,103 @@ msgstr ""
 " Om du svarar ok här bör du <b>inte koppla från</b>\n"
 " enheten under de följande åtgärderna."
 
-#: share/isodumper/isodumper.glade.h:10
+#: share/isodumper/isodumper.glade.h:12
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
 " window for the exact error.\n"
-" \n"
-" A logfile isodumper.log with the content will be saved in your\n"
-" homedir/.isodumper when the application is closed."
+"\n"
+" The application will be closed with this window, and a logfile\n"
+" isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
-"<b>Fel</b>\n"
-" Någonting gick fel. vänligen titta i detaljfönstret\n"
-" för det specifika felet.\n"
-" \n"
-" En loggfil kallad isodumper.log med innehållet kommer att sparas i\n"
-" din hemkatalog/.isodumper när programmet avslutas."
 
-#: share/isodumper/isodumper.glade.h:16
-msgid "Formatting the device"
-msgstr "Formaterar enheten"
-
-#: share/isodumper/isodumper.glade.h:17
+#: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
 msgstr "Enhetens etikett:"
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "FAT 32 (Windows)"
 msgstr "FAT 32 (Windows)"
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:20
 msgid "The standard. The size of files are limited to 4Gb"
 msgstr "Standard. Filstorleken är begränsad till 4GB"
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:21
 msgid "NTFS (Windows)"
 msgstr "NTFS (Windows)"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:22
 msgid "To handle files bigger than 4Gb"
 msgstr "För att hantera filer större än 4GB"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "ext4 (Linux)"
 msgstr "ext4 (Linux)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Only for Linux systems"
 msgstr "Endast för Linux-system"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Device to work on:"
 msgstr "Enhet att arbeta på:"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
 msgstr "Välj målenhet att skriva avbilden till"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid "Write Image:"
 msgstr "Skriv avbild:"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:28
 msgid "Select an image file to be written to the device"
 msgstr "Välj en avbild som ska skrivas till enheten"
 
-#: share/isodumper/isodumper.glade.h:28
+#: share/isodumper/isodumper.glade.h:29
 msgid "Select Image"
 msgstr "Välj avbild"
 
-#: share/isodumper/isodumper.glade.h:29
+#: share/isodumper/isodumper.glade.h:30
 msgid "Write to device"
 msgstr "Skriv till enhet"
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:31
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 "Skapa en återställningspunkt av enheten som en avbild för att återställa den "
 "senare"
 
-#: share/isodumper/isodumper.glade.h:33
+#: share/isodumper/isodumper.glade.h:34
 msgid "(None)"
 msgstr "(Ingen)"
 
-#: share/isodumper/isodumper.glade.h:34
+#: share/isodumper/isodumper.glade.h:35
 msgid "Select a folder in which to write the backup image"
 msgstr "Välj en mapp som återställningsbilden ska skrivas till"
 
-#: share/isodumper/isodumper.glade.h:35
+#: share/isodumper/isodumper.glade.h:36
 msgid "Backup the device"
 msgstr "Säkerhetskopiera enheten"
 
-#: share/isodumper/isodumper.glade.h:36
+#: share/isodumper/isodumper.glade.h:37
 msgid "Format the device in FAT, NTFS or ext:"
 msgstr "Formatera enheten som FAT, NTFS eller ext:"
 
-#: share/isodumper/isodumper.glade.h:37
+#: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
 msgstr "Välj formatering. Enheten kommer att formateras till en partition"
 
-#: share/isodumper/isodumper.glade.h:38
+#: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"
 msgstr "Formatera enheten"
 
-#: share/isodumper/isodumper.glade.h:39
+#: share/isodumper/isodumper.glade.h:40
 msgid "Details"
 msgstr "Detaljer"
 
-#: share/isodumper/isodumper.glade.h:40
+#: share/isodumper/isodumper.glade.h:41
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -300,7 +297,7 @@ msgstr ""
 " Du bör ansluta ett USB-minne\n"
 " som avbilden kan skrivas till."
 
-#: share/isodumper/isodumper.glade.h:45
+#: share/isodumper/isodumper.glade.h:46
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -317,3 +314,21 @@ msgstr ""
 " Du kan nu koppla från enheten. En logg kallad isodumper.log \n"
 " av åtgärderna kommer att sparas i din hemkatalog/.isodumper/ när\n"
 " du avslutar programmet."
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>Fel</b>\n"
+#~ " Någonting gick fel. vänligen titta i detaljfönstret\n"
+#~ " för det specifika felet.\n"
+#~ " \n"
+#~ " En loggfil kallad isodumper.log med innehållet kommer att sparas i\n"
+#~ " din hemkatalog/.isodumper när programmet avslutas."
+
+#~ msgid "Formatting the device"
+#~ msgstr "Formaterar enheten"

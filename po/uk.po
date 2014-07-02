@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-15 16:43+0200\n"
+"POT-Creation-Date: 2014-06-30 17:50+0200\n"
 "PO-Revision-Date: 2014-05-09 16:56+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/projects/p/mageia/"
@@ -21,117 +21,117 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: lib/isodumper.py:146
+#: lib/isodumper.py:153
 msgid "Mb"
 msgstr "МБ"
 
-#: lib/isodumper.py:234
-msgid "The device was formatted successfully."
-msgstr "Форматування пристрою виконано успішно."
-
-#: lib/isodumper.py:238
-msgid "An error occured while creating a partition."
-msgstr "Під час спроби створити розділ сталася помилка."
-
-#: lib/isodumper.py:240
-msgid "Authentication error."
-msgstr "Помилка розпізнавання."
-
-#: lib/isodumper.py:242
-msgid "An error occurred."
-msgstr "Сталася помилка."
-
-#: lib/isodumper.py:265 share/isodumper/isodumper.glade.h:31
-msgid "Backup in:"
-msgstr "Резервне копіювання до:"
-
-#: lib/isodumper.py:281
-msgid "Image: "
-msgstr "Образ: "
-
-#: lib/isodumper.py:282
+#: lib/isodumper.py:162 lib/isodumper.py:289
 msgid "Target Device: "
 msgstr "Пристрій призначення: "
 
-#: lib/isodumper.py:285
+#: lib/isodumper.py:241
+msgid "The device was formatted successfully."
+msgstr "Форматування пристрою виконано успішно."
+
+#: lib/isodumper.py:245
+msgid "An error occured while creating a partition."
+msgstr "Під час спроби створити розділ сталася помилка."
+
+#: lib/isodumper.py:247
+msgid "Authentication error."
+msgstr "Помилка розпізнавання."
+
+#: lib/isodumper.py:249
+msgid "An error occurred."
+msgstr "Сталася помилка."
+
+#: lib/isodumper.py:272 share/isodumper/isodumper.glade.h:32
+msgid "Backup in:"
+msgstr "Резервне копіювання до:"
+
+#: lib/isodumper.py:288
+msgid "Image: "
+msgstr "Образ: "
+
+#: lib/isodumper.py:292
 msgid "The device is too small to contain the ISO file."
 msgstr "Об’єм пам’яті пристрою є надто малим для файла ISO."
 
-#: lib/isodumper.py:292
+#: lib/isodumper.py:299
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Об’єм пам’яті на пристрої перевищує 32 гігабайтів. Ви справді хочете "
 "скористатися цим пристроєм?"
 
-#: lib/isodumper.py:319
+#: lib/isodumper.py:326
 msgid "Unmounting all partitions of "
 msgstr "Демонтуємо усі розділи "
 
-#: lib/isodumper.py:321
+#: lib/isodumper.py:328
 msgid "Trying to unmount "
 msgstr "Намагаємося демонтувати "
 
-#: lib/isodumper.py:327
+#: lib/isodumper.py:334
 msgid " was terminated by signal "
 msgstr " було перервано сигналом "
 
-#: lib/isodumper.py:327 lib/isodumper.py:333
+#: lib/isodumper.py:334 lib/isodumper.py:340
 msgid "Error, umount "
 msgstr "Помилка демонтування "
 
-#: lib/isodumper.py:331
+#: lib/isodumper.py:338
 msgid " successfully unmounted"
 msgstr " успішно демонтовано"
 
-#: lib/isodumper.py:333
+#: lib/isodumper.py:340
 msgid " returned "
 msgstr " повернуто "
 
-#: lib/isodumper.py:336
+#: lib/isodumper.py:343
 msgid "Execution failed: "
 msgstr "Помилка виконання: "
 
-#: lib/isodumper.py:344
+#: lib/isodumper.py:351
 msgid "Could not read mtab !"
 msgstr "Не вдалося прочитати файл mtab!"
 
-#: lib/isodumper.py:352 lib/isodumper.py:375
+#: lib/isodumper.py:360 lib/isodumper.py:384
 msgid "Reading error."
 msgstr "Помилка читання."
 
-#: lib/isodumper.py:358
+#: lib/isodumper.py:366
 msgid "You have not the rights for writing on the device"
 msgstr "У вас немає прав доступу для запису на пристрій"
 
-#: lib/isodumper.py:363 lib/isodumper.py:364
+#: lib/isodumper.py:372 lib/isodumper.py:373
 msgid " to "
 msgstr " на "
 
-#: lib/isodumper.py:363
+#: lib/isodumper.py:372
 msgid "Writing "
 msgstr "Записуємо "
 
-#: lib/isodumper.py:364
+#: lib/isodumper.py:373
 msgid "Executing copy from "
 msgstr "Виконуємо копіювання з "
 
-#: lib/isodumper.py:380 lib/isodumper.py:393 lib/isodumper.py:402
+#: lib/isodumper.py:389 lib/isodumper.py:402 lib/isodumper.py:411
 msgid "Writing error."
 msgstr "Помилка під час спроби запису."
 
-#: lib/isodumper.py:385
+#: lib/isodumper.py:394
 msgid "Wrote: "
 msgstr "Записано: "
 
-#: lib/isodumper.py:397
+#: lib/isodumper.py:406
 msgid " successfully written to "
 msgstr " успішно записано на "
 
-#: lib/isodumper.py:397
+#: lib/isodumper.py:406 lib/isodumper.py:495
 msgid "Image "
 msgstr "Образ "
 
-#: lib/isodumper.py:398
+#: lib/isodumper.py:407
 msgid "Bytes written: "
 msgstr "Записано байтів: "
 
@@ -155,16 +155,23 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
+"Writing is in progress. Exiting will occur that the device will be "
+"unusable.\n"
+"Are you sure you want to quit during writing on the device?"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:4
+msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
 "Програма для запису образів ISO на картку пам’яті USB. Є відгалуженням usb-"
 "imagewriter."
 
-#: share/isodumper/isodumper.glade.h:3
+#: share/isodumper/isodumper.glade.h:5
 msgid "Select"
 msgstr "Вибрати"
 
-#: share/isodumper/isodumper.glade.h:4
+#: share/isodumper/isodumper.glade.h:6
 msgid ""
 "<b>Warning</b>\n"
 " This will <b>destroy all data</b> on the target\n"
@@ -180,115 +187,104 @@ msgstr ""
 " Якщо ви підтвердите запис, будь ласка, <b>не демонтуйте</b>\n"
 " пристрій протягом наступної операції."
 
-#: share/isodumper/isodumper.glade.h:10
+#: share/isodumper/isodumper.glade.h:12
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
 " window for the exact error.\n"
-" \n"
-" A logfile isodumper.log with the content will be saved in your\n"
-" homedir/.isodumper when the application is closed."
+"\n"
+" The application will be closed with this window, and a logfile\n"
+" isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
-"<b>Помилка</b>\n"
-" Щось пішло не так, будь ласка, ознайомтеся\n"
-" з подробицями, щоб визначити причину.\n"
-" \n"
-" Файл журналу isodumper.log з текстом повідомлень буде записано до\n"
-" вашої домашньої теки (підтека .isodumper), коли роботу програми буде\n"
-" завершено."
 
-#: share/isodumper/isodumper.glade.h:16
-msgid "Formatting the device"
-msgstr "Форматування пристрою"
-
-#: share/isodumper/isodumper.glade.h:17
+#: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
 msgstr "Мітка для пристрою:"
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "FAT 32 (Windows)"
 msgstr "FAT 32 (Windows)"
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:20
 msgid "The standard. The size of files are limited to 4Gb"
 msgstr "Стандартне. Розмір файлів не може перевищувати 4 ГБ."
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:21
 msgid "NTFS (Windows)"
 msgstr "NTFS (Windows)"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:22
 msgid "To handle files bigger than 4Gb"
 msgstr "Для роботи з файлами, розмір яких перевищує 4 ГБ."
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "ext4 (Linux)"
 msgstr "ext4 (Linux)"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "Only for Linux systems"
 msgstr "Лише для систем Linux."
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Device to work on:"
 msgstr "Пристрій для роботи:"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
 msgstr "Виберіть пристрій для запису образу"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid "Write Image:"
 msgstr "Записати образ:"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:28
 msgid "Select an image file to be written to the device"
 msgstr "Виберіть файл образу, який буде записано на пристрій"
 
-#: share/isodumper/isodumper.glade.h:28
+#: share/isodumper/isodumper.glade.h:29
 msgid "Select Image"
 msgstr "Виберіть образ"
 
-#: share/isodumper/isodumper.glade.h:29
+#: share/isodumper/isodumper.glade.h:30
 msgid "Write to device"
 msgstr "Записати на пристрій"
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:31
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
 "Створити образ резервної копії пристрою для наступного відновлення даних"
 
-#: share/isodumper/isodumper.glade.h:33
+#: share/isodumper/isodumper.glade.h:34
 msgid "(None)"
 msgstr "(Немає)"
 
-#: share/isodumper/isodumper.glade.h:34
+#: share/isodumper/isodumper.glade.h:35
 msgid "Select a folder in which to write the backup image"
 msgstr "Виберіть теку, до якої слід записати образ резервної копії"
 
-#: share/isodumper/isodumper.glade.h:35
+#: share/isodumper/isodumper.glade.h:36
 msgid "Backup the device"
 msgstr "Створити резервну копію пристрою"
 
-#: share/isodumper/isodumper.glade.h:36
+#: share/isodumper/isodumper.glade.h:37
 msgid "Format the device in FAT, NTFS or ext:"
 msgstr "Форматувати пристрій, FAT, NTFS або ext:"
 
-#: share/isodumper/isodumper.glade.h:37
+#: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
 msgstr ""
 "Виберіть форматування. На пристрої буде створено один розділ з відповідним "
 "форматуванням."
 
-#: share/isodumper/isodumper.glade.h:38
+#: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"
 msgstr "Форматувати пристрій"
 
-#: share/isodumper/isodumper.glade.h:39
+#: share/isodumper/isodumper.glade.h:40
 msgid "Details"
 msgstr "Подробиці"
 
-#: share/isodumper/isodumper.glade.h:40
+#: share/isodumper/isodumper.glade.h:41
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -302,7 +298,7 @@ msgstr ""
 " Вам слід з’єднати з комп’ютером диск USB,\n"
 " на який буде записано образ."
 
-#: share/isodumper/isodumper.glade.h:45
+#: share/isodumper/isodumper.glade.h:46
 msgid ""
 "<b>Success</b>\n"
 " The image was successfully written to the\n"
@@ -320,3 +316,22 @@ msgstr ""
 " Файл журналу дій isodumper.log записано буде записано\n"
 " до теки .isodumper вашої домашньої теки, щойно роботу\n"
 " програми буде завершено."
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>Помилка</b>\n"
+#~ " Щось пішло не так, будь ласка, ознайомтеся\n"
+#~ " з подробицями, щоб визначити причину.\n"
+#~ " \n"
+#~ " Файл журналу isodumper.log з текстом повідомлень буде записано до\n"
+#~ " вашої домашньої теки (підтека .isodumper), коли роботу програми буде\n"
+#~ " завершено."
+
+#~ msgid "Formatting the device"
+#~ msgstr "Форматування пристрою"
