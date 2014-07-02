@@ -412,7 +412,8 @@ Public License instead of this License.
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
     <property name="title" translatable="yes">IsoDumper</property>
-    <property name="icon">isodumper</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
     <child internal-child="vbox">
       <widget class="GtkVBox" id="dialog-vbox6">
