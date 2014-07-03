@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:50+0200\n"
-"PO-Revision-Date: 2014-05-08 09:08+0000\n"
+"PO-Revision-Date: 2014-07-02 09:08+0000\n"
 "Last-Translator: You-Cheng Hsieh <yochenhsieh@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/mageia/"
 "language/zh_TW/)\n"
@@ -31,19 +31,19 @@ msgstr "目標裝置： "
 
 #: lib/isodumper.py:241
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "裝置已經成功格式化了。"
 
 #: lib/isodumper.py:245
 msgid "An error occured while creating a partition."
-msgstr ""
+msgstr "建立磁碟區時發生了一個錯誤。"
 
 #: lib/isodumper.py:247
 msgid "Authentication error."
-msgstr ""
+msgstr "認證錯誤。"
 
 #: lib/isodumper.py:249
 msgid "An error occurred."
-msgstr ""
+msgstr "發生一個錯誤。"
 
 #: lib/isodumper.py:272 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
@@ -156,6 +156,8 @@ msgid ""
 "unusable.\n"
 "Are you sure you want to quit during writing on the device?"
 msgstr ""
+"寫入正在進行中。退出可能使得裝置無法使用。\n"  
+"您確定要在寫入裝置時退出嗎?"  
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -193,38 +195,43 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Error</b>\n"
+" 發生問題了，詳細錯誤請查看細節視窗。\n"
+"\n"
+" 應用程式將會關閉這個視窗，在您的家目錄/.isodumper 中\n"
+" 會有一個紀錄檔 isodumper.log "
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
-msgstr ""
+msgstr "裝置的標籤:"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "標準格式。檔案大小限制為 4GB"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "可存放大於 4GB 的檔案"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "只能給 Linux 系統"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Device to work on:"
-msgstr ""
+msgstr "工作的裝置:"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
@@ -260,19 +267,19 @@ msgstr "選擇一個目錄以供寫入備份映像"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Backup the device"
-msgstr ""
+msgstr "備份裝置"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "格式化裝置成 FAT, NTFS 或 ext:"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "選擇格式。該裝置會被格式化成一個磁碟區"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"
-msgstr ""
+msgstr "格式化裝置"
 
 #: share/isodumper/isodumper.glade.h:40
 msgid "Details"
