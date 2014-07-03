@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:50+0200\n"
-"PO-Revision-Date: 2014-05-09 16:56+0000\n"
-"Last-Translator: Fox909 <ffox909@mail.ru>\n"
+"PO-Revision-Date: 2014-07-02 22:59+0300\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/mageia/language/"
 "ru/)\n"
 "Language: ru\n"
@@ -160,13 +160,15 @@ msgid ""
 "unusable.\n"
 "Are you sure you want to quit during writing on the device?"
 msgstr ""
+"Идёт процесс записи. Если произойдёт выход, то устройство будет "
+"непригодным.\n"
+"Вы уверены, что хотите выйти во время записи на устройство?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
-"Инструмент для записи ISO образов на USB флешку. Это ответвление USB-"
-"ImageWriter."
+"Инструмент для записи ISO образов на USB флешку. Это форк usb-imagewriter."
 
 #: share/isodumper/isodumper.glade.h:5
 msgid "Select"
@@ -185,7 +187,7 @@ msgstr ""
 " На целевом устройстве будет <b>уничтожена вся информация</b>.\n"
 " Вы действительно хотите продолжить?\n"
 "\n"
-" Если ответите \"Да\", пожалуйста, <b>не отключайте</b>\n"
+" Если Вы ответите \"Да\", пожалуйста, <b>не отключайте</b>\n"
 " устройство во время операции."
 
 #: share/isodumper/isodumper.glade.h:12
@@ -197,6 +199,12 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Ошибка</b>\n"
+" Что-то пошло не так, пожалуйста, посмотрите окно\n"
+" подробностей для уточнения ошибки.\n"
+"\n"
+" Программа будет закрыта с этим окном, а журнал isodumper.log\n"
+" будет сохранён в Вашем домашнем каталоге/.isodumper "
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
@@ -208,7 +216,7 @@ msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr "Стандарт. Объем файлов ограничен 4-мя Гб"
+msgstr "Стандарт. Объём файлов ограничен 4-мя Гб"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "NTFS (Windows)"
@@ -273,7 +281,7 @@ msgstr "Форматировать устройство в FAT, NTFS или EXT:
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr "Выберите формат. Устройство будет отформатирован одним разделом"
+msgstr "Выберите формат. Устройство будет отформатировано одним разделом"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"
@@ -312,23 +320,5 @@ msgstr ""
 " целевое устройство.\n"
 " \n"
 " Вы можете отключить его, журнал isodumper.log\n"
-" операции будет сохранен в Вашем домашнем каталоге/.isodumper, когда\n"
+" операции будет сохранён в Вашем домашнем каталоге/.isodumper, когда\n"
 " Вы закроете программу."
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Ошибка</b>\n"
-#~ " Что-то пошло не так, смотрите окно\n"
-#~ " подробностей для уточнения ошибки.\n"
-#~ " \n"
-#~ " Лог-файл isodumper.log с содержанием будет сохранен в\n"
-#~ " Вашем домашнем каталоге/.isodumper, если приложение закрыть."
-
-#~ msgid "Formatting the device"
-#~ msgstr "Форматирование устройства"
