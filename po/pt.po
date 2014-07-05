@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:50+0200\n"
-"PO-Revision-Date: 2014-05-08 12:50+0000\n"
-"Last-Translator: alfalb_mansil <manuela.silva@sky.com>\n"
+"PO-Revision-Date: 2014-07-03 13:21+0000\n"
+"Last-Translator: Manuela Silva <manuela.silva@sky.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/projects/p/mageia/"
 "language/pt/)\n"
 "Language: pt\n"
@@ -31,19 +31,19 @@ msgstr "Dispositivo de Destino: "
 
 #: lib/isodumper.py:241
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "O dispositivo foi formatado com sucesso."
 
 #: lib/isodumper.py:245
 msgid "An error occured while creating a partition."
-msgstr ""
+msgstr "Ocorreu um erro durante a criação da partição."
 
 #: lib/isodumper.py:247
 msgid "Authentication error."
-msgstr ""
+msgstr "Erro de Autenticação."
 
 #: lib/isodumper.py:249
 msgid "An error occurred."
-msgstr ""
+msgstr "Ocorreu um erro."
 
 #: lib/isodumper.py:272 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
@@ -158,6 +158,8 @@ msgid ""
 "unusable.\n"
 "Are you sure you want to quit during writing on the device?"
 msgstr ""
+"Gravação em progresso. Se sair o dispositivo poderá ficar inutilizado.\n"
+"Tem a certeza que pretende sair durante a gravação no dispositivo?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -181,12 +183,12 @@ msgid ""
 msgstr ""
 "<b>Aviso</b>\n"
 " Isto irá <b>destruir todos os dados</b> no\n"
-" dispositivo selecionado. Tem a certeza que \n"
-"deseja prosseguir?\n"
+" dispositivo selecionado. Tem a certeza que\n"
+" deseja prosseguir?\n"
 "\n"
-"Se CONFIRMAR aqui, por favor, \n"
-"<b>não desconete</b> o dispositivo \n"
-"durante a seguinte operação."
+" Se CONFIRMAR aqui, por favor,\n"
+" <b>não desconete</b> o dispositivo\n"
+" durante a seguinte operação."
 
 #: share/isodumper/isodumper.glade.h:12
 msgid ""
@@ -197,38 +199,44 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Erro</b>\n"
+" Ocorreu algo de errado, por favor, consulte a janela dos detalhes para ver "
+"o erro.\n"
+"\n"
+" A aplicação irá ser fechada com esta janela, e o ficheiro de registo\n"
+" isodumper.log será guardado em homedir/.isodumper "
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
-msgstr ""
+msgstr "Nome para o dispositivo:"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "Standard. O tamanho dos ficheiros estão limitados a 4 Gb"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "Para manejar ficheiros maiores do que 4 Gb"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Só para sistemas Linux"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Device to work on:"
-msgstr ""
+msgstr "Dispositivo para funcionar em:"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
@@ -266,19 +274,19 @@ msgstr "Selecione uma pasta para gravar a imagem da cópia de segurança"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Backup the device"
-msgstr ""
+msgstr "Efetuar cópia do dispositivo"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Formatar o dispositivo em FAT, NTFS ou ext:"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "Escolha o formato. O dispositivo será formatado numa partição"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"
-msgstr ""
+msgstr "Formate o dispositivo"
 
 #: share/isodumper/isodumper.glade.h:40
 msgid "Details"
@@ -316,18 +324,3 @@ msgstr ""
 " Agora, pode desconetá-lo com segurança. Irá ser guardado um\n"
 " registo isodumper.log  da operação em homedir/.isodumper/\n"
 " quando fechar a aplicação."
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Erro</b>\n"
-#~ " Ocorreu algo de errado, por favor, consulte a janela \n"
-#~ " dos detalhes para ver o erro em detalhe.\n"
-#~ " \n"
-#~ " Irá ser guardado um ficheiro de registo isodumper.log com o \n"
-#~ " conteúdo em homedir/.isodumper, quando fechar a aplicação."

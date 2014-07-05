@@ -5,15 +5,15 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# Kristoffer Grundströ <kristoffer.grundstrom1983@gmail.com>, 2013
-# Willard1975 <willard@null.net>, 2014
+# Kristoffer Grundström <kristoffer.grundstrom1983@gmail.com>, 2013
+# Michael Eklund <willard@null.net>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:50+0200\n"
-"PO-Revision-Date: 2014-05-06 21:10+0000\n"
-"Last-Translator: Willard1975 <willard@null.net>\n"
+"PO-Revision-Date: 2014-07-03 08:51+0000\n"
+"Last-Translator: Michael Eklund <willard@null.net>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/mageia/language/"
 "sv/)\n"
 "Language: sv\n"
@@ -159,6 +159,8 @@ msgid ""
 "unusable.\n"
 "Are you sure you want to quit during writing on the device?"
 msgstr ""
+"Skrivning pågår. Att avsluta nu kommer att göra enheten oanvändbar.\n"
+"Är du säker på att du vill avsluta trots att skrivning pågår till enheten?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -196,6 +198,12 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Fel</b>\n"
+" Något gick fel. Kontrollera detaljfönstret för\n"
+" exakt felmeddelande.\n"
+"\n"
+" Programmet kommer att avslutas med detta fönster och en\n"
+" logg fil; isodumper.log kommer att sparas i din hemkatalog/.isodumper"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
@@ -314,21 +322,3 @@ msgstr ""
 " Du kan nu koppla från enheten. En logg kallad isodumper.log \n"
 " av åtgärderna kommer att sparas i din hemkatalog/.isodumper/ när\n"
 " du avslutar programmet."
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Fel</b>\n"
-#~ " Någonting gick fel. vänligen titta i detaljfönstret\n"
-#~ " för det specifika felet.\n"
-#~ " \n"
-#~ " En loggfil kallad isodumper.log med innehållet kommer att sparas i\n"
-#~ " din hemkatalog/.isodumper när programmet avslutas."
-
-#~ msgid "Formatting the device"
-#~ msgstr "Formaterar enheten"

@@ -4,18 +4,18 @@
 #
 # Translators:
 # Automatically generated, 2013
-# Dune <dune06@free.fr>, 2014
-# filorin <guillaume.ber17@laposte.net>, 2014
+# Eric Barbero <dune06@free.fr>, 2014
+# Guillaume Bernard <filorin@laposte.net>, 2014
 # papoteur, 2013
 # Papoteur <papoteur@mageialinux-online.org>, 2013
-# papoteur, 2013-2014
+# Yves Brungard, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:50+0200\n"
-"PO-Revision-Date: 2014-05-09 21:00+0000\n"
-"Last-Translator: Dune <dune06@free.fr>\n"
+"PO-Revision-Date: 2014-07-02 19:51+0000\n"
+"Last-Translator: Eric Barbero <dune06@free.fr>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/mageia/language/"
 "fr/)\n"
 "Language: fr\n"
@@ -161,6 +161,9 @@ msgid ""
 "unusable.\n"
 "Are you sure you want to quit during writing on the device?"
 msgstr ""
+"La gravure est en cours. La stopper maintenant rendra votre disque "
+"inutilisable.\n"
+"Etes-vous sûr de vouloir quitter le programme en cours d'écriture ?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -198,6 +201,13 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Erreur</b>\n"
+" Quelquechose s'est mal passé. Veuillez consulter la fenêtre\n"
+" des détails pour en savoir plus sur l'anomalie.\n"
+"\n"
+" Le programme sera fermé en même temps que la fermeture de\n"
+" cette fenêtre, et un fichier journal isodumper.log sera sauvegardé\n"
+" dans le dossier .isodumper de votre répertoire personnel. "
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
@@ -315,22 +325,3 @@ msgstr ""
 " Vous pouvez maintenant le débrancher, un journal\n"
 " de l'opération isodumper.log sera enregistré dans votre répertoire\n"
 " personnel/.isodumper lorsque vous fermerez l'application."
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Erreur</b>\n"
-#~ " Quelque chose s'est mal passé, veuillez consulter la fenêtre\n"
-#~ " de détails pour connaître l'erreur exacte.\n"
-#~ " \n"
-#~ " Un fichier journal isodumper.log avec son contenu sera enregistré \n"
-#~ " dans votre répertoire utilisateur/.isodumper \n"
-#~ " lorsque l'application sera fermée."
-
-#~ msgid "Formatting the device"
-#~ msgstr "Formatage du périphérique"

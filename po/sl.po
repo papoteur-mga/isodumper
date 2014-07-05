@@ -4,16 +4,16 @@
 #
 # Translators:
 # Automatically generated, 2013
-# filip.komar <filip.komar@gmail.com>, 2013
-# filip.komar <filip.komar@gmail.com>, 2013-2014
+# Filip Komar <filip.komar@gmail.com>, 2013
+# Filip Komar <filip.komar@gmail.com>, 2013-2014
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:50+0200\n"
-"PO-Revision-Date: 2014-04-21 14:41+0000\n"
-"Last-Translator: filip.komar <filip.komar@gmail.com>\n"
+"PO-Revision-Date: 2014-07-02 13:31+0000\n"
+"Last-Translator: Filip Komar <filip.komar@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/mageia/"
 "language/sl/)\n"
 "Language: sl\n"
@@ -162,6 +162,9 @@ msgid ""
 "unusable.\n"
 "Are you sure you want to quit during writing on the device?"
 msgstr ""
+"Trenutno poteka zapisovanje. Takojšen izhod bo napravo pustil v neuporabnem "
+"stanju.\n"
+"Ali res želite takoj prekiniti pisanje?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -199,6 +202,11 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Napaka</b>\n"
+" Nekaj je šlo narobe, več si lahko ogledate v oknu s podrobnostmi.\n"
+"\n"
+" S tem oknom se bo program zaprl in v mapo .isodumper v vaši\n"
+" domači mapi se bo zapisala dnevniška datoteka isodumper.log. "
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
@@ -316,21 +324,3 @@ msgstr ""
 " Sedaj lahko le-to odstranite.\n"
 " Ob zaprtju programa se bo v mapo .isodumper v vaši domači\n"
 " mapi zapisala dnevniška datoteka isodumper.log."
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Napaka</b>\n"
-#~ " Nekaj je šlo narobe, poglejte\n"
-#~ " okno s podrobnostmi o napaki.\n"
-#~ " \n"
-#~ " Ob zaprtju programa se bo v mapo .isodumper v vaši domači\n"
-#~ " mapi zapisala dnevniška datoteka isodumper.log."
-
-#~ msgid "Formatting the device"
-#~ msgstr "Formatiranje naprave"

@@ -5,15 +5,16 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# Padula <padula1000@gmail.com>, 2013-2014
-# Padula <padula1000@gmail.com>, 2013
+# Marcio Andre Padula <padula1000@gmail.com>, 2013-2014
+# Marcio Andre Padula <padula1000@gmail.com>, 2013
+# Marcio Andre Padula <padula1000@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:50+0200\n"
-"PO-Revision-Date: 2014-05-10 20:40+0000\n"
-"Last-Translator: Padula <padula1000@gmail.com>\n"
+"PO-Revision-Date: 2014-07-04 01:10+0000\n"
+"Last-Translator: Marcio Andre Padula <padula1000@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
 "mageia/language/pt_BR/)\n"
 "Language: pt_BR\n"
@@ -158,6 +159,9 @@ msgid ""
 "unusable.\n"
 "Are you sure you want to quit during writing on the device?"
 msgstr ""
+"Gravação está em andamento. Se sair a gravação do dispositivo não poderá ser "
+"utilizada.\n"
+"Tem certeza de que deseja sair durante a gravação no dispositivo?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -195,6 +199,12 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Erro</b>\n"
+" Algo deu errado, por favor, consulte os detalhes\n"
+" da janela para o erro exato.\n"
+"\n"
+" A aplicação será fechada, e um arquivo de log\n"
+" isodumper.log será salvo no seu diretório de usuário/.isodumper "
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
@@ -312,21 +322,3 @@ msgstr ""
 " Você Já pode desconectá-lo, um isodumper.log\n"
 " da operação será salvo em sua homedir/.isodumper/\n"
 " assim que Fechar o aplicativo."
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Erro</b>\n"
-#~ " Algo deu errado, veja por favor os detalhes\n"
-#~ " na janela para o erro exato.\n"
-#~ " \n"
-#~ " Um arquivo de isodumper.log com o conteúdo será salvo em sua\n"
-#~ " homedir/.isodumper quando o aplicativo for finalizado."
-
-#~ msgid "Formatting the device"
-#~ msgstr "Formatar o dispositivo"
