@@ -73,7 +73,7 @@ class IsoDumper:
 
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
-        self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
+        #self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -109,7 +109,8 @@ class IsoDumper:
 
 
         # set callbacks
-        dict = { "on_main_dialog_destroy" : self.close,
+        dict = { "on_main_dialog_destroy_event" : self.confirm_close,
+                 "on_main_dialog_delete_event" : self.confirm_close,
                  "on_cancel_button_clicked" : self.confirm_close,
                  "on_emergency_button_clicked" : self.restore,
                  "on_success_button_clicked" : self.close,
@@ -177,8 +178,11 @@ class IsoDumper:
             # Add .iso if not specified
             if not exit_dialog.lower().endswith('.iso'):
                 exit_dialog=exit_dialog+".iso"
-            self.backup_select.set_label(exit_dialog)
+            head, tail = os.path.split(exit_dialog)
+            self.backup_select.set_label(tail)
             self.backup_button.set_sensitive(True)
+            self.backup_select.set_tooltip_text(exit_dialog)
+            self.logger(_('Backup in: ')+ exit_dialog)
             expander = self.wTree.get_widget("detail_expander")
             expander.set_sensitive(True)
         self.choose.hide()
@@ -285,6 +289,8 @@ class IsoDumper:
         combo.set_sensitive(False)
         format_button=self.wTree.get_widget("format_button")
         format_button.set_sensitive(False)
+        backup_select=self.wTree.get_widget("backup_select")
+        backup_select.set_sensitive(False)
         source = self.chooser.get_filename()
         target = self.dev.split('(')[1].split(')')[0]
         dialog = self.wTree.get_widget("confirm_dialog")
@@ -427,7 +433,7 @@ class IsoDumper:
             dialog.hide()
 
 
-    def confirm_close(self, widget):
+    def confirm_close(self, widget, *args):
         if self.operation==False:    # no writing , backup nor format running
             self.close('dummy')
         else:   # writing , backup or format running
@@ -437,8 +443,10 @@ class IsoDumper:
                self.close('dummy')
             else:
                 dialog.hide()
+                return True
 
     def emergency(self):
+        self.operation=False
         self.final_unsensitive()
         dialog = self.wTree.get_widget("emergency_dialog")
         expander = self.wTree.get_widget("detail_expander")

@@ -1,7 +1,8 @@
 isodumper
 =========
 
-A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter.
+A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter. 
+We added also a formatting feature and a backup of USB device content.
 
 
 Requirements
@@ -22,11 +23,7 @@ License
 --------
 
 This software is distributed under the terms of the
-[GNU General Public License version 2 (GPLv2+)](COPYING.GPL).
-
-The [isodumper icon](isodumper.svg) is licensed under the terms of the
-[GNU Lesser General Public License version 2.1 (LGPLv2.1+)](COPYING.LGPL).
-It is part of the Crystal Clear icon set by Everaldo Coelho.
+[GNU Public License, v2](COPYING)
 
 
 Authors
