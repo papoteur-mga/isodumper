@@ -431,7 +431,7 @@ Public License instead of this License.
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <signal name="clicked" handler="on_select_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_select_clicked"/>
               </widget>
               <packing>
                 <property name="expand">True</property>
@@ -446,7 +446,7 @@ Public License instead of this License.
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_stock">True</property>
-                <signal name="clicked" handler="on_choose_cancel_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_choose_cancel_clicked"/>
               </widget>
               <packing>
                 <property name="expand">False</property>
@@ -605,7 +605,7 @@ Public License instead of this License.
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_stock">True</property>
-                <signal name="clicked" handler="on_emergency_button_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_emergency_button_clicked"/>
               </widget>
               <packing>
                 <property name="expand">False</property>
@@ -675,7 +675,7 @@ Public License instead of this License.
     <property name="window_position">center-always</property>
     <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
-    <signal name="delete_event" handler="on_main_dialog_delete_event" swapped="no"/>
+    <signal name="delete_event" handler="on_main_dialog_delete_event"/>
     <child>
       <widget class="GtkVBox" id="vbox2">
         <property name="visible">True</property>
@@ -732,7 +732,7 @@ Public License instead of this License.
                         <property name="has_tooltip">True</property>
                         <property name="tooltip" translatable="yes">Select an image file to be written to the device</property>
                         <property name="title" translatable="yes">Select Image</property>
-                        <signal name="file_set" handler="on_filechooserbutton_file_set" swapped="no"/>
+                        <signal name="file_set" handler="on_filechooserbutton_file_set"/>
                       </widget>
                       <packing>
                         <property name="expand">False</property>
@@ -762,7 +762,7 @@ Public License instead of this License.
                         <property name="can_focus">False</property>
                         <property name="tooltip" translatable="yes">Select target device to write the image to</property>
                         <property name="items" translatable="yes"/>
-                        <signal name="changed" handler="on_device_combobox_changed" swapped="no"/>
+                        <signal name="changed" handler="on_device_combobox_changed"/>
                       </widget>
                       <packing>
                         <property name="expand">True</property>
@@ -785,7 +785,7 @@ Public License instead of this License.
                     <property name="can_focus">True</property>
                     <property name="receives_default">False</property>
                     <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_backup_toggled" swapped="no"/>
+                    <signal name="toggled" handler="on_backup_toggled"/>
                   </widget>
                   <packing>
                     <property name="expand">True</property>
@@ -818,7 +818,7 @@ Public License instead of this License.
                         <property name="receives_default">True</property>
                         <property name="tooltip" translatable="yes">Select a folder in which to write the backup image</property>
                         <property name="image_position">right</property>
-                        <signal name="clicked" handler="on_backup_select_clicked" swapped="no"/>
+                        <signal name="clicked" handler="on_backup_select_clicked"/>
                       </widget>
                       <packing>
                         <property name="expand">True</property>
@@ -865,7 +865,7 @@ Public License instead of this License.
                     <property name="visible">True</property>
                     <property name="sensitive">False</property>
                     <property name="can_focus">True</property>
-                    <signal name="activate" handler="on_detail_expander_activate" swapped="no"/>
+                    <signal name="activate" handler="on_detail_expander_activate"/>
                     <child>
                       <widget class="GtkScrolledWindow" id="scrolledwindow">
                         <property name="visible">True</property>
@@ -932,7 +932,7 @@ Public License instead of this License.
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_stock">True</property>
-                <signal name="clicked" handler="on_about_button_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_about_button_clicked"/>
               </widget>
               <packing>
                 <property name="expand">False</property>
@@ -947,7 +947,7 @@ Public License instead of this License.
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_stock">True</property>
-                <signal name="clicked" handler="on_cancel_button_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_cancel_button_clicked"/>
               </widget>
               <packing>
                 <property name="expand">False</property>
@@ -961,7 +961,7 @@ Public License instead of this License.
                 <property name="sensitive">False</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <signal name="clicked" handler="on_write_button_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_write_button_clicked"/>
                 <child>
                   <widget class="GtkHBox" id="hbox2">
                     <property name="visible">True</property>
@@ -1056,7 +1056,7 @@ Public License instead of this License.
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_stock">True</property>
-                <signal name="clicked" handler="on_retry_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_retry_clicked"/>
               </widget>
               <packing>
                 <property name="expand">False</property>
@@ -1146,7 +1146,7 @@ Public License instead of this License.
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_stock">True</property>
-                <signal name="clicked" handler="on_success_button_clicked" swapped="no"/>
+                <signal name="clicked" handler="on_success_button_clicked"/>
               </widget>
               <packing>
                 <property name="expand">False</property>
