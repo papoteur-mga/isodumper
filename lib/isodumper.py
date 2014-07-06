@@ -73,7 +73,6 @@ class IsoDumper:
 
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
-        #self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
