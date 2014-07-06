@@ -73,7 +73,6 @@ class IsoDumper:
 
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
-        #self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -127,7 +126,6 @@ class IsoDumper:
                  "on_format_cancel_clicked" : self.format_cancel,
                  "on_format_go_clicked" : self.do_format,
                  "on_write_button_clicked" : self.do_write,
-                 "on_main_dialog_delete_event" : gtk.main_quit,
                  }
         self.wTree.signal_autoconnect(dict)
 
@@ -201,6 +199,8 @@ class IsoDumper:
     def do_format(self, widget)            :
         target = self.dev.split('(')[1].split(')')[0]
         dialog = self.wTree.get_widget("confirm_dialog")
+        expander = self.wTree.get_widget("detail_expander")
+        expander.set_sensitive(True)
         resp = dialog.run()
         dev_name=self.wTree.get_widget("format_name").get_text()
         if resp:
@@ -280,6 +280,8 @@ class IsoDumper:
         write_button.set_sensitive(False)
         combo = self.wTree.get_widget("device_combobox")
         combo.set_sensitive(False)
+        format_button=self.wTree.get_widget("format_button")
+        format_button.set_sensitive(False)
         source = self.chooser.get_filename()
         target = self.dev.split('(')[1].split(')')[0]
         dialog = self.wTree.get_widget("confirm_dialog")
@@ -425,7 +427,7 @@ class IsoDumper:
     def confirm_close(self, widget):
         if self.operation==False:    # no writing , backup nor format running
             self.close('dummy')
-        else:   # writing , backup nor format running
+        else:   # writing , backup or format running
             dialog=self.wTree.get_widget("Quit_warning")
             resp = dialog.run()
             if resp==-5 :   # GTK_RESPONSE_OK
