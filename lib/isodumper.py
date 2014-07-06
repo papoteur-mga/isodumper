@@ -73,6 +73,7 @@ class IsoDumper:
 
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
+        self.gladefile = "/documents/isodumper-dev/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -178,6 +179,8 @@ class IsoDumper:
                 exit_dialog=exit_dialog+".iso"
             self.backup_select.set_label(exit_dialog)
             self.backup_button.set_sensitive(True)
+            expander = self.wTree.get_widget("detail_expander")
+            expander.set_sensitive(True)
         self.choose.hide()
 
     def format_dialog(self,widget):
