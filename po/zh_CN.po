@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-30 17:50+0200\n"
+"POT-Creation-Date: 2014-07-07 00:05+0200\n"
 "PO-Revision-Date: 2009-05-13 05:10+0000\n"
 "Last-Translator: puzhengcai <Unknown>\n"
 "Language-Team: Simplified Chinese <zh_CN@li.org>\n"
@@ -19,117 +19,121 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: lib/isodumper.py:153
+#: lib/isodumper.py:152
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:162 lib/isodumper.py:289
+#: lib/isodumper.py:161 lib/isodumper.py:299
 msgid "Target Device: "
 msgstr "目标设备： "
 
-#: lib/isodumper.py:241
-msgid "The device was formatted successfully."
-msgstr ""
-
-#: lib/isodumper.py:245
-msgid "An error occured while creating a partition."
+#: lib/isodumper.py:184
+msgid "Backup in: "
 msgstr ""
 
 #: lib/isodumper.py:247
+msgid "The device was formatted successfully."
+msgstr ""
+
+#: lib/isodumper.py:251
+msgid "An error occured while creating a partition."
+msgstr ""
+
+#: lib/isodumper.py:253
 msgid "Authentication error."
 msgstr ""
 
-#: lib/isodumper.py:249
+#: lib/isodumper.py:255
 msgid "An error occurred."
 msgstr ""
 
-#: lib/isodumper.py:272 share/isodumper/isodumper.glade.h:32
+#: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:288
+#: lib/isodumper.py:298
 msgid "Image: "
 msgstr "镜像： "
 
-#: lib/isodumper.py:292
+#: lib/isodumper.py:302
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:309
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:326
+#: lib/isodumper.py:336
 msgid "Unmounting all partitions of "
 msgstr "卸载以下设备的所有分区 "
 
-#: lib/isodumper.py:328
+#: lib/isodumper.py:338
 msgid "Trying to unmount "
 msgstr "尝试卸载分区 "
 
-#: lib/isodumper.py:334
+#: lib/isodumper.py:344
 msgid " was terminated by signal "
 msgstr " 被信号终止 "
 
-#: lib/isodumper.py:334 lib/isodumper.py:340
+#: lib/isodumper.py:344 lib/isodumper.py:350
 msgid "Error, umount "
 msgstr "出错，卸载分区 "
 
-#: lib/isodumper.py:338
+#: lib/isodumper.py:348
 msgid " successfully unmounted"
 msgstr " 成功卸载设备"
 
-#: lib/isodumper.py:340
+#: lib/isodumper.py:350
 msgid " returned "
 msgstr " 已返回 "
 
-#: lib/isodumper.py:343
+#: lib/isodumper.py:353
 msgid "Execution failed: "
 msgstr "执行失败： "
 
-#: lib/isodumper.py:351
+#: lib/isodumper.py:361
 msgid "Could not read mtab !"
 msgstr "无法读取mtab文件！"
 
-#: lib/isodumper.py:360 lib/isodumper.py:384
+#: lib/isodumper.py:370 lib/isodumper.py:394
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:366
+#: lib/isodumper.py:376
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:372 lib/isodumper.py:373
+#: lib/isodumper.py:382 lib/isodumper.py:383
 msgid " to "
 msgstr " 到 "
 
-#: lib/isodumper.py:372
+#: lib/isodumper.py:382
 msgid "Writing "
 msgstr "正在写入 "
 
-#: lib/isodumper.py:373
+#: lib/isodumper.py:383
 #, fuzzy
 msgid "Executing copy from "
 msgstr "运行: dd if="
 
-#: lib/isodumper.py:389 lib/isodumper.py:402 lib/isodumper.py:411
+#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
 #, fuzzy
 msgid "Writing error."
 msgstr "正在写入 "
 
-#: lib/isodumper.py:394
+#: lib/isodumper.py:404
 msgid "Wrote: "
 msgstr "已写入： "
 
-#: lib/isodumper.py:406
+#: lib/isodumper.py:416
 msgid " successfully written to "
 msgstr " 成功写入到 "
 
-#: lib/isodumper.py:406 lib/isodumper.py:495
+#: lib/isodumper.py:416 lib/isodumper.py:507
 msgid "Image "
 msgstr "镜像 "
 
-#: lib/isodumper.py:407
+#: lib/isodumper.py:417
 msgid "Bytes written: "
 msgstr ""
 
@@ -152,9 +156,9 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
-"Writing is in progress. Exiting will occur that the device will be "
-"unusable.\n"
-"Are you sure you want to quit during writing on the device?"
+"Writing is in progress. Exiting during writing will occur that the device or "
+"the backup will be unusable.\n"
+"Are you sure you want to quit during writing?"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:4
@@ -286,23 +290,32 @@ msgid ""
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:46
-#, fuzzy
 msgid ""
 "<b>Success</b>\n"
-" The image was successfully written to the\n"
-" target device.\n"
+" The operation was successfully performed.\n"
 " \n"
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-"<b>成功</b>\n"
-" 镜像文件成功写入到目标驱动器\n"
-" \n"
-" \n"
-" 您现在已经完成本次操作，可以卸载设备。\n"
-" 当您退出程序时\n"
-" 一份日志文件将会保存在您的用户主目录中。"
+
+#, fuzzy
+#~ msgid ""
+#~ "<b>Success</b>\n"
+#~ " The image was successfully written to the\n"
+#~ " target device.\n"
+#~ " \n"
+#~ " You are free to unplug it now, a log isodumper.log \n"
+#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
+#~ " you close the application."
+#~ msgstr ""
+#~ "<b>成功</b>\n"
+#~ " 镜像文件成功写入到目标驱动器\n"
+#~ " \n"
+#~ " \n"
+#~ " 您现在已经完成本次操作，可以卸载设备。\n"
+#~ " 当您退出程序时\n"
+#~ " 一份日志文件将会保存在您的用户主目录中。"
 
 #, fuzzy
 #~ msgid ""

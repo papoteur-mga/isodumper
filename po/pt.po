@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-30 17:50+0200\n"
+"POT-Creation-Date: 2014-07-07 00:05+0200\n"
 "PO-Revision-Date: 2014-07-03 13:21+0000\n"
 "Last-Translator: Manuela Silva <manuela.silva@sky.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/projects/p/mageia/"
@@ -21,116 +21,120 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/isodumper.py:153
+#: lib/isodumper.py:152
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:162 lib/isodumper.py:289
+#: lib/isodumper.py:161 lib/isodumper.py:299
 msgid "Target Device: "
 msgstr "Dispositivo de Destino: "
 
-#: lib/isodumper.py:241
+#: lib/isodumper.py:184
+msgid "Backup in: "
+msgstr ""
+
+#: lib/isodumper.py:247
 msgid "The device was formatted successfully."
 msgstr "O dispositivo foi formatado com sucesso."
 
-#: lib/isodumper.py:245
+#: lib/isodumper.py:251
 msgid "An error occured while creating a partition."
 msgstr "Ocorreu um erro durante a criação da partição."
 
-#: lib/isodumper.py:247
+#: lib/isodumper.py:253
 msgid "Authentication error."
 msgstr "Erro de Autenticação."
 
-#: lib/isodumper.py:249
+#: lib/isodumper.py:255
 msgid "An error occurred."
 msgstr "Ocorreu um erro."
 
-#: lib/isodumper.py:272 share/isodumper/isodumper.glade.h:32
+#: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
 msgstr "Backup em:"
 
-#: lib/isodumper.py:288
+#: lib/isodumper.py:298
 msgid "Image: "
 msgstr "Imagem: "
 
-#: lib/isodumper.py:292
+#: lib/isodumper.py:302
 msgid "The device is too small to contain the ISO file."
 msgstr "O dispositivo é demasiado pequeno para conter o ficheiro ISO."
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:309
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "O dispositivo tem mais de 32 Gbytes. Tem a certeza que deseja utilizá-lo?"
 
-#: lib/isodumper.py:326
+#: lib/isodumper.py:336
 msgid "Unmounting all partitions of "
 msgstr "A desmontar todas as partições de "
 
-#: lib/isodumper.py:328
+#: lib/isodumper.py:338
 msgid "Trying to unmount "
 msgstr "A tentar desmontar"
 
-#: lib/isodumper.py:334
+#: lib/isodumper.py:344
 msgid " was terminated by signal "
 msgstr " foi terminado pelo sinal "
 
-#: lib/isodumper.py:334 lib/isodumper.py:340
+#: lib/isodumper.py:344 lib/isodumper.py:350
 msgid "Error, umount "
 msgstr "Erro, desmontar"
 
-#: lib/isodumper.py:338
+#: lib/isodumper.py:348
 msgid " successfully unmounted"
 msgstr " desmontado com sucesso"
 
-#: lib/isodumper.py:340
+#: lib/isodumper.py:350
 msgid " returned "
 msgstr " devolvido "
 
-#: lib/isodumper.py:343
+#: lib/isodumper.py:353
 msgid "Execution failed: "
 msgstr "Não foi possível executar: "
 
-#: lib/isodumper.py:351
+#: lib/isodumper.py:361
 msgid "Could not read mtab !"
 msgstr "Não foi possível ler mtab !"
 
-#: lib/isodumper.py:360 lib/isodumper.py:384
+#: lib/isodumper.py:370 lib/isodumper.py:394
 msgid "Reading error."
 msgstr "Erro de leitura."
 
-#: lib/isodumper.py:366
+#: lib/isodumper.py:376
 msgid "You have not the rights for writing on the device"
 msgstr "Não tem direitos para gravar no dispositivo"
 
-#: lib/isodumper.py:372 lib/isodumper.py:373
+#: lib/isodumper.py:382 lib/isodumper.py:383
 msgid " to "
 msgstr " para "
 
-#: lib/isodumper.py:372
+#: lib/isodumper.py:382
 msgid "Writing "
 msgstr "Gravar "
 
-#: lib/isodumper.py:373
+#: lib/isodumper.py:383
 msgid "Executing copy from "
 msgstr "A executar a cópia de "
 
-#: lib/isodumper.py:389 lib/isodumper.py:402 lib/isodumper.py:411
+#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
 msgid "Writing error."
 msgstr "Erro de gravação."
 
-#: lib/isodumper.py:394
+#: lib/isodumper.py:404
 msgid "Wrote: "
 msgstr "Gravado: "
 
-#: lib/isodumper.py:406
+#: lib/isodumper.py:416
 msgid " successfully written to "
 msgstr "gravada com sucesso em"
 
-#: lib/isodumper.py:406 lib/isodumper.py:495
+#: lib/isodumper.py:416 lib/isodumper.py:507
 msgid "Image "
 msgstr "Imagem "
 
-#: lib/isodumper.py:407
+#: lib/isodumper.py:417
 msgid "Bytes written: "
 msgstr "Bytes gravados:"
 
@@ -154,12 +158,10 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
-"Writing is in progress. Exiting will occur that the device will be "
-"unusable.\n"
-"Are you sure you want to quit during writing on the device?"
+"Writing is in progress. Exiting during writing will occur that the device or "
+"the backup will be unusable.\n"
+"Are you sure you want to quit during writing?"
 msgstr ""
-"Gravação em progresso. Se sair o dispositivo poderá ficar inutilizado.\n"
-"Tem a certeza que pretende sair durante a gravação no dispositivo?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -310,17 +312,34 @@ msgstr ""
 #: share/isodumper/isodumper.glade.h:46
 msgid ""
 "<b>Success</b>\n"
-" The image was successfully written to the\n"
-" target device.\n"
+" The operation was successfully performed.\n"
 " \n"
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-"<b>Sucesso</b>\n"
-" A imagem foi gravada com sucesso no dispositivo de\n"
-" destino.\n"
-" \n"
-" Agora, pode desconetá-lo com segurança. Irá ser guardado um\n"
-" registo isodumper.log  da operação em homedir/.isodumper/\n"
-" quando fechar a aplicação."
+
+#~ msgid ""
+#~ "Writing is in progress. Exiting will occur that the device will be "
+#~ "unusable.\n"
+#~ "Are you sure you want to quit during writing on the device?"
+#~ msgstr ""
+#~ "Gravação em progresso. Se sair o dispositivo poderá ficar inutilizado.\n"
+#~ "Tem a certeza que pretende sair durante a gravação no dispositivo?"
+
+#~ msgid ""
+#~ "<b>Success</b>\n"
+#~ " The image was successfully written to the\n"
+#~ " target device.\n"
+#~ " \n"
+#~ " You are free to unplug it now, a log isodumper.log \n"
+#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
+#~ " you close the application."
+#~ msgstr ""
+#~ "<b>Sucesso</b>\n"
+#~ " A imagem foi gravada com sucesso no dispositivo de\n"
+#~ " destino.\n"
+#~ " \n"
+#~ " Agora, pode desconetá-lo com segurança. Irá ser guardado um\n"
+#~ " registo isodumper.log  da operação em homedir/.isodumper/\n"
+#~ " quando fechar a aplicação."

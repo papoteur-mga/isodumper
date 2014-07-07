@@ -9,7 +9,6 @@
     <property name="window_position">center-on-parent</property>
     <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
-    <property name="skip_taskbar_hint">True</property>
     <property name="message_type">warning</property>
     <property name="buttons">ok-cancel</property>
     <property name="text" translatable="yes">Writing is in progress. Exiting during writing will occur that the device or the backup will be unusable.
@@ -452,7 +451,7 @@ Public License instead of this License.
     <property name="can_focus">False</property>
     <property name="no_show_all">True</property>
     <property name="border_width">5</property>
-    <property name="title" translatable="yes">Isodumper</property>
+    <property name="title" translatable="yes">IsoDumper</property>
     <property name="window_position">center-on-parent</property>
     <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>

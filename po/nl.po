@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-30 17:50+0200\n"
+"POT-Creation-Date: 2014-07-07 00:05+0200\n"
 "PO-Revision-Date: 2014-05-06 14:30+0000\n"
 "Last-Translator: marja <marja@mageia.org>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/mageia/language/"
@@ -20,116 +20,120 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/isodumper.py:153
+#: lib/isodumper.py:152
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:162 lib/isodumper.py:289
+#: lib/isodumper.py:161 lib/isodumper.py:299
 msgid "Target Device: "
 msgstr "Doelstation: "
 
-#: lib/isodumper.py:241
-msgid "The device was formatted successfully."
-msgstr ""
-
-#: lib/isodumper.py:245
-msgid "An error occured while creating a partition."
+#: lib/isodumper.py:184
+msgid "Backup in: "
 msgstr ""
 
 #: lib/isodumper.py:247
+msgid "The device was formatted successfully."
+msgstr ""
+
+#: lib/isodumper.py:251
+msgid "An error occured while creating a partition."
+msgstr ""
+
+#: lib/isodumper.py:253
 msgid "Authentication error."
 msgstr ""
 
-#: lib/isodumper.py:249
+#: lib/isodumper.py:255
 msgid "An error occurred."
 msgstr ""
 
-#: lib/isodumper.py:272 share/isodumper/isodumper.glade.h:32
+#: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
 msgstr "Back-uppen in:"
 
-#: lib/isodumper.py:288
+#: lib/isodumper.py:298
 msgid "Image: "
 msgstr "Image-bestand: "
 
-#: lib/isodumper.py:292
+#: lib/isodumper.py:302
 msgid "The device is too small to contain the ISO file."
 msgstr "Het opslagmedium is te klein voor het ISO-bestand"
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:309
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Het opslagmedium is groter dan 32 GB. Weet u zeker dat u het wilt gebruiken?"
 
-#: lib/isodumper.py:326
+#: lib/isodumper.py:336
 msgid "Unmounting all partitions of "
 msgstr "Alle partities loskoppelen van "
 
-#: lib/isodumper.py:328
+#: lib/isodumper.py:338
 msgid "Trying to unmount "
 msgstr "Bezig met loskoppelen "
 
-#: lib/isodumper.py:334
+#: lib/isodumper.py:344
 msgid " was terminated by signal "
 msgstr " is afgebroken door signaal "
 
-#: lib/isodumper.py:334 lib/isodumper.py:340
+#: lib/isodumper.py:344 lib/isodumper.py:350
 msgid "Error, umount "
 msgstr "Fout, loskoppelen "
 
-#: lib/isodumper.py:338
+#: lib/isodumper.py:348
 msgid " successfully unmounted"
 msgstr " met succes losgekoppeld"
 
-#: lib/isodumper.py:340
+#: lib/isodumper.py:350
 msgid " returned "
 msgstr " teruggegaan "
 
-#: lib/isodumper.py:343
+#: lib/isodumper.py:353
 msgid "Execution failed: "
 msgstr "Uitvoering mislukt: "
 
-#: lib/isodumper.py:351
+#: lib/isodumper.py:361
 msgid "Could not read mtab !"
 msgstr "Kon mtab niet lezen !"
 
-#: lib/isodumper.py:360 lib/isodumper.py:384
+#: lib/isodumper.py:370 lib/isodumper.py:394
 msgid "Reading error."
 msgstr "Leesfout."
 
-#: lib/isodumper.py:366
+#: lib/isodumper.py:376
 msgid "You have not the rights for writing on the device"
 msgstr "U heeft geen recht om naar het apparaat te schrijven"
 
-#: lib/isodumper.py:372 lib/isodumper.py:373
+#: lib/isodumper.py:382 lib/isodumper.py:383
 msgid " to "
 msgstr " naar "
 
-#: lib/isodumper.py:372
+#: lib/isodumper.py:382
 msgid "Writing "
 msgstr "Schrijven "
 
-#: lib/isodumper.py:373
+#: lib/isodumper.py:383
 msgid "Executing copy from "
 msgstr "Uitvoeren: kopieren van "
 
-#: lib/isodumper.py:389 lib/isodumper.py:402 lib/isodumper.py:411
+#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
 msgid "Writing error."
 msgstr "Schrijffout. "
 
-#: lib/isodumper.py:394
+#: lib/isodumper.py:404
 msgid "Wrote: "
 msgstr "Geschreven: "
 
-#: lib/isodumper.py:406
+#: lib/isodumper.py:416
 msgid " successfully written to "
 msgstr " met succes geschreven naar "
 
-#: lib/isodumper.py:406 lib/isodumper.py:495
+#: lib/isodumper.py:416 lib/isodumper.py:507
 msgid "Image "
 msgstr "Image "
 
-#: lib/isodumper.py:407
+#: lib/isodumper.py:417
 msgid "Bytes written: "
 msgstr "Bytes geschreven: "
 
@@ -153,9 +157,9 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
-"Writing is in progress. Exiting will occur that the device will be "
-"unusable.\n"
-"Are you sure you want to quit during writing on the device?"
+"Writing is in progress. Exiting during writing will occur that the device or "
+"the backup will be unusable.\n"
+"Are you sure you want to quit during writing?"
 msgstr ""
 
 #: share/isodumper/isodumper.glade.h:4
@@ -296,20 +300,29 @@ msgstr ""
 #: share/isodumper/isodumper.glade.h:46
 msgid ""
 "<b>Success</b>\n"
-" The image was successfully written to the\n"
-" target device.\n"
+" The operation was successfully performed.\n"
 " \n"
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-"<b>Gelukt</b>\n"
-" Het image is succesvol naar het doelstation\n"
-" geschreven.\n"
-" \n"
-" U kunt het nu loskoppelen, het isodumper.log logbestand \n"
-" zal worden opgeslagen in uw homedir/.isodumper/ zodra\n"
-" u het programma afsluit."
+
+#~ msgid ""
+#~ "<b>Success</b>\n"
+#~ " The image was successfully written to the\n"
+#~ " target device.\n"
+#~ " \n"
+#~ " You are free to unplug it now, a log isodumper.log \n"
+#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
+#~ " you close the application."
+#~ msgstr ""
+#~ "<b>Gelukt</b>\n"
+#~ " Het image is succesvol naar het doelstation\n"
+#~ " geschreven.\n"
+#~ " \n"
+#~ " U kunt het nu loskoppelen, het isodumper.log logbestand \n"
+#~ " zal worden opgeslagen in uw homedir/.isodumper/ zodra\n"
+#~ " u het programma afsluit."
 
 #~ msgid ""
 #~ "<b>Error</b>\n"

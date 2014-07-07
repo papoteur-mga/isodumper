@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-30 17:50+0200\n"
+"POT-Creation-Date: 2014-07-07 00:05+0200\n"
 "PO-Revision-Date: 2014-07-02 13:31+0000\n"
 "Last-Translator: Filip Komar <filip.komar@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/mageia/"
@@ -23,117 +23,121 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
 
-#: lib/isodumper.py:153
+#: lib/isodumper.py:152
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:162 lib/isodumper.py:289
+#: lib/isodumper.py:161 lib/isodumper.py:299
 msgid "Target Device: "
 msgstr "Ciljna naprava: "
 
-#: lib/isodumper.py:241
+#: lib/isodumper.py:184
+msgid "Backup in: "
+msgstr ""
+
+#: lib/isodumper.py:247
 msgid "The device was formatted successfully."
 msgstr "Naprava je bila uspešno formatirana."
 
-#: lib/isodumper.py:245
+#: lib/isodumper.py:251
 msgid "An error occured while creating a partition."
 msgstr "Med usvarjanjem razdelka je prišlo do napake."
 
-#: lib/isodumper.py:247
+#: lib/isodumper.py:253
 msgid "Authentication error."
 msgstr "Napaka overjanja."
 
-#: lib/isodumper.py:249
+#: lib/isodumper.py:255
 msgid "An error occurred."
 msgstr "Prišlo je do napake."
 
-#: lib/isodumper.py:272 share/isodumper/isodumper.glade.h:32
+#: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
 msgstr "Ustvarite varnostno kopijo v:"
 
-#: lib/isodumper.py:288
+#: lib/isodumper.py:298
 msgid "Image: "
 msgstr "Odtis diska: "
 
-#: lib/isodumper.py:292
+#: lib/isodumper.py:302
 msgid "The device is too small to contain the ISO file."
 msgstr "Izbrana naprava nima dovolj prostora za datoteko odtisa diska."
 
-#: lib/isodumper.py:299
+#: lib/isodumper.py:309
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Izbrana naprava ima kapaciteto večjo od 32 gigabajtov. Ali jo res želite "
 "uporabiti?"
 
-#: lib/isodumper.py:326
+#: lib/isodumper.py:336
 msgid "Unmounting all partitions of "
 msgstr "Odklopi vse razdelke od "
 
-#: lib/isodumper.py:328
+#: lib/isodumper.py:338
 msgid "Trying to unmount "
 msgstr "Poskus odklopa "
 
-#: lib/isodumper.py:334
+#: lib/isodumper.py:344
 msgid " was terminated by signal "
 msgstr " je bilo prekinjeno s signalom "
 
-#: lib/isodumper.py:334 lib/isodumper.py:340
+#: lib/isodumper.py:344 lib/isodumper.py:350
 msgid "Error, umount "
 msgstr "Napaka, odklapljanje "
 
-#: lib/isodumper.py:338
+#: lib/isodumper.py:348
 msgid " successfully unmounted"
 msgstr " uspešno odklopljeno"
 
-#: lib/isodumper.py:340
+#: lib/isodumper.py:350
 msgid " returned "
 msgstr " vrnjeno "
 
-#: lib/isodumper.py:343
+#: lib/isodumper.py:353
 msgid "Execution failed: "
 msgstr "Izvedba spodletela: "
 
-#: lib/isodumper.py:351
+#: lib/isodumper.py:361
 msgid "Could not read mtab !"
 msgstr "Branje datoteke mtab ni možno!"
 
-#: lib/isodumper.py:360 lib/isodumper.py:384
+#: lib/isodumper.py:370 lib/isodumper.py:394
 msgid "Reading error."
 msgstr "Napaka branja."
 
-#: lib/isodumper.py:366
+#: lib/isodumper.py:376
 msgid "You have not the rights for writing on the device"
 msgstr "Za pisanje na napravo nimate pravic"
 
-#: lib/isodumper.py:372 lib/isodumper.py:373
+#: lib/isodumper.py:382 lib/isodumper.py:383
 msgid " to "
 msgstr " na "
 
-#: lib/isodumper.py:372
+#: lib/isodumper.py:382
 msgid "Writing "
 msgstr "Zapisovanje "
 
-#: lib/isodumper.py:373
+#: lib/isodumper.py:383
 msgid "Executing copy from "
 msgstr "Izvajanje kopiranja z "
 
-#: lib/isodumper.py:389 lib/isodumper.py:402 lib/isodumper.py:411
+#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
 msgid "Writing error."
 msgstr "Napaka pisanja."
 
-#: lib/isodumper.py:394
+#: lib/isodumper.py:404
 msgid "Wrote: "
 msgstr "Zapisano: "
 
-#: lib/isodumper.py:406
+#: lib/isodumper.py:416
 msgid " successfully written to "
 msgstr " je bila uspešno zapisana na "
 
-#: lib/isodumper.py:406 lib/isodumper.py:495
+#: lib/isodumper.py:416 lib/isodumper.py:507
 msgid "Image "
 msgstr "Slika medija "
 
-#: lib/isodumper.py:407
+#: lib/isodumper.py:417
 msgid "Bytes written: "
 msgstr "Zapisano zlogov: "
 
@@ -158,13 +162,10 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
-"Writing is in progress. Exiting will occur that the device will be "
-"unusable.\n"
-"Are you sure you want to quit during writing on the device?"
+"Writing is in progress. Exiting during writing will occur that the device or "
+"the backup will be unusable.\n"
+"Are you sure you want to quit during writing?"
 msgstr ""
-"Trenutno poteka zapisovanje. Takojšen izhod bo napravo pustil v neuporabnem "
-"stanju.\n"
-"Ali res želite takoj prekiniti pisanje?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -311,16 +312,34 @@ msgstr ""
 #: share/isodumper/isodumper.glade.h:46
 msgid ""
 "<b>Success</b>\n"
-" The image was successfully written to the\n"
-" target device.\n"
+" The operation was successfully performed.\n"
 " \n"
 " You are free to unplug it now, a log isodumper.log \n"
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-"<b>Uspeh!</b>\n"
-" Odtisa diska je bil uspešno zapisan na ciljno napravo.\n"
-" \n"
-" Sedaj lahko le-to odstranite.\n"
-" Ob zaprtju programa se bo v mapo .isodumper v vaši domači\n"
-" mapi zapisala dnevniška datoteka isodumper.log."
+
+#~ msgid ""
+#~ "Writing is in progress. Exiting will occur that the device will be "
+#~ "unusable.\n"
+#~ "Are you sure you want to quit during writing on the device?"
+#~ msgstr ""
+#~ "Trenutno poteka zapisovanje. Takojšen izhod bo napravo pustil v "
+#~ "neuporabnem stanju.\n"
+#~ "Ali res želite takoj prekiniti pisanje?"
+
+#~ msgid ""
+#~ "<b>Success</b>\n"
+#~ " The image was successfully written to the\n"
+#~ " target device.\n"
+#~ " \n"
+#~ " You are free to unplug it now, a log isodumper.log \n"
+#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
+#~ " you close the application."
+#~ msgstr ""
+#~ "<b>Uspeh!</b>\n"
+#~ " Odtisa diska je bil uspešno zapisan na ciljno napravo.\n"
+#~ " \n"
+#~ " Sedaj lahko le-to odstranite.\n"
+#~ " Ob zaprtju programa se bo v mapo .isodumper v vaši domači\n"
+#~ " mapi zapisala dnevniška datoteka isodumper.log."
