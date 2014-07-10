@@ -1,55 +1,57 @@
 # Asturian translation for isodumper package.
 # Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the isodumper package.
-# Automatically generated, 2013.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
 #
+# Translators:
+# Automatically generated, 2013
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010
+# Ḷḷumex03 <l.lumex03.tornes@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-07 00:05+0200\n"
-"PO-Revision-Date: 2010-05-27 18:13+0000\n"
-"Last-Translator: ivarela <ivarela@ubuntu.com>\n"
-"Language-Team: Asturian <ast@li.org>\n"
+"PO-Revision-Date: 2014-07-10 00:00+0000\n"
+"Last-Translator: Ḷḷumex03 <l.lumex03.tornes@gmail.com>\n"
+"Language-Team: Asturian (http://www.transifex.com/projects/p/mageia/language/"
+"ast/)\n"
 "Language: ast\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
-"X-Generator: Launchpad (build 16692)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lib/isodumper.py:152
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
 #: lib/isodumper.py:161 lib/isodumper.py:299
 msgid "Target Device: "
-msgstr "Preséu de destín: "
+msgstr "Preséu oxetivu: "
 
 #: lib/isodumper.py:184
 msgid "Backup in: "
-msgstr ""
+msgstr "Copia de seguridá en:"
 
 #: lib/isodumper.py:247
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "El preséu formateóse con ésitu."
 
 #: lib/isodumper.py:251
 msgid "An error occured while creating a partition."
-msgstr ""
+msgstr "Asocedió un fallu entrín se creaba una partición."
 
 #: lib/isodumper.py:253
 msgid "Authentication error."
-msgstr ""
+msgstr "Fallu d'autenticación."
 
 #: lib/isodumper.py:255
 msgid "An error occurred."
-msgstr ""
+msgstr "Asocedió un ficheru."
 
 #: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
-msgstr ""
+msgstr "Copia de seguridá en:"
 
 #: lib/isodumper.py:298
 msgid "Image: "
@@ -57,11 +59,11 @@ msgstr "Imaxe: "
 
 #: lib/isodumper.py:302
 msgid "The device is too small to contain the ISO file."
-msgstr ""
+msgstr "El preséu ye mui pequeñu pa caltener el ficheru ISO."
 
 #: lib/isodumper.py:309
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr ""
+msgstr "El preséu ye más grande de 32 Gbytes. ¿De xuru quies usalu?"
 
 #: lib/isodumper.py:336
 msgid "Unmounting all partitions of "
@@ -81,7 +83,7 @@ msgstr "Fallu, desmontar "
 
 #: lib/isodumper.py:348
 msgid " successfully unmounted"
-msgstr " desmontáu correchamente"
+msgstr " desmontáu con ésitu"
 
 #: lib/isodumper.py:350
 msgid " returned "
@@ -93,15 +95,15 @@ msgstr "Falló la execución: "
 
 #: lib/isodumper.py:361
 msgid "Could not read mtab !"
-msgstr "¡ Nun ye dable lleer mtab !"
+msgstr "¡Nun pudo lleese mtab!"
 
 #: lib/isodumper.py:370 lib/isodumper.py:394
 msgid "Reading error."
-msgstr ""
+msgstr "Fallu de llectura."
 
 #: lib/isodumper.py:376
 msgid "You have not the rights for writing on the device"
-msgstr ""
+msgstr "Nun tienes los drechos pa escribir nel preséu"
 
 #: lib/isodumper.py:382 lib/isodumper.py:383
 msgid " to "
@@ -113,11 +115,11 @@ msgstr "Escribiendo "
 
 #: lib/isodumper.py:383
 msgid "Executing copy from "
-msgstr ""
+msgstr "Executando copia de"
 
 #: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
 msgid "Writing error."
-msgstr ""
+msgstr "Fallu d'escritura"
 
 #: lib/isodumper.py:404
 msgid "Wrote: "
@@ -125,7 +127,7 @@ msgstr "Escritu: "
 
 #: lib/isodumper.py:416
 msgid " successfully written to "
-msgstr " escritu con éxitu en "
+msgstr " escritu con éxitu a"
 
 #: lib/isodumper.py:416 lib/isodumper.py:507
 msgid "Image "
@@ -133,24 +135,24 @@ msgstr "Imaxe "
 
 #: lib/isodumper.py:417
 msgid "Bytes written: "
-msgstr ""
+msgstr "Bytes escritos: "
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr ""
+msgstr "Executar Isodumper"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
-msgstr ""
+msgstr "Requierse l'autenticación pa executar Isodumper"
 
 #: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:1
 msgid "IsoDumper"
-msgstr ""
+msgstr "IsoDumper"
 
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
-msgstr ""
+msgstr "Una ferramienta gráfica pa escribir ficheros .img ya .iso a llaves USB"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
@@ -158,15 +160,20 @@ msgid ""
 "the backup will be unusable.\n"
 "Are you sure you want to quit during writing?"
 msgstr ""
+"La escritura ta en progresu. Colar na escritura fadrá que'l preséu o la "
+"copia de seguridá s'inutilice.\n"
+"¿De xuru quies colar na escritura?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
+"Una ferramienta pa escribir imáxenes ISO nun llápiz USB. Ye una bifurcación "
+"d'usb-imagewriter."
 
 #: share/isodumper/isodumper.glade.h:5
 msgid "Select"
-msgstr ""
+msgstr "Esbillar"
 
 #: share/isodumper/isodumper.glade.h:6
 msgid ""
@@ -178,11 +185,11 @@ msgid ""
 " the device during the following operation."
 msgstr ""
 "<b>Avisu</b>\n"
-"Esto <b>va desaniciar tolos datos</b> nel preséu\n"
-"de destín, ¿daveres quies siguirr?\n"
+" Esto <b>desaniciará tolos datos</b> nel preséu\n"
+" oxetivu, ¿de xuru quies siguir?\n"
 "\n"
-"Si calques Aceutar, <b>nun desconeutes</b>\n"
-"el preséu mentantu dure la operación."
+" Si primes Aceutar, <b>nun desconeutes</b>\n"
+" el preséu na operación operación."
 
 #: share/isodumper/isodumper.glade.h:12
 msgid ""
@@ -193,42 +200,48 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Fallu</b>\n"
+" Daqué foi mal, por favor mira la ventana\n"
+" de detalles pal fallu exautu.\n"
+"\n"
+" L'aplicación zarraráse con esta ventana, y guardaráse\n"
+" un ficheru de rexistru isodumper.log nel to direutoriu home /.isodumper "
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
-msgstr ""
+msgstr "Etiqueta pal preséu:"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "L'estándar. El tamañu de los ficheros tán llimitaos a 4Gb"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "Pa remanar ficheros más grandes de 4Gb"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Namái pa sistemes Linux"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Device to work on:"
-msgstr ""
+msgstr "Preséu pa furrular en:"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
-msgstr "Esbilla'l preséu de destín au escribir la imaxe"
+msgstr "Esbilla'l preséu oxetivu au escribir la imaxe"
 
 #: share/isodumper/isodumper.glade.h:27
 msgid "Write Image:"
@@ -236,11 +249,11 @@ msgstr "Escribir imaxe:"
 
 #: share/isodumper/isodumper.glade.h:28
 msgid "Select an image file to be written to the device"
-msgstr "Esbilla un ficheru imaxe pa escribir nel preséu"
+msgstr "Esbilla un ficheru d'imaxe pa escribise nel preséu"
 
 #: share/isodumper/isodumper.glade.h:29
 msgid "Select Image"
-msgstr "Esbillar Imaxe"
+msgstr "Esbillar imaxe"
 
 #: share/isodumper/isodumper.glade.h:30
 msgid "Write to device"
@@ -248,31 +261,31 @@ msgstr "Escribir al preséu"
 
 #: share/isodumper/isodumper.glade.h:31
 msgid "Create a backup of the device as image to restore it later"
-msgstr ""
+msgstr "Crear una copia de seguridá del preséu como imaxe pa restaurala sero"
 
 #: share/isodumper/isodumper.glade.h:34
 msgid "(None)"
-msgstr ""
+msgstr "(Un res)"
 
 #: share/isodumper/isodumper.glade.h:35
 msgid "Select a folder in which to write the backup image"
-msgstr ""
+msgstr "Esbilla una carpeta na qu'escribir la imaxe de copia de seguridá"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Backup the device"
-msgstr ""
+msgstr "Facer copia de seguridá del preséu"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Formatear el preséu en FAT, NTFS o ext:"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "Escueyi'l formatu. El preséu formatearáse nuna partición"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"
-msgstr ""
+msgstr "Formatear el preséu"
 
 #: share/isodumper/isodumper.glade.h:40
 msgid "Details"
@@ -286,6 +299,11 @@ msgid ""
 " You need to plug in a USB Key\n"
 " to which the image can be written."
 msgstr ""
+"<b>Avisu</b>\n"
+" Nun s'alcontraron preseos oxetivu. \n"
+"\n"
+" Necesites coneutar una llave USB\n"
+" na que la imaxe puea escribise."
 
 #: share/isodumper/isodumper.glade.h:46
 msgid ""
@@ -296,69 +314,9 @@ msgid ""
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-
-#~ msgid ""
-#~ "<b>Success</b>\n"
-#~ " The image was successfully written to the\n"
-#~ " target device.\n"
-#~ " \n"
-#~ " You are free to unplug it now, a log isodumper.log \n"
-#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
-#~ " you close the application."
-#~ msgstr ""
-#~ "<b>Fecho</b>\n"
-#~ " La imaxe grabóse correchamente nel\n"
-#~ " preséu de destín.\n"
-#~ "\n"
-#~ " Puedes desconeutalu agora, va guardase un\n"
-#~ " informe de la operación nel to direutoriu home\n"
-#~ " si zarres l'aplicación."
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Fallu</b>\n"
-#~ "Dalgo foi mal, por favor llee los detalles del error\n"
-#~ "na ventana.\n"
-#~ "\n"
-#~ "Va atroxase un ficheru col conteníu del rexistru\n"
-#~ "nel to direutoriu home si se zarra l'aplicación."
-
-#~ msgid "to"
-#~ msgstr "a"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Fallu</b>\n"
-#~ "Nun s'alcontraron preseos de destín.\n"
-#~ "\n"
-#~ "Necesites coneutar una memoria USB\n"
-#~ "na que se pueda escribir la imaxe."
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "El procesu dd terminó con un fallu !"
-
-#~ msgid " "
-#~ msgstr " "
+"<b>Ésitu</b>\n"
+" La operación féxose con ésitu.\n"
+" \n"
+" Yes llibre d'estrayelu agora, guardaráse un rexistru\n"
+" isodumper.log de la operación nel to direutoriu home /.isodumper/\n"
+" cuando zarres l'aplicación"

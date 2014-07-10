@@ -293,6 +293,34 @@ msgid ""
 " you close the application."
 msgstr ""
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd პროცესი შეცდომით დამთავრდა !"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-გაუქმება"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-დახურვა"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-დიახ"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>შეცდომა</b>\n"
+#~ " ვერ ვიპოვე სამიზნე მოწყობილობა. \n"
+#~ "\n"
+#~ " შეაერთეთ USB მოწყობილობა,\n"
+#~ " რომელშიც ანაბეჭდის ჩაწერა იქნება შესაძლებელი."
+
 #, fuzzy
 #~ msgid ""
 #~ "<b>Success</b>\n"
@@ -310,31 +338,3 @@ msgstr ""
 #~ " შეგიძლიათ უპრობლემოთ მოხსნათ, ოპერაციის\n"
 #~ " ჟურნალი შეინახება თქვენს სახლის დასტაში თუ\n"
 #~ " დახურავთ პროგრამას."
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>შეცდომა</b>\n"
-#~ " ვერ ვიპოვე სამიზნე მოწყობილობა. \n"
-#~ "\n"
-#~ " შეაერთეთ USB მოწყობილობა,\n"
-#~ " რომელშიც ანაბეჭდის ჩაწერა იქნება შესაძლებელი."
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-დიახ"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-დახურვა"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-გაუქმება"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd პროცესი შეცდომით დამთავრდა !"
-
-#~ msgid " "
-#~ msgstr " "

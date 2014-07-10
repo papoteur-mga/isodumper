@@ -292,8 +292,20 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid "to"
-#~ msgstr "eddig"
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "A dd folyamat  sikertelen"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
 
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -308,17 +320,5 @@ msgstr ""
 #~ " Csatlakoztasson egy USB kulcsot\n"
 #~ " amire kiírható a kép."
 
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "A dd folyamat  sikertelen"
-
-#~ msgid " "
-#~ msgstr " "
+#~ msgid "to"
+#~ msgstr "eddig"

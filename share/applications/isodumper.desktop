@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=IsoDumper
+Name[ast]=IsoDumper
 Name[cs]=IsoDumper
 Name[da]=IsoDumper
 Name[de]=IsoDumper
@@ -22,6 +23,7 @@ Name[tr]=IsoDumper
 Name[uk]=IsoDumper
 Name[zh_TW]=IsoDumper
 Comment=A GUI tool to write .img and .iso files to USB Keys
+Comment[ast]=Una ferramienta gráfica pa escribir ficheros .img ya .iso a llaves USB
 Comment[cs]=Nástroj s grafickým uživatelským rozhraním k zapsání souborů .img a .iso na klíčenku USB
 Comment[da]=Et GUI værktøj til at skrive .img og .iso filer på USB nøgler
 Comment[de]=Eine graphische Oberfläche, um .img oder .iso Abbilder auf USB-Sticks zu schreiben
