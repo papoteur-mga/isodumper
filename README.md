@@ -61,3 +61,4 @@ Translators
 - Akien - Danish
 - richardshaylo - English (United Kingdom)
 - Manuela Silva - Portuguese
+- Ḷḷumex03 - Asturian
