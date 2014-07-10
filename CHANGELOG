@@ -11,6 +11,7 @@ IsoDumper 0.30
 	  - changed a window to a dialog form.
 	  - set the user owner of log file and directory.
 	  - suppress window redraw when closing the logview.
+	  - added a new translation on Asturian. (Thanks Ḷḷumex03)
 
 IsoDumper 0.23
 ------------

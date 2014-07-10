@@ -396,7 +396,8 @@ Public License instead of this License.
 * fri, jui - (Czech)
 * Akien - (Danish)
 * richardshaylo - (English (United Kingdom))
-* Manuela Silva - (Portuguese)</property>
+* Manuela Silva - (Portuguese)
+* Ḷḷumex03 - (Asturian)</property>
     <property name="logo_icon_name">isodumper</property>
     <child internal-child="vbox">
       <widget class="GtkVBox" id="dialog-vbox6">
