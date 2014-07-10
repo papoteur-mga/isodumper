@@ -41,25 +41,25 @@ Contributors
 
 Translators
 --------
-- Papoteur, filorin - French
+- Papoteur, Guillaume Bernard, Eric Barbero - French
 - Sergei Zivukov, AlexL, Fox909 - Russian
 - Yuri Chornoivan - Ukrainian
 - marja - Dutch
 - motitos, Miguel Ortega - Spanish
-- Marcello Anni, killer1987 - Italian
+- Marcello Anni - Italian
 - Atilla ÖNTAŞ, tarakbumba - Turkish
 - Filip Komar - Slovenian
-- Kristoffer Grundström, Willard1975 - Swedish
+- Kristoffer Grundström, Michael Eklund - Swedish
 - You-Cheng Hsieh - Chinese Taiwan
-- Márcio Padula - Brazilian Portuguese
+- Marcio Andre Padula - Brazilian Portuguese
 - Florin Cătălin RUSSEN - Romanian
 - kiki.syahadat - Indonesian
 - Daniel Napora, Tatsunoko - Polish
-- taleon, Akien, latte, user7 - German
+- Oliver Grawert, Rémi Verschelde, Marc Lattemann, user7, Christian Ruesch, psyca - German
 - Marek Laane - Estonian
 - dtsiamasiotis, Dimitrios Glentadakis - Greek
 - fri, jui - Czech
-- Akien - Danish
-- richardshaylo - English (United Kingdom)
+- Rémi Verschelde - Danish
+- richardshaylo, MrsB - English (United Kingdom)
 - Manuela Silva - Portuguese
 - Ḷḷumex03 - Asturian
