@@ -25,12 +25,14 @@ Requires:	xterm
 
 %description
 A GUI tool for writing ISO images on a USB stick.
+And also a tool for backup of USB device content.
 It's a fork of usb-imagewriter.
 
 This software is written in python.
 
 %description -l fr_FR
 Un outil graphique pour écrire des images ISO sur une clé USB.
+Et également un outil pour la sauvegarde du contenu d'un périphérique USB.
 C'est un fork de usb-imagewriter
 
 Ce logiciel est écrit en python.
