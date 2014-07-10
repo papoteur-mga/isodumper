@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the isodumper package.
 #
 # Translators:
-# Akien <akien@mageia.org>, 2013
+# Rémi Verschelde <akien@mageia.org>, 2013
 # Automatically generated, 2013
-# taleon <cr@rt.fm>, 2013
+# Christian Ruesch <cr@rt.fm>, 2013
 # latte, 2013
-# latte, 2013
+# psyca <linux@psyca.de>, 2014
+# Marc Lattemann, 2013-2014
 # Oliver Grawert <ogra@ubuntu.com>, 2008
-# Akien <akien@mageia.org>, 2013
-# taleon <cr@rt.fm>, 2013
+# Rémi Verschelde <akien@mageia.org>, 2013
+# Christian Ruesch <cr@rt.fm>, 2013
 # user7 <wassipaul@gmx.at>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:01+0200\n"
-"PO-Revision-Date: 2014-04-21 14:41+0000\n"
-"Last-Translator: user7 <wassipaul@gmx.at>\n"
+"PO-Revision-Date: 2014-07-02 19:31+0000\n"
+"Last-Translator: Marc Lattemann\n"
 "Language-Team: German (http://www.transifex.com/projects/p/mageia/language/"
 "de/)\n"
 "Language: de\n"
@@ -180,6 +181,12 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Fehler</b>\n"
+" Ein Fehler ist aufgetreten. Bitte schauen sie in die Detail\n"
+" Fenster für eine detaillierte Fehlermeldung. \n"
+" \n"
+" Die Anwendung wird mit diesem Fenster geschlossen und eine Log-Datei\n"
+" isodumper.log wird unter homedir/.isodumper gespeichert"
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"
