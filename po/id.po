@@ -5,16 +5,16 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# kiki.syahadat <kiki.syahadat@yahoo.co.id>, 2014
-# kiki.syahadat <kiki.syahadat@yahoo.co.id>, 2013
-# kiki.syahadat <kiki.syahadat@yahoo.co.id>, 2013
+# Kiki <kiki.syahadat@yahoo.co.id>, 2014
+# Kiki <kiki.syahadat@yahoo.co.id>, 2013
+# Kiki <kiki.syahadat@yahoo.co.id>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-07 00:05+0200\n"
-"PO-Revision-Date: 2014-05-08 07:20+0000\n"
-"Last-Translator: kiki.syahadat <kiki.syahadat@yahoo.co.id>\n"
+"PO-Revision-Date: 2014-07-11 18:30+0000\n"
+"Last-Translator: Kiki <kiki.syahadat@yahoo.co.id>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/mageia/"
 "language/id/)\n"
 "Language: id\n"
@@ -33,23 +33,23 @@ msgstr "Perangkat Target: "
 
 #: lib/isodumper.py:184
 msgid "Backup in: "
-msgstr ""
+msgstr "Backup di: "
 
 #: lib/isodumper.py:247
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "Perangkat berhasil diformat."
 
 #: lib/isodumper.py:251
 msgid "An error occured while creating a partition."
-msgstr ""
+msgstr "Kesalahan terjadi saat membuat partisi."
 
 #: lib/isodumper.py:253
 msgid "Authentication error."
-msgstr ""
+msgstr "Otentikasi salah."
 
 #: lib/isodumper.py:255
 msgid "An error occurred."
-msgstr ""
+msgstr "Terjadi kesalahan."
 
 #: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
@@ -163,6 +163,9 @@ msgid ""
 "the backup will be unusable.\n"
 "Are you sure you want to quit during writing?"
 msgstr ""
+"Penulisan sedang berjalan. Keluar ketika penulisan akan menyebabkan "
+"perangkat atau backup tidak berguna.\n"
+"Apakah Anda yakin ingin keluar ketika penulisan?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -199,38 +202,44 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Kesalahan</b>\n"
+" Ada sesuatu yang salah, silakan lihat jendela kesalahan\n"
+" untuk melihat kesalahan yang sebenarnya.\n"
+"\n"
+" Aplikasi akan ditutup dengan jendela ini, dan file log\n"
+" isodumper.log  akan disimpan di homedir/.isodumper "
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
-msgstr ""
+msgstr "Nama perangkat:"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "Standar. Ukuran file dibatasi pada 4Gb"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "Untuk menangani file dengan ukuran lebih dari 4Gb"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Hanya untuk sistem Linux"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Device to work on:"
-msgstr ""
+msgstr "Di mana perangkat akan bekerja:"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
@@ -266,19 +275,19 @@ msgstr "Pilih folder untuk menulis backup image"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Backup the device"
-msgstr ""
+msgstr "Backup perangkat"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Format perangkat dalam FAT, NTFS atau ext:"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "Pilih format. Perangkat akan diformat dalam satu partisi"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"
-msgstr ""
+msgstr "Format perangkat"
 
 #: share/isodumper/isodumper.glade.h:40
 msgid "Details"
@@ -307,35 +316,9 @@ msgid ""
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Error</b>\n"
-#~ " Ada yang salah, silakan lihat rincian\n"
-#~ " kesalahan.\n"
-#~ " \n"
-#~ " file log isodumper.log akan disimpan di\n"
-#~ " homedir/.isodumper saat aplikasi ditutup."
-
-#~ msgid ""
-#~ "<b>Success</b>\n"
-#~ " The image was successfully written to the\n"
-#~ " target device.\n"
-#~ " \n"
-#~ " You are free to unplug it now, a log isodumper.log \n"
-#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
-#~ " you close the application."
-#~ msgstr ""
-#~ "<b>Berhasil</b>\n"
-#~ " Image berhasil ditulis ke\n"
-#~ " perangkat target.\n"
-#~ " \n"
-#~ " Sekarang Anda bisa melepaskannya, log isodumper.log \n"
-#~ " dari operasi ini akan disimpan di homedir/.isodumper/ saat\n"
-#~ " Anda menutup aplikasi."
+"<b>Berhasil</b>\n"
+" Operasi berhasil dijalankan.\n"
+" \n"
+" Anda bebas untuk melepaskannya sekarang, log isodumper.log \n"
+" dari operasi akan disimpan di homedir/.isodumper/ saat\n"
+" Anda menutup aplikasi."
