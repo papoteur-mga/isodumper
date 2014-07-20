@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-07 00:05+0200\n"
-"PO-Revision-Date: 2014-05-06 14:30+0000\n"
+"PO-Revision-Date: 2014-07-20 14:27+0200\n"
 "Last-Translator: marja <marja@mageia.org>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/mageia/language/"
 "nl/)\n"
@@ -30,23 +30,23 @@ msgstr "Doelstation: "
 
 #: lib/isodumper.py:184
 msgid "Backup in: "
-msgstr ""
+msgstr "Back-uppen in: "
 
 #: lib/isodumper.py:247
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "Formatteren van het apparaat is geslaagd."
 
 #: lib/isodumper.py:251
 msgid "An error occured while creating a partition."
-msgstr ""
+msgstr "Er is een fout opgetreden tijdens het creëren van de partitie."
 
 #: lib/isodumper.py:253
 msgid "Authentication error."
-msgstr ""
+msgstr "Authenticatiefout."
 
 #: lib/isodumper.py:255
 msgid "An error occurred."
-msgstr ""
+msgstr "Er is een fout opgetreden."
 
 #: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
@@ -58,7 +58,7 @@ msgstr "Image-bestand: "
 
 #: lib/isodumper.py:302
 msgid "The device is too small to contain the ISO file."
-msgstr "Het opslagmedium is te klein voor het ISO-bestand"
+msgstr "Het opslagmedium is te klein voor het ISO-bestand."
 
 #: lib/isodumper.py:309
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
@@ -119,7 +119,7 @@ msgstr "Uitvoeren: kopieren van "
 
 #: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
 msgid "Writing error."
-msgstr "Schrijffout. "
+msgstr "Schrijffout."
 
 #: lib/isodumper.py:404
 msgid "Wrote: "
@@ -161,6 +161,9 @@ msgid ""
 "the backup will be unusable.\n"
 "Are you sure you want to quit during writing?"
 msgstr ""
+"Er worden nu gegevens geschreven. Stoppen tijdens het schrijven kan het "
+"apparaat of de back-up onbruikbaar maken.\n"
+"Weet u zeker dat u wilt stoppen tijdens het schrijven?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -198,38 +201,44 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Fout</b>\n"
+" Er is iets misgegaan, kijk a.u.b. in het detailsscherm\n"
+" voor de exacte fout.\n"
+"\n"
+" De applicatie zal gesloten worden met dit scherm, en een logbestand\n"
+" isodumper.log zal opgeslagen worden in uw homemap/.isodumper "
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
-msgstr ""
+msgstr "Apparaatlabel:"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "De standaard. De filegrootte is gelimiteerd tot 4GB"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "Om bestanden groter dan 4GB te hanteren"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Alleen voor Linuxsystemen"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Device to work on:"
-msgstr ""
+msgstr "Apparaat om op te werken:"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
@@ -237,7 +246,7 @@ msgstr "Kies doelstation om het Image-bestand naar toe te schrijven"
 
 #: share/isodumper/isodumper.glade.h:27
 msgid "Write Image:"
-msgstr "Schrijf Image-bestand"
+msgstr "Schrijf Image-bestand:"
 
 #: share/isodumper/isodumper.glade.h:28
 msgid "Select an image file to be written to the device"
@@ -265,19 +274,19 @@ msgstr "Selecteer een map om de back-up in op te slaan"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Backup the device"
-msgstr ""
+msgstr "Back het apparaat up"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Formatteer het apparaat in FAT, NTFS of ext:"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "Kies het formaat. Het apparaat zal in één partitie geformatteerd worden"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"
-msgstr ""
+msgstr "Formatteer het apparaat"
 
 #: share/isodumper/isodumper.glade.h:40
 msgid "Details"
@@ -306,35 +315,9 @@ msgid ""
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Fout</b>\n"
-#~ " Er is iets misgegaan, zie het details-\n"
-#~ " venster voor de exacte fout.\n"
-#~ " \n"
-#~ " Een log-bestand isodumper.log met de inhoud zal worden opgeslagen in uw\n"
-#~ " homedir/.isodumper als het programma is afgesloten."
-
-#~ msgid ""
-#~ "<b>Success</b>\n"
-#~ " The image was successfully written to the\n"
-#~ " target device.\n"
-#~ " \n"
-#~ " You are free to unplug it now, a log isodumper.log \n"
-#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
-#~ " you close the application."
-#~ msgstr ""
-#~ "<b>Gelukt</b>\n"
-#~ " Het image is succesvol naar het doelstation\n"
-#~ " geschreven.\n"
-#~ " \n"
-#~ " U kunt het nu loskoppelen, het isodumper.log logbestand \n"
-#~ " zal worden opgeslagen in uw homedir/.isodumper/ zodra\n"
-#~ " u het programma afsluit."
+"<b>Succes</b>\n"
+" De operatie werd met succes uitgevoerd.\n"
+" \n"
+" U kunt de USB-sleutel nu verwijderen, een logbestand isodumper.log \n"
+" van de operatie zal opgeslagen worden in uw homemap/.isodumper/ als\n"
+" u de applicatie sluit."
