@@ -5,16 +5,16 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# kiki.syahadat <kiki.syahadat@yahoo.co.id>, 2014
-# kiki.syahadat <kiki.syahadat@yahoo.co.id>, 2013
-# kiki.syahadat <kiki.syahadat@yahoo.co.id>, 2013
+# Kiki <kiki.syahadat@yahoo.co.id>, 2014
+# Kiki <kiki.syahadat@yahoo.co.id>, 2013
+# Kiki <kiki.syahadat@yahoo.co.id>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:01+0200\n"
-"PO-Revision-Date: 2014-05-08 07:20+0000\n"
-"Last-Translator: kiki.syahadat <kiki.syahadat@yahoo.co.id>\n"
+"PO-Revision-Date: 2014-07-11 18:30+0000\n"
+"Last-Translator: Kiki <kiki.syahadat@yahoo.co.id>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/mageia/"
 "language/id/)\n"
 "Language: id\n"
@@ -172,6 +172,12 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Kesalahan</b>\n"
+" Ada sesuatu yang salah, silakan lihat jendela kesalahan\n"
+" untuk melihat kesalahan yang sebenarnya.\n"
+" \n"
+" Aplikasi akan ditutup dengan jendela ini, dan file log\n"
+" isodumper.log  akan disimpan di homedir/.isodumper "
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"
