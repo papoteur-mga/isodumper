@@ -45,7 +45,7 @@ Translators
 - Sergei Zivukov, AlexL, Fox909 - Russian
 - Yuri Chornoivan - Ukrainian
 - marja - Dutch
-- motitos, Miguel Ortega - Spanish
+- motitos, Miguel Ortega, Rodrigo Prieto - Spanish
 - Marcello Anni - Italian
 - Atilla ÖNTAŞ, tarakbumba - Turkish
 - Filip Komar - Slovenian
@@ -58,7 +58,7 @@ Translators
 - Oliver Grawert, Rémi Verschelde, Marc Lattemann, user7, Christian Ruesch, psyca - German
 - Marek Laane - Estonian
 - dtsiamasiotis, Dimitrios Glentadakis - Greek
-- fri, jui - Czech
+- fri, Jiří Vírava - Czech
 - Rémi Verschelde - Danish
 - richardshaylo, MrsB - English (United Kingdom)
 - Manuela Silva - Portuguese

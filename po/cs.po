@@ -3,19 +3,19 @@
 # This file is distributed under the same license as the isodumper package.
 #
 # Translators:
-# jui <appukonrad@gmail.com>, 2013
+# Jiří Vírava <appukonrad@gmail.com>, 2013
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
 # fri, 2014
-# jui <appukonrad@gmail.com>, 2014
-# jui <appukonrad@gmail.com>, 2013
+# Jiří Vírava <appukonrad@gmail.com>, 2014
+# Jiří Vírava <appukonrad@gmail.com>, 2013
 # fri, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-07 00:05+0200\n"
-"PO-Revision-Date: 2014-05-15 20:42+0000\n"
+"PO-Revision-Date: 2014-08-01 17:41+0000\n"
 "Last-Translator: fri\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/mageia/language/"
 "cs/)\n"
@@ -35,7 +35,7 @@ msgstr "Cílové zařízení: "
 
 #: lib/isodumper.py:184
 msgid "Backup in: "
-msgstr ""
+msgstr "Záloha za: "
 
 #: lib/isodumper.py:247
 msgid "The device was formatted successfully."
@@ -120,7 +120,7 @@ msgstr "Zapisuji "
 
 #: lib/isodumper.py:383
 msgid "Executing copy from "
-msgstr "Kopíruje se z"
+msgstr "Kopíruje se z "
 
 #: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
 msgid "Writing error."
@@ -140,7 +140,7 @@ msgstr "Obraz "
 
 #: lib/isodumper.py:417
 msgid "Bytes written: "
-msgstr "Zapsáno bytů:"
+msgstr "Zapsáno bytů: "
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
@@ -167,6 +167,9 @@ msgid ""
 "the backup will be unusable.\n"
 "Are you sure you want to quit during writing?"
 msgstr ""
+"Právě probíhá zápis. Ukončením během zápisu se může stát, že zařízení nebo "
+"záloha bude nepoužitelná.\n"
+"Jste si jisti, že chcete skončit během zápisu na zařízení?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -203,6 +206,12 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Chyba</b>\n"
+" Něco se pokazilo, přesnou chybu zjistíte\n"
+" v okně s podrobnostmi.\n"
+" \n"
+" Aplikace bude s tímto oknem zavřena a soubor s obsahem\n"
+" záznamu isodumper.log bude uložen ve složce homedir/.isodumper"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
@@ -311,38 +320,9 @@ msgid ""
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-
-#~ msgid "Formatting the device"
-#~ msgstr "Formátuje se zařízení"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Chyba</b>\n"
-#~ " Něco se pokazilo, přesnou chybu zjistíte\n"
-#~ " v okně s podrobnostmi.\n"
-#~ " \n"
-#~ " Soubor s obsahem záznamu isodumper.log bude uložen v domovské složce,\n"
-#~ " homedir/.isodumper/, až bude aplikace zavřena."
-
-#~ msgid ""
-#~ "<b>Success</b>\n"
-#~ " The image was successfully written to the\n"
-#~ " target device.\n"
-#~ " \n"
-#~ " You are free to unplug it now, a log isodumper.log \n"
-#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
-#~ " you close the application."
-#~ msgstr ""
-#~ "<b>Úspěch</b>\n"
-#~ " Obraz byl úspěšně zapsán\n"
-#~ " na cílové zařízení.\n"
-#~ " \n"
-#~ " Můžete jej nyní bezpečně odebrat. Záznam\n"
-#~ " operace v isodumper.log bude uložen v domovské složce,\n"
-#~ " až bude aplikace zavřena (homedir/.isodumper/)."
+"<b>Úspěch</b>\n"
+" Operace byla úspěšně provedena.\n"
+" \n"
+" Můžete jej nyní bezpečně odebrat. Záznam\n"
+" operace v isodumper.log bude uložen v domovské složce,\n"
+" až bude aplikace zavřena (homedir/.isodumper/)."
