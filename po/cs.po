@@ -3,20 +3,20 @@
 # This file is distributed under the same license as the isodumper package.
 #
 # Translators:
-# jui <appukonrad@gmail.com>, 2013
+# Jiří Vírava <appukonrad@gmail.com>, 2013
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
 # fri, 2014
-# jui <appukonrad@gmail.com>, 2014
-# jui <appukonrad@gmail.com>, 2013
+# Jiří Vírava <appukonrad@gmail.com>, 2014
+# Jiří Vírava <appukonrad@gmail.com>, 2013
 # fri, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:01+0200\n"
-"PO-Revision-Date: 2014-04-24 12:54+0000\n"
-"Last-Translator: jui <appukonrad@gmail.com>\n"
+"PO-Revision-Date: 2014-08-01 17:41+0000\n"
+"Last-Translator: fri\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/mageia/language/"
 "cs/)\n"
 "Language: cs\n"
@@ -176,6 +176,11 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Chyba</b>\n"
+" Něco se pokazilo, přesnou chybu zjistíte\n"
+" v okně s podrobnostmi.\n"
+" \n"
+" Aplikace bude s tímto"
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"

@@ -4,16 +4,18 @@
 #
 # Translators:
 # Automatically generated, 2013
-# Miguel Ortega, 2013-2014
+# motitos, 2013-2014
+# jdru_drv <j.d.ramirez.u@gmail.com>, 2014
 # Miguel Ortega, 2013
-# Miguel Ortega, 2013
+# motitos, 2013
+# tortuleon <rodrigo.prieto@ymail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:01+0200\n"
-"PO-Revision-Date: 2014-05-07 06:40+0000\n"
-"Last-Translator: Miguel Ortega\n"
+"PO-Revision-Date: 2014-07-28 21:01+0000\n"
+"Last-Translator: tortuleon <rodrigo.prieto@ymail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/mageia/language/"
 "es/)\n"
 "Language: es\n"
@@ -172,6 +174,12 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Error</b>\n"
+" Algo salió mal, por favor vea la ventana de detalles\n"
+" para saber el error exacto.\n"
+" \n"
+" La aplicación y esta ventana se cerrarán y un archivo de registro\n"
+" isodumper.log  se guardará en su directorio personal /.isodumper "
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"
