@@ -63,3 +63,4 @@ Translators
 - richardshaylo, MrsB - English (United Kingdom)
 - Manuela Silva - Portuguese
 - Ḷḷumex03 - Asturian
+- Egoitz Rodriguez Obieta - Basque
