@@ -9,6 +9,7 @@ IsoDumper 0.23
 	  - suppress window redraw when closing the logview.
 	  - fix some libglade-WARNING by deletion of swapped parameter.
 	  - added a new translation on Asturian. (Thanks Ḷḷumex03)
+	  - added a new translation on Basque. (Thanks Egoitz Rodriguez Obieta)
 
 IsoDumper 0.22
 ------------

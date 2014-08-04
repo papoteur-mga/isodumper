@@ -1,0 +1,248 @@
+# Basque translation for isodumper package.
+# Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the isodumper package.
+#
+# Translators:
+# Automatically generated, 2013
+# Egoitz Rodriguez Obieta <egoitzro2@hotmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: isodumper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-30 17:01+0200\n"
+"PO-Revision-Date: 2014-08-03 17:21+0000\n"
+"Last-Translator: Egoitz Rodriguez Obieta <egoitzro2@hotmail.com>\n"
+"Language-Team: Basque (http://www.transifex.com/projects/p/mageia/language/"
+"eu/)\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/isodumper.py:143
+msgid "Mb"
+msgstr "Mb"
+
+#: lib/isodumper.py:152 lib/isodumper.py:193
+msgid "Target Device: "
+msgstr "Helburu gailua: "
+
+#: lib/isodumper.py:191 share/isodumper/isodumper.glade.h:22
+msgid "Backup in:"
+msgstr "Babeskopia:"
+
+#: lib/isodumper.py:192
+msgid "Image: "
+msgstr "Imajina: "
+
+#: lib/isodumper.py:196
+msgid "The device is too small to contain the ISO file."
+msgstr "Gailu txikiegia ISO fitxategia eduki behar badu."
+
+#: lib/isodumper.py:203
+msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
+msgstr "Gailuak 32 Gbytes baino gehiagokoa da. Ziur erabili nahi duzula?"
+
+#: lib/isodumper.py:236
+msgid "Unmounting all partitions of "
+msgstr "-ren partizio guztiak desmuntatzean "
+
+#: lib/isodumper.py:238
+msgid "Trying to unmount "
+msgstr "Desmuntatzen saiatzen "
+
+#: lib/isodumper.py:244
+msgid " was terminated by signal "
+msgstr " Seinaleagatik amaituta "
+
+#: lib/isodumper.py:244 lib/isodumper.py:250
+msgid "Error, umount "
+msgstr "Errorea, desmuntatu "
+
+#: lib/isodumper.py:248
+msgid " successfully unmounted"
+msgstr " arrakastaz desmuntatu"
+
+#: lib/isodumper.py:250
+msgid " returned "
+msgstr " bueltatu"
+
+#: lib/isodumper.py:253
+msgid "Execution failed: "
+msgstr "Exekuzioak huts egin du: "
+
+#: lib/isodumper.py:261
+msgid "Could not read mtab !"
+msgstr "Ezin izan du mtab irakurri!"
+
+#: lib/isodumper.py:269 lib/isodumper.py:292
+msgid "Reading error."
+msgstr "Akatsa irakurtzerakoan."
+
+#: lib/isodumper.py:275
+msgid "You have not the rights for writing on the device"
+msgstr "Ez duzu gailuan idazteko eskubideak"
+
+#: lib/isodumper.py:280 lib/isodumper.py:281
+msgid " to "
+msgstr " arte "
+
+#: lib/isodumper.py:280
+msgid "Writing "
+msgstr "Idazten "
+
+#: lib/isodumper.py:281
+msgid "Executing copy from "
+msgstr "-tik kopia exekutatzen "
+
+#: lib/isodumper.py:297 lib/isodumper.py:310 lib/isodumper.py:319
+msgid "Writing error."
+msgstr "Errorea idazten."
+
+#: lib/isodumper.py:302
+msgid "Wrote: "
+msgstr "idatzi zuen: "
+
+#: lib/isodumper.py:314
+msgid " successfully written to "
+msgstr " -n arrakastaz idatzita "
+
+#: lib/isodumper.py:314 lib/isodumper.py:382
+msgid "Image "
+msgstr "Imajina "
+
+#: lib/isodumper.py:315
+msgid "Bytes written: "
+msgstr "Byteak idatzita: "
+
+#: polkit/org.mageia.isodumper.policy.in.h:1
+msgid "Run Isodumper"
+msgstr "IsoDumper Exekutatzen"
+
+#: polkit/org.mageia.isodumper.policy.in.h:2
+msgid "Authentication is required to run Isodumper"
+msgstr "Egiaztatzea beharrezkoa da Isodumper exekutatzeko"
+
+#: share/applications/isodumper.desktop.in.h:1
+#: share/isodumper/isodumper.glade.h:1
+msgid "IsoDumper"
+msgstr "IsoDumper"
+
+#: share/applications/isodumper.desktop.in.h:2
+msgid "A GUI tool to write .img and .iso files to USB Keys"
+msgstr "GUI tresna bat .img eta .iso fitxategiak USB Giltza baten idazteko"
+
+#: share/isodumper/isodumper.glade.h:2
+msgid ""
+"A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
+msgstr ""
+"USB makilatan ISO irudiak idazteko tresna. Usb-imagewriter-aren bidegurutze "
+"bat da."
+
+#: share/isodumper/isodumper.glade.h:3
+msgid "Select"
+msgstr "Aukeratu"
+
+#: share/isodumper/isodumper.glade.h:4
+msgid ""
+"<b>Warning</b>\n"
+" This will <b>destroy all data</b> on the target\n"
+" device, are you sure you want to proceed ?\n"
+"\n"
+" If you say ok here, please <b>do not unplug</b>\n"
+" the device during the following operation."
+msgstr ""
+"<b>Erne</b>\n"
+" Honek <b>datu guztiak suntsitu</b> ditzake helburuko\n"
+" gailuan, ziur zaude jarraitu nahi duzula?\n"
+"\n"
+" Ok hemen esan baduzu, mesedez <b>ez deskonektatu</b>\n"
+" gailua honako eragiketa egin bitartean."
+
+#: share/isodumper/isodumper.glade.h:10
+msgid ""
+"<b>Error</b>\n"
+" Something went wrong, please see the details\n"
+" window for the exact error.\n"
+" \n"
+" The application will be closed with this window, and a logfile\n"
+" isodumper.log  will be saved in your homedir/.isodumper "
+msgstr ""
+"<b>Errorea</b>\n"
+" Zerbait gaizki joan, ikusi xehetasun\n"
+" leihoa akats zehazteko.\n"
+" \n"
+" Aplikazioa leiho hau itxi egingo du, eta erregistro isodumper.log\n"
+" fitxategi bat gordeko du zure etxeko direktorioan /.isodumper  "
+
+#: share/isodumper/isodumper.glade.h:16
+msgid "Write Image:"
+msgstr "Imajina Idatzi:"
+
+#: share/isodumper/isodumper.glade.h:17
+msgid "Select an image file to be written to the device"
+msgstr "Hautatu irudi fitxategi bat gailuan idazteko"
+
+#: share/isodumper/isodumper.glade.h:18
+msgid "Select Image"
+msgstr "Imajina Aukeratu"
+
+#: share/isodumper/isodumper.glade.h:19
+msgid "to"
+msgstr "arte"
+
+#: share/isodumper/isodumper.glade.h:20
+msgid "Select target device to write the image to"
+msgstr "Hautatu helburuko gailua irudia idazteko"
+
+#: share/isodumper/isodumper.glade.h:21
+msgid "Create a backup of the device as image to restore it later"
+msgstr "Sortu gailuaren babeskopia bat irudi gisa, geroago leheneratzeko"
+
+#: share/isodumper/isodumper.glade.h:24
+msgid "(None)"
+msgstr "(bat ere ez)"
+
+#: share/isodumper/isodumper.glade.h:25
+msgid "Select a folder in which to write the backup image"
+msgstr "Hautatu  karpeta bat bertan babeskopiaren irudia idazteko"
+
+#: share/isodumper/isodumper.glade.h:26
+msgid "Details"
+msgstr "Xehetasunak"
+
+#: share/isodumper/isodumper.glade.h:27
+msgid "Write to device"
+msgstr "Gailuan idatzi"
+
+#: share/isodumper/isodumper.glade.h:28
+msgid ""
+"<b>Warning</b>\n"
+" No target devices were found. \n"
+"\n"
+" You need to plug in a USB Key\n"
+" to which the image can be written."
+msgstr ""
+"<b>Erne</b>\n"
+" Ez da gailurik aurkitu helburuan. \n"
+"\n"
+" USB giltza bat entxufatu behar duzu\n"
+" bertan irudia idatzi ahal izateko."
+
+#: share/isodumper/isodumper.glade.h:33
+msgid ""
+"<b>Success</b>\n"
+" The image was successfully written to the\n"
+" target device.\n"
+" \n"
+" You are free to unplug it now, a log isodumper.log \n"
+" of the operation will be saved in your homedir/.isodumper/ when\n"
+" you close the application."
+msgstr ""
+"<b>Arrakasta</b>\n"
+" Eragiketa arrakastaz burutu zen.\n"
+" \n"
+" Libre zaude deskonektatzeko gaur egun, isodumper.log erregistro bat \n"
+" eragiketa zure etxe direkotioa/.isodumper/ karpetan gorde daiteke\n"
+" aplikazioa ixten duzunean."
