@@ -7,13 +7,14 @@
 # Dimitrios Glentadakis <dglent@free.fr>, 2014
 # dtsiamasiotis <dtsiamasiotis@gmail.com>, 2013-2014
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
+# JimSp472000 <jimspentzos2000@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-07 00:05+0200\n"
-"PO-Revision-Date: 2014-04-30 04:30+0000\n"
-"Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
+"PO-Revision-Date: 2014-08-05 10:11+0000\n"
+"Last-Translator: JimSp472000 <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/mageia/language/"
 "el/)\n"
 "Language: el\n"
@@ -32,23 +33,23 @@ msgstr "Συσκευή προορισμού: "
 
 #: lib/isodumper.py:184
 msgid "Backup in: "
-msgstr ""
+msgstr "Δημιουργία αντιγράφων ασφαλείας σε:"
 
 #: lib/isodumper.py:247
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "Η συσκευή διαμορφώθηκε με επιτυχία."
 
 #: lib/isodumper.py:251
 msgid "An error occured while creating a partition."
-msgstr ""
+msgstr "Προέκυψε σφάλμα κατά την δημιουργία διαμερίσματος."
 
 #: lib/isodumper.py:253
 msgid "Authentication error."
-msgstr ""
+msgstr "Σφάλμα πιστοποίησης."
 
 #: lib/isodumper.py:255
 msgid "An error occurred."
-msgstr ""
+msgstr "Προέκυψε σφάλμα."
 
 #: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
@@ -164,6 +165,9 @@ msgid ""
 "the backup will be unusable.\n"
 "Are you sure you want to quit during writing?"
 msgstr ""
+"Η εγγραφή βρίσκεται σε εξέλιξη. Η έξοδος κατά την εγγραφή θα αχρηστεύσει τη "
+"συσκευή ή το αντίγραφο ασφαλείας.\n"
+"Θέλετε σίγουρα να εξέλθετε κατά την εγγραφή;"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -201,38 +205,44 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Σφάλμα</b>\n"
+" Κάτι πήγε στραβά, παρακαλώ δείτε το παράθυρο\n"
+" λεπτομερειών για το ακριβές σφάλμα.\n"
+"\n"
+" Η εφαρμογή θα κλείσει με αυτό το παράθυρο, και θα αποθηκευτεί\n"
+" ένα αρχείο καταγραφής isodumper.log στον κατάλογο /.isodumper σας"
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
-msgstr ""
+msgstr "Ετικέτα για τη συσκευή:"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "Το πρότυπο. Το μέγεθος των αρχείων είναι περιορισμένο στα 4GB"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "Για διαχείριση αρχείων μεγαλύτερων από 4GB"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Μόνο για συστήματα Linux"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Device to work on:"
-msgstr ""
+msgstr "Συσκευή προς επεξεργασία:"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
@@ -270,19 +280,19 @@ msgstr "Διαλέξτε ένα φάκελο για να γράψετε εκεί
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Backup the device"
-msgstr ""
+msgstr "Δημιουργία αντιγράφων ασφαλείας για τη συσκευή"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Μορφοποιήστε τη συσκευή σε FAT, NTFS ή ext:"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "Επιλέξτε μορφή. Η συσκευή θα διαμορφωθεί σε ένα διαμέρισμα"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"
-msgstr ""
+msgstr "Μορφοποίηση συσκευής"
 
 #: share/isodumper/isodumper.glade.h:40
 msgid "Details"
@@ -311,36 +321,10 @@ msgid ""
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Σφάλμα</b>\n"
-#~ " Κάτι πήγε στραβά, παρακαλώ δείτε το παράθυρο με τις\n"
-#~ " λεπτομέρειες για το ακριβές λάθος.\n"
-#~ " \n"
-#~ " Ένα αρχείο καταγραφής isodumper.log με το περιεχόμενο θα σωθεί στο\n"
-#~ " homedir/.isodumper όταν η εφαρμογή τερματιστεί."
-
-#~ msgid ""
-#~ "<b>Success</b>\n"
-#~ " The image was successfully written to the\n"
-#~ " target device.\n"
-#~ " \n"
-#~ " You are free to unplug it now, a log isodumper.log \n"
-#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
-#~ " you close the application."
-#~ msgstr ""
-#~ "<b>Επιτυχία</b>\n"
-#~ " Η εικόνα εγγράφηκε επιτυχώς στη\n"
-#~ " συσκευή προορισμού.\n"
-#~ " \n"
-#~ " Μπορείτε τώρα να την αποσυνδέσετε ελεύθερα, ένα αρχείο καταγραφής "
-#~ "isodumper. log \n"
-#~ " της διεργασίας θα σωθεί στο  homedir/.isodumper/ όταν\n"
-#~ " τερματίσετε την εφαρμογή."
+"<b>Επιτυχία</b>\n"
+" Η λειτουργία εκτελέστηκε με επιτυχία.\n"
+" \n"
+" Είστε ελεύθερος να το αποσυνδέσετε τώρα, ένα αρχείο καταγραφών isodumper."
+"log \n"
+" της λειτουργίας θα αποθηκευτεί στον κατάλογο /.isodumper/ σας όταν\n"
+" κλείσετε την εφαρμογή."
