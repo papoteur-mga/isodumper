@@ -7,13 +7,14 @@
 # Dimitrios Glentadakis <dglent@free.fr>, 2014
 # dtsiamasiotis <dtsiamasiotis@gmail.com>, 2013-2014
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
+# JimSp472000 <jimspentzos2000@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-30 17:01+0200\n"
-"PO-Revision-Date: 2014-04-30 04:30+0000\n"
-"Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
+"PO-Revision-Date: 2014-08-05 10:11+0000\n"
+"Last-Translator: JimSp472000 <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/mageia/language/"
 "el/)\n"
 "Language: el\n"
@@ -174,6 +175,12 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Σφάλμα</b>\n"
+" Κάτι πήγε στραβά, παρακαλώ δείτε το παράθυρο\n"
+" λεπτομερειών για το ακριβές σφάλμα.\n"
+"\n"
+" Η εφαρμογή θα κλείσει με αυτό το παράθυρο, και θα αποθηκευτεί\n"
+" ένα αρχείο καταγραφής isodumper.log στον κατάλογο /.isodumper σας"
 
 #: share/isodumper/isodumper.glade.h:16
 msgid "Write Image:"
