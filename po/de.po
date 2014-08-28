@@ -45,7 +45,7 @@ msgid "The device was formatted successfully."
 msgstr "Das Gerät wurde erfolgreich formatiert."
 
 #: lib/isodumper.py:251
-msgid "An error occured while creating a partition."
+msgid "An error occurred while creating a partition."
 msgstr "Ein Fehler ist beim erstellen der Partition aufgetreten."
 
 #: lib/isodumper.py:253

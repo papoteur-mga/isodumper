@@ -248,7 +248,7 @@ class IsoDumper:
                     self.logger(message)
                     self.success()
                 elif rc == 5:
-                    message = _("An error occured while creating a partition.")
+                    message = _("An error occurred while creating a partition.")
                 elif rc == 127:
                     message = _('Authentication error.')
                 else:

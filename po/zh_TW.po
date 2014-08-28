@@ -38,7 +38,7 @@ msgid "The device was formatted successfully."
 msgstr "裝置已經成功格式化了。"
 
 #: lib/isodumper.py:251
-msgid "An error occured while creating a partition."
+msgid "An error occurred while creating a partition."
 msgstr "建立磁碟區時發生了一個錯誤。"
 
 #: lib/isodumper.py:253
