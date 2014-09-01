@@ -3,17 +3,17 @@
 # This file is distributed under the same license as the isodumper package.
 #
 # Translators:
-# Akien <akien@mageia.org>, 2014
+# Rémi Verschelde <akien@mageia.org>, 2014
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# Akien <akien@mageia.org>, 2014
+# Rémi Verschelde <akien@mageia.org>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-07 00:05+0200\n"
-"PO-Revision-Date: 2014-05-04 10:30+0000\n"
-"Last-Translator: Akien <akien@mageia.org>\n"
+"PO-Revision-Date: 2014-08-28 16:50+0000\n"
+"Last-Translator: Rémi Verschelde <akien@mageia.org>\n"
 "Language-Team: Danish (http://www.transifex.com/projects/p/mageia/language/"
 "da/)\n"
 "Language: da\n"
@@ -32,23 +32,23 @@ msgstr "Destinationsenheder: "
 
 #: lib/isodumper.py:184
 msgid "Backup in: "
-msgstr ""
+msgstr "Backup på:"
 
 #: lib/isodumper.py:247
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "Enheden blev formateret med succes."
 
 #: lib/isodumper.py:251
 msgid "An error occurred while creating a partition."
-msgstr ""
+msgstr "En fejl opstod ved oprettelse af en partition."
 
 #: lib/isodumper.py:253
 msgid "Authentication error."
-msgstr ""
+msgstr "Identifikation fejl."
 
 #: lib/isodumper.py:255
 msgid "An error occurred."
-msgstr ""
+msgstr "Der er opstået en fejl."
 
 #: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
@@ -161,6 +161,9 @@ msgid ""
 "the backup will be unusable.\n"
 "Are you sure you want to quit during writing?"
 msgstr ""
+"Skrivning er i gang. Afslutning under skrivning kan ophaeve enheden eller "
+"backup ubrugelig.\n"
+"Er du sikker på du ønsker at afslutte i løbet af at skrive?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -198,38 +201,44 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Fejl</b>\n"
+" Noget gik galt, se venligt detaljerne vindue\n"
+" for den konkrete fejl.\n"
+"\n"
+" Applicationen vil blive lukket sammen med dette vindue,\n"
+" og en logfil isodumper.log vil blive gemt i mappen ~/.isodumper."
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
-msgstr ""
+msgstr "Label til enhenden:"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "Standardformat. Filstørrelser er begrænset til 4 GB."
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "Til at håndtere filer større end 4GB."
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Kun til Linux-systemer."
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Device to work on:"
-msgstr ""
+msgstr "Enhed til at arbejde på:"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
@@ -265,19 +274,19 @@ msgstr "Vælg en mappe at gemme backup billedet i"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Backup the device"
-msgstr ""
+msgstr "Backup enheden"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Formatere enheden i FAT, NTFS eller ext:"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "Vælg formatet. Enheden vil blive formateret i en partition."
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"
-msgstr ""
+msgstr "Formatere enheden"
 
 #: share/isodumper/isodumper.glade.h:40
 msgid "Details"
@@ -306,35 +315,9 @@ msgid ""
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Fejl</b>\n"
-#~ " Noget gik galt, se venligt detaljerne\n"
-#~ " vindue for den konkrete fejl.\n"
-#~ " \n"
-#~ " En logfil isodumper.log med indholdet vil blive gemt i mappen\n"
-#~ " ~/.isodumper når applicationen er lukket."
-
-#~ msgid ""
-#~ "<b>Success</b>\n"
-#~ " The image was successfully written to the\n"
-#~ " target device.\n"
-#~ " \n"
-#~ " You are free to unplug it now, a log isodumper.log \n"
-#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
-#~ " you close the application."
-#~ msgstr ""
-#~ "<b>Fuldført</b>\n"
-#~ " Billedet blev problemfrit skrevet til\n"
-#~ " destinationsenhed.\n"
-#~ " \n"
-#~ " Du kan nu udtage den nu, en logfil isodumper.log\n"
-#~ " af operationen vil blive gemt på mappen ~/.isodumper\n"
-#~ " når du lukker applikationen."
+"<b>Fuldført</b>\n"
+" Operationen blev udført med succes.\n"
+" \n"
+" Du kan nu udtage enheden, en logfil isodumper.log\n"
+" af operationen vil blive gemt på mappen ~/.isodumper\n"
+" når du lukker applikationen."

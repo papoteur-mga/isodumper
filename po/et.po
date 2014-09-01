@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-07 00:05+0200\n"
-"PO-Revision-Date: 2014-05-08 09:50+0000\n"
+"PO-Revision-Date: 2014-08-28 16:20+0000\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/mageia/language/"
 "et/)\n"
@@ -31,23 +31,23 @@ msgstr "Sihtseade: "
 
 #: lib/isodumper.py:184
 msgid "Backup in: "
-msgstr ""
+msgstr "Varukoopia:"
 
 #: lib/isodumper.py:247
 msgid "The device was formatted successfully."
-msgstr ""
+msgstr "Seade vormindati edukalt."
 
 #: lib/isodumper.py:251
 msgid "An error occurred while creating a partition."
-msgstr ""
+msgstr "Partitsiooni loomisel tekkis tõrge."
 
 #: lib/isodumper.py:253
 msgid "Authentication error."
-msgstr ""
+msgstr "Tõrge autentimisel."
 
 #: lib/isodumper.py:255
 msgid "An error occurred."
-msgstr ""
+msgstr "Tekkis tõrge."
 
 #: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
 msgid "Backup in:"
@@ -160,6 +160,9 @@ msgid ""
 "the backup will be unusable.\n"
 "Are you sure you want to quit during writing?"
 msgstr ""
+"Kirjutamine käib. Väljumise korral kirjutamise ajal võib seade või "
+"varukoopia muutuda kasutamiskõlbmatuks.\n"
+"Kas tõesti väljuda kirjutamise ajal?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
@@ -197,38 +200,45 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
+"<b>Tõrge</b>\n"
+" Midagi läks valesti. Palun vaadake üksikasju \n"
+" täpse veateate aknast.\n"
+" \n"
+" Rakendus suletakse ning logifail \n"
+" isodumper.log salvestatakse kodukataloogi \n"
+" alamkataloogis .isodumper."
 
 #: share/isodumper/isodumper.glade.h:18
 msgid "Label for the device:"
-msgstr ""
+msgstr "Seadme nimi:"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "FAT 32 (Windows)"
-msgstr ""
+msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr ""
+msgstr "Standardne. Failide suuruseks on kuni 4 Gb."
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "NTFS (Windows)"
-msgstr ""
+msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "To handle files bigger than 4Gb"
-msgstr ""
+msgstr "Suurematele kui 4 Gb failidele."
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "ext4 (Linux)"
-msgstr ""
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "Only for Linux systems"
-msgstr ""
+msgstr "Ainult Linuxi süsteemidele."
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Device to work on:"
-msgstr ""
+msgstr "Kasutatav seade:"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Select target device to write the image to"
@@ -264,19 +274,19 @@ msgstr "Valige kataloog, kuhu kirjutada varutõmmis"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Backup the device"
-msgstr ""
+msgstr "Varunda seade"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr ""
+msgstr "Seadme vormindamine FAT-, NTFS- või ext-vormingus:"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr ""
+msgstr "Valige vorming. Seade vormindatakse ühe partitsioonina"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"
-msgstr ""
+msgstr "Vorminda seade"
 
 #: share/isodumper/isodumper.glade.h:40
 msgid "Details"
@@ -305,35 +315,9 @@ msgid ""
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Tõrge</b>\n"
-#~ " Midagi läks valesti, palun vaadake üksikasju\n"
-#~ " veateate aknast.\n"
-#~ " \n"
-#~ " Logifail isodumper.log täpse kirjeldusega salvestatakse\n"
-#~ " teie kodukausta rakenduse sulgumise järel."
-
-#~ msgid ""
-#~ "<b>Success</b>\n"
-#~ " The image was successfully written to the\n"
-#~ " target device.\n"
-#~ " \n"
-#~ " You are free to unplug it now, a log isodumper.log \n"
-#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
-#~ " you close the application."
-#~ msgstr ""
-#~ "<b>Kordaminek</b> \n"
-#~ " Tõmmis on edukalt kirjutatud \n"
-#~ " sihtseadmele.\n"
-#~ " \n"
-#~ " Võite nüüd seadme eemaldada, logifail \n"
-#~ " isodumper.log salvestatakse teie kodukataloogi \n"
-#~ " rakenduse sulgemise järel."
+"<b>Kordaminek</b> \n"
+" Operatsioon lõppes edukalt..\n"
+" \n"
+" Võite nüüd USB-pulga eemaldada. Operatsiooni logifail\n"
+" isodumper.log salvestatakse kodukataloogi alamkataloogi\n"
+".isodumper pärast rakenduse sulgemist."
