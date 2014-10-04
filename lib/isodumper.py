@@ -1,22 +1,22 @@
 #!/usr/bin/python
-#  
+#
 #  Copyright (c) 2007-2009 Canonical Ltd.
-#  
+#
 #  Author: Oliver Grawert <ogra@ubuntu.com>
-# 
+#
 #  Modifications 2013 from papoteur <papoteur@mageialinux-online.org>
 #  and Geiger David <david.david@mageialinux-online.org>
 #
-#  This program is free software; you can redistribute it and/or 
-#  modify it under the terms of the GNU General Public License as 
+#  This program is free software; you can redistribute it and/or
+#  modify it under the terms of the GNU General Public License as
 #  published by the Free Software Foundation; either version 2 of the
 #  License, or (at your option) any later version.
-# 
+#
 #  This program is distributed in the hope that it will be useful,
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
-# 
+#
 #  You should have received a copy of the GNU General Public License
 #  along with this program; if not, write to the Free Software Foundation,
 #  Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
@@ -40,7 +40,7 @@ def find_devices():
     iface = dbus.Interface(proxy, "org.freedesktop.UDisks")
     devs=iface.EnumerateDevices()
     list=[]
-  
+
     for dev in devs:
     	dev_obj = bus.get_object("org.freedesktop.UDisks", dev)
     	dev = dbus.Interface(dev_obj, "org.freedesktop.DBus.Properties")
@@ -61,7 +61,7 @@ class IsoDumper:
     def __init__(self,user):
         APP="isodumper"
         DIR="/usr/share/locale"
-        RELEASE="v0.30"
+        RELEASE="v0.31"
 
         gettext.bindtextdomain(APP, DIR)
         gettext.textdomain(APP)
@@ -86,7 +86,7 @@ class IsoDumper:
 
         # define size of the selected device
         self.deviceSize=0
-        
+
         # Operation running
         self.operation=False
 
@@ -152,7 +152,7 @@ class IsoDumper:
             self.devicelist.append_text(name+' ('+path.lstrip()+') '+sizeM+_('Mb'))
             self.device_name=name.rstrip().replace(' ', '')
         dialog.destroy()
-           
+
     def device_selected(self, widget):
         self.dev = self.devicelist.get_active_text()
         self.backup_select.set_sensitive(True)
@@ -477,19 +477,20 @@ class IsoDumper:
         import pwd
         pw = pwd.getpwnam(self.user)
         uid = pw.pw_uid
-        gid= pw.pw_gid
+        gid=pw.pw_gid
         if (self.user != 'root') and (self.user !=''):
-            home='/home/'+self.user
+            logpath='/home/'+self.user+'/.isodumper'
+            print gid
+            os.setgid(gid)
+            os.setuid(uid)
+            if not(os.path.isdir(logpath)):
+                os.mkdir(logpath)
         else:
-            home='/root'
-        if not(os.path.isdir(home+'/.isodumper')):
-            os.mkdir(home+'/.isodumper')
-            os.chown(home+'/.isodumper',uid, gid)
-        logfile=open(home+'/.isodumper/isodumper.log',"w")
+            logpath='/root'
+        logfile=open(logpath+'/isodumper.log',"w")
         logfile.write(self.log.get_text(start, end, False))
         logfile.close()
-        
-        os.chown(home+'/.isodumper/isodumper.log',uid, gid)
+
         print self.log.get_text(start, end, False)
 
     def logger(self, text):
@@ -506,7 +507,7 @@ class IsoDumper:
         write_button.set_sensitive(True)
         self.logger(_('Image ')+": "+ self.img_name)
         self.chooser.set_tooltip_text(self.img_name)
- 
+
     def activate_backup(self, widget):
         self.backup_img_name = self.backup_dir.get_filename()
 
