@@ -358,15 +358,22 @@ class IsoDumper:
     def write_logfile(self):
         start = self.log.get_start_iter()
         end = self.log.get_end_iter()
+        import pwd
+        pw = pwd.getpwnam(self.user)
+        uid = pw.pw_uid
+        gid=pw.pw_gid
         if (self.user != 'root') and (self.user !=''):
-          home='/home/'+self.user
+            logpath='/home/'+self.user+'/.isodumper'
+            print gid
+            os.setgid(gid)
+            os.setuid(uid)
+            if not(os.path.isdir(logpath)):
+                os.mkdir(logpath)
         else:
-            home='/root'
-        if not(os.path.isdir(home+'/.isodumper')):
-            os.mkdir(home+'/.isodumper')
-            os.chown(home+'/.isodumper')
-        logfile=open(home+'/.isodumper/isodumper.log',"w")
+            logpath='/root'
+        logfile=open(logpath+'/isodumper.log',"w")
         logfile.write(self.log.get_text(start, end, False))
+        logfile.close()
         print self.log.get_text(start, end, False)
 
     def logger(self, text):
