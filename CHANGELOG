@@ -1,6 +1,12 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
+IsoDumper 0.31
+------------
+	  - this is a security update, about writing log file:
+	  - see https://bugs.mageia.org/show_bug.cgi?id=14207.
+	  - fix security issue when writing log file.
+
 IsoDumper 0.30
 ------------
 	  - added function to format the device in Fat32, ntfs or ext4.
