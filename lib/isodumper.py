@@ -405,7 +405,8 @@ class IsoDumper:
                             mark = self.log.create_mark("end", self.log.get_end_iter(), False)
                             self.logview.scroll_to_mark(mark, 0.05, True, 0.0, 1.0)
                         progress.set_fraction(float(indice)/100)
-                        indice +=1
+                        while (written > steps[indice]):
+                            indice +=1
                         try:
                             os.fsync(ofc)
                         except:
