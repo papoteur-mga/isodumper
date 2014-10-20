@@ -285,6 +285,9 @@ class IsoDumper:
                 indice=1
                 written=0
                 ncuts=b/bs
+                while ncuts <= 100:
+                    bs=bs/2
+                    ncuts=b/bs
                 for i in xrange(0,ncuts):
                     try:
                         buf=ifc.read(bs)
