@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2012-11-13 02:22+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
@@ -115,7 +115,7 @@ msgstr "Zapisivanje "
 msgid "Executing copy from "
 msgstr ""
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 msgid "Writing error."
 msgstr ""
 
@@ -123,15 +123,15 @@ msgstr ""
 msgid "Wrote: "
 msgstr "Zapisao: "
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " je uspješno zapisana "
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "Slika "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr ""
 
@@ -297,55 +297,6 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "gtk-ok"
-#~ msgstr "U redu"
-
-#~ msgid "gtk-close"
-#~ msgstr "Zatvori"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "Poništi zapisivanje"
-
-#~ msgid "ImageWriter"
-#~ msgstr "Zapisnik slika"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "'dd' radnja je završila greškom!"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Greška</b>\n"
-#~ " Nema pronađenih uređaja zapisivanja. \n"
-#~ "\n"
-#~ " Morate spojiti USB uređaj\n"
-#~ " na koji slika može biti zapisana."
-
-#~ msgid "to"
-#~ msgstr "u"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Greška</b>\n"
-#~ " Nešto je krenulo po zlu, pogledajte\n"
-#~ " prozor pojedinosti za točnu grešku.\n"
-#~ " \n"
-#~ " Datoteka zapisa sa sadržajem biti će spremljena u\n"
-#~ " vašu Osobnu mapu ako se aplikacija zatvori."
-
 #~ msgid ""
 #~ "<b>Success</b>\n"
 #~ " The image was successfully written to the\n"
@@ -362,3 +313,52 @@ msgstr ""
 #~ " Sada možete odspojiti vaš USB, zapis radnji\n"
 #~ " biti će spremljen u Osobnoj mapi\n"
 #~ " ako zatvorite aplikaciju."
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>Greška</b>\n"
+#~ " Nešto je krenulo po zlu, pogledajte\n"
+#~ " prozor pojedinosti za točnu grešku.\n"
+#~ " \n"
+#~ " Datoteka zapisa sa sadržajem biti će spremljena u\n"
+#~ " vašu Osobnu mapu ako se aplikacija zatvori."
+
+#~ msgid "to"
+#~ msgstr "u"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>Greška</b>\n"
+#~ " Nema pronađenih uređaja zapisivanja. \n"
+#~ "\n"
+#~ " Morate spojiti USB uređaj\n"
+#~ " na koji slika može biti zapisana."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "'dd' radnja je završila greškom!"
+
+#~ msgid "ImageWriter"
+#~ msgstr "Zapisnik slika"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "Poništi zapisivanje"
+
+#~ msgid "gtk-close"
+#~ msgstr "Zatvori"
+
+#~ msgid "gtk-ok"
+#~ msgstr "U redu"
+
+#~ msgid " "
+#~ msgstr " "

@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2014-07-08 22:10+0000\n"
 "Last-Translator: Marc Lattemann\n"
 "Language-Team: German (http://www.transifex.com/projects/p/mageia/language/"
@@ -125,7 +125,7 @@ msgstr "Schreibe "
 msgid "Executing copy from "
 msgstr "Ausführen der Kopie von"
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 msgid "Writing error."
 msgstr "Schreibfehler."
 
@@ -133,15 +133,15 @@ msgstr "Schreibfehler."
 msgid "Wrote: "
 msgstr "Geschrieben: "
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " erfolgreich geschrieben nach"
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "Abbild "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr "Bytes geschrieben:"
 
@@ -213,7 +213,8 @@ msgid ""
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
 "<b>Fehler</b>\n"
-" Ein Fehler ist aufgetreten. Bitte schauen sie in die Detail Fenster für eine\n"
+" Ein Fehler ist aufgetreten. Bitte schauen sie in die Detail Fenster für "
+"eine\n"
 " detaillierte Fehlermeldung.\n"
 "\n"
 " Die Anwendung wird mit diesem Fenster geschlossen und eine Log-Datei\n"

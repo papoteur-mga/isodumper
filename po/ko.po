@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2008-11-13 17:10+0000\n"
 "Last-Translator: This.dramzinn <This.dramzinn@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -116,7 +116,7 @@ msgstr "쓰다 "
 msgid "Executing copy from "
 msgstr "실행하다 : dd if="
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 #, fuzzy
 msgid "Writing error."
 msgstr "쓰다 "
@@ -125,15 +125,15 @@ msgstr "쓰다 "
 msgid "Wrote: "
 msgstr "썼다 : "
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " 성공적으로 쓰여진다. "
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "이미지 "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr ""
 
@@ -299,39 +299,22 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd 처리과정 종료시 오류발생"
-
-#~ msgid "ImageWriter"
-#~ msgstr "이미지제작가"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-취소"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-닫기"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-확인"
-
+#, fuzzy
 #~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
+#~ "<b>Success</b>\n"
+#~ " The image was successfully written to the\n"
+#~ " target device.\n"
+#~ " \n"
+#~ " You are free to unplug it now, a log isodumper.log \n"
+#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
+#~ " you close the application."
 #~ msgstr ""
-#~ "<b>오류</b>\n"
-#~ "(목적) 장치를 찾을 수 없습니다.\n"
+#~ "<b>성공</b>\n"
+#~ "그 이미지가 성공적으로 \n"
+#~ "장치에 쓰인다면\n"
 #~ "\n"
-#~ "USB 키를 입력할 필요가 있습니다.\n"
-#~ "그 이미지와 같은 것은 쓰여질 수 있습니다."
-
-#~ msgid "to"
-#~ msgstr "으로"
+#~ "지금 그것(장치)를 제거해도 괜찮습니다, 만약 사용(응용)을 종료하게 되면,\n"
+#~ "그 기록은 당신의 홈디렉토리에 저장되도록 작동할 것입니다."
 
 #, fuzzy
 #~ msgid ""
@@ -349,19 +332,36 @@ msgstr ""
 #~ "그 기록파일은 만약 응용프로그램이 끝나는 경우가 발생하면 \n"
 #~ "당신의 홈 디렉토리에 저장된다."
 
-#, fuzzy
+#~ msgid "to"
+#~ msgstr "으로"
+
 #~ msgid ""
-#~ "<b>Success</b>\n"
-#~ " The image was successfully written to the\n"
-#~ " target device.\n"
-#~ " \n"
-#~ " You are free to unplug it now, a log isodumper.log \n"
-#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
-#~ " you close the application."
-#~ msgstr ""
-#~ "<b>성공</b>\n"
-#~ "그 이미지가 성공적으로 \n"
-#~ "장치에 쓰인다면\n"
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
 #~ "\n"
-#~ "지금 그것(장치)를 제거해도 괜찮습니다, 만약 사용(응용)을 종료하게 되면,\n"
-#~ "그 기록은 당신의 홈디렉토리에 저장되도록 작동할 것입니다."
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>오류</b>\n"
+#~ "(목적) 장치를 찾을 수 없습니다.\n"
+#~ "\n"
+#~ "USB 키를 입력할 필요가 있습니다.\n"
+#~ "그 이미지와 같은 것은 쓰여질 수 있습니다."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-확인"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-닫기"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-취소"
+
+#~ msgid "ImageWriter"
+#~ msgstr "이미지제작가"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd 처리과정 종료시 오류발생"
+
+#~ msgid " "
+#~ msgstr " "

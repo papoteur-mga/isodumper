@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2014-07-07 21:10+0000\n"
 "Last-Translator: Filip Komar <filip.komar@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/mageia/"
@@ -121,7 +121,7 @@ msgstr "Zapisovanje "
 msgid "Executing copy from "
 msgstr "Izvajanje kopiranja z "
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 msgid "Writing error."
 msgstr "Napaka pisanja."
 
@@ -129,15 +129,15 @@ msgstr "Napaka pisanja."
 msgid "Wrote: "
 msgstr "Zapisano: "
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " je bila uspešno zapisana na "
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "Slika medija "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr "Zapisano zlogov: "
 

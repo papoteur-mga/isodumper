@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2008-11-04 01:51+0000\n"
 "Last-Translator: Boning Chen <neodarksaver@gmail.com>\n"
 "Language-Team: Chinese (Hong Kong) <zh_HK@li.org>\n"
@@ -116,7 +116,7 @@ msgstr "正在寫入 "
 msgid "Executing copy from "
 msgstr "執行中： dd if="
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 #, fuzzy
 msgid "Writing error."
 msgstr "正在寫入 "
@@ -125,15 +125,15 @@ msgstr "正在寫入 "
 msgid "Wrote: "
 msgstr "已寫入： "
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " 成功寫入到 "
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "鏡像 "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr ""
 
@@ -299,51 +299,6 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-確定"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-關閉"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-取消"
-
-#~ msgid "ImageWriter"
-#~ msgstr "鏡像寫入程序ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd處理過程有錯誤而結束！"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr "<b>錯誤</b>沒有找到目標裝置。你需要插入一個USB裝置將鏡像寫入。"
-
-#~ msgid "to"
-#~ msgstr "到"
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>錯誤</b>\n"
-#~ " 處理過程出錯，\n"
-#~ " 請通過窗口輸出查看詳細信息。\n"
-#~ " \n"
-#~ " 當程序關閉時\n"
-#~ " 將會在您的用戶主目錄保存一個日誌文件。"
-
 #, fuzzy
 #~ msgid ""
 #~ "<b>Success</b>\n"
@@ -362,3 +317,48 @@ msgstr ""
 #~ " 您現在已經完成本次操作，可以卸載裝置。\n"
 #~ " 當您退出程序時\n"
 #~ " 一份日誌文件將會保存在您的用戶主目錄中。"
+
+#, fuzzy
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>錯誤</b>\n"
+#~ " 處理過程出錯，\n"
+#~ " 請通過窗口輸出查看詳細信息。\n"
+#~ " \n"
+#~ " 當程序關閉時\n"
+#~ " 將會在您的用戶主目錄保存一個日誌文件。"
+
+#~ msgid "to"
+#~ msgstr "到"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr "<b>錯誤</b>沒有找到目標裝置。你需要插入一個USB裝置將鏡像寫入。"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd處理過程有錯誤而結束！"
+
+#~ msgid "ImageWriter"
+#~ msgstr "鏡像寫入程序ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-取消"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-關閉"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-確定"
+
+#~ msgid " "
+#~ msgstr " "

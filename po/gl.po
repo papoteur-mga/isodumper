@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2009-06-19 15:17+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
@@ -115,7 +115,7 @@ msgstr "Escribindo "
 msgid "Executing copy from "
 msgstr ""
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 msgid "Writing error."
 msgstr ""
 
@@ -123,15 +123,15 @@ msgstr ""
 msgid "Wrote: "
 msgstr "Escrito: "
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " escrito con éxito en "
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "Imaxe "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr ""
 
@@ -297,55 +297,6 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "O proceso dd rematou cun erro !"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Erro</b>\n"
-#~ "Non se atopa ningún dispositivo de destino. \n"
-#~ "\n"
-#~ "Necesitas conectar un dispositivo de memoria USB\n"
-#~ "no que se poida escribir a imaxe."
-
-#~ msgid "to"
-#~ msgstr "a"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Erro</b>\n"
-#~ "Algo saiu mal, por favor, vexa a ventá\n"
-#~ "de detalles para coñecer o erro exacto.\n"
-#~ "\n"
-#~ "Gardase un ficheiro co contido do rexistro no seu\n"
-#~ "directorio persoal se pecha a aplicación."
-
 #~ msgid ""
 #~ "<b>Success</b>\n"
 #~ " The image was successfully written to the\n"
@@ -362,3 +313,52 @@ msgstr ""
 #~ "Xa pode desconectalo agora, gardarase un\n"
 #~ "rexistro da operación no seu directorio persoal\n"
 #~ "si pecha a aplicación."
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>Erro</b>\n"
+#~ "Algo saiu mal, por favor, vexa a ventá\n"
+#~ "de detalles para coñecer o erro exacto.\n"
+#~ "\n"
+#~ "Gardase un ficheiro co contido do rexistro no seu\n"
+#~ "directorio persoal se pecha a aplicación."
+
+#~ msgid "to"
+#~ msgstr "a"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>Erro</b>\n"
+#~ "Non se atopa ningún dispositivo de destino. \n"
+#~ "\n"
+#~ "Necesitas conectar un dispositivo de memoria USB\n"
+#~ "no que se poida escribir a imaxe."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "O proceso dd rematou cun erro !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid " "
+#~ msgstr " "

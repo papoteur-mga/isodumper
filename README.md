@@ -11,7 +11,7 @@ Requirements
 - coreutils
 - pango
 - polkit
-- procps
+- procps (or procps-ng)
 - pygtk2.0-libglade
 - python
 - python-parted

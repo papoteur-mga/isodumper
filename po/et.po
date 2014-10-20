@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2014-08-28 16:20+0000\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/mageia/language/"
@@ -117,7 +117,7 @@ msgstr "Kirjutatakse "
 msgid "Executing copy from "
 msgstr "Kopeeritakse asukohast "
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 msgid "Writing error."
 msgstr "Tõrge kirjutamisel."
 
@@ -125,15 +125,15 @@ msgstr "Tõrge kirjutamisel."
 msgid "Wrote: "
 msgstr "Kirjutati: "
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " kirjutati edukalt asukohta "
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "Tõmmis "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr "Baite kirjutati: "
 

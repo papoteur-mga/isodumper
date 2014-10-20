@@ -1,6 +1,12 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
+IsoDumper 0.32
+------------
+	  - fix wrong progress steps with small images.
+	  - formatting all .po files.
+	  - recompiling all .mo files.
+
 IsoDumper 0.31
 ------------
 	  - this is a security update, about writing log file:

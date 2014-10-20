@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2009-06-12 12:05+0000\n"
 "Last-Translator: Siegfried Gevatter <rainct@ubuntu.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
@@ -116,7 +116,7 @@ msgstr "Escrivint "
 msgid "Executing copy from "
 msgstr "Executant : dd if="
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 #, fuzzy
 msgid "Writing error."
 msgstr "Escrivint "
@@ -125,15 +125,15 @@ msgstr "Escrivint "
 msgid "Wrote: "
 msgstr "Ha escrit: "
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " ha estat escrit amb èxit a "
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "Imatge "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr ""
 
@@ -299,56 +299,6 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "El procés dd ha acabat amb un error."
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "Aborta"
-
-#~ msgid "gtk-close"
-#~ msgstr "Tanca"
-
-#~ msgid "gtk-ok"
-#~ msgstr "D'acord"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Error</b>\n"
-#~ " No s'ha trobat cap dispositiu de destí.\n"
-#~ "\n"
-#~ " Heu d'introduir una clau USB a la qual\n"
-#~ " es pugui escriure la imatge."
-
-#~ msgid "to"
-#~ msgstr "a"
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Error</b>\n"
-#~ " Alguna cosa ha anat malament, vegeu\n"
-#~ " la finestra de detalls per a l'error exacte.\n"
-#~ " \n"
-#~ " Se'n desarà el contingut en un fitxer de register\n"
-#~ " al vostre directori personal si tanqueu l'aplicació"
-
 #, fuzzy
 #~ msgid ""
 #~ "<b>Success</b>\n"
@@ -366,3 +316,53 @@ msgstr ""
 #~ " Ara podeu desconnectar-lo; es desarà un\n"
 #~ " registre de l'operació al vostre directori\n"
 #~ " personal quan tanqueu l'aplicació."
+
+#, fuzzy
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>Error</b>\n"
+#~ " Alguna cosa ha anat malament, vegeu\n"
+#~ " la finestra de detalls per a l'error exacte.\n"
+#~ " \n"
+#~ " Se'n desarà el contingut en un fitxer de register\n"
+#~ " al vostre directori personal si tanqueu l'aplicació"
+
+#~ msgid "to"
+#~ msgstr "a"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>Error</b>\n"
+#~ " No s'ha trobat cap dispositiu de destí.\n"
+#~ "\n"
+#~ " Heu d'introduir una clau USB a la qual\n"
+#~ " es pugui escriure la imatge."
+
+#~ msgid "gtk-ok"
+#~ msgstr "D'acord"
+
+#~ msgid "gtk-close"
+#~ msgstr "Tanca"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "Aborta"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "El procés dd ha acabat amb un error."
+
+#~ msgid " "
+#~ msgstr " "

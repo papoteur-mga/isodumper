@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2008-11-04 12:31+0000\n"
 "Last-Translator: Bjørn Olav Samdal <bjornsam@ulrik.uio.no>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
@@ -116,7 +116,7 @@ msgstr "Skriving "
 msgid "Executing copy from "
 msgstr "Utføring: dd if="
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 #, fuzzy
 msgid "Writing error."
 msgstr "Skriving "
@@ -125,15 +125,15 @@ msgstr "Skriving "
 msgid "Wrote: "
 msgstr "Skrev: "
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " vellykket skrevet til "
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "Bilde "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr ""
 
@@ -299,56 +299,6 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Prosessen dd stoppet med en feil !"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageSkriver"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-lukk"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Error</b>\n"
-#~ " Ingen mål enheter er funnet.  \n"
-#~ "\n"
-#~ " Du trenger å plugge inn en USB Nøkkel\n"
-#~ " for å kunne skrive til enheten."
-
-#~ msgid "to"
-#~ msgstr "til"
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Feilmelding</b>\n"
-#~ " Noe ble feil, se detaljer i\n"
-#~ " vindu for feilmeldinger.\n"
-#~ "\n"
-#~ " En logfil med feilmeldingen blir lagret i din\n"
-#~ " hjemmekatalog når programmet avsluttes."
-
 #, fuzzy
 #~ msgid ""
 #~ "<b>Success</b>\n"
@@ -366,3 +316,53 @@ msgstr ""
 #~ " Du kan fjerne tilkoblet tilkoblet medium, en log fil fra\n"
 #~ " operasjonen vil bli lagret i din hjemmekatalog hvis\n"
 #~ " du avslutter applikasjonen."
+
+#, fuzzy
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>Feilmelding</b>\n"
+#~ " Noe ble feil, se detaljer i\n"
+#~ " vindu for feilmeldinger.\n"
+#~ "\n"
+#~ " En logfil med feilmeldingen blir lagret i din\n"
+#~ " hjemmekatalog når programmet avsluttes."
+
+#~ msgid "to"
+#~ msgstr "til"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>Error</b>\n"
+#~ " Ingen mål enheter er funnet.  \n"
+#~ "\n"
+#~ " Du trenger å plugge inn en USB Nøkkel\n"
+#~ " for å kunne skrive til enheten."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-lukk"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageSkriver"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Prosessen dd stoppet med en feil !"
+
+#~ msgid " "
+#~ msgstr " "

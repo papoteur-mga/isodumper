@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2014-07-20 14:27+0200\n"
 "Last-Translator: marja <marja@mageia.org>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/mageia/language/"
@@ -117,7 +117,7 @@ msgstr "Schrijven "
 msgid "Executing copy from "
 msgstr "Uitvoeren: kopieren van "
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 msgid "Writing error."
 msgstr "Schrijffout."
 
@@ -125,15 +125,15 @@ msgstr "Schrijffout."
 msgid "Wrote: "
 msgstr "Geschreven: "
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " met succes geschreven naar "
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "Image "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr "Bytes geschreven: "
 
@@ -282,7 +282,8 @@ msgstr "Formatteer het apparaat in FAT, NTFS of ext:"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr "Kies het formaat. Het apparaat zal in één partitie geformatteerd worden"
+msgstr ""
+"Kies het formaat. Het apparaat zal in één partitie geformatteerd worden"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Format the device"

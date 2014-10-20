@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2008-11-02 19:05+0000\n"
 "Last-Translator: Gyula Fürstal <Unknown>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Executing copy from "
 msgstr "Futtatás: dd if="
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 msgid "Writing error."
 msgstr ""
 
@@ -124,15 +124,15 @@ msgstr ""
 msgid "Wrote: "
 msgstr ""
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " sikeresen megírva a "
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "Kép "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr ""
 
@@ -292,20 +292,8 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "A dd folyamat  sikertelen"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
+#~ msgid "to"
+#~ msgstr "eddig"
 
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -320,5 +308,17 @@ msgstr ""
 #~ " Csatlakoztasson egy USB kulcsot\n"
 #~ " amire kiírható a kép."
 
-#~ msgid "to"
-#~ msgstr "eddig"
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "A dd folyamat  sikertelen"
+
+#~ msgid " "
+#~ msgstr " "

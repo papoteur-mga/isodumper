@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2009-04-17 17:02+0000\n"
 "Last-Translator: Nizar Kerkeni <nizar.kerkeni@gmail.com>\n"
 "Language-Team: Arabic <ar@li.org>\n"
@@ -115,7 +115,7 @@ msgstr "جار الكتابة "
 msgid "Executing copy from "
 msgstr ""
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 #, fuzzy
 msgid "Writing error."
 msgstr "جار الكتابة "
@@ -124,15 +124,15 @@ msgstr "جار الكتابة "
 msgid "Wrote: "
 msgstr ""
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr ""
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "ملف "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr ""
 

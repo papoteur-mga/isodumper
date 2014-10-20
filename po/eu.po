@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 00:05+0200\n"
+"POT-Creation-Date: 2014-10-20 18:40+0200\n"
 "PO-Revision-Date: 2014-08-03 17:21+0000\n"
 "Last-Translator: Egoitz Rodriguez Obieta <egoitzro2@hotmail.com>\n"
 "Language-Team: Basque (http://www.transifex.com/projects/p/mageia/language/"
@@ -116,7 +116,7 @@ msgstr "Idazten "
 msgid "Executing copy from "
 msgstr "-tik kopia exekutatzen "
 
-#: lib/isodumper.py:399 lib/isodumper.py:412 lib/isodumper.py:421
+#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
 msgid "Writing error."
 msgstr "Errorea idazten."
 
@@ -124,15 +124,15 @@ msgstr "Errorea idazten."
 msgid "Wrote: "
 msgstr "idatzi zuen: "
 
-#: lib/isodumper.py:416
+#: lib/isodumper.py:417
 msgid " successfully written to "
 msgstr " -n arrakastaz idatzita "
 
-#: lib/isodumper.py:416 lib/isodumper.py:507
+#: lib/isodumper.py:417 lib/isodumper.py:509
 msgid "Image "
 msgstr "Imajina "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:418
 msgid "Bytes written: "
 msgstr "Byteak idatzita: "
 
