@@ -58,7 +58,7 @@ def find_devices():
 
 
 class IsoDumper:
-    def __init__(self,user):
+    def __init__(self):
         APP="isodumper"
         DIR="/usr/share/locale"
         RELEASE="v0.32"
@@ -67,9 +67,6 @@ class IsoDumper:
         gettext.textdomain(APP)
         gtk.glade.bindtextdomain(APP, DIR)
         gtk.glade.textdomain(APP)
-
-        # for the localisation of log file
-        self.user=user
 
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
@@ -112,7 +109,6 @@ class IsoDumper:
                  "on_main_dialog_delete_event" : self.confirm_close,
                  "on_cancel_button_clicked" : self.confirm_close,
                  "on_emergency_button_clicked" : self.restore,
-                 "on_success_button_clicked" : self.close,
                  "on_confirm_cancel_button_clicked": self.restore,
                  "on_filechooserbutton_file_set" : self.activate_devicelist,
 #                 "on_detail_expander_activate" : self.expander_control,
@@ -162,8 +158,8 @@ class IsoDumper:
 
     def backup_sel(self,widget):
         if self.backup_bname.get_current_folder_uri() == None :
-            self.backup_bname.set_current_folder_uri('file:///home/'+self.user)
-        self.backup_bname.set_current_name(self.device_name+".iso")
+            self.backup_bname.set_current_folder_uri('file:///home/'+os.getlogin())
+        self.backup_bname.set_current_name(self.device_name+".img")
         self.choose.run()
 
     def backup_cancel(self,widget):
@@ -384,10 +380,14 @@ class IsoDumper:
                 while gtk.events_pending():
                    gtk.main_iteration(True)
                 steps=range(0, b+1, b/100)
+                steps.append(b)
                 indice=1
                 written=0
                 ncuts=b/bs
-                for i in xrange(0,ncuts):
+                while ncuts <= 100:
+                    bs=bs/2
+                    ncuts=b/bs
+                for i in xrange(0,ncuts+1):
                     try:
                         buf=ifc.read(bs)
                     except:
@@ -398,15 +398,14 @@ class IsoDumper:
                     except:
                         self.logger(_("Writing error."))
                         self.emergency()
-                    written= written+bs
+                    written+=len(buf)
                     if written > steps[indice]:
                         if indice%1==0:
                             self.logger(_('Wrote: ')+str(indice)+'% '+str(written)+' bytes')
                             mark = self.log.create_mark("end", self.log.get_end_iter(), False)
                             self.logview.scroll_to_mark(mark, 0.05, True, 0.0, 1.0)
                         progress.set_fraction(float(indice)/100)
-                        while (written > steps[indice]):
-                            indice +=1
+                        indice +=1
                         try:
                             os.fsync(ofc)
                         except:
@@ -425,6 +424,7 @@ class IsoDumper:
             yield False
 
     def success(self):
+        self.operation=False
         dialog = self.wTree.get_widget("success_dialog")
         self.final_unsensitive()
         resp = dialog.run()
@@ -475,13 +475,13 @@ class IsoDumper:
     def write_logfile(self):
         start = self.log.get_start_iter()
         end = self.log.get_end_iter()
+        user = os.getlogin()
         import pwd
-        pw = pwd.getpwnam(self.user)
+        pw = pwd.getpwnam(user)
         uid = pw.pw_uid
         gid=pw.pw_gid
-        if (self.user != 'root') and (self.user !=''):
-            logpath='/home/'+self.user+'/.isodumper'
-            print gid
+        if (user != 'root') and (user !=''):
+            logpath='/home/'+user+'/.isodumper'
             os.setgid(gid)
             os.setuid(uid)
             if not(os.path.isdir(logpath)):
@@ -527,7 +527,5 @@ class IsoDumper:
             dialog.hide()
 
 if __name__ == "__main__":
-    import sys
-    user=sys.argv[1]
-    app = IsoDumper(user)
+    app = IsoDumper()
     gtk.main()
