@@ -1,22 +1,22 @@
 #!/usr/bin/python
-#  
+#
 #  Copyright (c) 2007-2009 Canonical Ltd.
-#  
+#
 #  Author: Oliver Grawert <ogra@ubuntu.com>
-# 
+#
 #  Modifications 2013 from papoteur <papoteur@mageialinux-online.org>
 #  and Geiger David <david.david@mageialinux-online.org>
 #
-#  This program is free software; you can redistribute it and/or 
-#  modify it under the terms of the GNU General Public License as 
+#  This program is free software; you can redistribute it and/or
+#  modify it under the terms of the GNU General Public License as
 #  published by the Free Software Foundation; either version 2 of the
 #  License, or (at your option) any later version.
-# 
+#
 #  This program is distributed in the hope that it will be useful,
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
-# 
+#
 #  You should have received a copy of the GNU General Public License
 #  along with this program; if not, write to the Free Software Foundation,
 #  Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
@@ -37,7 +37,7 @@ def find_devices():
     iface = dbus.Interface(proxy, "org.freedesktop.UDisks")
     devs=iface.EnumerateDevices()
     list=[]
-  
+
     for dev in devs:
     	dev_obj = bus.get_object("org.freedesktop.UDisks", dev)
     	dev = dbus.Interface(dev_obj, "org.freedesktop.DBus.Properties")
@@ -56,12 +56,11 @@ def find_devices():
 
 
 class IsoDumper:
-    def __init__(self, user):
+    def __init__(self):
         APP="isodumper"
         DIR="/usr/share/locale"
         RELEASE="v0.23"
         # for the localisation of log file
-        self.user=user
 
         gettext.bindtextdomain(APP, DIR)
         gettext.textdomain(APP)
@@ -77,10 +76,10 @@ class IsoDumper:
         self.devicelist = self.wTree.get_widget("device_combobox")
         self.logview = self.wTree.get_widget("detail_text")
         self.log = self.logview.get_buffer()
-        
+
         self.window.set_title(self.window.get_title()+' '+RELEASE)
         self.wTree.get_widget("about_dialog").set_version(RELEASE)
-        
+
         # define size of the selected device
         self.deviceSize=0
 
@@ -91,21 +90,20 @@ class IsoDumper:
         filt.add_pattern("*.iso")
         filt.add_pattern("*.img")
         self.chooser.set_filter(filt)
-        
-        
+
+
         # optionnal backup of the device
         self.backup_select = self.wTree.get_widget("backup_select")
         self.backup_name = self.wTree.get_widget("backup_name")
         self.backup = self.wTree.get_widget("backup")
         self.choose = self.wTree.get_widget("choose")
         self.backup_bname = self.wTree.get_widget("bname")
-        
+
 
         # set callbacks
         dict = { "on_main_dialog_destroy" : self.close,
                  "on_cancel_button_clicked" : self.close,
                  "on_emergency_button_clicked" : self.close,
-                 "on_success_button_clicked" : self.close,
                  "on_filechooserbutton_file_set" : self.activate_devicelist,
                  "on_backup_name_file_set" : self.activate_backup,
 #                 "on_detail_expander_activate" : self.expander_control,
@@ -120,7 +118,7 @@ class IsoDumper:
                  "on_main_dialog_delete_event" : gtk.main_quit,}
         self.wTree.signal_autoconnect(dict)
 
- 
+
         self.window.show_all()
         # make sure we have a target device
         self.get_devices()
@@ -144,7 +142,7 @@ class IsoDumper:
             self.device_name=name.rstrip().replace(' ', '')
         dialog.destroy()
 
-        
+
     def device_selected(self, widget):
         write_button = self.wTree.get_widget("write_button")
         write_button.set_sensitive(True)
@@ -156,8 +154,8 @@ class IsoDumper:
 
     def backup_sel(self,widget):
         if (self.backup_bname.get_current_folder_uri() == None)  :
-            self.backup_bname.set_current_folder_uri('file:///home/'+self.user)
-        self.backup_bname.set_current_name(self.device_name+".iso")
+            self.backup_bname.set_current_folder_uri('file:///home/'+os.getlogin())
+        self.backup_bname.set_current_name(self.device_name+".img")
         self.choose.run()
 
     def backup_cancel(self,widget):
@@ -282,13 +280,14 @@ class IsoDumper:
                 while gtk.events_pending():
                    gtk.main_iteration(True)
                 steps=range(0, b+1, b/100)
+                steps.append(b)
                 indice=1
                 written=0
                 ncuts=b/bs
                 while ncuts <= 100:
                     bs=bs/2
                     ncuts=b/bs
-                for i in xrange(0,ncuts):
+                for i in xrange(0,ncuts+1):
                     try:
                         buf=ifc.read(bs)
                     except:
@@ -299,7 +298,7 @@ class IsoDumper:
                     except:
                         self.logger(_("Writing error."))
                         self.emergency()
-                    written= written+bs
+                    written+=len(buf)
                     if written > steps[indice]:
                         if indice%1==0:
                             self.logger(_('Wrote: ')+str(indice)+'% '+str(written)+' bytes')
@@ -361,13 +360,13 @@ class IsoDumper:
     def write_logfile(self):
         start = self.log.get_start_iter()
         end = self.log.get_end_iter()
+        user = os.getlogin()
         import pwd
-        pw = pwd.getpwnam(self.user)
+        pw = pwd.getpwnam(user)
         uid = pw.pw_uid
         gid=pw.pw_gid
-        if (self.user != 'root') and (self.user !=''):
-            logpath='/home/'+self.user+'/.isodumper'
-            print gid
+        if (user != 'root') and (user !=''):
+            logpath='/home/'+user+'/.isodumper'
             os.setgid(gid)
             os.setuid(uid)
             if not(os.path.isdir(logpath)):
@@ -377,7 +376,6 @@ class IsoDumper:
         logfile=open(logpath+'/isodumper.log',"w")
         logfile.write(self.log.get_text(start, end, False))
         logfile.close()
-        print self.log.get_text(start, end, False)
 
     def logger(self, text):
         self.log.insert_at_cursor(text+"\n")
@@ -391,7 +389,7 @@ class IsoDumper:
         self.img_name = self.chooser.get_filename()
         self.logger(_('Image ')+": "+ self.img_name)
         self.chooser.set_tooltip_text(self.img_name)
-        
+
 
     def activate_backup(self, widget):
         self.backup_img_name = self.backup_dir.get_filename()
@@ -413,7 +411,5 @@ class IsoDumper:
             #exit(0)
 
 if __name__ == "__main__":
-    import sys
-    user=sys.argv[1]
-    app = IsoDumper(user)
+    app = IsoDumper()
     gtk.main()
