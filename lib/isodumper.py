@@ -170,9 +170,9 @@ class IsoDumper:
             # Unckeck the choice to backup
             self.backup.set_active(0)
         else:
-            # Add .iso if not specified
-            if not exit_dialog.lower().endswith('.iso'):
-                exit_dialog=exit_dialog+".iso"
+            # Add .img if not specified
+            if not exit_dialog.lower().endswith('.img'):
+                exit_dialog=exit_dialog+".img"
             self.backup_select.set_label(exit_dialog)
         self.choose.hide()
 
