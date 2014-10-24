@@ -171,9 +171,10 @@ class IsoDumper:
         exit_dialog=self.backup_bname.get_filename()
         if exit_dialog != None:
             # Add .iso if not specified
-            if not exit_dialog.lower().endswith('.iso'):
-                exit_dialog=exit_dialog+".iso"
+            if not exit_dialog.lower().endswith('.img'):
+                exit_dialog=exit_dialog+".img"
             head, tail = os.path.split(exit_dialog)
+            self.backup_dest=exit_dialog
             self.backup_select.set_label(tail)
             self.backup_button.set_sensitive(True)
             self.backup_select.set_tooltip_text(exit_dialog)
@@ -245,13 +246,16 @@ class IsoDumper:
                     self.success()
                 elif rc == 5:
                     message = _("An error occurred while creating a partition.")
+                    self.logger(message)
+                    self.emergency()
                 elif rc == 127:
                     message = _('Authentication error.')
+                    self.logger(message)
+                    self.emergency()
                 else:
                     message = _('An error occurred.')
+                    self.emergency()
                 self.wTree.get_widget("format").hide()
-                self.logger(message)
-                self.emergency()
                 self.process = None
                 working= False
                 self.backup_select.set_sensitive(True)
@@ -269,13 +273,22 @@ class IsoDumper:
         self.devicelist.set_sensitive(True)
 
     def backup_go(self,widget):
-        dest = self.backup_select.get_label()
+        dest = self.backup_dest
+        if os.path.exists(dest):
+            dialog=self.wTree.get_widget("confirm_overwrite")
+            resp=dialog.run()
+            if resp !=-5:
+                dialog.hide()
+                return True
+            else:
+                dialog.hide()
         source = self.dev.split('(')[1].split(')')[0]
         self.logger(_('Backup in:')+' '+dest)
         task = self.raw_write(source, dest, eval(self.deviceSize))
         gobject.idle_add(task.next)
         while gtk.events_pending():
             gtk.main_iteration(True)
+        self.success()
 
     def do_write(self, widget):
         write_button = self.wTree.get_widget("write_button")
