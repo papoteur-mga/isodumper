@@ -68,6 +68,9 @@ class IsoDumper:
         gtk.glade.bindtextdomain(APP, DIR)
         gtk.glade.textdomain(APP)
 
+        # for the localisation of log file
+        self.user = user
+
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
@@ -83,7 +86,6 @@ class IsoDumper:
 
         # define size of the selected device
         self.deviceSize=0
-        self.user = user
 
         # Operation running
         self.operation=False
