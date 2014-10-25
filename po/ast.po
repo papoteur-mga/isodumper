@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-20 18:40+0200\n"
+"POT-Creation-Date: 2014-10-25 15:36+0200\n"
 "PO-Revision-Date: 2014-07-10 00:00+0000\n"
 "Last-Translator: Ḷḷumex03 <l.lumex03.tornes@gmail.com>\n"
 "Language-Team: Asturian (http://www.transifex.com/projects/p/mageia/language/"
@@ -21,11 +21,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/isodumper.py:152
+#: lib/isodumper.py:151
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:161 lib/isodumper.py:299
+#: lib/isodumper.py:160 lib/isodumper.py:311
 msgid "Target Device: "
 msgstr "Preséu oxetivu: "
 
@@ -41,99 +41,99 @@ msgstr "El preséu formateóse con ésitu."
 msgid "An error occurred while creating a partition."
 msgstr "Asocedió un fallu entrín se creaba una partición."
 
-#: lib/isodumper.py:253
+#: lib/isodumper.py:255
 msgid "Authentication error."
 msgstr "Fallu d'autenticación."
 
-#: lib/isodumper.py:255
+#: lib/isodumper.py:259
 msgid "An error occurred."
 msgstr "Asocedió un ficheru."
 
-#: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
+#: lib/isodumper.py:289 share/isodumper/isodumper.glade.h:33
 msgid "Backup in:"
 msgstr "Copia de seguridá en:"
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:310
 msgid "Image: "
 msgstr "Imaxe: "
 
-#: lib/isodumper.py:302
+#: lib/isodumper.py:314
 msgid "The device is too small to contain the ISO file."
 msgstr "El preséu ye mui pequeñu pa caltener el ficheru ISO."
 
-#: lib/isodumper.py:309
+#: lib/isodumper.py:321
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr "El preséu ye más grande de 32 Gbytes. ¿De xuru quies usalu?"
 
-#: lib/isodumper.py:336
+#: lib/isodumper.py:348
 msgid "Unmounting all partitions of "
 msgstr "Desmontando toles particiones de "
 
-#: lib/isodumper.py:338
+#: lib/isodumper.py:350
 msgid "Trying to unmount "
 msgstr "Intentando desmontar "
 
-#: lib/isodumper.py:344
+#: lib/isodumper.py:356
 msgid " was terminated by signal "
 msgstr " terminóse pola señal "
 
-#: lib/isodumper.py:344 lib/isodumper.py:350
+#: lib/isodumper.py:356 lib/isodumper.py:362
 msgid "Error, umount "
 msgstr "Fallu, desmontar "
 
-#: lib/isodumper.py:348
+#: lib/isodumper.py:360
 msgid " successfully unmounted"
 msgstr " desmontáu con ésitu"
 
-#: lib/isodumper.py:350
+#: lib/isodumper.py:362
 msgid " returned "
 msgstr " devueltu "
 
-#: lib/isodumper.py:353
+#: lib/isodumper.py:365
 msgid "Execution failed: "
 msgstr "Falló la execución: "
 
-#: lib/isodumper.py:361
+#: lib/isodumper.py:373
 msgid "Could not read mtab !"
 msgstr "¡Nun pudo lleese mtab!"
 
-#: lib/isodumper.py:370 lib/isodumper.py:394
+#: lib/isodumper.py:382 lib/isodumper.py:410
 msgid "Reading error."
 msgstr "Fallu de llectura."
 
-#: lib/isodumper.py:376
+#: lib/isodumper.py:388
 msgid "You have not the rights for writing on the device"
 msgstr "Nun tienes los drechos pa escribir nel preséu"
 
-#: lib/isodumper.py:382 lib/isodumper.py:383
+#: lib/isodumper.py:394 lib/isodumper.py:395
 msgid " to "
 msgstr " a "
 
-#: lib/isodumper.py:382
+#: lib/isodumper.py:394
 msgid "Writing "
 msgstr "Escribiendo "
 
-#: lib/isodumper.py:383
+#: lib/isodumper.py:395
 msgid "Executing copy from "
 msgstr "Executando copia de"
 
-#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
+#: lib/isodumper.py:415 lib/isodumper.py:428 lib/isodumper.py:437
 msgid "Writing error."
 msgstr "Fallu d'escritura"
 
-#: lib/isodumper.py:404
+#: lib/isodumper.py:420
 msgid "Wrote: "
 msgstr "Escritu: "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:432
 msgid " successfully written to "
 msgstr " escritu con éxitu a"
 
-#: lib/isodumper.py:417 lib/isodumper.py:509
+#: lib/isodumper.py:432 lib/isodumper.py:524
 msgid "Image "
 msgstr "Imaxe "
 
-#: lib/isodumper.py:418
+#: lib/isodumper.py:433
 msgid "Bytes written: "
 msgstr "Bytes escritos: "
 
@@ -192,6 +192,10 @@ msgstr ""
 " el preséu na operación operación."
 
 #: share/isodumper/isodumper.glade.h:12
+msgid "Do you want to overwrite the file?"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:13
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -207,91 +211,91 @@ msgstr ""
 " L'aplicación zarraráse con esta ventana, y guardaráse\n"
 " un ficheru de rexistru isodumper.log nel to direutoriu home /.isodumper "
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "Label for the device:"
 msgstr "Etiqueta pal preséu:"
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:20
 msgid "FAT 32 (Windows)"
 msgstr "FAT 32 (Windows)"
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:21
 msgid "The standard. The size of files are limited to 4Gb"
 msgstr "L'estándar. El tamañu de los ficheros tán llimitaos a 4Gb"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:22
 msgid "NTFS (Windows)"
 msgstr "NTFS (Windows)"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "To handle files bigger than 4Gb"
 msgstr "Pa remanar ficheros más grandes de 4Gb"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "ext4 (Linux)"
 msgstr "ext4 (Linux)"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Only for Linux systems"
 msgstr "Namái pa sistemes Linux"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Device to work on:"
 msgstr "Preséu pa furrular en:"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid "Select target device to write the image to"
 msgstr "Esbilla'l preséu oxetivu au escribir la imaxe"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:28
 msgid "Write Image:"
 msgstr "Escribir imaxe:"
 
-#: share/isodumper/isodumper.glade.h:28
+#: share/isodumper/isodumper.glade.h:29
 msgid "Select an image file to be written to the device"
 msgstr "Esbilla un ficheru d'imaxe pa escribise nel preséu"
 
-#: share/isodumper/isodumper.glade.h:29
+#: share/isodumper/isodumper.glade.h:30
 msgid "Select Image"
 msgstr "Esbillar imaxe"
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:31
 msgid "Write to device"
 msgstr "Escribir al preséu"
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid "Create a backup of the device as image to restore it later"
 msgstr "Crear una copia de seguridá del preséu como imaxe pa restaurala sero"
 
-#: share/isodumper/isodumper.glade.h:34
+#: share/isodumper/isodumper.glade.h:35
 msgid "(None)"
 msgstr "(Un res)"
 
-#: share/isodumper/isodumper.glade.h:35
+#: share/isodumper/isodumper.glade.h:36
 msgid "Select a folder in which to write the backup image"
 msgstr "Esbilla una carpeta na qu'escribir la imaxe de copia de seguridá"
 
-#: share/isodumper/isodumper.glade.h:36
+#: share/isodumper/isodumper.glade.h:37
 msgid "Backup the device"
 msgstr "Facer copia de seguridá del preséu"
 
-#: share/isodumper/isodumper.glade.h:37
+#: share/isodumper/isodumper.glade.h:38
 msgid "Format the device in FAT, NTFS or ext:"
 msgstr "Formatear el preséu en FAT, NTFS o ext:"
 
-#: share/isodumper/isodumper.glade.h:38
+#: share/isodumper/isodumper.glade.h:39
 msgid "Choose the format. The device will be formatted in one partition"
 msgstr "Escueyi'l formatu. El preséu formatearáse nuna partición"
 
-#: share/isodumper/isodumper.glade.h:39
+#: share/isodumper/isodumper.glade.h:40
 msgid "Format the device"
 msgstr "Formatear el preséu"
 
-#: share/isodumper/isodumper.glade.h:40
+#: share/isodumper/isodumper.glade.h:41
 msgid "Details"
 msgstr "Detalles"
 
-#: share/isodumper/isodumper.glade.h:41
+#: share/isodumper/isodumper.glade.h:42
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -305,7 +309,7 @@ msgstr ""
 " Necesites coneutar una llave USB\n"
 " na que la imaxe puea escribise."
 
-#: share/isodumper/isodumper.glade.h:46
+#: share/isodumper/isodumper.glade.h:47
 msgid ""
 "<b>Success</b>\n"
 " The operation was successfully performed.\n"

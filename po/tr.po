@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-20 18:40+0200\n"
+"POT-Creation-Date: 2014-10-25 15:36+0200\n"
 "PO-Revision-Date: 2014-07-07 20:40+0000\n"
 "Last-Translator: Atilla Öntaş <tarakbumba@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/mageia/language/"
@@ -22,11 +22,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: lib/isodumper.py:152
+#: lib/isodumper.py:151
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:161 lib/isodumper.py:299
+#: lib/isodumper.py:160 lib/isodumper.py:311
 msgid "Target Device: "
 msgstr "Hedef Aygıt: "
 
@@ -42,100 +42,100 @@ msgstr "Aygıt başarıyla biçimlendirildi."
 msgid "An error occurred while creating a partition."
 msgstr "Bir disk bölümü oluşturulurken hata meydana geldi."
 
-#: lib/isodumper.py:253
+#: lib/isodumper.py:255
 msgid "Authentication error."
 msgstr "Yetkilendirme hatası."
 
-#: lib/isodumper.py:255
+#: lib/isodumper.py:259
 msgid "An error occurred."
 msgstr "Bir hata oluştu."
 
-#: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
+#: lib/isodumper.py:289 share/isodumper/isodumper.glade.h:33
 msgid "Backup in:"
 msgstr "Şuraya yedekle:"
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:310
 msgid "Image: "
 msgstr "Kalıp: "
 
-#: lib/isodumper.py:302
+#: lib/isodumper.py:314
 msgid "The device is too small to contain the ISO file."
 msgstr "Aygıt ISO dosyasını içermek için çok küçük"
 
-#: lib/isodumper.py:309
+#: lib/isodumper.py:321
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Aygıt 32 Gbayttan büyük. Bu aygıtı kullanmak istediğinize emin misiniz?"
 
-#: lib/isodumper.py:336
+#: lib/isodumper.py:348
 msgid "Unmounting all partitions of "
 msgstr "Tüm bölümlerden çıkart "
 
-#: lib/isodumper.py:338
+#: lib/isodumper.py:350
 msgid "Trying to unmount "
 msgstr "Çıkarmaya çalışıyor "
 
-#: lib/isodumper.py:344
+#: lib/isodumper.py:356
 msgid " was terminated by signal "
 msgstr " Sinyal tarafından sonlandırıldı"
 
-#: lib/isodumper.py:344 lib/isodumper.py:350
+#: lib/isodumper.py:356 lib/isodumper.py:362
 msgid "Error, umount "
 msgstr "Hata, umount "
 
-#: lib/isodumper.py:348
+#: lib/isodumper.py:360
 msgid " successfully unmounted"
 msgstr " başarıyla çıkarıldı"
 
-#: lib/isodumper.py:350
+#: lib/isodumper.py:362
 msgid " returned "
 msgstr "  döndü "
 
-#: lib/isodumper.py:353
+#: lib/isodumper.py:365
 msgid "Execution failed: "
 msgstr "Çalıştırma başarısız: "
 
-#: lib/isodumper.py:361
+#: lib/isodumper.py:373
 msgid "Could not read mtab !"
 msgstr "mtab okunamadı !"
 
-#: lib/isodumper.py:370 lib/isodumper.py:394
+#: lib/isodumper.py:382 lib/isodumper.py:410
 msgid "Reading error."
 msgstr "Okuma hatası."
 
-#: lib/isodumper.py:376
+#: lib/isodumper.py:388
 msgid "You have not the rights for writing on the device"
 msgstr "Aygıta yazma hakkına sahip değilsiniz"
 
-#: lib/isodumper.py:382 lib/isodumper.py:383
+#: lib/isodumper.py:394 lib/isodumper.py:395
 msgid " to "
 msgstr " şuna "
 
-#: lib/isodumper.py:382
+#: lib/isodumper.py:394
 msgid "Writing "
 msgstr "Yazdırıyor "
 
-#: lib/isodumper.py:383
+#: lib/isodumper.py:395
 msgid "Executing copy from "
 msgstr "Kalıptan kopyalama çalıştırılıyor"
 
-#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
+#: lib/isodumper.py:415 lib/isodumper.py:428 lib/isodumper.py:437
 msgid "Writing error."
 msgstr "Yazma hatası."
 
-#: lib/isodumper.py:404
+#: lib/isodumper.py:420
 msgid "Wrote: "
 msgstr "Yazıldı: "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:432
 msgid " successfully written to "
 msgstr " başarıyla aygıta yazıldı "
 
-#: lib/isodumper.py:417 lib/isodumper.py:509
+#: lib/isodumper.py:432 lib/isodumper.py:524
 msgid "Image "
 msgstr "İmaj "
 
-#: lib/isodumper.py:418
+#: lib/isodumper.py:433
 msgid "Bytes written: "
 msgstr "Yazılan bayt:"
 
@@ -195,6 +195,10 @@ msgstr ""
 " <b>aygıtı çıkarmayın</b>."
 
 #: share/isodumper/isodumper.glade.h:12
+msgid "Do you want to overwrite the file?"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:13
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -210,91 +214,91 @@ msgstr ""
 " Uygulama bu pencere ile kapanacak olup isodumper.log\n"
 " adında bir günlük kaydı ev_dizini/.isodumper dizininde oluşturulacaktır."
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "Label for the device:"
 msgstr "Aygıt etiketi:"
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:20
 msgid "FAT 32 (Windows)"
 msgstr "FAT 32 (Windows)"
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:21
 msgid "The standard. The size of files are limited to 4Gb"
 msgstr "Standart. Dosyaların boyutu 4Gb ile sınırlıdır"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:22
 msgid "NTFS (Windows)"
 msgstr "NTFS (Windows)"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "To handle files bigger than 4Gb"
 msgstr "4Gb üzeri dosyaları işlemek için"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "ext4 (Linux)"
 msgstr "ext4 (Linux)"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Only for Linux systems"
 msgstr "Sadece Linux sistemler için"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Device to work on:"
 msgstr "Üzerinde çalışılacak aygıt:"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid "Select target device to write the image to"
 msgstr "Kalıp yazdırma için bir hedef aygıt seçin"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:28
 msgid "Write Image:"
 msgstr "Kalıp yaz:"
 
-#: share/isodumper/isodumper.glade.h:28
+#: share/isodumper/isodumper.glade.h:29
 msgid "Select an image file to be written to the device"
 msgstr "Yazmak için bir kalıp dosyası seçin"
 
-#: share/isodumper/isodumper.glade.h:29
+#: share/isodumper/isodumper.glade.h:30
 msgid "Select Image"
 msgstr "İmaj Seç"
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:31
 msgid "Write to device"
 msgstr "Aygıta yaz"
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid "Create a backup of the device as image to restore it later"
 msgstr "Aygıtın imaj olarak sonradan kullanmak üzere bir yedeğini oluşturun"
 
-#: share/isodumper/isodumper.glade.h:34
+#: share/isodumper/isodumper.glade.h:35
 msgid "(None)"
 msgstr "(Hiçbiri)"
 
-#: share/isodumper/isodumper.glade.h:35
+#: share/isodumper/isodumper.glade.h:36
 msgid "Select a folder in which to write the backup image"
 msgstr "Yedekleme imajının yazılacağı bir dizin seçin"
 
-#: share/isodumper/isodumper.glade.h:36
+#: share/isodumper/isodumper.glade.h:37
 msgid "Backup the device"
 msgstr "Aygıtı yedekle"
 
-#: share/isodumper/isodumper.glade.h:37
+#: share/isodumper/isodumper.glade.h:38
 msgid "Format the device in FAT, NTFS or ext:"
 msgstr "Aygıtı FAT, NTFS veya ext olarak biçimlendir:"
 
-#: share/isodumper/isodumper.glade.h:38
+#: share/isodumper/isodumper.glade.h:39
 msgid "Choose the format. The device will be formatted in one partition"
 msgstr "Bir biçim seçin. Aygıt tek disk bölümü olarak biçimlendirilecektir"
 
-#: share/isodumper/isodumper.glade.h:39
+#: share/isodumper/isodumper.glade.h:40
 msgid "Format the device"
 msgstr "Aygıtı biçimlendir"
 
-#: share/isodumper/isodumper.glade.h:40
+#: share/isodumper/isodumper.glade.h:41
 msgid "Details"
 msgstr "Detaylar"
 
-#: share/isodumper/isodumper.glade.h:41
+#: share/isodumper/isodumper.glade.h:42
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -308,7 +312,7 @@ msgstr ""
 " İmajın üzerine yazılabileceği\n"
 " bir USB bellek takmalısınız."
 
-#: share/isodumper/isodumper.glade.h:46
+#: share/isodumper/isodumper.glade.h:47
 msgid ""
 "<b>Success</b>\n"
 " The operation was successfully performed.\n"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-20 18:40+0200\n"
+"POT-Creation-Date: 2014-10-25 15:36+0200\n"
 "PO-Revision-Date: 2014-08-28 16:50+0000\n"
 "Last-Translator: Rémi Verschelde <akien@mageia.org>\n"
 "Language-Team: Danish (http://www.transifex.com/projects/p/mageia/language/"
@@ -22,11 +22,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/isodumper.py:152
+#: lib/isodumper.py:151
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:161 lib/isodumper.py:299
+#: lib/isodumper.py:160 lib/isodumper.py:311
 msgid "Target Device: "
 msgstr "Destinationsenheder: "
 
@@ -42,99 +42,99 @@ msgstr "Enheden blev formateret med succes."
 msgid "An error occurred while creating a partition."
 msgstr "En fejl opstod ved oprettelse af en partition."
 
-#: lib/isodumper.py:253
+#: lib/isodumper.py:255
 msgid "Authentication error."
 msgstr "Identifikation fejl."
 
-#: lib/isodumper.py:255
+#: lib/isodumper.py:259
 msgid "An error occurred."
 msgstr "Der er opstået en fejl."
 
-#: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
+#: lib/isodumper.py:289 share/isodumper/isodumper.glade.h:33
 msgid "Backup in:"
 msgstr "Backup på:"
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:310
 msgid "Image: "
 msgstr "Billede: "
 
-#: lib/isodumper.py:302
+#: lib/isodumper.py:314
 msgid "The device is too small to contain the ISO file."
 msgstr "Enheden er for lille til at indeholde ISO filen."
 
-#: lib/isodumper.py:309
+#: lib/isodumper.py:321
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr "Enheden er større end 32 Gb. Er du sikker på, at du vil benytte denne?"
 
-#: lib/isodumper.py:336
+#: lib/isodumper.py:348
 msgid "Unmounting all partitions of "
 msgstr "Afmonter alle diskenheder af "
 
-#: lib/isodumper.py:338
+#: lib/isodumper.py:350
 msgid "Trying to unmount "
 msgstr "Prøver at afmontere "
 
-#: lib/isodumper.py:344
+#: lib/isodumper.py:356
 msgid " was terminated by signal "
 msgstr " blev stoppet af signal "
 
-#: lib/isodumper.py:344 lib/isodumper.py:350
+#: lib/isodumper.py:356 lib/isodumper.py:362
 msgid "Error, umount "
 msgstr "Fejl, afmonter "
 
-#: lib/isodumper.py:348
+#: lib/isodumper.py:360
 msgid " successfully unmounted"
 msgstr " blev afmonteret problemfrit"
 
-#: lib/isodumper.py:350
+#: lib/isodumper.py:362
 msgid " returned "
 msgstr " returneret "
 
-#: lib/isodumper.py:353
+#: lib/isodumper.py:365
 msgid "Execution failed: "
 msgstr "Udførelse mislykkedes: "
 
-#: lib/isodumper.py:361
+#: lib/isodumper.py:373
 msgid "Could not read mtab !"
 msgstr "Kunne ikke læse mtab!"
 
-#: lib/isodumper.py:370 lib/isodumper.py:394
+#: lib/isodumper.py:382 lib/isodumper.py:410
 msgid "Reading error."
 msgstr "Fejllæsning."
 
-#: lib/isodumper.py:376
+#: lib/isodumper.py:388
 msgid "You have not the rights for writing on the device"
 msgstr "Du har ikke rettigheder til at skrive på enheden"
 
-#: lib/isodumper.py:382 lib/isodumper.py:383
+#: lib/isodumper.py:394 lib/isodumper.py:395
 msgid " to "
 msgstr " til "
 
-#: lib/isodumper.py:382
+#: lib/isodumper.py:394
 msgid "Writing "
 msgstr "Skriver "
 
-#: lib/isodumper.py:383
+#: lib/isodumper.py:395
 msgid "Executing copy from "
 msgstr "Udfører kopi fra "
 
-#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
+#: lib/isodumper.py:415 lib/isodumper.py:428 lib/isodumper.py:437
 msgid "Writing error."
 msgstr "Fejlskrivning."
 
-#: lib/isodumper.py:404
+#: lib/isodumper.py:420
 msgid "Wrote: "
 msgstr "Skrev: "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:432
 msgid " successfully written to "
 msgstr " succesfuldt skrevet til "
 
-#: lib/isodumper.py:417 lib/isodumper.py:509
+#: lib/isodumper.py:432 lib/isodumper.py:524
 msgid "Image "
 msgstr "Billede "
 
-#: lib/isodumper.py:418
+#: lib/isodumper.py:433
 msgid "Bytes written: "
 msgstr "Bytes skrevet: "
 
@@ -193,6 +193,10 @@ msgstr ""
 " enheden i løbet af den følgende operation."
 
 #: share/isodumper/isodumper.glade.h:12
+msgid "Do you want to overwrite the file?"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:13
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -208,91 +212,91 @@ msgstr ""
 " Applicationen vil blive lukket sammen med dette vindue,\n"
 " og en logfil isodumper.log vil blive gemt i mappen ~/.isodumper."
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "Label for the device:"
 msgstr "Label til enhenden:"
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:20
 msgid "FAT 32 (Windows)"
 msgstr "FAT 32 (Windows)"
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:21
 msgid "The standard. The size of files are limited to 4Gb"
 msgstr "Standardformat. Filstørrelser er begrænset til 4 GB."
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:22
 msgid "NTFS (Windows)"
 msgstr "NTFS (Windows)"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "To handle files bigger than 4Gb"
 msgstr "Til at håndtere filer større end 4GB."
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "ext4 (Linux)"
 msgstr "ext4 (Linux)"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Only for Linux systems"
 msgstr "Kun til Linux-systemer."
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Device to work on:"
 msgstr "Enhed til at arbejde på:"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid "Select target device to write the image to"
 msgstr "Vælg en enhed som billedet skal skrives på"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:28
 msgid "Write Image:"
 msgstr "Gem billede:"
 
-#: share/isodumper/isodumper.glade.h:28
+#: share/isodumper/isodumper.glade.h:29
 msgid "Select an image file to be written to the device"
 msgstr "Vælg et billede som kan gemmes på enheden"
 
-#: share/isodumper/isodumper.glade.h:29
+#: share/isodumper/isodumper.glade.h:30
 msgid "Select Image"
 msgstr "Vælg billede"
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:31
 msgid "Write to device"
 msgstr "Skriver på enhed"
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid "Create a backup of the device as image to restore it later"
 msgstr "Lav en backup af enheden som billede for at genoprette den senere"
 
-#: share/isodumper/isodumper.glade.h:34
+#: share/isodumper/isodumper.glade.h:35
 msgid "(None)"
 msgstr "(ingen)"
 
-#: share/isodumper/isodumper.glade.h:35
+#: share/isodumper/isodumper.glade.h:36
 msgid "Select a folder in which to write the backup image"
 msgstr "Vælg en mappe at gemme backup billedet i"
 
-#: share/isodumper/isodumper.glade.h:36
+#: share/isodumper/isodumper.glade.h:37
 msgid "Backup the device"
 msgstr "Backup enheden"
 
-#: share/isodumper/isodumper.glade.h:37
+#: share/isodumper/isodumper.glade.h:38
 msgid "Format the device in FAT, NTFS or ext:"
 msgstr "Formatere enheden i FAT, NTFS eller ext:"
 
-#: share/isodumper/isodumper.glade.h:38
+#: share/isodumper/isodumper.glade.h:39
 msgid "Choose the format. The device will be formatted in one partition"
 msgstr "Vælg formatet. Enheden vil blive formateret i en partition."
 
-#: share/isodumper/isodumper.glade.h:39
+#: share/isodumper/isodumper.glade.h:40
 msgid "Format the device"
 msgstr "Formatere enheden"
 
-#: share/isodumper/isodumper.glade.h:40
+#: share/isodumper/isodumper.glade.h:41
 msgid "Details"
 msgstr "Detaljer"
 
-#: share/isodumper/isodumper.glade.h:41
+#: share/isodumper/isodumper.glade.h:42
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -306,7 +310,7 @@ msgstr ""
 " Du er nødt til at indsætte en USB nøgle\n"
 " på hvilken billedet kan skrives på."
 
-#: share/isodumper/isodumper.glade.h:46
+#: share/isodumper/isodumper.glade.h:47
 msgid ""
 "<b>Success</b>\n"
 " The operation was successfully performed.\n"

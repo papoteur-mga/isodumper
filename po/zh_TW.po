@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-20 18:40+0200\n"
+"POT-Creation-Date: 2014-10-25 15:36+0200\n"
 "PO-Revision-Date: 2014-07-02 09:08+0000\n"
 "Last-Translator: You-Cheng Hsieh <yochenhsieh@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/mageia/"
@@ -21,11 +21,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: lib/isodumper.py:152
+#: lib/isodumper.py:151
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:161 lib/isodumper.py:299
+#: lib/isodumper.py:160 lib/isodumper.py:311
 msgid "Target Device: "
 msgstr "目標裝置： "
 
@@ -41,99 +41,99 @@ msgstr "裝置已經成功格式化了。"
 msgid "An error occurred while creating a partition."
 msgstr "建立磁碟區時發生了一個錯誤。"
 
-#: lib/isodumper.py:253
+#: lib/isodumper.py:255
 msgid "Authentication error."
 msgstr "認證錯誤。"
 
-#: lib/isodumper.py:255
+#: lib/isodumper.py:259
 msgid "An error occurred."
 msgstr "發生一個錯誤。"
 
-#: lib/isodumper.py:278 share/isodumper/isodumper.glade.h:32
+#: lib/isodumper.py:289 share/isodumper/isodumper.glade.h:33
 msgid "Backup in:"
 msgstr "備份在："
 
-#: lib/isodumper.py:298
+#: lib/isodumper.py:310
 msgid "Image: "
 msgstr "映像： "
 
-#: lib/isodumper.py:302
+#: lib/isodumper.py:314
 msgid "The device is too small to contain the ISO file."
 msgstr "這個裝置太小而放不下 ISO 檔案。"
 
-#: lib/isodumper.py:309
+#: lib/isodumper.py:321
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr "這個裝置超過 32 GB。您確定要使用它嗎？"
 
-#: lib/isodumper.py:336
+#: lib/isodumper.py:348
 msgid "Unmounting all partitions of "
 msgstr "卸載以下裝置的所有分區 "
 
-#: lib/isodumper.py:338
+#: lib/isodumper.py:350
 msgid "Trying to unmount "
 msgstr "嘗試卸載分區 "
 
-#: lib/isodumper.py:344
+#: lib/isodumper.py:356
 msgid " was terminated by signal "
 msgstr " 被信號終止 "
 
-#: lib/isodumper.py:344 lib/isodumper.py:350
+#: lib/isodumper.py:356 lib/isodumper.py:362
 msgid "Error, umount "
 msgstr "出錯，卸載分區 "
 
-#: lib/isodumper.py:348
+#: lib/isodumper.py:360
 msgid " successfully unmounted"
 msgstr " 成功卸載裝置"
 
-#: lib/isodumper.py:350
+#: lib/isodumper.py:362
 msgid " returned "
 msgstr " 已返回 "
 
-#: lib/isodumper.py:353
+#: lib/isodumper.py:365
 msgid "Execution failed: "
 msgstr "執行失敗： "
 
-#: lib/isodumper.py:361
+#: lib/isodumper.py:373
 msgid "Could not read mtab !"
 msgstr "無法讀取 mtab！"
 
-#: lib/isodumper.py:370 lib/isodumper.py:394
+#: lib/isodumper.py:382 lib/isodumper.py:410
 msgid "Reading error."
 msgstr "讀取錯誤。"
 
-#: lib/isodumper.py:376
+#: lib/isodumper.py:388
 msgid "You have not the rights for writing on the device"
 msgstr "您沒有權限寫入這個裝置"
 
-#: lib/isodumper.py:382 lib/isodumper.py:383
+#: lib/isodumper.py:394 lib/isodumper.py:395
 msgid " to "
 msgstr " 至 "
 
-#: lib/isodumper.py:382
+#: lib/isodumper.py:394
 msgid "Writing "
 msgstr "正在寫入 "
 
-#: lib/isodumper.py:383
+#: lib/isodumper.py:395
 msgid "Executing copy from "
 msgstr "正在從這個來源複製"
 
-#: lib/isodumper.py:399 lib/isodumper.py:413 lib/isodumper.py:422
+#: lib/isodumper.py:415 lib/isodumper.py:428 lib/isodumper.py:437
 msgid "Writing error."
 msgstr "寫入錯誤。"
 
-#: lib/isodumper.py:404
+#: lib/isodumper.py:420
 msgid "Wrote: "
 msgstr "已寫入： "
 
-#: lib/isodumper.py:417
+#: lib/isodumper.py:432
 msgid " successfully written to "
 msgstr " 成功寫入到 "
 
-#: lib/isodumper.py:417 lib/isodumper.py:509
+#: lib/isodumper.py:432 lib/isodumper.py:524
 msgid "Image "
 msgstr "映像 "
 
-#: lib/isodumper.py:418
+#: lib/isodumper.py:433
 msgid "Bytes written: "
 msgstr "寫入位元組："
 
@@ -189,6 +189,10 @@ msgstr ""
 " <b>不要移除裝置</b>"
 
 #: share/isodumper/isodumper.glade.h:12
+msgid "Do you want to overwrite the file?"
+msgstr ""
+
+#: share/isodumper/isodumper.glade.h:13
 msgid ""
 "<b>Error</b>\n"
 " Something went wrong, please see the details\n"
@@ -203,91 +207,91 @@ msgstr ""
 " 應用程式將會關閉這個視窗，在您的家目錄/.isodumper 中\n"
 " 會有一個紀錄檔 isodumper.log "
 
-#: share/isodumper/isodumper.glade.h:18
+#: share/isodumper/isodumper.glade.h:19
 msgid "Label for the device:"
 msgstr "裝置的標籤:"
 
-#: share/isodumper/isodumper.glade.h:19
+#: share/isodumper/isodumper.glade.h:20
 msgid "FAT 32 (Windows)"
 msgstr "FAT 32 (Windows)"
 
-#: share/isodumper/isodumper.glade.h:20
+#: share/isodumper/isodumper.glade.h:21
 msgid "The standard. The size of files are limited to 4Gb"
 msgstr "標準格式。檔案大小限制為 4GB"
 
-#: share/isodumper/isodumper.glade.h:21
+#: share/isodumper/isodumper.glade.h:22
 msgid "NTFS (Windows)"
 msgstr "NTFS (Windows)"
 
-#: share/isodumper/isodumper.glade.h:22
+#: share/isodumper/isodumper.glade.h:23
 msgid "To handle files bigger than 4Gb"
 msgstr "可存放大於 4GB 的檔案"
 
-#: share/isodumper/isodumper.glade.h:23
+#: share/isodumper/isodumper.glade.h:24
 msgid "ext4 (Linux)"
 msgstr "ext4 (Linux)"
 
-#: share/isodumper/isodumper.glade.h:24
+#: share/isodumper/isodumper.glade.h:25
 msgid "Only for Linux systems"
 msgstr "只能給 Linux 系統"
 
-#: share/isodumper/isodumper.glade.h:25
+#: share/isodumper/isodumper.glade.h:26
 msgid "Device to work on:"
 msgstr "工作的裝置:"
 
-#: share/isodumper/isodumper.glade.h:26
+#: share/isodumper/isodumper.glade.h:27
 msgid "Select target device to write the image to"
 msgstr "選擇要寫入映像的目標裝置"
 
-#: share/isodumper/isodumper.glade.h:27
+#: share/isodumper/isodumper.glade.h:28
 msgid "Write Image:"
 msgstr "寫入映像："
 
-#: share/isodumper/isodumper.glade.h:28
+#: share/isodumper/isodumper.glade.h:29
 msgid "Select an image file to be written to the device"
 msgstr "選擇一個要寫入到裝置的映像檔"
 
-#: share/isodumper/isodumper.glade.h:29
+#: share/isodumper/isodumper.glade.h:30
 msgid "Select Image"
 msgstr "選擇映像"
 
-#: share/isodumper/isodumper.glade.h:30
+#: share/isodumper/isodumper.glade.h:31
 msgid "Write to device"
 msgstr "寫入到裝置"
 
-#: share/isodumper/isodumper.glade.h:31
+#: share/isodumper/isodumper.glade.h:32
 msgid "Create a backup of the device as image to restore it later"
 msgstr "建立這個裝置的映像備份以便之後還原"
 
-#: share/isodumper/isodumper.glade.h:34
+#: share/isodumper/isodumper.glade.h:35
 msgid "(None)"
 msgstr "(無)"
 
-#: share/isodumper/isodumper.glade.h:35
+#: share/isodumper/isodumper.glade.h:36
 msgid "Select a folder in which to write the backup image"
 msgstr "選擇一個目錄以供寫入備份映像"
 
-#: share/isodumper/isodumper.glade.h:36
+#: share/isodumper/isodumper.glade.h:37
 msgid "Backup the device"
 msgstr "備份裝置"
 
-#: share/isodumper/isodumper.glade.h:37
+#: share/isodumper/isodumper.glade.h:38
 msgid "Format the device in FAT, NTFS or ext:"
 msgstr "格式化裝置成 FAT, NTFS 或 ext:"
 
-#: share/isodumper/isodumper.glade.h:38
+#: share/isodumper/isodumper.glade.h:39
 msgid "Choose the format. The device will be formatted in one partition"
 msgstr "選擇格式。該裝置會被格式化成一個磁碟區"
 
-#: share/isodumper/isodumper.glade.h:39
+#: share/isodumper/isodumper.glade.h:40
 msgid "Format the device"
 msgstr "格式化裝置"
 
-#: share/isodumper/isodumper.glade.h:40
+#: share/isodumper/isodumper.glade.h:41
 msgid "Details"
 msgstr "詳細資料"
 
-#: share/isodumper/isodumper.glade.h:41
+#: share/isodumper/isodumper.glade.h:42
 msgid ""
 "<b>Warning</b>\n"
 " No target devices were found. \n"
@@ -301,7 +305,7 @@ msgstr ""
 " 您需要插入一個 USB 隨身碟\n"
 " 以便寫入映像檔。"
 
-#: share/isodumper/isodumper.glade.h:46
+#: share/isodumper/isodumper.glade.h:47
 msgid ""
 "<b>Success</b>\n"
 " The operation was successfully performed.\n"
