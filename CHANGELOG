@@ -1,6 +1,15 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
+
+IsoDumper 0.24
+------------
+	  - change the name in .img for backup
+	  - correction of the index not getting 100%
+	  - Not closing the application after the success
+	  - fix wrong progress steps with small images
+	  - fix security issue writing log file 
+
 IsoDumper 0.23
 ------------
 	  - added close the application when X of the window bar clicked.
