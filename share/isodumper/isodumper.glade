@@ -614,6 +614,9 @@ Public License instead of this License.
   <widget class="GtkMessageDialog" id="confirm_overwrite">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
+    <property name="title" translatable="yes">IsoDumper</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
     <property name="skip_taskbar_hint">True</property>
     <property name="message_type">warning</property>
