@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-30 17:01+0200\n"
+"POT-Creation-Date: 2014-10-25 15:21+0200\n"
 "PO-Revision-Date: 2009-06-19 15:17+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
@@ -19,99 +19,99 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
 "X-Generator: Launchpad (build 16692)\n"
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:144
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:152 lib/isodumper.py:193
+#: lib/isodumper.py:153 lib/isodumper.py:194
 msgid "Target Device: "
 msgstr "Dispositivo de destino: "
 
-#: lib/isodumper.py:191 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:192 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:192
+#: lib/isodumper.py:193
 msgid "Image: "
 msgstr "Imaxe: "
 
-#: lib/isodumper.py:196
+#: lib/isodumper.py:197
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:203
+#: lib/isodumper.py:204
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:237
 msgid "Unmounting all partitions of "
 msgstr "Desmontando todas as particións de "
 
-#: lib/isodumper.py:238
+#: lib/isodumper.py:239
 msgid "Trying to unmount "
 msgstr "Tentando desmontar "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:245
 msgid " was terminated by signal "
 msgstr " foi rematado polo sinal "
 
-#: lib/isodumper.py:244 lib/isodumper.py:250
+#: lib/isodumper.py:245 lib/isodumper.py:251
 msgid "Error, umount "
 msgstr "Ocorreu un erro ao desmontar "
 
-#: lib/isodumper.py:248
+#: lib/isodumper.py:249
 msgid " successfully unmounted"
 msgstr " desmontado correctamente"
 
-#: lib/isodumper.py:250
+#: lib/isodumper.py:251
 msgid " returned "
 msgstr " devolto "
 
-#: lib/isodumper.py:253
+#: lib/isodumper.py:254
 msgid "Execution failed: "
 msgstr "Fallou a execución "
 
-#: lib/isodumper.py:261
+#: lib/isodumper.py:262
 msgid "Could not read mtab !"
 msgstr "Non se pode ler mtab !"
 
-#: lib/isodumper.py:269 lib/isodumper.py:292
+#: lib/isodumper.py:270 lib/isodumper.py:297
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:275
+#: lib/isodumper.py:276
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:280 lib/isodumper.py:281
+#: lib/isodumper.py:281 lib/isodumper.py:282
 msgid " to "
 msgstr " a "
 
-#: lib/isodumper.py:280
+#: lib/isodumper.py:281
 msgid "Writing "
 msgstr "Escribindo "
 
-#: lib/isodumper.py:281
+#: lib/isodumper.py:282
 msgid "Executing copy from "
 msgstr ""
 
-#: lib/isodumper.py:297 lib/isodumper.py:310 lib/isodumper.py:319
+#: lib/isodumper.py:302 lib/isodumper.py:315 lib/isodumper.py:324
 msgid "Writing error."
 msgstr ""
 
-#: lib/isodumper.py:302
+#: lib/isodumper.py:307
 msgid "Wrote: "
 msgstr "Escrito: "
 
-#: lib/isodumper.py:314
+#: lib/isodumper.py:319
 msgid " successfully written to "
 msgstr " escrito con éxito en "
 
-#: lib/isodumper.py:314 lib/isodumper.py:382
+#: lib/isodumper.py:319 lib/isodumper.py:392
 msgid "Image "
 msgstr "Imaxe "
 
-#: lib/isodumper.py:315
+#: lib/isodumper.py:320
 msgid "Bytes written: "
 msgstr ""
 
@@ -234,20 +234,23 @@ msgstr ""
 "rexistro da operación no seu directorio persoal\n"
 "si pecha a aplicación."
 
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Erro</b>\n"
-#~ "Algo saiu mal, por favor, vexa a ventá\n"
-#~ "de detalles para coñecer o erro exacto.\n"
-#~ "\n"
-#~ "Gardase un ficheiro co contido do rexistro no seu\n"
-#~ "directorio persoal se pecha a aplicación."
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "O proceso dd rematou cun erro !"
 
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -262,20 +265,17 @@ msgstr ""
 #~ "Necesitas conectar un dispositivo de memoria USB\n"
 #~ "no que se poida escribir a imaxe."
 
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "O proceso dd rematou cun erro !"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid " "
-#~ msgstr " "
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>Erro</b>\n"
+#~ "Algo saiu mal, por favor, vexa a ventá\n"
+#~ "de detalles para coñecer o erro exacto.\n"
+#~ "\n"
+#~ "Gardase un ficheiro co contido do rexistro no seu\n"
+#~ "directorio persoal se pecha a aplicación."

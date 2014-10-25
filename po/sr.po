@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-30 17:01+0200\n"
+"POT-Creation-Date: 2014-10-25 15:21+0200\n"
 "PO-Revision-Date: 2011-03-17 11:58+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Launchpad Serbian Translators\n"
@@ -19,99 +19,99 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-07-03 20:32+0000\n"
 "X-Generator: Launchpad (build 16692)\n"
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:144
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:152 lib/isodumper.py:193
+#: lib/isodumper.py:153 lib/isodumper.py:194
 msgid "Target Device: "
 msgstr "Циљни уређај: "
 
-#: lib/isodumper.py:191 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:192 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:192
+#: lib/isodumper.py:193
 msgid "Image: "
 msgstr "Одраз: "
 
-#: lib/isodumper.py:196
+#: lib/isodumper.py:197
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:203
+#: lib/isodumper.py:204
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:237
 msgid "Unmounting all partitions of "
 msgstr "Демонтирам све партиције на "
 
-#: lib/isodumper.py:238
+#: lib/isodumper.py:239
 msgid "Trying to unmount "
 msgstr "Покушавам да демонтирам "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:245
 msgid " was terminated by signal "
 msgstr " је окончан сигналом "
 
-#: lib/isodumper.py:244 lib/isodumper.py:250
+#: lib/isodumper.py:245 lib/isodumper.py:251
 msgid "Error, umount "
 msgstr "Грешка, демонтирам "
 
-#: lib/isodumper.py:248
+#: lib/isodumper.py:249
 msgid " successfully unmounted"
 msgstr " је успешно демонтиран"
 
-#: lib/isodumper.py:250
+#: lib/isodumper.py:251
 msgid " returned "
 msgstr " је вратио "
 
-#: lib/isodumper.py:253
+#: lib/isodumper.py:254
 msgid "Execution failed: "
 msgstr "Извршавање није успело: "
 
-#: lib/isodumper.py:261
+#: lib/isodumper.py:262
 msgid "Could not read mtab !"
 msgstr "Не могу да прочитам мтаб !"
 
-#: lib/isodumper.py:269 lib/isodumper.py:292
+#: lib/isodumper.py:270 lib/isodumper.py:297
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:275
+#: lib/isodumper.py:276
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:280 lib/isodumper.py:281
+#: lib/isodumper.py:281 lib/isodumper.py:282
 msgid " to "
 msgstr " на "
 
-#: lib/isodumper.py:280
+#: lib/isodumper.py:281
 msgid "Writing "
 msgstr "Записујем "
 
-#: lib/isodumper.py:281
+#: lib/isodumper.py:282
 msgid "Executing copy from "
 msgstr ""
 
-#: lib/isodumper.py:297 lib/isodumper.py:310 lib/isodumper.py:319
+#: lib/isodumper.py:302 lib/isodumper.py:315 lib/isodumper.py:324
 msgid "Writing error."
 msgstr ""
 
-#: lib/isodumper.py:302
+#: lib/isodumper.py:307
 msgid "Wrote: "
 msgstr "Записах: "
 
-#: lib/isodumper.py:314
+#: lib/isodumper.py:319
 msgid " successfully written to "
 msgstr " је успешно записан на "
 
-#: lib/isodumper.py:314 lib/isodumper.py:382
+#: lib/isodumper.py:319 lib/isodumper.py:392
 msgid "Image "
 msgstr "Одраз "
 
-#: lib/isodumper.py:315
+#: lib/isodumper.py:320
 msgid "Bytes written: "
 msgstr ""
 
@@ -233,20 +233,23 @@ msgstr ""
 " о операцији ће бити сачуван у вашој личној\n"
 " фасцикли ако затворите програм."
 
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Грешка</b>\n"
-#~ " Нешто је пошло наопако, молим погледајте прозор\n"
-#~ " са сетаљима за тачну грешку.\n"
-#~ " \n"
-#~ " Датотека дневника са садржајем ће бити сачувана у\n"
-#~ " вашој личној фасцикли ако је програм затворен."
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "gtk-ok"
+#~ msgstr "гтк-у реду"
+
+#~ msgid "gtk-close"
+#~ msgstr "гтк-затвори"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "гтк-откажи"
+
+#~ msgid "ImageWriter"
+#~ msgstr "Писач одраза"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "дд процес је завршио са грешком !"
 
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -261,20 +264,17 @@ msgstr ""
 #~ " Морате да прикључите УСБ кључ\n"
 #~ " на који може бити записан одраз."
 
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "дд процес је завршио са грешком !"
-
-#~ msgid "ImageWriter"
-#~ msgstr "Писач одраза"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "гтк-откажи"
-
-#~ msgid "gtk-close"
-#~ msgstr "гтк-затвори"
-
-#~ msgid "gtk-ok"
-#~ msgstr "гтк-у реду"
-
-#~ msgid " "
-#~ msgstr " "
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>Грешка</b>\n"
+#~ " Нешто је пошло наопако, молим погледајте прозор\n"
+#~ " са сетаљима за тачну грешку.\n"
+#~ " \n"
+#~ " Датотека дневника са садржајем ће бити сачувана у\n"
+#~ " вашој личној фасцикли ако је програм затворен."

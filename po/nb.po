@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-30 17:01+0200\n"
+"POT-Creation-Date: 2014-10-25 15:21+0200\n"
 "PO-Revision-Date: 2008-11-04 12:31+0000\n"
 "Last-Translator: Bjørn Olav Samdal <bjornsam@ulrik.uio.no>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
@@ -19,101 +19,101 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:144
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:152 lib/isodumper.py:193
+#: lib/isodumper.py:153 lib/isodumper.py:194
 msgid "Target Device: "
 msgstr "Mål Enhet: "
 
-#: lib/isodumper.py:191 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:192 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:192
+#: lib/isodumper.py:193
 msgid "Image: "
 msgstr "Bilde: "
 
-#: lib/isodumper.py:196
+#: lib/isodumper.py:197
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:203
+#: lib/isodumper.py:204
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:237
 msgid "Unmounting all partitions of "
 msgstr "Fjern alle partisjoner som "
 
-#: lib/isodumper.py:238
+#: lib/isodumper.py:239
 msgid "Trying to unmount "
 msgstr "Prøver å avmontere "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:245
 msgid " was terminated by signal "
 msgstr " ble avsluttet med melding "
 
-#: lib/isodumper.py:244 lib/isodumper.py:250
+#: lib/isodumper.py:245 lib/isodumper.py:251
 msgid "Error, umount "
 msgstr "Feil, avmonter "
 
-#: lib/isodumper.py:248
+#: lib/isodumper.py:249
 msgid " successfully unmounted"
 msgstr " avmontering vellykket"
 
-#: lib/isodumper.py:250
+#: lib/isodumper.py:251
 msgid " returned "
 msgstr " tilbakestilt "
 
-#: lib/isodumper.py:253
+#: lib/isodumper.py:254
 msgid "Execution failed: "
 msgstr "Utførelse feilet: "
 
-#: lib/isodumper.py:261
+#: lib/isodumper.py:262
 msgid "Could not read mtab !"
 msgstr "Kunne ikke lese mtab !"
 
-#: lib/isodumper.py:269 lib/isodumper.py:292
+#: lib/isodumper.py:270 lib/isodumper.py:297
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:275
+#: lib/isodumper.py:276
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:280 lib/isodumper.py:281
+#: lib/isodumper.py:281 lib/isodumper.py:282
 msgid " to "
 msgstr " til "
 
-#: lib/isodumper.py:280
+#: lib/isodumper.py:281
 msgid "Writing "
 msgstr "Skriving "
 
-#: lib/isodumper.py:281
+#: lib/isodumper.py:282
 #, fuzzy
 msgid "Executing copy from "
 msgstr "Utføring: dd if="
 
-#: lib/isodumper.py:297 lib/isodumper.py:310 lib/isodumper.py:319
+#: lib/isodumper.py:302 lib/isodumper.py:315 lib/isodumper.py:324
 #, fuzzy
 msgid "Writing error."
 msgstr "Skriving "
 
-#: lib/isodumper.py:302
+#: lib/isodumper.py:307
 msgid "Wrote: "
 msgstr "Skrev: "
 
-#: lib/isodumper.py:314
+#: lib/isodumper.py:319
 msgid " successfully written to "
 msgstr " vellykket skrevet til "
 
-#: lib/isodumper.py:314 lib/isodumper.py:382
+#: lib/isodumper.py:319 lib/isodumper.py:392
 msgid "Image "
 msgstr "Bilde "
 
-#: lib/isodumper.py:315
+#: lib/isodumper.py:320
 msgid "Bytes written: "
 msgstr ""
 
@@ -237,6 +237,37 @@ msgstr ""
 " operasjonen vil bli lagret i din hjemmekatalog hvis\n"
 " du avslutter applikasjonen."
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Prosessen dd stoppet med en feil !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageSkriver"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-lukk"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>Error</b>\n"
+#~ " Ingen mål enheter er funnet.  \n"
+#~ "\n"
+#~ " Du trenger å plugge inn en USB Nøkkel\n"
+#~ " for å kunne skrive til enheten."
+
 #, fuzzy
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -252,34 +283,3 @@ msgstr ""
 #~ "\n"
 #~ " En logfil med feilmeldingen blir lagret i din\n"
 #~ " hjemmekatalog når programmet avsluttes."
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Error</b>\n"
-#~ " Ingen mål enheter er funnet.  \n"
-#~ "\n"
-#~ " Du trenger å plugge inn en USB Nøkkel\n"
-#~ " for å kunne skrive til enheten."
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-lukk"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageSkriver"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Prosessen dd stoppet med en feil !"
-
-#~ msgid " "
-#~ msgstr " "

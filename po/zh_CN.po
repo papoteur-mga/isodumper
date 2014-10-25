@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-30 17:01+0200\n"
+"POT-Creation-Date: 2014-10-25 15:21+0200\n"
 "PO-Revision-Date: 2009-05-13 05:10+0000\n"
 "Last-Translator: puzhengcai <Unknown>\n"
 "Language-Team: Simplified Chinese <zh_CN@li.org>\n"
@@ -19,101 +19,101 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:144
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:152 lib/isodumper.py:193
+#: lib/isodumper.py:153 lib/isodumper.py:194
 msgid "Target Device: "
 msgstr "目标设备： "
 
-#: lib/isodumper.py:191 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:192 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:192
+#: lib/isodumper.py:193
 msgid "Image: "
 msgstr "镜像： "
 
-#: lib/isodumper.py:196
+#: lib/isodumper.py:197
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:203
+#: lib/isodumper.py:204
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:237
 msgid "Unmounting all partitions of "
 msgstr "卸载以下设备的所有分区 "
 
-#: lib/isodumper.py:238
+#: lib/isodumper.py:239
 msgid "Trying to unmount "
 msgstr "尝试卸载分区 "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:245
 msgid " was terminated by signal "
 msgstr " 被信号终止 "
 
-#: lib/isodumper.py:244 lib/isodumper.py:250
+#: lib/isodumper.py:245 lib/isodumper.py:251
 msgid "Error, umount "
 msgstr "出错，卸载分区 "
 
-#: lib/isodumper.py:248
+#: lib/isodumper.py:249
 msgid " successfully unmounted"
 msgstr " 成功卸载设备"
 
-#: lib/isodumper.py:250
+#: lib/isodumper.py:251
 msgid " returned "
 msgstr " 已返回 "
 
-#: lib/isodumper.py:253
+#: lib/isodumper.py:254
 msgid "Execution failed: "
 msgstr "执行失败： "
 
-#: lib/isodumper.py:261
+#: lib/isodumper.py:262
 msgid "Could not read mtab !"
 msgstr "无法读取mtab文件！"
 
-#: lib/isodumper.py:269 lib/isodumper.py:292
+#: lib/isodumper.py:270 lib/isodumper.py:297
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:275
+#: lib/isodumper.py:276
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:280 lib/isodumper.py:281
+#: lib/isodumper.py:281 lib/isodumper.py:282
 msgid " to "
 msgstr " 到 "
 
-#: lib/isodumper.py:280
+#: lib/isodumper.py:281
 msgid "Writing "
 msgstr "正在写入 "
 
-#: lib/isodumper.py:281
+#: lib/isodumper.py:282
 #, fuzzy
 msgid "Executing copy from "
 msgstr "运行: dd if="
 
-#: lib/isodumper.py:297 lib/isodumper.py:310 lib/isodumper.py:319
+#: lib/isodumper.py:302 lib/isodumper.py:315 lib/isodumper.py:324
 #, fuzzy
 msgid "Writing error."
 msgstr "正在写入 "
 
-#: lib/isodumper.py:302
+#: lib/isodumper.py:307
 msgid "Wrote: "
 msgstr "已写入： "
 
-#: lib/isodumper.py:314
+#: lib/isodumper.py:319
 msgid " successfully written to "
 msgstr " 成功写入到 "
 
-#: lib/isodumper.py:314 lib/isodumper.py:382
+#: lib/isodumper.py:319 lib/isodumper.py:392
 msgid "Image "
 msgstr "镜像 "
 
-#: lib/isodumper.py:315
+#: lib/isodumper.py:320
 msgid "Bytes written: "
 msgstr ""
 
@@ -237,6 +237,37 @@ msgstr ""
 " 当您退出程序时\n"
 " 一份日志文件将会保存在您的用户主目录中。"
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-确定"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-关闭"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-取消"
+
+#~ msgid "ImageWriter"
+#~ msgstr "镜像写入程序"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd处理过程带错误结束！"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>错误</b>\n"
+#~ "没有找到目标设备。 \n"
+#~ "\n"
+#~ " 你需要插入一个USB设备\n"
+#~ " 以便将镜像写入。"
+
 #, fuzzy
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -252,34 +283,3 @@ msgstr ""
 #~ " \n"
 #~ " 当程序关闭时\n"
 #~ " 将会在您的用户主目录保存一个日志文件。"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>错误</b>\n"
-#~ "没有找到目标设备。 \n"
-#~ "\n"
-#~ " 你需要插入一个USB设备\n"
-#~ " 以便将镜像写入。"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd处理过程带错误结束！"
-
-#~ msgid "ImageWriter"
-#~ msgstr "镜像写入程序"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-取消"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-关闭"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-确定"
-
-#~ msgid " "
-#~ msgstr " "

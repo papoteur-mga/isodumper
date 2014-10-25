@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-30 17:01+0200\n"
+"POT-Creation-Date: 2014-10-25 15:21+0200\n"
 "PO-Revision-Date: 2009-03-05 12:06+0000\n"
 "Last-Translator: Tomáš Vadina <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -19,101 +19,101 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-06-12 12:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: lib/isodumper.py:143
+#: lib/isodumper.py:144
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:152 lib/isodumper.py:193
+#: lib/isodumper.py:153 lib/isodumper.py:194
 msgid "Target Device: "
 msgstr "Cieľové zaradienie: "
 
-#: lib/isodumper.py:191 share/isodumper/isodumper.glade.h:22
+#: lib/isodumper.py:192 share/isodumper/isodumper.glade.h:22
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:192
+#: lib/isodumper.py:193
 msgid "Image: "
 msgstr "Obraz: "
 
-#: lib/isodumper.py:196
+#: lib/isodumper.py:197
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:203
+#: lib/isodumper.py:204
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:236
+#: lib/isodumper.py:237
 msgid "Unmounting all partitions of "
 msgstr "Odpojujem všetky oddiely "
 
-#: lib/isodumper.py:238
+#: lib/isodumper.py:239
 msgid "Trying to unmount "
 msgstr "Skúšam odpojiť "
 
-#: lib/isodumper.py:244
+#: lib/isodumper.py:245
 msgid " was terminated by signal "
 msgstr " bol ukončený signálom "
 
-#: lib/isodumper.py:244 lib/isodumper.py:250
+#: lib/isodumper.py:245 lib/isodumper.py:251
 msgid "Error, umount "
 msgstr "Chyba, opojenie "
 
-#: lib/isodumper.py:248
+#: lib/isodumper.py:249
 msgid " successfully unmounted"
 msgstr " úspešne odpojené"
 
-#: lib/isodumper.py:250
+#: lib/isodumper.py:251
 msgid " returned "
 msgstr " vrátil "
 
-#: lib/isodumper.py:253
+#: lib/isodumper.py:254
 msgid "Execution failed: "
 msgstr "Spustenie zlyhalo: "
 
-#: lib/isodumper.py:261
+#: lib/isodumper.py:262
 msgid "Could not read mtab !"
 msgstr "Nemožem prečítať mtab!"
 
-#: lib/isodumper.py:269 lib/isodumper.py:292
+#: lib/isodumper.py:270 lib/isodumper.py:297
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:275
+#: lib/isodumper.py:276
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:280 lib/isodumper.py:281
+#: lib/isodumper.py:281 lib/isodumper.py:282
 msgid " to "
 msgstr " do "
 
-#: lib/isodumper.py:280
+#: lib/isodumper.py:281
 msgid "Writing "
 msgstr "Zapisujem "
 
-#: lib/isodumper.py:281
+#: lib/isodumper.py:282
 #, fuzzy
 msgid "Executing copy from "
 msgstr "Spušťam: dd if="
 
-#: lib/isodumper.py:297 lib/isodumper.py:310 lib/isodumper.py:319
+#: lib/isodumper.py:302 lib/isodumper.py:315 lib/isodumper.py:324
 #, fuzzy
 msgid "Writing error."
 msgstr "Zapisujem "
 
-#: lib/isodumper.py:302
+#: lib/isodumper.py:307
 msgid "Wrote: "
 msgstr "Zapísané: "
 
-#: lib/isodumper.py:314
+#: lib/isodumper.py:319
 msgid " successfully written to "
 msgstr " úspešne zapísaný do "
 
-#: lib/isodumper.py:314 lib/isodumper.py:382
+#: lib/isodumper.py:319 lib/isodumper.py:392
 msgid "Image "
 msgstr "Obraz "
 
-#: lib/isodumper.py:315
+#: lib/isodumper.py:320
 msgid "Bytes written: "
 msgstr ""
 
@@ -235,6 +235,37 @@ msgstr ""
 " Teraz môžete odpojiť USB zariadenie. Log súbor bude zapísaný\n"
 " do Vášho domovského priečinka po skončení aplikácie."
 
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Proces dd skončil s chybou!"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>Chyba</b>\n"
+#~ " Žiadne cieľové zariadenie nenájdené.\n"
+#~ "\n"
+#~ " Musíte pripojiť USB zariadenie na ktoré\n"
+#~ " môže byť zapísaný obraz."
+
 #, fuzzy
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -250,34 +281,3 @@ msgstr ""
 #~ "\n"
 #~ " Log súbor bude zapísaný do Vášho domovského\n"
 #~ " priečinka po skončení aplikácie."
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Chyba</b>\n"
-#~ " Žiadne cieľové zariadenie nenájdené.\n"
-#~ "\n"
-#~ " Musíte pripojiť USB zariadenie na ktoré\n"
-#~ " môže byť zapísaný obraz."
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Proces dd skončil s chybou!"
-
-#~ msgid " "
-#~ msgstr " "
