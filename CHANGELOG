@@ -4,6 +4,11 @@ The modifications are:
 IsoDumper 0.32
 ------------
 	  - fix wrong progress steps with small images.
+	  - suppression of an inappriopriate emergency dialog after format.
+	  - not closing the application after the success dialog box.
+	  - added a dialog box to confirm overwriting backup file.
+	  - adding the path in the destination name for backup file.
+	  - change .iso in .img for the backup name.
 	  - formatting all .po files.
 	  - recompiling all .mo files.
 
