@@ -56,7 +56,7 @@ def find_devices():
 
 
 class IsoDumper:
-    def __init__(self):
+    def __init__(self,user):
         APP="isodumper"
         DIR="/usr/share/locale"
         RELEASE="v0.23"
@@ -82,6 +82,7 @@ class IsoDumper:
 
         # define size of the selected device
         self.deviceSize=0
+        self.user=user
 
         # set default file filter to *.img
         # Added for Mageia : *.iso
@@ -124,6 +125,7 @@ class IsoDumper:
         self.get_devices()
 
 
+
     def get_devices(self):
         dialog = self.wTree.get_widget("nodev_dialog")
         list=find_devices()
@@ -153,8 +155,9 @@ class IsoDumper:
         self.backup_select.set_sensitive(not self.backup_select.get_sensitive())
 
     def backup_sel(self,widget):
+        self.logger('Utilisateur '+self.user)
         if (self.backup_bname.get_current_folder_uri() == None)  :
-            self.backup_bname.set_current_folder_uri('file:///home/'+os.getlogin())
+            self.backup_bname.set_current_folder_uri('file:///home/'+self.user)
         self.backup_bname.set_current_name(self.device_name+".img")
         self.choose.run()
 
@@ -360,13 +363,12 @@ class IsoDumper:
     def write_logfile(self):
         start = self.log.get_start_iter()
         end = self.log.get_end_iter()
-        user = os.getlogin()
         import pwd
-        pw = pwd.getpwnam(user)
+        pw = pwd.getpwnam(self.user)
         uid = pw.pw_uid
         gid=pw.pw_gid
-        if (user != 'root') and (user !=''):
-            logpath='/home/'+user+'/.isodumper'
+        if (self.user != 'root') and (self.user !=''):
+            logpath='/home/'+self.user+'/.isodumper'
             os.setgid(gid)
             os.setuid(uid)
             if not(os.path.isdir(logpath)):
@@ -411,5 +413,7 @@ class IsoDumper:
             #exit(0)
 
 if __name__ == "__main__":
-    app = IsoDumper()
+    import sys
+    user=sys.argv[1]
+    app = IsoDumper(user)
     gtk.main()
