@@ -155,7 +155,6 @@ class IsoDumper:
         self.backup_select.set_sensitive(not self.backup_select.get_sensitive())
 
     def backup_sel(self,widget):
-        self.logger('Utilisateur '+self.user)
         if (self.backup_bname.get_current_folder_uri() == None)  :
             self.backup_bname.set_current_folder_uri('file:///home/'+self.user)
         self.backup_bname.set_current_name(self.device_name+".img")
