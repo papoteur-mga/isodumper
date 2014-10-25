@@ -60,12 +60,14 @@ class IsoDumper:
         APP="isodumper"
         DIR="/usr/share/locale"
         RELEASE="v0.23"
-        # for the localisation of log file
 
         gettext.bindtextdomain(APP, DIR)
         gettext.textdomain(APP)
         gtk.glade.bindtextdomain(APP, DIR)
         gtk.glade.textdomain(APP)
+
+        # for the localisation of log file
+        self.user=user
 
         # get glade tree
         self.gladefile = "/usr/share/isodumper/isodumper.glade"
@@ -82,7 +84,6 @@ class IsoDumper:
 
         # define size of the selected device
         self.deviceSize=0
-        self.user=user
 
         # set default file filter to *.img
         # Added for Mageia : *.iso
