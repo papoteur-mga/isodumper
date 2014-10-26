@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:21+0200\n"
+"POT-Creation-Date: 2014-10-26 13:49+0100\n"
 "PO-Revision-Date: 2008-11-13 17:10+0000\n"
 "Last-Translator: This.dramzinn <This.dramzinn@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -109,7 +109,7 @@ msgstr "썼다 : "
 msgid " successfully written to "
 msgstr " 성공적으로 쓰여진다. "
 
-#: lib/isodumper.py:319 lib/isodumper.py:392
+#: lib/isodumper.py:319 lib/isodumper.py:394
 msgid "Image "
 msgstr "이미지 "
 
@@ -236,37 +236,6 @@ msgstr ""
 "지금 그것(장치)를 제거해도 괜찮습니다, 만약 사용(응용)을 종료하게 되면,\n"
 "그 기록은 당신의 홈디렉토리에 저장되도록 작동할 것입니다."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd 처리과정 종료시 오류발생"
-
-#~ msgid "ImageWriter"
-#~ msgstr "이미지제작가"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-취소"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-닫기"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-확인"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>오류</b>\n"
-#~ "(목적) 장치를 찾을 수 없습니다.\n"
-#~ "\n"
-#~ "USB 키를 입력할 필요가 있습니다.\n"
-#~ "그 이미지와 같은 것은 쓰여질 수 있습니다."
-
 #, fuzzy
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -282,3 +251,34 @@ msgstr ""
 #~ "\n"
 #~ "그 기록파일은 만약 응용프로그램이 끝나는 경우가 발생하면 \n"
 #~ "당신의 홈 디렉토리에 저장된다."
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>오류</b>\n"
+#~ "(목적) 장치를 찾을 수 없습니다.\n"
+#~ "\n"
+#~ "USB 키를 입력할 필요가 있습니다.\n"
+#~ "그 이미지와 같은 것은 쓰여질 수 있습니다."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-확인"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-닫기"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-취소"
+
+#~ msgid "ImageWriter"
+#~ msgstr "이미지제작가"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd 처리과정 종료시 오류발생"
+
+#~ msgid " "
+#~ msgstr " "

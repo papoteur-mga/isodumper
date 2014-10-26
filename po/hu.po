@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:21+0200\n"
+"POT-Creation-Date: 2014-10-26 13:49+0100\n"
 "PO-Revision-Date: 2008-11-02 19:05+0000\n"
 "Last-Translator: Gyula Fürstal <Unknown>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -108,7 +108,7 @@ msgstr ""
 msgid " successfully written to "
 msgstr " sikeresen megírva a "
 
-#: lib/isodumper.py:319 lib/isodumper.py:392
+#: lib/isodumper.py:319 lib/isodumper.py:394
 msgid "Image "
 msgstr "Kép "
 
@@ -222,21 +222,6 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "A dd folyamat  sikertelen"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -249,3 +234,18 @@ msgstr ""
 #~ "\n"
 #~ " Csatlakoztasson egy USB kulcsot\n"
 #~ " amire kiírható a kép."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "A dd folyamat  sikertelen"
+
+#~ msgid " "
+#~ msgstr " "

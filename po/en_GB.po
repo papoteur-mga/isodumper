@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:21+0200\n"
+"POT-Creation-Date: 2014-10-26 13:49+0100\n"
 "PO-Revision-Date: 2014-05-08 19:06+0000\n"
 "Last-Translator: richardshaylor <rshaylor@me.com>\n"
 "Language-Team: English (United Kingdom) (http://www.transifex.com/projects/p/"
@@ -109,7 +109,7 @@ msgstr "Wrote: "
 msgid " successfully written to "
 msgstr " successfully written to "
 
-#: lib/isodumper.py:319 lib/isodumper.py:392
+#: lib/isodumper.py:319 lib/isodumper.py:394
 msgid "Image "
 msgstr "Image "
 

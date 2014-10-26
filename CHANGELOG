@@ -8,6 +8,7 @@ IsoDumper 0.24
 	  - not closing the application after the success writing.
 	  - fix wrong progress steps with small images.
 	  - fix security issue writing log file.
+	  - add output on stdout of logs.
 
 IsoDumper 0.23
 ------------

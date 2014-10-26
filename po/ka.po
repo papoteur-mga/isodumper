@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:21+0200\n"
+"POT-Creation-Date: 2014-10-26 13:49+0100\n"
 "PO-Revision-Date: 2008-11-15 00:27+0000\n"
 "Last-Translator: David Machakhelidze <david.machakhelidze@gmail.com>\n"
 "Language-Team: Georgian <ka@li.org>\n"
@@ -109,7 +109,7 @@ msgstr "დაწერა: "
 msgid " successfully written to "
 msgstr " წარმატებით ჩაიწერა "
 
-#: lib/isodumper.py:319 lib/isodumper.py:392
+#: lib/isodumper.py:319 lib/isodumper.py:394
 msgid "Image "
 msgstr "ანაბეჭდი "
 
@@ -231,21 +231,6 @@ msgstr ""
 " ჟურნალი შეინახება თქვენს სახლის დასტაში თუ\n"
 " დახურავთ პროგრამას."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd პროცესი შეცდომით დამთავრდა !"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-გაუქმება"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-დახურვა"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-დიახ"
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " No target devices were found. \n"
@@ -258,3 +243,18 @@ msgstr ""
 #~ "\n"
 #~ " შეაერთეთ USB მოწყობილობა,\n"
 #~ " რომელშიც ანაბეჭდის ჩაწერა იქნება შესაძლებელი."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-დიახ"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-დახურვა"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-გაუქმება"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd პროცესი შეცდომით დამთავრდა !"
+
+#~ msgid " "
+#~ msgstr " "

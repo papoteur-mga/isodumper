@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:21+0200\n"
+"POT-Creation-Date: 2014-10-26 13:49+0100\n"
 "PO-Revision-Date: 2014-05-07 12:50+0000\n"
 "Last-Translator: killer1987 <marcello.anni@alice.it>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/mageia/language/"
@@ -109,7 +109,7 @@ msgstr "Scritto: "
 msgid " successfully written to "
 msgstr " scritto con successo su "
 
-#: lib/isodumper.py:319 lib/isodumper.py:392
+#: lib/isodumper.py:319 lib/isodumper.py:394
 msgid "Image "
 msgstr "Immagine "
 

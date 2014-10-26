@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:21+0200\n"
+"POT-Creation-Date: 2014-10-26 13:49+0100\n"
 "PO-Revision-Date: 2008-08-06 04:57+0000\n"
 "Last-Translator: Yaron <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
@@ -109,7 +109,7 @@ msgstr "נכתב: "
 msgid " successfully written to "
 msgstr " נכתב בהצלחה אל "
 
-#: lib/isodumper.py:319 lib/isodumper.py:392
+#: lib/isodumper.py:319 lib/isodumper.py:394
 msgid "Image "
 msgstr "דמות "
 
@@ -236,37 +236,6 @@ msgstr ""
 " יישמר אל תיקיית הבית שלך אם תסגור את\n"
 " היישום."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "תהליך ה-dd הסתיים בשגיאה !"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>שגיאה</b>\n"
-#~ " לא נמצאו התקני יעד. \n"
-#~ "\n"
-#~ " עליך לחבר מפתח USB\n"
-#~ " אליו יהיה ניתן לכתוב את הדמות."
-
 #, fuzzy
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -282,3 +251,34 @@ msgstr ""
 #~ " \n"
 #~ " קובץ דיווח המכיל את התוכן יישמר אל תיקיית\n"
 #~ " הבית שלך אם היישום סגור."
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>שגיאה</b>\n"
+#~ " לא נמצאו התקני יעד. \n"
+#~ "\n"
+#~ " עליך לחבר מפתח USB\n"
+#~ " אליו יהיה ניתן לכתוב את הדמות."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "תהליך ה-dd הסתיים בשגיאה !"
+
+#~ msgid " "
+#~ msgstr " "

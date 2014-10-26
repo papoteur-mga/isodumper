@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:21+0200\n"
+"POT-Creation-Date: 2014-10-26 13:49+0100\n"
 "PO-Revision-Date: 2008-12-28 16:46+0000\n"
 "Last-Translator: Fizaril <saturnV76@gmail.com>\n"
 "Language-Team: Malay <ms@li.org>\n"
@@ -107,7 +107,7 @@ msgstr ""
 msgid " successfully written to "
 msgstr ""
 
-#: lib/isodumper.py:319 lib/isodumper.py:392
+#: lib/isodumper.py:319 lib/isodumper.py:394
 msgid "Image "
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:21+0200\n"
+"POT-Creation-Date: 2014-10-26 13:49+0100\n"
 "PO-Revision-Date: 2009-06-19 15:17+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
@@ -107,7 +107,7 @@ msgstr "Escrito: "
 msgid " successfully written to "
 msgstr " escrito con éxito en "
 
-#: lib/isodumper.py:319 lib/isodumper.py:392
+#: lib/isodumper.py:319 lib/isodumper.py:394
 msgid "Image "
 msgstr "Imaxe "
 
@@ -234,37 +234,6 @@ msgstr ""
 "rexistro da operación no seu directorio persoal\n"
 "si pecha a aplicación."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "O proceso dd rematou cun erro !"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Erro</b>\n"
-#~ "Non se atopa ningún dispositivo de destino. \n"
-#~ "\n"
-#~ "Necesitas conectar un dispositivo de memoria USB\n"
-#~ "no que se poida escribir a imaxe."
-
 #~ msgid ""
 #~ "<b>Error</b>\n"
 #~ " Something went wrong, please see the details\n"
@@ -279,3 +248,34 @@ msgstr ""
 #~ "\n"
 #~ "Gardase un ficheiro co contido do rexistro no seu\n"
 #~ "directorio persoal se pecha a aplicación."
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>Erro</b>\n"
+#~ "Non se atopa ningún dispositivo de destino. \n"
+#~ "\n"
+#~ "Necesitas conectar un dispositivo de memoria USB\n"
+#~ "no que se poida escribir a imaxe."
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "O proceso dd rematou cun erro !"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid " "
+#~ msgstr " "

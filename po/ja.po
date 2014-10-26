@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:21+0200\n"
+"POT-Creation-Date: 2014-10-26 13:49+0100\n"
 "PO-Revision-Date: 2009-03-09 13:20+0000\n"
 "Last-Translator: Ikuya Awashiro <ikuya@fruitsbasket.info>\n"
 "Language-Team: Japanese <ja@li.org>\n"
@@ -109,7 +109,7 @@ msgstr "書き込み: "
 msgid " successfully written to "
 msgstr " を次に書き込みました: "
 
-#: lib/isodumper.py:319 lib/isodumper.py:392
+#: lib/isodumper.py:319 lib/isodumper.py:394
 msgid "Image "
 msgstr "イメージ "
 
@@ -238,37 +238,6 @@ msgstr ""
 " アプリケーションを終了すると、ログを \n"
 " ホームディレクトリに書き込みます。"
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "ddプロセスがエラーで終了しました!"
-
-#~ msgid "ImageWriter"
-#~ msgstr "イメージライター"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>エラー</b>\n"
-#~ " ターゲットデバイスを見つけられませんでした。 \n"
-#~ "\n"
-#~ " イメージを書き込めるUSBメモリを \n"
-#~ " 接続する必要があります。"
-
 #, fuzzy
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -284,3 +253,34 @@ msgstr ""
 #~ " \n"
 #~ " アプリケーションを終了させると、ログファイルを\n"
 #~ " あなたのホーム ディレクトリに作成します。"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>エラー</b>\n"
+#~ " ターゲットデバイスを見つけられませんでした。 \n"
+#~ "\n"
+#~ " イメージを書き込めるUSBメモリを \n"
+#~ " 接続する必要があります。"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "イメージライター"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "ddプロセスがエラーで終了しました!"
+
+#~ msgid " "
+#~ msgstr " "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:21+0200\n"
+"POT-Creation-Date: 2014-10-26 13:49+0100\n"
 "PO-Revision-Date: 2009-03-05 12:06+0000\n"
 "Last-Translator: Tomáš Vadina <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -109,7 +109,7 @@ msgstr "Zapísané: "
 msgid " successfully written to "
 msgstr " úspešne zapísaný do "
 
-#: lib/isodumper.py:319 lib/isodumper.py:392
+#: lib/isodumper.py:319 lib/isodumper.py:394
 msgid "Image "
 msgstr "Obraz "
 
@@ -235,37 +235,6 @@ msgstr ""
 " Teraz môžete odpojiť USB zariadenie. Log súbor bude zapísaný\n"
 " do Vášho domovského priečinka po skončení aplikácie."
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Proces dd skončil s chybou!"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Chyba</b>\n"
-#~ " Žiadne cieľové zariadenie nenájdené.\n"
-#~ "\n"
-#~ " Musíte pripojiť USB zariadenie na ktoré\n"
-#~ " môže byť zapísaný obraz."
-
 #, fuzzy
 #~ msgid ""
 #~ "<b>Error</b>\n"
@@ -281,3 +250,34 @@ msgstr ""
 #~ "\n"
 #~ " Log súbor bude zapísaný do Vášho domovského\n"
 #~ " priečinka po skončení aplikácie."
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>Chyba</b>\n"
+#~ " Žiadne cieľové zariadenie nenájdené.\n"
+#~ "\n"
+#~ " Musíte pripojiť USB zariadenie na ktoré\n"
+#~ " môže byť zapísaný obraz."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Proces dd skončil s chybou!"
+
+#~ msgid " "
+#~ msgstr " "
