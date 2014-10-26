@@ -379,6 +379,8 @@ class IsoDumper:
         logfile.write(self.log.get_text(start, end, False))
         logfile.close()
 
+        print self.log.get_text(start, end, False)
+
     def logger(self, text):
         self.log.insert_at_cursor(text+"\n")
 
