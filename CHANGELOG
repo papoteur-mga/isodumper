@@ -1,7 +1,7 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
-IsoDumper 0.24
+IsoDumper 0.25
 ------------
 	  - change the name in .img for backup.
 	  - correction of the index not getting 100%.
@@ -9,6 +9,7 @@ IsoDumper 0.24
 	  - fix wrong progress steps with small images.
 	  - fix security issue writing log file.
 	  - add output on stdout of logs.
+	  - fix all windows position.
 
 IsoDumper 0.23
 ------------

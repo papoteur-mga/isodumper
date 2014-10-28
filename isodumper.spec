@@ -1,5 +1,5 @@
 Name:		isodumper
-Version:	0.24
+Version:	0.25
 Release:	%mkrel 1
 Summary:	Tool for writing ISO images on a USB stick
 Summary(fr_FR):	Outil pour écrire des images ISO sur une clé USB
