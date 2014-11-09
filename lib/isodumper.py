@@ -86,7 +86,7 @@ class IsoDumper:
         self.user = user
 
         # get glade tree
-        self.gladefile = "/usr/share/isodumper/isodumper.glade"
+        self.gladefile = "../share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -179,7 +179,9 @@ class IsoDumper:
                     break
             self.backup_select.set_sensitive(True)
             self.wTree.get_widget("format_button").set_sensitive(True)
-            self.wTree.get_widget("filechooserbutton").set_sensitive(True)
+            self.chooser.set_sensitive(True)
+            if self.chooser.get_current_folder_uri() == None :
+                self.chooser.set_current_folder_uri('file:///home/'+self.user)
             self.logger(_('Target Device: ')+ self.dev)
 
     def backup_sel(self,widget):
