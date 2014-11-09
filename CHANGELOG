@@ -12,6 +12,7 @@ IsoDumper 0.32
 	  - change the name in .img for backup.
 	  - formatting and updating all .po files.
 	  - recompiling all .mo files.
+	  - default folder to /home/user for image filepicker.
 
 IsoDumper 0.31
 ------------
