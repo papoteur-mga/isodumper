@@ -5,11 +5,11 @@
 #  Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 #  This file is distributed under the same license as the isodumper package.
 #
-#  This program is free software; you can redistribute it and/or 
-#  modify it under the terms of the GNU General Public License as 
+#  This program is free software; you can redistribute it and/or
+#  modify it under the terms of the GNU General Public License as
 #  published by the Free Software Foundation; either version 2 of the
 #  License, or (at your option) any later version.
-# 
+#
 #  This program is distributed in the hope that it will be useful,
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -59,18 +59,23 @@ def get_mounted(target):
              sys.exit(6)
 
 def raw_format(device_path, fstype, volume_label, uid, gid):
-  
+
     do_umount(device_path)
-    
+
     # First erase MBR and partition table , if any
     os.system ("dd if=/dev/zero of=%s bs=512 count=1 >/dev/null 2>&1" % device_path)
-    
+
     device = parted.getDevice(device_path)
-    
-    # Create a default partition set up                        
+
+    # Create a default partition set up
     disk = parted.freshDisk(device, 'msdos')
-    disk.commit()
-    regions = disk.getFreeSpaceRegions()    
+    try:
+        disk.commit()
+    except:
+        # Unable to write the new partition
+        print "Can't create partition. The device could be read-only."
+        sys.exit(5)
+    regions = disk.getFreeSpaceRegions()
 
     if len(regions) > 0:
         #print "Build partition"
@@ -79,7 +84,7 @@ def raw_format(device_path, fstype, volume_label, uid, gid):
         #print "start %s" % start
         end = device.getLength() - start - 1024
         #print end
-        
+
         # Alignment
         #cylinder = device.endSectorToCylinder(end)
         #end = device.endCylinderToSector(cylinder)
@@ -89,16 +94,16 @@ def raw_format(device_path, fstype, volume_label, uid, gid):
         except:
             print "Geometry error - Can't create partition"
             sys.exit(5)
-        
+
         # fstype
         fs = parted.FileSystem(type=fstype, geometry=geometry)
-        
+
         # Create partition
         partition = parted.Partition(disk=disk, type=parted.PARTITION_NORMAL, geometry=geometry, fs=fs)
         constraint = parted.Constraint(exactGeom=geometry)
         disk.addPartition(partition=partition, constraint=constraint)
         disk.commit()
-        
+
         # Format partition according to the fstype specified
         if fstype == "fat32":
             os.system("mkdosfs -F 32 -n \"%s\" %s >/dev/null 2>&1" % (volume_label, partition.path))
@@ -144,14 +149,14 @@ def main():
             uid = a
         elif o in ("-g"):
             gid = a
-    
+
     argc = len(sys.argv)
     if argc < 11:
       print "Too few arguments"
       print "for help use --help"
       exit(2)
-    
+
     raw_format(device, fstype, label, uid, gid)
-    
+
 if __name__ == "__main__":
     main()

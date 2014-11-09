@@ -1,6 +1,17 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
+IsoDumper 0.33
+------------
+	  - added a help button and dialog box.
+	  - added a Refresh button to find new devices.
+	  - added a UEFI feature, allowing creating a FAT32 stick, and copy the ISO file the new partition.
+	  - adding a catch for protected devices when formatting.
+	  - take the device size from the selected device, not the last one.
+	  - detect also SD-cards.
+	  - check the size for destination when backup.
+	  
+
 IsoDumper 0.32
 ------------
 	  - fix wrong progress steps with small images.
