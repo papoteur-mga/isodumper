@@ -41,13 +41,13 @@ Contributors
 
 Translators
 --------
-- Papoteur, Guillaume Bernard, Eric Barbero - French
-- Sergei Zivukov, AlexL, Fox909 - Russian
+- Papoteur, Guillaume Bernard, Eric Barbero, Rémi Verschelde - French
+- Sergei Zivukov, AlexL, Анатолий Валерианович, Valentin XliN Saikov - Russian
 - Yuri Chornoivan - Ukrainian
 - marja - Dutch
-- motitos, Miguel Ortega, Rodrigo Prieto - Spanish
+- motitos, Miguel Ortega, Rodrigo Prieto, Egoitz Rodriguez Obieta - Spanish
 - Marcello Anni - Italian
-- Atilla ÖNTAŞ, tarakbumba - Turkish
+- Atilla ÖNTAŞ, tarakbumba, Fırat Kutlu - Turkish
 - Filip Komar - Slovenian
 - Kristoffer Grundström, Michael Eklund - Swedish
 - You-Cheng Hsieh - Chinese Taiwan
@@ -64,3 +64,4 @@ Translators
 - Manuela Silva - Portuguese
 - Ḷḷumex03 - Asturian
 - Egoitz Rodriguez Obieta - Basque
+- Ardit Dani - Albanian

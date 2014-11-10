@@ -1,150 +1,149 @@
-# Romanian translation for isodumper package.
+# Albanian translation for isodumper package.
 # Copyright (C) 2013 THE isodumper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the isodumper package.
 #
 # Translators:
-# Automatically generated, 2013
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>, 2013-2014
+# Ardit Dani <ardit.dani@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: isodumper\n"
+"Project-Id-Version: Mageia\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-10 20:53+0100\n"
-"PO-Revision-Date: 2014-10-27 14:51+0000\n"
-"Last-Translator: Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>\n"
-"Language-Team: Romanian (http://www.transifex.com/projects/p/mageia/language/"
-"ro/)\n"
-"Language: ro\n"
+"PO-Revision-Date: 2014-11-10 01:47+0000\n"
+"Last-Translator: Ardit Dani <ardit.dani@gmail.com>\n"
+"Language-Team: Albanian (http://www.transifex.com/projects/p/mageia/language/"
+"sq/)\n"
+"Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
-"2:1));\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lib/isodumper.py:151
 msgid "Mb"
-msgstr "Mo"
+msgstr "Mb"
 
 #: lib/isodumper.py:162 lib/isodumper.py:313
 msgid "Target Device: "
-msgstr "Dispozitiv destinație:"
+msgstr "Pajisja Synuar:"
 
 #: lib/isodumper.py:186
 msgid "Backup in: "
-msgstr "Salvare pe:"
+msgstr "Regjistrim në:"
 
 #: lib/isodumper.py:249
 msgid "The device was formatted successfully."
-msgstr "Dispozitivul a fost formatat cu succes."
+msgstr "Pajisja është formatuar me sukses."
 
 #: lib/isodumper.py:253
 msgid "An error occurred while creating a partition."
-msgstr "S-a produs o eroare la crearea unei partiții."
+msgstr "Një gabim ka ndodhur gjatë krijimit të një ndarje."
 
 #: lib/isodumper.py:257
 msgid "Authentication error."
-msgstr "Eroare de autentificare."
+msgstr "Gabim vërtetimi."
 
 #: lib/isodumper.py:261
 msgid "An error occurred."
-msgstr "S-a produs o eroare."
+msgstr "Një gabim ndodhi ."
 
 #: lib/isodumper.py:291 share/isodumper/isodumper.glade.h:33
 msgid "Backup in:"
-msgstr "Salvare pe:"
+msgstr "Regjistrim në:"
 
 #: lib/isodumper.py:312
 msgid "Image: "
-msgstr "Imagine:"
+msgstr "Imazh: "
 
 #: lib/isodumper.py:316
 msgid "The device is too small to contain the ISO file."
-msgstr "Dispozitivul este prea mic ca să conține fișierul ISO."
+msgstr "Pajisja është shumë e vogël për të përmbajtur dokumentin ISO."
 
 #: lib/isodumper.py:323
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
-msgstr "Dispozitivul este mai mare de 32 Go. Sigur doriți să-l utilizați?"
+msgstr ""
+"Pajisja është më e madhe se 32 Gbytes. Jeni te sigurte qe doni ta përdorni "
+"atë?"
 
 #: lib/isodumper.py:350
 msgid "Unmounting all partitions of "
-msgstr "Se demontează toate partițiile de pe "
+msgstr "Ç'monto të gjitha ndarjet e"
 
 #: lib/isodumper.py:352
 msgid "Trying to unmount "
-msgstr "Se încearcă demontarea"
+msgstr "Përpjekje për ç'montimin"
 
 #: lib/isodumper.py:358
 msgid " was terminated by signal "
-msgstr "a fost terminat de semnal"
+msgstr "është ndërprerë nga sinjali"
 
 #: lib/isodumper.py:358 lib/isodumper.py:364
 msgid "Error, umount "
-msgstr "Eroare, demontare"
+msgstr "Gabim, ç'montim"
 
 #: lib/isodumper.py:362
 msgid " successfully unmounted"
-msgstr "demontare cu succes"
+msgstr "ç'montuar suksesshëm"
 
 #: lib/isodumper.py:364
 msgid " returned "
-msgstr "întors"
+msgstr "kthyer"
 
 #: lib/isodumper.py:367
 msgid "Execution failed: "
-msgstr "Execuție eșuată:"
+msgstr "Ekzekutimi dështoi:"
 
 #: lib/isodumper.py:375
 msgid "Could not read mtab !"
-msgstr "Nu s-a putut citi mtab!"
+msgstr "Nuk mund të lexoj mtab !"
 
 #: lib/isodumper.py:384 lib/isodumper.py:412
 msgid "Reading error."
-msgstr "Eroare la citire."
+msgstr "Gabim leximi."
 
 #: lib/isodumper.py:390
 msgid "You have not the rights for writing on the device"
-msgstr "Nu aveți dreptul de scriere pe dispozitiv"
+msgstr "Ju nuk keni të drejta për të shkruar në pajisje"
 
 #: lib/isodumper.py:396 lib/isodumper.py:397
 msgid " to "
-msgstr "pe"
+msgstr "tek"
 
 #: lib/isodumper.py:396
 msgid "Writing "
-msgstr "Scriere"
+msgstr "Shkrim"
 
 #: lib/isodumper.py:397
 msgid "Executing copy from "
-msgstr "Se copiază din"
+msgstr "Ekzekutim kopjes nga"
 
 #: lib/isodumper.py:417 lib/isodumper.py:430 lib/isodumper.py:439
 msgid "Writing error."
-msgstr "Eroare la scriere."
+msgstr "Gabim shkrimi."
 
 #: lib/isodumper.py:422
 msgid "Wrote: "
-msgstr "S-a scris: "
+msgstr "Shkroi:"
 
 #: lib/isodumper.py:434
 msgid " successfully written to "
-msgstr " scris cu succes pe "
+msgstr "shkruar me sukses në"
 
 #: lib/isodumper.py:434 lib/isodumper.py:526
 msgid "Image "
-msgstr "Imagine "
+msgstr "Imazhe"
 
 #: lib/isodumper.py:435
 msgid "Bytes written: "
-msgstr "Octeți scriși:"
+msgstr "Bajt shkruar:"
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr "Lansează Isodumper"
+msgstr "Ekzekuto Isodumper"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
-msgstr "Autentificare necesară pentru lansarea aplicației Isodumper"
+msgstr "Vërtetimi është i nevojshem për të ekzekutuar Isodumper"
 
 #: share/applications/isodumper.desktop.in.h:1
 #: share/isodumper/isodumper.glade.h:1
@@ -153,8 +152,7 @@ msgstr "IsoDumper"
 
 #: share/applications/isodumper.desktop.in.h:2
 msgid "A GUI tool to write .img and .iso files to USB Keys"
-msgstr ""
-"O interfață grafică pentru scrierea fișierelor .img și .iso pe cheile USB"
+msgstr "Një mjet GUI për të shkruar dokumente .img dhe .iso në Pajisjet USB"
 
 #: share/isodumper/isodumper.glade.h:2
 msgid ""
@@ -162,20 +160,20 @@ msgid ""
 "the backup will be unusable.\n"
 "Are you sure you want to quit during writing?"
 msgstr ""
-"Scrierea este în curs. Ieșirea în cursul scrierii va face ca dispozitivul "
-"sau copia de siguranță să nu poată fi utilizate.\n"
-"Sigur doriți să părăsiți în scursul scrierii?"
+"Shkrimi është në progres. Dalja gjatë të shkruarit do të japë që pajisja ose "
+"rregjitrimi do të jetë i papërdorshëm.\n"
+"A jeni i sigurt se doni të dilni gjatë shkruarit?"
 
 #: share/isodumper/isodumper.glade.h:4
 msgid ""
 "A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter."
 msgstr ""
-"O unealtă pentru scrierea imaginilor ISO pe o cheie USB. Este derivată din "
-"usb-imagewriter."
+"Një mjet për të shkruar imazhet ISO në një USB. Kjo është një degëzim i usb-"
+"imagewriter."
 
 #: share/isodumper/isodumper.glade.h:5
 msgid "Select"
-msgstr "Selectează"
+msgstr "Zgjedh"
 
 #: share/isodumper/isodumper.glade.h:6
 msgid ""
@@ -186,16 +184,16 @@ msgid ""
 " If you say ok here, please <b>do not unplug</b>\n"
 " the device during the following operation."
 msgstr ""
-"<b>Avertisment</b>\n"
-" Această operație va <b>distruge toate datele</b> de pe\n"
-" dispozitivul destinație, sigur doriți să continuați?\n"
+"<b>Paralajmërim</b>\n"
+" Kjo do të <b>shkatërrojë të gjitha të dhënat</b> mbi pajisje \n"
+"objektive, a jeni i sigurt se doni të vazhdohet?\n"
 "\n"
-" Dacă spuneți da aici, vă rugăm <b>să nu deconectați</b>\n"
-" dispozitivul în cursul operației următoare."
+"Nëse ju thoni dakord këtu, ju lutemi <b>mos shkëputni</b>\n"
+"pajisjen gjate operacionit vijues."
 
 #: share/isodumper/isodumper.glade.h:12
 msgid "Do you want to overwrite the file?"
-msgstr "Doriți să suprascrieți fișierul?"
+msgstr "Dëshironi të mbishkruani skedarin?"
 
 #: share/isodumper/isodumper.glade.h:13
 msgid ""
@@ -206,16 +204,16 @@ msgid ""
 " The application will be closed with this window, and a logfile\n"
 " isodumper.log  will be saved in your homedir/.isodumper "
 msgstr ""
-"<b>Eroare</b>\n"
-" Ceva nu a funcționat, priviți fereastra\n"
-" cu detalii pentru eroarea exactă.\n"
+"<b>Gabim</b>\n"
+"Diçka shkoi keq, ju lutem shikoni detajet\n"
+"dritare për gabimin e saktë.\n"
 "\n"
-" Un fișier isodumper.log cu conținutul va fi salvat în\n"
-" directoruldvs/.isodumper cînd se va închide aplicația."
+"Programi do të mbyllet me këtë dritare, dhe rezultatet e marra isodumper.log "
+"do të ruhet në homedir/.isodumper"
 
 #: share/isodumper/isodumper.glade.h:19
 msgid "Label for the device:"
-msgstr "Eticheta pentru dispozitivul:"
+msgstr "Emërtim për pajisjen:"
 
 #: share/isodumper/isodumper.glade.h:20
 msgid "FAT 32 (Windows)"
@@ -223,7 +221,7 @@ msgstr "FAT 32 (Windows)"
 
 #: share/isodumper/isodumper.glade.h:21
 msgid "The standard. The size of files are limited to 4Gb"
-msgstr "Standardul. Mărimea fișierelor este limitată la 4Go"
+msgstr "Standardi. Madhësia e skedarëve është të kufizuar në 4GB"
 
 #: share/isodumper/isodumper.glade.h:22
 msgid "NTFS (Windows)"
@@ -231,72 +229,72 @@ msgstr "NTFS (Windows)"
 
 #: share/isodumper/isodumper.glade.h:23
 msgid "To handle files bigger than 4Gb"
-msgstr "Pentru a manipula fișiere mai mari de 4Go"
+msgstr "Për të trajtuar skedarë më të mëdhenj se 4GB"
 
 #: share/isodumper/isodumper.glade.h:24
 msgid "ext4 (Linux)"
-msgstr "EXT4 (Linux)"
+msgstr "ext4 (Linux)"
 
 #: share/isodumper/isodumper.glade.h:25
 msgid "Only for Linux systems"
-msgstr "Numai pentru sistemele Linux"
+msgstr "Vetëm për sistemet Linux"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Device to work on:"
-msgstr "Dispozitivul pe care se lucrează:"
+msgstr "Pajisje për të punuar në:"
 
 #: share/isodumper/isodumper.glade.h:27
 msgid "Select target device to write the image to"
-msgstr "Selectați dispozitivul destinație pe care să scrieți imaginea"
+msgstr "Zgjidhni pajisje e synuar për të shkruar imazhin në të"
 
 #: share/isodumper/isodumper.glade.h:28
 msgid "Write Image:"
-msgstr "Scrie imaginea:"
+msgstr "Shkruani Imazhin:"
 
 #: share/isodumper/isodumper.glade.h:29
 msgid "Select an image file to be written to the device"
-msgstr "Selectați un fișier imagine ca să fie scris pe dispozitiv "
+msgstr "Zgjidh një dokument imazh të jetë e shkruar në pajisjen"
 
 #: share/isodumper/isodumper.glade.h:30
 msgid "Select Image"
-msgstr "Selectați imaginea"
+msgstr "Zgjidhni Imazhin"
 
 #: share/isodumper/isodumper.glade.h:31
 msgid "Write to device"
-msgstr "Scrie pe dispozitiv"
+msgstr "Shkruaj në pajisjen"
 
 #: share/isodumper/isodumper.glade.h:32
 msgid "Create a backup of the device as image to restore it later"
 msgstr ""
-"Creează o imagine a dispozitivului pentru a o putea restaura mai tîrziu "
+"Krijo një rregjistrim të pajisjes në imazhin për ta rivendosur atë më vonë"
 
 #: share/isodumper/isodumper.glade.h:35
 msgid "(None)"
-msgstr "(Neant)"
+msgstr "(Asnjë)"
 
 #: share/isodumper/isodumper.glade.h:36
 msgid "Select a folder in which to write the backup image"
-msgstr "Selectați un director în care să salvați imaginea "
+msgstr "Zgjidhni një dosje në të cilën të shkruani imazhin rezervë"
 
 #: share/isodumper/isodumper.glade.h:37
 msgid "Backup the device"
-msgstr "Salvează dispozitivul"
+msgstr "Rregjistro pajisjes"
 
 #: share/isodumper/isodumper.glade.h:38
 msgid "Format the device in FAT, NTFS or ext:"
-msgstr "Formatează dispozitivul în FAT, NTFS sau EXT:"
+msgstr "Formatimi i pajisjes në FAT, NTFS ose ext:"
 
 #: share/isodumper/isodumper.glade.h:39
 msgid "Choose the format. The device will be formatted in one partition"
-msgstr "Alegeți formatul. Dispozitivul va fi formatat într-o singură partiție"
+msgstr "Zgjidhni formatin. Pajisja do të formatohet në një ndarje"
 
 #: share/isodumper/isodumper.glade.h:40
 msgid "Format the device"
-msgstr "Formatează dispozitivul"
+msgstr "Formatoni pajisjen"
 
 #: share/isodumper/isodumper.glade.h:41
 msgid "Details"
-msgstr "Detalii"
+msgstr "Detajet"
 
 #: share/isodumper/isodumper.glade.h:42
 msgid ""
@@ -306,11 +304,11 @@ msgid ""
 " You need to plug in a USB Key\n"
 " to which the image can be written."
 msgstr ""
-"<b>Avertisment</b>\n"
-" Nu s-a găsit dispozitivul destinație. \n"
+"<b>Paralajmërim</b>\n"
+"Nuk u gjend pajisja e synuar. \n"
 "\n"
-" Trebuie să conectați o cheie USB pe\n"
-" care să poată fi scrisă imaginea."
+"Ju duhet të vini në prizë një Pajisje USB \n"
+"për të cilat imazhi mund të shkruhet."
 
 #: share/isodumper/isodumper.glade.h:47
 msgid ""
@@ -321,9 +319,9 @@ msgid ""
 " of the operation will be saved in your homedir/.isodumper/ when\n"
 " you close the application."
 msgstr ""
-"<b>Succes</b>\n"
-" Operația a fost scrisă efectuată cu succes.\n"
+"<b>Sukses</b>\n"
+"Operacioni është kryer me sukses.\n"
 " \n"
-" Puteți deconecta acum, fișierul jurnal isodumper.log \n"
-" al operației va fi salvat în directoruldvs/.isodumper/ cînd\n"
-" veți închide aplicația."
+"Ju jeni të lirë ta stakoni tani, një isodumper.log i \n"
+"operacionit do të ruhen në homedir/.isodumper/ kur \n"
+"ju të mbyllni programin"

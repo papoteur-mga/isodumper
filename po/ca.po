@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:36+0200\n"
+"POT-Creation-Date: 2014-11-10 20:53+0100\n"
 "PO-Revision-Date: 2009-06-12 12:05+0000\n"
 "Last-Translator: Siegfried Gevatter <rainct@ubuntu.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
@@ -23,117 +23,117 @@ msgstr ""
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:160 lib/isodumper.py:311
+#: lib/isodumper.py:162 lib/isodumper.py:313
 msgid "Target Device: "
 msgstr "Dispositiu de destí: "
 
-#: lib/isodumper.py:184
+#: lib/isodumper.py:186
 msgid "Backup in: "
 msgstr ""
 
-#: lib/isodumper.py:247
+#: lib/isodumper.py:249
 msgid "The device was formatted successfully."
 msgstr ""
 
-#: lib/isodumper.py:251
+#: lib/isodumper.py:253
 msgid "An error occurred while creating a partition."
 msgstr ""
 
-#: lib/isodumper.py:255
+#: lib/isodumper.py:257
 msgid "Authentication error."
 msgstr ""
 
-#: lib/isodumper.py:259
+#: lib/isodumper.py:261
 msgid "An error occurred."
 msgstr ""
 
-#: lib/isodumper.py:289 share/isodumper/isodumper.glade.h:33
+#: lib/isodumper.py:291 share/isodumper/isodumper.glade.h:33
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:310
+#: lib/isodumper.py:312
 msgid "Image: "
 msgstr "Imatge: "
 
-#: lib/isodumper.py:314
+#: lib/isodumper.py:316
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:321
+#: lib/isodumper.py:323
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:348
+#: lib/isodumper.py:350
 msgid "Unmounting all partitions of "
 msgstr "Desmuntant totes les particions de "
 
-#: lib/isodumper.py:350
+#: lib/isodumper.py:352
 msgid "Trying to unmount "
 msgstr "Intentant desmuntar "
 
-#: lib/isodumper.py:356
+#: lib/isodumper.py:358
 msgid " was terminated by signal "
 msgstr " s'ha acabat per un senyal "
 
-#: lib/isodumper.py:356 lib/isodumper.py:362
+#: lib/isodumper.py:358 lib/isodumper.py:364
 msgid "Error, umount "
 msgstr "Error, desmunta "
 
-#: lib/isodumper.py:360
+#: lib/isodumper.py:362
 msgid " successfully unmounted"
 msgstr " desmuntat amb èxit"
 
-#: lib/isodumper.py:362
+#: lib/isodumper.py:364
 msgid " returned "
 msgstr " ha retornat "
 
-#: lib/isodumper.py:365
+#: lib/isodumper.py:367
 msgid "Execution failed: "
 msgstr "Execució fallida: "
 
-#: lib/isodumper.py:373
+#: lib/isodumper.py:375
 msgid "Could not read mtab !"
 msgstr "No s'ha pogut llegir mtab!"
 
-#: lib/isodumper.py:382 lib/isodumper.py:410
+#: lib/isodumper.py:384 lib/isodumper.py:412
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:388
+#: lib/isodumper.py:390
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:394 lib/isodumper.py:395
+#: lib/isodumper.py:396 lib/isodumper.py:397
 msgid " to "
 msgstr " a "
 
-#: lib/isodumper.py:394
+#: lib/isodumper.py:396
 msgid "Writing "
 msgstr "Escrivint "
 
-#: lib/isodumper.py:395
+#: lib/isodumper.py:397
 #, fuzzy
 msgid "Executing copy from "
 msgstr "Executant : dd if="
 
-#: lib/isodumper.py:415 lib/isodumper.py:428 lib/isodumper.py:437
+#: lib/isodumper.py:417 lib/isodumper.py:430 lib/isodumper.py:439
 #, fuzzy
 msgid "Writing error."
 msgstr "Escrivint "
 
-#: lib/isodumper.py:420
+#: lib/isodumper.py:422
 msgid "Wrote: "
 msgstr "Ha escrit: "
 
-#: lib/isodumper.py:432
+#: lib/isodumper.py:434
 msgid " successfully written to "
 msgstr " ha estat escrit amb èxit a "
 
-#: lib/isodumper.py:432 lib/isodumper.py:524
+#: lib/isodumper.py:434 lib/isodumper.py:526
 msgid "Image "
 msgstr "Imatge "
 
-#: lib/isodumper.py:433
+#: lib/isodumper.py:435
 msgid "Bytes written: "
 msgstr ""
 
@@ -303,56 +303,6 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "El procés dd ha acabat amb un error."
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "Aborta"
-
-#~ msgid "gtk-close"
-#~ msgstr "Tanca"
-
-#~ msgid "gtk-ok"
-#~ msgstr "D'acord"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Error</b>\n"
-#~ " No s'ha trobat cap dispositiu de destí.\n"
-#~ "\n"
-#~ " Heu d'introduir una clau USB a la qual\n"
-#~ " es pugui escriure la imatge."
-
-#~ msgid "to"
-#~ msgstr "a"
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Error</b>\n"
-#~ " Alguna cosa ha anat malament, vegeu\n"
-#~ " la finestra de detalls per a l'error exacte.\n"
-#~ " \n"
-#~ " Se'n desarà el contingut en un fitxer de register\n"
-#~ " al vostre directori personal si tanqueu l'aplicació"
-
 #, fuzzy
 #~ msgid ""
 #~ "<b>Success</b>\n"
@@ -370,3 +320,53 @@ msgstr ""
 #~ " Ara podeu desconnectar-lo; es desarà un\n"
 #~ " registre de l'operació al vostre directori\n"
 #~ " personal quan tanqueu l'aplicació."
+
+#, fuzzy
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>Error</b>\n"
+#~ " Alguna cosa ha anat malament, vegeu\n"
+#~ " la finestra de detalls per a l'error exacte.\n"
+#~ " \n"
+#~ " Se'n desarà el contingut en un fitxer de register\n"
+#~ " al vostre directori personal si tanqueu l'aplicació"
+
+#~ msgid "to"
+#~ msgstr "a"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>Error</b>\n"
+#~ " No s'ha trobat cap dispositiu de destí.\n"
+#~ "\n"
+#~ " Heu d'introduir una clau USB a la qual\n"
+#~ " es pugui escriure la imatge."
+
+#~ msgid "gtk-ok"
+#~ msgstr "D'acord"
+
+#~ msgid "gtk-close"
+#~ msgstr "Tanca"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "Aborta"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "El procés dd ha acabat amb un error."
+
+#~ msgid " "
+#~ msgstr " "

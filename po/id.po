@@ -5,15 +5,15 @@
 # Translators:
 # Automatically generated, 2013
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
-# Kiki <kiki.syahadat@yahoo.co.id>, 2014
+# Kiki <kiki.syahadat@yahoo.co.id>, 2013-2014
 # Kiki <kiki.syahadat@yahoo.co.id>, 2013
 # Kiki <kiki.syahadat@yahoo.co.id>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:36+0200\n"
-"PO-Revision-Date: 2014-07-11 18:30+0000\n"
+"POT-Creation-Date: 2014-11-10 20:53+0100\n"
+"PO-Revision-Date: 2014-10-29 16:11+0000\n"
 "Last-Translator: Kiki <kiki.syahadat@yahoo.co.id>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/mageia/"
 "language/id/)\n"
@@ -27,116 +27,116 @@ msgstr ""
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:160 lib/isodumper.py:311
+#: lib/isodumper.py:162 lib/isodumper.py:313
 msgid "Target Device: "
 msgstr "Perangkat Target: "
 
-#: lib/isodumper.py:184
+#: lib/isodumper.py:186
 msgid "Backup in: "
 msgstr "Backup di: "
 
-#: lib/isodumper.py:247
+#: lib/isodumper.py:249
 msgid "The device was formatted successfully."
 msgstr "Perangkat berhasil diformat."
 
-#: lib/isodumper.py:251
+#: lib/isodumper.py:253
 msgid "An error occurred while creating a partition."
 msgstr "Kesalahan terjadi saat membuat partisi."
 
-#: lib/isodumper.py:255
+#: lib/isodumper.py:257
 msgid "Authentication error."
 msgstr "Otentikasi salah."
 
-#: lib/isodumper.py:259
+#: lib/isodumper.py:261
 msgid "An error occurred."
 msgstr "Terjadi kesalahan."
 
-#: lib/isodumper.py:289 share/isodumper/isodumper.glade.h:33
+#: lib/isodumper.py:291 share/isodumper/isodumper.glade.h:33
 msgid "Backup in:"
 msgstr "Backup di:"
 
-#: lib/isodumper.py:310
+#: lib/isodumper.py:312
 msgid "Image: "
 msgstr "Image: "
 
-#: lib/isodumper.py:314
+#: lib/isodumper.py:316
 msgid "The device is too small to contain the ISO file."
 msgstr "Perangkat terlalu kecil untuk file ISO."
 
-#: lib/isodumper.py:321
+#: lib/isodumper.py:323
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Perangkat lebih besar dari 32Gbyte. Apakah Anda yakin akan menggunakannya?"
 
-#: lib/isodumper.py:348
+#: lib/isodumper.py:350
 msgid "Unmounting all partitions of "
 msgstr "Melepas semua partisi dari "
 
-#: lib/isodumper.py:350
+#: lib/isodumper.py:352
 msgid "Trying to unmount "
 msgstr "Mencoba untuk melepas "
 
-#: lib/isodumper.py:356
+#: lib/isodumper.py:358
 msgid " was terminated by signal "
 msgstr " dihentikan oleh sinyal "
 
-#: lib/isodumper.py:356 lib/isodumper.py:362
+#: lib/isodumper.py:358 lib/isodumper.py:364
 msgid "Error, umount "
 msgstr "Error, melepaskan "
 
-#: lib/isodumper.py:360
+#: lib/isodumper.py:362
 msgid " successfully unmounted"
 msgstr " berhasil dilepaskan"
 
-#: lib/isodumper.py:362
+#: lib/isodumper.py:364
 msgid " returned "
 msgstr " dikembalikan "
 
-#: lib/isodumper.py:365
+#: lib/isodumper.py:367
 msgid "Execution failed: "
 msgstr "Eksekusi gagal: "
 
-#: lib/isodumper.py:373
+#: lib/isodumper.py:375
 msgid "Could not read mtab !"
 msgstr "Tidak bisa membaca mtab!"
 
-#: lib/isodumper.py:382 lib/isodumper.py:410
+#: lib/isodumper.py:384 lib/isodumper.py:412
 msgid "Reading error."
 msgstr "Error membaca."
 
-#: lib/isodumper.py:388
+#: lib/isodumper.py:390
 msgid "You have not the rights for writing on the device"
 msgstr "Anda tidak memiliki izin untuk menulisi perangkat"
 
-#: lib/isodumper.py:394 lib/isodumper.py:395
+#: lib/isodumper.py:396 lib/isodumper.py:397
 msgid " to "
 msgstr " ke "
 
-#: lib/isodumper.py:394
+#: lib/isodumper.py:396
 msgid "Writing "
 msgstr "Menulisi "
 
-#: lib/isodumper.py:395
+#: lib/isodumper.py:397
 msgid "Executing copy from "
 msgstr "Mengeksekusi salin dari"
 
-#: lib/isodumper.py:415 lib/isodumper.py:428 lib/isodumper.py:437
+#: lib/isodumper.py:417 lib/isodumper.py:430 lib/isodumper.py:439
 msgid "Writing error."
 msgstr "Error menulisi."
 
-#: lib/isodumper.py:420
+#: lib/isodumper.py:422
 msgid "Wrote: "
 msgstr "Ditulis: "
 
-#: lib/isodumper.py:432
+#: lib/isodumper.py:434
 msgid " successfully written to "
 msgstr " berhasil ditulis ke "
 
-#: lib/isodumper.py:432 lib/isodumper.py:524
+#: lib/isodumper.py:434 lib/isodumper.py:526
 msgid "Image "
 msgstr "Image "
 
-#: lib/isodumper.py:433
+#: lib/isodumper.py:435
 msgid "Bytes written: "
 msgstr "Byte tertulis:"
 
@@ -195,7 +195,7 @@ msgstr ""
 
 #: share/isodumper/isodumper.glade.h:12
 msgid "Do you want to overwrite the file?"
-msgstr ""
+msgstr "Apakah Anda ingin menimpanya?"
 
 #: share/isodumper/isodumper.glade.h:13
 msgid ""

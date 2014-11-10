@@ -10,9 +10,10 @@ IsoDumper 0.32
 	  - added a dialog box to confirm overwriting backup file.
 	  - adding the path in the destination name for backup file.
 	  - change the name in .img for backup.
+	  - default folder to /home/user for image filepicker.
+	  - added a new translation on Albanian. (Thanks Ardit Dani).
 	  - formatting and updating all .po files.
 	  - recompiling all .mo files.
-	  - default folder to /home/user for image filepicker.
 
 IsoDumper 0.31
 ------------
