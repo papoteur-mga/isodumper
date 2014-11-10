@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:36+0200\n"
+"POT-Creation-Date: 2014-11-10 20:53+0100\n"
 "PO-Revision-Date: 2008-11-13 17:10+0000\n"
 "Last-Translator: This.dramzinn <This.dramzinn@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -23,117 +23,117 @@ msgstr ""
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:160 lib/isodumper.py:311
+#: lib/isodumper.py:162 lib/isodumper.py:313
 msgid "Target Device: "
 msgstr "대상 장치: "
 
-#: lib/isodumper.py:184
+#: lib/isodumper.py:186
 msgid "Backup in: "
 msgstr ""
 
-#: lib/isodumper.py:247
+#: lib/isodumper.py:249
 msgid "The device was formatted successfully."
 msgstr ""
 
-#: lib/isodumper.py:251
+#: lib/isodumper.py:253
 msgid "An error occurred while creating a partition."
 msgstr ""
 
-#: lib/isodumper.py:255
+#: lib/isodumper.py:257
 msgid "Authentication error."
 msgstr ""
 
-#: lib/isodumper.py:259
+#: lib/isodumper.py:261
 msgid "An error occurred."
 msgstr ""
 
-#: lib/isodumper.py:289 share/isodumper/isodumper.glade.h:33
+#: lib/isodumper.py:291 share/isodumper/isodumper.glade.h:33
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:310
+#: lib/isodumper.py:312
 msgid "Image: "
 msgstr "이미지: "
 
-#: lib/isodumper.py:314
+#: lib/isodumper.py:316
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:321
+#: lib/isodumper.py:323
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:348
+#: lib/isodumper.py:350
 msgid "Unmounting all partitions of "
 msgstr "모든 파티션 마운트 제거합니다. "
 
-#: lib/isodumper.py:350
+#: lib/isodumper.py:352
 msgid "Trying to unmount "
 msgstr "마운트 제거를 시행합니다. "
 
-#: lib/isodumper.py:356
+#: lib/isodumper.py:358
 msgid " was terminated by signal "
 msgstr " 신호를 종료합니다. "
 
-#: lib/isodumper.py:356 lib/isodumper.py:362
+#: lib/isodumper.py:358 lib/isodumper.py:364
 msgid "Error, umount "
 msgstr "마운트 제거 에러 "
 
-#: lib/isodumper.py:360
+#: lib/isodumper.py:362
 msgid " successfully unmounted"
 msgstr " 마운트 제거를 성공했습니다."
 
-#: lib/isodumper.py:362
+#: lib/isodumper.py:364
 msgid " returned "
 msgstr " 돌아옵니다. "
 
-#: lib/isodumper.py:365
+#: lib/isodumper.py:367
 msgid "Execution failed: "
 msgstr "실행 실패: "
 
-#: lib/isodumper.py:373
+#: lib/isodumper.py:375
 msgid "Could not read mtab !"
 msgstr "mtab를 읽을 수 없다."
 
-#: lib/isodumper.py:382 lib/isodumper.py:410
+#: lib/isodumper.py:384 lib/isodumper.py:412
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:388
+#: lib/isodumper.py:390
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:394 lib/isodumper.py:395
+#: lib/isodumper.py:396 lib/isodumper.py:397
 msgid " to "
 msgstr " 부터 "
 
-#: lib/isodumper.py:394
+#: lib/isodumper.py:396
 msgid "Writing "
 msgstr "쓰다 "
 
-#: lib/isodumper.py:395
+#: lib/isodumper.py:397
 #, fuzzy
 msgid "Executing copy from "
 msgstr "실행하다 : dd if="
 
-#: lib/isodumper.py:415 lib/isodumper.py:428 lib/isodumper.py:437
+#: lib/isodumper.py:417 lib/isodumper.py:430 lib/isodumper.py:439
 #, fuzzy
 msgid "Writing error."
 msgstr "쓰다 "
 
-#: lib/isodumper.py:420
+#: lib/isodumper.py:422
 msgid "Wrote: "
 msgstr "썼다 : "
 
-#: lib/isodumper.py:432
+#: lib/isodumper.py:434
 msgid " successfully written to "
 msgstr " 성공적으로 쓰여진다. "
 
-#: lib/isodumper.py:432 lib/isodumper.py:524
+#: lib/isodumper.py:434 lib/isodumper.py:526
 msgid "Image "
 msgstr "이미지 "
 
-#: lib/isodumper.py:433
+#: lib/isodumper.py:435
 msgid "Bytes written: "
 msgstr ""
 
@@ -303,39 +303,22 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd 처리과정 종료시 오류발생"
-
-#~ msgid "ImageWriter"
-#~ msgstr "이미지제작가"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-취소"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-닫기"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-확인"
-
+#, fuzzy
 #~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
+#~ "<b>Success</b>\n"
+#~ " The image was successfully written to the\n"
+#~ " target device.\n"
+#~ " \n"
+#~ " You are free to unplug it now, a log isodumper.log \n"
+#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
+#~ " you close the application."
 #~ msgstr ""
-#~ "<b>오류</b>\n"
-#~ "(목적) 장치를 찾을 수 없습니다.\n"
+#~ "<b>성공</b>\n"
+#~ "그 이미지가 성공적으로 \n"
+#~ "장치에 쓰인다면\n"
 #~ "\n"
-#~ "USB 키를 입력할 필요가 있습니다.\n"
-#~ "그 이미지와 같은 것은 쓰여질 수 있습니다."
-
-#~ msgid "to"
-#~ msgstr "으로"
+#~ "지금 그것(장치)를 제거해도 괜찮습니다, 만약 사용(응용)을 종료하게 되면,\n"
+#~ "그 기록은 당신의 홈디렉토리에 저장되도록 작동할 것입니다."
 
 #, fuzzy
 #~ msgid ""
@@ -353,19 +336,36 @@ msgstr ""
 #~ "그 기록파일은 만약 응용프로그램이 끝나는 경우가 발생하면 \n"
 #~ "당신의 홈 디렉토리에 저장된다."
 
-#, fuzzy
+#~ msgid "to"
+#~ msgstr "으로"
+
 #~ msgid ""
-#~ "<b>Success</b>\n"
-#~ " The image was successfully written to the\n"
-#~ " target device.\n"
-#~ " \n"
-#~ " You are free to unplug it now, a log isodumper.log \n"
-#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
-#~ " you close the application."
-#~ msgstr ""
-#~ "<b>성공</b>\n"
-#~ "그 이미지가 성공적으로 \n"
-#~ "장치에 쓰인다면\n"
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
 #~ "\n"
-#~ "지금 그것(장치)를 제거해도 괜찮습니다, 만약 사용(응용)을 종료하게 되면,\n"
-#~ "그 기록은 당신의 홈디렉토리에 저장되도록 작동할 것입니다."
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>오류</b>\n"
+#~ "(목적) 장치를 찾을 수 없습니다.\n"
+#~ "\n"
+#~ "USB 키를 입력할 필요가 있습니다.\n"
+#~ "그 이미지와 같은 것은 쓰여질 수 있습니다."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-확인"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-닫기"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-취소"
+
+#~ msgid "ImageWriter"
+#~ msgstr "이미지제작가"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd 처리과정 종료시 오류발생"
+
+#~ msgid " "
+#~ msgstr " "

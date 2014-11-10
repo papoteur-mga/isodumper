@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-25 15:36+0200\n"
+"POT-Creation-Date: 2014-11-10 20:53+0100\n"
 "PO-Revision-Date: 2008-11-04 12:31+0000\n"
 "Last-Translator: Bjørn Olav Samdal <bjornsam@ulrik.uio.no>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
@@ -23,117 +23,117 @@ msgstr ""
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:160 lib/isodumper.py:311
+#: lib/isodumper.py:162 lib/isodumper.py:313
 msgid "Target Device: "
 msgstr "Mål Enhet: "
 
-#: lib/isodumper.py:184
+#: lib/isodumper.py:186
 msgid "Backup in: "
 msgstr ""
 
-#: lib/isodumper.py:247
+#: lib/isodumper.py:249
 msgid "The device was formatted successfully."
 msgstr ""
 
-#: lib/isodumper.py:251
+#: lib/isodumper.py:253
 msgid "An error occurred while creating a partition."
 msgstr ""
 
-#: lib/isodumper.py:255
+#: lib/isodumper.py:257
 msgid "Authentication error."
 msgstr ""
 
-#: lib/isodumper.py:259
+#: lib/isodumper.py:261
 msgid "An error occurred."
 msgstr ""
 
-#: lib/isodumper.py:289 share/isodumper/isodumper.glade.h:33
+#: lib/isodumper.py:291 share/isodumper/isodumper.glade.h:33
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:310
+#: lib/isodumper.py:312
 msgid "Image: "
 msgstr "Bilde: "
 
-#: lib/isodumper.py:314
+#: lib/isodumper.py:316
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:321
+#: lib/isodumper.py:323
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:348
+#: lib/isodumper.py:350
 msgid "Unmounting all partitions of "
 msgstr "Fjern alle partisjoner som "
 
-#: lib/isodumper.py:350
+#: lib/isodumper.py:352
 msgid "Trying to unmount "
 msgstr "Prøver å avmontere "
 
-#: lib/isodumper.py:356
+#: lib/isodumper.py:358
 msgid " was terminated by signal "
 msgstr " ble avsluttet med melding "
 
-#: lib/isodumper.py:356 lib/isodumper.py:362
+#: lib/isodumper.py:358 lib/isodumper.py:364
 msgid "Error, umount "
 msgstr "Feil, avmonter "
 
-#: lib/isodumper.py:360
+#: lib/isodumper.py:362
 msgid " successfully unmounted"
 msgstr " avmontering vellykket"
 
-#: lib/isodumper.py:362
+#: lib/isodumper.py:364
 msgid " returned "
 msgstr " tilbakestilt "
 
-#: lib/isodumper.py:365
+#: lib/isodumper.py:367
 msgid "Execution failed: "
 msgstr "Utførelse feilet: "
 
-#: lib/isodumper.py:373
+#: lib/isodumper.py:375
 msgid "Could not read mtab !"
 msgstr "Kunne ikke lese mtab !"
 
-#: lib/isodumper.py:382 lib/isodumper.py:410
+#: lib/isodumper.py:384 lib/isodumper.py:412
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:388
+#: lib/isodumper.py:390
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:394 lib/isodumper.py:395
+#: lib/isodumper.py:396 lib/isodumper.py:397
 msgid " to "
 msgstr " til "
 
-#: lib/isodumper.py:394
+#: lib/isodumper.py:396
 msgid "Writing "
 msgstr "Skriving "
 
-#: lib/isodumper.py:395
+#: lib/isodumper.py:397
 #, fuzzy
 msgid "Executing copy from "
 msgstr "Utføring: dd if="
 
-#: lib/isodumper.py:415 lib/isodumper.py:428 lib/isodumper.py:437
+#: lib/isodumper.py:417 lib/isodumper.py:430 lib/isodumper.py:439
 #, fuzzy
 msgid "Writing error."
 msgstr "Skriving "
 
-#: lib/isodumper.py:420
+#: lib/isodumper.py:422
 msgid "Wrote: "
 msgstr "Skrev: "
 
-#: lib/isodumper.py:432
+#: lib/isodumper.py:434
 msgid " successfully written to "
 msgstr " vellykket skrevet til "
 
-#: lib/isodumper.py:432 lib/isodumper.py:524
+#: lib/isodumper.py:434 lib/isodumper.py:526
 msgid "Image "
 msgstr "Bilde "
 
-#: lib/isodumper.py:433
+#: lib/isodumper.py:435
 msgid "Bytes written: "
 msgstr ""
 
@@ -303,56 +303,6 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Prosessen dd stoppet med en feil !"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageSkriver"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-lukk"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
-#~ msgstr ""
-#~ "<b>Error</b>\n"
-#~ " Ingen mål enheter er funnet.  \n"
-#~ "\n"
-#~ " Du trenger å plugge inn en USB Nøkkel\n"
-#~ " for å kunne skrive til enheten."
-
-#~ msgid "to"
-#~ msgstr "til"
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " Something went wrong, please see the details\n"
-#~ " window for the exact error.\n"
-#~ " \n"
-#~ " A logfile isodumper.log with the content will be saved in your\n"
-#~ " homedir/.isodumper when the application is closed."
-#~ msgstr ""
-#~ "<b>Feilmelding</b>\n"
-#~ " Noe ble feil, se detaljer i\n"
-#~ " vindu for feilmeldinger.\n"
-#~ "\n"
-#~ " En logfil med feilmeldingen blir lagret i din\n"
-#~ " hjemmekatalog når programmet avsluttes."
-
 #, fuzzy
 #~ msgid ""
 #~ "<b>Success</b>\n"
@@ -370,3 +320,53 @@ msgstr ""
 #~ " Du kan fjerne tilkoblet tilkoblet medium, en log fil fra\n"
 #~ " operasjonen vil bli lagret i din hjemmekatalog hvis\n"
 #~ " du avslutter applikasjonen."
+
+#, fuzzy
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " Something went wrong, please see the details\n"
+#~ " window for the exact error.\n"
+#~ " \n"
+#~ " A logfile isodumper.log with the content will be saved in your\n"
+#~ " homedir/.isodumper when the application is closed."
+#~ msgstr ""
+#~ "<b>Feilmelding</b>\n"
+#~ " Noe ble feil, se detaljer i\n"
+#~ " vindu for feilmeldinger.\n"
+#~ "\n"
+#~ " En logfil med feilmeldingen blir lagret i din\n"
+#~ " hjemmekatalog når programmet avsluttes."
+
+#~ msgid "to"
+#~ msgstr "til"
+
+#~ msgid ""
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>Error</b>\n"
+#~ " Ingen mål enheter er funnet.  \n"
+#~ "\n"
+#~ " Du trenger å plugge inn en USB Nøkkel\n"
+#~ " for å kunne skrive til enheten."
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-lukk"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageSkriver"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Prosessen dd stoppet med en feil !"
+
+#~ msgid " "
+#~ msgstr " "
