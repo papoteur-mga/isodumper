@@ -23,7 +23,6 @@ Are you sure you want to quit during writing?</property>
     <property name="icon_name">isodumper</property>
     <property name="type_hint">dialog</property>
     <property name="transient_for">main_dialog</property>
-    <property name="has_separator">True</property>
     <property name="program_name">IsoDumper</property>
     <property name="copyright">© 2013-2014 Mageia</property>
     <property name="comments" translatable="yes">A tool for writing ISO images on a USB stick. It's a fork of usb-imagewriter.</property>
