@@ -75,7 +75,7 @@ class IsoDumper:
     def __init__(self,user):
         APP="isodumper"
         DIR="/usr/share/locale"
-        RELEASE="v0.33"
+        RELEASE="v0.40"
 
         gettext.bindtextdomain(APP, DIR)
         gettext.textdomain(APP)

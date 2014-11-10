@@ -1,7 +1,7 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
-IsoDumper 0.33
+IsoDumper 0.40
 ------------
 	  - added a help button and dialog box.
 	  - added a Refresh button to find new devices.
@@ -10,7 +10,6 @@ IsoDumper 0.33
 	  - take the device size from the selected device, not the last one.
 	  - detect also SD-cards.
 	  - check the size for destination when backup.
-	  
 
 IsoDumper 0.32
 ------------
@@ -21,6 +20,8 @@ IsoDumper 0.32
 	  - added a dialog box to confirm overwriting backup file.
 	  - adding the path in the destination name for backup file.
 	  - change the name in .img for backup.
+	  - default folder to /home/user for image filepicker.
+	  - added a new translation on Albanian. (Thanks Ardit Dani)
 	  - formatting and updating all .po files.
 	  - recompiling all .mo files.
 

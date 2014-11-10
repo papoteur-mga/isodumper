@@ -377,13 +377,13 @@ Public License instead of this License.
 * Clément Lefebvre
 
 * david.david &lt;david.david@mageialinux-online.org&gt;</property>
-    <property name="translator_credits">* Papoteur, Guillaume Bernard, Eric Barbero - (French)
-* Sergei Zivukov, AlexL, Fox909 - (Russian)
+    <property name="translator_credits">* Papoteur, Guillaume Bernard, Eric Barbero, Rémi Verschelde - (French)
+* Sergei Zivukov, AlexL, Анатолий Валерианович, Valentin XliN Saikov - (Russian)
 * Yuri Chornoivan - (Ukrainian)
 * marja - (Dutch)
-* motitos, Miguel Ortega, Rodrigo Prieto - (Spanish)
+* motitos, Miguel Ortega, Rodrigo Prieto, Egoitz Rodriguez Obieta - (Spanish)
 * Marcello Anni - (Italian)
-* Atilla ÖNTAŞ - (Turkish)
+* Atilla ÖNTAŞ, tarakbumba, Fırat Kutlu - (Turkish)
 * Filip Komar - (Slovenian)
 * Kristoffer Grundström, Michael Eklund - (Swedish)
 * You-Cheng Hsieh - Chinese (Taiwan)
@@ -399,7 +399,8 @@ Public License instead of this License.
 * richardshaylo, MrsB - (English (United Kingdom))
 * Manuela Silva - (Portuguese)
 * Ḷḷumex03 - (Asturian)
-* Egoitz Rodriguez Obieta - (Basque)</property>
+* Egoitz Rodriguez Obieta - (Basque)
+* Ardit Dani - (Albanian)</property>
     <property name="logo_icon_name">isodumper</property>
     <child internal-child="vbox">
       <widget class="GtkVBox" id="dialog-vbox6">
