@@ -26,7 +26,7 @@
 import gtk
 import gtk.glade
 import gobject
-import os
+import os, re
 import io
 import gettext
 from gettext import gettext as _
@@ -34,42 +34,151 @@ from subprocess import call, Popen, PIPE
 import time
 import dbus
 
-def find_devices():
-    bus = dbus.SystemBus()
-    proxy = bus.get_object("org.freedesktop.UDisks", "/org/freedesktop/UDisks")
-    iface = dbus.Interface(proxy, "org.freedesktop.UDisks")
-    devs=iface.EnumerateDevices()
-    list=[]
 
-    for dev in devs:
-        dev_obj = bus.get_object("org.freedesktop.UDisks", dev)
-        dev = dbus.Interface(dev_obj, "org.freedesktop.DBus.Properties")
-        item=[]
-        dci=str(dev.Get('', 'DriveConnectionInterface'))
-        if (dci == 'usb' or dci == 'sdio') and not str(dev.Get('', 'PartitionType')) and str(dev.Get('', 'DeviceIsMediaAvailable')) == '1':
-		vend = str(dev.Get('', 'DriveVendor'))
-    		path = str(dev.Get('', 'DeviceFile'))
-     		name = str(dev.Get('', 'DriveModel'))
-    		size = str(dev.Get('', 'DeviceSize'))
-    		item.append(vend+" "+name)
-    		item.append(path)
-    		item.append(size)
-    		list.append(item)
-    return list
+class NoUDisks2(Exception):
+    pass
 
-def mount(device, fs):
-    res = ''
-    _bus = dbus.SystemBus()
-    _proxy = _bus.get_object('org.freedesktop.UDisks','/org/freedesktop/UDisks')
-    _iface = dbus.Interface(_proxy, 'org.freedesktop.UDisks')
-    for _dev in _iface.EnumerateDevices():
-        _dev_obj = _bus.get_object('org.freedesktop.UDisks', _dev)
-        _dev_prop = dbus.Interface(_dev_obj, 'org.freedesktop.DBus.Properties')
-        if _dev_prop.Get('','DeviceFile')==device:
-            _idev = dbus.Interface(_dev_obj, 'org.freedesktop.DBus.UDisks.Device')
-            res = _idev.get_dbus_method('FilesystemMount',
-                                        dbus_interface='org.freedesktop.UDisks.Device')(fs,[])
-    return res
+
+class UDisks2(object):
+
+    BLOCK = 'org.freedesktop.UDisks2.Block'
+    FILESYSTEM = 'org.freedesktop.UDisks2.Filesystem'
+    DRIVE = 'org.freedesktop.UDisks2.Drive'
+
+    def __init__(self):
+        self.bus = dbus.SystemBus()
+        try:
+            self.bus.get_object('org.freedesktop.UDisks2',
+                        '/org/freedesktop/UDisks2')
+        except dbus.exceptions.DBusException as e:
+            if getattr(e, '_dbus_error_name', None) == 'org.freedesktop.DBus.Error.ServiceUnknown':
+                raise NoUDisks2()
+            raise
+
+    def node_mountpoint(self,node):
+
+        def de_mangle(raw):
+            return raw.replace('\\040', ' ').replace('\\011', '\t').replace('\\012',
+                    '\n').replace('\\0134', '\\')
+
+        for line in open('/proc/mounts').readlines():
+            line = line.split()
+            if line[0] == node:
+                return de_mangle(line[1])
+        return None
+
+    def device(self, device_node_path):
+        device_node_path = os.path.realpath(device_node_path)
+        devname = device_node_path.split('/')[-1]
+
+        # First we try a direct object path
+        bd = self.bus.get_object('org.freedesktop.UDisks2',
+                        '/org/freedesktop/UDisks2/block_devices/%s'%devname)
+        try:
+            device = bd.Get(self.BLOCK, 'Device',
+                dbus_interface='org.freedesktop.DBus.Properties')
+            device = bytearray(device).replace(b'\x00', b'').decode('utf-8')
+        except:
+            device = None
+
+        if device == device_node_path:
+            return bd
+
+        # Enumerate all devices known to UDisks2
+        devs = self.bus.get_object('org.freedesktop.UDisks2',
+                        '/org/freedesktop/UDisks2/block_devices')
+        xml = devs.Introspect(dbus_interface='org.freedesktop.DBus.Introspectable')
+        for dev in re.finditer(r'name=[\'"](.+?)[\'"]', type(u'')(xml)):
+            bd = self.bus.get_object('org.freedesktop.UDisks2',
+                '/org/freedesktop/UDisks2/block_devices/%s2'%dev.group(1))
+            try:
+                device = bd.Get(self.BLOCK, 'Device',
+                    dbus_interface='org.freedesktop.DBus.Properties')
+                device = bytearray(device).replace(b'\x00', b'').decode('utf-8')
+            except:
+                device = None
+            if device == device_node_path:
+                return bd
+
+        raise ValueError(_('%r not known to UDisks2')%device_node_path)
+
+    def find_devices(self):
+        proxy = self.bus.get_object("org.freedesktop.UDisks2", "/org/freedesktop/UDisks2")
+        iface = dbus.Interface(proxy, "org.freedesktop.UDisks2")
+        _udisks2_obj_manager = dbus.Interface(iface, "org.freedesktop.DBus.ObjectManager")
+        objects=_udisks2_obj_manager.GetManagedObjects()
+        re_drive = re.compile('(?P<path>.*?/drives/(?P<id>.*))')
+        re_block = re.compile('(?P<path>.*?/block_devices/(?P<id>.*))')
+        devs= [m.groupdict() for m in
+                     [re_drive.match(path) for path in objects.keys()]
+                 if m]
+        blocks = [m.groupdict() for m in
+                     [re_block.match(path) for path in objects.keys()]
+                 if m]
+        list=[]
+
+        for dev in devs:
+            dev_obj =objects[dev['path']]['org.freedesktop.UDisks2.Drive']
+            if (dev_obj['ConnectionBus'] == 'usb' or dev_obj['ConnectionBus'] == 'sdio') and \
+                 (dev_obj['Removable'] == 1 or dev_obj['MediaRemovable'] == 1 ):
+               item=[]
+               vend = dev_obj['Vendor']
+               name = dev_obj['Model']
+               for block in blocks:
+                   if dev['path'] == objects[block['path']]['org.freedesktop.UDisks2.Block']['Drive']:
+                       path = '/dev/'+block['path'].split('/')[-1]
+               size = dev_obj['Size']
+               item.append(vend+" "+name)
+               item.append(path)
+               item.append(size)
+               list.append(item)
+        return list
+
+    def mount(self, device_node_path):
+        try:
+            d = self.device(device_node_path)
+            mount_options = ['rw', 'noexec', 'nosuid',
+                'nodev', 'uid=%d'%os.geteuid(), 'gid=%d'%os.getegid()]
+            r=d.Mount(
+                {
+                    'auth.no_user_interaction':True,
+                    'options':','.join(mount_options)
+                },
+                dbus_interface=self.FILESYSTEM)
+            return unicode(r)
+        except:
+            # May be already mounted, check
+            mp = self.node_mountpoint(str(device_node_path))
+            print mp, sys.exc_info()[0]
+            if mp is None:
+                raise ValueError(sys.exc_info()[0])
+            return mp
+
+    def unmount(self, device_node_path):
+        d = self.device(device_node_path)
+        d.Unmount({'force':True, 'auth.no_user_interaction':True},
+                dbus_interface=self.FILESYSTEM)
+
+    def drive_for_device(self, device):
+        drive = device.Get(self.BLOCK, 'Drive',
+            dbus_interface='org.freedesktop.DBus.Properties')
+        return self.bus.get_object('org.freedesktop.UDisks2', drive)
+
+    def eject(self, device_node_path):
+        drive = self.drive_for_device(self.device(device_node_path))
+        drive.Eject({'auth.no_user_interaction':True},
+                dbus_interface=self.DRIVE)
+
+def countFiles(directory):
+    files = []
+    if os.path.isdir(directory):
+        for path, dirs, filenames in os.walk(directory):
+            files.extend(filenames)
+    return len(files)
+
+def makedirs(dest):
+    if not os.path.exists(dest):
+        os.makedirs(dest)
 
 class IsoDumper:
     def __init__(self,user):
@@ -147,6 +256,12 @@ class IsoDumper:
 
         self.window.show_all()
         # make sure we have a target device
+        self.u = None
+        try:
+            self.u = UDisks2()
+        except :
+           self.logger(_('UDisks2 is not available on your system'))
+           self.emergency()
         self.get_devices()
 
     def update_list(self, widget):
@@ -156,13 +271,13 @@ class IsoDumper:
 
     def get_devices(self):
         dialog = self.wTree.get_widget("nodev_dialog")
-        self.list=find_devices()
+        self.list=self.u.find_devices()
         while len(self.list)==0:
             exit_dialog=dialog.run()
-            self.list = find_devices()
             if (exit_dialog==2) :
                 dialog.destroy()
                 exit(0)
+            self.list = self.u.find_devices()
         for name, path, size in self.list:
                 # convert in Mbytes
             sizeM=str(int(size)/(1024*1024))
@@ -174,7 +289,7 @@ class IsoDumper:
         if self.dev != None:
             for name, path, size in self.list:
                 if self.dev.startswith(name):
-                    self.deviceSize=eval(size)
+                    self.deviceSize=size
                     self.device_name=name.rstrip().replace(' ', '')
                     break
             self.backup_select.set_sensitive(True)
@@ -361,11 +476,8 @@ class IsoDumper:
                     if resp:
                         pass
                     else:
-#                        self.close('dummy')
                         self.emergency()
                         dialog.hide()
-#                self.backup_select.set_sensitive(False)
-#                self.backup.set_sensitive(False)
                 self.chooser.set_sensitive(False)
                 self.do_umount(target)
                 dialog.hide()
@@ -377,10 +489,7 @@ class IsoDumper:
                     target = self.dev.split('(')[1].split(')')[0]
                     dev_name="MGALIVE"
                     rc=self.raw_format(target, 'fat32', dev_name)
-                    if rc == 0:
-                        message = _('The device was formatted successfully.')
-                        self.logger(message)
-                    elif rc == 5:
+                    if rc == 5:
                         message = _("An error occurred while creating a partition.")
                         self.logger(message)
                         self.emergency()
@@ -388,22 +497,45 @@ class IsoDumper:
                         message = _('Authentication error.')
                         self.logger(message)
                         self.emergency()
+                    elif rc == 0:
+                        message = _('The device was formatted successfully.')
+                        self.logger(message)
+#                        time.sleep(2)
+                        seen=False
+                        part=target+'1'
+                        while(not seen):
+                            try:
+                                self.u.device(part)
+                                seen=True
+                            except:
+                                seen=False
+                                time.sleep(.5)
+                        try:
+                            dest=self.u.mount(part)
+                        except:
+                            self.logger(_("Error mounting the partition %s")%part)
+                            self.emergency()
+                            return
+                        if dest!="":
+                            self.logger(_("Mounted in: ")+dest)
+                            self.returncode=0
+                            task = self.files_write(source, dest)
+                            gobject.idle_add(task.next)
+                            self.operation=False
+                            while gtk.events_pending():
+                                gtk.main_iteration(True)
+                            if self.returncode==0:
+                                self.success()
+                            else:
+                                self.logger(_("Error copying files"))
+                                self.emergency()
+                        else:
+                            self.operation=False
+                            self.logger(_("Error mounting the partition %s")%part)
+                            self.emergency()
                     else:
                         message = _('An error occurred.')
                         self.emergency()
-                    if rc == 0:
-                        dest=mount(target+'1','vfat')
-                        if dest!="":
-                            self.logger(_("Mounted in: ")+dest)
-                            dest+='/'+os.path.basename(source)
-                            self.logger(_('Executing copy from ')+source+_(' to ')+dest)
-                            task = self.raw_write(source, dest, os.path.getsize(source))
-                            gobject.idle_add(task.next)
-                            while gtk.events_pending():
-                                gtk.main_iteration(True)
-                            self.success()
-                        else:
-                            self.logger(_("Error mounting the partition"))
                 else:
                     #Dump mode
                     task = self.raw_write(source, target, os.path.getsize(source))
@@ -412,7 +544,6 @@ class IsoDumper:
                         gtk.main_iteration(True)
                     self.success()
             else:
-#                self.close('dummy')
                 dialog.hide()
                 combo.set_sensitive(True)
                 write_button.set_sensitive(True)
@@ -514,6 +645,49 @@ class IsoDumper:
                    self.emergency()
             ifc.close()
             yield False
+
+    def files_write(self, source, dest):
+        import shutil
+        self.operation=True
+        temp_dir='/mnt/MGALIVE'
+        makedirs(temp_dir)
+        self.process=Popen(['mount', '-o', 'loop',source,temp_dir ], shell=False, stdout=PIPE)
+        working=True
+        while working:
+            time.sleep(0.5)
+            self.process.poll()
+            rc=self.process.returncode
+            if rc is None:
+                working=True
+            else:
+                self.process = None
+                working=False
+        self.logger(_('ISO image mounted in ')+temp_dir)
+        progress = self.wTree.get_widget("progressbar")
+        progress.set_sensitive(True)
+        progress.set_text(_('Writing ')+source.split('/')[-1]+_(' to ')+dest)
+        self.logger(_('Executing copy from ')+source+_(' to ')+dest)
+        while gtk.events_pending():
+           gtk.main_iteration(True)
+        total_files=countFiles(temp_dir)
+        self.logger(_("%s file(s) to copy."%total_files))
+        if total_files > 0:
+            numCopied = 0
+            for path, dirs, filenames in os.walk(temp_dir):
+                for directory in dirs:
+                    destDir = path.replace(temp_dir,dest)
+                    makedirs(os.path.join(destDir, directory))
+                for sfile in filenames:
+                    srcFile = os.path.join(path, sfile)
+                    destFile = os.path.join(path.replace(temp_dir, dest), sfile)
+                    shutil.copy2(srcFile, destFile)
+                    numCopied += 1
+                    progress.set_fraction(float(numCopied)/total_files)
+                    yield True
+            self.process = Popen(['umount', temp_dir ], shell=False, stdout=PIPE)
+            self.logger(_('Image ')+source.split('/')[-1]+_(' successfully written to ')+dest)
+        else:
+            self.returncode=1
 
     def success(self):
         self.operation=False
