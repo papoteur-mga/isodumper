@@ -69,7 +69,12 @@ def raw_format(device_path, fstype, volume_label, uid, gid):
 
     # Create a default partition set up
     disk = parted.freshDisk(device, 'msdos')
-    disk.commit()
+    try:
+        disk.commit()
+    except:
+        # Unable to write the new partition
+        print "Can't create partition. The device could be read-only."
+        sys.exit(5)
     regions = disk.getFreeSpaceRegions()
 
     if len(regions) > 0:

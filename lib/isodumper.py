@@ -26,42 +26,165 @@
 import gtk
 import gtk.glade
 import gobject
-import os
+import os, re
 import io
 import gettext
 from gettext import gettext as _
 from subprocess import call, Popen, PIPE
 import time
+import dbus
 
-def find_devices():
-    import dbus
-    bus = dbus.SystemBus()
-    proxy = bus.get_object("org.freedesktop.UDisks", "/org/freedesktop/UDisks")
-    iface = dbus.Interface(proxy, "org.freedesktop.UDisks")
-    devs=iface.EnumerateDevices()
-    list=[]
 
-    for dev in devs:
-    	dev_obj = bus.get_object("org.freedesktop.UDisks", dev)
-    	dev = dbus.Interface(dev_obj, "org.freedesktop.DBus.Properties")
-    	item=[]
-    	if str(dev.Get('', 'DriveConnectionInterface')) == 'usb' and not str(dev.Get('', 'PartitionType')) and str(dev.Get('', 'DeviceIsMediaAvailable')) == '1':
-		vend = str(dev.Get('', 'DriveVendor'))
-    		path = str(dev.Get('', 'DeviceFile'))
-     		name = str(dev.Get('', 'DriveModel'))
-    		size = str(dev.Get('', 'DeviceSize'))
-    		item.append(vend+" "+name)
-    		item.append(path)
-    		item.append(size)
-    		list.append(item)
-    return list
+class NoUDisks2(Exception):
+    pass
 
+
+class UDisks2(object):
+
+    BLOCK = 'org.freedesktop.UDisks2.Block'
+    FILESYSTEM = 'org.freedesktop.UDisks2.Filesystem'
+    DRIVE = 'org.freedesktop.UDisks2.Drive'
+
+    def __init__(self):
+        self.bus = dbus.SystemBus()
+        try:
+            self.bus.get_object('org.freedesktop.UDisks2',
+                        '/org/freedesktop/UDisks2')
+        except dbus.exceptions.DBusException as e:
+            if getattr(e, '_dbus_error_name', None) == 'org.freedesktop.DBus.Error.ServiceUnknown':
+                raise NoUDisks2()
+            raise
+
+    def node_mountpoint(self,node):
+
+        def de_mangle(raw):
+            return raw.replace('\\040', ' ').replace('\\011', '\t').replace('\\012',
+                    '\n').replace('\\0134', '\\')
+
+        for line in open('/proc/mounts').readlines():
+            line = line.split()
+            if line[0] == node:
+                return de_mangle(line[1])
+        return None
+
+    def device(self, device_node_path):
+        device_node_path = os.path.realpath(device_node_path)
+        devname = device_node_path.split('/')[-1]
+
+        # First we try a direct object path
+        bd = self.bus.get_object('org.freedesktop.UDisks2',
+                        '/org/freedesktop/UDisks2/block_devices/%s'%devname)
+        try:
+            device = bd.Get(self.BLOCK, 'Device',
+                dbus_interface='org.freedesktop.DBus.Properties')
+            device = bytearray(device).replace(b'\x00', b'').decode('utf-8')
+        except:
+            device = None
+
+        if device == device_node_path:
+            return bd
+
+        # Enumerate all devices known to UDisks2
+        devs = self.bus.get_object('org.freedesktop.UDisks2',
+                        '/org/freedesktop/UDisks2/block_devices')
+        xml = devs.Introspect(dbus_interface='org.freedesktop.DBus.Introspectable')
+        for dev in re.finditer(r'name=[\'"](.+?)[\'"]', type(u'')(xml)):
+            bd = self.bus.get_object('org.freedesktop.UDisks2',
+                '/org/freedesktop/UDisks2/block_devices/%s2'%dev.group(1))
+            try:
+                device = bd.Get(self.BLOCK, 'Device',
+                    dbus_interface='org.freedesktop.DBus.Properties')
+                device = bytearray(device).replace(b'\x00', b'').decode('utf-8')
+            except:
+                device = None
+            if device == device_node_path:
+                return bd
+
+        raise ValueError(_('%r not known to UDisks2')%device_node_path)
+
+    def find_devices(self):
+        proxy = self.bus.get_object("org.freedesktop.UDisks2", "/org/freedesktop/UDisks2")
+        iface = dbus.Interface(proxy, "org.freedesktop.UDisks2")
+        _udisks2_obj_manager = dbus.Interface(iface, "org.freedesktop.DBus.ObjectManager")
+        objects=_udisks2_obj_manager.GetManagedObjects()
+        re_drive = re.compile('(?P<path>.*?/drives/(?P<id>.*))')
+        re_block = re.compile('(?P<path>.*?/block_devices/(?P<id>.*))')
+        devs= [m.groupdict() for m in
+                     [re_drive.match(path) for path in objects.keys()]
+                 if m]
+        blocks = [m.groupdict() for m in
+                     [re_block.match(path) for path in objects.keys()]
+                 if m]
+        list=[]
+
+        for dev in devs:
+            dev_obj =objects[dev['path']]['org.freedesktop.UDisks2.Drive']
+            if (dev_obj['ConnectionBus'] == 'usb' or dev_obj['ConnectionBus'] == 'sdio') and \
+                 (dev_obj['Removable'] == 1 or dev_obj['MediaRemovable'] == 1 ):
+               item=[]
+               vend = dev_obj['Vendor']
+               name = dev_obj['Model']
+               for block in blocks:
+                   if dev['path'] == objects[block['path']]['org.freedesktop.UDisks2.Block']['Drive']:
+                       path = '/dev/'+block['path'].split('/')[-1]
+               size = dev_obj['Size']
+               item.append(vend+" "+name)
+               item.append(path)
+               item.append(size)
+               list.append(item)
+        return list
+
+    def mount(self, device_node_path):
+        try:
+            d = self.device(device_node_path)
+            mount_options = ['rw', 'noexec', 'nosuid',
+                'nodev', 'uid=%d'%os.geteuid(), 'gid=%d'%os.getegid()]
+            r=d.Mount(
+                {
+                    'auth.no_user_interaction':True,
+                    'options':','.join(mount_options)
+                },
+                dbus_interface=self.FILESYSTEM)
+            return unicode(r)
+        except:
+            # May be already mounted, check
+            mp = self.node_mountpoint(str(device_node_path))
+            print mp, sys.exc_info()[0]
+            if mp is None:
+                raise ValueError(sys.exc_info()[0])
+            return mp
+
+    def unmount(self, device_node_path):
+        d = self.device(device_node_path)
+        d.Unmount({'force':True, 'auth.no_user_interaction':True},
+                dbus_interface=self.FILESYSTEM)
+
+    def drive_for_device(self, device):
+        drive = device.Get(self.BLOCK, 'Drive',
+            dbus_interface='org.freedesktop.DBus.Properties')
+        return self.bus.get_object('org.freedesktop.UDisks2', drive)
+
+    def eject(self, device_node_path):
+        drive = self.drive_for_device(self.device(device_node_path))
+        drive.Eject({'auth.no_user_interaction':True},
+                dbus_interface=self.DRIVE)
+
+def countFiles(directory):
+    files = []
+    if os.path.isdir(directory):
+        for path, dirs, filenames in os.walk(directory):
+            files.extend(filenames)
+    return len(files)
+
+def makedirs(dest):
+    if not os.path.exists(dest):
+        os.makedirs(dest)
 
 class IsoDumper:
     def __init__(self,user):
         APP="isodumper"
         DIR="/usr/share/locale"
-        RELEASE="v0.32"
+        RELEASE="v0.40"
 
         gettext.bindtextdomain(APP, DIR)
         gettext.textdomain(APP)
@@ -114,7 +237,6 @@ class IsoDumper:
                  "on_emergency_button_clicked" : self.restore,
                  "on_confirm_cancel_button_clicked": self.restore,
                  "on_filechooserbutton_file_set" : self.activate_devicelist,
-#                 "on_detail_expander_activate" : self.expander_control,
                  "on_device_combobox_changed" : self.device_selected,
                  "on_nodev_close_clicked" : self.close,
                  "on_backup_button_clicked" : self.backup_go,
@@ -126,40 +248,56 @@ class IsoDumper:
                  "on_format_cancel_clicked" : self.format_cancel,
                  "on_format_go_clicked" : self.do_format,
                  "on_write_button_clicked" : self.do_write,
+                 "on_help_close_clicked": self.help_close,
+                 "on_help_clicked": self.help_dialog,
+                 "on_update_button_clicked":self.update_list,
                  }
         self.wTree.signal_autoconnect(dict)
 
         self.window.show_all()
         # make sure we have a target device
+        self.u = None
+        try:
+            self.u = UDisks2()
+        except :
+           self.logger(_('UDisks2 is not available on your system'))
+           self.emergency()
         self.get_devices()
 
+    def update_list(self, widget):
+        self.devicelist.remove_text(0)
+        self.get_devices()
+        self.restore(widget)
 
     def get_devices(self):
         dialog = self.wTree.get_widget("nodev_dialog")
-        list=find_devices()
-        while len(list)==0:
+        self.list=self.u.find_devices()
+        while len(self.list)==0:
             exit_dialog=dialog.run()
-            list = find_devices()
             if (exit_dialog==2) :
                 dialog.destroy()
                 exit(0)
-#        self.combo = self.wTree.get_widget("device_combobox")
-        for name, path, size in list:
-            self.deviceSize=size
+            self.list = self.u.find_devices()
+        for name, path, size in self.list:
                 # convert in Mbytes
             sizeM=str(int(size)/(1024*1024))
             self.devicelist.append_text(name+' ('+path.lstrip()+') '+sizeM+_('Mb'))
-            self.device_name=name.rstrip().replace(' ', '')
-        dialog.destroy()
+        dialog.hide()
 
     def device_selected(self, widget):
         self.dev = self.devicelist.get_active_text()
-        self.backup_select.set_sensitive(True)
-        self.wTree.get_widget("format_button").set_sensitive(True)
-        self.chooser.set_sensitive(True)
-        if self.chooser.get_current_folder_uri() == None :
-            self.chooser.set_current_folder_uri('file:///home/'+self.user)
-        self.logger(_('Target Device: ')+ self.dev)
+        if self.dev != None:
+            for name, path, size in self.list:
+                if self.dev.startswith(name):
+                    self.deviceSize=size
+                    self.device_name=name.rstrip().replace(' ', '')
+                    break
+            self.backup_select.set_sensitive(True)
+            self.wTree.get_widget("format_button").set_sensitive(True)
+            self.chooser.set_sensitive(True)
+            if self.chooser.get_current_folder_uri() == None :
+                self.chooser.set_current_folder_uri('file:///home/'+self.user)
+            self.logger(_('Target Device: ')+ self.dev)
 
     def backup_sel(self,widget):
         if self.backup_bname.get_current_folder_uri() == None :
@@ -214,11 +352,31 @@ class IsoDumper:
         if resp:
             dialog.hide()
             if self.wTree.get_widget("format_fat").get_active():
-                self.raw_format(target, 'fat32', dev_name.upper()[:11])
+                rc=self.raw_format(target, 'fat32', dev_name.upper()[:11])
             if self.wTree.get_widget("format_ntfs").get_active():
-                self.raw_format(target, 'ntfs', dev_name[:32])
+                rc=self.raw_format(target, 'ntfs', dev_name[:32])
             if self.wTree.get_widget("format_ext4").get_active():
-                self.raw_format(target, 'ext4', dev_name)
+                rc=self.raw_format(target, 'ext4', dev_name)
+            self.operation=False
+            if rc == 0:
+                message = _('The device was formatted successfully.')
+                self.logger(message)
+                self.success()
+            elif rc == 5:
+                message = _("An error occurred while creating a partition.")
+                self.logger(message)
+                self.emergency()
+            elif rc == 127:
+                message = _('Authentication error.')
+                self.logger(message)
+                self.emergency()
+            else:
+                message = _('An error occurred.')
+                self.emergency()
+            self.wTree.get_widget("format").hide()
+            self.backup_select.set_sensitive(True)
+            self.wTree.get_widget("format_button").set_sensitive(True)
+            self.wTree.get_widget("filechooserbutton").set_sensitive(True)
         else:
             dialog.hide()
 
@@ -227,8 +385,11 @@ class IsoDumper:
         self.wTree.get_widget("format_button").set_sensitive(True)
         self.wTree.get_widget("filechooserbutton").set_sensitive(True)
         self.devicelist.set_sensitive(True)
-#        self.write_logfile()
         self.wTree.get_widget("emergency_dialog").hide()
+        progress = self.wTree.get_widget("progressbar")
+        progress.set_text("")
+        progress.set_fraction(0)
+        progress.set_sensitive(False)
 
     def raw_format(self, usb_path, fstype, label):
         self.operation=True
@@ -245,27 +406,9 @@ class IsoDumper:
             if rc is None:
                 working=True
             else:
-                if rc == 0:
-                    message = _('The device was formatted successfully.')
-                    self.logger(message)
-                    self.success()
-                elif rc == 5:
-                    message = _("An error occurred while creating a partition.")
-                    self.logger(message)
-                    self.emergency()
-                elif rc == 127:
-                    message = _('Authentication error.')
-                    self.logger(message)
-                    self.emergency()
-                else:
-                    message = _('An error occurred.')
-                    self.emergency()
-                self.wTree.get_widget("format").hide()
                 self.process = None
                 working= False
-                self.backup_select.set_sensitive(True)
-                self.wTree.get_widget("format_button").set_sensitive(True)
-                self.wTree.get_widget("filechooserbutton").set_sensitive(True)
+        return rc
 
     def format_cancel(self, widget):
         dialog=self.wTree.get_widget("format")
@@ -282,18 +425,26 @@ class IsoDumper:
         if os.path.exists(dest):
             dialog=self.wTree.get_widget("confirm_overwrite")
             resp=dialog.run()
-            if resp !=-5:
+            if resp !=-5: # GTK_RESPONSE_OK
                 dialog.hide()
                 return True
             else:
                 dialog.hide()
-        source = self.dev.split('(')[1].split(')')[0]
-        self.logger(_('Backup in:')+' '+dest)
-        task = self.raw_write(source, dest, eval(self.deviceSize))
-        gobject.idle_add(task.next)
-        while gtk.events_pending():
-            gtk.main_iteration(True)
-        self.success()
+        # check free space
+        st = os.statvfs(os.path.dirname(dest))
+        free = st.f_bavail * st.f_frsize
+        if free<self.deviceSize :
+            sizeM=str(self.deviceSize/(1024*1024))
+            self.logger(_("The destination directory is too small to receive the backup (%s Mb needed)")%(sizeM))
+            self.emergency()
+        else:
+            source = self.dev.split('(')[1].split(')')[0]
+            self.logger(_('Backup in:')+' '+dest)
+            task = self.raw_write(source, dest, self.deviceSize)
+            gobject.idle_add(task.next)
+            while gtk.events_pending():
+                gtk.main_iteration(True)
+            self.success()
 
     def do_write(self, widget):
         write_button = self.wTree.get_widget("write_button")
@@ -312,38 +463,92 @@ class IsoDumper:
         self.logger(_('Image: ')+source)
         self.logger(_('Target Device: ')+self.dev)
         b = os.path.getsize(source)
-        if b > (eval(self.deviceSize)) :
+        if b > (self.deviceSize):
             self.logger(_('The device is too small to contain the ISO file.'))
             self.emergency()
         else:
             resp = dialog.run()
             if resp:
-                if eval(self.deviceSize)> 1024*1024*1024*32 :
+                if self.deviceSize> 1024*1024*1024*32 :
                     message=self.wTree.get_widget("label1")
                     message.set_text(_('The device is bigger than 32 Gbytes. Are you sure you want use it?'))
                     resp = dialog.run()
                     if resp:
                         pass
                     else:
-#                        self.close('dummy')
                         self.emergency()
                         dialog.hide()
-#                self.backup_select.set_sensitive(False)
-#                self.backup.set_sensitive(False)
                 self.chooser.set_sensitive(False)
                 self.do_umount(target)
                 dialog.hide()
                 # Writing step
-                task = self.raw_write(source, target, os.path.getsize(source))
-                gobject.idle_add(task.next)
-                while gtk.events_pending():
-                    gtk.main_iteration(True)
-                self.success()
+                # Iso dump or Uefi preparation
+                uefi_checkbox=self.wTree.get_widget("uefi_check")
+                if uefi_checkbox.get_active():
+                    #uefi mode : formats FAT32, names MGALIVE, copies the ISO
+                    target = self.dev.split('(')[1].split(')')[0]
+                    dev_name="MGALIVE"
+                    rc=self.raw_format(target, 'fat32', dev_name)
+                    if rc == 5:
+                        message = _("An error occurred while creating a partition.")
+                        self.logger(message)
+                        self.emergency()
+                    elif rc == 127:
+                        message = _('Authentication error.')
+                        self.logger(message)
+                        self.emergency()
+                    elif rc == 0:
+                        message = _('The device was formatted successfully.')
+                        self.logger(message)
+#                        time.sleep(2)
+                        seen=False
+                        part=target+'1'
+                        while(not seen):
+                            try:
+                                self.u.device(part)
+                                seen=True
+                            except:
+                                seen=False
+                                time.sleep(.5)
+                        try:
+                            dest=self.u.mount(part)
+                        except:
+                            self.logger(_("Error mounting the partition %s")%part)
+                            self.emergency()
+                            return
+                        if dest!="":
+                            self.logger(_("Mounted in: ")+dest)
+                            self.returncode=0
+                            task = self.files_write(source, dest)
+                            gobject.idle_add(task.next)
+                            self.operation=False
+                            while gtk.events_pending():
+                                gtk.main_iteration(True)
+                            if self.returncode==0:
+                                self.success()
+                            else:
+                                self.logger(_("Error copying files"))
+                                self.emergency()
+                        else:
+                            self.operation=False
+                            self.logger(_("Error mounting the partition %s")%part)
+                            self.emergency()
+                    else:
+                        message = _('An error occurred.')
+                        self.emergency()
+                else:
+                    #Dump mode
+                    task = self.raw_write(source, target, os.path.getsize(source))
+                    gobject.idle_add(task.next)
+                    while gtk.events_pending():
+                        gtk.main_iteration(True)
+                    self.success()
             else:
-#                self.close('dummy')
                 dialog.hide()
                 combo.set_sensitive(True)
                 write_button.set_sensitive(True)
+                format_button.set_sensitive(True)
+                backup_select.set_sensitive(True)
     def do_umount(self, target):
         mounts = self.get_mounted(target)
         if mounts:
@@ -441,6 +646,49 @@ class IsoDumper:
             ifc.close()
             yield False
 
+    def files_write(self, source, dest):
+        import shutil
+        self.operation=True
+        temp_dir='/mnt/MGALIVE'
+        makedirs(temp_dir)
+        self.process=Popen(['mount', '-o', 'loop',source,temp_dir ], shell=False, stdout=PIPE)
+        working=True
+        while working:
+            time.sleep(0.5)
+            self.process.poll()
+            rc=self.process.returncode
+            if rc is None:
+                working=True
+            else:
+                self.process = None
+                working=False
+        self.logger(_('ISO image mounted in ')+temp_dir)
+        progress = self.wTree.get_widget("progressbar")
+        progress.set_sensitive(True)
+        progress.set_text(_('Writing ')+source.split('/')[-1]+_(' to ')+dest)
+        self.logger(_('Executing copy from ')+source+_(' to ')+dest)
+        while gtk.events_pending():
+           gtk.main_iteration(True)
+        total_files=countFiles(temp_dir)
+        self.logger(_("%s file(s) to copy."%total_files))
+        if total_files > 0:
+            numCopied = 0
+            for path, dirs, filenames in os.walk(temp_dir):
+                for directory in dirs:
+                    destDir = path.replace(temp_dir,dest)
+                    makedirs(os.path.join(destDir, directory))
+                for sfile in filenames:
+                    srcFile = os.path.join(path, sfile)
+                    destFile = os.path.join(path.replace(temp_dir, dest), sfile)
+                    shutil.copy2(srcFile, destFile)
+                    numCopied += 1
+                    progress.set_fraction(float(numCopied)/total_files)
+                    yield True
+            self.process = Popen(['umount', temp_dir ], shell=False, stdout=PIPE)
+            self.logger(_('Image ')+source.split('/')[-1]+_(' successfully written to ')+dest)
+        else:
+            self.returncode=1
+
     def success(self):
         self.operation=False
         dialog = self.wTree.get_widget("success_dialog")
@@ -534,6 +782,14 @@ class IsoDumper:
 #        # the unexpanded expander which doesnt reset the window size
 #        if widget.get_expanded():
 #            gobject.timeout_add(130, lambda: self.window.reshow_with_initial_size())
+
+    def help_dialog(self, widget):
+        dialog = self.wTree.get_widget("help_dialog")
+        dialog.run()
+
+    def help_close(self, widget):
+        dialog = self.wTree.get_widget("help_dialog")
+        dialog.hide()
 
     def about(self, widget):
         about_button = self.wTree.get_widget("about_button")
