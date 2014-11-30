@@ -1,14 +1,6 @@
 The initial state comes from https://launchpad.net/usb-imagewriter
 The modifications are:
 
-IsoDumper 0.40
-------------
-	  - Added a Refresh button to be able to work on a new device.
-	  - Added Udisks2 in replacement of Udisks.
-	  - Dealing returncode from format function in do_format.
-	  - Added check for free space.
-	  - Added a new feature : prepare device for UEFI boot, formatting the device in FAT32 and copying each file of the ISO in the new partition.
-
 IsoDumper 0.32
 ------------
 	  - fix wrong progress steps with small images.
