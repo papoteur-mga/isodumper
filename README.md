@@ -14,6 +14,7 @@ Requirements
 - procps (or procps-ng)
 - pygtk2.0-libglade
 - python
+- python-dbus
 - python-parted
 - udisks
 - xterm

@@ -19,6 +19,7 @@ Requires:	polkit
 Requires:	procps-ng
 Requires:	pygtk2.0-libglade
 Requires:	python
+Requires:	python-dbus
 Requires:	python-parted
 Requires:	udisks
 Requires:	xterm
