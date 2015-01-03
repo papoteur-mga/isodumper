@@ -195,7 +195,7 @@ class IsoDumper:
         self.user = user
 
         # get glade tree
-        self.gladefile = "../share/isodumper/isodumper.glade"
+        self.gladefile = "/usr/share/isodumper/isodumper.glade"
         self.wTree = gtk.glade.XML(self.gladefile)
 
         # get globally needed widgets
@@ -444,7 +444,8 @@ class IsoDumper:
             gobject.idle_add(task.next)
             while gtk.events_pending():
                 gtk.main_iteration(True)
-            self.success()
+            if self.returncode==0:
+            	self.success()
 
     def do_write(self, widget):
         write_button = self.wTree.get_widget("write_button")
@@ -478,6 +479,7 @@ class IsoDumper:
                     else:
                         self.emergency()
                         dialog.hide()
+                        return
                 self.chooser.set_sensitive(False)
                 self.do_umount(target)
                 dialog.hide()
@@ -542,7 +544,8 @@ class IsoDumper:
                     gobject.idle_add(task.next)
                     while gtk.events_pending():
                         gtk.main_iteration(True)
-                    self.success()
+                    if self.returncode == 0:
+						self.success()
             else:
                 dialog.hide()
                 combo.set_sensitive(True)
@@ -582,12 +585,14 @@ class IsoDumper:
 
     def raw_write(self, source, target, b):
         self.operation=True
+        
         bs=4096*128
         try:
             ifc=io.open(source, "rb",1)
         except:
              self.logger(_('Reading error.')+ source)
              self.emergency()
+             return
         else:
             try:
                 ofc= io.open(target, 'wb',0)
@@ -616,11 +621,13 @@ class IsoDumper:
                     except:
                         self.logger(_("Reading error."))
                         self.emergency()
+                        return
                     try:
                         ofc.write(buf)
                     except:
                         self.logger(_("Writing error."))
                         self.emergency()
+                        return
                     written+=len(buf)
                     if written > steps[indice]:
                         if indice%1==0:
@@ -634,6 +641,7 @@ class IsoDumper:
                         except:
                            self.logger(_("Writing error."))
                            self.emergency()
+                           return
                         yield True
                 progress.set_fraction(1.0)
                 self.logger(_('Image ')+source.split('/')[-1]+_(' successfully written to ')+target)
@@ -713,6 +721,7 @@ class IsoDumper:
 
     def emergency(self):
         self.operation=False
+        self.returncode=1
         self.final_unsensitive()
         dialog = self.wTree.get_widget("emergency_dialog")
         expander = self.wTree.get_widget("detail_expander")
