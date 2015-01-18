@@ -438,6 +438,7 @@ class IsoDumper:
             self.logger(_("The destination directory is too small to receive the backup (%s Mb needed)")%(sizeM))
             self.emergency()
         else:
+            self.returncode=0
             source = self.dev.split('(')[1].split(')')[0]
             self.logger(_('Backup in:')+' '+dest)
             task = self.raw_write(source, dest, self.deviceSize)
@@ -540,12 +541,18 @@ class IsoDumper:
                         self.emergency()
                 else:
                     #Dump mode
-                    task = self.raw_write(source, target, os.path.getsize(source))
+                    self.returncode=0
+                    b=os.path.getsize(source)
+                    task = self.raw_write(source, target, b)
+                    gobject.idle_add(task.next)
+                    while gtk.events_pending():
+                        gtk.main_iteration(True)
+                    task = self.check_write(target, b)
                     gobject.idle_add(task.next)
                     while gtk.events_pending():
                         gtk.main_iteration(True)
                     if self.returncode == 0:
-						self.success()
+                        self.success()
             else:
                 dialog.hide()
                 combo.set_sensitive(True)
@@ -653,6 +660,47 @@ class IsoDumper:
                    self.emergency()
             ifc.close()
             yield False
+
+    def check_write(self, target, b):
+        import hashlib
+        progress = self.wTree.get_widget("progressbar")
+        progress.set_sensitive(True)
+        progress.set_text(_('Checking ')+target.split('/')[-1])
+        progress.set_fraction(0.0)
+        steps=range(0, b+1, b/100)
+        steps.append(b)
+        indice=0
+        checked=0
+        sha1func=hashlib.sha1()
+        md5func=hashlib.md5()
+        ncuts=b/1024
+        try:
+    		with open(target, 'rb') as f:
+    			for x in xrange(0,ncuts):
+    				block = f.read(1024)
+    				sha1func.update(block)
+    				md5func.update(block)
+    				if checked > steps[indice]:
+    					progress.set_fraction(float(indice)/100)
+    					indice +=1
+    					while gtk.events_pending():
+        					 gtk.main_iteration(True)
+    					yield True
+    				checked+=1024                         
+    			block = f.read(b-ncuts*1024)
+    			sha1func.update(block)
+    			md5func.update(block)
+    			sha1sumcalc=sha1func.hexdigest()
+    			md5sumcalc=md5func.hexdigest()
+    		self.logger(_('SHA1 sum: ')+sha1sumcalc)
+    		self.logger(_('MD5  sum: ')+md5sumcalc)
+    		mark = self.log.create_mark("end", self.log.get_end_iter(), False)
+    		self.logview.scroll_to_mark(mark, 0.05, True, 0.0, 1.0)
+    		f.close()
+    	except:
+    		pass
+        progress.set_fraction(1.0)
+        yield False
 
     def files_write(self, source, dest):
         import shutil
