@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-18 08:04+0100\n"
+"POT-Creation-Date: 2015-01-18 18:32+0100\n"
 "PO-Revision-Date: 2009-03-05 12:06+0000\n"
 "Last-Translator: Tomáš Vadina <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:300 lib/isodumper.py:465
+#: lib/isodumper.py:300 lib/isodumper.py:466
 msgid "Target Device: "
 msgstr "Cieľové zaradienie: "
 
@@ -40,19 +40,19 @@ msgstr "Cieľové zaradienie: "
 msgid "Backup in: "
 msgstr ""
 
-#: lib/isodumper.py:362 lib/isodumper.py:503
+#: lib/isodumper.py:362 lib/isodumper.py:504
 msgid "The device was formatted successfully."
 msgstr ""
 
-#: lib/isodumper.py:366 lib/isodumper.py:495
+#: lib/isodumper.py:366 lib/isodumper.py:496
 msgid "An error occurred while creating a partition."
 msgstr ""
 
-#: lib/isodumper.py:370 lib/isodumper.py:499
+#: lib/isodumper.py:370 lib/isodumper.py:500
 msgid "Authentication error."
 msgstr ""
 
-#: lib/isodumper.py:374 lib/isodumper.py:539
+#: lib/isodumper.py:374 lib/isodumper.py:540
 msgid "An error occurred."
 msgstr ""
 
@@ -62,115 +62,127 @@ msgid ""
 "The destination directory is too small to receive the backup (%s Mb needed)"
 msgstr ""
 
-#: lib/isodumper.py:442 share/isodumper/isodumper.glade.h:52
+#: lib/isodumper.py:443 share/isodumper/isodumper.glade.h:52
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:464
+#: lib/isodumper.py:465
 msgid "Image: "
 msgstr "Obraz: "
 
-#: lib/isodumper.py:468
+#: lib/isodumper.py:469
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:475
+#: lib/isodumper.py:476
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:518 lib/isodumper.py:536
+#: lib/isodumper.py:519 lib/isodumper.py:537
 #, python-format
 msgid "Error mounting the partition %s"
 msgstr ""
 
-#: lib/isodumper.py:522
+#: lib/isodumper.py:523
 msgid "Mounted in: "
 msgstr ""
 
-#: lib/isodumper.py:532
+#: lib/isodumper.py:533
 msgid "Error copying files"
 msgstr ""
 
-#: lib/isodumper.py:558
+#: lib/isodumper.py:565
 msgid "Unmounting all partitions of "
 msgstr "Odpojujem všetky oddiely "
 
-#: lib/isodumper.py:560
+#: lib/isodumper.py:567
 msgid "Trying to unmount "
 msgstr "Skúšam odpojiť "
 
-#: lib/isodumper.py:566
+#: lib/isodumper.py:573
 msgid " was terminated by signal "
 msgstr " bol ukončený signálom "
 
-#: lib/isodumper.py:566 lib/isodumper.py:572
+#: lib/isodumper.py:573 lib/isodumper.py:579
 msgid "Error, umount "
 msgstr "Chyba, opojenie "
 
-#: lib/isodumper.py:570
+#: lib/isodumper.py:577
 msgid " successfully unmounted"
 msgstr " úspešne odpojené"
 
-#: lib/isodumper.py:572
+#: lib/isodumper.py:579
 msgid " returned "
 msgstr " vrátil "
 
-#: lib/isodumper.py:575
+#: lib/isodumper.py:582
 msgid "Execution failed: "
 msgstr "Spustenie zlyhalo: "
 
-#: lib/isodumper.py:583
+#: lib/isodumper.py:590
 msgid "Could not read mtab !"
 msgstr "Nemožem prečítať mtab!"
 
-#: lib/isodumper.py:593 lib/isodumper.py:622
+#: lib/isodumper.py:600 lib/isodumper.py:629
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:600
+#: lib/isodumper.py:607
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:606 lib/isodumper.py:607 lib/isodumper.py:676
-#: lib/isodumper.py:677
+#: lib/isodumper.py:613 lib/isodumper.py:614 lib/isodumper.py:724
+#: lib/isodumper.py:725
 msgid " to "
 msgstr " do "
 
-#: lib/isodumper.py:606 lib/isodumper.py:676
+#: lib/isodumper.py:613 lib/isodumper.py:724
 msgid "Writing "
 msgstr "Zapisujem "
 
-#: lib/isodumper.py:607 lib/isodumper.py:677
+#: lib/isodumper.py:614 lib/isodumper.py:725
 #, fuzzy
 msgid "Executing copy from "
 msgstr "Spušťam: dd if="
 
-#: lib/isodumper.py:628 lib/isodumper.py:642 lib/isodumper.py:652
+#: lib/isodumper.py:635 lib/isodumper.py:649 lib/isodumper.py:659
 #, fuzzy
 msgid "Writing error."
 msgstr "Zapisujem "
 
-#: lib/isodumper.py:634
+#: lib/isodumper.py:641
 msgid "Wrote: "
 msgstr "Zapísané: "
 
-#: lib/isodumper.py:647 lib/isodumper.py:696
+#: lib/isodumper.py:654 lib/isodumper.py:744
 msgid " successfully written to "
 msgstr " úspešne zapísaný do "
 
-#: lib/isodumper.py:647 lib/isodumper.py:696 lib/isodumper.py:783
+#: lib/isodumper.py:654 lib/isodumper.py:744 lib/isodumper.py:831
 msgid "Image "
 msgstr "Obraz "
 
-#: lib/isodumper.py:648
+#: lib/isodumper.py:655
 msgid "Bytes written: "
 msgstr ""
 
-#: lib/isodumper.py:673
+#: lib/isodumper.py:668
+msgid "Checking "
+msgstr ""
+
+#: lib/isodumper.py:695
+msgid "SHA1 sum: "
+msgstr ""
+
+#: lib/isodumper.py:696
+msgid "MD5  sum: "
+msgstr ""
+
+#: lib/isodumper.py:721
 msgid "ISO image mounted in "
 msgstr ""
 
-#: lib/isodumper.py:681
+#: lib/isodumper.py:729
 #, python-format
 msgid "%s file(s) to copy."
 msgstr ""
@@ -394,21 +406,39 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#, fuzzy
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "Proces dd skončil s chybou!"
+
+#~ msgid "ImageWriter"
+#~ msgstr "ImageWriter"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-ok"
+
 #~ msgid ""
-#~ "<b>Success</b>\n"
-#~ " The image was successfully written to the\n"
-#~ " target device.\n"
-#~ " \n"
-#~ " You are free to unplug it now, a log isodumper.log \n"
-#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
-#~ " you close the application."
-#~ msgstr ""
-#~ "<b>Úspech</b>\n"
-#~ " Obraz bol úspešne zapísaný na cieľové zariadenie.\n"
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
 #~ "\n"
-#~ " Teraz môžete odpojiť USB zariadenie. Log súbor bude zapísaný\n"
-#~ " do Vášho domovského priečinka po skončení aplikácie."
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
+#~ msgstr ""
+#~ "<b>Chyba</b>\n"
+#~ " Žiadne cieľové zariadenie nenájdené.\n"
+#~ "\n"
+#~ " Musíte pripojiť USB zariadenie na ktoré\n"
+#~ " môže byť zapísaný obraz."
+
+#~ msgid "to"
+#~ msgstr "do"
 
 #, fuzzy
 #~ msgid ""
@@ -426,36 +456,18 @@ msgstr ""
 #~ " Log súbor bude zapísaný do Vášho domovského\n"
 #~ " priečinka po skončení aplikácie."
 
-#~ msgid "to"
-#~ msgstr "do"
-
+#, fuzzy
 #~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
+#~ "<b>Success</b>\n"
+#~ " The image was successfully written to the\n"
+#~ " target device.\n"
+#~ " \n"
+#~ " You are free to unplug it now, a log isodumper.log \n"
+#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
+#~ " you close the application."
 #~ msgstr ""
-#~ "<b>Chyba</b>\n"
-#~ " Žiadne cieľové zariadenie nenájdené.\n"
+#~ "<b>Úspech</b>\n"
+#~ " Obraz bol úspešne zapísaný na cieľové zariadenie.\n"
 #~ "\n"
-#~ " Musíte pripojiť USB zariadenie na ktoré\n"
-#~ " môže byť zapísaný obraz."
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "ImageWriter"
-#~ msgstr "ImageWriter"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "Proces dd skončil s chybou!"
-
-#~ msgid " "
-#~ msgstr " "
+#~ " Teraz môžete odpojiť USB zariadenie. Log súbor bude zapísaný\n"
+#~ " do Vášho domovského priečinka po skončení aplikácie."

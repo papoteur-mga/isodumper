@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mageia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-18 08:04+0100\n"
+"POT-Creation-Date: 2015-01-18 18:32+0100\n"
 "PO-Revision-Date: 2014-11-10 01:47+0000\n"
 "Last-Translator: Ardit Dani <ardit.dani@gmail.com>\n"
 "Language-Team: Albanian (http://www.transifex.com/projects/p/mageia/language/"
@@ -32,7 +32,7 @@ msgstr ""
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:300 lib/isodumper.py:465
+#: lib/isodumper.py:300 lib/isodumper.py:466
 msgid "Target Device: "
 msgstr "Pajisja Synuar:"
 
@@ -40,19 +40,19 @@ msgstr "Pajisja Synuar:"
 msgid "Backup in: "
 msgstr "Regjistrim në:"
 
-#: lib/isodumper.py:362 lib/isodumper.py:503
+#: lib/isodumper.py:362 lib/isodumper.py:504
 msgid "The device was formatted successfully."
 msgstr "Pajisja është formatuar me sukses."
 
-#: lib/isodumper.py:366 lib/isodumper.py:495
+#: lib/isodumper.py:366 lib/isodumper.py:496
 msgid "An error occurred while creating a partition."
 msgstr "Një gabim ka ndodhur gjatë krijimit të një ndarje."
 
-#: lib/isodumper.py:370 lib/isodumper.py:499
+#: lib/isodumper.py:370 lib/isodumper.py:500
 msgid "Authentication error."
 msgstr "Gabim vërtetimi."
 
-#: lib/isodumper.py:374 lib/isodumper.py:539
+#: lib/isodumper.py:374 lib/isodumper.py:540
 msgid "An error occurred."
 msgstr "Një gabim ndodhi ."
 
@@ -62,115 +62,127 @@ msgid ""
 "The destination directory is too small to receive the backup (%s Mb needed)"
 msgstr ""
 
-#: lib/isodumper.py:442 share/isodumper/isodumper.glade.h:52
+#: lib/isodumper.py:443 share/isodumper/isodumper.glade.h:52
 msgid "Backup in:"
 msgstr "Regjistrim në:"
 
-#: lib/isodumper.py:464
+#: lib/isodumper.py:465
 msgid "Image: "
 msgstr "Imazh: "
 
-#: lib/isodumper.py:468
+#: lib/isodumper.py:469
 msgid "The device is too small to contain the ISO file."
 msgstr "Pajisja është shumë e vogël për të përmbajtur dokumentin ISO."
 
-#: lib/isodumper.py:475
+#: lib/isodumper.py:476
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Pajisja është më e madhe se 32 Gbytes. Jeni te sigurte qe doni ta përdorni "
 "atë?"
 
-#: lib/isodumper.py:518 lib/isodumper.py:536
+#: lib/isodumper.py:519 lib/isodumper.py:537
 #, python-format
 msgid "Error mounting the partition %s"
 msgstr ""
 
-#: lib/isodumper.py:522
+#: lib/isodumper.py:523
 msgid "Mounted in: "
 msgstr ""
 
-#: lib/isodumper.py:532
+#: lib/isodumper.py:533
 msgid "Error copying files"
 msgstr ""
 
-#: lib/isodumper.py:558
+#: lib/isodumper.py:565
 msgid "Unmounting all partitions of "
 msgstr "Ç'monto të gjitha ndarjet e"
 
-#: lib/isodumper.py:560
+#: lib/isodumper.py:567
 msgid "Trying to unmount "
 msgstr "Përpjekje për ç'montimin"
 
-#: lib/isodumper.py:566
+#: lib/isodumper.py:573
 msgid " was terminated by signal "
 msgstr "është ndërprerë nga sinjali"
 
-#: lib/isodumper.py:566 lib/isodumper.py:572
+#: lib/isodumper.py:573 lib/isodumper.py:579
 msgid "Error, umount "
 msgstr "Gabim, ç'montim"
 
-#: lib/isodumper.py:570
+#: lib/isodumper.py:577
 msgid " successfully unmounted"
 msgstr "ç'montuar suksesshëm"
 
-#: lib/isodumper.py:572
+#: lib/isodumper.py:579
 msgid " returned "
 msgstr "kthyer"
 
-#: lib/isodumper.py:575
+#: lib/isodumper.py:582
 msgid "Execution failed: "
 msgstr "Ekzekutimi dështoi:"
 
-#: lib/isodumper.py:583
+#: lib/isodumper.py:590
 msgid "Could not read mtab !"
 msgstr "Nuk mund të lexoj mtab !"
 
-#: lib/isodumper.py:593 lib/isodumper.py:622
+#: lib/isodumper.py:600 lib/isodumper.py:629
 msgid "Reading error."
 msgstr "Gabim leximi."
 
-#: lib/isodumper.py:600
+#: lib/isodumper.py:607
 msgid "You have not the rights for writing on the device"
 msgstr "Ju nuk keni të drejta për të shkruar në pajisje"
 
-#: lib/isodumper.py:606 lib/isodumper.py:607 lib/isodumper.py:676
-#: lib/isodumper.py:677
+#: lib/isodumper.py:613 lib/isodumper.py:614 lib/isodumper.py:724
+#: lib/isodumper.py:725
 msgid " to "
 msgstr "tek"
 
-#: lib/isodumper.py:606 lib/isodumper.py:676
+#: lib/isodumper.py:613 lib/isodumper.py:724
 msgid "Writing "
 msgstr "Shkrim"
 
-#: lib/isodumper.py:607 lib/isodumper.py:677
+#: lib/isodumper.py:614 lib/isodumper.py:725
 msgid "Executing copy from "
 msgstr "Ekzekutim kopjes nga"
 
-#: lib/isodumper.py:628 lib/isodumper.py:642 lib/isodumper.py:652
+#: lib/isodumper.py:635 lib/isodumper.py:649 lib/isodumper.py:659
 msgid "Writing error."
 msgstr "Gabim shkrimi."
 
-#: lib/isodumper.py:634
+#: lib/isodumper.py:641
 msgid "Wrote: "
 msgstr "Shkroi:"
 
-#: lib/isodumper.py:647 lib/isodumper.py:696
+#: lib/isodumper.py:654 lib/isodumper.py:744
 msgid " successfully written to "
 msgstr "shkruar me sukses në"
 
-#: lib/isodumper.py:647 lib/isodumper.py:696 lib/isodumper.py:783
+#: lib/isodumper.py:654 lib/isodumper.py:744 lib/isodumper.py:831
 msgid "Image "
 msgstr "Imazhe"
 
-#: lib/isodumper.py:648
+#: lib/isodumper.py:655
 msgid "Bytes written: "
 msgstr "Bajt shkruar:"
 
-#: lib/isodumper.py:673
+#: lib/isodumper.py:668
+msgid "Checking "
+msgstr ""
+
+#: lib/isodumper.py:695
+msgid "SHA1 sum: "
+msgstr ""
+
+#: lib/isodumper.py:696
+msgid "MD5  sum: "
+msgstr ""
+
+#: lib/isodumper.py:721
 msgid "ISO image mounted in "
 msgstr ""
 
-#: lib/isodumper.py:681
+#: lib/isodumper.py:729
 #, python-format
 msgid "%s file(s) to copy."
 msgstr ""

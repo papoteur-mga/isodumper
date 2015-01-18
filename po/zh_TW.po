@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-18 08:04+0100\n"
+"POT-Creation-Date: 2015-01-18 18:32+0100\n"
 "PO-Revision-Date: 2014-10-31 06:00+0800\n"
 "Last-Translator: You-Cheng Hsieh <yochenhsieh@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/mageia/"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:300 lib/isodumper.py:465
+#: lib/isodumper.py:300 lib/isodumper.py:466
 msgid "Target Device: "
 msgstr "目標裝置： "
 
@@ -42,19 +42,19 @@ msgstr "目標裝置： "
 msgid "Backup in: "
 msgstr "備份在："
 
-#: lib/isodumper.py:362 lib/isodumper.py:503
+#: lib/isodumper.py:362 lib/isodumper.py:504
 msgid "The device was formatted successfully."
 msgstr "裝置已經成功格式化了。"
 
-#: lib/isodumper.py:366 lib/isodumper.py:495
+#: lib/isodumper.py:366 lib/isodumper.py:496
 msgid "An error occurred while creating a partition."
 msgstr "建立磁碟區時發生了一個錯誤。"
 
-#: lib/isodumper.py:370 lib/isodumper.py:499
+#: lib/isodumper.py:370 lib/isodumper.py:500
 msgid "Authentication error."
 msgstr "認證錯誤。"
 
-#: lib/isodumper.py:374 lib/isodumper.py:539
+#: lib/isodumper.py:374 lib/isodumper.py:540
 msgid "An error occurred."
 msgstr "發生一個錯誤。"
 
@@ -64,113 +64,125 @@ msgid ""
 "The destination directory is too small to receive the backup (%s Mb needed)"
 msgstr ""
 
-#: lib/isodumper.py:442 share/isodumper/isodumper.glade.h:52
+#: lib/isodumper.py:443 share/isodumper/isodumper.glade.h:52
 msgid "Backup in:"
 msgstr "備份在："
 
-#: lib/isodumper.py:464
+#: lib/isodumper.py:465
 msgid "Image: "
 msgstr "映像： "
 
-#: lib/isodumper.py:468
+#: lib/isodumper.py:469
 msgid "The device is too small to contain the ISO file."
 msgstr "這個裝置太小而放不下 ISO 檔案。"
 
-#: lib/isodumper.py:475
+#: lib/isodumper.py:476
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr "這個裝置超過 32 GB。您確定要使用它嗎？"
 
-#: lib/isodumper.py:518 lib/isodumper.py:536
+#: lib/isodumper.py:519 lib/isodumper.py:537
 #, python-format
 msgid "Error mounting the partition %s"
 msgstr ""
 
-#: lib/isodumper.py:522
+#: lib/isodumper.py:523
 msgid "Mounted in: "
 msgstr ""
 
-#: lib/isodumper.py:532
+#: lib/isodumper.py:533
 msgid "Error copying files"
 msgstr ""
 
-#: lib/isodumper.py:558
+#: lib/isodumper.py:565
 msgid "Unmounting all partitions of "
 msgstr "卸載以下裝置的所有分區 "
 
-#: lib/isodumper.py:560
+#: lib/isodumper.py:567
 msgid "Trying to unmount "
 msgstr "嘗試卸載分區 "
 
-#: lib/isodumper.py:566
+#: lib/isodumper.py:573
 msgid " was terminated by signal "
 msgstr " 被信號終止 "
 
-#: lib/isodumper.py:566 lib/isodumper.py:572
+#: lib/isodumper.py:573 lib/isodumper.py:579
 msgid "Error, umount "
 msgstr "出錯，卸載分區 "
 
-#: lib/isodumper.py:570
+#: lib/isodumper.py:577
 msgid " successfully unmounted"
 msgstr " 成功卸載裝置"
 
-#: lib/isodumper.py:572
+#: lib/isodumper.py:579
 msgid " returned "
 msgstr " 已返回 "
 
-#: lib/isodumper.py:575
+#: lib/isodumper.py:582
 msgid "Execution failed: "
 msgstr "執行失敗： "
 
-#: lib/isodumper.py:583
+#: lib/isodumper.py:590
 msgid "Could not read mtab !"
 msgstr "無法讀取 mtab！"
 
-#: lib/isodumper.py:593 lib/isodumper.py:622
+#: lib/isodumper.py:600 lib/isodumper.py:629
 msgid "Reading error."
 msgstr "讀取錯誤。"
 
-#: lib/isodumper.py:600
+#: lib/isodumper.py:607
 msgid "You have not the rights for writing on the device"
 msgstr "您沒有權限寫入這個裝置"
 
-#: lib/isodumper.py:606 lib/isodumper.py:607 lib/isodumper.py:676
-#: lib/isodumper.py:677
+#: lib/isodumper.py:613 lib/isodumper.py:614 lib/isodumper.py:724
+#: lib/isodumper.py:725
 msgid " to "
 msgstr " 至 "
 
-#: lib/isodumper.py:606 lib/isodumper.py:676
+#: lib/isodumper.py:613 lib/isodumper.py:724
 msgid "Writing "
 msgstr "正在寫入 "
 
-#: lib/isodumper.py:607 lib/isodumper.py:677
+#: lib/isodumper.py:614 lib/isodumper.py:725
 msgid "Executing copy from "
 msgstr "正在從這個來源複製"
 
-#: lib/isodumper.py:628 lib/isodumper.py:642 lib/isodumper.py:652
+#: lib/isodumper.py:635 lib/isodumper.py:649 lib/isodumper.py:659
 msgid "Writing error."
 msgstr "寫入錯誤。"
 
-#: lib/isodumper.py:634
+#: lib/isodumper.py:641
 msgid "Wrote: "
 msgstr "已寫入： "
 
-#: lib/isodumper.py:647 lib/isodumper.py:696
+#: lib/isodumper.py:654 lib/isodumper.py:744
 msgid " successfully written to "
 msgstr " 成功寫入到 "
 
-#: lib/isodumper.py:647 lib/isodumper.py:696 lib/isodumper.py:783
+#: lib/isodumper.py:654 lib/isodumper.py:744 lib/isodumper.py:831
 msgid "Image "
 msgstr "映像 "
 
-#: lib/isodumper.py:648
+#: lib/isodumper.py:655
 msgid "Bytes written: "
 msgstr "寫入位元組："
 
-#: lib/isodumper.py:673
+#: lib/isodumper.py:668
+msgid "Checking "
+msgstr ""
+
+#: lib/isodumper.py:695
+msgid "SHA1 sum: "
+msgstr ""
+
+#: lib/isodumper.py:696
+msgid "MD5  sum: "
+msgstr ""
+
+#: lib/isodumper.py:721
 msgid "ISO image mounted in "
 msgstr ""
 
-#: lib/isodumper.py:681
+#: lib/isodumper.py:729
 #, python-format
 msgid "%s file(s) to copy."
 msgstr ""

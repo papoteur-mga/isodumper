@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-18 08:04+0100\n"
+"POT-Creation-Date: 2015-01-18 18:32+0100\n"
 "PO-Revision-Date: 2014-10-25 13:51+0000\n"
 "Last-Translator: psyca\n"
 "Language-Team: German (http://www.transifex.com/projects/p/mageia/language/"
@@ -43,7 +43,7 @@ msgstr ""
 msgid "Mb"
 msgstr "Mb"
 
-#: lib/isodumper.py:300 lib/isodumper.py:465
+#: lib/isodumper.py:300 lib/isodumper.py:466
 msgid "Target Device: "
 msgstr "Ziel Gerät: "
 
@@ -51,19 +51,19 @@ msgstr "Ziel Gerät: "
 msgid "Backup in: "
 msgstr "Sichern nach:"
 
-#: lib/isodumper.py:362 lib/isodumper.py:503
+#: lib/isodumper.py:362 lib/isodumper.py:504
 msgid "The device was formatted successfully."
 msgstr "Das Gerät wurde erfolgreich formatiert."
 
-#: lib/isodumper.py:366 lib/isodumper.py:495
+#: lib/isodumper.py:366 lib/isodumper.py:496
 msgid "An error occurred while creating a partition."
 msgstr "Ein Fehler ist beim erstellen der Partition aufgetreten."
 
-#: lib/isodumper.py:370 lib/isodumper.py:499
+#: lib/isodumper.py:370 lib/isodumper.py:500
 msgid "Authentication error."
 msgstr "Authentifizierungsfehler."
 
-#: lib/isodumper.py:374 lib/isodumper.py:539
+#: lib/isodumper.py:374 lib/isodumper.py:540
 msgid "An error occurred."
 msgstr "Ein Fehler ist aufgetreten."
 
@@ -73,114 +73,126 @@ msgid ""
 "The destination directory is too small to receive the backup (%s Mb needed)"
 msgstr ""
 
-#: lib/isodumper.py:442 share/isodumper/isodumper.glade.h:52
+#: lib/isodumper.py:443 share/isodumper/isodumper.glade.h:52
 msgid "Backup in:"
 msgstr "Sichern nach:"
 
-#: lib/isodumper.py:464
+#: lib/isodumper.py:465
 msgid "Image: "
 msgstr "Image: "
 
-#: lib/isodumper.py:468
+#: lib/isodumper.py:469
 msgid "The device is too small to contain the ISO file."
 msgstr "Dieses Gerät ist zu kein, um die ISO-Datei zu beinhalten."
 
-#: lib/isodumper.py:475
+#: lib/isodumper.py:476
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 "Dieses Gerät ist größer als 32 Gbytes. Wollen Sie dieses wirklich verwenden?"
 
-#: lib/isodumper.py:518 lib/isodumper.py:536
+#: lib/isodumper.py:519 lib/isodumper.py:537
 #, python-format
 msgid "Error mounting the partition %s"
 msgstr ""
 
-#: lib/isodumper.py:522
+#: lib/isodumper.py:523
 msgid "Mounted in: "
 msgstr ""
 
-#: lib/isodumper.py:532
+#: lib/isodumper.py:533
 msgid "Error copying files"
 msgstr ""
 
-#: lib/isodumper.py:558
+#: lib/isodumper.py:565
 msgid "Unmounting all partitions of "
 msgstr "Aushängen aller Partitionen von "
 
-#: lib/isodumper.py:560
+#: lib/isodumper.py:567
 msgid "Trying to unmount "
 msgstr "Versuche aushängen von "
 
-#: lib/isodumper.py:566
+#: lib/isodumper.py:573
 msgid " was terminated by signal "
 msgstr " wurde beendet mit Signal "
 
-#: lib/isodumper.py:566 lib/isodumper.py:572
+#: lib/isodumper.py:573 lib/isodumper.py:579
 msgid "Error, umount "
 msgstr "Fehler, Aushängen von "
 
-#: lib/isodumper.py:570
+#: lib/isodumper.py:577
 msgid " successfully unmounted"
 msgstr " erfolgreich ausgehängt"
 
-#: lib/isodumper.py:572
+#: lib/isodumper.py:579
 msgid " returned "
 msgstr " hatte Rückgabewert "
 
-#: lib/isodumper.py:575
+#: lib/isodumper.py:582
 msgid "Execution failed: "
 msgstr "Ausführen fehlgeschlagen: "
 
-#: lib/isodumper.py:583
+#: lib/isodumper.py:590
 msgid "Could not read mtab !"
 msgstr "Konnte mtab nicht lesen !"
 
-#: lib/isodumper.py:593 lib/isodumper.py:622
+#: lib/isodumper.py:600 lib/isodumper.py:629
 msgid "Reading error."
 msgstr "Lesefehler."
 
-#: lib/isodumper.py:600
+#: lib/isodumper.py:607
 msgid "You have not the rights for writing on the device"
 msgstr "Sie haben nicht die Rechte, um auf dieses Gerät zu schreiben."
 
-#: lib/isodumper.py:606 lib/isodumper.py:607 lib/isodumper.py:676
-#: lib/isodumper.py:677
+#: lib/isodumper.py:613 lib/isodumper.py:614 lib/isodumper.py:724
+#: lib/isodumper.py:725
 msgid " to "
 msgstr " auf "
 
-#: lib/isodumper.py:606 lib/isodumper.py:676
+#: lib/isodumper.py:613 lib/isodumper.py:724
 msgid "Writing "
 msgstr "Schreibe "
 
-#: lib/isodumper.py:607 lib/isodumper.py:677
+#: lib/isodumper.py:614 lib/isodumper.py:725
 msgid "Executing copy from "
 msgstr "Ausführen der Kopie von"
 
-#: lib/isodumper.py:628 lib/isodumper.py:642 lib/isodumper.py:652
+#: lib/isodumper.py:635 lib/isodumper.py:649 lib/isodumper.py:659
 msgid "Writing error."
 msgstr "Schreibfehler."
 
-#: lib/isodumper.py:634
+#: lib/isodumper.py:641
 msgid "Wrote: "
 msgstr "Geschrieben: "
 
-#: lib/isodumper.py:647 lib/isodumper.py:696
+#: lib/isodumper.py:654 lib/isodumper.py:744
 msgid " successfully written to "
 msgstr " erfolgreich geschrieben nach"
 
-#: lib/isodumper.py:647 lib/isodumper.py:696 lib/isodumper.py:783
+#: lib/isodumper.py:654 lib/isodumper.py:744 lib/isodumper.py:831
 msgid "Image "
 msgstr "Abbild "
 
-#: lib/isodumper.py:648
+#: lib/isodumper.py:655
 msgid "Bytes written: "
 msgstr "Bytes geschrieben:"
 
-#: lib/isodumper.py:673
+#: lib/isodumper.py:668
+msgid "Checking "
+msgstr ""
+
+#: lib/isodumper.py:695
+msgid "SHA1 sum: "
+msgstr ""
+
+#: lib/isodumper.py:696
+msgid "MD5  sum: "
+msgstr ""
+
+#: lib/isodumper.py:721
 msgid "ISO image mounted in "
 msgstr ""
 
-#: lib/isodumper.py:681
+#: lib/isodumper.py:729
 #, python-format
 msgid "%s file(s) to copy."
 msgstr ""

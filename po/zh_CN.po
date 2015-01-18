@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-18 08:04+0100\n"
+"POT-Creation-Date: 2015-01-18 18:32+0100\n"
 "PO-Revision-Date: 2009-05-13 05:10+0000\n"
 "Last-Translator: puzhengcai <Unknown>\n"
 "Language-Team: Simplified Chinese <zh_CN@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 msgid "Mb"
 msgstr ""
 
-#: lib/isodumper.py:300 lib/isodumper.py:465
+#: lib/isodumper.py:300 lib/isodumper.py:466
 msgid "Target Device: "
 msgstr "目标设备： "
 
@@ -40,19 +40,19 @@ msgstr "目标设备： "
 msgid "Backup in: "
 msgstr ""
 
-#: lib/isodumper.py:362 lib/isodumper.py:503
+#: lib/isodumper.py:362 lib/isodumper.py:504
 msgid "The device was formatted successfully."
 msgstr ""
 
-#: lib/isodumper.py:366 lib/isodumper.py:495
+#: lib/isodumper.py:366 lib/isodumper.py:496
 msgid "An error occurred while creating a partition."
 msgstr ""
 
-#: lib/isodumper.py:370 lib/isodumper.py:499
+#: lib/isodumper.py:370 lib/isodumper.py:500
 msgid "Authentication error."
 msgstr ""
 
-#: lib/isodumper.py:374 lib/isodumper.py:539
+#: lib/isodumper.py:374 lib/isodumper.py:540
 msgid "An error occurred."
 msgstr ""
 
@@ -62,115 +62,127 @@ msgid ""
 "The destination directory is too small to receive the backup (%s Mb needed)"
 msgstr ""
 
-#: lib/isodumper.py:442 share/isodumper/isodumper.glade.h:52
+#: lib/isodumper.py:443 share/isodumper/isodumper.glade.h:52
 msgid "Backup in:"
 msgstr ""
 
-#: lib/isodumper.py:464
+#: lib/isodumper.py:465
 msgid "Image: "
 msgstr "镜像： "
 
-#: lib/isodumper.py:468
+#: lib/isodumper.py:469
 msgid "The device is too small to contain the ISO file."
 msgstr ""
 
-#: lib/isodumper.py:475
+#: lib/isodumper.py:476
 msgid "The device is bigger than 32 Gbytes. Are you sure you want use it?"
 msgstr ""
 
-#: lib/isodumper.py:518 lib/isodumper.py:536
+#: lib/isodumper.py:519 lib/isodumper.py:537
 #, python-format
 msgid "Error mounting the partition %s"
 msgstr ""
 
-#: lib/isodumper.py:522
+#: lib/isodumper.py:523
 msgid "Mounted in: "
 msgstr ""
 
-#: lib/isodumper.py:532
+#: lib/isodumper.py:533
 msgid "Error copying files"
 msgstr ""
 
-#: lib/isodumper.py:558
+#: lib/isodumper.py:565
 msgid "Unmounting all partitions of "
 msgstr "卸载以下设备的所有分区 "
 
-#: lib/isodumper.py:560
+#: lib/isodumper.py:567
 msgid "Trying to unmount "
 msgstr "尝试卸载分区 "
 
-#: lib/isodumper.py:566
+#: lib/isodumper.py:573
 msgid " was terminated by signal "
 msgstr " 被信号终止 "
 
-#: lib/isodumper.py:566 lib/isodumper.py:572
+#: lib/isodumper.py:573 lib/isodumper.py:579
 msgid "Error, umount "
 msgstr "出错，卸载分区 "
 
-#: lib/isodumper.py:570
+#: lib/isodumper.py:577
 msgid " successfully unmounted"
 msgstr " 成功卸载设备"
 
-#: lib/isodumper.py:572
+#: lib/isodumper.py:579
 msgid " returned "
 msgstr " 已返回 "
 
-#: lib/isodumper.py:575
+#: lib/isodumper.py:582
 msgid "Execution failed: "
 msgstr "执行失败： "
 
-#: lib/isodumper.py:583
+#: lib/isodumper.py:590
 msgid "Could not read mtab !"
 msgstr "无法读取mtab文件！"
 
-#: lib/isodumper.py:593 lib/isodumper.py:622
+#: lib/isodumper.py:600 lib/isodumper.py:629
 msgid "Reading error."
 msgstr ""
 
-#: lib/isodumper.py:600
+#: lib/isodumper.py:607
 msgid "You have not the rights for writing on the device"
 msgstr ""
 
-#: lib/isodumper.py:606 lib/isodumper.py:607 lib/isodumper.py:676
-#: lib/isodumper.py:677
+#: lib/isodumper.py:613 lib/isodumper.py:614 lib/isodumper.py:724
+#: lib/isodumper.py:725
 msgid " to "
 msgstr " 到 "
 
-#: lib/isodumper.py:606 lib/isodumper.py:676
+#: lib/isodumper.py:613 lib/isodumper.py:724
 msgid "Writing "
 msgstr "正在写入 "
 
-#: lib/isodumper.py:607 lib/isodumper.py:677
+#: lib/isodumper.py:614 lib/isodumper.py:725
 #, fuzzy
 msgid "Executing copy from "
 msgstr "运行: dd if="
 
-#: lib/isodumper.py:628 lib/isodumper.py:642 lib/isodumper.py:652
+#: lib/isodumper.py:635 lib/isodumper.py:649 lib/isodumper.py:659
 #, fuzzy
 msgid "Writing error."
 msgstr "正在写入 "
 
-#: lib/isodumper.py:634
+#: lib/isodumper.py:641
 msgid "Wrote: "
 msgstr "已写入： "
 
-#: lib/isodumper.py:647 lib/isodumper.py:696
+#: lib/isodumper.py:654 lib/isodumper.py:744
 msgid " successfully written to "
 msgstr " 成功写入到 "
 
-#: lib/isodumper.py:647 lib/isodumper.py:696 lib/isodumper.py:783
+#: lib/isodumper.py:654 lib/isodumper.py:744 lib/isodumper.py:831
 msgid "Image "
 msgstr "镜像 "
 
-#: lib/isodumper.py:648
+#: lib/isodumper.py:655
 msgid "Bytes written: "
 msgstr ""
 
-#: lib/isodumper.py:673
+#: lib/isodumper.py:668
+msgid "Checking "
+msgstr ""
+
+#: lib/isodumper.py:695
+msgid "SHA1 sum: "
+msgstr ""
+
+#: lib/isodumper.py:696
+msgid "MD5  sum: "
+msgstr ""
+
+#: lib/isodumper.py:721
 msgid "ISO image mounted in "
 msgstr ""
 
-#: lib/isodumper.py:681
+#: lib/isodumper.py:729
 #, python-format
 msgid "%s file(s) to copy."
 msgstr ""
@@ -394,23 +406,39 @@ msgid ""
 " you close the application."
 msgstr ""
 
-#, fuzzy
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-确定"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-关闭"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-取消"
+
+#~ msgid "ImageWriter"
+#~ msgstr "镜像写入程序"
+
+#~ msgid "The dd process ended with an error !"
+#~ msgstr "dd处理过程带错误结束！"
+
 #~ msgid ""
-#~ "<b>Success</b>\n"
-#~ " The image was successfully written to the\n"
-#~ " target device.\n"
-#~ " \n"
-#~ " You are free to unplug it now, a log isodumper.log \n"
-#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
-#~ " you close the application."
+#~ "<b>Error</b>\n"
+#~ " No target devices were found. \n"
+#~ "\n"
+#~ " You need to plug in a USB Key\n"
+#~ " to which the image can be written."
 #~ msgstr ""
-#~ "<b>成功</b>\n"
-#~ " 镜像文件成功写入到目标驱动器\n"
-#~ " \n"
-#~ " \n"
-#~ " 您现在已经完成本次操作，可以卸载设备。\n"
-#~ " 当您退出程序时\n"
-#~ " 一份日志文件将会保存在您的用户主目录中。"
+#~ "<b>错误</b>\n"
+#~ "没有找到目标设备。 \n"
+#~ "\n"
+#~ " 你需要插入一个USB设备\n"
+#~ " 以便将镜像写入。"
+
+#~ msgid "to"
+#~ msgstr "到"
 
 #, fuzzy
 #~ msgid ""
@@ -428,36 +456,20 @@ msgstr ""
 #~ " 当程序关闭时\n"
 #~ " 将会在您的用户主目录保存一个日志文件。"
 
-#~ msgid "to"
-#~ msgstr "到"
-
+#, fuzzy
 #~ msgid ""
-#~ "<b>Error</b>\n"
-#~ " No target devices were found. \n"
-#~ "\n"
-#~ " You need to plug in a USB Key\n"
-#~ " to which the image can be written."
+#~ "<b>Success</b>\n"
+#~ " The image was successfully written to the\n"
+#~ " target device.\n"
+#~ " \n"
+#~ " You are free to unplug it now, a log isodumper.log \n"
+#~ " of the operation will be saved in your homedir/.isodumper/ when\n"
+#~ " you close the application."
 #~ msgstr ""
-#~ "<b>错误</b>\n"
-#~ "没有找到目标设备。 \n"
-#~ "\n"
-#~ " 你需要插入一个USB设备\n"
-#~ " 以便将镜像写入。"
-
-#~ msgid "The dd process ended with an error !"
-#~ msgstr "dd处理过程带错误结束！"
-
-#~ msgid "ImageWriter"
-#~ msgstr "镜像写入程序"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-取消"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-关闭"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-确定"
-
-#~ msgid " "
-#~ msgstr " "
+#~ "<b>成功</b>\n"
+#~ " 镜像文件成功写入到目标驱动器\n"
+#~ " \n"
+#~ " \n"
+#~ " 您现在已经完成本次操作，可以卸载设备。\n"
+#~ " 当您退出程序时\n"
+#~ " 一份日志文件将会保存在您的用户主目录中。"
