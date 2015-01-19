@@ -5,7 +5,7 @@
 # Translators:
 # Automatically generated, 2013
 # motitos, 2013-2014
-# Egoitz Rodriguez Obieta <egoitzro@gmail.com>, 2014
+# Egoitz Rodriguez Obieta <egoitzro@gmail.com>, 2014-2015
 # jdru_drv <j.d.ramirez.u@gmail.com>, 2014
 # jdru_drv <j.d.ramirez.u@gmail.com>, 2014
 # Miguel Ortega, 2013
@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-18 18:32+0100\n"
-"PO-Revision-Date: 2014-10-25 14:10+0000\n"
+"PO-Revision-Date: 2015-01-18 22:50+0000\n"
 "Last-Translator: Egoitz Rodriguez Obieta <egoitzro@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/mageia/language/"
 "es/)\n"
@@ -31,11 +31,11 @@ msgstr ""
 #: lib/isodumper.py:103
 #, python-format
 msgid "%r not known to UDisks2"
-msgstr ""
+msgstr "%r no conocido por UDisks2"
 
 #: lib/isodumper.py:263
 msgid "UDisks2 is not available on your system"
-msgstr ""
+msgstr "UDisks2 no está disponible en su sistema"
 
 #: lib/isodumper.py:284
 msgid "Mb"
@@ -70,6 +70,8 @@ msgstr "Se ha presentado un error."
 msgid ""
 "The destination directory is too small to receive the backup (%s Mb needed)"
 msgstr ""
+"El directorio de destino es demasiado pequeño para recibir la copia de "
+"seguridad (%s Mb necesario)"
 
 #: lib/isodumper.py:443 share/isodumper/isodumper.glade.h:52
 msgid "Backup in:"
@@ -90,15 +92,15 @@ msgstr "El dispositivo tiene más de 32 GBytes. ¿Seguro que lo quiere usar?"
 #: lib/isodumper.py:519 lib/isodumper.py:537
 #, python-format
 msgid "Error mounting the partition %s"
-msgstr ""
+msgstr "Error montando la partición %s"
 
 #: lib/isodumper.py:523
 msgid "Mounted in: "
-msgstr ""
+msgstr "Montado en:"
 
 #: lib/isodumper.py:533
 msgid "Error copying files"
-msgstr ""
+msgstr "Error copiando archivos"
 
 #: lib/isodumper.py:565
 msgid "Unmounting all partitions of "
@@ -175,24 +177,24 @@ msgstr "Bytes escritos: "
 
 #: lib/isodumper.py:668
 msgid "Checking "
-msgstr ""
+msgstr "Chequeando"
 
 #: lib/isodumper.py:695
 msgid "SHA1 sum: "
-msgstr ""
+msgstr "SHA1 sum: "
 
 #: lib/isodumper.py:696
 msgid "MD5  sum: "
-msgstr ""
+msgstr "MD5  sum: "
 
 #: lib/isodumper.py:721
 msgid "ISO image mounted in "
-msgstr ""
+msgstr "imagen Iso mantada en"
 
 #: lib/isodumper.py:729
 #, python-format
 msgid "%s file(s) to copy."
-msgstr ""
+msgstr "%s archivo(s) para copiar."
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
@@ -299,7 +301,7 @@ msgstr "Solo para sistemas Linux"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Isodumper - Help"
-msgstr ""
+msgstr "Isodumper - Ayuda"
 
 #: share/isodumper/isodumper.glade.h:27
 msgid ""
@@ -341,6 +343,49 @@ msgid ""
 "- Details: this button shows detailed log information.\n"
 "\n"
 msgstr ""
+"Mageia IsoDumper\n"
+"----------------\n"
+"Este programa GUI es principalmente para escribir una imagen ISO de arranque "
+"con seguridad en una unidad flash USB, una operación tortuoso y "
+"potencialmente peligrosa cuando se hace a mano. Como beneficio adicional, "
+"también puede realizar copias de seguridad de todo el contenido anterior de "
+"la unidad flash en el disco duro, y restaurar la unidad flash a su estado "
+"anterior posteriormente. Se da también una función para formatear el "
+"dispositivo USB.\n"
+"\n"
+"IsoDumper se puede iniciar cualquiera de los menús o una consola de usuario "
+"o root con el comando 'isodumper'. Para los usuarios normales, la contraseña "
+"de root se solicita; esto es necesario para el funcionamiento del programa. "
+"La unidad flash se puede insertar de antemano o una vez que se inicie el "
+"programa. En este último caso, el diálogo va a decir que no hay ninguna "
+"unidad de memoria flash insertada, y permitir un 'reintento' para encontrar "
+"una vez que está. (Puede que tenga que cerrar cualquier ventana que se abre "
+"automáticamente el Administrador de archivos).\n"
+"\n"
+"Los campos de la ventana principal son los siguientes:\n"
+"- Dispositivo para trabajar en: el dispositivo de la unidad flash USB, una "
+"lista desplegable para elegir\n"
+"- Escribir Image: elegir la fuente ISO imagen *.iso (o una unidad flash de "
+"copia de seguridad de archivos *.img) para escribir out.\n"
+"- Escribir a dispositivo: Este botón se inicia la operación - con un diálogo "
+"previo aviso. Si se solicitó una copia de seguridad de una unidad flash, "
+"esto se hace primero. Luego (o única) el archivo de imagen de escritura. "
+"Cada operación se muestra en la barra de progreso debajo.\n"
+"- Copia de seguridad en: definir el nombre y la ubicación del archivo de "
+"imagen de copia de seguridad. La unidad flash actual se copia de seguridad "
+"en un archivo de disco. Tenga en cuenta que toda la unidad flash se "
+"conserva, independientemente de su contenido real; asegurarse de que usted "
+"tiene el espacio libre en disco necesario (el mismo tamaño que el "
+"dispositivo USB). Este archivo de copia de seguridad se puede utilizar "
+"posteriormente para restaurar la unidad flash seleccionándolo que el archivo "
+"*.img fuente para escribir.\n"
+"- Copia de seguridad del dispositivo: permite iniciar la operación de copia "
+"de seguridad.\n"
+"- Formatear el dispositivo: crear una partición única en todo el volumen en "
+"el formato especificado en FAT, NTFS o ext. Puede especificar un nombre de "
+"volumen y el formato en un nuevo cuadro de diálogo.\n"
+"- Detalles: este botón muestra la información de registro detallado.\n"
+"\n"
 
 #: share/isodumper/isodumper.glade.h:43
 msgid "Device to work on:"
@@ -364,11 +409,11 @@ msgstr "Seleccione una imagen"
 
 #: share/isodumper/isodumper.glade.h:48
 msgid "For UEFI boot"
-msgstr ""
+msgstr "Para arranque UEFI"
 
 #: share/isodumper/isodumper.glade.h:49
 msgid "Use FAT32 format with MGALIVE as volume name."
-msgstr ""
+msgstr "Utilice el formato FAT32 con MGALIVE como nombre de volumen."
 
 #: share/isodumper/isodumper.glade.h:50
 msgid "Write to device"

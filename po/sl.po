@@ -5,14 +5,14 @@
 # Translators:
 # Automatically generated, 2013
 # Filip Komar <filip.komar@gmail.com>, 2013
-# Filip Komar <filip.komar@gmail.com>, 2013-2014
+# Filip Komar <filip.komar@gmail.com>, 2013-2015
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-18 18:32+0100\n"
-"PO-Revision-Date: 2014-10-25 14:30+0000\n"
+"PO-Revision-Date: 2015-01-18 22:00+0000\n"
 "Last-Translator: Filip Komar <filip.komar@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/mageia/"
 "language/sl/)\n"
@@ -26,11 +26,11 @@ msgstr ""
 #: lib/isodumper.py:103
 #, python-format
 msgid "%r not known to UDisks2"
-msgstr ""
+msgstr "Naprava oziroma pot do nje %r ni znana storitvi UDisks2"
 
 #: lib/isodumper.py:263
 msgid "UDisks2 is not available on your system"
-msgstr ""
+msgstr "Storitev UDisks2 ni na voljo na vašem sistemu"
 
 #: lib/isodumper.py:284
 msgid "Mb"
@@ -50,7 +50,7 @@ msgstr "Naprava je bila uspešno formatirana."
 
 #: lib/isodumper.py:366 lib/isodumper.py:496
 msgid "An error occurred while creating a partition."
-msgstr "Med usvarjanjem razdelka je prišlo do napake."
+msgstr "Med ustvarjanjem razdelka je prišlo do napake."
 
 #: lib/isodumper.py:370 lib/isodumper.py:500
 msgid "Authentication error."
@@ -65,6 +65,7 @@ msgstr "Prišlo je do napake."
 msgid ""
 "The destination directory is too small to receive the backup (%s Mb needed)"
 msgstr ""
+"Ciljna mapa nima dovolj prostora za varnostno kopiranje (potrebno je %s MB)"
 
 #: lib/isodumper.py:443 share/isodumper/isodumper.glade.h:52
 msgid "Backup in:"
@@ -87,15 +88,15 @@ msgstr ""
 #: lib/isodumper.py:519 lib/isodumper.py:537
 #, python-format
 msgid "Error mounting the partition %s"
-msgstr ""
+msgstr "Napaka priklopa razdelka %s"
 
 #: lib/isodumper.py:523
 msgid "Mounted in: "
-msgstr ""
+msgstr "Priklopljeno v:"
 
 #: lib/isodumper.py:533
 msgid "Error copying files"
-msgstr ""
+msgstr "Napaka pri kopiranju datotek"
 
 #: lib/isodumper.py:565
 msgid "Unmounting all partitions of "
@@ -164,7 +165,7 @@ msgstr " je bila uspešno zapisana na "
 
 #: lib/isodumper.py:654 lib/isodumper.py:744 lib/isodumper.py:831
 msgid "Image "
-msgstr "Slika medija "
+msgstr "Odtis diska"
 
 #: lib/isodumper.py:655
 msgid "Bytes written: "
@@ -172,24 +173,24 @@ msgstr "Zapisano zlogov: "
 
 #: lib/isodumper.py:668
 msgid "Checking "
-msgstr ""
+msgstr "Preverjanje"
 
 #: lib/isodumper.py:695
 msgid "SHA1 sum: "
-msgstr ""
+msgstr "Vsota SHA1: "
 
 #: lib/isodumper.py:696
 msgid "MD5  sum: "
-msgstr ""
+msgstr "Vsota MD5: "
 
 #: lib/isodumper.py:721
 msgid "ISO image mounted in "
-msgstr ""
+msgstr "Odtis diska ISO priklopljena na"
 
 #: lib/isodumper.py:729
 #, python-format
 msgid "%s file(s) to copy."
-msgstr ""
+msgstr "Število vseh datotek(-e) za kopiranje je %s."
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
@@ -296,7 +297,7 @@ msgstr "Samo za operacijski sistem Linux"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Isodumper - Help"
-msgstr ""
+msgstr "Isodumper - Pomoč"
 
 #: share/isodumper/isodumper.glade.h:27
 msgid ""
@@ -338,6 +339,40 @@ msgid ""
 "- Details: this button shows detailed log information.\n"
 "\n"
 msgstr ""
+"Mageia IsoDumper\n"
+"----------------\n"
+"Ta program z grafičnim uporabniškim vmesnikom je v osnovi namenjen varnemu "
+"zapisovanju datotek zagonskih odtisov diskov na  ključek USB. Ta postopek je "
+"delikaten in je lahko nevaren za izgubo podatkov. Še posebej, če je izveden "
+"ročno. Dodatno program lahko naredi varnostno kopijo celotnega ključka, ki "
+"jo je kasneje možno restavrirati. Dodaja tudi možnost formatiranja ključka.\n"
+"\n"
+"Program IsoDumper se lahko zažene iz menija ali uporabniške ali korenske "
+"ukazne vrstice z ukazom »isodumper«. Za delovanje programa so potrebne "
+"korenske pravice, zato bo uporabnik po potrebi pozvan za vnos. Ključek se "
+"lahko vstavi pred ali po zagonu programa. V slednjem primeru bo program "
+"pozval, da ključek ni vstavljen ter ponudil možnost ponovitve iskanja. "
+"(Mogoče boste morali zapreti kako samodejno odprto okno »Upravljalnika "
+"datotek«).\n"
+"\n"
+"V glavnem oknu programa si sledijo polja:\n"
+"- izbrana ciljna naprava: ključek USB in izbor s spustnim menijem.\n"
+"- zapis odtisa diska: izbor izvorne slike odtisa diska ISO (ali varnostne "
+"kopije IMG) za zapis.\n"
+"- zapis na napravo: ta gumb po opozorilnem oknu prične postopek. Glede na "
+"zahtevo najprej varnostno kopira napravo in (šele zatem) zapiše odtis. "
+"Spodaj je prikazana vrstica napredka.\n"
+"- Varnostno kopiranje v: določanje mape in imena datoteke za varnostno "
+"kopiranje. Vanjo bo izbrana celotna pomnilniška naprava varnostno kopirana. "
+"Zato je potrebno vsaj toliko prostora kot je velikost izbrane pomnilniške "
+"naprave. Omenjeno varnostno kopijo je možno restavrirati ob izbiri izvorne "
+"datoteke (izbor varnostne kopije IMG).\n"
+"- Arhiviranje vsebine naprave: prične varnostno kopiranje.\n"
+"- Formatiranje naprave: ustvari enkraten razdelek v izbranem datotečnem "
+"zapisu FAT, NTFS ali ext. Izberete ga skupaj z imenom razdelka v novem "
+"oknu.\n"
+"- Podrobnosti: ta gumb prikaže podrobnosti dnevnika.\n"
+"\n"
 
 #: share/isodumper/isodumper.glade.h:43
 msgid "Device to work on:"
@@ -349,7 +384,7 @@ msgstr "Izberite ciljno napravo za zapis odtisa diska"
 
 #: share/isodumper/isodumper.glade.h:45
 msgid "Write Image:"
-msgstr "Zapis slike:"
+msgstr "Zapis odtisa diska:"
 
 #: share/isodumper/isodumper.glade.h:46
 msgid "Select an image file to be written to the device"
@@ -361,11 +396,11 @@ msgstr "Izberite odtis diska"
 
 #: share/isodumper/isodumper.glade.h:48
 msgid "For UEFI boot"
-msgstr ""
+msgstr "Za zagon UEFI."
 
 #: share/isodumper/isodumper.glade.h:49
 msgid "Use FAT32 format with MGALIVE as volume name."
-msgstr ""
+msgstr "Uporabite format FAT 32 in ime razdelka MGALIVE."
 
 #: share/isodumper/isodumper.glade.h:50
 msgid "Write to device"

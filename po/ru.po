@@ -8,15 +8,15 @@
 # Анатолий Валерианович <ffox909@mail.ru>, 2014
 # Анатолий Валерианович <ffox909@mail.ru>, 2014
 # Sergei Zivukov <ekonomvygoda@yandex.ru>, 2013
-# AlexL <loginov.alex.valer@gmail.com>, 2013-2014
-# Valentin XliN Saikov <saikov@xlin.tk>, 2014
+# Valentin XliN Saikov <saikov.vb@gmail.com>, 2014-2015
+# Valentin XliN Saikov <saikov.vb@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-18 18:32+0100\n"
-"PO-Revision-Date: 2014-10-25 14:51+0000\n"
-"Last-Translator: Valentin XliN Saikov <saikov@xlin.tk>\n"
+"PO-Revision-Date: 2015-01-18 21:31+0000\n"
+"Last-Translator: Valentin XliN Saikov <saikov.vb@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/mageia/language/"
 "ru/)\n"
 "Language: ru\n"
@@ -29,11 +29,11 @@ msgstr ""
 #: lib/isodumper.py:103
 #, python-format
 msgid "%r not known to UDisks2"
-msgstr ""
+msgstr "%r не известный  UDisks2"
 
 #: lib/isodumper.py:263
 msgid "UDisks2 is not available on your system"
-msgstr ""
+msgstr "UDisks2 не доступен в вашей системе."
 
 #: lib/isodumper.py:284
 msgid "Mb"
@@ -68,6 +68,8 @@ msgstr "Произошла ошибка."
 msgid ""
 "The destination directory is too small to receive the backup (%s Mb needed)"
 msgstr ""
+"Каталог назначения слишком мал, чтобы получить резервную копию (%s Mb "
+"требуется)"
 
 #: lib/isodumper.py:443 share/isodumper/isodumper.glade.h:52
 msgid "Backup in:"
@@ -89,15 +91,15 @@ msgstr ""
 #: lib/isodumper.py:519 lib/isodumper.py:537
 #, python-format
 msgid "Error mounting the partition %s"
-msgstr ""
+msgstr "Сбой монтирования раздела %s"
 
 #: lib/isodumper.py:523
 msgid "Mounted in: "
-msgstr ""
+msgstr "Монтировать в:"
 
 #: lib/isodumper.py:533
 msgid "Error copying files"
-msgstr ""
+msgstr "Ошибка копирования файлов"
 
 #: lib/isodumper.py:565
 msgid "Unmounting all partitions of "
@@ -174,24 +176,24 @@ msgstr "Записано байт:"
 
 #: lib/isodumper.py:668
 msgid "Checking "
-msgstr ""
+msgstr "Проверка"
 
 #: lib/isodumper.py:695
 msgid "SHA1 sum: "
-msgstr ""
+msgstr "SHA1 сумма: "
 
 #: lib/isodumper.py:696
 msgid "MD5  sum: "
-msgstr ""
+msgstr "MD5 сумма: "
 
 #: lib/isodumper.py:721
 msgid "ISO image mounted in "
-msgstr ""
+msgstr "ISO образ смонтирован в"
 
 #: lib/isodumper.py:729
 #, python-format
 msgid "%s file(s) to copy."
-msgstr ""
+msgstr "%s файл(ы) для копирования."
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
@@ -296,7 +298,7 @@ msgstr "Только для Linux систем"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Isodumper - Help"
-msgstr ""
+msgstr "Isodumper - Помощь"
 
 #: share/isodumper/isodumper.glade.h:27
 msgid ""
@@ -338,6 +340,54 @@ msgid ""
 "- Details: this button shows detailed log information.\n"
 "\n"
 msgstr ""
+"Mageia IsoDumper\n"
+"----------------\n"
+"Основным назначением этой программы с графическим интерфейсом является "
+"запись загрузочного образа ISO на флэш-диск USB, то есть выполнение довольно "
+"сложного и потенциально опасного действия, если выполнять все вручную. Кроме "
+"того, программа может создавать резервные копии предыдущего содержания флэш-"
+"диска на жестком диске компьютера и восстанавливать прежнее состояние такого "
+"диска с резервной копии. Также в программе предусмотрена возможность "
+"форматирования диска USB.\n"
+"\n"
+"IsoDumper можно запустить через меню от имени пользователя, или из консоли "
+"администратора (root) с помощью команды «isodumper». Для запуска обычному "
+"пользователю следует ввести пароль администратора, он нужен для правильной "
+"работы программы. Флэш-диск можно вставить до запуска программы или сразу "
+"после ее запуска. В последнем случае программа покажет диалоговое окно с "
+"сообщением о том, что в устройство для чтения не установлена флэш-диск. Вы "
+"сможете нажать кнопку «Повторить», чтобы программа нашла соответствующий "
+"диск после установки его в гнездо. (Возможно, вам придется закрыть окно "
+"программы для управления файлами, которое будет автоматически открыто "
+"системой.)\n"
+"\n"
+"Поля главного окна программы:\n"
+"- Устройство для работы: устройство флэш-диска USB, его можно выбрать в "
+"выпадающем списке.\n"
+"- Записать образ : предназначено для выбора файла *.iso начального образа "
+"ISO (или образа резервной копии флэш-диска * .img) для записи.\n"
+"- Записать на устройство: с помощью этой кнопки можно приступить к "
+"выполнению операции. Прежде чем что-то делать, программа покажет диалоговое "
+"окно с соответствующим предупреждением. Если выбрано сделать резервную "
+"копию, это действие будет выполнено первым. Только после этого файл образа "
+"будет записан. Ход каждой операции будет показан на панели прогресса в "
+"нижней части окна.\n"
+"- Резервное копирование в: здесь можно указать название и расположение файла "
+"образа резервной копии. Текущее содержимое флэш-диска будет записано в "
+"резервной копии на жестком диске. Заметьте, что будет создана копия всего "
+"диска, независимо от его содержания, поэтому на жестком диске должно быть "
+"достаточно свободного места (размер образа равен емкости диска USB). Позже "
+"созданным файлом резервной копии можно воспользоваться для восстановления "
+"содержания флэш-диска. Для этого просто следует указать файл резервной "
+"копии, *.img, как файл который следует записать на флэш-диск\n"
+"- Создать резервную копию устройства для запуска операции по созданию "
+"резервной копии.\n"
+"- Форматировать устройство: создать один раздел на всем томе в указанном "
+"формате, FAT, NTFS или ext. Вы можете указать название и его формат в "
+"диалоговом окне, которое будет открыто.\n"
+"- Подробности: с помощью этой кнопки можно открыть окно с подробной "
+"информацией по журналу работы программы.\n"
+"\n"
 
 #: share/isodumper/isodumper.glade.h:43
 msgid "Device to work on:"
@@ -361,11 +411,11 @@ msgstr "Выбрать образ"
 
 #: share/isodumper/isodumper.glade.h:48
 msgid "For UEFI boot"
-msgstr ""
+msgstr "Для загрузки с UEFI"
 
 #: share/isodumper/isodumper.glade.h:49
 msgid "Use FAT32 format with MGALIVE as volume name."
-msgstr ""
+msgstr "Использовать формат FAT32  с названием тома MGALIVE"
 
 #: share/isodumper/isodumper.glade.h:50
 msgid "Write to device"

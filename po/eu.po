@@ -5,13 +5,13 @@
 # Translators:
 # Automatically generated, 2013
 # Egoitz Rodriguez Obieta <egoitzro@gmail.com>, 2014
-# Egoitz Rodriguez Obieta <egoitzro@gmail.com>, 2014
+# Egoitz Rodriguez Obieta <egoitzro@gmail.com>, 2014-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-18 18:32+0100\n"
-"PO-Revision-Date: 2014-10-25 14:10+0000\n"
+"PO-Revision-Date: 2015-01-18 22:40+0000\n"
 "Last-Translator: Egoitz Rodriguez Obieta <egoitzro@gmail.com>\n"
 "Language-Team: Basque (http://www.transifex.com/projects/p/mageia/language/"
 "eu/)\n"
@@ -24,11 +24,11 @@ msgstr ""
 #: lib/isodumper.py:103
 #, python-format
 msgid "%r not known to UDisks2"
-msgstr ""
+msgstr "UDisks2 ez du %r ezagutzen"
 
 #: lib/isodumper.py:263
 msgid "UDisks2 is not available on your system"
-msgstr ""
+msgstr "UDisks2 ez dago eskuragarri sisteman"
 
 #: lib/isodumper.py:284
 msgid "Mb"
@@ -63,6 +63,7 @@ msgstr "Errore bat gertatu da."
 msgid ""
 "The destination directory is too small to receive the backup (%s Mb needed)"
 msgstr ""
+"Helburu direktorioa txikiegia da babekopia jasotzeko (%s Mb beharrezkoa)"
 
 #: lib/isodumper.py:443 share/isodumper/isodumper.glade.h:52
 msgid "Backup in:"
@@ -83,15 +84,15 @@ msgstr "Gailuak 32 Gbytes baino gehiagokoa da. Ziur erabili nahi duzula?"
 #: lib/isodumper.py:519 lib/isodumper.py:537
 #, python-format
 msgid "Error mounting the partition %s"
-msgstr ""
+msgstr "Akatsa %s partizioa montatzen"
 
 #: lib/isodumper.py:523
 msgid "Mounted in: "
-msgstr ""
+msgstr "Muntatuta:"
 
 #: lib/isodumper.py:533
 msgid "Error copying files"
-msgstr ""
+msgstr "Errorea fitxategiak kopiatzen"
 
 #: lib/isodumper.py:565
 msgid "Unmounting all partitions of "
@@ -168,28 +169,28 @@ msgstr "Byteak idatzita: "
 
 #: lib/isodumper.py:668
 msgid "Checking "
-msgstr ""
+msgstr "Egiaztatzen"
 
 #: lib/isodumper.py:695
 msgid "SHA1 sum: "
-msgstr ""
+msgstr "SHA1 batuketa:"
 
 #: lib/isodumper.py:696
 msgid "MD5  sum: "
-msgstr ""
+msgstr "MD5 batuketa:"
 
 #: lib/isodumper.py:721
 msgid "ISO image mounted in "
-msgstr ""
+msgstr "ISO irudia montatuta"
 
 #: lib/isodumper.py:729
 #, python-format
 msgid "%s file(s) to copy."
-msgstr ""
+msgstr "%s fitxategia(k) kopiatzeko."
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
-msgstr "IsoDumper Exekutatzen"
+msgstr "Isodumper exekutatu"
 
 #: polkit/org.mageia.isodumper.policy.in.h:2
 msgid "Authentication is required to run Isodumper"
@@ -291,7 +292,7 @@ msgstr "Linux sistemetan soilik"
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Isodumper - Help"
-msgstr ""
+msgstr "Isodumper - Laguntza"
 
 #: share/isodumper/isodumper.glade.h:27
 msgid ""
@@ -333,6 +334,44 @@ msgid ""
 "- Details: this button shows detailed log information.\n"
 "\n"
 msgstr ""
+"Mageia IsoDumper\n"
+"----------------\n"
+"GUI programa hau, batez ere segurtasunez ISO irudi abiagarri bat USB flash "
+"drivean idatziz, alde batetik eragiketa arriskutsuak eta bihurriak eskuz "
+"egiten dira. Bonus gisa, zuk flash drive aurreko edukiak guztien segurtasun-"
+"kopia ere egin ditzakezu disko gogorrean, flash unitatean sartu eta geroago "
+"aurreko egoerara leheneratu. USB Gailua formateatzeko funtzio bat ematen "
+"du.\n"
+"\n"
+"IsoDumper abian jarri daiteke, bai menutik edo erabiltzaile edo root "
+"'isodumper' komandoarekin kontsola batean. Erabiltzaile normal, root "
+"pasahitza eskatzen da; hau programaren funtzionamendurako beharrezkoa da. "
+"Flash drive beti aurretik sartu daitezke edo programa abiatzean. Azken kasu "
+"horretan, elkarrizketa batek, flash drive txertatuta ez dagoela esaten du, "
+"eta 'berriro saiatzea' behin aurkitzeko. (Irekitako edozein fitxategi "
+"kudeatzaile leiho automatikoki itxi behar izatea) .\n"
+"\n"
+"Leiho nagusiaren eremuak honako hauek dira: \n"
+"- Gailu lan egiteko: USB flash drive gailua, aukeratzeko goitibeherako "
+"zerrenda bat.\n"
+"- Idaztea Irudia: *.iso ISO irudi iturburu (edo flash drive babeskopia "
+"fitxategia *.img) idazteko.\n"
+"- Gailuan idatzi: botoi honek operazioa abian jartzen du - aldez aurretik "
+"abisu batekin. Flash driveko segurtasun kopia bat eskatzen bada, hau da, "
+"lehen egiten dena. Ondoren (edo soilik) irudi-fitxategi idatzi. Eragiketa "
+"bakoitza aurrerapen barraren azpian agertzen da.\n"
+"- Babeskopia: definitu izena eta segurtasun kopiaren irudiaren fitxategiaren "
+"kokapena. Egungo flash drive babeskopia disko fitxategi batean gordetzeko. "
+"Kontuan flash unitatea guztia mantentzen da, bere oraingo edukiak kontuan "
+"hartu gabe; ziurtatu beharrezko espazioa diskoan (USB gailua tamaina bera) "
+"duzula. Segurtasun-kopia hau erabili ahal izango da geroago flash drivea "
+"berreskuratueko *.img fitxategia idazteko sorburu  gisa aukeratuz.\n"
+"- Gailuaren babeskopia: abiarazi babeskopia eragiketak.\n"
+"- Gailua formateatu: bolumen osoan  zehaztu FAT, NTFS edo ext formatua "
+"partizio berezia sortzeko. Bolumen-izena eta elkarrizketa koadroa.\n"
+"- Xehetasunak: botoi honek erregistro informazio xehekatuenak erakusten "
+"ditu.\n"
+"\n"
 
 #: share/isodumper/isodumper.glade.h:43
 msgid "Device to work on:"
@@ -356,11 +395,11 @@ msgstr "Imajina Aukeratu"
 
 #: share/isodumper/isodumper.glade.h:48
 msgid "For UEFI boot"
-msgstr ""
+msgstr "UEFI abiorako"
 
 #: share/isodumper/isodumper.glade.h:49
 msgid "Use FAT32 format with MGALIVE as volume name."
-msgstr ""
+msgstr "Erabili FAT32 formatua MGALIVE bolumen izen gisarekin."
 
 #: share/isodumper/isodumper.glade.h:50
 msgid "Write to device"

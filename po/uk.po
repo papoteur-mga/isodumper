@@ -4,13 +4,14 @@
 #
 # Translators:
 # Automatically generated, 2013
-# Yuri Chornoivan <yurchor@ukr.net>, 2013-2014
+# Yuri Chornoivan <yurchor@ukr.net>, 2013-2015
+# Yuri Chornoivan <yurchor@ukr.net>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: isodumper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-18 18:32+0100\n"
-"PO-Revision-Date: 2014-10-25 13:51+0000\n"
+"PO-Revision-Date: 2015-01-19 05:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/projects/p/mageia/"
 "language/uk/)\n"
@@ -24,11 +25,11 @@ msgstr ""
 #: lib/isodumper.py:103
 #, python-format
 msgid "%r not known to UDisks2"
-msgstr ""
+msgstr "%r не є відомим UDisks2"
 
 #: lib/isodumper.py:263
 msgid "UDisks2 is not available on your system"
-msgstr ""
+msgstr "У вашій системі немає UDisks2"
 
 #: lib/isodumper.py:284
 msgid "Mb"
@@ -62,7 +63,7 @@ msgstr "Сталася помилка."
 #, python-format
 msgid ""
 "The destination directory is too small to receive the backup (%s Mb needed)"
-msgstr ""
+msgstr "Каталог призначення не зможе вмістити резервну копію (потрібно %s МБ)"
 
 #: lib/isodumper.py:443 share/isodumper/isodumper.glade.h:52
 msgid "Backup in:"
@@ -85,15 +86,15 @@ msgstr ""
 #: lib/isodumper.py:519 lib/isodumper.py:537
 #, python-format
 msgid "Error mounting the partition %s"
-msgstr ""
+msgstr "Помилка під час спроби монтування розділу %s"
 
 #: lib/isodumper.py:523
 msgid "Mounted in: "
-msgstr ""
+msgstr "Змонтовано до: "
 
 #: lib/isodumper.py:533
 msgid "Error copying files"
-msgstr ""
+msgstr "Помилка під час копіювання файлів"
 
 #: lib/isodumper.py:565
 msgid "Unmounting all partitions of "
@@ -170,24 +171,24 @@ msgstr "Записано байтів: "
 
 #: lib/isodumper.py:668
 msgid "Checking "
-msgstr ""
+msgstr "Перевірка"
 
 #: lib/isodumper.py:695
 msgid "SHA1 sum: "
-msgstr ""
+msgstr "Сума SHA1: "
 
 #: lib/isodumper.py:696
 msgid "MD5  sum: "
-msgstr ""
+msgstr "Сума MD5:"
 
 #: lib/isodumper.py:721
 msgid "ISO image mounted in "
-msgstr ""
+msgstr "Образ ISO змонтовано до "
 
 #: lib/isodumper.py:729
 #, python-format
 msgid "%s file(s) to copy."
-msgstr ""
+msgstr "%s файлів для копіювання."
 
 #: polkit/org.mageia.isodumper.policy.in.h:1
 msgid "Run Isodumper"
@@ -295,7 +296,7 @@ msgstr "Лише для систем Linux."
 
 #: share/isodumper/isodumper.glade.h:26
 msgid "Isodumper - Help"
-msgstr ""
+msgstr "Isodumper — Довідка"
 
 #: share/isodumper/isodumper.glade.h:27
 msgid ""
@@ -337,6 +338,53 @@ msgid ""
 "- Details: this button shows detailed log information.\n"
 "\n"
 msgstr ""
+"Mageia IsoDumper\n"
+"----------------\n"
+"Основним призначенням цієї програми із графічним інтерфейсом є запис "
+"придатного до завантаження образу ISO на флеш-диск USB, тобто виконання "
+"доволі складної та потенційно небезпечної дії, якщо виконувати усе вручну. "
+"Крім того, програма може створювати резервні копії попереднього вмісту флеш-"
+"диска на жорсткому диску комп’ютера та відновлювати попередній стан такого "
+"диска із резервної копії. Також у програмі передбачено можливість "
+"форматування диска USB.\n"
+"\n"
+"IsoDumper можна запустити або з меню від імені користувача, або з консолі "
+"адміністратора (root) за допомогою команди «isodumper». Для запуску "
+"звичайному користувачу слід ввести пароль адміністратора (root), він "
+"потрібен для належної роботи програми. Флеш-диск можна вставити до запуску "
+"програми або одразу після її запуску. У останньому випадку програма "
+"показуватиме діалогове вікно з повідомленням про те, що у пристрій для "
+"читання не вставлено флеш-диск. Ви зможете натиснути кнопку «Повторити», щоб "
+"програма знайшла відповідний диск після вставлення його до гнізда. (Можливо, "
+"вам доведеться закрити вікно програми для керування файлами, яке буде "
+"автоматично відкрито системою.)\n"
+"\n"
+"Поля головного вікна програми:\n"
+"- Пристрій для роботи: пристрій флеш-диска USB, його можна вибрати за "
+"допомогою спадного списку.\n"
+"- Записати образ: призначено для вибору файла *.iso початкового образу ISO "
+"(або образу резервної копії флеш-диска *.img) для запису.\n"
+"- Записати на пристрій: за допомогою цієї кнопки можна розпочати виконання "
+"операції. Перш ніж щось робити, програма покаже діалогове вікно з "
+"відповідним попередженням. Якщо наказано зробити резервну копію, цю дію буде "
+"виконано першою. Лише після цього файл образу буде записано. Хід кожної "
+"операції буде показано на панелі поступу у нижній частині вікна.\n"
+"- Резервне копіювання до: тут можна вказати назву і розташування файла "
+"образу резервної копії. Поточний вміст флеш-диска буде записано до резервної "
+"копії на жорсткому диску. Зауважте, що буде створено копію усього диска, "
+"незалежно від його вмісту, тому на жорсткому диску має бути достатньо "
+"вільного місця (розмір образу дорівнює місткості диска USB). Пізніше "
+"створеним файлом резервної копії можна скористатися для відновлення вмісту "
+"флеш-диска. Для цього просто слід вказати файл резервної копії, *.img, як "
+"файл який слід записати на флеш-диск.\n"
+"- Створити резервну копію пристрою: запуск операції зі створення резервної "
+"копії.\n"
+"- Форматувати пристрій: створи один розділ на усьому томі у вказаному "
+"форматі, FAT, NTFS або ext. Ви можете вказати назву тому та його формат у "
+"діалоговому вікні, яке буде відкрито.\n"
+"- Подробиці: за допомогою цієї кнопки можна відкрити вікно із докладною "
+"інформацією з журналу роботи програми.\n"
+"\n"
 
 #: share/isodumper/isodumper.glade.h:43
 msgid "Device to work on:"
@@ -360,11 +408,11 @@ msgstr "Виберіть образ"
 
 #: share/isodumper/isodumper.glade.h:48
 msgid "For UEFI boot"
-msgstr ""
+msgstr "Для завантаження з UEFI"
 
 #: share/isodumper/isodumper.glade.h:49
 msgid "Use FAT32 format with MGALIVE as volume name."
-msgstr ""
+msgstr "Використовувати формат FAT32 з назвою тому MGALIVE."
 
 #: share/isodumper/isodumper.glade.h:50
 msgid "Write to device"
